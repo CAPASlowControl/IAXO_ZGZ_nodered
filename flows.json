@@ -26,7 +26,7 @@
         "id": "dd1742929205e724",
         "type": "tab",
         "label": "Flujo 1",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -67,21 +67,6 @@
         "env": []
     },
     {
-        "id": "e6abd59fcfef321c",
-        "type": "tab",
-        "label": "IAXO Security",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "89bf6cfc2721dc84",
-        "type": "tab",
-        "label": "DEVELOPMENT FLOW",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "7184b44879b683fb",
         "type": "tab",
         "label": "BGA",
@@ -96,6 +81,13 @@
         "disabled": false,
         "info": "",
         "env": []
+    },
+    {
+        "id": "e6abd59fcfef321c",
+        "type": "tab",
+        "label": "IAXO Security",
+        "disabled": false,
+        "info": ""
     },
     {
         "id": "96df9d1b.b1b87",
@@ -25025,3134 +25017,6 @@
         ]
     },
     {
-        "id": "9fd6b6c8a861dded",
-        "type": "function",
-        "z": "e6abd59fcfef321c",
-        "d": true,
-        "g": "76c4585b9eeb7963",
-        "name": "Electrovalves Security",
-        "func": "var control = msg.payload.B0;\nvar booleano = (control === 1);\nreturn booleano;\n/*msg.enabled = booleano; \nmsg.payload = null;\nif (booleano == 1){\n    return msg;\n}*/",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 720,
-        "y": 60,
-        "wires": [
-            [
-                "322432cccfc7e68f"
-            ]
-        ]
-    },
-    {
-        "id": "1fd2585a12fae590",
-        "type": "function",
-        "z": "e6abd59fcfef321c",
-        "g": "76c4585b9eeb7963",
-        "name": "Electrovalves Message",
-        "func": "let lastValue = flow.get('EVstatus');\nlet newValue = msg.payload.B0;\nnewValue = parseInt(newValue);\nvar message;\n\nif (typeof lastValue === 'undefined') {\n    flow.set('EVstatus', newValue);\n    // Opcionalmente puedes enviar un mensaje de inicialización\n    //return null; // o return msg si quieres notificar la primera lectura\n}\n\n\nif(lastValue === 1 && newValue === 0){\n    message = \"Closing Electrovalves\";\n    flow.set('EVstatus', newValue);\n    msg.payload = message;\n    return msg;\n}\n\nif(lastValue === 0 && newValue === 1){\n    message = \"Opening Electrovalves\";\n    flow.set('EVstatus', newValue);\n    msg.payload = message;\n    return msg;\n}\n\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 730,
-        "y": 160,
-        "wires": [
-            [
-                "5a23170f6bb6ae26"
-            ]
-        ]
-    },
-    {
-        "id": "322432cccfc7e68f",
-        "type": "link out",
-        "z": "e6abd59fcfef321c",
-        "g": "76c4585b9eeb7963",
-        "name": "Electrovalves Security",
-        "mode": "link",
-        "links": [
-            "6095c869467f0336"
-        ],
-        "x": 1135,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "5a23170f6bb6ae26",
-        "type": "subflow:757e68c1a00513c0",
-        "z": "e6abd59fcfef321c",
-        "g": "76c4585b9eeb7963",
-        "name": "",
-        "x": 990,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "3fd98e13ec0e96e1",
-        "type": "link in",
-        "z": "e6abd59fcfef321c",
-        "g": "76c4585b9eeb7963",
-        "name": "ELECTROVALVES SECURITY IN",
-        "links": [
-            "423c8255f686304e",
-            "d3f5abbd72747d91",
-            "d5403ff111f9bb50",
-            "f5339029adcd5f3f",
-            "8309cfbe3ced242b",
-            "2894a4759e842a2a",
-            "c83f14828ab123c0",
-            "2343828fdf8f4fe9",
-            "ac3304c5d638e602",
-            "e025cfac9c7a8862",
-            "bdcd76b1512c81e6",
-            "5f7608abef2eb829",
-            "aee0884f702fdb5d",
-            "0d4a627e546a4726"
-        ],
-        "x": 205,
-        "y": 140,
-        "wires": [
-            [
-                "9fd6b6c8a861dded",
-                "6353d1beb31dc2ac"
-            ]
-        ]
-    },
-    {
-        "id": "6bbb3888df1424f9",
-        "type": "change",
-        "z": "e6abd59fcfef321c",
-        "g": "76c4585b9eeb7963",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "enabled",
-                "pt": "msg",
-                "to": "($boolean(payload.B0))",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 700,
-        "y": 100,
-        "wires": [
-            [
-                "4752522bea1e8996"
-            ]
-        ]
-    },
-    {
-        "id": "4752522bea1e8996",
-        "type": "rbe",
-        "z": "e6abd59fcfef321c",
-        "g": "76c4585b9eeb7963",
-        "name": "Valves stop filter",
-        "func": "rbe",
-        "gap": "",
-        "start": "",
-        "inout": "out",
-        "septopics": true,
-        "property": "enabled",
-        "topi": "topic",
-        "x": 940,
-        "y": 100,
-        "wires": [
-            [
-                "322432cccfc7e68f"
-            ]
-        ]
-    },
-    {
-        "id": "be535f08413db52a",
-        "type": "link in",
-        "z": "e6abd59fcfef321c",
-        "g": "3371663af1f1de31",
-        "name": "SECURITY_Overpressure_MP",
-        "links": [
-            "3a912f03d0333c28"
-        ],
-        "x": 95,
-        "y": 380,
-        "wires": [
-            [
-                "577a892ca67462ce",
-                "36c34ce22f4881a6"
-            ]
-        ]
-    },
-    {
-        "id": "577a892ca67462ce",
-        "type": "change",
-        "z": "e6abd59fcfef321c",
-        "g": "3371663af1f1de31",
-        "name": "MeasureValue",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "MeasureValue",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 470,
-        "y": 420,
-        "wires": [
-            [
-                "af0b63fd12d2077f"
-            ]
-        ]
-    },
-    {
-        "id": "2a9b31b2b142a8a4",
-        "type": "change",
-        "z": "e6abd59fcfef321c",
-        "g": "3371663af1f1de31",
-        "name": "SetPointValue",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "SetPointValue",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 470,
-        "y": 460,
-        "wires": [
-            [
-                "af0b63fd12d2077f",
-                "b00efcedbc0a4b49"
-            ]
-        ]
-    },
-    {
-        "id": "af0b63fd12d2077f",
-        "type": "join",
-        "z": "e6abd59fcfef321c",
-        "g": "3371663af1f1de31",
-        "name": "",
-        "mode": "custom",
-        "build": "object",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "useparts": true,
-        "accumulate": false,
-        "timeout": "",
-        "count": "2",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 640,
-        "y": 440,
-        "wires": [
-            [
-                "517355d6fce400fb"
-            ]
-        ]
-    },
-    {
-        "id": "517355d6fce400fb",
-        "type": "function",
-        "z": "e6abd59fcfef321c",
-        "g": "3371663af1f1de31",
-        "name": "Unkown pressure Control",
-        "func": "let measurepoint = msg.payload.MeasureValue;\nlet setpoint = msg.payload.SetPointValue;\nlet slack =  \"Measure point is higher than Set point. Closing EV\"\nlet SMP_status = flow.get(\"SetMeasStatus\");\n\nlet cutoff = {\n    B0: 0,\n}\n\nif(!SMP_status){\n    if(measurepoint > (setpoint+40)){\n        flow.set(\"SetMeasStatus\",true);\n        msg1  = {payload :  slack};\n        msg2 = {payload : cutoff};\n        return [msg1, msg2];\n    }\n} else{\n     if(measurepoint < (setpoint+40)){\n        flow.set(\"SetMeasStatus\",false);\n        msg1  = {payload :  \"Measure Point & Set Point return to normal values.\"};\n    return msg1;\n    }\n}\n\n \n",
-        "outputs": 2,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "// El código añadido aquí se ejecutará una vez\n// cuando el nodo es iniciado.\n\n/**let slack =  \"Inizializating\"\n\nlet cutoff = {\n    B0: 0,\n}\nmsg1  = {payload :  slack};\nmsg2 = {payload : cutoff};\nreturn [msg1, msg2];\n**/",
-        "finalize": "",
-        "libs": [],
-        "x": 840,
-        "y": 440,
-        "wires": [
-            [
-                "f0b41290870e3071"
-            ],
-            [
-                "96b895c1ec73b202",
-                "5f7608abef2eb829"
-            ]
-        ]
-    },
-    {
-        "id": "c44dd26d32c55e45",
-        "type": "subflow:757e68c1a00513c0",
-        "z": "e6abd59fcfef321c",
-        "g": "3371663af1f1de31",
-        "name": "",
-        "x": 1310,
-        "y": 400,
-        "wires": []
-    },
-    {
-        "id": "29b5138b8fd0c272",
-        "type": "link in",
-        "z": "e6abd59fcfef321c",
-        "g": "3371663af1f1de31",
-        "name": "SECURITY_Overpressure_SP",
-        "links": [
-            "cd96bed145c6a88f"
-        ],
-        "x": 95,
-        "y": 460,
-        "wires": [
-            [
-                "019d3855c7ae28a4"
-            ]
-        ]
-    },
-    {
-        "id": "96b895c1ec73b202",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "3371663af1f1de31",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1015,
-        "y": 500,
-        "wires": [],
-        "l": false
-    },
-    {
-        "id": "2c9342f778a4dcb2",
-        "type": "subflow:757e68c1a00513c0",
-        "z": "e6abd59fcfef321c",
-        "g": "f6d33217e09e6ea2",
-        "name": "",
-        "x": 750,
-        "y": 1540,
-        "wires": []
-    },
-    {
-        "id": "7b20f3b40c19a422",
-        "type": "link in",
-        "z": "e6abd59fcfef321c",
-        "g": "f6d33217e09e6ea2",
-        "name": "DAQ_mclient_diskspace",
-        "links": [
-            "03f8ab2d0d6e8bed"
-        ],
-        "x": 555,
-        "y": 1540,
-        "wires": [
-            [
-                "2c9342f778a4dcb2"
-            ]
-        ]
-    },
-    {
-        "id": "36c34ce22f4881a6",
-        "type": "function",
-        "z": "e6abd59fcfef321c",
-        "g": "3371663af1f1de31",
-        "name": "Security cut-off: 1450mbar ",
-        "func": "let cutoffpoint = {\n    Fmode: 1500,  // Para cambiar el valor de presión máxima en modo llenado\n    Nmode: 1450   // Para cambiar el valor de presión máxima en modo normal\n};\n\nlet mode = global.get(\"OperationMode\"); // true o false\nlet measurepoint = msg.payload;\nlet slack = \"OverPressure in the chamber. Closing EV\";\nlet OP_status = flow.get(\"OverPressStatus\") || false;\nlet cutoff = {\n    Q0: 0,\n};\n\nlet msg1, msg2;\n\nswitch (mode) {\n    case true:  // Modo normal\n        if (!OP_status) {\n            if (measurepoint > cutoffpoint.Nmode) {\n                flow.set(\"OverPressStatus\", true);\n                msg1 = { payload: slack };\n                msg2 = { payload: cutoff };\n                return [msg1, msg2];\n            }\n        } else {\n            if (measurepoint < cutoffpoint.Nmode) {\n                flow.set(\"OverPressStatus\", false);\n                msg1 = { payload: \"Pressure Reestablished\" };\n                return [msg1];\n            }\n        }\n        break;\n\n    case false:  // Modo llenado\n        if (!OP_status) {\n            if (measurepoint > cutoffpoint.Fmode) {\n                flow.set(\"OverPressStatus\", true);\n                msg1 = { payload: slack };\n                msg2 = { payload: cutoff };\n                return [msg1, msg2];\n            }\n        } else {\n            if (measurepoint < cutoffpoint.Fmode) {\n                flow.set(\"OverPressStatus\", false);\n                msg1 = { payload: \"Pressure Reestablished\" };\n                return [msg1];\n            }\n        }\n        break;\n}\n\nreturn null;\n",
-        "outputs": 2,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 690,
-        "y": 380,
-        "wires": [
-            [
-                "8fcc41617a7ef994",
-                "87944d3f6babc85f"
-            ],
-            [
-                "bdcd76b1512c81e6"
-            ]
-        ]
-    },
-    {
-        "id": "8fcc41617a7ef994",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "3371663af1f1de31",
-        "name": "debug 169",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 925,
-        "y": 300,
-        "wires": [],
-        "l": false
-    },
-    {
-        "id": "44293598916d4fc1",
-        "type": "link in",
-        "z": "e6abd59fcfef321c",
-        "d": true,
-        "g": "b4e33e11eed53568",
-        "name": "BGA_BG0I",
-        "links": [
-            "c7be7450f90f3c85"
-        ],
-        "x": 145,
-        "y": 1440,
-        "wires": [
-            [
-                "f04398bc1c50af17"
-            ]
-        ]
-    },
-    {
-        "id": "5728ead30d8447cc",
-        "type": "link in",
-        "z": "e6abd59fcfef321c",
-        "d": true,
-        "g": "b4e33e11eed53568",
-        "name": "BGA_PLIMIT",
-        "links": [
-            "e925121153aa7594"
-        ],
-        "x": 145,
-        "y": 1480,
-        "wires": [
-            [
-                "deb8b7288de2adac"
-            ]
-        ]
-    },
-    {
-        "id": "4d092cf05d395935",
-        "type": "link in",
-        "z": "e6abd59fcfef321c",
-        "d": true,
-        "g": "b4e33e11eed53568",
-        "name": "BGA_TLIMIT",
-        "links": [
-            "d3bdb64732d5588f"
-        ],
-        "x": 145,
-        "y": 1520,
-        "wires": [
-            [
-                "a7295e915e259258"
-            ]
-        ]
-    },
-    {
-        "id": "47a746a20e8129ad",
-        "type": "link in",
-        "z": "e6abd59fcfef321c",
-        "d": true,
-        "g": "b4e33e11eed53568",
-        "name": "BGA_%LIMIT",
-        "links": [
-            "887024a79833a324"
-        ],
-        "x": 145,
-        "y": 1560,
-        "wires": [
-            [
-                "37f05775bddd4633"
-            ]
-        ]
-    },
-    {
-        "id": "f04398bc1c50af17",
-        "type": "subflow:757e68c1a00513c0",
-        "z": "e6abd59fcfef321c",
-        "d": true,
-        "g": "b4e33e11eed53568",
-        "name": "",
-        "x": 310,
-        "y": 1440,
-        "wires": []
-    },
-    {
-        "id": "deb8b7288de2adac",
-        "type": "subflow:757e68c1a00513c0",
-        "z": "e6abd59fcfef321c",
-        "d": true,
-        "g": "b4e33e11eed53568",
-        "name": "",
-        "x": 310,
-        "y": 1480,
-        "wires": []
-    },
-    {
-        "id": "a7295e915e259258",
-        "type": "subflow:757e68c1a00513c0",
-        "z": "e6abd59fcfef321c",
-        "d": true,
-        "g": "b4e33e11eed53568",
-        "name": "",
-        "x": 310,
-        "y": 1520,
-        "wires": []
-    },
-    {
-        "id": "37f05775bddd4633",
-        "type": "subflow:757e68c1a00513c0",
-        "z": "e6abd59fcfef321c",
-        "d": true,
-        "g": "b4e33e11eed53568",
-        "name": "",
-        "x": 310,
-        "y": 1560,
-        "wires": []
-    },
-    {
-        "id": "3d126903d143c2d5",
-        "type": "inject",
-        "z": "e6abd59fcfef321c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": ":020301",
-        "payloadType": "str",
-        "x": 1580,
-        "y": 1820,
-        "wires": [
-            [
-                "4f56ca5c40de78e2"
-            ]
-        ]
-    },
-    {
-        "id": "4f56ca5c40de78e2",
-        "type": "serial request",
-        "z": "e6abd59fcfef321c",
-        "name": "BK-M1 Query",
-        "serial": "488efe6f06074f88",
-        "x": 1760,
-        "y": 1820,
-        "wires": [
-            [
-                "f2cbd499ebae54f4"
-            ]
-        ]
-    },
-    {
-        "id": "f2cbd499ebae54f4",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "name": "debug 281",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1930,
-        "y": 1820,
-        "wires": []
-    },
-    {
-        "id": "d8171e58fad45ca7",
-        "type": "string",
-        "z": "e6abd59fcfef321c",
-        "g": "3371663af1f1de31",
-        "name": "ToFloat",
-        "methods": [
-            {
-                "name": "toFloat",
-                "params": [
-                    {
-                        "type": "num",
-                        "value": "2"
-                    }
-                ]
-            }
-        ],
-        "prop": "payload",
-        "propout": "payload",
-        "object": "msg",
-        "objectout": "msg",
-        "x": 310,
-        "y": 460,
-        "wires": [
-            [
-                "2a9b31b2b142a8a4"
-            ]
-        ]
-    },
-    {
-        "id": "16f6680cafaf35a2",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "3371663af1f1de31",
-        "name": "debug 332",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1280,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "f0b41290870e3071",
-        "type": "rbe",
-        "z": "e6abd59fcfef321c",
-        "g": "3371663af1f1de31",
-        "name": "Valves stop filter",
-        "func": "rbe",
-        "gap": "",
-        "start": "",
-        "inout": "out",
-        "septopics": true,
-        "property": "payload",
-        "topi": "topic",
-        "x": 1090,
-        "y": 420,
-        "wires": [
-            [
-                "16f6680cafaf35a2",
-                "c44dd26d32c55e45"
-            ]
-        ],
-        "info": "This node is only to allow only one msg to slack, if stop filter wasn't here, slack will become a spam channel"
-    },
-    {
-        "id": "e5eec86ba63485ba",
-        "type": "link in",
-        "z": "e6abd59fcfef321c",
-        "g": "562d42446f5c13fe",
-        "name": "SECURITY_LV_IN",
-        "links": [
-            "84266ace58e71dcc",
-            "7047fe49aa9ab855"
-        ],
-        "x": 435,
-        "y": 1760,
-        "wires": [
-            [
-                "4f6857f853b7c165"
-            ]
-        ]
-    },
-    {
-        "id": "f69e204694af3fca",
-        "type": "trigger",
-        "z": "e6abd59fcfef321c",
-        "g": "562d42446f5c13fe",
-        "name": "MULTICOMP trigger Error",
-        "op1": "",
-        "op2": "Multicomp connection reestablished",
-        "op1type": "pay",
-        "op2type": "str",
-        "duration": "5",
-        "extend": true,
-        "overrideDelay": false,
-        "units": "s",
-        "reset": "",
-        "bytopic": "all",
-        "topic": "topic",
-        "outputs": 2,
-        "x": 1020,
-        "y": 1700,
-        "wires": [
-            [
-                "6d16a1c1441e15df"
-            ],
-            [
-                "6d16a1c1441e15df"
-            ]
-        ]
-    },
-    {
-        "id": "2aede621314a58a6",
-        "type": "function",
-        "z": "e6abd59fcfef321c",
-        "g": "562d42446f5c13fe",
-        "name": "Slack message",
-        "func": "let device = msg.topic; \nlet Slack_msg = msg.payload + \" in device \" + msg.topic;\nmsg.payload = Slack_msg;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 790,
-        "y": 1700,
-        "wires": [
-            [
-                "f69e204694af3fca"
-            ]
-        ]
-    },
-    {
-        "id": "6d16a1c1441e15df",
-        "type": "slack",
-        "z": "e6abd59fcfef321c",
-        "g": "562d42446f5c13fe",
-        "name": "PRIVATE CHAT IAXO",
-        "channelURL": "https://hooks.slack.com/services/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",
-        "username": "IAXO D0 BOT",
-        "emojiIcon": "",
-        "channel": "",
-        "x": 1370,
-        "y": 1760,
-        "wires": []
-    },
-    {
-        "id": "4f6857f853b7c165",
-        "type": "switch",
-        "z": "e6abd59fcfef321c",
-        "g": "562d42446f5c13fe",
-        "name": "Filter by topic",
-        "property": "topic",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "cont",
-                "v": "MULTICOMP",
-                "vt": "str"
-            },
-            {
-                "t": "cont",
-                "v": "RIGOL",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 560,
-        "y": 1760,
-        "wires": [
-            [
-                "2aede621314a58a6",
-                "3f55ea058988edbf"
-            ],
-            [
-                "9e75477aca5b6168",
-                "b9e587de20193b1e"
-            ]
-        ]
-    },
-    {
-        "id": "9e75477aca5b6168",
-        "type": "function",
-        "z": "e6abd59fcfef321c",
-        "g": "562d42446f5c13fe",
-        "name": "Slack message",
-        "func": "let device = msg.topic; \nlet Slack_msg = msg.payload + \" in device \" + msg.topic;\nmsg.payload = Slack_msg;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 790,
-        "y": 1820,
-        "wires": [
-            [
-                "34fc76c74c1070fc",
-                "b9370e58fa71b910"
-            ]
-        ]
-    },
-    {
-        "id": "b9370e58fa71b910",
-        "type": "trigger",
-        "z": "e6abd59fcfef321c",
-        "g": "562d42446f5c13fe",
-        "name": "Rigol trigger Error",
-        "op1": "",
-        "op2": "Rigol connection reestablished",
-        "op1type": "pay",
-        "op2type": "str",
-        "duration": "5",
-        "extend": true,
-        "overrideDelay": false,
-        "units": "s",
-        "reset": "",
-        "bytopic": "topic",
-        "topic": "topic",
-        "outputs": 2,
-        "x": 1030,
-        "y": 1820,
-        "wires": [
-            [
-                "6d16a1c1441e15df",
-                "34850114de3f2037"
-            ],
-            [
-                "d0a86226f9f7ab15"
-            ]
-        ]
-    },
-    {
-        "id": "b9e587de20193b1e",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "562d42446f5c13fe",
-        "name": "debug 371",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 630,
-        "y": 1900,
-        "wires": []
-    },
-    {
-        "id": "3f55ea058988edbf",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "562d42446f5c13fe",
-        "name": "debug 372",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 650,
-        "y": 1660,
-        "wires": []
-    },
-    {
-        "id": "7f96f1a1caaab95d",
-        "type": "link in",
-        "z": "e6abd59fcfef321c",
-        "g": "41fbc4a5bc05d566",
-        "name": "SECURITY_Controllers_IN",
-        "links": [
-            "715fad08a1a4506b",
-            "f7ae3dec57c5ad9c"
-        ],
-        "x": 1635,
-        "y": 180,
-        "wires": [
-            [
-                "9dfe132e9be90487"
-            ]
-        ]
-    },
-    {
-        "id": "bcdc89bcd08b63cc",
-        "type": "trigger",
-        "z": "e6abd59fcfef321c",
-        "g": "41fbc4a5bc05d566",
-        "name": "PCV361 trigger Error",
-        "op1": "",
-        "op2": "PCV361 connection reestablished",
-        "op1type": "pay",
-        "op2type": "str",
-        "duration": "5",
-        "extend": true,
-        "overrideDelay": false,
-        "units": "s",
-        "reset": "",
-        "bytopic": "all",
-        "topic": "topic",
-        "outputs": 2,
-        "x": 2240,
-        "y": 40,
-        "wires": [
-            [
-                "493da01896a6b160"
-            ],
-            [
-                "493da01896a6b160"
-            ]
-        ]
-    },
-    {
-        "id": "40b47fa657f6c6df",
-        "type": "function",
-        "z": "e6abd59fcfef321c",
-        "g": "41fbc4a5bc05d566",
-        "name": "Slack message",
-        "func": "let device = msg.topic; \nlet Slack_msg = msg.payload + \" in device \" + msg.topic;\nmsg.payload = Slack_msg;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2000,
-        "y": 40,
-        "wires": [
-            [
-                "bcdc89bcd08b63cc"
-            ]
-        ]
-    },
-    {
-        "id": "493da01896a6b160",
-        "type": "slack",
-        "z": "e6abd59fcfef321c",
-        "g": "41fbc4a5bc05d566",
-        "name": "PRIVATE CHAT IAXO",
-        "channelURL": "https://hooks.slack.com/services/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",
-        "username": "IAXO D0 BOT",
-        "emojiIcon": "",
-        "channel": "",
-        "x": 2700,
-        "y": 180,
-        "wires": [],
-        "info": "This is the URL of a private chat. Only for technician\n"
-    },
-    {
-        "id": "9dfe132e9be90487",
-        "type": "switch",
-        "z": "e6abd59fcfef321c",
-        "g": "41fbc4a5bc05d566",
-        "name": "Filter by topic",
-        "property": "topic",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "cont",
-                "v": "PCV361",
-                "vt": "str"
-            },
-            {
-                "t": "cont",
-                "v": "FQT360",
-                "vt": "str"
-            },
-            {
-                "t": "cont",
-                "v": "FQT341",
-                "vt": "str"
-            },
-            {
-                "t": "cont",
-                "v": "FQT340",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 4,
-        "x": 1770,
-        "y": 180,
-        "wires": [
-            [
-                "40b47fa657f6c6df"
-            ],
-            [
-                "04bfc187b8d7fb9e"
-            ],
-            [
-                "7e6a50958259834c"
-            ],
-            [
-                "31dc42753219dceb"
-            ]
-        ]
-    },
-    {
-        "id": "04bfc187b8d7fb9e",
-        "type": "function",
-        "z": "e6abd59fcfef321c",
-        "g": "41fbc4a5bc05d566",
-        "name": "Slack message",
-        "func": "let device = msg.topic; \nlet Slack_msg = msg.payload + \" in device \" + msg.topic;\nmsg.payload = Slack_msg;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2010,
-        "y": 149.16666666666663,
-        "wires": [
-            [
-                "fbbd01b01c1450da",
-                "f32fe459ae7b1919"
-            ]
-        ]
-    },
-    {
-        "id": "fbbd01b01c1450da",
-        "type": "trigger",
-        "z": "e6abd59fcfef321c",
-        "g": "41fbc4a5bc05d566",
-        "name": "FQT360 trigger Error",
-        "op1": "",
-        "op2": "FQT360 connection reestablished",
-        "op1type": "pay",
-        "op2type": "str",
-        "duration": "5",
-        "extend": true,
-        "overrideDelay": false,
-        "units": "s",
-        "reset": "",
-        "bytopic": "all",
-        "topic": "topic",
-        "outputs": 2,
-        "x": 2250,
-        "y": 149.16666666666663,
-        "wires": [
-            [
-                "493da01896a6b160",
-                "1a8746eac5018c5e"
-            ],
-            [
-                "493da01896a6b160",
-                "e5806a792ec3e21e"
-            ]
-        ]
-    },
-    {
-        "id": "7e6a50958259834c",
-        "type": "function",
-        "z": "e6abd59fcfef321c",
-        "g": "41fbc4a5bc05d566",
-        "name": "Slack message",
-        "func": "let device = msg.topic; \nlet Slack_msg = msg.payload + \" in device \" + msg.topic;\nmsg.payload = Slack_msg;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2010,
-        "y": 215.83333333333331,
-        "wires": [
-            [
-                "c117ade2206c9d81"
-            ]
-        ]
-    },
-    {
-        "id": "c117ade2206c9d81",
-        "type": "trigger",
-        "z": "e6abd59fcfef321c",
-        "g": "41fbc4a5bc05d566",
-        "name": "FQT341 trigger Error",
-        "op1": "",
-        "op2": "FQT341 connection reestablished",
-        "op1type": "pay",
-        "op2type": "str",
-        "duration": "5",
-        "extend": true,
-        "overrideDelay": false,
-        "units": "s",
-        "reset": "",
-        "bytopic": "all",
-        "topic": "topic",
-        "outputs": 2,
-        "x": 2250,
-        "y": 215.83333333333331,
-        "wires": [
-            [
-                "493da01896a6b160"
-            ],
-            [
-                "493da01896a6b160"
-            ]
-        ]
-    },
-    {
-        "id": "31dc42753219dceb",
-        "type": "function",
-        "z": "e6abd59fcfef321c",
-        "g": "41fbc4a5bc05d566",
-        "name": "Slack message",
-        "func": "let device = msg.topic; \nlet Slack_msg = msg.payload + \" in device \" + msg.topic;\nmsg.payload = Slack_msg;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2010,
-        "y": 282.5,
-        "wires": [
-            [
-                "fa919c7eb7d15cc7"
-            ]
-        ]
-    },
-    {
-        "id": "fa919c7eb7d15cc7",
-        "type": "trigger",
-        "z": "e6abd59fcfef321c",
-        "g": "41fbc4a5bc05d566",
-        "name": "FQT340 trigger Error",
-        "op1": "",
-        "op2": "FQT340 connection reestablished",
-        "op1type": "pay",
-        "op2type": "str",
-        "duration": "5",
-        "extend": true,
-        "overrideDelay": false,
-        "units": "s",
-        "reset": "",
-        "bytopic": "all",
-        "topic": "topic",
-        "outputs": 2,
-        "x": 2250,
-        "y": 282.5,
-        "wires": [
-            [
-                "493da01896a6b160"
-            ],
-            [
-                "493da01896a6b160"
-            ]
-        ]
-    },
-    {
-        "id": "7751c4b42cb0de1f",
-        "type": "link in",
-        "z": "e6abd59fcfef321c",
-        "g": "55a2600ea9f1ad33",
-        "name": "SECURITY_Transmitters_IN",
-        "links": [
-            "05feb3979973f7ff"
-        ],
-        "x": 1645,
-        "y": 620,
-        "wires": [
-            [
-                "da3a36208d4eabcc"
-            ]
-        ]
-    },
-    {
-        "id": "7552efb55ce434d9",
-        "type": "slack",
-        "z": "e6abd59fcfef321c",
-        "g": "55a2600ea9f1ad33",
-        "name": "PRIVATE CHAT IAXO",
-        "channelURL": "https://hooks.slack.com/services/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",
-        "username": "IAXO D0 BOT",
-        "emojiIcon": "",
-        "channel": "",
-        "x": 2630,
-        "y": 660,
-        "wires": []
-    },
-    {
-        "id": "da3a36208d4eabcc",
-        "type": "switch",
-        "z": "e6abd59fcfef321c",
-        "g": "55a2600ea9f1ad33",
-        "name": "Filter by topic",
-        "property": "topic",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "cont",
-                "v": "PT343",
-                "vt": "str"
-            },
-            {
-                "t": "cont",
-                "v": "PT40",
-                "vt": "str"
-            },
-            {
-                "t": "cont",
-                "v": "PT41",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 3,
-        "x": 1780,
-        "y": 620,
-        "wires": [
-            [
-                "d5dbc51a89a860b2"
-            ],
-            [
-                "824891ce5a64f8d2"
-            ],
-            [
-                "083584a3ae18ea57"
-            ]
-        ]
-    },
-    {
-        "id": "d5dbc51a89a860b2",
-        "type": "function",
-        "z": "e6abd59fcfef321c",
-        "g": "55a2600ea9f1ad33",
-        "name": "Slack message",
-        "func": "let device = msg.topic; \nlet Slack_msg = msg.payload + \" in device \" + msg.topic;\nmsg.payload = Slack_msg;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2020,
-        "y": 589.1666666666666,
-        "wires": [
-            [
-                "c3d039bb3115809a",
-                "8f8883506988ead9"
-            ]
-        ]
-    },
-    {
-        "id": "c3d039bb3115809a",
-        "type": "trigger",
-        "z": "e6abd59fcfef321c",
-        "g": "55a2600ea9f1ad33",
-        "name": "PT343 trigger Error",
-        "op1": "",
-        "op2": "PT343 connection reestablished",
-        "op1type": "pay",
-        "op2type": "str",
-        "duration": "5",
-        "extend": true,
-        "overrideDelay": false,
-        "units": "s",
-        "reset": "",
-        "bytopic": "all",
-        "topic": "topic",
-        "outputs": 2,
-        "x": 2250,
-        "y": 589.1666666666666,
-        "wires": [
-            [
-                "7552efb55ce434d9"
-            ],
-            [
-                "7552efb55ce434d9"
-            ]
-        ]
-    },
-    {
-        "id": "824891ce5a64f8d2",
-        "type": "function",
-        "z": "e6abd59fcfef321c",
-        "g": "55a2600ea9f1ad33",
-        "name": "Slack message",
-        "func": "let device = msg.topic; \nlet Slack_msg = msg.payload + \" in device \" + msg.topic;\nmsg.payload = Slack_msg;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2020,
-        "y": 655.8333333333333,
-        "wires": [
-            [
-                "1fd8c5b1cd702af1"
-            ]
-        ]
-    },
-    {
-        "id": "1fd8c5b1cd702af1",
-        "type": "trigger",
-        "z": "e6abd59fcfef321c",
-        "g": "55a2600ea9f1ad33",
-        "name": "PT40 trigger Error",
-        "op1": "",
-        "op2": "PT40 connection reestablished",
-        "op1type": "pay",
-        "op2type": "str",
-        "duration": "5",
-        "extend": true,
-        "overrideDelay": false,
-        "units": "s",
-        "reset": "",
-        "bytopic": "all",
-        "topic": "topic",
-        "outputs": 2,
-        "x": 2250,
-        "y": 655.8333333333333,
-        "wires": [
-            [
-                "7552efb55ce434d9"
-            ],
-            [
-                "7552efb55ce434d9"
-            ]
-        ]
-    },
-    {
-        "id": "083584a3ae18ea57",
-        "type": "function",
-        "z": "e6abd59fcfef321c",
-        "g": "55a2600ea9f1ad33",
-        "name": "Slack message",
-        "func": "let device = msg.topic; \nlet Slack_msg = msg.payload + \" in device \" + msg.topic;\nmsg.payload = Slack_msg;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2020,
-        "y": 722.5,
-        "wires": [
-            [
-                "727c3803e2ec5b5e"
-            ]
-        ]
-    },
-    {
-        "id": "727c3803e2ec5b5e",
-        "type": "trigger",
-        "z": "e6abd59fcfef321c",
-        "g": "55a2600ea9f1ad33",
-        "name": "PT41 trigger Error",
-        "op1": "",
-        "op2": "PT41 connection reestablished",
-        "op1type": "pay",
-        "op2type": "str",
-        "duration": "5",
-        "extend": true,
-        "overrideDelay": false,
-        "units": "s",
-        "reset": "",
-        "bytopic": "all",
-        "topic": "topic",
-        "outputs": 2,
-        "x": 2250,
-        "y": 722.5,
-        "wires": [
-            [
-                "7552efb55ce434d9"
-            ],
-            [
-                "7552efb55ce434d9"
-            ]
-        ]
-    },
-    {
-        "id": "5287f8a262e1929b",
-        "type": "exec",
-        "z": "e6abd59fcfef321c",
-        "g": "c30986ce38207369",
-        "command": "sudo /usr/local/bin/Noderestart.sh",
-        "addpay": "",
-        "append": "",
-        "useSpawn": "true",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "Restart NodeRed",
-        "x": 1950,
-        "y": 940,
-        "wires": [
-            [
-                "bb89f7012cd76546"
-            ],
-            [
-                "ca0ca62d602e9b17"
-            ],
-            [
-                "26bf8097257d54e9"
-            ]
-        ]
-    },
-    {
-        "id": "bb89f7012cd76546",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "c30986ce38207369",
-        "name": "debug 380",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2610,
-        "y": 820,
-        "wires": []
-    },
-    {
-        "id": "ca0ca62d602e9b17",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "c30986ce38207369",
-        "name": "debug 381",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2590,
-        "y": 920,
-        "wires": []
-    },
-    {
-        "id": "26bf8097257d54e9",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "c30986ce38207369",
-        "name": "debug 382",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2610,
-        "y": 1040,
-        "wires": []
-    },
-    {
-        "id": "c3a3f1d2b90fd3ba",
-        "type": "ui_button",
-        "z": "e6abd59fcfef321c",
-        "g": "c30986ce38207369",
-        "name": "",
-        "group": "ca35f057d975c469",
-        "order": 4,
-        "width": "6",
-        "height": "3",
-        "passthru": false,
-        "label": "NODE RESTART",
-        "tooltip": "",
-        "color": "black",
-        "bgcolor": "red",
-        "className": "",
-        "icon": "fa-exclamation-triangle",
-        "payload": "true",
-        "payloadType": "bool",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 1710,
-        "y": 940,
-        "wires": [
-            [
-                "5287f8a262e1929b"
-            ]
-        ]
-    },
-    {
-        "id": "9964ddde3372b6af",
-        "type": "inject",
-        "z": "e6abd59fcfef321c",
-        "g": "41fbc4a5bc05d566",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "Lost connection in F1",
-        "payloadType": "str",
-        "x": 1630,
-        "y": 380,
-        "wires": [
-            [
-                "fbbd01b01c1450da"
-            ]
-        ]
-    },
-    {
-        "id": "1a8746eac5018c5e",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "41fbc4a5bc05d566",
-        "name": "debug 386",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2640,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "e5806a792ec3e21e",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "41fbc4a5bc05d566",
-        "name": "debug 387",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2660,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "34850114de3f2037",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "562d42446f5c13fe",
-        "name": "debug 388",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1330,
-        "y": 1840,
-        "wires": []
-    },
-    {
-        "id": "d0a86226f9f7ab15",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "562d42446f5c13fe",
-        "name": "debug 389",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1330,
-        "y": 1920,
-        "wires": []
-    },
-    {
-        "id": "34fc76c74c1070fc",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "562d42446f5c13fe",
-        "name": "debug 390",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 890,
-        "y": 1900,
-        "wires": []
-    },
-    {
-        "id": "87944d3f6babc85f",
-        "type": "subflow:757e68c1a00513c0",
-        "z": "e6abd59fcfef321c",
-        "g": "3371663af1f1de31",
-        "name": "",
-        "x": 1040,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "1b162a61a0223101",
-        "type": "function",
-        "z": "e6abd59fcfef321c",
-        "g": "7ee0705e60a282d7",
-        "name": "Counter F1 Errors",
-        "func": "let counter = flow.get(\"counterF1\") || 0;\nlet slack = \"Flow Controller Out lost. Closing EV\"\nlet cutoff = {\n    B0: 0,\n}\n\nif(counter == 5){\n    flow.set(\"counterF1\",0)\n    msg1  = {payload :  slack};\n    msg2 = {payload : cutoff};\n    return[msg1,msg2];\n}else{\n    counter++;\n    flow.set(\"counterF1\", counter);\n}\n\n\n",
-        "outputs": 2,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1010,
-        "y": 1400,
-        "wires": [
-            [
-                "8c14ec5c2d92d7de",
-                "c69f7c03438e955a"
-            ],
-            [
-                "706cbeee2fd9c6e7",
-                "2343828fdf8f4fe9"
-            ]
-        ]
-    },
-    {
-        "id": "8c14ec5c2d92d7de",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "7ee0705e60a282d7",
-        "name": "debug 391",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1210,
-        "y": 1300,
-        "wires": []
-    },
-    {
-        "id": "706cbeee2fd9c6e7",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "7ee0705e60a282d7",
-        "name": "debug 392",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1290,
-        "y": 1400,
-        "wires": []
-    },
-    {
-        "id": "a1a15cc65b6db945",
-        "type": "link in",
-        "z": "e6abd59fcfef321c",
-        "g": "7ee0705e60a282d7",
-        "name": "link in 12",
-        "links": [
-            "f32fe459ae7b1919"
-        ],
-        "x": 825,
-        "y": 1400,
-        "wires": [
-            [
-                "ef3de6b981427d4f"
-            ]
-        ]
-    },
-    {
-        "id": "59c7b0aa4cea625c",
-        "type": "comment",
-        "z": "e6abd59fcfef321c",
-        "g": "41fbc4a5bc05d566",
-        "name": "NOTE",
-        "info": "Due to the importance of this device in the system, we send the errors to a function node which controls the EV and send a slack security message. ",
-        "x": 2270,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "f32fe459ae7b1919",
-        "type": "link out",
-        "z": "e6abd59fcfef321c",
-        "g": "41fbc4a5bc05d566",
-        "name": "link out 10",
-        "mode": "link",
-        "links": [
-            "a1a15cc65b6db945"
-        ],
-        "x": 2165,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "c69f7c03438e955a",
-        "type": "subflow:757e68c1a00513c0",
-        "z": "e6abd59fcfef321c",
-        "g": "7ee0705e60a282d7",
-        "name": "",
-        "x": 1230,
-        "y": 1340,
-        "wires": []
-    },
-    {
-        "id": "2343828fdf8f4fe9",
-        "type": "link out",
-        "z": "e6abd59fcfef321c",
-        "g": "7ee0705e60a282d7",
-        "name": "SECURITY_F1Lost_OUT",
-        "mode": "link",
-        "links": [
-            "3fd98e13ec0e96e1",
-            "bb38b8c6467ffec9"
-        ],
-        "x": 1145,
-        "y": 1420,
-        "wires": [],
-        "info": "All this nodes makes two things: \n    1- Send the close cmd to the EV\n    2- Disable all CAEN buttons"
-    },
-    {
-        "id": "8d4d81295ce502bb",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "620445eb39a7c803",
-        "name": "debug 393",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1130,
-        "y": 960,
-        "wires": []
-    },
-    {
-        "id": "d35b4890bcab177f",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "620445eb39a7c803",
-        "name": "debug 394",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1130,
-        "y": 1120,
-        "wires": []
-    },
-    {
-        "id": "783616feaf337d83",
-        "type": "change",
-        "z": "e6abd59fcfef321c",
-        "g": "620445eb39a7c803",
-        "name": "MeasureValue",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "MeasureValue",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 520,
-        "y": 1000,
-        "wires": [
-            [
-                "9f69184cd504ca7a"
-            ]
-        ]
-    },
-    {
-        "id": "e3e551662cb02357",
-        "type": "change",
-        "z": "e6abd59fcfef321c",
-        "g": "620445eb39a7c803",
-        "name": "SetPointValue",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "SetPointValue",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 520,
-        "y": 1040,
-        "wires": [
-            [
-                "9f69184cd504ca7a"
-            ]
-        ]
-    },
-    {
-        "id": "9f69184cd504ca7a",
-        "type": "join",
-        "z": "e6abd59fcfef321c",
-        "g": "620445eb39a7c803",
-        "name": "",
-        "mode": "custom",
-        "build": "object",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "useparts": true,
-        "accumulate": false,
-        "timeout": "",
-        "count": "3",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 690,
-        "y": 1020,
-        "wires": [
-            [
-                "4ee6fa6909898506",
-                "5a92fc6fda24cbeb"
-            ]
-        ]
-    },
-    {
-        "id": "4ee6fa6909898506",
-        "type": "function",
-        "z": "e6abd59fcfef321c",
-        "g": "620445eb39a7c803",
-        "name": "Counter P1 Errors",
-        "func": "let measurepoint = msg.payload.MeasureValue;\nlet setpoint = msg.payload.SetPointValue;\nlet counter = flow.get(\"counterPout\");\nlet slack = \"Pressure Transmitter Out lost. Closing EV\";\n\nlet cutoff = {\n    B0: 0,\n}\nif(counter == 5){\n    if(measurepoint > (setpoint+60)){\n        flow.set(\"counterP1\",0)\n        msg1  = {payload :  slack};\n        msg2 = {payload : cutoff};\n        return [msg1, msg2];\n    }\n}else{\n    counter++;\n    flow.set(\"counterP1\", counter);\n}\n\n",
-        "outputs": 2,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "// El código añadido aquí se ejecutará una vez\n// cuando el nodo es iniciado.\n\n/**let slack =  \"Inizializating\"\n\nlet cutoff = {\n    B0: 0,\n}\nmsg1  = {payload :  slack};\nmsg2 = {payload : cutoff};\nreturn [msg1, msg2];\n**/",
-        "finalize": "",
-        "libs": [],
-        "x": 870,
-        "y": 1020,
-        "wires": [
-            [
-                "0835ab6c68a26fc7",
-                "8d4d81295ce502bb"
-            ],
-            [
-                "aee0884f702fdb5d",
-                "d35b4890bcab177f"
-            ]
-        ]
-    },
-    {
-        "id": "f654af9c022fa262",
-        "type": "change",
-        "z": "e6abd59fcfef321c",
-        "g": "620445eb39a7c803",
-        "name": "ConexionStatus",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "ConexionStatus",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 520,
-        "y": 960,
-        "wires": [
-            [
-                "9f69184cd504ca7a"
-            ]
-        ]
-    },
-    {
-        "id": "b00efcedbc0a4b49",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "3371663af1f1de31",
-        "name": "debug 395",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 590,
-        "y": 500,
-        "wires": []
-    },
-    {
-        "id": "8f8883506988ead9",
-        "type": "link out",
-        "z": "e6abd59fcfef321c",
-        "g": "55a2600ea9f1ad33",
-        "name": "link out 13",
-        "mode": "link",
-        "links": [
-            "cd01ae2940eb2b46"
-        ],
-        "x": 2175,
-        "y": 540,
-        "wires": []
-    },
-    {
-        "id": "5a92fc6fda24cbeb",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "620445eb39a7c803",
-        "name": "debug 396",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 780,
-        "y": 1140,
-        "wires": []
-    },
-    {
-        "id": "cd01ae2940eb2b46",
-        "type": "link in",
-        "z": "e6abd59fcfef321c",
-        "g": "620445eb39a7c803",
-        "name": "link in 13",
-        "links": [
-            "8f8883506988ead9"
-        ],
-        "x": 195,
-        "y": 960,
-        "wires": [
-            [
-                "c0e53128359a2b58"
-            ]
-        ]
-    },
-    {
-        "id": "f0269e30cb2df341",
-        "type": "link in",
-        "z": "e6abd59fcfef321c",
-        "g": "620445eb39a7c803",
-        "name": "SECURITY_P1Errors_MP_IN",
-        "links": [
-            "f9af0ddc7af0b7e9"
-        ],
-        "x": 195,
-        "y": 1000,
-        "wires": [
-            [
-                "232320c1c060b186"
-            ]
-        ]
-    },
-    {
-        "id": "8741c9f0cd4103a0",
-        "type": "link in",
-        "z": "e6abd59fcfef321c",
-        "g": "620445eb39a7c803",
-        "name": "SECURITY_P1Errors_SP_IN",
-        "links": [
-            "cd96bed145c6a88f"
-        ],
-        "x": 195,
-        "y": 1040,
-        "wires": [
-            [
-                "e9feabe4bfe76902"
-            ]
-        ]
-    },
-    {
-        "id": "bdcd76b1512c81e6",
-        "type": "link out",
-        "z": "e6abd59fcfef321c",
-        "g": "3371663af1f1de31",
-        "name": "SECURITY_OverPress_OUT",
-        "mode": "link",
-        "links": [
-            "bb38b8c6467ffec9"
-        ],
-        "x": 915,
-        "y": 400,
-        "wires": []
-    },
-    {
-        "id": "5f7608abef2eb829",
-        "type": "link out",
-        "z": "e6abd59fcfef321c",
-        "g": "3371663af1f1de31",
-        "name": "SECURITY_UnkPress_OUT",
-        "mode": "link",
-        "links": [
-            "bb38b8c6467ffec9"
-        ],
-        "x": 1015,
-        "y": 460,
-        "wires": []
-    },
-    {
-        "id": "aee0884f702fdb5d",
-        "type": "link out",
-        "z": "e6abd59fcfef321c",
-        "g": "620445eb39a7c803",
-        "name": "SECURITY_P1Lost_OUT",
-        "mode": "link",
-        "links": [
-            "bb38b8c6467ffec9",
-            "3fd98e13ec0e96e1"
-        ],
-        "x": 1075,
-        "y": 1080,
-        "wires": []
-    },
-    {
-        "id": "0835ab6c68a26fc7",
-        "type": "subflow:757e68c1a00513c0",
-        "z": "e6abd59fcfef321c",
-        "g": "620445eb39a7c803",
-        "name": "",
-        "x": 1150,
-        "y": 1000,
-        "wires": []
-    },
-    {
-        "id": "d2c3b8f3187054bb",
-        "type": "string",
-        "z": "e6abd59fcfef321c",
-        "g": "620445eb39a7c803",
-        "name": "ToFloat",
-        "methods": [
-            {
-                "name": "toFloat",
-                "params": [
-                    {
-                        "type": "num",
-                        "value": "2"
-                    }
-                ]
-            }
-        ],
-        "prop": "payload",
-        "propout": "payload",
-        "object": "msg",
-        "objectout": "msg",
-        "x": 360,
-        "y": 1040,
-        "wires": [
-            [
-                "e3e551662cb02357"
-            ]
-        ]
-    },
-    {
-        "id": "d7f7989255f2afdd",
-        "type": "ui_button",
-        "z": "e6abd59fcfef321c",
-        "g": "391b996bdb7d6683",
-        "name": "",
-        "group": "ca35f057d975c469",
-        "order": 1,
-        "width": "0",
-        "height": "0",
-        "passthru": false,
-        "label": "Filling mode",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "fa-solid fa-screwdriver-wrench",
-        "payload": "false",
-        "payloadType": "bool",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 1740,
-        "y": 1140,
-        "wires": [
-            [
-                "543391f0a31feed6"
-            ]
-        ]
-    },
-    {
-        "id": "62b9db947a562e86",
-        "type": "ui_led",
-        "z": "e6abd59fcfef321c",
-        "g": "391b996bdb7d6683",
-        "order": 3,
-        "group": "ca35f057d975c469",
-        "width": 0,
-        "height": 0,
-        "label": "Filling mode Status",
-        "labelPlacement": "left",
-        "labelAlignment": "left",
-        "colorForValue": [
-            {
-                "color": "#ff0000",
-                "value": "true",
-                "valueType": "bool"
-            },
-            {
-                "color": "#008000",
-                "value": "false",
-                "valueType": "bool"
-            }
-        ],
-        "allowColorForValueInMessage": false,
-        "shape": "circle",
-        "showGlow": true,
-        "name": "",
-        "x": 2270,
-        "y": 1300,
-        "wires": []
-    },
-    {
-        "id": "163794f4902ad2e5",
-        "type": "function",
-        "z": "e6abd59fcfef321c",
-        "g": "391b996bdb7d6683",
-        "name": "Filling mode Status",
-        "func": "msg.payload = global.get(\"OperationMode\")\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1950,
-        "y": 1300,
-        "wires": [
-            [
-                "62b9db947a562e86",
-                "d7212b13501c887d"
-            ]
-        ]
-    },
-    {
-        "id": "d6e7d1c94125f824",
-        "type": "ui_button",
-        "z": "e6abd59fcfef321c",
-        "g": "391b996bdb7d6683",
-        "name": "",
-        "group": "ca35f057d975c469",
-        "order": 2,
-        "width": "0",
-        "height": "0",
-        "passthru": true,
-        "label": "Normal mode",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "fa-screwdriver-wrench",
-        "payload": "true",
-        "payloadType": "bool",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 1750,
-        "y": 1180,
-        "wires": [
-            [
-                "543391f0a31feed6"
-            ]
-        ]
-    },
-    {
-        "id": "543391f0a31feed6",
-        "type": "function",
-        "z": "e6abd59fcfef321c",
-        "g": "391b996bdb7d6683",
-        "name": "Set filling/Normal Operation Mode",
-        "func": "let status = msg.payload; \nglobal.set(\"OperationMode\", status)\nlet slack;\nif(status ==0){\n    slack = \"Entering in filling mode. Caution, security system is deactivated\"\n}else {\n    slack = \"Entering in normal mode. Security system reactivated\"\n}\nmsg.payload = slack;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2030,
-        "y": 1140,
-        "wires": [
-            [
-                "19fa08406f0b6faf",
-                "b0e14941f4a63a9b"
-            ]
-        ]
-    },
-    {
-        "id": "19fa08406f0b6faf",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "391b996bdb7d6683",
-        "name": "debug 397",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2290,
-        "y": 1180,
-        "wires": []
-    },
-    {
-        "id": "d7212b13501c887d",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "391b996bdb7d6683",
-        "name": "debug 398",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2290,
-        "y": 1340,
-        "wires": []
-    },
-    {
-        "id": "773f89532f843c32",
-        "type": "inject",
-        "z": "e6abd59fcfef321c",
-        "g": "391b996bdb7d6683",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "1",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "true",
-        "payloadType": "bool",
-        "x": 1730,
-        "y": 1300,
-        "wires": [
-            [
-                "163794f4902ad2e5"
-            ]
-        ]
-    },
-    {
-        "id": "6353d1beb31dc2ac",
-        "type": "subflow:b2028c4cbef7824d",
-        "z": "e6abd59fcfef321c",
-        "g": "76c4585b9eeb7963",
-        "name": "",
-        "x": 360,
-        "y": 140,
-        "wires": [
-            [
-                "6bbb3888df1424f9",
-                "1fd2585a12fae590",
-                "7f8448992e9b1679"
-            ]
-        ]
-    },
-    {
-        "id": "019d3855c7ae28a4",
-        "type": "subflow:b2028c4cbef7824d",
-        "z": "e6abd59fcfef321c",
-        "g": "3371663af1f1de31",
-        "name": "",
-        "x": 165,
-        "y": 460,
-        "wires": [
-            [
-                "d8171e58fad45ca7"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "c0e53128359a2b58",
-        "type": "subflow:b2028c4cbef7824d",
-        "z": "e6abd59fcfef321c",
-        "g": "620445eb39a7c803",
-        "name": "",
-        "x": 255,
-        "y": 960,
-        "wires": [
-            [
-                "f654af9c022fa262"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "232320c1c060b186",
-        "type": "subflow:b2028c4cbef7824d",
-        "z": "e6abd59fcfef321c",
-        "g": "620445eb39a7c803",
-        "name": "",
-        "x": 255,
-        "y": 1000,
-        "wires": [
-            [
-                "783616feaf337d83"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "e9feabe4bfe76902",
-        "type": "subflow:b2028c4cbef7824d",
-        "z": "e6abd59fcfef321c",
-        "g": "620445eb39a7c803",
-        "name": "",
-        "x": 255,
-        "y": 1040,
-        "wires": [
-            [
-                "d2c3b8f3187054bb"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "ef3de6b981427d4f",
-        "type": "subflow:b2028c4cbef7824d",
-        "z": "e6abd59fcfef321c",
-        "g": "7ee0705e60a282d7",
-        "name": "",
-        "x": 885,
-        "y": 1400,
-        "wires": [
-            [
-                "1b162a61a0223101"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "b0e14941f4a63a9b",
-        "type": "subflow:757e68c1a00513c0",
-        "z": "e6abd59fcfef321c",
-        "g": "391b996bdb7d6683",
-        "name": "",
-        "x": 2310,
-        "y": 1140,
-        "wires": []
-    },
-    {
-        "id": "dce9edab465a8c69",
-        "type": "inject",
-        "z": "e6abd59fcfef321c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "00 00 * * *",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "true",
-        "payloadType": "bool",
-        "x": 2050,
-        "y": 1640,
-        "wires": [
-            [
-                "9134a180821f8287"
-            ]
-        ]
-    },
-    {
-        "id": "9134a180821f8287",
-        "type": "function",
-        "z": "e6abd59fcfef321c",
-        "name": "function 9",
-        "func": "global.set(\"counterF1\", 0);\nglobal.set(\"counterP1\", 0);\nmsg.payload = \"Reset all counters\"; \nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2270,
-        "y": 1640,
-        "wires": [
-            [
-                "0152a7e66c19d6bc"
-            ]
-        ]
-    },
-    {
-        "id": "0152a7e66c19d6bc",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "name": "debug 399",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2420,
-        "y": 1640,
-        "wires": []
-    },
-    {
-        "id": "7f8448992e9b1679",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "76c4585b9eeb7963",
-        "name": "debug 404",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 510,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "d59b9ae1436f0938",
-        "type": "comment",
-        "z": "e6abd59fcfef321c",
-        "g": "55a2600ea9f1ad33",
-        "name": "NOTE",
-        "info": "Due to the importance of this device in the system, we send the errors to a function node which controls the EV and send a slack security message. ",
-        "x": 2290,
-        "y": 560,
-        "wires": []
-    },
-    {
-        "id": "cc74e7a6843e4041",
-        "type": "comment",
-        "z": "e6abd59fcfef321c",
-        "g": "3371663af1f1de31",
-        "name": "",
-        "info": "En este caso no usamos el operation filter porque dentro del nodo function se elige una presion máxima en funcion del modo en el que estemos.",
-        "x": 190,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "303d6f81d83ee7a9",
-        "type": "link in",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "SECURITY_GasLoss_SP",
-        "links": [
-            "3e86acf3b73d06f9"
-        ],
-        "x": 95,
-        "y": 760,
-        "wires": [
-            [
-                "5e6c35157f92db68"
-            ]
-        ]
-    },
-    {
-        "id": "3803a08da2f07451",
-        "type": "change",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "MeasureValue",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "MeasureValue",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 520,
-        "y": 720,
-        "wires": [
-            [
-                "4ca65ca9d7c45615",
-                "fa9c83c87456b9bc"
-            ]
-        ]
-    },
-    {
-        "id": "073a1939cf1526f7",
-        "type": "change",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "SetPointValue",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "SetPointValue",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 520,
-        "y": 760,
-        "wires": [
-            [
-                "4ca65ca9d7c45615",
-                "3669a2a39e38427d"
-            ]
-        ]
-    },
-    {
-        "id": "4ca65ca9d7c45615",
-        "type": "join",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "",
-        "mode": "custom",
-        "build": "object",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "useparts": true,
-        "accumulate": false,
-        "timeout": "",
-        "count": "4",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 710,
-        "y": 700,
-        "wires": [
-            [
-                "0f48c8c64cf0ec4a",
-                "09ea125ce0a0cf64"
-            ]
-        ]
-    },
-    {
-        "id": "0f48c8c64cf0ec4a",
-        "type": "function",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "Gas Loss control",
-        "func": "let measurepoint = msg.payload.MeasureValue;\nlet setpoint = msg.payload.SetPointValue;\nlet poutlet = msg.payload.Poutlet; \nlet pt42 = msg.payload.Pt42;\nlet slack1 =  \"Warning, there is a gas loss in detector gas system\";\nlet slack2 = \"Warning, there is not enough gas pressure at laboratory gas line filling the detector\";\nlet GL_status = flow.get(\"GasLossStatus\");\n\nlet cutoff = {\n    B0: 0,\n}\n\nif(!GL_status){\n    if(measurepoint < setpoint){\n        flow.set(\"GasLossStatus\",true);\n        if ((poutlet-100) < pt42){\n            msg1  = {payload :  slack1};\n            msg2 = {payload : cutoff};\n            return [msg1, msg2];\n        }else{\n            msg1  = {payload :  slack2};\n            msg2 = {payload : cutoff};\n            return [msg1, msg2];\n        }\n    }\n} else{\n     if(measurepoint > setpoint){\n        flow.set(\"GasLossStatus\",false);\n        msg1  = {payload :  \"Measure Point & Set Point return to normal flow values.\"};\n    return msg1;\n    }\n}\n\n \n",
-        "outputs": 2,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "// El código añadido aquí se ejecutará una vez\n// cuando el nodo es iniciado.\n\n/**let slack =  \"Inizializating\"\n\nlet cutoff = {\n    B0: 0,\n}\nmsg1  = {payload :  slack};\nmsg2 = {payload : cutoff};\nreturn [msg1, msg2];\n**/",
-        "finalize": "",
-        "libs": [],
-        "x": 890,
-        "y": 700,
-        "wires": [
-            [
-                "c0d6ac37eec31aee"
-            ],
-            [
-                "0d4a627e546a4726",
-                "ea1854c32acc8aa5"
-            ]
-        ]
-    },
-    {
-        "id": "5e6c35157f92db68",
-        "type": "subflow:b2028c4cbef7824d",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "",
-        "x": 185,
-        "y": 760,
-        "wires": [
-            [
-                "073a1939cf1526f7"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "04eb246a4eb5049a",
-        "type": "subflow:b2028c4cbef7824d",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "",
-        "x": 185,
-        "y": 720,
-        "wires": [
-            [
-                "bc7c49e3b9054f94"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "95e212ba778e4d95",
-        "type": "link in",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "SECURITY_GasLoss_MP",
-        "links": [
-            "1ce178dae85e25c3"
-        ],
-        "x": 95,
-        "y": 720,
-        "wires": [
-            [
-                "04eb246a4eb5049a"
-            ]
-        ]
-    },
-    {
-        "id": "96b968d48f12cbbd",
-        "type": "change",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "Poutlet",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "Poutlet",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 500,
-        "y": 640,
-        "wires": [
-            [
-                "4ca65ca9d7c45615",
-                "fc27d32fada6e25e"
-            ]
-        ]
-    },
-    {
-        "id": "ebc4e41dd17f4bdf",
-        "type": "change",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "Pt42",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "Pt42",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 490,
-        "y": 680,
-        "wires": [
-            [
-                "4ca65ca9d7c45615",
-                "a44cf4cdcceb5896"
-            ]
-        ]
-    },
-    {
-        "id": "e21d415ed3e24a95",
-        "type": "link in",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "SECURITY_GasLoss_Poutlet",
-        "links": [
-            "3a912f03d0333c28"
-        ],
-        "x": 95,
-        "y": 640,
-        "wires": [
-            [
-                "a517287cc097ff7d"
-            ]
-        ]
-    },
-    {
-        "id": "8f1ce291c8ede37d",
-        "type": "link in",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "SECURITY_GasLoss_Pt42",
-        "links": [
-            "7c89d9fcf5706089"
-        ],
-        "x": 95,
-        "y": 680,
-        "wires": [
-            [
-                "ced5d317deef3773"
-            ]
-        ]
-    },
-    {
-        "id": "ced5d317deef3773",
-        "type": "subflow:b2028c4cbef7824d",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "",
-        "x": 185,
-        "y": 680,
-        "wires": [
-            [
-                "71e77d75e4f0adad"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "a517287cc097ff7d",
-        "type": "subflow:b2028c4cbef7824d",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "",
-        "x": 185,
-        "y": 640,
-        "wires": [
-            [
-                "96b968d48f12cbbd"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "c0d6ac37eec31aee",
-        "type": "rbe",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "Valves stop filter",
-        "func": "rbe",
-        "gap": "",
-        "start": "",
-        "inout": "out",
-        "septopics": true,
-        "property": "payload",
-        "topi": "topic",
-        "x": 1140,
-        "y": 680,
-        "wires": [
-            [
-                "ad35c595e82e22c2",
-                "12ded573c072af5e"
-            ]
-        ],
-        "info": "This node is only to allow only one msg to slack, if stop filter wasn't here, slack will become a spam channel"
-    },
-    {
-        "id": "12ded573c072af5e",
-        "type": "subflow:757e68c1a00513c0",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "",
-        "x": 1360,
-        "y": 660,
-        "wires": []
-    },
-    {
-        "id": "ad35c595e82e22c2",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "debug 412",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1330,
-        "y": 620,
-        "wires": []
-    },
-    {
-        "id": "0d4a627e546a4726",
-        "type": "link out",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "SECURITY_UnkPress_OUT",
-        "mode": "link",
-        "links": [
-            "bb38b8c6467ffec9",
-            "3fd98e13ec0e96e1"
-        ],
-        "x": 1065,
-        "y": 740,
-        "wires": []
-    },
-    {
-        "id": "ea1854c32acc8aa5",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1065,
-        "y": 780,
-        "wires": [],
-        "l": false
-    },
-    {
-        "id": "fc27d32fada6e25e",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "debug 413",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 635,
-        "y": 620,
-        "wires": [],
-        "l": false
-    },
-    {
-        "id": "a44cf4cdcceb5896",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "debug 414",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 635,
-        "y": 660,
-        "wires": [],
-        "l": false
-    },
-    {
-        "id": "fa9c83c87456b9bc",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "debug 415",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 685,
-        "y": 740,
-        "wires": [],
-        "l": false
-    },
-    {
-        "id": "3669a2a39e38427d",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "debug 416",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 665,
-        "y": 800,
-        "wires": [],
-        "l": false
-    },
-    {
-        "id": "09ea125ce0a0cf64",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "debug 417",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 765,
-        "y": 640,
-        "wires": [],
-        "l": false
-    },
-    {
-        "id": "9a59ded7f6e6c845",
-        "type": "string",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "ToFloat",
-        "methods": [
-            {
-                "name": "toFloat",
-                "params": [
-                    {
-                        "type": "num",
-                        "value": "2"
-                    }
-                ]
-            }
-        ],
-        "prop": "payload",
-        "propout": "payload",
-        "object": "msg",
-        "objectout": "msg",
-        "x": 300,
-        "y": 760,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "bc7c49e3b9054f94",
-        "type": "string",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "ToFloat",
-        "methods": [
-            {
-                "name": "toFloat",
-                "params": [
-                    {
-                        "type": "num",
-                        "value": "2"
-                    }
-                ]
-            }
-        ],
-        "prop": "payload",
-        "propout": "payload",
-        "object": "msg",
-        "objectout": "msg",
-        "x": 300,
-        "y": 720,
-        "wires": [
-            [
-                "3803a08da2f07451"
-            ]
-        ]
-    },
-    {
-        "id": "71e77d75e4f0adad",
-        "type": "string",
-        "z": "e6abd59fcfef321c",
-        "g": "765db78399ea7c11",
-        "name": "ToFloat",
-        "methods": [
-            {
-                "name": "toFloat",
-                "params": [
-                    {
-                        "type": "num",
-                        "value": "2"
-                    }
-                ]
-            }
-        ],
-        "prop": "payload",
-        "propout": "payload",
-        "object": "msg",
-        "objectout": "msg",
-        "x": 300,
-        "y": 680,
-        "wires": [
-            [
-                "ebc4e41dd17f4bdf"
-            ]
-        ]
-    },
-    {
-        "id": "a356a8b1c6e00e63",
-        "type": "inject",
-        "z": "e6abd59fcfef321c",
-        "g": "391b996bdb7d6683",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "1",
-        "payloadType": "str",
-        "x": 1720,
-        "y": 1240,
-        "wires": [
-            [
-                "d6e7d1c94125f824"
-            ]
-        ]
-    },
-    {
-        "id": "c3c6c031742647a3",
-        "type": "inject",
-        "z": "89bf6cfc2721dc84",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "*IDN?",
-        "payloadType": "str",
-        "x": 420,
-        "y": 280,
-        "wires": [
-            [
-                "84c7d8f7789801d5"
-            ]
-        ]
-    },
-    {
-        "id": "84c7d8f7789801d5",
-        "type": "serial request",
-        "z": "89bf6cfc2721dc84",
-        "name": "",
-        "serial": "ea290f1e4e92d3ec",
-        "x": 610,
-        "y": 280,
-        "wires": [
-            [
-                "bfc38bbaa4d48257"
-            ]
-        ]
-    },
-    {
-        "id": "bfc38bbaa4d48257",
-        "type": "debug",
-        "z": "89bf6cfc2721dc84",
-        "name": "debug 292",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 800,
-        "y": 280,
-        "wires": []
-    },
-    {
         "id": "024399cf34f61632",
         "type": "inject",
         "z": "7184b44879b683fb",
@@ -33354,7 +30218,7 @@
         "dot": false,
         "ymin": "0",
         "ymax": "6",
-        "removeOlder": "2",
+        "removeOlder": "10",
         "removeOlderPoints": "100",
         "removeOlderUnit": "60",
         "cutout": 0,
@@ -33421,9 +30285,9 @@
         "dot": false,
         "ymin": "0",
         "ymax": "6",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
+        "removeOlder": "10",
+        "removeOlderPoints": "100",
+        "removeOlderUnit": "60",
         "cutout": 0,
         "useOneColor": false,
         "useUTC": false,
@@ -33466,9 +30330,9 @@
         "dot": false,
         "ymin": "0",
         "ymax": "10",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
+        "removeOlder": "10",
+        "removeOlderPoints": "100",
+        "removeOlderUnit": "60",
         "cutout": 0,
         "useOneColor": false,
         "useUTC": false,
@@ -34207,6 +31071,3075 @@
             [
                 "830fae031f8f0118",
                 "7047fe49aa9ab855"
+            ]
+        ]
+    },
+    {
+        "id": "9fd6b6c8a861dded",
+        "type": "function",
+        "z": "e6abd59fcfef321c",
+        "d": true,
+        "g": "76c4585b9eeb7963",
+        "name": "Electrovalves Security",
+        "func": "var control = msg.payload.B0;\nvar booleano = (control === 1);\nreturn booleano;\n/*msg.enabled = booleano; \nmsg.payload = null;\nif (booleano == 1){\n    return msg;\n}*/",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 60,
+        "wires": [
+            [
+                "322432cccfc7e68f"
+            ]
+        ]
+    },
+    {
+        "id": "1fd2585a12fae590",
+        "type": "function",
+        "z": "e6abd59fcfef321c",
+        "g": "76c4585b9eeb7963",
+        "name": "Electrovalves Message",
+        "func": "let lastValue = flow.get('EVstatus');\nlet newValue = msg.payload.B0;\nnewValue = parseInt(newValue);\nvar message;\n\nif (typeof lastValue === 'undefined') {\n    flow.set('EVstatus', newValue);\n    // Opcionalmente puedes enviar un mensaje de inicialización\n    //return null; // o return msg si quieres notificar la primera lectura\n}\n\n\nif(lastValue === 1 && newValue === 0){\n    message = \"Closing Electrovalves\";\n    flow.set('EVstatus', newValue);\n    msg.payload = message;\n    return msg;\n}\n\nif(lastValue === 0 && newValue === 1){\n    message = \"Opening Electrovalves\";\n    flow.set('EVstatus', newValue);\n    msg.payload = message;\n    return msg;\n}\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 160,
+        "wires": [
+            [
+                "5a23170f6bb6ae26"
+            ]
+        ]
+    },
+    {
+        "id": "322432cccfc7e68f",
+        "type": "link out",
+        "z": "e6abd59fcfef321c",
+        "g": "76c4585b9eeb7963",
+        "name": "Electrovalves Security",
+        "mode": "link",
+        "links": [
+            "6095c869467f0336"
+        ],
+        "x": 1135,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "5a23170f6bb6ae26",
+        "type": "subflow:757e68c1a00513c0",
+        "z": "e6abd59fcfef321c",
+        "g": "76c4585b9eeb7963",
+        "name": "",
+        "x": 990,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "3fd98e13ec0e96e1",
+        "type": "link in",
+        "z": "e6abd59fcfef321c",
+        "g": "76c4585b9eeb7963",
+        "name": "ELECTROVALVES SECURITY IN",
+        "links": [
+            "423c8255f686304e",
+            "d3f5abbd72747d91",
+            "d5403ff111f9bb50",
+            "f5339029adcd5f3f",
+            "8309cfbe3ced242b",
+            "2894a4759e842a2a",
+            "c83f14828ab123c0",
+            "2343828fdf8f4fe9",
+            "ac3304c5d638e602",
+            "e025cfac9c7a8862",
+            "bdcd76b1512c81e6",
+            "5f7608abef2eb829",
+            "aee0884f702fdb5d",
+            "0d4a627e546a4726"
+        ],
+        "x": 205,
+        "y": 140,
+        "wires": [
+            [
+                "9fd6b6c8a861dded",
+                "6353d1beb31dc2ac"
+            ]
+        ]
+    },
+    {
+        "id": "6bbb3888df1424f9",
+        "type": "change",
+        "z": "e6abd59fcfef321c",
+        "g": "76c4585b9eeb7963",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "($boolean(payload.B0))",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 100,
+        "wires": [
+            [
+                "4752522bea1e8996"
+            ]
+        ]
+    },
+    {
+        "id": "4752522bea1e8996",
+        "type": "rbe",
+        "z": "e6abd59fcfef321c",
+        "g": "76c4585b9eeb7963",
+        "name": "Valves stop filter",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "enabled",
+        "topi": "topic",
+        "x": 940,
+        "y": 100,
+        "wires": [
+            [
+                "322432cccfc7e68f"
+            ]
+        ]
+    },
+    {
+        "id": "be535f08413db52a",
+        "type": "link in",
+        "z": "e6abd59fcfef321c",
+        "g": "3371663af1f1de31",
+        "name": "SECURITY_Overpressure_MP",
+        "links": [
+            "3a912f03d0333c28"
+        ],
+        "x": 95,
+        "y": 380,
+        "wires": [
+            [
+                "577a892ca67462ce",
+                "36c34ce22f4881a6"
+            ]
+        ]
+    },
+    {
+        "id": "577a892ca67462ce",
+        "type": "change",
+        "z": "e6abd59fcfef321c",
+        "g": "3371663af1f1de31",
+        "name": "MeasureValue",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "MeasureValue",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 420,
+        "wires": [
+            [
+                "af0b63fd12d2077f"
+            ]
+        ]
+    },
+    {
+        "id": "2a9b31b2b142a8a4",
+        "type": "change",
+        "z": "e6abd59fcfef321c",
+        "g": "3371663af1f1de31",
+        "name": "SetPointValue",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "SetPointValue",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 460,
+        "wires": [
+            [
+                "af0b63fd12d2077f",
+                "b00efcedbc0a4b49"
+            ]
+        ]
+    },
+    {
+        "id": "af0b63fd12d2077f",
+        "type": "join",
+        "z": "e6abd59fcfef321c",
+        "g": "3371663af1f1de31",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": true,
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 640,
+        "y": 440,
+        "wires": [
+            [
+                "517355d6fce400fb"
+            ]
+        ]
+    },
+    {
+        "id": "517355d6fce400fb",
+        "type": "function",
+        "z": "e6abd59fcfef321c",
+        "g": "3371663af1f1de31",
+        "name": "Unkown pressure Control",
+        "func": "let measurepoint = msg.payload.MeasureValue;\nlet setpoint = msg.payload.SetPointValue;\nlet slack =  \"Measure point is higher than Set point. Closing EV\"\nlet SMP_status = flow.get(\"SetMeasStatus\");\n\nlet cutoff = {\n    B0: 0,\n}\n\nif(!SMP_status){\n    if(measurepoint > (setpoint+40)){\n        flow.set(\"SetMeasStatus\",true);\n        msg1  = {payload :  slack};\n        msg2 = {payload : cutoff};\n        return [msg1, msg2];\n    }\n} else{\n     if(measurepoint < (setpoint+40)){\n        flow.set(\"SetMeasStatus\",false);\n        msg1  = {payload :  \"Measure Point & Set Point return to normal values.\"};\n    return msg1;\n    }\n}\n\n \n",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// El código añadido aquí se ejecutará una vez\n// cuando el nodo es iniciado.\n\n/**let slack =  \"Inizializating\"\n\nlet cutoff = {\n    B0: 0,\n}\nmsg1  = {payload :  slack};\nmsg2 = {payload : cutoff};\nreturn [msg1, msg2];\n**/",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 440,
+        "wires": [
+            [
+                "f0b41290870e3071"
+            ],
+            [
+                "96b895c1ec73b202",
+                "5f7608abef2eb829"
+            ]
+        ]
+    },
+    {
+        "id": "c44dd26d32c55e45",
+        "type": "subflow:757e68c1a00513c0",
+        "z": "e6abd59fcfef321c",
+        "g": "3371663af1f1de31",
+        "name": "",
+        "x": 1310,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "29b5138b8fd0c272",
+        "type": "link in",
+        "z": "e6abd59fcfef321c",
+        "g": "3371663af1f1de31",
+        "name": "SECURITY_Overpressure_SP",
+        "links": [
+            "cd96bed145c6a88f"
+        ],
+        "x": 95,
+        "y": 460,
+        "wires": [
+            [
+                "019d3855c7ae28a4"
+            ]
+        ]
+    },
+    {
+        "id": "96b895c1ec73b202",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "3371663af1f1de31",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1015,
+        "y": 500,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "2c9342f778a4dcb2",
+        "type": "subflow:757e68c1a00513c0",
+        "z": "e6abd59fcfef321c",
+        "g": "f6d33217e09e6ea2",
+        "name": "",
+        "x": 750,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "7b20f3b40c19a422",
+        "type": "link in",
+        "z": "e6abd59fcfef321c",
+        "g": "f6d33217e09e6ea2",
+        "name": "DAQ_mclient_diskspace",
+        "links": [
+            "03f8ab2d0d6e8bed"
+        ],
+        "x": 555,
+        "y": 1540,
+        "wires": [
+            [
+                "2c9342f778a4dcb2"
+            ]
+        ]
+    },
+    {
+        "id": "36c34ce22f4881a6",
+        "type": "function",
+        "z": "e6abd59fcfef321c",
+        "g": "3371663af1f1de31",
+        "name": "Security cut-off: 1450mbar ",
+        "func": "let cutoffpoint = {\n    Fmode: 1500,  // Para cambiar el valor de presión máxima en modo llenado\n    Nmode: 1450   // Para cambiar el valor de presión máxima en modo normal\n};\n\nlet mode = global.get(\"OperationMode\"); // true o false\nlet measurepoint = msg.payload;\nlet slack = \"OverPressure in the chamber. Closing EV\";\nlet OP_status = flow.get(\"OverPressStatus\") || false;\nlet cutoff = {\n    Q0: 0,\n};\n\nlet msg1, msg2;\n\nswitch (mode) {\n    case true:  // Modo normal\n        if (!OP_status) {\n            if (measurepoint > cutoffpoint.Nmode) {\n                flow.set(\"OverPressStatus\", true);\n                msg1 = { payload: slack };\n                msg2 = { payload: cutoff };\n                return [msg1, msg2];\n            }\n        } else {\n            if (measurepoint < cutoffpoint.Nmode) {\n                flow.set(\"OverPressStatus\", false);\n                msg1 = { payload: \"Pressure Reestablished\" };\n                return [msg1];\n            }\n        }\n        break;\n\n    case false:  // Modo llenado\n        if (!OP_status) {\n            if (measurepoint > cutoffpoint.Fmode) {\n                flow.set(\"OverPressStatus\", true);\n                msg1 = { payload: slack };\n                msg2 = { payload: cutoff };\n                return [msg1, msg2];\n            }\n        } else {\n            if (measurepoint < cutoffpoint.Fmode) {\n                flow.set(\"OverPressStatus\", false);\n                msg1 = { payload: \"Pressure Reestablished\" };\n                return [msg1];\n            }\n        }\n        break;\n}\n\nreturn null;\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 380,
+        "wires": [
+            [
+                "8fcc41617a7ef994",
+                "87944d3f6babc85f"
+            ],
+            [
+                "bdcd76b1512c81e6"
+            ]
+        ]
+    },
+    {
+        "id": "8fcc41617a7ef994",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "3371663af1f1de31",
+        "name": "debug 169",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 925,
+        "y": 300,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "44293598916d4fc1",
+        "type": "link in",
+        "z": "e6abd59fcfef321c",
+        "d": true,
+        "g": "b4e33e11eed53568",
+        "name": "BGA_BG0I",
+        "links": [
+            "c7be7450f90f3c85"
+        ],
+        "x": 145,
+        "y": 1440,
+        "wires": [
+            [
+                "f04398bc1c50af17"
+            ]
+        ]
+    },
+    {
+        "id": "5728ead30d8447cc",
+        "type": "link in",
+        "z": "e6abd59fcfef321c",
+        "d": true,
+        "g": "b4e33e11eed53568",
+        "name": "BGA_PLIMIT",
+        "links": [
+            "e925121153aa7594"
+        ],
+        "x": 145,
+        "y": 1480,
+        "wires": [
+            [
+                "deb8b7288de2adac"
+            ]
+        ]
+    },
+    {
+        "id": "4d092cf05d395935",
+        "type": "link in",
+        "z": "e6abd59fcfef321c",
+        "d": true,
+        "g": "b4e33e11eed53568",
+        "name": "BGA_TLIMIT",
+        "links": [
+            "d3bdb64732d5588f"
+        ],
+        "x": 145,
+        "y": 1520,
+        "wires": [
+            [
+                "a7295e915e259258"
+            ]
+        ]
+    },
+    {
+        "id": "47a746a20e8129ad",
+        "type": "link in",
+        "z": "e6abd59fcfef321c",
+        "d": true,
+        "g": "b4e33e11eed53568",
+        "name": "BGA_%LIMIT",
+        "links": [
+            "887024a79833a324"
+        ],
+        "x": 145,
+        "y": 1560,
+        "wires": [
+            [
+                "37f05775bddd4633"
+            ]
+        ]
+    },
+    {
+        "id": "f04398bc1c50af17",
+        "type": "subflow:757e68c1a00513c0",
+        "z": "e6abd59fcfef321c",
+        "d": true,
+        "g": "b4e33e11eed53568",
+        "name": "",
+        "x": 310,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "deb8b7288de2adac",
+        "type": "subflow:757e68c1a00513c0",
+        "z": "e6abd59fcfef321c",
+        "d": true,
+        "g": "b4e33e11eed53568",
+        "name": "",
+        "x": 310,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "a7295e915e259258",
+        "type": "subflow:757e68c1a00513c0",
+        "z": "e6abd59fcfef321c",
+        "d": true,
+        "g": "b4e33e11eed53568",
+        "name": "",
+        "x": 310,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "37f05775bddd4633",
+        "type": "subflow:757e68c1a00513c0",
+        "z": "e6abd59fcfef321c",
+        "d": true,
+        "g": "b4e33e11eed53568",
+        "name": "",
+        "x": 310,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "3d126903d143c2d5",
+        "type": "inject",
+        "z": "e6abd59fcfef321c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": ":020301",
+        "payloadType": "str",
+        "x": 1580,
+        "y": 1820,
+        "wires": [
+            [
+                "4f56ca5c40de78e2"
+            ]
+        ]
+    },
+    {
+        "id": "4f56ca5c40de78e2",
+        "type": "serial request",
+        "z": "e6abd59fcfef321c",
+        "name": "BK-M1 Query",
+        "serial": "488efe6f06074f88",
+        "x": 1760,
+        "y": 1820,
+        "wires": [
+            [
+                "f2cbd499ebae54f4"
+            ]
+        ]
+    },
+    {
+        "id": "f2cbd499ebae54f4",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "name": "debug 281",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1930,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "d8171e58fad45ca7",
+        "type": "string",
+        "z": "e6abd59fcfef321c",
+        "g": "3371663af1f1de31",
+        "name": "ToFloat",
+        "methods": [
+            {
+                "name": "toFloat",
+                "params": [
+                    {
+                        "type": "num",
+                        "value": "2"
+                    }
+                ]
+            }
+        ],
+        "prop": "payload",
+        "propout": "payload",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 310,
+        "y": 460,
+        "wires": [
+            [
+                "2a9b31b2b142a8a4"
+            ]
+        ]
+    },
+    {
+        "id": "16f6680cafaf35a2",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "3371663af1f1de31",
+        "name": "debug 332",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1280,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "f0b41290870e3071",
+        "type": "rbe",
+        "z": "e6abd59fcfef321c",
+        "g": "3371663af1f1de31",
+        "name": "Valves stop filter",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 1090,
+        "y": 420,
+        "wires": [
+            [
+                "16f6680cafaf35a2",
+                "c44dd26d32c55e45"
+            ]
+        ],
+        "info": "This node is only to allow only one msg to slack, if stop filter wasn't here, slack will become a spam channel"
+    },
+    {
+        "id": "e5eec86ba63485ba",
+        "type": "link in",
+        "z": "e6abd59fcfef321c",
+        "g": "562d42446f5c13fe",
+        "name": "SECURITY_LV_IN",
+        "links": [
+            "84266ace58e71dcc",
+            "7047fe49aa9ab855"
+        ],
+        "x": 435,
+        "y": 1760,
+        "wires": [
+            [
+                "4f6857f853b7c165"
+            ]
+        ]
+    },
+    {
+        "id": "f69e204694af3fca",
+        "type": "trigger",
+        "z": "e6abd59fcfef321c",
+        "g": "562d42446f5c13fe",
+        "name": "MULTICOMP trigger Error",
+        "op1": "",
+        "op2": "Multicomp connection reestablished",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "5",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 2,
+        "x": 1020,
+        "y": 1700,
+        "wires": [
+            [
+                "6d16a1c1441e15df"
+            ],
+            [
+                "6d16a1c1441e15df"
+            ]
+        ]
+    },
+    {
+        "id": "2aede621314a58a6",
+        "type": "function",
+        "z": "e6abd59fcfef321c",
+        "g": "562d42446f5c13fe",
+        "name": "Slack message",
+        "func": "let device = msg.topic; \nlet Slack_msg = msg.payload + \" in device \" + msg.topic;\nmsg.payload = Slack_msg;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 1700,
+        "wires": [
+            [
+                "f69e204694af3fca"
+            ]
+        ]
+    },
+    {
+        "id": "6d16a1c1441e15df",
+        "type": "slack",
+        "z": "e6abd59fcfef321c",
+        "g": "562d42446f5c13fe",
+        "name": "PRIVATE CHAT IAXO",
+        "channelURL": "https://hooks.slack.com/services/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",
+        "username": "IAXO D0 BOT",
+        "emojiIcon": "",
+        "channel": "",
+        "x": 1370,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "4f6857f853b7c165",
+        "type": "switch",
+        "z": "e6abd59fcfef321c",
+        "g": "562d42446f5c13fe",
+        "name": "Filter by topic",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "MULTICOMP",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "RIGOL",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 560,
+        "y": 1760,
+        "wires": [
+            [
+                "2aede621314a58a6",
+                "3f55ea058988edbf"
+            ],
+            [
+                "9e75477aca5b6168",
+                "b9e587de20193b1e"
+            ]
+        ]
+    },
+    {
+        "id": "9e75477aca5b6168",
+        "type": "function",
+        "z": "e6abd59fcfef321c",
+        "g": "562d42446f5c13fe",
+        "name": "Slack message",
+        "func": "let device = msg.topic; \nlet Slack_msg = msg.payload + \" in device \" + msg.topic;\nmsg.payload = Slack_msg;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 1820,
+        "wires": [
+            [
+                "34fc76c74c1070fc",
+                "b9370e58fa71b910"
+            ]
+        ]
+    },
+    {
+        "id": "b9370e58fa71b910",
+        "type": "trigger",
+        "z": "e6abd59fcfef321c",
+        "g": "562d42446f5c13fe",
+        "name": "Rigol trigger Error",
+        "op1": "",
+        "op2": "Rigol connection reestablished",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "5",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "topic",
+        "topic": "topic",
+        "outputs": 2,
+        "x": 1030,
+        "y": 1820,
+        "wires": [
+            [
+                "6d16a1c1441e15df",
+                "34850114de3f2037"
+            ],
+            [
+                "d0a86226f9f7ab15"
+            ]
+        ]
+    },
+    {
+        "id": "b9e587de20193b1e",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "562d42446f5c13fe",
+        "name": "debug 371",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 1900,
+        "wires": []
+    },
+    {
+        "id": "3f55ea058988edbf",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "562d42446f5c13fe",
+        "name": "debug 372",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "7f96f1a1caaab95d",
+        "type": "link in",
+        "z": "e6abd59fcfef321c",
+        "g": "41fbc4a5bc05d566",
+        "name": "SECURITY_Controllers_IN",
+        "links": [
+            "715fad08a1a4506b",
+            "f7ae3dec57c5ad9c"
+        ],
+        "x": 1635,
+        "y": 180,
+        "wires": [
+            [
+                "9dfe132e9be90487"
+            ]
+        ]
+    },
+    {
+        "id": "bcdc89bcd08b63cc",
+        "type": "trigger",
+        "z": "e6abd59fcfef321c",
+        "g": "41fbc4a5bc05d566",
+        "name": "PCV361 trigger Error",
+        "op1": "",
+        "op2": "PCV361 connection reestablished",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "5",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 2,
+        "x": 2240,
+        "y": 40,
+        "wires": [
+            [
+                "493da01896a6b160"
+            ],
+            [
+                "493da01896a6b160"
+            ]
+        ]
+    },
+    {
+        "id": "40b47fa657f6c6df",
+        "type": "function",
+        "z": "e6abd59fcfef321c",
+        "g": "41fbc4a5bc05d566",
+        "name": "Slack message",
+        "func": "let device = msg.topic; \nlet Slack_msg = msg.payload + \" in device \" + msg.topic;\nmsg.payload = Slack_msg;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 40,
+        "wires": [
+            [
+                "bcdc89bcd08b63cc"
+            ]
+        ]
+    },
+    {
+        "id": "493da01896a6b160",
+        "type": "slack",
+        "z": "e6abd59fcfef321c",
+        "g": "41fbc4a5bc05d566",
+        "name": "PRIVATE CHAT IAXO",
+        "channelURL": "https://hooks.slack.com/services/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",
+        "username": "IAXO D0 BOT",
+        "emojiIcon": "",
+        "channel": "",
+        "x": 2700,
+        "y": 180,
+        "wires": [],
+        "info": "This is the URL of a private chat. Only for technician\n"
+    },
+    {
+        "id": "9dfe132e9be90487",
+        "type": "switch",
+        "z": "e6abd59fcfef321c",
+        "g": "41fbc4a5bc05d566",
+        "name": "Filter by topic",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "PCV361",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "FQT360",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "FQT341",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "FQT340",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 1770,
+        "y": 180,
+        "wires": [
+            [
+                "40b47fa657f6c6df"
+            ],
+            [
+                "04bfc187b8d7fb9e"
+            ],
+            [
+                "7e6a50958259834c"
+            ],
+            [
+                "31dc42753219dceb"
+            ]
+        ]
+    },
+    {
+        "id": "04bfc187b8d7fb9e",
+        "type": "function",
+        "z": "e6abd59fcfef321c",
+        "g": "41fbc4a5bc05d566",
+        "name": "Slack message",
+        "func": "let device = msg.topic; \nlet Slack_msg = msg.payload + \" in device \" + msg.topic;\nmsg.payload = Slack_msg;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2010,
+        "y": 149.16666666666663,
+        "wires": [
+            [
+                "fbbd01b01c1450da",
+                "f32fe459ae7b1919"
+            ]
+        ]
+    },
+    {
+        "id": "fbbd01b01c1450da",
+        "type": "trigger",
+        "z": "e6abd59fcfef321c",
+        "g": "41fbc4a5bc05d566",
+        "name": "FQT360 trigger Error",
+        "op1": "",
+        "op2": "FQT360 connection reestablished",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "5",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 2,
+        "x": 2250,
+        "y": 149.16666666666663,
+        "wires": [
+            [
+                "493da01896a6b160",
+                "1a8746eac5018c5e"
+            ],
+            [
+                "493da01896a6b160",
+                "e5806a792ec3e21e"
+            ]
+        ]
+    },
+    {
+        "id": "7e6a50958259834c",
+        "type": "function",
+        "z": "e6abd59fcfef321c",
+        "g": "41fbc4a5bc05d566",
+        "name": "Slack message",
+        "func": "let device = msg.topic; \nlet Slack_msg = msg.payload + \" in device \" + msg.topic;\nmsg.payload = Slack_msg;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2010,
+        "y": 215.83333333333331,
+        "wires": [
+            [
+                "c117ade2206c9d81"
+            ]
+        ]
+    },
+    {
+        "id": "c117ade2206c9d81",
+        "type": "trigger",
+        "z": "e6abd59fcfef321c",
+        "g": "41fbc4a5bc05d566",
+        "name": "FQT341 trigger Error",
+        "op1": "",
+        "op2": "FQT341 connection reestablished",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "5",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 2,
+        "x": 2250,
+        "y": 215.83333333333331,
+        "wires": [
+            [
+                "493da01896a6b160"
+            ],
+            [
+                "493da01896a6b160"
+            ]
+        ]
+    },
+    {
+        "id": "31dc42753219dceb",
+        "type": "function",
+        "z": "e6abd59fcfef321c",
+        "g": "41fbc4a5bc05d566",
+        "name": "Slack message",
+        "func": "let device = msg.topic; \nlet Slack_msg = msg.payload + \" in device \" + msg.topic;\nmsg.payload = Slack_msg;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2010,
+        "y": 282.5,
+        "wires": [
+            [
+                "fa919c7eb7d15cc7"
+            ]
+        ]
+    },
+    {
+        "id": "fa919c7eb7d15cc7",
+        "type": "trigger",
+        "z": "e6abd59fcfef321c",
+        "g": "41fbc4a5bc05d566",
+        "name": "FQT340 trigger Error",
+        "op1": "",
+        "op2": "FQT340 connection reestablished",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "5",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 2,
+        "x": 2250,
+        "y": 282.5,
+        "wires": [
+            [
+                "493da01896a6b160"
+            ],
+            [
+                "493da01896a6b160"
+            ]
+        ]
+    },
+    {
+        "id": "7751c4b42cb0de1f",
+        "type": "link in",
+        "z": "e6abd59fcfef321c",
+        "g": "55a2600ea9f1ad33",
+        "name": "SECURITY_Transmitters_IN",
+        "links": [
+            "05feb3979973f7ff"
+        ],
+        "x": 1645,
+        "y": 620,
+        "wires": [
+            [
+                "da3a36208d4eabcc"
+            ]
+        ]
+    },
+    {
+        "id": "7552efb55ce434d9",
+        "type": "slack",
+        "z": "e6abd59fcfef321c",
+        "g": "55a2600ea9f1ad33",
+        "name": "PRIVATE CHAT IAXO",
+        "channelURL": "https://hooks.slack.com/services/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",
+        "username": "IAXO D0 BOT",
+        "emojiIcon": "",
+        "channel": "",
+        "x": 2630,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "da3a36208d4eabcc",
+        "type": "switch",
+        "z": "e6abd59fcfef321c",
+        "g": "55a2600ea9f1ad33",
+        "name": "Filter by topic",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "PT343",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "PT40",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "PT41",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1780,
+        "y": 620,
+        "wires": [
+            [
+                "d5dbc51a89a860b2"
+            ],
+            [
+                "824891ce5a64f8d2"
+            ],
+            [
+                "083584a3ae18ea57"
+            ]
+        ]
+    },
+    {
+        "id": "d5dbc51a89a860b2",
+        "type": "function",
+        "z": "e6abd59fcfef321c",
+        "g": "55a2600ea9f1ad33",
+        "name": "Slack message",
+        "func": "let device = msg.topic; \nlet Slack_msg = msg.payload + \" in device \" + msg.topic;\nmsg.payload = Slack_msg;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2020,
+        "y": 589.1666666666666,
+        "wires": [
+            [
+                "c3d039bb3115809a",
+                "8f8883506988ead9"
+            ]
+        ]
+    },
+    {
+        "id": "c3d039bb3115809a",
+        "type": "trigger",
+        "z": "e6abd59fcfef321c",
+        "g": "55a2600ea9f1ad33",
+        "name": "PT343 trigger Error",
+        "op1": "",
+        "op2": "PT343 connection reestablished",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "5",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 2,
+        "x": 2250,
+        "y": 589.1666666666666,
+        "wires": [
+            [
+                "7552efb55ce434d9"
+            ],
+            [
+                "7552efb55ce434d9"
+            ]
+        ]
+    },
+    {
+        "id": "824891ce5a64f8d2",
+        "type": "function",
+        "z": "e6abd59fcfef321c",
+        "g": "55a2600ea9f1ad33",
+        "name": "Slack message",
+        "func": "let device = msg.topic; \nlet Slack_msg = msg.payload + \" in device \" + msg.topic;\nmsg.payload = Slack_msg;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2020,
+        "y": 655.8333333333333,
+        "wires": [
+            [
+                "1fd8c5b1cd702af1"
+            ]
+        ]
+    },
+    {
+        "id": "1fd8c5b1cd702af1",
+        "type": "trigger",
+        "z": "e6abd59fcfef321c",
+        "g": "55a2600ea9f1ad33",
+        "name": "PT40 trigger Error",
+        "op1": "",
+        "op2": "PT40 connection reestablished",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "5",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 2,
+        "x": 2250,
+        "y": 655.8333333333333,
+        "wires": [
+            [
+                "7552efb55ce434d9"
+            ],
+            [
+                "7552efb55ce434d9"
+            ]
+        ]
+    },
+    {
+        "id": "083584a3ae18ea57",
+        "type": "function",
+        "z": "e6abd59fcfef321c",
+        "g": "55a2600ea9f1ad33",
+        "name": "Slack message",
+        "func": "let device = msg.topic; \nlet Slack_msg = msg.payload + \" in device \" + msg.topic;\nmsg.payload = Slack_msg;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2020,
+        "y": 722.5,
+        "wires": [
+            [
+                "727c3803e2ec5b5e"
+            ]
+        ]
+    },
+    {
+        "id": "727c3803e2ec5b5e",
+        "type": "trigger",
+        "z": "e6abd59fcfef321c",
+        "g": "55a2600ea9f1ad33",
+        "name": "PT41 trigger Error",
+        "op1": "",
+        "op2": "PT41 connection reestablished",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "5",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 2,
+        "x": 2250,
+        "y": 722.5,
+        "wires": [
+            [
+                "7552efb55ce434d9"
+            ],
+            [
+                "7552efb55ce434d9"
+            ]
+        ]
+    },
+    {
+        "id": "5287f8a262e1929b",
+        "type": "exec",
+        "z": "e6abd59fcfef321c",
+        "g": "c30986ce38207369",
+        "command": "sudo /usr/local/bin/Noderestart.sh",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Restart NodeRed",
+        "x": 1950,
+        "y": 940,
+        "wires": [
+            [
+                "bb89f7012cd76546"
+            ],
+            [
+                "ca0ca62d602e9b17"
+            ],
+            [
+                "26bf8097257d54e9"
+            ]
+        ]
+    },
+    {
+        "id": "bb89f7012cd76546",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "c30986ce38207369",
+        "name": "debug 380",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2610,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "ca0ca62d602e9b17",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "c30986ce38207369",
+        "name": "debug 381",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2590,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "26bf8097257d54e9",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "c30986ce38207369",
+        "name": "debug 382",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2610,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "c3a3f1d2b90fd3ba",
+        "type": "ui_button",
+        "z": "e6abd59fcfef321c",
+        "g": "c30986ce38207369",
+        "name": "",
+        "group": "ca35f057d975c469",
+        "order": 4,
+        "width": "6",
+        "height": "3",
+        "passthru": false,
+        "label": "NODE RESTART",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "fa-exclamation-triangle",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1710,
+        "y": 940,
+        "wires": [
+            [
+                "5287f8a262e1929b"
+            ]
+        ]
+    },
+    {
+        "id": "9964ddde3372b6af",
+        "type": "inject",
+        "z": "e6abd59fcfef321c",
+        "g": "41fbc4a5bc05d566",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Lost connection in F1",
+        "payloadType": "str",
+        "x": 1630,
+        "y": 380,
+        "wires": [
+            [
+                "fbbd01b01c1450da"
+            ]
+        ]
+    },
+    {
+        "id": "1a8746eac5018c5e",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "41fbc4a5bc05d566",
+        "name": "debug 386",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2640,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "e5806a792ec3e21e",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "41fbc4a5bc05d566",
+        "name": "debug 387",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2660,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "34850114de3f2037",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "562d42446f5c13fe",
+        "name": "debug 388",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1330,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "d0a86226f9f7ab15",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "562d42446f5c13fe",
+        "name": "debug 389",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1330,
+        "y": 1920,
+        "wires": []
+    },
+    {
+        "id": "34fc76c74c1070fc",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "562d42446f5c13fe",
+        "name": "debug 390",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 1900,
+        "wires": []
+    },
+    {
+        "id": "87944d3f6babc85f",
+        "type": "subflow:757e68c1a00513c0",
+        "z": "e6abd59fcfef321c",
+        "g": "3371663af1f1de31",
+        "name": "",
+        "x": 1040,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "1b162a61a0223101",
+        "type": "function",
+        "z": "e6abd59fcfef321c",
+        "g": "7ee0705e60a282d7",
+        "name": "Counter F1 Errors",
+        "func": "let counter = flow.get(\"counterF1\") || 0;\nlet slack = \"Flow Controller Out lost. Closing EV\"\nlet cutoff = {\n    B0: 0,\n}\n\nif(counter == 5){\n    flow.set(\"counterF1\",0)\n    msg1  = {payload :  slack};\n    msg2 = {payload : cutoff};\n    return[msg1,msg2];\n}else{\n    counter++;\n    flow.set(\"counterF1\", counter);\n}\n\n\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 1400,
+        "wires": [
+            [
+                "8c14ec5c2d92d7de",
+                "c69f7c03438e955a"
+            ],
+            [
+                "706cbeee2fd9c6e7",
+                "2343828fdf8f4fe9"
+            ]
+        ]
+    },
+    {
+        "id": "8c14ec5c2d92d7de",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "7ee0705e60a282d7",
+        "name": "debug 391",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1210,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "706cbeee2fd9c6e7",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "7ee0705e60a282d7",
+        "name": "debug 392",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1290,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "a1a15cc65b6db945",
+        "type": "link in",
+        "z": "e6abd59fcfef321c",
+        "g": "7ee0705e60a282d7",
+        "name": "link in 12",
+        "links": [
+            "f32fe459ae7b1919"
+        ],
+        "x": 825,
+        "y": 1400,
+        "wires": [
+            [
+                "ef3de6b981427d4f"
+            ]
+        ]
+    },
+    {
+        "id": "59c7b0aa4cea625c",
+        "type": "comment",
+        "z": "e6abd59fcfef321c",
+        "g": "41fbc4a5bc05d566",
+        "name": "NOTE",
+        "info": "Due to the importance of this device in the system, we send the errors to a function node which controls the EV and send a slack security message. ",
+        "x": 2270,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "f32fe459ae7b1919",
+        "type": "link out",
+        "z": "e6abd59fcfef321c",
+        "g": "41fbc4a5bc05d566",
+        "name": "link out 10",
+        "mode": "link",
+        "links": [
+            "a1a15cc65b6db945"
+        ],
+        "x": 2165,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "c69f7c03438e955a",
+        "type": "subflow:757e68c1a00513c0",
+        "z": "e6abd59fcfef321c",
+        "g": "7ee0705e60a282d7",
+        "name": "",
+        "x": 1230,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "2343828fdf8f4fe9",
+        "type": "link out",
+        "z": "e6abd59fcfef321c",
+        "g": "7ee0705e60a282d7",
+        "name": "SECURITY_F1Lost_OUT",
+        "mode": "link",
+        "links": [
+            "3fd98e13ec0e96e1",
+            "bb38b8c6467ffec9"
+        ],
+        "x": 1145,
+        "y": 1420,
+        "wires": [],
+        "info": "All this nodes makes two things: \n    1- Send the close cmd to the EV\n    2- Disable all CAEN buttons"
+    },
+    {
+        "id": "8d4d81295ce502bb",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "620445eb39a7c803",
+        "name": "debug 393",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1130,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "d35b4890bcab177f",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "620445eb39a7c803",
+        "name": "debug 394",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1130,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "783616feaf337d83",
+        "type": "change",
+        "z": "e6abd59fcfef321c",
+        "g": "620445eb39a7c803",
+        "name": "MeasureValue",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "MeasureValue",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 1000,
+        "wires": [
+            [
+                "9f69184cd504ca7a"
+            ]
+        ]
+    },
+    {
+        "id": "e3e551662cb02357",
+        "type": "change",
+        "z": "e6abd59fcfef321c",
+        "g": "620445eb39a7c803",
+        "name": "SetPointValue",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "SetPointValue",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 1040,
+        "wires": [
+            [
+                "9f69184cd504ca7a"
+            ]
+        ]
+    },
+    {
+        "id": "9f69184cd504ca7a",
+        "type": "join",
+        "z": "e6abd59fcfef321c",
+        "g": "620445eb39a7c803",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": true,
+        "accumulate": false,
+        "timeout": "",
+        "count": "3",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 690,
+        "y": 1020,
+        "wires": [
+            [
+                "4ee6fa6909898506",
+                "5a92fc6fda24cbeb"
+            ]
+        ]
+    },
+    {
+        "id": "4ee6fa6909898506",
+        "type": "function",
+        "z": "e6abd59fcfef321c",
+        "g": "620445eb39a7c803",
+        "name": "Counter P1 Errors",
+        "func": "let measurepoint = msg.payload.MeasureValue;\nlet setpoint = msg.payload.SetPointValue;\nlet counter = flow.get(\"counterPout\");\nlet slack = \"Pressure Transmitter Out lost. Closing EV\";\n\nlet cutoff = {\n    B0: 0,\n}\nif(counter == 5){\n    if(measurepoint > (setpoint+60)){\n        flow.set(\"counterP1\",0)\n        msg1  = {payload :  slack};\n        msg2 = {payload : cutoff};\n        return [msg1, msg2];\n    }\n}else{\n    counter++;\n    flow.set(\"counterP1\", counter);\n}\n\n",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// El código añadido aquí se ejecutará una vez\n// cuando el nodo es iniciado.\n\n/**let slack =  \"Inizializating\"\n\nlet cutoff = {\n    B0: 0,\n}\nmsg1  = {payload :  slack};\nmsg2 = {payload : cutoff};\nreturn [msg1, msg2];\n**/",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 1020,
+        "wires": [
+            [
+                "0835ab6c68a26fc7",
+                "8d4d81295ce502bb"
+            ],
+            [
+                "aee0884f702fdb5d",
+                "d35b4890bcab177f"
+            ]
+        ]
+    },
+    {
+        "id": "f654af9c022fa262",
+        "type": "change",
+        "z": "e6abd59fcfef321c",
+        "g": "620445eb39a7c803",
+        "name": "ConexionStatus",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "ConexionStatus",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 960,
+        "wires": [
+            [
+                "9f69184cd504ca7a"
+            ]
+        ]
+    },
+    {
+        "id": "b00efcedbc0a4b49",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "3371663af1f1de31",
+        "name": "debug 395",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "8f8883506988ead9",
+        "type": "link out",
+        "z": "e6abd59fcfef321c",
+        "g": "55a2600ea9f1ad33",
+        "name": "link out 13",
+        "mode": "link",
+        "links": [
+            "cd01ae2940eb2b46"
+        ],
+        "x": 2175,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "5a92fc6fda24cbeb",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "620445eb39a7c803",
+        "name": "debug 396",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "cd01ae2940eb2b46",
+        "type": "link in",
+        "z": "e6abd59fcfef321c",
+        "g": "620445eb39a7c803",
+        "name": "link in 13",
+        "links": [
+            "8f8883506988ead9"
+        ],
+        "x": 195,
+        "y": 960,
+        "wires": [
+            [
+                "c0e53128359a2b58"
+            ]
+        ]
+    },
+    {
+        "id": "f0269e30cb2df341",
+        "type": "link in",
+        "z": "e6abd59fcfef321c",
+        "g": "620445eb39a7c803",
+        "name": "SECURITY_P1Errors_MP_IN",
+        "links": [
+            "f9af0ddc7af0b7e9"
+        ],
+        "x": 195,
+        "y": 1000,
+        "wires": [
+            [
+                "232320c1c060b186"
+            ]
+        ]
+    },
+    {
+        "id": "8741c9f0cd4103a0",
+        "type": "link in",
+        "z": "e6abd59fcfef321c",
+        "g": "620445eb39a7c803",
+        "name": "SECURITY_P1Errors_SP_IN",
+        "links": [
+            "cd96bed145c6a88f"
+        ],
+        "x": 195,
+        "y": 1040,
+        "wires": [
+            [
+                "e9feabe4bfe76902"
+            ]
+        ]
+    },
+    {
+        "id": "bdcd76b1512c81e6",
+        "type": "link out",
+        "z": "e6abd59fcfef321c",
+        "g": "3371663af1f1de31",
+        "name": "SECURITY_OverPress_OUT",
+        "mode": "link",
+        "links": [
+            "bb38b8c6467ffec9"
+        ],
+        "x": 915,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "5f7608abef2eb829",
+        "type": "link out",
+        "z": "e6abd59fcfef321c",
+        "g": "3371663af1f1de31",
+        "name": "SECURITY_UnkPress_OUT",
+        "mode": "link",
+        "links": [
+            "bb38b8c6467ffec9"
+        ],
+        "x": 1015,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "aee0884f702fdb5d",
+        "type": "link out",
+        "z": "e6abd59fcfef321c",
+        "g": "620445eb39a7c803",
+        "name": "SECURITY_P1Lost_OUT",
+        "mode": "link",
+        "links": [
+            "bb38b8c6467ffec9",
+            "3fd98e13ec0e96e1"
+        ],
+        "x": 1075,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "0835ab6c68a26fc7",
+        "type": "subflow:757e68c1a00513c0",
+        "z": "e6abd59fcfef321c",
+        "g": "620445eb39a7c803",
+        "name": "",
+        "x": 1150,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "d2c3b8f3187054bb",
+        "type": "string",
+        "z": "e6abd59fcfef321c",
+        "g": "620445eb39a7c803",
+        "name": "ToFloat",
+        "methods": [
+            {
+                "name": "toFloat",
+                "params": [
+                    {
+                        "type": "num",
+                        "value": "2"
+                    }
+                ]
+            }
+        ],
+        "prop": "payload",
+        "propout": "payload",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 360,
+        "y": 1040,
+        "wires": [
+            [
+                "e3e551662cb02357"
+            ]
+        ]
+    },
+    {
+        "id": "d7f7989255f2afdd",
+        "type": "ui_button",
+        "z": "e6abd59fcfef321c",
+        "g": "391b996bdb7d6683",
+        "name": "",
+        "group": "ca35f057d975c469",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Filling mode",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-solid fa-screwdriver-wrench",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1740,
+        "y": 1140,
+        "wires": [
+            [
+                "543391f0a31feed6"
+            ]
+        ]
+    },
+    {
+        "id": "62b9db947a562e86",
+        "type": "ui_led",
+        "z": "e6abd59fcfef321c",
+        "g": "391b996bdb7d6683",
+        "order": 3,
+        "group": "ca35f057d975c469",
+        "width": 0,
+        "height": 0,
+        "label": "Filling mode Status",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 2270,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "163794f4902ad2e5",
+        "type": "function",
+        "z": "e6abd59fcfef321c",
+        "g": "391b996bdb7d6683",
+        "name": "Filling mode Status",
+        "func": "msg.payload = global.get(\"OperationMode\")\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1950,
+        "y": 1300,
+        "wires": [
+            [
+                "62b9db947a562e86",
+                "d7212b13501c887d"
+            ]
+        ]
+    },
+    {
+        "id": "d6e7d1c94125f824",
+        "type": "ui_button",
+        "z": "e6abd59fcfef321c",
+        "g": "391b996bdb7d6683",
+        "name": "",
+        "group": "ca35f057d975c469",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "label": "Normal mode",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-screwdriver-wrench",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1750,
+        "y": 1180,
+        "wires": [
+            [
+                "543391f0a31feed6"
+            ]
+        ]
+    },
+    {
+        "id": "543391f0a31feed6",
+        "type": "function",
+        "z": "e6abd59fcfef321c",
+        "g": "391b996bdb7d6683",
+        "name": "Set filling/Normal Operation Mode",
+        "func": "let status = msg.payload; \nglobal.set(\"OperationMode\", status)\nlet slack;\nif(status ==0){\n    slack = \"Entering in filling mode. Caution, security system is deactivated\"\n}else {\n    slack = \"Entering in normal mode. Security system reactivated\"\n}\nmsg.payload = slack;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2030,
+        "y": 1140,
+        "wires": [
+            [
+                "19fa08406f0b6faf",
+                "b0e14941f4a63a9b"
+            ]
+        ]
+    },
+    {
+        "id": "19fa08406f0b6faf",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "391b996bdb7d6683",
+        "name": "debug 397",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2290,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "d7212b13501c887d",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "391b996bdb7d6683",
+        "name": "debug 398",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2290,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "773f89532f843c32",
+        "type": "inject",
+        "z": "e6abd59fcfef321c",
+        "g": "391b996bdb7d6683",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 1730,
+        "y": 1300,
+        "wires": [
+            [
+                "163794f4902ad2e5"
+            ]
+        ]
+    },
+    {
+        "id": "6353d1beb31dc2ac",
+        "type": "subflow:b2028c4cbef7824d",
+        "z": "e6abd59fcfef321c",
+        "g": "76c4585b9eeb7963",
+        "name": "",
+        "x": 360,
+        "y": 140,
+        "wires": [
+            [
+                "6bbb3888df1424f9",
+                "1fd2585a12fae590",
+                "7f8448992e9b1679"
+            ]
+        ]
+    },
+    {
+        "id": "019d3855c7ae28a4",
+        "type": "subflow:b2028c4cbef7824d",
+        "z": "e6abd59fcfef321c",
+        "g": "3371663af1f1de31",
+        "name": "",
+        "x": 165,
+        "y": 460,
+        "wires": [
+            [
+                "d8171e58fad45ca7"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "c0e53128359a2b58",
+        "type": "subflow:b2028c4cbef7824d",
+        "z": "e6abd59fcfef321c",
+        "g": "620445eb39a7c803",
+        "name": "",
+        "x": 255,
+        "y": 960,
+        "wires": [
+            [
+                "f654af9c022fa262"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "232320c1c060b186",
+        "type": "subflow:b2028c4cbef7824d",
+        "z": "e6abd59fcfef321c",
+        "g": "620445eb39a7c803",
+        "name": "",
+        "x": 255,
+        "y": 1000,
+        "wires": [
+            [
+                "783616feaf337d83"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "e9feabe4bfe76902",
+        "type": "subflow:b2028c4cbef7824d",
+        "z": "e6abd59fcfef321c",
+        "g": "620445eb39a7c803",
+        "name": "",
+        "x": 255,
+        "y": 1040,
+        "wires": [
+            [
+                "d2c3b8f3187054bb"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "ef3de6b981427d4f",
+        "type": "subflow:b2028c4cbef7824d",
+        "z": "e6abd59fcfef321c",
+        "g": "7ee0705e60a282d7",
+        "name": "",
+        "x": 885,
+        "y": 1400,
+        "wires": [
+            [
+                "1b162a61a0223101"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "b0e14941f4a63a9b",
+        "type": "subflow:757e68c1a00513c0",
+        "z": "e6abd59fcfef321c",
+        "g": "391b996bdb7d6683",
+        "name": "",
+        "x": 2310,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "dce9edab465a8c69",
+        "type": "inject",
+        "z": "e6abd59fcfef321c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 00 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 2050,
+        "y": 1640,
+        "wires": [
+            [
+                "9134a180821f8287"
+            ]
+        ]
+    },
+    {
+        "id": "9134a180821f8287",
+        "type": "function",
+        "z": "e6abd59fcfef321c",
+        "name": "function 9",
+        "func": "global.set(\"counterF1\", 0);\nglobal.set(\"counterP1\", 0);\nmsg.payload = \"Reset all counters\"; \nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2270,
+        "y": 1640,
+        "wires": [
+            [
+                "0152a7e66c19d6bc"
+            ]
+        ]
+    },
+    {
+        "id": "0152a7e66c19d6bc",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "name": "debug 399",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2420,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "7f8448992e9b1679",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "76c4585b9eeb7963",
+        "name": "debug 404",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "d59b9ae1436f0938",
+        "type": "comment",
+        "z": "e6abd59fcfef321c",
+        "g": "55a2600ea9f1ad33",
+        "name": "NOTE",
+        "info": "Due to the importance of this device in the system, we send the errors to a function node which controls the EV and send a slack security message. ",
+        "x": 2290,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "cc74e7a6843e4041",
+        "type": "comment",
+        "z": "e6abd59fcfef321c",
+        "g": "3371663af1f1de31",
+        "name": "",
+        "info": "En este caso no usamos el operation filter porque dentro del nodo function se elige una presion máxima en funcion del modo en el que estemos.",
+        "x": 190,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "303d6f81d83ee7a9",
+        "type": "link in",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "SECURITY_GasLoss_SP",
+        "links": [
+            "3e86acf3b73d06f9"
+        ],
+        "x": 95,
+        "y": 760,
+        "wires": [
+            [
+                "5e6c35157f92db68"
+            ]
+        ]
+    },
+    {
+        "id": "3803a08da2f07451",
+        "type": "change",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "MeasureValue",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "MeasureValue",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 720,
+        "wires": [
+            [
+                "4ca65ca9d7c45615",
+                "fa9c83c87456b9bc"
+            ]
+        ]
+    },
+    {
+        "id": "073a1939cf1526f7",
+        "type": "change",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "SetPointValue",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "SetPointValue",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 760,
+        "wires": [
+            [
+                "4ca65ca9d7c45615",
+                "3669a2a39e38427d"
+            ]
+        ]
+    },
+    {
+        "id": "4ca65ca9d7c45615",
+        "type": "join",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": true,
+        "accumulate": false,
+        "timeout": "",
+        "count": "4",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 710,
+        "y": 700,
+        "wires": [
+            [
+                "0f48c8c64cf0ec4a",
+                "09ea125ce0a0cf64"
+            ]
+        ]
+    },
+    {
+        "id": "0f48c8c64cf0ec4a",
+        "type": "function",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "Gas Loss control",
+        "func": "let measurepoint = msg.payload.MeasureValue;\nlet setpoint = msg.payload.SetPointValue;\nlet poutlet = msg.payload.Poutlet; \nlet pt42 = msg.payload.Pt42;\nlet slack1 =  \"Warning, there is a gas loss in detector gas system\";\nlet slack2 = \"Warning, there is not enough gas pressure at laboratory gas line filling the detector\";\nlet GL_status = flow.get(\"GasLossStatus\");\n\nlet cutoff = {\n    B0: 0,\n}\n\nif(!GL_status){\n    if(measurepoint < setpoint){\n        flow.set(\"GasLossStatus\",true);\n        if ((poutlet-100) < pt42){\n            msg1  = {payload :  slack1};\n            msg2 = {payload : cutoff};\n            return [msg1, msg2];\n        }else{\n            msg1  = {payload :  slack2};\n            msg2 = {payload : cutoff};\n            return [msg1, msg2];\n        }\n    }\n} else{\n     if(measurepoint > setpoint){\n        flow.set(\"GasLossStatus\",false);\n        msg1  = {payload :  \"Measure Point & Set Point return to normal flow values.\"};\n    return msg1;\n    }\n}\n\n \n",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// El código añadido aquí se ejecutará una vez\n// cuando el nodo es iniciado.\n\n/**let slack =  \"Inizializating\"\n\nlet cutoff = {\n    B0: 0,\n}\nmsg1  = {payload :  slack};\nmsg2 = {payload : cutoff};\nreturn [msg1, msg2];\n**/",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 700,
+        "wires": [
+            [
+                "c0d6ac37eec31aee"
+            ],
+            [
+                "0d4a627e546a4726",
+                "ea1854c32acc8aa5"
+            ]
+        ]
+    },
+    {
+        "id": "5e6c35157f92db68",
+        "type": "subflow:b2028c4cbef7824d",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "",
+        "x": 185,
+        "y": 760,
+        "wires": [
+            [
+                "073a1939cf1526f7"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "04eb246a4eb5049a",
+        "type": "subflow:b2028c4cbef7824d",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "",
+        "x": 185,
+        "y": 720,
+        "wires": [
+            [
+                "bc7c49e3b9054f94"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "95e212ba778e4d95",
+        "type": "link in",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "SECURITY_GasLoss_MP",
+        "links": [
+            "1ce178dae85e25c3"
+        ],
+        "x": 95,
+        "y": 720,
+        "wires": [
+            [
+                "04eb246a4eb5049a"
+            ]
+        ]
+    },
+    {
+        "id": "96b968d48f12cbbd",
+        "type": "change",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "Poutlet",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Poutlet",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 640,
+        "wires": [
+            [
+                "4ca65ca9d7c45615",
+                "fc27d32fada6e25e"
+            ]
+        ]
+    },
+    {
+        "id": "ebc4e41dd17f4bdf",
+        "type": "change",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "Pt42",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Pt42",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 680,
+        "wires": [
+            [
+                "4ca65ca9d7c45615",
+                "a44cf4cdcceb5896"
+            ]
+        ]
+    },
+    {
+        "id": "e21d415ed3e24a95",
+        "type": "link in",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "SECURITY_GasLoss_Poutlet",
+        "links": [
+            "3a912f03d0333c28"
+        ],
+        "x": 95,
+        "y": 640,
+        "wires": [
+            [
+                "a517287cc097ff7d"
+            ]
+        ]
+    },
+    {
+        "id": "8f1ce291c8ede37d",
+        "type": "link in",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "SECURITY_GasLoss_Pt42",
+        "links": [
+            "7c89d9fcf5706089"
+        ],
+        "x": 95,
+        "y": 680,
+        "wires": [
+            [
+                "ced5d317deef3773"
+            ]
+        ]
+    },
+    {
+        "id": "ced5d317deef3773",
+        "type": "subflow:b2028c4cbef7824d",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "",
+        "x": 185,
+        "y": 680,
+        "wires": [
+            [
+                "71e77d75e4f0adad"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "a517287cc097ff7d",
+        "type": "subflow:b2028c4cbef7824d",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "",
+        "x": 185,
+        "y": 640,
+        "wires": [
+            [
+                "96b968d48f12cbbd"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "c0d6ac37eec31aee",
+        "type": "rbe",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "Valves stop filter",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 1140,
+        "y": 680,
+        "wires": [
+            [
+                "ad35c595e82e22c2",
+                "12ded573c072af5e"
+            ]
+        ],
+        "info": "This node is only to allow only one msg to slack, if stop filter wasn't here, slack will become a spam channel"
+    },
+    {
+        "id": "12ded573c072af5e",
+        "type": "subflow:757e68c1a00513c0",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "",
+        "x": 1360,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "ad35c595e82e22c2",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "debug 412",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1330,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "0d4a627e546a4726",
+        "type": "link out",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "SECURITY_UnkPress_OUT",
+        "mode": "link",
+        "links": [
+            "bb38b8c6467ffec9",
+            "3fd98e13ec0e96e1"
+        ],
+        "x": 1065,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "ea1854c32acc8aa5",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1065,
+        "y": 780,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "fc27d32fada6e25e",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "debug 413",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 635,
+        "y": 620,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "a44cf4cdcceb5896",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "debug 414",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 635,
+        "y": 660,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "fa9c83c87456b9bc",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "debug 415",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 685,
+        "y": 740,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "3669a2a39e38427d",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "debug 416",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 665,
+        "y": 800,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "09ea125ce0a0cf64",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "debug 417",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 765,
+        "y": 640,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "9a59ded7f6e6c845",
+        "type": "string",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "ToFloat",
+        "methods": [
+            {
+                "name": "toFloat",
+                "params": [
+                    {
+                        "type": "num",
+                        "value": "2"
+                    }
+                ]
+            }
+        ],
+        "prop": "payload",
+        "propout": "payload",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 300,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bc7c49e3b9054f94",
+        "type": "string",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "ToFloat",
+        "methods": [
+            {
+                "name": "toFloat",
+                "params": [
+                    {
+                        "type": "num",
+                        "value": "2"
+                    }
+                ]
+            }
+        ],
+        "prop": "payload",
+        "propout": "payload",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 300,
+        "y": 720,
+        "wires": [
+            [
+                "3803a08da2f07451"
+            ]
+        ]
+    },
+    {
+        "id": "71e77d75e4f0adad",
+        "type": "string",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "ToFloat",
+        "methods": [
+            {
+                "name": "toFloat",
+                "params": [
+                    {
+                        "type": "num",
+                        "value": "2"
+                    }
+                ]
+            }
+        ],
+        "prop": "payload",
+        "propout": "payload",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 300,
+        "y": 680,
+        "wires": [
+            [
+                "ebc4e41dd17f4bdf"
+            ]
+        ]
+    },
+    {
+        "id": "a356a8b1c6e00e63",
+        "type": "inject",
+        "z": "e6abd59fcfef321c",
+        "g": "391b996bdb7d6683",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "x": 1720,
+        "y": 1240,
+        "wires": [
+            [
+                "d6e7d1c94125f824"
             ]
         ]
     },
