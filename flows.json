@@ -47,14 +47,14 @@
         "id": "1c646c2a350b2d7c",
         "type": "tab",
         "label": "2CH: Power Sub-System",
-        "disabled": false,
+        "disabled": true,
         "info": ""
     },
     {
         "id": "a38a0850f33814d0",
         "type": "tab",
         "label": "Supply Charts v2",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -70,7 +70,7 @@
         "id": "045d5867a5e1ad28",
         "type": "tab",
         "label": "RIGOL",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -3529,6 +3529,31 @@
         "h": 142
     },
     {
+        "id": "b0031323f55f6d7f",
+        "type": "group",
+        "z": "30f3df01.06ea",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "15f2893e60d68df8",
+            "77333d1fdfbea40a",
+            "6330b9cc9a3d8637",
+            "301bb947e3a358a4",
+            "3f3143667f4f143a"
+        ],
+        "x": 814,
+        "y": 2919,
+        "w": 592,
+        "h": 222
+    },
+    {
         "id": "67018f7a.7112a8",
         "type": "ui_base",
         "theme": {
@@ -4419,44 +4444,6 @@
         "responsetimeout": "10000"
     },
     {
-        "id": "403d844ddd623ed1",
-        "type": "serial-port",
-        "serialport": "/dev/MULTICOMP",
-        "serialbaud": "115200",
-        "databits": "8",
-        "parity": "none",
-        "stopbits": "1",
-        "waitfor": "",
-        "dtr": "none",
-        "rts": "none",
-        "cts": "none",
-        "dsr": "none",
-        "newline": "\\n",
-        "bin": "false",
-        "out": "char",
-        "addchar": "\\r\\n",
-        "responsetimeout": "300"
-    },
-    {
-        "id": "223eaaf46b6bba11",
-        "type": "serial-port",
-        "serialport": "/dev/MULTICOMP",
-        "serialbaud": "115200",
-        "databits": "8",
-        "parity": "none",
-        "stopbits": "1",
-        "waitfor": "",
-        "dtr": "none",
-        "rts": "none",
-        "cts": "none",
-        "dsr": "none",
-        "newline": "\\n",
-        "bin": "false",
-        "out": "char",
-        "addchar": "\\r\\n",
-        "responsetimeout": "100"
-    },
-    {
         "id": "d2245af295e6cac6",
         "type": "ui_group",
         "name": "CONTROL STATUS",
@@ -4499,25 +4486,6 @@
         "width": "6",
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "297b8f84e78cddf1",
-        "type": "serial-port",
-        "serialport": "/dev/MULTICOMP",
-        "serialbaud": "115200",
-        "databits": "8",
-        "parity": "none",
-        "stopbits": "1",
-        "waitfor": "",
-        "dtr": "none",
-        "rts": "none",
-        "cts": "none",
-        "dsr": "none",
-        "newline": "\\n",
-        "bin": "false",
-        "out": "char",
-        "addchar": "\\r\\n",
-        "responsetimeout": "300"
     },
     {
         "id": "c8bd2cec7b47fa5f",
@@ -4567,25 +4535,6 @@
         "responsetimeout": "10000"
     },
     {
-        "id": "f8d0d7bfdd71bc2b",
-        "type": "serial-port",
-        "serialport": "/dev/MULTICOMP",
-        "serialbaud": "115200",
-        "databits": "8",
-        "parity": "none",
-        "stopbits": "1",
-        "waitfor": "",
-        "dtr": "none",
-        "rts": "none",
-        "cts": "none",
-        "dsr": "none",
-        "newline": "\\n",
-        "bin": "false",
-        "out": "char",
-        "addchar": "\\r\\n",
-        "responsetimeout": "300"
-    },
-    {
         "id": "e3bfcfae.d38b3",
         "type": "mqtt-broker",
         "name": "MQTT Broker",
@@ -4604,25 +4553,6 @@
         "willTopic": "",
         "willQos": "0",
         "willPayload": ""
-    },
-    {
-        "id": "d4b05c043d2ac21f",
-        "type": "serial-port",
-        "serialport": "/dev/MULTICOMP",
-        "serialbaud": "115200",
-        "databits": "8",
-        "parity": "none",
-        "stopbits": "1",
-        "waitfor": "",
-        "dtr": "none",
-        "rts": "none",
-        "cts": "none",
-        "dsr": "none",
-        "newline": "\\n",
-        "bin": "false",
-        "out": "char",
-        "addchar": "\\r\\n",
-        "responsetimeout": "300"
     },
     {
         "id": "4b3ae4eeb8191fd4",
@@ -5000,26 +4930,6 @@
         "id": "72544c4aeb4b73c4",
         "type": "serial-port",
         "z": "8d2889cddf4f0c77",
-        "name": "",
-        "serialport": "/dev/MULTICOMP",
-        "serialbaud": "9600",
-        "databits": "8",
-        "parity": "none",
-        "stopbits": "1",
-        "waitfor": "",
-        "dtr": "none",
-        "rts": "none",
-        "cts": "none",
-        "dsr": "none",
-        "newline": "\\n",
-        "bin": "false",
-        "out": "char",
-        "addchar": "",
-        "responsetimeout": "10000"
-    },
-    {
-        "id": "5aade4d87d378ea3",
-        "type": "serial-port",
         "name": "",
         "serialport": "/dev/MULTICOMP",
         "serialbaud": "9600",
@@ -15968,10 +15878,12 @@
         "id": "15f2893e60d68df8",
         "type": "serial in",
         "z": "30f3df01.06ea",
+        "d": true,
+        "g": "b0031323f55f6d7f",
         "name": "",
         "serial": "a4fc396f.153838",
         "x": 910,
-        "y": 2960,
+        "y": 3000,
         "wires": [
             [
                 "77333d1fdfbea40a",
@@ -15984,6 +15896,8 @@
         "id": "77333d1fdfbea40a",
         "type": "ui_text",
         "z": "30f3df01.06ea",
+        "d": true,
+        "g": "b0031323f55f6d7f",
         "group": "527629f2.378c7",
         "order": 9,
         "width": 0,
@@ -15994,13 +15908,15 @@
         "layout": "row-left",
         "className": "",
         "x": 1160,
-        "y": 2960,
+        "y": 3000,
         "wires": []
     },
     {
         "id": "6330b9cc9a3d8637",
         "type": "debug",
         "z": "30f3df01.06ea",
+        "d": true,
+        "g": "b0031323f55f6d7f",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -16011,13 +15927,15 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1130,
-        "y": 2920,
+        "y": 2960,
         "wires": []
     },
     {
         "id": "301bb947e3a358a4",
         "type": "switch",
         "z": "30f3df01.06ea",
+        "d": true,
+        "g": "b0031323f55f6d7f",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -16030,7 +15948,7 @@
         "repair": false,
         "outputs": 1,
         "x": 1030,
-        "y": 3060,
+        "y": 3100,
         "wires": [
             [
                 "3f3143667f4f143a"
@@ -16041,6 +15959,8 @@
         "id": "3f3143667f4f143a",
         "type": "debug",
         "z": "30f3df01.06ea",
+        "d": true,
+        "g": "b0031323f55f6d7f",
         "name": "debug 282",
         "active": true,
         "tosidebar": true,
@@ -16050,7 +15970,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1290,
-        "y": 3060,
+        "y": 3100,
         "wires": []
     },
     {
