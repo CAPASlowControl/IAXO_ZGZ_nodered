@@ -91,49 +91,6 @@
         "color": "#DDAA99"
     },
     {
-        "id": "8d2889cddf4f0c77",
-        "type": "subflow",
-        "name": "RIGOL: switch status",
-        "info": "",
-        "category": "",
-        "in": [],
-        "out": [
-            {
-                "x": 1480,
-                "y": 140,
-                "wires": [
-                    {
-                        "id": "8baf9d32905f8885",
-                        "port": 0
-                    }
-                ]
-            },
-            {
-                "x": 1485,
-                "y": 260,
-                "wires": [
-                    {
-                        "id": "927a611e4d87005c",
-                        "port": 0
-                    }
-                ]
-            },
-            {
-                "x": 1500,
-                "y": 400,
-                "wires": [
-                    {
-                        "id": "8396aa9f93417e5f",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
         "id": "4e115b18621d03bf",
         "type": "subflow",
         "name": "RIGOL: make scpi command",
@@ -194,28 +151,6 @@
                 ]
             }
         ],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
-        "id": "a04e409f16590580",
-        "type": "subflow",
-        "name": "RIGOL: make on/off scpi commands",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 300,
-                "y": 240,
-                "wires": [
-                    {
-                        "id": "333a32bc1a89ae8d"
-                    }
-                ]
-            }
-        ],
-        "out": [],
         "env": [],
         "meta": {},
         "color": "#DDAA99"
@@ -819,13 +754,13 @@
             "label": true
         },
         "nodes": [
-            "55de8280f558eab4",
-            "43f8cf41fffcdfea"
+            "43f8cf41fffcdfea",
+            "1bdc8abfe2f438a0"
         ],
-        "x": 58,
+        "x": 8,
         "y": 13,
-        "w": 894,
-        "h": 749
+        "w": 1024,
+        "h": 694
     },
     {
         "id": "1e290dd08e91e782",
@@ -858,7 +793,7 @@
         "id": "c19db6aca5654904",
         "type": "group",
         "z": "045d5867a5e1ad28",
-        "name": "DAQ COMMISSIONING",
+        "name": "READ VALUES",
         "style": {
             "label": true
         },
@@ -871,8 +806,8 @@
             "64a4c48e39480412",
             "4fb7142d8fc9337f"
         ],
-        "x": 1054,
-        "y": 35.66668701171875,
+        "x": 1034,
+        "y": 15.66668701171875,
         "w": 832,
         "h": 365.33331298828125
     },
@@ -940,30 +875,6 @@
         "h": 242
     },
     {
-        "id": "55de8280f558eab4",
-        "type": "group",
-        "z": "045d5867a5e1ad28",
-        "g": "c03c99275d7d60d6",
-        "name": "LEDS STATUS ",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "9f2840a49540f60e",
-            "030011560678ecc5",
-            "83b4eb6dfa056d6a",
-            "d28e906f59c90a73",
-            "d35257ee2fe176ce",
-            "2ad6bbfce17c98b8",
-            "8a284d353d5ff68f"
-        ],
-        "x": 114,
-        "y": 39,
-        "w": 512,
-        "h": 362,
-        "info": "Continuosly control the leds status"
-    },
-    {
         "id": "43f8cf41fffcdfea",
         "type": "group",
         "z": "045d5867a5e1ad28",
@@ -973,18 +884,56 @@
             "label": true
         },
         "nodes": [
-            "128c776766d940c6",
             "a4f29221cd2057b7",
             "364762a030f54469",
             "7139b63db47ef681",
             "52b381b9e118a124",
             "250150a55c7bb09c",
-            "0983496559502a20"
+            "0983496559502a20",
+            "b48e53d053c763fc",
+            "7a75b0676971fb6d",
+            "78bd3d442dae9cb1",
+            "beb0b943faa673b1",
+            "2a421689edcb7c34"
         ],
         "x": 84,
         "y": 434,
         "w": 842,
-        "h": 302
+        "h": 247
+    },
+    {
+        "id": "1bdc8abfe2f438a0",
+        "type": "group",
+        "z": "045d5867a5e1ad28",
+        "g": "c03c99275d7d60d6",
+        "name": "LED Status",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "030011560678ecc5",
+            "83b4eb6dfa056d6a",
+            "d28e906f59c90a73",
+            "d35257ee2fe176ce",
+            "2ad6bbfce17c98b8",
+            "8a284d353d5ff68f",
+            "0a8dfda0fc07fcae",
+            "4bad37833e0efaf4",
+            "144021e3e8f0ed31",
+            "cb15ce74930bac2c",
+            "52869e36a168ba70",
+            "90d453477b7a93b5",
+            "3d6baa6bb5ccaaa0",
+            "b9f22c2fc4bf3f6c",
+            "57fe2fa1b6f1b8c2",
+            "b276ec9724f284d2",
+            "cfb8e828920f4d23",
+            "b1ae1184bd633bbf"
+        ],
+        "x": 34,
+        "y": 39,
+        "w": 972,
+        "h": 362
     },
     {
         "id": "a4fc396f.153838",
@@ -1147,27 +1096,6 @@
         }
     },
     {
-        "id": "72544c4aeb4b73c4",
-        "type": "serial-port",
-        "z": "8d2889cddf4f0c77",
-        "name": "",
-        "serialport": "/dev/MULTICOMP",
-        "serialbaud": "9600",
-        "databits": "8",
-        "parity": "none",
-        "stopbits": "1",
-        "waitfor": "",
-        "dtr": "none",
-        "rts": "none",
-        "cts": "none",
-        "dsr": "none",
-        "newline": "\\n",
-        "bin": "false",
-        "out": "char",
-        "addchar": "",
-        "responsetimeout": "10000"
-    },
-    {
         "id": "ea290f1e4e92d3ec",
         "type": "serial-port",
         "name": "",
@@ -1258,7 +1186,7 @@
         "name": "spacer",
         "group": "a611b3b4.f109b",
         "order": 30,
-        "width": "1",
+        "width": "6",
         "height": "1"
     },
     {
@@ -1551,157 +1479,6 @@
         ]
     },
     {
-        "id": "4b660b4df8990109",
-        "type": "inject",
-        "z": "8d2889cddf4f0c77",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "2",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "0.5",
-        "topic": "",
-        "payload": "1",
-        "payloadType": "str",
-        "x": 270,
-        "y": 280,
-        "wires": [
-            [
-                "ad2cce3eb77c38ad"
-            ]
-        ]
-    },
-    {
-        "id": "ad2cce3eb77c38ad",
-        "type": "function",
-        "z": "8d2889cddf4f0c77",
-        "name": "CURRENT PROTECTION STATUS REQUEST",
-        "func": "var flag = msg.payload; //takes the flag to initiate the measure\n\n//Takes the SCPI queries from global variables\nvar q_OVP = global.get(\"Query_OverVoltageProtection\")\nvar q_Outp = global.get(\"Query_Output\")\nvar q_OCP = global.get(\"Query_OverCurrentProtection\")\n\n//Constructs the payload\nvar msg1 = {payload : q_OVP};\nvar msg2 = {payload : q_OCP};\nvar msg3 = {payload : q_Outp};\n\nreturn [msg1,msg2,msg3];\n",
-        "outputs": 3,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 560,
-        "y": 280,
-        "wires": [
-            [
-                "21dcfb1a63844c92"
-            ],
-            [
-                "e48500e22a9cd507"
-            ],
-            [
-                "7cd34eea355838b3"
-            ]
-        ],
-        "info": "This function takes the SCPI commands from global variables and separate it by topics"
-    },
-    {
-        "id": "21dcfb1a63844c92",
-        "type": "serial request",
-        "z": "8d2889cddf4f0c77",
-        "name": "RIGOL",
-        "serial": "ea290f1e4e92d3ec",
-        "x": 920,
-        "y": 140,
-        "wires": [
-            [
-                "8baf9d32905f8885"
-            ]
-        ]
-    },
-    {
-        "id": "927a611e4d87005c",
-        "type": "function",
-        "z": "8d2889cddf4f0c77",
-        "name": "ON/OFF TO BOOLEAN",
-        "func": "\nvar input = (msg.payload || \"\").toString();  // asegura que siempre sea string\n\n// Quitar saltos de línea y retornos de carro\nvar cleanInput = input.replace(/[\\r\\n]/g, \"\").trim();\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Si llega algo inesperado\n    boolValue = null;\n}\n\nvar msg1 = { payload: boolValue };\n\nreturn [msg1];\n\n/*var input = msg.payload;  // Assume msg.payload contains the string \"ON\" or \"OFF\"\n\n// Remove carriage return characters\nvar cleanInput = input.replace(/\\n/, '')\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Optionally handle unexpected values\n    boolValue = null;  // or throw an error, or set a default value\n}\n\nvar msg1 = {payload: boolValue};            \n       \n\nreturn [msg1];\n*/",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1170,
-        "y": 260,
-        "wires": [
-            []
-        ],
-        "info": "This function makes the ON/OFF output to a boolean value."
-    },
-    {
-        "id": "8baf9d32905f8885",
-        "type": "function",
-        "z": "8d2889cddf4f0c77",
-        "name": "ON/OFF TO BOOLEAN",
-        "func": "var input = (msg.payload || \"\").toString();  // asegura que siempre sea string\n\n// Quitar saltos de línea y retornos de carro\nvar cleanInput = input.replace(/[\\r\\n]/g, \"\").trim();\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Si llega algo inesperado\n    boolValue = null;\n}\n\nvar msg1 = { payload: boolValue };\n\nreturn [msg1];\n\n/*var input = msg.payload;  // Assume msg.payload contains the string \"ON\" or \"OFF\"\n\n// Remove carriage return characters\nvar cleanInput = input.replace(/\\n/, '')\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Optionally handle unexpected values\n    boolValue = null;  // or throw an error, or set a default value\n}\n\nvar msg1 = {payload: boolValue};            \n       \n\nreturn [msg1];\n*/",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1150,
-        "y": 140,
-        "wires": [
-            []
-        ],
-        "info": "This function makes the ON/OFF output to a boolean value."
-    },
-    {
-        "id": "8396aa9f93417e5f",
-        "type": "function",
-        "z": "8d2889cddf4f0c77",
-        "name": "ON/OFF TO BOOLEAN",
-        "func": "\nvar input = (msg.payload || \"\").toString();  // asegura que siempre sea string\n\n// Quitar saltos de línea y retornos de carro\nvar cleanInput = input.replace(/[\\r\\n]/g, \"\").trim();\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Si llega algo inesperado\n    boolValue = null;\n}\n\nvar msg1 = { payload: boolValue };\n\nreturn [msg1];\n\n/*var input = msg.payload;  // Assume msg.payload contains the string \"ON\" or \"OFF\"\n\n// Remove carriage return characters\nvar cleanInput = input.replace(/\\n/, '')\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Optionally handle unexpected values\n    boolValue = null;  // or throw an error, or set a default value\n}\n\nvar msg1 = {payload: boolValue};            \n       \n\nreturn [msg1];\n*/",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1170,
-        "y": 400,
-        "wires": [
-            []
-        ],
-        "info": "This function makes the ON/OFF output to a boolean value."
-    },
-    {
-        "id": "e48500e22a9cd507",
-        "type": "serial request",
-        "z": "8d2889cddf4f0c77",
-        "name": "RIGOL",
-        "serial": "ea290f1e4e92d3ec",
-        "x": 920,
-        "y": 260,
-        "wires": [
-            [
-                "927a611e4d87005c"
-            ]
-        ]
-    },
-    {
-        "id": "7cd34eea355838b3",
-        "type": "serial request",
-        "z": "8d2889cddf4f0c77",
-        "name": "RIGOL",
-        "serial": "ea290f1e4e92d3ec",
-        "x": 920,
-        "y": 400,
-        "wires": [
-            [
-                "8396aa9f93417e5f"
-            ]
-        ]
-    },
-    {
         "id": "9e1372952816407e",
         "type": "function",
         "z": "4e115b18621d03bf",
@@ -1907,45 +1684,13 @@
         ]
     },
     {
-        "id": "333a32bc1a89ae8d",
-        "type": "function",
-        "z": "a04e409f16590580",
-        "name": "MAKE SCPI COMMAND",
-        "func": "// Get the boolean value from the input message payload\nvar inputBool = msg.payload;\n\n// Initialize the response string\nvar status_OCP = global.get(\"Status_OverCurrentProtection\");\nvar status_OVP = global.get(\"Status_OverVoltageProtection\");\nvar output = global.get(\"Output\");\n// Set the topic as flow variable to have control afterwards\n//flow.set('sharedTopic', msg.topic);\n\nvar response;\n// Use a switch statement to check the boolean value and topic\nswitch (msg.topic) {\n    case 'curr:prot':\n        if (inputBool === true) {\n            response = status_OCP + \"ON\";\n        } else if (inputBool === false) {\n            response = status_OCP + \"OFF\";\n        } else {\n            response = status_OCP + \"ON\";\n        }\n        break;\n    case 'volt:prot':\n        if (inputBool === true) {\n            response = status_OVP + \"ON\";\n        } else if (inputBool === false) {\n            response = status_OVP + \"OFF\";\n        } else {\n            response = status_OVP + \"ON\";\n        }\n        break;\n    case 'outp':\n        if (inputBool === true) {\n            response = output + \"ON\";\n        } else if (inputBool === false){\n            response = output + \"OFF\";\n        }else{\n            response = output + \"OFF\"\n        }\n}\n\n// Set the response as the payload of the output message\nmsg.payload = response;\n\n// Return the modified message\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 510,
-        "y": 240,
-        "wires": [
-            [
-                "9071b013aaaa7a2c"
-            ]
-        ],
-        "info": "This function add the <ON> or <OFF> to the SCPI command\n"
-    },
-    {
-        "id": "9071b013aaaa7a2c",
-        "type": "serial request",
-        "z": "a04e409f16590580",
-        "name": "RIGOL",
-        "serial": "ea290f1e4e92d3ec",
-        "x": 800,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "4cfe36aeef4e2de4",
         "type": "function",
         "z": "507af10e590bd558",
         "name": "SCPI commands",
         "func": "global.set(\"Set_OverCurrentProtection\", 'CURR:PROT ')\nglobal.set(\"Set_OverVoltageProtection\", 'VOLT:PROT ')\nglobal.set(\"Query_OverVoltageProtection\",'VOLT:PROT:STAT?')\nglobal.set(\"Query_OverCurrentProtection\",'CURR:PROT:STAT?')\nglobal.set(\"Status_OverCurrentProtection\",'CURR:PROT:STAT ')\nglobal.set(\"Status_OverVoltageProtection\",'VOLT:PROT:STAT ')\nglobal.set(\"Set_Voltage\", 'VOLT ')\nglobal.set(\"Set_Current\", 'CURR ')\nglobal.set('Meas_Voltage', ':MEAS:VOLT?')\nglobal.set('Meas_Current', ':MEAS:CURR?')\nglobal.set('Output', 'OUTP ')\nglobal.set('Query_Output', 'OUTP?')\nglobal.set('Query_OutpV', 'VOLT?')\nglobal.set('Query_OutpI', 'OUTP?')\nglobal.set('Query_OVP', 'VOLT:PROT?')\nglobal.set('Query_OCP', 'CURR:PROT?')\nglobal.set('Set_OverCurrentLimit', 'CURR:LIM ')\nglobal.set('Set_OverVoltageLimit', 'VOLT:LIM ')\nglobal.set('Query_OverCurrentLimit', 'CURR:LIM?')\nglobal.set('Query_OverVoltageLimit', 'VOLT:LIM?')",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -9189,16 +8934,6 @@
         "wires": []
     },
     {
-        "id": "128c776766d940c6",
-        "type": "subflow:a04e409f16590580",
-        "z": "045d5867a5e1ad28",
-        "g": "43f8cf41fffcdfea",
-        "name": "",
-        "x": 750,
-        "y": 580,
-        "wires": []
-    },
-    {
         "id": "a4f29221cd2057b7",
         "type": "ui_switch",
         "z": "045d5867a5e1ad28",
@@ -9210,8 +8945,8 @@
         "order": 10,
         "width": 0,
         "height": 0,
-        "passthru": true,
-        "decouple": "false",
+        "passthru": false,
+        "decouple": "true",
         "topic": "volt:prot",
         "topicType": "str",
         "style": "",
@@ -9225,11 +8960,11 @@
         "offcolor": "",
         "animate": true,
         "className": "",
-        "x": 370,
-        "y": 475,
+        "x": 300,
+        "y": 480,
         "wires": [
             [
-                "128c776766d940c6"
+                "b48e53d053c763fc"
             ]
         ]
     },
@@ -9245,8 +8980,8 @@
         "order": 10,
         "width": 0,
         "height": 0,
-        "passthru": true,
-        "decouple": "false",
+        "passthru": false,
+        "decouple": "true",
         "topic": "curr:prot",
         "topicType": "str",
         "style": "",
@@ -9260,11 +8995,11 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 370,
+        "x": 320,
         "y": 580,
         "wires": [
             [
-                "128c776766d940c6"
+                "7a75b0676971fb6d"
             ]
         ]
     },
@@ -9274,8 +9009,8 @@
         "z": "045d5867a5e1ad28",
         "g": "c19db6aca5654904",
         "name": "",
-        "x": 1210,
-        "y": 240,
+        "x": 1190,
+        "y": 220,
         "wires": [
             [
                 "222d1d0709b974e7",
@@ -9309,8 +9044,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1663.333251953125,
-        "y": 76.66668701171875,
+        "x": 1643.333251953125,
+        "y": 56.66668701171875,
         "wires": []
     },
     {
@@ -9352,8 +9087,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1693.333251953125,
-        "y": 116.66668701171875,
+        "x": 1673.333251953125,
+        "y": 96.66668701171875,
         "wires": [
             []
         ]
@@ -9376,8 +9111,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1720,
-        "y": 220,
+        "x": 1700,
+        "y": 200,
         "wires": []
     },
     {
@@ -9419,8 +9154,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1750,
-        "y": 260,
+        "x": 1730,
+        "y": 240,
         "wires": [
             []
         ]
@@ -9464,8 +9199,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1740,
-        "y": 360,
+        "x": 1720,
+        "y": 340,
         "wires": [
             []
         ]
@@ -9488,8 +9223,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1720,
-        "y": 320,
+        "x": 1700,
+        "y": 300,
         "wires": []
     },
     {
@@ -9504,8 +9239,8 @@
         "order": 10,
         "width": 0,
         "height": 0,
-        "passthru": true,
-        "decouple": "false",
+        "passthru": false,
+        "decouple": "true",
         "topic": "outp",
         "topicType": "str",
         "style": "",
@@ -9519,11 +9254,11 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 320,
-        "y": 695,
+        "x": 330,
+        "y": 640,
         "wires": [
             [
-                "128c776766d940c6"
+                "78bd3d442dae9cb1"
             ]
         ]
     },
@@ -9538,33 +9273,10 @@
         "wires": []
     },
     {
-        "id": "9f2840a49540f60e",
-        "type": "subflow:8d2889cddf4f0c77",
-        "z": "045d5867a5e1ad28",
-        "g": "55de8280f558eab4",
-        "name": "",
-        "x": 240,
-        "y": 220,
-        "wires": [
-            [
-                "83b4eb6dfa056d6a",
-                "d35257ee2fe176ce"
-            ],
-            [
-                "030011560678ecc5",
-                "2ad6bbfce17c98b8"
-            ],
-            [
-                "d28e906f59c90a73",
-                "8a284d353d5ff68f"
-            ]
-        ]
-    },
-    {
         "id": "030011560678ecc5",
         "type": "ui_led",
         "z": "045d5867a5e1ad28",
-        "g": "55de8280f558eab4",
+        "g": "1bdc8abfe2f438a0",
         "order": 2,
         "group": "d5b292af11f072b5",
         "width": 0,
@@ -9588,7 +9300,7 @@
         "shape": "circle",
         "showGlow": true,
         "name": "OCP",
-        "x": 530,
+        "x": 910,
         "y": 204,
         "wires": []
     },
@@ -9596,7 +9308,7 @@
         "id": "83b4eb6dfa056d6a",
         "type": "ui_led",
         "z": "045d5867a5e1ad28",
-        "g": "55de8280f558eab4",
+        "g": "1bdc8abfe2f438a0",
         "order": 2,
         "group": "d5b292af11f072b5",
         "width": 0,
@@ -9620,7 +9332,7 @@
         "shape": "circle",
         "showGlow": true,
         "name": "OVP",
-        "x": 530,
+        "x": 910,
         "y": 120,
         "wires": []
     },
@@ -9628,7 +9340,7 @@
         "id": "d28e906f59c90a73",
         "type": "ui_led",
         "z": "045d5867a5e1ad28",
-        "g": "55de8280f558eab4",
+        "g": "1bdc8abfe2f438a0",
         "order": 15,
         "group": "d5b292af11f072b5",
         "width": 0,
@@ -9652,7 +9364,7 @@
         "shape": "circle",
         "showGlow": true,
         "name": "OUTPUT",
-        "x": 540,
+        "x": 920,
         "y": 320,
         "wires": []
     },
@@ -9879,13 +9591,13 @@
         "id": "d35257ee2fe176ce",
         "type": "link out",
         "z": "045d5867a5e1ad28",
-        "g": "55de8280f558eab4",
+        "g": "1bdc8abfe2f438a0",
         "name": "link out 1",
         "mode": "link",
         "links": [
             "52b381b9e118a124"
         ],
-        "x": 495,
+        "x": 875,
         "y": 80,
         "wires": []
     },
@@ -9933,7 +9645,7 @@
             "8a284d353d5ff68f"
         ],
         "x": 125,
-        "y": 695,
+        "y": 640,
         "wires": [
             [
                 "7139b63db47ef681"
@@ -9944,13 +9656,13 @@
         "id": "2ad6bbfce17c98b8",
         "type": "link out",
         "z": "045d5867a5e1ad28",
-        "g": "55de8280f558eab4",
+        "g": "1bdc8abfe2f438a0",
         "name": "link out 2",
         "mode": "link",
         "links": [
             "0983496559502a20"
         ],
-        "x": 495,
+        "x": 875,
         "y": 240,
         "wires": []
     },
@@ -9958,13 +9670,13 @@
         "id": "8a284d353d5ff68f",
         "type": "link out",
         "z": "045d5867a5e1ad28",
-        "g": "55de8280f558eab4",
+        "g": "1bdc8abfe2f438a0",
         "name": "link out 3",
         "mode": "link",
         "links": [
             "250150a55c7bb09c"
         ],
-        "x": 495,
+        "x": 875,
         "y": 360,
         "wires": []
     },
@@ -10333,7 +10045,7 @@
         "z": "045d5867a5e1ad28",
         "g": "1e290dd08e91e782",
         "name": "debug 404",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -10343,6 +10055,359 @@
         "statusType": "auto",
         "x": 1430,
         "y": 560,
+        "wires": []
+    },
+    {
+        "id": "0a8dfda0fc07fcae",
+        "type": "inject",
+        "z": "045d5867a5e1ad28",
+        "g": "1bdc8abfe2f438a0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "4bad37833e0efaf4"
+            ]
+        ]
+    },
+    {
+        "id": "4bad37833e0efaf4",
+        "type": "function",
+        "z": "045d5867a5e1ad28",
+        "g": "1bdc8abfe2f438a0",
+        "name": "VOLT:PROT:STAT?",
+        "func": "//Constructs the payload\nmsg = {payload : 'VOLT:PROT:STAT?'};\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 160,
+        "wires": [
+            [
+                "144021e3e8f0ed31"
+            ]
+        ],
+        "info": "This function takes the SCPI commands from global variables and separate it by topics"
+    },
+    {
+        "id": "144021e3e8f0ed31",
+        "type": "serial request",
+        "z": "045d5867a5e1ad28",
+        "g": "1bdc8abfe2f438a0",
+        "name": "RIGOL",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 500,
+        "y": 160,
+        "wires": [
+            [
+                "52869e36a168ba70"
+            ]
+        ]
+    },
+    {
+        "id": "cb15ce74930bac2c",
+        "type": "function",
+        "z": "045d5867a5e1ad28",
+        "g": "1bdc8abfe2f438a0",
+        "name": "ON/OFF 2 BOOL",
+        "func": "\nvar input = (msg.payload || \"\").toString();  // asegura que siempre sea string\n\n// Quitar saltos de línea y retornos de carro\nvar cleanInput = input.replace(/[\\r\\n]/g, \"\").trim();\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Si llega algo inesperado\n    boolValue = null;\n}\n\nvar msg1 = { payload: boolValue };\n\nreturn [msg1];\n\n/*var input = msg.payload;  // Assume msg.payload contains the string \"ON\" or \"OFF\"\n\n// Remove carriage return characters\nvar cleanInput = input.replace(/\\n/, '')\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Optionally handle unexpected values\n    boolValue = null;  // or throw an error, or set a default value\n}\n\nvar msg1 = {payload: boolValue};            \n       \n\nreturn [msg1];\n*/",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 220,
+        "wires": [
+            [
+                "030011560678ecc5",
+                "2ad6bbfce17c98b8"
+            ]
+        ],
+        "info": "This function makes the ON/OFF output to a boolean value."
+    },
+    {
+        "id": "52869e36a168ba70",
+        "type": "function",
+        "z": "045d5867a5e1ad28",
+        "g": "1bdc8abfe2f438a0",
+        "name": "ON/OFF 2 BOOL",
+        "func": "var input = (msg.payload || \"\").toString();  // asegura que siempre sea string\n\n// Quitar saltos de línea y retornos de carro\nvar cleanInput = input.replace(/[\\r\\n]/g, \"\").trim();\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Si llega algo inesperado\n    boolValue = null;\n}\n\nvar msg1 = { payload: boolValue };\n\nreturn [msg1];\n\n/*var input = msg.payload;  // Assume msg.payload contains the string \"ON\" or \"OFF\"\n\n// Remove carriage return characters\nvar cleanInput = input.replace(/\\n/, '')\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Optionally handle unexpected values\n    boolValue = null;  // or throw an error, or set a default value\n}\n\nvar msg1 = {payload: boolValue};            \n       \n\nreturn [msg1];\n*/",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 160,
+        "wires": [
+            [
+                "d35257ee2fe176ce",
+                "83b4eb6dfa056d6a"
+            ]
+        ],
+        "info": "This function makes the ON/OFF output to a boolean value."
+    },
+    {
+        "id": "90d453477b7a93b5",
+        "type": "function",
+        "z": "045d5867a5e1ad28",
+        "g": "1bdc8abfe2f438a0",
+        "name": "ON/OFF 2 BOOL",
+        "func": "\nvar input = (msg.payload || \"\").toString();  // asegura que siempre sea string\n\n// Quitar saltos de línea y retornos de carro\nvar cleanInput = input.replace(/[\\r\\n]/g, \"\").trim();\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Si llega algo inesperado\n    boolValue = null;\n}\n\nvar msg1 = { payload: boolValue };\n\nreturn [msg1];\n\n/*var input = msg.payload;  // Assume msg.payload contains the string \"ON\" or \"OFF\"\n\n// Remove carriage return characters\nvar cleanInput = input.replace(/\\n/, '')\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Optionally handle unexpected values\n    boolValue = null;  // or throw an error, or set a default value\n}\n\nvar msg1 = {payload: boolValue};            \n       \n\nreturn [msg1];\n*/",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 280,
+        "wires": [
+            [
+                "d28e906f59c90a73",
+                "8a284d353d5ff68f"
+            ]
+        ],
+        "info": "This function makes the ON/OFF output to a boolean value."
+    },
+    {
+        "id": "3d6baa6bb5ccaaa0",
+        "type": "serial request",
+        "z": "045d5867a5e1ad28",
+        "g": "1bdc8abfe2f438a0",
+        "name": "RIGOL",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 500,
+        "y": 220,
+        "wires": [
+            [
+                "cb15ce74930bac2c"
+            ]
+        ]
+    },
+    {
+        "id": "b9f22c2fc4bf3f6c",
+        "type": "serial request",
+        "z": "045d5867a5e1ad28",
+        "g": "1bdc8abfe2f438a0",
+        "name": "RIGOL",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 480,
+        "y": 280,
+        "wires": [
+            [
+                "90d453477b7a93b5"
+            ]
+        ]
+    },
+    {
+        "id": "57fe2fa1b6f1b8c2",
+        "type": "function",
+        "z": "045d5867a5e1ad28",
+        "g": "1bdc8abfe2f438a0",
+        "name": "CURR:PROT:STAT?",
+        "func": "//Constructs the payload\nmsg = {payload : 'CURR:PROT:STAT?'};\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 220,
+        "wires": [
+            [
+                "3d6baa6bb5ccaaa0"
+            ]
+        ],
+        "info": "This function takes the SCPI commands from global variables and separate it by topics"
+    },
+    {
+        "id": "b276ec9724f284d2",
+        "type": "function",
+        "z": "045d5867a5e1ad28",
+        "g": "1bdc8abfe2f438a0",
+        "name": "OUTP?",
+        "func": "//Constructs the payload\nmsg = {payload : 'OUTP?'};\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 280,
+        "wires": [
+            [
+                "b9f22c2fc4bf3f6c"
+            ]
+        ],
+        "info": "This function takes the SCPI commands from global variables and separate it by topics"
+    },
+    {
+        "id": "cfb8e828920f4d23",
+        "type": "inject",
+        "z": "045d5867a5e1ad28",
+        "g": "1bdc8abfe2f438a0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "x": 130,
+        "y": 220,
+        "wires": [
+            [
+                "57fe2fa1b6f1b8c2"
+            ]
+        ]
+    },
+    {
+        "id": "b1ae1184bd633bbf",
+        "type": "inject",
+        "z": "045d5867a5e1ad28",
+        "g": "1bdc8abfe2f438a0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "x": 130,
+        "y": 280,
+        "wires": [
+            [
+                "b276ec9724f284d2"
+            ]
+        ]
+    },
+    {
+        "id": "b48e53d053c763fc",
+        "type": "function",
+        "z": "045d5867a5e1ad28",
+        "g": "43f8cf41fffcdfea",
+        "name": "VOLT:PROT:STAT",
+        "func": "// Get the boolean value from the input message payload\nlet inputBool = msg.payload;\n\n\nlet response;\nlet cmd='VOLT:PROT:STAT ';\n\n\nif (inputBool === true) {\n    response =  cmd+ \"ON\";\n}else if (inputBool === false){\n    response = cmd + \"OFF\";\n}else{\n    response = cmd + \"OFF\"\n}    \n\n\n\n// Set the response as the payload of the output message\nmsg.payload = response;\n\n// Return the modified message\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 520,
+        "wires": [
+            [
+                "beb0b943faa673b1",
+                "2a421689edcb7c34"
+            ]
+        ],
+        "info": "This function add the <ON> or <OFF> to the SCPI command\n"
+    },
+    {
+        "id": "7a75b0676971fb6d",
+        "type": "function",
+        "z": "045d5867a5e1ad28",
+        "g": "43f8cf41fffcdfea",
+        "name": "CURR:PROT:STAT ",
+        "func": "// Get the boolean value from the input message payload\nlet inputBool = msg.payload;\n\n\nlet response;\nlet cmd='CURR:PROT:STAT ';\n\n\nif (inputBool === true) {\n    response =  cmd+ \"ON\";\n}else if (inputBool === false){\n    response = cmd + \"OFF\";\n}else{\n    response = cmd + \"OFF\"\n}    \n\n\n\n// Set the response as the payload of the output message\nmsg.payload = response;\n\n// Return the modified message\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 580,
+        "wires": [
+            [
+                "beb0b943faa673b1"
+            ]
+        ],
+        "info": "This function add the <ON> or <OFF> to the SCPI command\n"
+    },
+    {
+        "id": "78bd3d442dae9cb1",
+        "type": "function",
+        "z": "045d5867a5e1ad28",
+        "g": "43f8cf41fffcdfea",
+        "name": "OUTP",
+        "func": "// Get the boolean value from the input message payload\nlet inputBool = msg.payload;\n\n\nlet response;\nlet cmd='OUTP ';\n\n\nif (inputBool === true) {\n    response =  cmd+ \"ON\";\n}else if (inputBool === false){\n    response = cmd + \"OFF\";\n}else{\n    response = cmd + \"OFF\"\n}    \n\n\n\n// Set the response as the payload of the output message\nmsg.payload = response;\n\n// Return the modified message\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 640,
+        "wires": [
+            [
+                "beb0b943faa673b1"
+            ]
+        ],
+        "info": "This function add the <ON> or <OFF> to the SCPI command\n"
+    },
+    {
+        "id": "beb0b943faa673b1",
+        "type": "serial out",
+        "z": "045d5867a5e1ad28",
+        "g": "43f8cf41fffcdfea",
+        "name": "",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 830,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "2a421689edcb7c34",
+        "type": "debug",
+        "z": "045d5867a5e1ad28",
+        "g": "43f8cf41fffcdfea",
+        "name": "debug 406",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 500,
         "wires": []
     }
 ]
