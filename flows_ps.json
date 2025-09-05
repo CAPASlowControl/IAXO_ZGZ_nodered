@@ -836,12 +836,18 @@
             "3f8ceeca4d894ec5",
             "354820f7027fefdf",
             "973a3afe0eb27668",
-            "68d814bb23c264b8"
+            "b851232d41dae915",
+            "fd1ec64602385f6d",
+            "4f98a7fc49d03c3e",
+            "4f0817fa06aea502",
+            "fd10cabc91aa8814",
+            "7364089ccfed10a8",
+            "48228b073415998b"
         ],
         "x": 1054,
-        "y": 479,
-        "w": 912,
-        "h": 162
+        "y": 419,
+        "w": 712,
+        "h": 382
     },
     {
         "id": "c19db6aca5654904",
@@ -880,8 +886,8 @@
             "830fae031f8f0118",
             "5596f8e165bffa5f"
         ],
-        "x": 1214,
-        "y": 759,
+        "x": 1024,
+        "y": 819,
         "w": 832,
         "h": 442,
         "info": "This group catches the errors in all the nodes of the flow. \nSecuruty function only makes the msg earier and Trim topic is to eliminate /dev/. \nCopy the group to add security in others flows. \nNOTE: Remember to change link out end."
@@ -1181,7 +1187,7 @@
         "type": "ui_group",
         "name": "CONTROL STATUS",
         "tab": "746024cac24260d8",
-        "order": 3,
+        "order": 4,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -1192,7 +1198,7 @@
         "type": "ui_group",
         "name": "DAQ COMMISSIONING",
         "tab": "746024cac24260d8",
-        "order": 2,
+        "order": 3,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -1203,7 +1209,7 @@
         "type": "ui_group",
         "name": "CONTROL",
         "tab": "746024cac24260d8",
-        "order": 1,
+        "order": 2,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -1214,7 +1220,7 @@
         "type": "ui_group",
         "name": "CONNECTION",
         "tab": "746024cac24260d8",
-        "order": 4,
+        "order": 1,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -9190,7 +9196,7 @@
         "nodata": "",
         "dot": false,
         "ymin": "0",
-        "ymax": "10",
+        "ymax": "40",
         "removeOlder": "10",
         "removeOlderPoints": "100",
         "removeOlderUnit": "60",
@@ -9721,7 +9727,7 @@
         "z": "045d5867a5e1ad28",
         "g": "1e290dd08e91e782",
         "name": "SERIAL PORT STATUS",
-        "func": "if (msg.status.fill != \"green\"){\n    msg.payload = false\n} else {\n    msg.payload = true;\n}\nreturn msg;",
+        "func": "/*if (msg.status.fill != \"green\"){\n    msg.payload = false\n} else {\n    msg.payload = true;\n}*/\n\nmsg.payload = msg.status.fill;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -9729,11 +9735,10 @@
         "finalize": "",
         "libs": [],
         "x": 1450,
-        "y": 520,
+        "y": 460,
         "wires": [
             [
-                "30fc14dcf637d8e8",
-                "68d814bb23c264b8"
+                "30fc14dcf637d8e8"
             ]
         ]
     },
@@ -9742,31 +9747,41 @@
         "type": "ui_led",
         "z": "045d5867a5e1ad28",
         "g": "1e290dd08e91e782",
-        "order": 8,
+        "order": 3,
         "group": "18d6158902c9746d",
         "width": 0,
         "height": 0,
-        "label": "Serial Port Detected",
+        "label": "Status",
         "labelPlacement": "left",
         "labelAlignment": "left",
         "colorForValue": [
             {
-                "color": "#ff0000",
-                "value": "false",
-                "valueType": "bool"
+                "color": "#77767b",
+                "value": "grey",
+                "valueType": "str"
             },
             {
                 "color": "#008000",
-                "value": "true",
-                "valueType": "bool"
+                "value": "green",
+                "valueType": "str"
+            },
+            {
+                "color": "#ff0000",
+                "value": "red",
+                "valueType": "str"
+            },
+            {
+                "color": "#f8e45c",
+                "value": "yellow",
+                "valueType": "str"
             }
         ],
         "allowColorForValueInMessage": false,
         "shape": "square",
-        "showGlow": true,
-        "name": "Serial Port Detected",
-        "x": 1840,
-        "y": 520,
+        "showGlow": false,
+        "name": "Status",
+        "x": 1690,
+        "y": 460,
         "wires": []
     },
     {
@@ -9798,7 +9813,8 @@
         "y": 600,
         "wires": [
             [
-                "3f8ceeca4d894ec5"
+                "3f8ceeca4d894ec5",
+                "b851232d41dae915"
             ]
         ]
     },
@@ -9812,29 +9828,14 @@
             "354820f7027fefdf"
         ],
         "x": 1160,
-        "y": 520,
+        "y": 460,
         "wires": [
             [
-                "c3790477ba831b90"
+                "c3790477ba831b90",
+                "fd10cabc91aa8814",
+                "48228b073415998b"
             ]
         ]
-    },
-    {
-        "id": "68d814bb23c264b8",
-        "type": "debug",
-        "z": "045d5867a5e1ad28",
-        "g": "1e290dd08e91e782",
-        "name": "debug 26",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1630,
-        "y": 580,
-        "wires": []
     },
     {
         "id": "7047fe49aa9ab855",
@@ -9846,8 +9847,8 @@
         "links": [
             "e5eec86ba63485ba"
         ],
-        "x": 1875,
-        "y": 800,
+        "x": 1685,
+        "y": 860,
         "wires": []
     },
     {
@@ -9858,8 +9859,8 @@
         "name": "",
         "scope": null,
         "uncaught": false,
-        "x": 1300,
-        "y": 800,
+        "x": 1110,
+        "y": 860,
         "wires": [
             [
                 "7ccd7b88d095803b"
@@ -9879,8 +9880,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1560,
-        "y": 800,
+        "x": 1370,
+        "y": 860,
         "wires": [
             [
                 "5596f8e165bffa5f"
@@ -9901,8 +9902,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1930,
-        "y": 1160,
+        "x": 1740,
+        "y": 1220,
         "wires": []
     },
     {
@@ -9926,8 +9927,8 @@
         "propout": "topic",
         "object": "msg",
         "objectout": "msg",
-        "x": 1720,
-        "y": 800,
+        "x": 1530,
+        "y": 860,
         "wires": [
             [
                 "830fae031f8f0118",
@@ -9942,6 +9943,159 @@
         "name": "",
         "x": 200,
         "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "b851232d41dae915",
+        "type": "ui_text",
+        "z": "045d5867a5e1ad28",
+        "g": "1e290dd08e91e782",
+        "group": "18d6158902c9746d",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Listener",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1400,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "fd1ec64602385f6d",
+        "type": "ui_button",
+        "z": "045d5867a5e1ad28",
+        "g": "1e290dd08e91e782",
+        "name": "",
+        "group": "18d6158902c9746d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Connect",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"enabled\": true}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1200,
+        "y": 700,
+        "wires": [
+            [
+                "4f0817fa06aea502"
+            ]
+        ]
+    },
+    {
+        "id": "4f98a7fc49d03c3e",
+        "type": "ui_button",
+        "z": "045d5867a5e1ad28",
+        "g": "1e290dd08e91e782",
+        "name": "",
+        "group": "18d6158902c9746d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "DisConnect",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"enabled\": false}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1190,
+        "y": 760,
+        "wires": [
+            [
+                "4f0817fa06aea502"
+            ]
+        ]
+    },
+    {
+        "id": "4f0817fa06aea502",
+        "type": "serial control",
+        "z": "045d5867a5e1ad28",
+        "g": "1e290dd08e91e782",
+        "name": "",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 1390,
+        "y": 740,
+        "wires": [
+            [
+                "7364089ccfed10a8"
+            ]
+        ]
+    },
+    {
+        "id": "fd10cabc91aa8814",
+        "type": "ui_text",
+        "z": "045d5867a5e1ad28",
+        "g": "1e290dd08e91e782",
+        "group": "18d6158902c9746d",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Status Text",
+        "format": "{{msg.status.text}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1430,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "7364089ccfed10a8",
+        "type": "debug",
+        "z": "045d5867a5e1ad28",
+        "g": "1e290dd08e91e782",
+        "name": "debug 403",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1570,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "48228b073415998b",
+        "type": "debug",
+        "z": "045d5867a5e1ad28",
+        "g": "1e290dd08e91e782",
+        "name": "debug 404",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1430,
+        "y": 560,
         "wires": []
     }
 ]
