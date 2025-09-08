@@ -17,7 +17,7 @@
     {
         "id": "2fd107e39580483f",
         "type": "tab",
-        "label": "Flow sensor 1",
+        "label": "Flow Controller Out",
         "disabled": false,
         "info": "",
         "env": []
@@ -1740,24 +1740,6 @@
         "h": 582
     },
     {
-        "id": "20f19823f292ba8b",
-        "type": "group",
-        "z": "2fd107e39580483f",
-        "name": "FLOW CONTROLLER OUT",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "b3ae29ee2a24cf7c",
-            "1c129dfeb05bcbe2",
-            "81cf755189fae457"
-        ],
-        "x": 18,
-        "y": 53,
-        "w": 1754,
-        "h": 754
-    },
-    {
         "id": "4b0a6b86bc2c5ad7",
         "type": "group",
         "z": "2fd107e39580483f",
@@ -1770,8 +1752,8 @@
             "91da1aeaa51042e2",
             "2c55b701affbbc32"
         ],
-        "x": 94,
-        "y": 1239,
+        "x": 114,
+        "y": 1299,
         "w": 712,
         "h": 82
     },
@@ -1815,7 +1797,7 @@
             "b62a3aa2ca2ac677"
         ],
         "x": 134,
-        "y": 1339,
+        "y": 1439,
         "w": 772,
         "h": 602
     },
@@ -1836,8 +1818,8 @@
             "89477837081c5453",
             "aa3f81f4a548cc1b"
         ],
-        "x": 1014,
-        "y": 1299,
+        "x": 114,
+        "y": 1079,
         "w": 1032,
         "h": 182
     },
@@ -2119,8 +2101,8 @@
             "70357663e62eb493",
             "ea58e129b16e6e92"
         ],
-        "x": 2084,
-        "y": 339,
+        "x": 1664,
+        "y": 39,
         "w": 782,
         "h": 162,
         "info": "This group catches the errors in all the nodes of the flow. \nSecuruty function only makes the msg earier and Trim topic is to eliminate /dev/. \nCopy the group to add security in others flows. \nNOTE: Remember to change link out end.\n\n\nHere we only select subflows becouse they trigger the errors in these devices. "
@@ -2848,6 +2830,31 @@
         "h": 402
     },
     {
+        "id": "b0031323f55f6d7f",
+        "type": "group",
+        "z": "30f3df01.06ea",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "15f2893e60d68df8",
+            "77333d1fdfbea40a",
+            "6330b9cc9a3d8637",
+            "301bb947e3a358a4",
+            "3f3143667f4f143a"
+        ],
+        "x": 814,
+        "y": 2919,
+        "w": 592,
+        "h": 222
+    },
+    {
         "id": "eca5bb2e0e780868",
         "type": "group",
         "z": "ac988ebf643b965c",
@@ -3137,7 +3144,6 @@
         "id": "b3ae29ee2a24cf7c",
         "type": "group",
         "z": "2fd107e39580483f",
-        "g": "20f19823f292ba8b",
         "name": "F1 status",
         "style": {
             "label": true
@@ -3147,20 +3153,20 @@
             "67d583b6809f7210",
             "e70e3ae90a7d4296",
             "bc1e0af9e59c347f",
-            "569b39ae2c541cd9",
             "d0ff6171b4b58231",
-            "361c7da7668fee33"
+            "361c7da7668fee33",
+            "4a91ff36a7018ac5",
+            "3801d6d755a4a01c"
         ],
-        "x": 54,
-        "y": 79,
-        "w": 762,
+        "x": 74,
+        "y": 539,
+        "w": 792,
         "h": 262
     },
     {
         "id": "1c129dfeb05bcbe2",
         "type": "group",
         "z": "2fd107e39580483f",
-        "g": "20f19823f292ba8b",
         "name": "F1 Control mode",
         "style": {
             "label": true
@@ -3174,24 +3180,20 @@
             "902964c7c08c9ad0",
             "1cc78cf5d72212c6"
         ],
-        "x": 54,
-        "y": 359,
-        "w": 1692,
+        "x": 94,
+        "y": 854,
+        "w": 1712,
         "h": 147
     },
     {
         "id": "81cf755189fae457",
         "type": "group",
         "z": "2fd107e39580483f",
-        "g": "20f19823f292ba8b",
-        "name": "F1 Instant control",
+        "name": "F1 Read Values",
         "style": {
             "label": true
         },
         "nodes": [
-            "5a73854765dd0576",
-            "7b5e6686099ff733",
-            "235eca474ed5163e",
             "758a4b942beba627",
             "a94f4ad9760cef8c",
             "1887cc2e8da47247",
@@ -3200,12 +3202,14 @@
             "1ce178dae85e25c3",
             "316b152720ca20fd",
             "e7e2ce115a2cc018",
-            "20087d6695517ec6"
+            "20087d6695517ec6",
+            "0d7f6eb321cc3b01",
+            "5f6706caa507622b"
         ],
         "x": 44,
-        "y": 519,
-        "w": 1462,
-        "h": 262
+        "y": 19,
+        "w": 1382,
+        "h": 282
     },
     {
         "id": "db3a8256a531523f",
@@ -3529,29 +3533,24 @@
         "h": 142
     },
     {
-        "id": "b0031323f55f6d7f",
+        "id": "ce609db0e079068e",
         "type": "group",
-        "z": "30f3df01.06ea",
+        "z": "2fd107e39580483f",
+        "name": "F1 SetPoint",
         "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
+            "label": true
         },
         "nodes": [
-            "15f2893e60d68df8",
-            "77333d1fdfbea40a",
-            "6330b9cc9a3d8637",
-            "301bb947e3a358a4",
-            "3f3143667f4f143a"
+            "39dba2acc02cabd3",
+            "311cc17b7dc9a3fb",
+            "3e841694803e95a1",
+            "1fd2a5f49d69d150",
+            "2b8fce83018c83ce"
         ],
-        "x": 814,
-        "y": 2919,
-        "w": 592,
-        "h": 222
+        "x": 54,
+        "y": 339,
+        "w": 1112,
+        "h": 82
     },
     {
         "id": "67018f7a.7112a8",
@@ -3803,7 +3802,7 @@
         "type": "ui_group",
         "name": "Binary Word",
         "tab": "ace5b427.951948",
-        "order": 7,
+        "order": 8,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -3814,7 +3813,7 @@
         "type": "ui_group",
         "name": "Flow Monitor",
         "tab": "ace5b427.951948",
-        "order": 6,
+        "order": 7,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -4153,7 +4152,7 @@
     {
         "id": "7e7d396a738aea50",
         "type": "ui_group",
-        "name": "Flow Controller",
+        "name": "In Flow Controller",
         "tab": "cf5851cdbfa28fa6",
         "order": 2,
         "disp": true,
@@ -4183,7 +4182,7 @@
     {
         "id": "330d66afb010399a",
         "type": "ui_group",
-        "name": "Flow Control",
+        "name": "In Flow Controller",
         "tab": "ace5b427.951948",
         "order": 5,
         "disp": true,
@@ -4215,7 +4214,7 @@
         "type": "ui_group",
         "name": "Flow Sensor 0",
         "tab": "cf5851cdbfa28fa6",
-        "order": 3,
+        "order": 4,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -4246,7 +4245,7 @@
         "type": "ui_group",
         "name": "Flow Sensor 1",
         "tab": "cf5851cdbfa28fa6",
-        "order": 4,
+        "order": 5,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -4285,7 +4284,7 @@
         "type": "ui_group",
         "name": "USB Pressure Sensors",
         "tab": "cf5851cdbfa28fa6",
-        "order": 5,
+        "order": 6,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -4970,9 +4969,9 @@
     {
         "id": "894cb778acd52a39",
         "type": "ui_group",
-        "name": "F1",
-        "tab": "ace5b427.951948",
-        "order": 9,
+        "name": "Out Flow Controller",
+        "tab": "cf5851cdbfa28fa6",
+        "order": 3,
         "disp": true,
         "width": "6",
         "collapse": true,
@@ -5116,14 +5115,15 @@
         "className": ""
     },
     {
-        "id": "b6bff7e7e0d07e25",
-        "type": "ui_spacer",
-        "z": "2fd107e39580483f",
-        "name": "spacer",
-        "group": "f0c7d5076e2bf0b9",
+        "id": "af5910d9b6bb5ad5",
+        "type": "ui_group",
+        "name": "Out Flow Controller",
+        "tab": "ace5b427.951948",
         "order": 6,
-        "width": 1,
-        "height": 1
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "249465b6f9b25a99",
@@ -9734,7 +9734,7 @@
         "g": "b3ae29ee2a24cf7c",
         "name": "",
         "group": "894cb778acd52a39",
-        "order": 2,
+        "order": 7,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -9748,8 +9748,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 140,
-        "y": 180,
+        "x": 160,
+        "y": 640,
         "wires": [
             [
                 "d0ff6171b4b58231"
@@ -9763,7 +9763,7 @@
         "g": "b3ae29ee2a24cf7c",
         "name": "",
         "group": "894cb778acd52a39",
-        "order": 1,
+        "order": 6,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -9777,8 +9777,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 150,
-        "y": 120,
+        "x": 170,
+        "y": 580,
         "wires": [
             [
                 "d0ff6171b4b58231"
@@ -9791,7 +9791,7 @@
         "z": "2fd107e39580483f",
         "g": "b3ae29ee2a24cf7c",
         "group": "894cb778acd52a39",
-        "order": 14,
+        "order": 8,
         "width": 0,
         "height": 0,
         "name": "F1 Regulator Listener",
@@ -9803,8 +9803,8 @@
         "font": "",
         "fontSize": "",
         "color": "#000000",
-        "x": 510,
-        "y": 300,
+        "x": 530,
+        "y": 760,
         "wires": []
     },
     {
@@ -9812,7 +9812,7 @@
         "type": "ui_led",
         "z": "2fd107e39580483f",
         "g": "b3ae29ee2a24cf7c",
-        "order": 5,
+        "order": 3,
         "group": "894cb778acd52a39",
         "width": 0,
         "height": 0,
@@ -9835,37 +9835,9 @@
         "shape": "circle",
         "showGlow": true,
         "name": "F1 Controller Port Detected",
-        "x": 670,
-        "y": 240,
+        "x": 720,
+        "y": 700,
         "wires": []
-    },
-    {
-        "id": "569b39ae2c541cd9",
-        "type": "change",
-        "z": "2fd107e39580483f",
-        "g": "b3ae29ee2a24cf7c",
-        "name": "Change status to payload",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "status.fill",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 410,
-        "y": 240,
-        "wires": [
-            [
-                "bc1e0af9e59c347f"
-            ]
-        ]
     },
     {
         "id": "ca0437abe80c8d27",
@@ -9874,7 +9846,7 @@
         "g": "1c129dfeb05bcbe2",
         "name": "",
         "group": "894cb778acd52a39",
-        "order": 6,
+        "order": 4,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -9888,8 +9860,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 740,
-        "y": 405,
+        "x": 780,
+        "y": 900,
         "wires": [
             [
                 "1cc78cf5d72212c6"
@@ -9901,7 +9873,7 @@
         "type": "ui_led",
         "z": "2fd107e39580483f",
         "g": "1c129dfeb05bcbe2",
-        "order": 9,
+        "order": 5,
         "group": "894cb778acd52a39",
         "width": 0,
         "height": 0,
@@ -9924,8 +9896,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Field Bus Enabled",
-        "x": 1630,
-        "y": 420,
+        "x": 1690,
+        "y": 895,
         "wires": []
     },
     {
@@ -9935,7 +9907,7 @@
         "g": "1c129dfeb05bcbe2",
         "name": "",
         "group": "894cb778acd52a39",
-        "order": 7,
+        "order": 2,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -9949,8 +9921,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 190,
-        "y": 465,
+        "x": 230,
+        "y": 960,
         "wires": [
             [
                 "902964c7c08c9ad0"
@@ -9964,7 +9936,7 @@
         "g": "1c129dfeb05bcbe2",
         "name": "",
         "group": "894cb778acd52a39",
-        "order": 8,
+        "order": 1,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -9978,8 +9950,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 180,
-        "y": 405,
+        "x": 220,
+        "y": 900,
         "wires": [
             [
                 "902964c7c08c9ad0"
@@ -9992,8 +9964,8 @@
         "z": "2fd107e39580483f",
         "g": "1c129dfeb05bcbe2",
         "name": "",
-        "x": 1380,
-        "y": 405,
+        "x": 1420,
+        "y": 900,
         "wires": [
             [
                 "dccb3013e9c10cca"
@@ -10001,91 +9973,11 @@
         ]
     },
     {
-        "id": "5a73854765dd0576",
-        "type": "ui_button",
-        "z": "2fd107e39580483f",
-        "g": "81cf755189fae457",
-        "name": "F1 Read SetPoint Value",
-        "group": "894cb778acd52a39",
-        "order": 10,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "F1 Read SetPoint Value",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": ":06030401210121",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 190,
-        "y": 600,
-        "wires": [
-            [
-                "57f6c09140c44704"
-            ]
-        ]
-    },
-    {
-        "id": "7b5e6686099ff733",
-        "type": "ui_button",
-        "z": "2fd107e39580483f",
-        "g": "81cf755189fae457",
-        "name": "F1 Read Measurement Value",
-        "group": "894cb778acd52a39",
-        "order": 12,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "F1 Read Measurement Value",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": ":06030401210120",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 190,
-        "y": 640,
-        "wires": [
-            [
-                "846d0c70cc4b9a07"
-            ]
-        ]
-    },
-    {
-        "id": "235eca474ed5163e",
-        "type": "ui_text",
-        "z": "2fd107e39580483f",
-        "g": "81cf755189fae457",
-        "group": "894cb778acd52a39",
-        "order": 11,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "F1 SetPoint Value [l/h]",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": "",
-        "color": "#000000",
-        "x": 1360,
-        "y": 600,
-        "wires": []
-    },
-    {
         "id": "758a4b942beba627",
         "type": "ui_text",
         "z": "2fd107e39580483f",
         "g": "81cf755189fae457",
-        "group": "894cb778acd52a39",
+        "group": "af5910d9b6bb5ad5",
         "order": 13,
         "width": 0,
         "height": 0,
@@ -10098,8 +9990,8 @@
         "font": "",
         "fontSize": "",
         "color": "#000000",
-        "x": 1370,
-        "y": 640,
+        "x": 1290,
+        "y": 180,
         "wires": []
     },
     {
@@ -10108,12 +10000,12 @@
         "z": "2fd107e39580483f",
         "g": "81cf755189fae457",
         "name": "",
-        "x": 910,
-        "y": 600,
+        "x": 830,
+        "y": 120,
         "wires": [
             [
-                "235eca474ed5163e",
-                "316b152720ca20fd"
+                "316b152720ca20fd",
+                "5f6706caa507622b"
             ]
         ]
     },
@@ -10123,8 +10015,8 @@
         "z": "2fd107e39580483f",
         "g": "81cf755189fae457",
         "name": "",
-        "x": 890,
-        "y": 640,
+        "x": 810,
+        "y": 160,
         "wires": [
             [
                 "758a4b942beba627",
@@ -10156,8 +10048,8 @@
         "topic": "",
         "payload": ":0780047163716300",
         "payloadType": "str",
-        "x": 230,
-        "y": 1280,
+        "x": 250,
+        "y": 1340,
         "wires": [
             [
                 "2c55b701affbbc32",
@@ -10180,8 +10072,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 690,
-        "y": 1280,
+        "x": 710,
+        "y": 1340,
         "wires": []
     },
     {
@@ -10192,8 +10084,8 @@
         "g": "4b0a6b86bc2c5ad7",
         "name": "F201CB config",
         "serial": "488efe6f06074f88",
-        "x": 480,
-        "y": 1280,
+        "x": 500,
+        "y": 1340,
         "wires": [
             [
                 "91da1aeaa51042e2"
@@ -10220,7 +10112,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 350,
-        "y": 1520,
+        "y": 1620,
         "wires": [
             [
                 "9b9afc3d7197c6a0",
@@ -10248,7 +10140,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 350,
-        "y": 1580,
+        "y": 1680,
         "wires": [
             [
                 "08ebbd91655e7a20",
@@ -10276,7 +10168,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 350,
-        "y": 1640,
+        "y": 1740,
         "wires": [
             [
                 "6d085c902fcef551",
@@ -10304,7 +10196,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 350,
-        "y": 1700,
+        "y": 1800,
         "wires": [
             [
                 "8937b014dbbd19c2",
@@ -10332,7 +10224,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 350,
-        "y": 1760,
+        "y": 1860,
         "wires": [
             [
                 "863b73ab012b82e1",
@@ -10360,7 +10252,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 350,
-        "y": 1820,
+        "y": 1920,
         "wires": [
             [
                 "1560b6f22b11cd16",
@@ -10388,7 +10280,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 350,
-        "y": 1900,
+        "y": 2000,
         "wires": [
             [
                 "47f8e6a6439b594a"
@@ -10419,7 +10311,7 @@
         "payload": ":0780047163716300",
         "payloadType": "str",
         "x": 280,
-        "y": 1380,
+        "y": 1480,
         "wires": [
             [
                 "b7fa718771f68fb3",
@@ -10443,7 +10335,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 790,
-        "y": 1400,
+        "y": 1500,
         "wires": []
     },
     {
@@ -10455,7 +10347,7 @@
         "name": "F201CB config",
         "serial": "488efe6f06074f88",
         "x": 600,
-        "y": 1400,
+        "y": 1500,
         "wires": [
             [
                 "f886233cd0071092"
@@ -10471,7 +10363,7 @@
         "name": "F201CB config",
         "serial": "488efe6f06074f88",
         "x": 560,
-        "y": 1500,
+        "y": 1600,
         "wires": [
             [
                 "1f63bd9960173feb"
@@ -10494,7 +10386,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 770,
-        "y": 1520,
+        "y": 1620,
         "wires": []
     },
     {
@@ -10506,7 +10398,7 @@
         "name": "F201CB config",
         "serial": "488efe6f06074f88",
         "x": 580,
-        "y": 1600,
+        "y": 1700,
         "wires": [
             [
                 "06fe2b6a4af3561f"
@@ -10529,7 +10421,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 770,
-        "y": 1580,
+        "y": 1680,
         "wires": []
     },
     {
@@ -10541,7 +10433,7 @@
         "name": "F201CB config",
         "serial": "488efe6f06074f88",
         "x": 580,
-        "y": 1660,
+        "y": 1760,
         "wires": [
             [
                 "e6aae26c25e2c766"
@@ -10564,7 +10456,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 770,
-        "y": 1660,
+        "y": 1760,
         "wires": []
     },
     {
@@ -10576,7 +10468,7 @@
         "name": "F201CB config",
         "serial": "488efe6f06074f88",
         "x": 560,
-        "y": 1720,
+        "y": 1820,
         "wires": [
             [
                 "6108e5f37696d9a1"
@@ -10599,7 +10491,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 750,
-        "y": 1720,
+        "y": 1820,
         "wires": []
     },
     {
@@ -10611,7 +10503,7 @@
         "name": "F201CB config",
         "serial": "488efe6f06074f88",
         "x": 580,
-        "y": 1760,
+        "y": 1860,
         "wires": [
             [
                 "218acf9a7adf9548"
@@ -10634,7 +10526,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 770,
-        "y": 1760,
+        "y": 1860,
         "wires": []
     },
     {
@@ -10646,7 +10538,7 @@
         "name": "F201CB config",
         "serial": "488efe6f06074f88",
         "x": 580,
-        "y": 1820,
+        "y": 1920,
         "wires": [
             [
                 "567fee456478c56b"
@@ -10669,7 +10561,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 770,
-        "y": 1820,
+        "y": 1920,
         "wires": []
     },
     {
@@ -10681,7 +10573,7 @@
         "name": "F201CB config",
         "serial": "488efe6f06074f88",
         "x": 560,
-        "y": 1900,
+        "y": 2000,
         "wires": [
             [
                 "b62a3aa2ca2ac677"
@@ -10704,13 +10596,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 750,
-        "y": 1900,
+        "y": 2000,
         "wires": []
     },
     {
         "id": "1308739f36400c7d",
         "type": "inject",
         "z": "2fd107e39580483f",
+        "d": true,
         "g": "56b05b496dc78a04",
         "name": "",
         "props": [
@@ -10729,8 +10622,8 @@
         "topic": "",
         "payload": ":06030401210120",
         "payloadType": "str",
-        "x": 1150,
-        "y": 1340,
+        "x": 250,
+        "y": 1120,
         "wires": [
             [
                 "aa3f81f4a548cc1b"
@@ -10741,10 +10634,11 @@
         "id": "29ba4c8212d52b3b",
         "type": "subflow:a73ba4fabd3c49ad",
         "z": "2fd107e39580483f",
+        "d": true,
         "g": "56b05b496dc78a04",
         "name": "",
-        "x": 1650,
-        "y": 1340,
+        "x": 750,
+        "y": 1120,
         "wires": [
             [
                 "fd743603efce9c02"
@@ -10755,6 +10649,7 @@
         "id": "fd743603efce9c02",
         "type": "ui_text",
         "z": "2fd107e39580483f",
+        "d": true,
         "g": "56b05b496dc78a04",
         "group": "897b1572.08b288",
         "order": 4,
@@ -10769,21 +10664,22 @@
         "font": "",
         "fontSize": "",
         "color": "#000000",
-        "x": 1930,
-        "y": 1340,
+        "x": 1030,
+        "y": 1120,
         "wires": []
     },
     {
         "id": "bd2c9babf702d888",
         "type": "status",
         "z": "2fd107e39580483f",
+        "d": true,
         "g": "56b05b496dc78a04",
         "name": "ID1_CT_F1 RM Connection status",
         "scope": [
             "04622bcae5406229"
         ],
-        "x": 1200,
-        "y": 1440,
+        "x": 300,
+        "y": 1220,
         "wires": [
             [
                 "b9763dca4d7210cf"
@@ -10794,6 +10690,7 @@
         "id": "b9763dca4d7210cf",
         "type": "change",
         "z": "2fd107e39580483f",
+        "d": true,
         "g": "56b05b496dc78a04",
         "name": "Change status to payload",
         "rules": [
@@ -10810,8 +10707,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1490,
-        "y": 1440,
+        "x": 590,
+        "y": 1220,
         "wires": [
             [
                 "89477837081c5453"
@@ -10822,9 +10719,10 @@
         "id": "89477837081c5453",
         "type": "ui_led",
         "z": "2fd107e39580483f",
+        "d": true,
         "g": "56b05b496dc78a04",
         "order": 3,
-        "group": "897b1572.08b288",
+        "group": "af5910d9b6bb5ad5",
         "width": 0,
         "height": 0,
         "label": "F1 Measure status",
@@ -10846,18 +10744,19 @@
         "shape": "circle",
         "showGlow": true,
         "name": "F1 Measure status",
-        "x": 1730,
-        "y": 1440,
+        "x": 830,
+        "y": 1220,
         "wires": []
     },
     {
         "id": "39dba2acc02cabd3",
         "type": "ui_text_input",
         "z": "2fd107e39580483f",
+        "g": "ce609db0e079068e",
         "name": "",
         "label": "Outlet Regulator Flow",
         "tooltip": "",
-        "group": "330d66afb010399a",
+        "group": "af5910d9b6bb5ad5",
         "order": 5,
         "width": 0,
         "height": 0,
@@ -10868,8 +10767,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 140,
-        "y": 1060,
+        "x": 180,
+        "y": 380,
         "wires": [
             [
                 "311cc17b7dc9a3fb"
@@ -10880,10 +10779,11 @@
         "id": "311cc17b7dc9a3fb",
         "type": "ui_numeric",
         "z": "2fd107e39580483f",
+        "g": "ce609db0e079068e",
         "name": "",
         "label": "Fine Tune",
         "tooltip": "",
-        "group": "330d66afb010399a",
+        "group": "af5910d9b6bb5ad5",
         "order": 6,
         "width": 0,
         "height": 0,
@@ -10896,8 +10796,8 @@
         "max": "10",
         "step": "0.1",
         "className": "",
-        "x": 320,
-        "y": 1060,
+        "x": 360,
+        "y": 380,
         "wires": [
             [
                 "3e841694803e95a1"
@@ -10908,6 +10808,7 @@
         "id": "3e841694803e95a1",
         "type": "function",
         "z": "2fd107e39580483f",
+        "g": "ce609db0e079068e",
         "name": "Coerce 10",
         "func": "var output = msg.payload;\n\noutput = parseFloat(output);\n\nif (output > 10) {\n    msg.payload = 10\n} else if (output < 0) {\n    msg.payload = 0\n}\n\nmsg.payload = output\n\nreturn msg;",
         "outputs": 1,
@@ -10916,8 +10817,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 530,
-        "y": 1060,
+        "x": 570,
+        "y": 380,
         "wires": [
             [
                 "39dba2acc02cabd3",
@@ -10929,9 +10830,10 @@
         "id": "1fd2a5f49d69d150",
         "type": "subflow:ba9b9d252c2508b4",
         "z": "2fd107e39580483f",
+        "g": "ce609db0e079068e",
         "name": "",
-        "x": 760,
-        "y": 1060,
+        "x": 800,
+        "y": 380,
         "wires": [
             [
                 "2b8fce83018c83ce"
@@ -10939,112 +10841,15 @@
         ]
     },
     {
-        "id": "5a4818b9072a1eb7",
-        "type": "inject",
-        "z": "2fd107e39580483f",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "1",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "2",
-        "topic": "",
-        "payload": "1",
-        "payloadType": "str",
-        "x": 1070,
-        "y": 980,
-        "wires": [
-            [
-                "e1730ac1663e8d21"
-            ]
-        ]
-    },
-    {
-        "id": "e1730ac1663e8d21",
-        "type": "function",
-        "z": "2fd107e39580483f",
-        "name": "Read SP",
-        "func": "var output = msg.payload;\n\nconst str1 = ':06030401210121';\n\nvar msgo = {payload : str1};\n\nreturn [msgo];\n\n\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1200,
-        "y": 1060,
-        "wires": [
-            [
-                "f99cd062827d073c"
-            ]
-        ]
-    },
-    {
-        "id": "edbee2fb78c5b113",
-        "type": "subflow:a73ba4fabd3c49ad",
-        "z": "2fd107e39580483f",
-        "name": "",
-        "x": 1630,
-        "y": 1060,
-        "wires": [
-            [
-                "1045f92f9fd1c06b"
-            ]
-        ]
-    },
-    {
-        "id": "1045f92f9fd1c06b",
-        "type": "ui_text",
-        "z": "2fd107e39580483f",
-        "group": "330d66afb010399a",
-        "order": 7,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "F1 Operation Value ",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 1890,
-        "y": 1060,
-        "wires": []
-    },
-    {
-        "id": "736797c6f22f4a04",
-        "type": "debug",
-        "z": "2fd107e39580483f",
-        "name": "debug 311",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1240,
-        "y": 980,
-        "wires": []
-    },
-    {
         "id": "aa3f81f4a548cc1b",
         "type": "serial request",
         "z": "2fd107e39580483f",
+        "d": true,
         "g": "56b05b496dc78a04",
         "name": "",
         "serial": "488efe6f06074f88",
-        "x": 1370,
-        "y": 1340,
+        "x": 470,
+        "y": 1120,
         "wires": [
             [
                 "29ba4c8212d52b3b"
@@ -11055,28 +10860,13 @@
         "id": "2b8fce83018c83ce",
         "type": "serial request",
         "z": "2fd107e39580483f",
+        "g": "ce609db0e079068e",
         "name": "",
         "serial": "488efe6f06074f88",
-        "x": 1030,
-        "y": 1060,
+        "x": 1070,
+        "y": 380,
         "wires": [
-            [
-                "e1730ac1663e8d21"
-            ]
-        ]
-    },
-    {
-        "id": "f99cd062827d073c",
-        "type": "serial request",
-        "z": "2fd107e39580483f",
-        "name": "",
-        "serial": "488efe6f06074f88",
-        "x": 1370,
-        "y": 1060,
-        "wires": [
-            [
-                "edbee2fb78c5b113"
-            ]
+            []
         ]
     },
     {
@@ -11086,8 +10876,8 @@
         "g": "81cf755189fae457",
         "name": "",
         "serial": "488efe6f06074f88",
-        "x": 550,
-        "y": 640,
+        "x": 470,
+        "y": 160,
         "wires": [
             [
                 "1887cc2e8da47247"
@@ -11101,8 +10891,8 @@
         "g": "81cf755189fae457",
         "name": "",
         "serial": "488efe6f06074f88",
-        "x": 550,
-        "y": 600,
+        "x": 470,
+        "y": 120,
         "wires": [
             [
                 "a94f4ad9760cef8c"
@@ -11116,8 +10906,8 @@
         "g": "1c129dfeb05bcbe2",
         "name": "",
         "serial": "488efe6f06074f88",
-        "x": 510,
-        "y": 400,
+        "x": 550,
+        "y": 895,
         "wires": [
             [
                 "ca0437abe80c8d27"
@@ -11131,8 +10921,8 @@
         "g": "1c129dfeb05bcbe2",
         "name": "",
         "serial": "488efe6f06074f88",
-        "x": 1010,
-        "y": 400,
+        "x": 1050,
+        "y": 895,
         "wires": [
             [
                 "2d01b595803d0f23"
@@ -11146,8 +10936,8 @@
         "g": "b3ae29ee2a24cf7c",
         "name": "",
         "serial": "488efe6f06074f88",
-        "x": 370,
-        "y": 140,
+        "x": 390,
+        "y": 600,
         "wires": [
             []
         ]
@@ -11159,8 +10949,8 @@
         "g": "b3ae29ee2a24cf7c",
         "name": "",
         "serial": "488efe6f06074f88",
-        "x": 250,
-        "y": 300,
+        "x": 270,
+        "y": 760,
         "wires": [
             [
                 "e70e3ae90a7d4296"
@@ -11178,8 +10968,8 @@
             "37a5a3ca6f1dc258",
             "95e212ba778e4d95"
         ],
-        "x": 1275,
-        "y": 700,
+        "x": 1195,
+        "y": 220,
         "wires": []
     },
     {
@@ -11195,8 +10985,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1330,
-        "y": 560,
+        "x": 1250,
+        "y": 60,
         "wires": []
     },
     {
@@ -11221,8 +11011,8 @@
         "topic": "",
         "payload": ":06030401210120",
         "payloadType": "str",
-        "x": 300,
-        "y": 710,
+        "x": 220,
+        "y": 230,
         "wires": [
             [
                 "846d0c70cc4b9a07"
@@ -11242,8 +11032,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1330,
-        "y": 740,
+        "x": 1250,
+        "y": 260,
         "wires": []
     },
     {
@@ -11256,8 +11046,8 @@
         "links": [
             "7f96f1a1caaab95d"
         ],
-        "x": 2755,
-        "y": 380,
+        "x": 2335,
+        "y": 80,
         "wires": []
     },
     {
@@ -11275,8 +11065,8 @@
             "29ba4c8212d52b3b"
         ],
         "uncaught": false,
-        "x": 2180,
-        "y": 380,
+        "x": 1760,
+        "y": 80,
         "wires": [
             [
                 "ae8ea32e421fa0ba"
@@ -11296,8 +11086,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2390,
-        "y": 380,
+        "x": 1970,
+        "y": 80,
         "wires": [
             [
                 "ea58e129b16e6e92"
@@ -11318,8 +11108,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2750,
-        "y": 460,
+        "x": 2330,
+        "y": 160,
         "wires": []
     },
     {
@@ -11343,12 +11133,101 @@
         "propout": "topic",
         "object": "msg",
         "objectout": "msg",
-        "x": 2600,
-        "y": 380,
+        "x": 2180,
+        "y": 80,
         "wires": [
             [
                 "70357663e62eb493",
                 "715fad08a1a4506b"
+            ]
+        ]
+    },
+    {
+        "id": "0d7f6eb321cc3b01",
+        "type": "inject",
+        "z": "2fd107e39580483f",
+        "g": "81cf755189fae457",
+        "name": "Request SetPoint Value",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": ":06030401210121",
+        "payloadType": "str",
+        "x": 210,
+        "y": 80,
+        "wires": [
+            [
+                "57f6c09140c44704"
+            ]
+        ]
+    },
+    {
+        "id": "5f6706caa507622b",
+        "type": "ui_text",
+        "z": "2fd107e39580483f",
+        "g": "81cf755189fae457",
+        "group": "af5910d9b6bb5ad5",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "F1 SetPoint Value [l/h]",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1280,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "4a91ff36a7018ac5",
+        "type": "function",
+        "z": "2fd107e39580483f",
+        "g": "b3ae29ee2a24cf7c",
+        "name": "",
+        "func": "if (msg.status.fill != \"green\"){\n    msg.payload = 0;\n} else {\n    msg.payload = 1;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "flow.set(\"trig\", 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 700,
+        "wires": [
+            [
+                "bc1e0af9e59c347f"
+            ]
+        ]
+    },
+    {
+        "id": "3801d6d755a4a01c",
+        "type": "status",
+        "z": "2fd107e39580483f",
+        "g": "b3ae29ee2a24cf7c",
+        "name": "Connection status",
+        "scope": [
+            "361c7da7668fee33"
+        ],
+        "x": 290,
+        "y": 700,
+        "wires": [
+            [
+                "4a91ff36a7018ac5"
             ]
         ]
     },
