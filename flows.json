@@ -45,6 +45,14 @@
         "env": []
     },
     {
+        "id": "7184b44879b683fb",
+        "type": "tab",
+        "label": "BGA",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "de6047b6e269aa2d",
         "type": "tab",
         "label": "LIACT_DTH",
@@ -58,14 +66,6 @@
         "label": "Gas Charts",
         "disabled": false,
         "info": ""
-    },
-    {
-        "id": "7184b44879b683fb",
-        "type": "tab",
-        "label": "BGA",
-        "disabled": false,
-        "info": "",
-        "env": []
     },
     {
         "id": "1c646c2a350b2d7c",
@@ -1360,8 +1360,8 @@
         ],
         "x": 88,
         "y": 33,
-        "w": 964,
-        "h": 974
+        "w": 984,
+        "h": 1014
     },
     {
         "id": "cc5ee890949d6fc9",
@@ -1372,7 +1372,6 @@
             "label": true
         },
         "nodes": [
-            "ddab3f561b679494",
             "6266f0d26c7dd256",
             "c859464543617c31",
             "d62ddef8f53b7698",
@@ -1398,10 +1397,11 @@
             "c60e9f56bfae40c0",
             "38c0eac486924c24",
             "98b6c5add3b70555",
-            "248cede428df3328"
+            "248cede428df3328",
+            "335a539e697acc89"
         ],
         "x": 14,
-        "y": 1039,
+        "y": 1079,
         "w": 1062,
         "h": 602,
         "info": "BG0I >> register 0 of BGA, for controlling good communitacion\nXALL >> Measure Ratio 1, Ratio 2, Temp, Press, Norm Speed of Sound, Block Temp\nRATO? 1% >> Measure Ratio Gas 1 in %\nRATO? 2% >> Measure Ratio Gas 2 in %\nUNCT?% "
@@ -2971,7 +2971,7 @@
         "x": 134,
         "y": 739,
         "w": 732,
-        "h": 242
+        "h": 282
     },
     {
         "id": "7799292376dc5c39",
@@ -3011,9 +3011,9 @@
             "label": true
         },
         "nodes": [
-            "3073a8ab5c2716b9",
             "b12f4d821baaa7e2",
-            "6712e165a74867c7"
+            "6712e165a74867c7",
+            "9e9f99ef0c2e410b"
         ],
         "x": 114,
         "y": 59,
@@ -3035,7 +3035,7 @@
         ],
         "x": 694,
         "y": 59,
-        "w": 332,
+        "w": 352,
         "h": 82
     },
     {
@@ -3069,7 +3069,6 @@
         },
         "nodes": [
             "79e092ac612b158e",
-            "610b849ae85e149e",
             "69b35cb522888a50",
             "8def87c258036a7c",
             "9ce56d52a92d785e",
@@ -3079,7 +3078,8 @@
             "a89cb876d2b33bc8",
             "b06b94aed0a22d95",
             "e9b4561c79bd059c",
-            "c32f7086d74af988"
+            "c32f7086d74af988",
+            "351ad96f659db8b6"
         ],
         "x": 144,
         "y": 159,
@@ -3129,9 +3129,9 @@
             "1cc78cf5d72212c6"
         ],
         "x": 94,
-        "y": 854,
-        "w": 1712,
-        "h": 147
+        "y": 794,
+        "w": 1052,
+        "h": 227
     },
     {
         "id": "81cf755189fae457",
@@ -4167,6 +4167,30 @@
         "h": 954
     },
     {
+        "id": "c6db76d90f894678",
+        "type": "group",
+        "z": "7184b44879b683fb",
+        "name": "Connection",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b5ded52e516759d1",
+            "fb99cca655c0728b",
+            "911b1c2947a89847",
+            "db9f3650da93a518",
+            "d153b317c58b1248",
+            "42e96d7eda5476a1",
+            "d5a87f70210a013f",
+            "67ea67d370992495",
+            "472d8c49c60295be"
+        ],
+        "x": 54,
+        "y": 1719,
+        "w": 672,
+        "h": 302
+    },
+    {
         "id": "67018f7a.7112a8",
         "type": "ui_base",
         "theme": {
@@ -4546,39 +4570,6 @@
         "className": ""
     },
     {
-        "id": "daf8c469.c37b98",
-        "type": "ui_group",
-        "name": "USB LIACT",
-        "tab": "31a0bc0f.c43bd4",
-        "order": 3,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "bf611100.3a543",
-        "type": "ui_group",
-        "name": "MQTT GAS DINF",
-        "tab": "31a0bc0f.c43bd4",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "c5d8a8d3.8fcd18",
-        "type": "ui_group",
-        "name": "USB BRONK",
-        "tab": "31a0bc0f.c43bd4",
-        "order": 2,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
         "id": "e50d02c.0731",
         "type": "ui_tab",
         "name": "Power Operation",
@@ -4630,17 +4621,6 @@
         "className": ""
     },
     {
-        "id": "b72b4c35.6a7d9",
-        "type": "ui_group",
-        "name": "Channel 1 (Mesh + Rim)",
-        "tab": "e50d02c.0731",
-        "order": 6,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
         "id": "a6317c0c.32b1c",
         "type": "mqtt-broker",
         "name": "",
@@ -4667,17 +4647,6 @@
         "willMsg": {},
         "userProps": "",
         "sessionExpiry": ""
-    },
-    {
-        "id": "fd500bccad1bcd3f",
-        "type": "ui_group",
-        "name": "USB CAEN",
-        "tab": "31a0bc0f.c43bd4",
-        "order": 4,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
     },
     {
         "id": "3c7a16b4b266de9d",
@@ -4709,37 +4678,6 @@
         "width": "6",
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "01405b51e812eb5b",
-        "type": "ui_group",
-        "name": "Channel 2 (Lower Ring)",
-        "tab": "3c7a16b4b266de9d",
-        "order": 3,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "9bc14967e468aab6",
-        "type": "ui_group",
-        "name": "Channel 1 (Mesh + Rim)",
-        "tab": "3c7a16b4b266de9d",
-        "order": 4,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "f14040a974aa3b52",
-        "type": "ui_group",
-        "name": "Group 6",
-        "tab": "31a0bc0f.c43bd4",
-        "order": 5,
-        "disp": true,
-        "width": 6
     },
     {
         "id": "7435ca9463275047",
@@ -4883,17 +4821,6 @@
         "responsetimeout": "10000"
     },
     {
-        "id": "a9d6846923206926",
-        "type": "ui_group",
-        "name": "USB Pressure Sensors",
-        "tab": "cf5851cdbfa28fa6",
-        "order": 6,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
         "id": "d3e0aed1aba4d3e3",
         "type": "ui_tab",
         "name": "DAQ Control",
@@ -4901,40 +4828,6 @@
         "order": 8,
         "disabled": false,
         "hidden": false
-    },
-    {
-        "id": "0f4a2c921e2d7131",
-        "type": "ui_group",
-        "name": "DAQ Power",
-        "tab": "d3e0aed1aba4d3e3",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "14d56b1358d6e472",
-        "type": "postgreSQLConfig",
-        "name": "DBConnectionPostgress",
-        "host": "192.168.1.131",
-        "hostFieldType": "str",
-        "port": "40201",
-        "portFieldType": "num",
-        "database": "slow-control",
-        "databaseFieldType": "str",
-        "ssl": "false",
-        "sslFieldType": "bool",
-        "max": "10",
-        "maxFieldType": "num",
-        "idle": "1000",
-        "idleFieldType": "num",
-        "connectionTimeout": "10000",
-        "connectionTimeoutFieldType": "num",
-        "user": "nodered",
-        "userFieldType": "str",
-        "password": "JKvf9mQhJak7k5G",
-        "passwordFieldType": "str"
     },
     {
         "id": "5f3924e076ad5a77",
@@ -4948,141 +4841,10 @@
         "className": ""
     },
     {
-        "id": "d025ed455914190d",
-        "type": "ui_group",
-        "name": "Maintenance status",
-        "tab": "6973ff9bdba7ad77",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "40c4156c9a22e1ac",
-        "type": "serial-port",
-        "serialport": "/dev/T2Rpo",
-        "serialbaud": "9600",
-        "databits": "8",
-        "parity": "none",
-        "stopbits": "1",
-        "waitfor": "",
-        "dtr": "none",
-        "rts": "none",
-        "cts": "none",
-        "dsr": "none",
-        "newline": "\\r",
-        "bin": "false",
-        "out": "char",
-        "addchar": "\\r",
-        "responsetimeout": "10000"
-    },
-    {
-        "id": "11324e48f6271f76",
-        "type": "serial-port",
-        "serialport": "/dev/T1Rpi",
-        "serialbaud": "9600",
-        "databits": "8",
-        "parity": "none",
-        "stopbits": "1",
-        "waitfor": "",
-        "dtr": "none",
-        "rts": "none",
-        "cts": "none",
-        "dsr": "none",
-        "newline": "\\r",
-        "bin": "false",
-        "out": "char",
-        "addchar": "\\r",
-        "responsetimeout": "10000"
-    },
-    {
         "id": "c439a095b5188232",
         "type": "ui_group",
         "name": "Channel 1 (Mesh + Rim)",
         "tab": "e50d02c.0731",
-        "order": 4,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "59aa76668d6cfbaa",
-        "type": "serial-port",
-        "serialport": "/dev/Prueba",
-        "serialbaud": "38400",
-        "databits": "8",
-        "parity": "none",
-        "stopbits": "1",
-        "waitfor": "",
-        "dtr": "none",
-        "rts": "none",
-        "cts": "none",
-        "dsr": "none",
-        "newline": "\\n",
-        "bin": "false",
-        "out": "char",
-        "addchar": "",
-        "responsetimeout": "10000"
-    },
-    {
-        "id": "30d6a7e3798671b4",
-        "type": "serial-port",
-        "serialport": "/dev/BRKPROB",
-        "serialbaud": "38400",
-        "databits": "8",
-        "parity": "none",
-        "stopbits": "1",
-        "waitfor": "",
-        "dtr": "none",
-        "rts": "none",
-        "cts": "none",
-        "dsr": "none",
-        "newline": "\\r",
-        "bin": "false",
-        "out": "char",
-        "addchar": "\\r",
-        "responsetimeout": "10000"
-    },
-    {
-        "id": "d2245af295e6cac6",
-        "type": "ui_group",
-        "name": "CONTROL STATUS",
-        "tab": "c8bd2cec7b47fa5f",
-        "order": 3,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "64d4881246380838",
-        "type": "ui_group",
-        "name": "CONTROL",
-        "tab": "c8bd2cec7b47fa5f",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "3b6c28d0f851a427",
-        "type": "ui_group",
-        "name": "DAQ COMMISSIONING",
-        "tab": "c8bd2cec7b47fa5f",
-        "order": 2,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "fb629330b9b9971d",
-        "type": "ui_group",
-        "name": "CONNECTION",
-        "tab": "c8bd2cec7b47fa5f",
         "order": 4,
         "disp": true,
         "width": "6",
@@ -5097,64 +4859,6 @@
         "order": 2,
         "disabled": false,
         "hidden": false
-    },
-    {
-        "id": "8fdbf731aa67e513",
-        "type": "serial-port",
-        "serialport": "/dev/ttyUSB6",
-        "serialbaud": "115200",
-        "databits": "8",
-        "parity": "none",
-        "stopbits": "1",
-        "waitfor": "",
-        "dtr": "none",
-        "rts": "none",
-        "cts": "none",
-        "dsr": "none",
-        "newline": "\\n",
-        "bin": "false",
-        "out": "char",
-        "addchar": "\\r\\n",
-        "responsetimeout": "300"
-    },
-    {
-        "id": "cf0c6bbb1dc9e5eb",
-        "type": "serial-port",
-        "serialport": "/dev/ttyUSB6",
-        "serialbaud": "115200",
-        "databits": "8",
-        "parity": "none",
-        "stopbits": "1",
-        "waitfor": "",
-        "dtr": "none",
-        "rts": "none",
-        "cts": "none",
-        "dsr": "none",
-        "newline": "\\n",
-        "bin": "false",
-        "out": "char",
-        "addchar": "",
-        "responsetimeout": "10000"
-    },
-    {
-        "id": "e3bfcfae.d38b3",
-        "type": "mqtt-broker",
-        "name": "MQTT Broker",
-        "broker": "localhost",
-        "port": "1883",
-        "clientid": "",
-        "usetls": false,
-        "compatmode": true,
-        "keepalive": "60",
-        "cleansession": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthPayload": "",
-        "closeTopic": "",
-        "closePayload": "",
-        "willTopic": "",
-        "willQos": "0",
-        "willPayload": ""
     },
     {
         "id": "4b3ae4eeb8191fd4",
@@ -5179,29 +4883,6 @@
         "user": "iaxo",
         "userFieldType": "str",
         "password": "bujaruelo",
-        "passwordFieldType": "str"
-    },
-    {
-        "id": "7da60a7af3a1d77c",
-        "type": "postgreSQLConfig",
-        "name": "",
-        "host": "127.0.0.1",
-        "hostFieldType": "str",
-        "port": "5432",
-        "portFieldType": "num",
-        "database": "pruebecita",
-        "databaseFieldType": "str",
-        "ssl": "false",
-        "sslFieldType": "bool",
-        "max": "10",
-        "maxFieldType": "num",
-        "idle": "1000",
-        "idleFieldType": "num",
-        "connectionTimeout": "10000",
-        "connectionTimeoutFieldType": "num",
-        "user": "usertrex",
-        "userFieldType": "str",
-        "password": "T21r19ex",
         "passwordFieldType": "str"
     },
     {
@@ -5320,26 +5001,6 @@
         "responsetimeout": "100"
     },
     {
-        "id": "38060272f31b61fd",
-        "type": "serial-port",
-        "name": "",
-        "serialport": "/dev/BGA",
-        "serialbaud": "9600",
-        "databits": "8",
-        "parity": "none",
-        "stopbits": "1",
-        "waitfor": "",
-        "dtr": "none",
-        "rts": "none",
-        "cts": "none",
-        "dsr": "none",
-        "newline": "\\n",
-        "bin": "false",
-        "out": "char",
-        "addchar": "\\r",
-        "responsetimeout": "10000"
-    },
-    {
         "id": "e418d404b51b7050",
         "type": "ui_group",
         "name": "Device Conditions",
@@ -5437,26 +5098,6 @@
         "hidden": false
     },
     {
-        "id": "53255e9082d74aab",
-        "type": "serial-port",
-        "name": "RIGOL",
-        "serialport": "/dev/RIGOL",
-        "serialbaud": "9600",
-        "databits": "8",
-        "parity": "none",
-        "stopbits": "1",
-        "waitfor": "",
-        "dtr": "none",
-        "rts": "none",
-        "cts": "none",
-        "dsr": "none",
-        "newline": "\\n",
-        "bin": "false",
-        "out": "char",
-        "addchar": "\\r\\n",
-        "responsetimeout": "200"
-    },
-    {
         "id": "d5b292af11f072b5",
         "type": "ui_group",
         "name": "CONTROL STATUS",
@@ -5550,26 +5191,6 @@
         "responsetimeout": "10000"
     },
     {
-        "id": "977afb39b41bc1c6",
-        "type": "serial-port",
-        "name": "",
-        "serialport": "/dev/RIGOL",
-        "serialbaud": "9600",
-        "databits": "8",
-        "parity": "none",
-        "stopbits": "1",
-        "waitfor": "",
-        "dtr": "none",
-        "rts": "none",
-        "cts": "none",
-        "dsr": "none",
-        "newline": "\\n",
-        "bin": "false",
-        "out": "char",
-        "addchar": "\\r\\n",
-        "responsetimeout": "10000"
-    },
-    {
         "id": "894cb778acd52a39",
         "type": "ui_group",
         "name": "Out Flow Controller",
@@ -5577,7 +5198,7 @@
         "order": 3,
         "disp": true,
         "width": "6",
-        "collapse": true,
+        "collapse": false,
         "className": ""
     },
     {
@@ -5643,64 +5264,11 @@
         "hidden": false
     },
     {
-        "id": "59ed2bfbc535477f",
-        "type": "mqtt-broker",
-        "name": "",
-        "broker": "155.210.135.90",
-        "port": "1883",
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": "4",
-        "keepalive": "60",
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
-    },
-    {
         "id": "ca35f057d975c469",
         "type": "ui_group",
         "name": "ONLY EXPERT USER",
         "tab": "20aab804.e497a8",
         "order": 6,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "9b9407eac2b5ded5",
-        "type": "ui_group",
-        "name": "Channel 1 (Ring)",
-        "tab": "e50d02c.0731",
-        "order": 4,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "e2e02e01a4e65d03",
-        "type": "ui_group",
-        "name": "Channel 2 (Mesh)",
-        "tab": "e50d02c.0731",
-        "order": 5,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -5737,6 +5305,17 @@
         "order": 9,
         "width": 1,
         "height": 1
+    },
+    {
+        "id": "7b8247a38674f7e4",
+        "type": "ui_group",
+        "name": "Connection",
+        "tab": "0b2423ed9d5f1954",
+        "order": 9,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "249465b6f9b25a99",
@@ -10391,8 +9970,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 780,
-        "y": 900,
+        "x": 240,
+        "y": 980,
         "wires": [
             [
                 "1cc78cf5d72212c6"
@@ -10427,8 +10006,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Field Bus Enabled",
-        "x": 1690,
-        "y": 895,
+        "x": 1030,
+        "y": 960,
         "wires": []
     },
     {
@@ -10453,7 +10032,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 230,
-        "y": 960,
+        "y": 900,
         "wires": [
             [
                 "902964c7c08c9ad0"
@@ -10482,7 +10061,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 220,
-        "y": 900,
+        "y": 840,
         "wires": [
             [
                 "902964c7c08c9ad0"
@@ -10495,8 +10074,8 @@
         "z": "2fd107e39580483f",
         "g": "1c129dfeb05bcbe2",
         "name": "",
-        "x": 1420,
-        "y": 900,
+        "x": 750,
+        "y": 960,
         "wires": [
             [
                 "dccb3013e9c10cca"
@@ -11403,11 +10982,9 @@
         "name": "",
         "serial": "488efe6f06074f88",
         "x": 550,
-        "y": 895,
+        "y": 835,
         "wires": [
-            [
-                "ca0437abe80c8d27"
-            ]
+            []
         ]
     },
     {
@@ -11417,8 +10994,8 @@
         "g": "1c129dfeb05bcbe2",
         "name": "",
         "serial": "488efe6f06074f88",
-        "x": 1050,
-        "y": 895,
+        "x": 510,
+        "y": 975,
         "wires": [
             [
                 "2d01b595803d0f23"
@@ -15071,904 +14648,6 @@
         ]
     },
     {
-        "id": "9e20ac30aee2e7cf",
-        "type": "serial in",
-        "z": "de6047b6e269aa2d",
-        "g": "86dc799a4340918e",
-        "name": "USB LinAct In",
-        "serial": "8712219c.675868",
-        "x": 270,
-        "y": 140,
-        "wires": [
-            [
-                "cad8adf2a74cca0e",
-                "ed77d4256df2d24f",
-                "323bca7b58983a3e",
-                "032be02c2781222c"
-            ]
-        ]
-    },
-    {
-        "id": "ed77d4256df2d24f",
-        "type": "function",
-        "z": "de6047b6e269aa2d",
-        "g": "86dc799a4340918e",
-        "name": "",
-        "func": "var output = msg.payload.split(\"\\t\");\n\nvar kal = parseInt(output[0]);\nvar bra  = parseInt(output[1]);\nvar dir    = parseInt(output[2]);\nvar cour    = parseInt(output[3]);\nvar posi    = parseInt(output[4]);\nvar tempe   = parseInt(output[5]);\nvar humed   = parseInt(output[6]);\nvar pled    = 0;\nvar kled    = 0;\n\nif (bra != 1) {\n    bra = 0;\n    pled    = 0;\n    kled    = 0;\n} else{\n    if (dir != 0) {\n        dir = 1;\n        pled    = 1;\n        kled    = 0;\n    }else{\n        pled    = 0;\n        kled    = 1;\n    }     \n}\n\nvar parkVal = 44;\nvar caliVal = 990 - parkVal;\nposi = posi * 100 / caliVal;\nif (posi >= 50){\n    posi = 100;\n}else if(posi <= 6){\n    posi = 0;\n}else{\n    posi = parseFloat(posi).toFixed(1);\n}\n\nvar stopVal = 0;\nvar maxVal = 600 - stopVal;\ncour = cour * 100 / maxVal;\nif (cour >= 50){\n    cour = 100;\n}else if(cour <= 0.5){\n    cour = 0;\n}else{\n    cour = parseFloat(cour).toFixed(1);\n}\n\n//cour = parseFloat(cour).toFixed(1);\n\n\n\nvar alarmp = 0;\n\nif ((posi >= 10) & (posi <= 90)){\n    alarmp = 1;\n}else{\n    alarmp = 0;\n}\n\n\n\nvar alarmc = 0;\n\nif (cour >= 90){\n    alarmc = 1;\n}else{\n    alarmc = 0;\n}\n\n\nvar msg1 = {payload : kal};\nvar msg2 = {payload : bra};\nvar msg3 = {payload : {brk: bra, park : pled}};\nvar msg4 = {payload : cour};\nvar msg5 = {payload : posi};\nvar msg6 = {payload : pled};\nvar msg7 = {payload : kled};\nvar msg8 = {payload : parseFloat(tempe).toFixed(2)};\nvar msg9 = {payload : parseFloat(humed).toFixed(2)};\nvar msg10 = {payload : alarmp};\nvar msg11 = {payload : alarmc};\n\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];",
-        "outputs": 11,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 500,
-        "y": 260,
-        "wires": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [
-                "3f5ac05726849b62",
-                "7f8871f127b9fd9e"
-            ],
-            [
-                "1fc812370ea29976",
-                "d784bd2793537b7e"
-            ],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "323bca7b58983a3e",
-        "type": "ui_text",
-        "z": "de6047b6e269aa2d",
-        "g": "86dc799a4340918e",
-        "group": "bd91171b1bf08b35",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Actuator Listener",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": "",
-        "color": "#000000",
-        "x": 530,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "cad8adf2a74cca0e",
-        "type": "debug",
-        "z": "de6047b6e269aa2d",
-        "g": "86dc799a4340918e",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 510,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "1fc812370ea29976",
-        "type": "link out",
-        "z": "de6047b6e269aa2d",
-        "g": "86dc799a4340918e",
-        "name": "Humi Src",
-        "mode": "link",
-        "links": [
-            "4f0b59b71a173e38",
-            "539067f5fc0484ad",
-            "bcef9b11804cd98f",
-            "22eee29543534cc1",
-            "a5fb5c948889de7c",
-            "4bd2e0738c8ec87b",
-            "e03f2b8f198ca44a"
-        ],
-        "x": 665,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "032be02c2781222c",
-        "type": "debug",
-        "z": "de6047b6e269aa2d",
-        "g": "86dc799a4340918e",
-        "name": "debug 420",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 350,
-        "y": 400,
-        "wires": []
-    },
-    {
-        "id": "11c8f682f31c6499",
-        "type": "function",
-        "z": "de6047b6e269aa2d",
-        "g": "86dc799a4340918e",
-        "name": "",
-        "func": "if (msg.status.fill != \"green\"){\n    msg.payload = 0;\n} else {\n    msg.payload = 1;\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "flow.set(\"trig\", 0);",
-        "finalize": "",
-        "libs": [],
-        "x": 520,
-        "y": 500,
-        "wires": [
-            [
-                "414307de8f738fe2"
-            ]
-        ]
-    },
-    {
-        "id": "5d19a47a553240d3",
-        "type": "status",
-        "z": "de6047b6e269aa2d",
-        "g": "86dc799a4340918e",
-        "name": "Connection status",
-        "scope": [
-            "9e20ac30aee2e7cf"
-        ],
-        "x": 310,
-        "y": 500,
-        "wires": [
-            [
-                "11c8f682f31c6499"
-            ]
-        ]
-    },
-    {
-        "id": "414307de8f738fe2",
-        "type": "ui_led",
-        "z": "de6047b6e269aa2d",
-        "g": "86dc799a4340918e",
-        "order": 3,
-        "group": "bd91171b1bf08b35",
-        "width": 0,
-        "height": 0,
-        "label": "Sensor Port Detected",
-        "labelPlacement": "left",
-        "labelAlignment": "left",
-        "colorForValue": [
-            {
-                "color": "#ff0000",
-                "value": "0",
-                "valueType": "num"
-            },
-            {
-                "color": "#008000",
-                "value": "1",
-                "valueType": "num"
-            }
-        ],
-        "allowColorForValueInMessage": false,
-        "shape": "circle",
-        "showGlow": true,
-        "name": "Connection Status",
-        "x": 730,
-        "y": 500,
-        "wires": []
-    },
-    {
-        "id": "3f5ac05726849b62",
-        "type": "ui_text",
-        "z": "de6047b6e269aa2d",
-        "g": "86dc799a4340918e",
-        "group": "bd91171b1bf08b35",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "name": "Temperature",
-        "label": "Temperature [ºC]",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": "",
-        "color": "#000000",
-        "x": 730,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "7f8871f127b9fd9e",
-        "type": "link out",
-        "z": "de6047b6e269aa2d",
-        "g": "86dc799a4340918e",
-        "name": "Tempe Src",
-        "mode": "link",
-        "links": [
-            "5cb8cdb93fcf7080",
-            "aa39267df330a2c3",
-            "31a0445c1cfa81e0",
-            "487c69a287e02d42",
-            "a4f28ffee5b3d079",
-            "4e31446dc0871d3a",
-            "3d6e1fbab00b69fc"
-        ],
-        "x": 685,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "d784bd2793537b7e",
-        "type": "ui_text",
-        "z": "de6047b6e269aa2d",
-        "g": "86dc799a4340918e",
-        "group": "bd91171b1bf08b35",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "name": "Humidity",
-        "label": "Humidity [%]",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 700,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "53b57ace.555ac4",
-        "type": "ui_chart",
-        "z": "98369200.cfe7c",
-        "name": "",
-        "group": "55a42588.a25b3c",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "label": "P Inlet [mbar]",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "0",
-        "ymax": "1500",
-        "removeOlder": "10",
-        "removeOlderPoints": "600",
-        "removeOlderUnit": "60",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 790,
-        "y": 180,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6a4009ec.475ac8",
-        "type": "ui_chart",
-        "z": "98369200.cfe7c",
-        "name": "",
-        "group": "46e9fbfa.ddab04",
-        "order": 8,
-        "width": 0,
-        "height": 0,
-        "label": "F Outlet [L/h]",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "0",
-        "ymax": "12",
-        "removeOlder": "2",
-        "removeOlderPoints": "100",
-        "removeOlderUnit": "60",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 1270,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "520b9de0.240154",
-        "type": "ui_chart",
-        "z": "98369200.cfe7c",
-        "name": "",
-        "group": "46e9fbfa.ddab04",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "label": "F Inlet [L/h]",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "0",
-        "ymax": "12",
-        "removeOlder": "10",
-        "removeOlderPoints": "600",
-        "removeOlderUnit": "60",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 1270,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "82887465.682f98",
-        "type": "ui_chart",
-        "z": "98369200.cfe7c",
-        "name": "",
-        "group": "55a42588.a25b3c",
-        "order": 8,
-        "width": 0,
-        "height": 0,
-        "label": "P Outlet [mbar]",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "0",
-        "ymax": "1500",
-        "removeOlder": "10",
-        "removeOlderPoints": "600",
-        "removeOlderUnit": "60",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 800,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c0ee364e.dfdaf8",
-        "type": "ui_text",
-        "z": "98369200.cfe7c",
-        "group": "55a42588.a25b3c",
-        "order": 7,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "P Outlet [mbar]",
-        "format": "{{msg.payload}}",
-        "layout": "row-center",
-        "className": "",
-        "x": 800,
-        "y": 40,
-        "wires": []
-    },
-    {
-        "id": "41afb889.68c308",
-        "type": "ui_text",
-        "z": "98369200.cfe7c",
-        "group": "55a42588.a25b3c",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "P Inlet [mbar]",
-        "format": "{{msg.payload}}",
-        "layout": "row-center",
-        "className": "",
-        "x": 790,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "4504fac3.614e04",
-        "type": "ui_text",
-        "z": "98369200.cfe7c",
-        "group": "46e9fbfa.ddab04",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "F Inlet [L/h]",
-        "format": "{{msg.payload}}",
-        "layout": "row-center",
-        "className": "",
-        "x": 1270,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "34275331.a3e80c",
-        "type": "ui_text",
-        "z": "98369200.cfe7c",
-        "group": "46e9fbfa.ddab04",
-        "order": 7,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "F Outlet [L/h]",
-        "format": "{{msg.payload}}",
-        "layout": "row-center",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": "",
-        "color": "#000000",
-        "x": 1270,
-        "y": 180,
-        "wires": []
-    },
-    {
-        "id": "3a1b8e97.362462",
-        "type": "ui_text",
-        "z": "98369200.cfe7c",
-        "group": "55a42588.a25b3c",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "P PT42 [mbar]",
-        "format": "{{msg.payload}}",
-        "layout": "row-center",
-        "className": "",
-        "x": 800,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "bcfc9bca.b85f38",
-        "type": "ui_chart",
-        "z": "98369200.cfe7c",
-        "name": "",
-        "group": "55a42588.a25b3c",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "label": "P PT42 [mbar]",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "0",
-        "ymax": "1500",
-        "removeOlder": "10",
-        "removeOlderPoints": "600",
-        "removeOlderUnit": "60",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 800,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "460ae19414cb6c2e",
-        "type": "ui_text",
-        "z": "98369200.cfe7c",
-        "group": "46e9fbfa.ddab04",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "F Ctrl [L/h]",
-        "format": "{{msg.payload}}",
-        "layout": "row-center",
-        "className": "",
-        "x": 1270,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "4f31fd54088e5dab",
-        "type": "ui_chart",
-        "z": "98369200.cfe7c",
-        "name": "",
-        "group": "46e9fbfa.ddab04",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "label": "F Ctrl [L/h]",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "0",
-        "ymax": "12",
-        "removeOlder": "10",
-        "removeOlderPoints": "600",
-        "removeOlderUnit": "60",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 1270,
-        "y": 300,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e797ca3ae78826c2",
-        "type": "link in",
-        "z": "98369200.cfe7c",
-        "name": "BK-PRESS0 Meas Sink",
-        "links": [
-            "4513d4f28e9e2552",
-            "5bfd7f872e2f551e",
-            "7c89d9fcf5706089"
-        ],
-        "x": 625,
-        "y": 240,
-        "wires": [
-            [
-                "3a1b8e97.362462",
-                "bcfc9bca.b85f38"
-            ]
-        ]
-    },
-    {
-        "id": "e2711eba50593a8b",
-        "type": "link in",
-        "z": "98369200.cfe7c",
-        "name": "BK-Inlet Meas Sink",
-        "links": [
-            "a92c22bd4d50c056",
-            "46db8a2a3ed14ac2",
-            "d25cc37e410e543e"
-        ],
-        "x": 1105,
-        "y": 60,
-        "wires": [
-            [
-                "520b9de0.240154",
-                "4504fac3.614e04"
-            ]
-        ]
-    },
-    {
-        "id": "37a5a3ca6f1dc258",
-        "type": "link in",
-        "z": "98369200.cfe7c",
-        "name": "F1_Meas",
-        "links": [
-            "1ce178dae85e25c3"
-        ],
-        "x": 1105,
-        "y": 160,
-        "wires": [
-            [
-                "6a4009ec.475ac8",
-                "34275331.a3e80c"
-            ]
-        ]
-    },
-    {
-        "id": "53ee4b3539c66712",
-        "type": "link in",
-        "z": "98369200.cfe7c",
-        "name": "BK-FLOW0 Meas Sink",
-        "links": [
-            "262da22345e7d3ff",
-            "d92caf03b752d1e0",
-            "a751117c2cdb2b36"
-        ],
-        "x": 1105,
-        "y": 240,
-        "wires": [
-            [
-                "460ae19414cb6c2e",
-                "4f31fd54088e5dab"
-            ]
-        ]
-    },
-    {
-        "id": "82148812a1010349",
-        "type": "link in",
-        "z": "98369200.cfe7c",
-        "name": "P Outlet Meas Sink",
-        "links": [
-            "3a912f03d0333c28"
-        ],
-        "x": 625,
-        "y": 60,
-        "wires": [
-            [
-                "c0ee364e.dfdaf8",
-                "82887465.682f98"
-            ]
-        ]
-    },
-    {
-        "id": "3f100cb2f7d69db4",
-        "type": "link in",
-        "z": "98369200.cfe7c",
-        "name": "P Inlet Meas Sink",
-        "links": [
-            "f9af0ddc7af0b7e9"
-        ],
-        "x": 625,
-        "y": 140,
-        "wires": [
-            [
-                "41afb889.68c308",
-                "53b57ace.555ac4"
-            ]
-        ]
-    },
-    {
-        "id": "4414038bd6213009",
-        "type": "ui_chart",
-        "z": "98369200.cfe7c",
-        "d": true,
-        "name": "",
-        "group": "55a42588.a25b3c",
-        "order": 9,
-        "width": 0,
-        "height": 0,
-        "label": "P Rpout [mbar]",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "0",
-        "ymax": "2000",
-        "removeOlder": "2",
-        "removeOlderPoints": "100",
-        "removeOlderUnit": "60",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 800,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "301d7e4994dfede1",
-        "type": "ui_text",
-        "z": "98369200.cfe7c",
-        "d": true,
-        "group": "55a42588.a25b3c",
-        "order": 10,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "P RpOut[mbar]",
-        "format": "{{msg.payload}}",
-        "layout": "row-center",
-        "className": "",
-        "x": 800,
-        "y": 360,
-        "wires": []
-    },
-    {
-        "id": "b6b59d64d74df572",
-        "type": "link in",
-        "z": "98369200.cfe7c",
-        "d": true,
-        "name": "P RpOut Sink",
-        "links": [
-            "d5741e27bf58bf20"
-        ],
-        "x": 625,
-        "y": 360,
-        "wires": [
-            [
-                "301d7e4994dfede1",
-                "4414038bd6213009"
-            ]
-        ]
-    },
-    {
-        "id": "56cbbca470545337",
-        "type": "ui_chart",
-        "z": "98369200.cfe7c",
-        "d": true,
-        "name": "",
-        "group": "55a42588.a25b3c",
-        "order": 11,
-        "width": 0,
-        "height": 0,
-        "label": "P RpIn [mbar]",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "0",
-        "ymax": "500",
-        "removeOlder": "2",
-        "removeOlderPoints": "100",
-        "removeOlderUnit": "60",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 800,
-        "y": 540,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "442f880d122b0107",
-        "type": "ui_text",
-        "z": "98369200.cfe7c",
-        "d": true,
-        "group": "55a42588.a25b3c",
-        "order": 12,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "P RpIn [mbar]",
-        "format": "{{msg.payload}}",
-        "layout": "row-center",
-        "className": "",
-        "x": 800,
-        "y": 500,
-        "wires": []
-    },
-    {
-        "id": "e3d20e56d0a17868",
-        "type": "link in",
-        "z": "98369200.cfe7c",
-        "d": true,
-        "name": "P RpIn Sink",
-        "links": [
-            "e57d03ddb451b5db"
-        ],
-        "x": 625,
-        "y": 500,
-        "wires": [
-            [
-                "442f880d122b0107",
-                "56cbbca470545337"
-            ]
-        ]
-    },
-    {
         "id": "024399cf34f61632",
         "type": "inject",
         "z": "7184b44879b683fb",
@@ -16003,26 +14682,11 @@
         "type": "serial out",
         "z": "7184b44879b683fb",
         "g": "8759c79b15a4c884",
-        "name": "BGA",
+        "name": "",
         "serial": "44b1f7493e9f2ebe",
-        "x": 950,
+        "x": 960,
         "y": 100,
         "wires": []
-    },
-    {
-        "id": "3073a8ab5c2716b9",
-        "type": "serial request",
-        "z": "7184b44879b683fb",
-        "g": "2c40e9d0b9b43aa8",
-        "name": "BGA",
-        "serial": "38060272f31b61fd",
-        "x": 410,
-        "y": 100,
-        "wires": [
-            [
-                "6712e165a74867c7"
-            ]
-        ]
     },
     {
         "id": "b12f4d821baaa7e2",
@@ -16050,7 +14714,7 @@
         "y": 100,
         "wires": [
             [
-                "3073a8ab5c2716b9"
+                "9e9f99ef0c2e410b"
             ]
         ]
     },
@@ -16076,9 +14740,9 @@
         "type": "serial request",
         "z": "7184b44879b683fb",
         "g": "7799292376dc5c39",
-        "name": "BGA",
-        "serial": "38060272f31b61fd",
-        "x": 350,
+        "name": "",
+        "serial": "44b1f7493e9f2ebe",
+        "x": 360,
         "y": 680,
         "wires": [
             [
@@ -16121,9 +14785,9 @@
         "type": "serial request",
         "z": "7184b44879b683fb",
         "g": "714c33716ed7518a",
-        "name": "BGA",
-        "serial": "38060272f31b61fd",
-        "x": 370,
+        "name": "",
+        "serial": "44b1f7493e9f2ebe",
+        "x": 380,
         "y": 940,
         "wires": [
             [
@@ -16193,28 +14857,13 @@
         ]
     },
     {
-        "id": "610b849ae85e149e",
-        "type": "serial request",
-        "z": "7184b44879b683fb",
-        "g": "80166f8ddce35046",
-        "name": "BGA",
-        "serial": "38060272f31b61fd",
-        "x": 420,
-        "y": 320,
-        "wires": [
-            [
-                "c32f7086d74af988"
-            ]
-        ]
-    },
-    {
         "id": "69b35cb522888a50",
         "type": "serial out",
         "z": "7184b44879b683fb",
         "g": "80166f8ddce35046",
-        "name": "BGA",
+        "name": "",
         "serial": "44b1f7493e9f2ebe",
-        "x": 470,
+        "x": 480,
         "y": 200,
         "wires": []
     },
@@ -16244,7 +14893,7 @@
         "y": 320,
         "wires": [
             [
-                "610b849ae85e149e"
+                "351ad96f659db8b6"
             ]
         ]
     },
@@ -16258,21 +14907,6 @@
         "x": 860,
         "y": 260,
         "wires": []
-    },
-    {
-        "id": "ddab3f561b679494",
-        "type": "serial request",
-        "z": "7184b44879b683fb",
-        "g": "cc5ee890949d6fc9",
-        "name": "BGA",
-        "serial": "38060272f31b61fd",
-        "x": 330,
-        "y": 1120,
-        "wires": [
-            [
-                "b7e20da1d1419ff1"
-            ]
-        ]
     },
     {
         "id": "6266f0d26c7dd256",
@@ -16297,10 +14931,10 @@
         "payload": "BG0I?",
         "payloadType": "str",
         "x": 160,
-        "y": 1120,
+        "y": 1160,
         "wires": [
             [
-                "ddab3f561b679494"
+                "335a539e697acc89"
             ]
         ]
     },
@@ -16309,9 +14943,9 @@
         "type": "serial request",
         "z": "7184b44879b683fb",
         "g": "c96a2cde9245f87b",
-        "name": "BGA",
-        "serial": "38060272f31b61fd",
-        "x": 410,
+        "name": "",
+        "serial": "44b1f7493e9f2ebe",
+        "x": 420,
         "y": 420,
         "wires": [
             [
@@ -16354,10 +14988,10 @@
         "type": "serial request",
         "z": "7184b44879b683fb",
         "g": "cc5ee890949d6fc9",
-        "name": "BGA",
-        "serial": "38060272f31b61fd",
-        "x": 310,
-        "y": 1340,
+        "name": "",
+        "serial": "44b1f7493e9f2ebe",
+        "x": 320,
+        "y": 1380,
         "wires": [
             [
                 "e9d46a21019ed5ac"
@@ -16387,7 +15021,7 @@
         "payload": "XALL?",
         "payloadType": "str",
         "x": 160,
-        "y": 1340,
+        "y": 1380,
         "wires": [
             [
                 "c859464543617c31"
@@ -16399,10 +15033,10 @@
         "type": "serial request",
         "z": "7184b44879b683fb",
         "g": "cc5ee890949d6fc9",
-        "name": "BGA",
-        "serial": "38060272f31b61fd",
-        "x": 270,
-        "y": 1600,
+        "name": "",
+        "serial": "44b1f7493e9f2ebe",
+        "x": 280,
+        "y": 1640,
         "wires": [
             [
                 "e41dafd8911c9c04"
@@ -16432,7 +15066,7 @@
         "payload": "UNCT?%",
         "payloadType": "str",
         "x": 130,
-        "y": 1600,
+        "y": 1640,
         "wires": [
             [
                 "e1d8e9d737ebe409"
@@ -16551,7 +15185,7 @@
         "d": true,
         "g": "e228fc818a13a83f",
         "name": "BGA",
-        "serial": "38060272f31b61fd",
+        "serial": "44b1f7493e9f2ebe",
         "x": 1510,
         "y": 260,
         "wires": [
@@ -16616,7 +15250,7 @@
         "d": true,
         "g": "e228fc818a13a83f",
         "name": "BGA",
-        "serial": "38060272f31b61fd",
+        "serial": "44b1f7493e9f2ebe",
         "x": 1510,
         "y": 320,
         "wires": [
@@ -16724,7 +15358,7 @@
         "d": true,
         "g": "b86e0b330ffbda47",
         "name": "BGA",
-        "serial": "38060272f31b61fd",
+        "serial": "44b1f7493e9f2ebe",
         "x": 1430,
         "y": 420,
         "wires": [
@@ -16771,7 +15405,7 @@
         "d": true,
         "g": "b86e0b330ffbda47",
         "name": "BGA",
-        "serial": "38060272f31b61fd",
+        "serial": "44b1f7493e9f2ebe",
         "x": 1430,
         "y": 480,
         "wires": [
@@ -16818,7 +15452,7 @@
         "d": true,
         "g": "b86e0b330ffbda47",
         "name": "BGA",
-        "serial": "38060272f31b61fd",
+        "serial": "44b1f7493e9f2ebe",
         "x": 1590,
         "y": 540,
         "wires": [
@@ -16859,7 +15493,7 @@
         "d": true,
         "g": "4b7c7253093a074f",
         "name": "BGA",
-        "serial": "38060272f31b61fd",
+        "serial": "44b1f7493e9f2ebe",
         "x": 1430,
         "y": 180,
         "wires": [
@@ -16906,7 +15540,7 @@
         "d": true,
         "g": "4b7c7253093a074f",
         "name": "BGA",
-        "serial": "38060272f31b61fd",
+        "serial": "44b1f7493e9f2ebe",
         "x": 1430,
         "y": 120,
         "wires": [
@@ -17020,7 +15654,7 @@
         "d": true,
         "g": "921335a5a84f12eb",
         "name": "BGA",
-        "serial": "38060272f31b61fd",
+        "serial": "44b1f7493e9f2ebe",
         "x": 1530,
         "y": 880,
         "wires": [
@@ -17085,7 +15719,7 @@
         "d": true,
         "g": "921335a5a84f12eb",
         "name": "BGA",
-        "serial": "38060272f31b61fd",
+        "serial": "44b1f7493e9f2ebe",
         "x": 1530,
         "y": 940,
         "wires": [
@@ -17193,7 +15827,7 @@
         "d": true,
         "g": "cab81f61cc45c256",
         "name": "BGA",
-        "serial": "38060272f31b61fd",
+        "serial": "44b1f7493e9f2ebe",
         "x": 1470,
         "y": 1040,
         "wires": [
@@ -17240,7 +15874,7 @@
         "d": true,
         "g": "cab81f61cc45c256",
         "name": "BGA",
-        "serial": "38060272f31b61fd",
+        "serial": "44b1f7493e9f2ebe",
         "x": 1470,
         "y": 1100,
         "wires": [
@@ -17287,7 +15921,7 @@
         "d": true,
         "g": "cab81f61cc45c256",
         "name": "BGA",
-        "serial": "38060272f31b61fd",
+        "serial": "44b1f7493e9f2ebe",
         "x": 1490,
         "y": 1180,
         "wires": [
@@ -17358,7 +15992,7 @@
         "d": true,
         "g": "e2a40e4267294a76",
         "name": "BGA",
-        "serial": "38060272f31b61fd",
+        "serial": "44b1f7493e9f2ebe",
         "x": 1490,
         "y": 780,
         "wires": [
@@ -17405,7 +16039,7 @@
         "d": true,
         "g": "e2a40e4267294a76",
         "name": "BGA",
-        "serial": "38060272f31b61fd",
+        "serial": "44b1f7493e9f2ebe",
         "x": 1490,
         "y": 720,
         "wires": [
@@ -17519,7 +16153,7 @@
         "d": true,
         "g": "56dfe620b4d590c4",
         "name": "BGA",
-        "serial": "38060272f31b61fd",
+        "serial": "44b1f7493e9f2ebe",
         "x": 1510,
         "y": 1500,
         "wires": [
@@ -17584,7 +16218,7 @@
         "d": true,
         "g": "56dfe620b4d590c4",
         "name": "BGA",
-        "serial": "38060272f31b61fd",
+        "serial": "44b1f7493e9f2ebe",
         "x": 1510,
         "y": 1560,
         "wires": [
@@ -18433,7 +17067,7 @@
         "showGlow": true,
         "name": "",
         "x": 850,
-        "y": 1080,
+        "y": 1120,
         "wires": []
     },
     {
@@ -18450,7 +17084,7 @@
         "finalize": "",
         "libs": [],
         "x": 520,
-        "y": 1120,
+        "y": 1160,
         "wires": [
             [
                 "53c97fa93c9b3711"
@@ -18477,7 +17111,7 @@
         "topic": "",
         "name": "",
         "x": 960,
-        "y": 1140,
+        "y": 1180,
         "wires": []
     },
     {
@@ -18494,7 +17128,7 @@
         "property": "payload",
         "topi": "topic",
         "x": 750,
-        "y": 1140,
+        "y": 1180,
         "wires": [
             [
                 "b779cf92a103782e",
@@ -18516,7 +17150,7 @@
         "finalize": "",
         "libs": [],
         "x": 520,
-        "y": 1340,
+        "y": 1380,
         "wires": [
             [
                 "4c675d6f9b2e16e3",
@@ -18569,7 +17203,7 @@
         "diff": false,
         "className": "",
         "x": 750,
-        "y": 1180,
+        "y": 1220,
         "wires": []
     },
     {
@@ -18591,7 +17225,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 740,
-        "y": 1260,
+        "y": 1300,
         "wires": []
     },
     {
@@ -18613,7 +17247,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 740,
-        "y": 1340,
+        "y": 1380,
         "wires": []
     },
     {
@@ -18635,7 +17269,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 740,
-        "y": 1420,
+        "y": 1460,
         "wires": []
     },
     {
@@ -18657,7 +17291,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 740,
-        "y": 1460,
+        "y": 1500,
         "wires": []
     },
     {
@@ -18679,7 +17313,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 760,
-        "y": 1500,
+        "y": 1540,
         "wires": []
     },
     {
@@ -18701,7 +17335,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 750,
-        "y": 1540,
+        "y": 1580,
         "wires": []
     },
     {
@@ -18723,7 +17357,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 930,
-        "y": 1600,
+        "y": 1640,
         "wires": []
     },
     {
@@ -18747,7 +17381,7 @@
         "to": "",
         "reg": false,
         "x": 660,
-        "y": 1600,
+        "y": 1640,
         "wires": [
             [
                 "fea1d4b6d76fdab2",
@@ -19908,7 +18542,7 @@
         "object": "msg",
         "objectout": "msg",
         "x": 430,
-        "y": 1600,
+        "y": 1640,
         "wires": [
             [
                 "716d307736350065"
@@ -20837,7 +19471,7 @@
             "1e86c21124214be7"
         ],
         "x": 905,
-        "y": 1180,
+        "y": 1220,
         "wires": []
     },
     {
@@ -20918,8 +19552,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 490,
-        "y": 880,
+        "x": 530,
+        "y": 980,
         "wires": []
     },
     {
@@ -20933,7 +19567,7 @@
             "e82cf4753d694a17"
         ],
         "x": 695,
-        "y": 1380,
+        "y": 1420,
         "wires": []
     },
     {
@@ -20947,7 +19581,7 @@
             "099fa0f159eafbdf"
         ],
         "x": 695,
-        "y": 1300,
+        "y": 1340,
         "wires": []
     },
     {
@@ -20961,7 +19595,7 @@
             "a8aa3332fc221757"
         ],
         "x": 875,
-        "y": 1560,
+        "y": 1600,
         "wires": []
     },
     {
@@ -21006,7 +19640,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 800,
-        "y": 1380,
+        "y": 1420,
         "wires": []
     },
     {
@@ -21023,8 +19657,1162 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 900,
-        "y": 1300,
+        "y": 1340,
         "wires": []
+    },
+    {
+        "id": "b5ded52e516759d1",
+        "type": "serial in",
+        "z": "7184b44879b683fb",
+        "g": "c6db76d90f894678",
+        "name": "",
+        "serial": "44b1f7493e9f2ebe",
+        "x": 140,
+        "y": 1760,
+        "wires": [
+            [
+                "fb99cca655c0728b"
+            ]
+        ]
+    },
+    {
+        "id": "fb99cca655c0728b",
+        "type": "ui_text",
+        "z": "7184b44879b683fb",
+        "g": "c6db76d90f894678",
+        "group": "7b8247a38674f7e4",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "BGA Listener",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 310,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "911b1c2947a89847",
+        "type": "status",
+        "z": "7184b44879b683fb",
+        "g": "c6db76d90f894678",
+        "name": "Connection status",
+        "scope": [
+            "b5ded52e516759d1"
+        ],
+        "x": 170,
+        "y": 1840,
+        "wires": [
+            [
+                "db9f3650da93a518",
+                "d153b317c58b1248"
+            ]
+        ]
+    },
+    {
+        "id": "db9f3650da93a518",
+        "type": "function",
+        "z": "7184b44879b683fb",
+        "g": "c6db76d90f894678",
+        "name": "SerialPort Status",
+        "func": "\nmsg.payload = msg.status.fill;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 1840,
+        "wires": [
+            [
+                "42e96d7eda5476a1"
+            ]
+        ]
+    },
+    {
+        "id": "d153b317c58b1248",
+        "type": "ui_text",
+        "z": "7184b44879b683fb",
+        "g": "c6db76d90f894678",
+        "group": "7b8247a38674f7e4",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Status Text",
+        "format": "{{msg.status.text}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 430,
+        "y": 1900,
+        "wires": []
+    },
+    {
+        "id": "42e96d7eda5476a1",
+        "type": "ui_led",
+        "z": "7184b44879b683fb",
+        "g": "c6db76d90f894678",
+        "order": 4,
+        "group": "7b8247a38674f7e4",
+        "width": 0,
+        "height": 0,
+        "label": "Status",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "red",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "green",
+                "valueType": "str"
+            },
+            {
+                "color": "#f8e45c",
+                "value": "yellow",
+                "valueType": "str"
+            },
+            {
+                "color": "#77767b",
+                "value": "grey",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 650,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "d5a87f70210a013f",
+        "type": "serial control",
+        "z": "7184b44879b683fb",
+        "g": "c6db76d90f894678",
+        "name": "",
+        "serial": "44b1f7493e9f2ebe",
+        "x": 360,
+        "y": 1960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "67ea67d370992495",
+        "type": "ui_button",
+        "z": "7184b44879b683fb",
+        "g": "c6db76d90f894678",
+        "name": "",
+        "group": "7b8247a38674f7e4",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Connect",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"enabled\": true}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 180,
+        "y": 1940,
+        "wires": [
+            [
+                "d5a87f70210a013f"
+            ]
+        ]
+    },
+    {
+        "id": "472d8c49c60295be",
+        "type": "ui_button",
+        "z": "7184b44879b683fb",
+        "g": "c6db76d90f894678",
+        "name": "",
+        "group": "7b8247a38674f7e4",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "DisConnect",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"enabled\": false}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 190,
+        "y": 1980,
+        "wires": [
+            [
+                "d5a87f70210a013f"
+            ]
+        ]
+    },
+    {
+        "id": "335a539e697acc89",
+        "type": "serial request",
+        "z": "7184b44879b683fb",
+        "g": "cc5ee890949d6fc9",
+        "name": "",
+        "serial": "44b1f7493e9f2ebe",
+        "x": 360,
+        "y": 1160,
+        "wires": [
+            [
+                "b7e20da1d1419ff1"
+            ]
+        ]
+    },
+    {
+        "id": "351ad96f659db8b6",
+        "type": "serial request",
+        "z": "7184b44879b683fb",
+        "g": "80166f8ddce35046",
+        "name": "",
+        "serial": "44b1f7493e9f2ebe",
+        "x": 420,
+        "y": 320,
+        "wires": [
+            [
+                "c32f7086d74af988"
+            ]
+        ]
+    },
+    {
+        "id": "9e9f99ef0c2e410b",
+        "type": "serial request",
+        "z": "7184b44879b683fb",
+        "g": "2c40e9d0b9b43aa8",
+        "name": "",
+        "serial": "44b1f7493e9f2ebe",
+        "x": 380,
+        "y": 100,
+        "wires": [
+            [
+                "6712e165a74867c7"
+            ]
+        ]
+    },
+    {
+        "id": "9e20ac30aee2e7cf",
+        "type": "serial in",
+        "z": "de6047b6e269aa2d",
+        "g": "86dc799a4340918e",
+        "name": "USB LinAct In",
+        "serial": "8712219c.675868",
+        "x": 270,
+        "y": 140,
+        "wires": [
+            [
+                "cad8adf2a74cca0e",
+                "ed77d4256df2d24f",
+                "323bca7b58983a3e",
+                "032be02c2781222c"
+            ]
+        ]
+    },
+    {
+        "id": "ed77d4256df2d24f",
+        "type": "function",
+        "z": "de6047b6e269aa2d",
+        "g": "86dc799a4340918e",
+        "name": "",
+        "func": "var output = msg.payload.split(\"\\t\");\n\nvar kal = parseInt(output[0]);\nvar bra  = parseInt(output[1]);\nvar dir    = parseInt(output[2]);\nvar cour    = parseInt(output[3]);\nvar posi    = parseInt(output[4]);\nvar tempe   = parseInt(output[5]);\nvar humed   = parseInt(output[6]);\nvar pled    = 0;\nvar kled    = 0;\n\nif (bra != 1) {\n    bra = 0;\n    pled    = 0;\n    kled    = 0;\n} else{\n    if (dir != 0) {\n        dir = 1;\n        pled    = 1;\n        kled    = 0;\n    }else{\n        pled    = 0;\n        kled    = 1;\n    }     \n}\n\nvar parkVal = 44;\nvar caliVal = 990 - parkVal;\nposi = posi * 100 / caliVal;\nif (posi >= 50){\n    posi = 100;\n}else if(posi <= 6){\n    posi = 0;\n}else{\n    posi = parseFloat(posi).toFixed(1);\n}\n\nvar stopVal = 0;\nvar maxVal = 600 - stopVal;\ncour = cour * 100 / maxVal;\nif (cour >= 50){\n    cour = 100;\n}else if(cour <= 0.5){\n    cour = 0;\n}else{\n    cour = parseFloat(cour).toFixed(1);\n}\n\n//cour = parseFloat(cour).toFixed(1);\n\n\n\nvar alarmp = 0;\n\nif ((posi >= 10) & (posi <= 90)){\n    alarmp = 1;\n}else{\n    alarmp = 0;\n}\n\n\n\nvar alarmc = 0;\n\nif (cour >= 90){\n    alarmc = 1;\n}else{\n    alarmc = 0;\n}\n\n\nvar msg1 = {payload : kal};\nvar msg2 = {payload : bra};\nvar msg3 = {payload : {brk: bra, park : pled}};\nvar msg4 = {payload : cour};\nvar msg5 = {payload : posi};\nvar msg6 = {payload : pled};\nvar msg7 = {payload : kled};\nvar msg8 = {payload : parseFloat(tempe).toFixed(2)};\nvar msg9 = {payload : parseFloat(humed).toFixed(2)};\nvar msg10 = {payload : alarmp};\nvar msg11 = {payload : alarmc};\n\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];",
+        "outputs": 11,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 260,
+        "wires": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+                "3f5ac05726849b62",
+                "7f8871f127b9fd9e"
+            ],
+            [
+                "1fc812370ea29976",
+                "d784bd2793537b7e"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "323bca7b58983a3e",
+        "type": "ui_text",
+        "z": "de6047b6e269aa2d",
+        "g": "86dc799a4340918e",
+        "group": "bd91171b1bf08b35",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Actuator Listener",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 530,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "cad8adf2a74cca0e",
+        "type": "debug",
+        "z": "de6047b6e269aa2d",
+        "g": "86dc799a4340918e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "1fc812370ea29976",
+        "type": "link out",
+        "z": "de6047b6e269aa2d",
+        "g": "86dc799a4340918e",
+        "name": "Humi Src",
+        "mode": "link",
+        "links": [
+            "4f0b59b71a173e38",
+            "539067f5fc0484ad",
+            "bcef9b11804cd98f",
+            "22eee29543534cc1",
+            "a5fb5c948889de7c",
+            "4bd2e0738c8ec87b",
+            "e03f2b8f198ca44a"
+        ],
+        "x": 665,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "032be02c2781222c",
+        "type": "debug",
+        "z": "de6047b6e269aa2d",
+        "g": "86dc799a4340918e",
+        "name": "debug 420",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "11c8f682f31c6499",
+        "type": "function",
+        "z": "de6047b6e269aa2d",
+        "g": "86dc799a4340918e",
+        "name": "",
+        "func": "if (msg.status.fill != \"green\"){\n    msg.payload = 0;\n} else {\n    msg.payload = 1;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "flow.set(\"trig\", 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 500,
+        "wires": [
+            [
+                "414307de8f738fe2"
+            ]
+        ]
+    },
+    {
+        "id": "5d19a47a553240d3",
+        "type": "status",
+        "z": "de6047b6e269aa2d",
+        "g": "86dc799a4340918e",
+        "name": "Connection status",
+        "scope": [
+            "9e20ac30aee2e7cf"
+        ],
+        "x": 310,
+        "y": 500,
+        "wires": [
+            [
+                "11c8f682f31c6499"
+            ]
+        ]
+    },
+    {
+        "id": "414307de8f738fe2",
+        "type": "ui_led",
+        "z": "de6047b6e269aa2d",
+        "g": "86dc799a4340918e",
+        "order": 3,
+        "group": "bd91171b1bf08b35",
+        "width": 0,
+        "height": 0,
+        "label": "Sensor Port Detected",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Connection Status",
+        "x": 730,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "3f5ac05726849b62",
+        "type": "ui_text",
+        "z": "de6047b6e269aa2d",
+        "g": "86dc799a4340918e",
+        "group": "bd91171b1bf08b35",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Temperature",
+        "label": "Temperature [ºC]",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 730,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "7f8871f127b9fd9e",
+        "type": "link out",
+        "z": "de6047b6e269aa2d",
+        "g": "86dc799a4340918e",
+        "name": "Tempe Src",
+        "mode": "link",
+        "links": [
+            "5cb8cdb93fcf7080",
+            "aa39267df330a2c3",
+            "31a0445c1cfa81e0",
+            "487c69a287e02d42",
+            "a4f28ffee5b3d079",
+            "4e31446dc0871d3a",
+            "3d6e1fbab00b69fc"
+        ],
+        "x": 685,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "d784bd2793537b7e",
+        "type": "ui_text",
+        "z": "de6047b6e269aa2d",
+        "g": "86dc799a4340918e",
+        "group": "bd91171b1bf08b35",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Humidity",
+        "label": "Humidity [%]",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 700,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "53b57ace.555ac4",
+        "type": "ui_chart",
+        "z": "98369200.cfe7c",
+        "name": "",
+        "group": "55a42588.a25b3c",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "P Inlet [mbar]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1500",
+        "removeOlder": "10",
+        "removeOlderPoints": "600",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 790,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6a4009ec.475ac8",
+        "type": "ui_chart",
+        "z": "98369200.cfe7c",
+        "name": "",
+        "group": "46e9fbfa.ddab04",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "label": "F Outlet [L/h]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "12",
+        "removeOlder": "2",
+        "removeOlderPoints": "100",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1270,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "520b9de0.240154",
+        "type": "ui_chart",
+        "z": "98369200.cfe7c",
+        "name": "",
+        "group": "46e9fbfa.ddab04",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "F Inlet [L/h]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "12",
+        "removeOlder": "10",
+        "removeOlderPoints": "600",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1270,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "82887465.682f98",
+        "type": "ui_chart",
+        "z": "98369200.cfe7c",
+        "name": "",
+        "group": "55a42588.a25b3c",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "label": "P Outlet [mbar]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1500",
+        "removeOlder": "10",
+        "removeOlderPoints": "600",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 800,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c0ee364e.dfdaf8",
+        "type": "ui_text",
+        "z": "98369200.cfe7c",
+        "group": "55a42588.a25b3c",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "P Outlet [mbar]",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 800,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "41afb889.68c308",
+        "type": "ui_text",
+        "z": "98369200.cfe7c",
+        "group": "55a42588.a25b3c",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "P Inlet [mbar]",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 790,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "4504fac3.614e04",
+        "type": "ui_text",
+        "z": "98369200.cfe7c",
+        "group": "46e9fbfa.ddab04",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "F Inlet [L/h]",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 1270,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "34275331.a3e80c",
+        "type": "ui_text",
+        "z": "98369200.cfe7c",
+        "group": "46e9fbfa.ddab04",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "F Outlet [L/h]",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1270,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "3a1b8e97.362462",
+        "type": "ui_text",
+        "z": "98369200.cfe7c",
+        "group": "55a42588.a25b3c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "P PT42 [mbar]",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 800,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "bcfc9bca.b85f38",
+        "type": "ui_chart",
+        "z": "98369200.cfe7c",
+        "name": "",
+        "group": "55a42588.a25b3c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "P PT42 [mbar]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1500",
+        "removeOlder": "10",
+        "removeOlderPoints": "600",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 800,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "460ae19414cb6c2e",
+        "type": "ui_text",
+        "z": "98369200.cfe7c",
+        "group": "46e9fbfa.ddab04",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "F Ctrl [L/h]",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 1270,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "4f31fd54088e5dab",
+        "type": "ui_chart",
+        "z": "98369200.cfe7c",
+        "name": "",
+        "group": "46e9fbfa.ddab04",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "F Ctrl [L/h]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "12",
+        "removeOlder": "10",
+        "removeOlderPoints": "600",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1270,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e797ca3ae78826c2",
+        "type": "link in",
+        "z": "98369200.cfe7c",
+        "name": "BK-PRESS0 Meas Sink",
+        "links": [
+            "4513d4f28e9e2552",
+            "5bfd7f872e2f551e",
+            "7c89d9fcf5706089"
+        ],
+        "x": 625,
+        "y": 240,
+        "wires": [
+            [
+                "3a1b8e97.362462",
+                "bcfc9bca.b85f38"
+            ]
+        ]
+    },
+    {
+        "id": "e2711eba50593a8b",
+        "type": "link in",
+        "z": "98369200.cfe7c",
+        "name": "BK-Inlet Meas Sink",
+        "links": [
+            "a92c22bd4d50c056",
+            "46db8a2a3ed14ac2",
+            "d25cc37e410e543e"
+        ],
+        "x": 1105,
+        "y": 60,
+        "wires": [
+            [
+                "520b9de0.240154",
+                "4504fac3.614e04"
+            ]
+        ]
+    },
+    {
+        "id": "37a5a3ca6f1dc258",
+        "type": "link in",
+        "z": "98369200.cfe7c",
+        "name": "F1_Meas",
+        "links": [
+            "1ce178dae85e25c3"
+        ],
+        "x": 1105,
+        "y": 160,
+        "wires": [
+            [
+                "6a4009ec.475ac8",
+                "34275331.a3e80c"
+            ]
+        ]
+    },
+    {
+        "id": "53ee4b3539c66712",
+        "type": "link in",
+        "z": "98369200.cfe7c",
+        "name": "BK-FLOW0 Meas Sink",
+        "links": [
+            "262da22345e7d3ff",
+            "d92caf03b752d1e0",
+            "a751117c2cdb2b36"
+        ],
+        "x": 1105,
+        "y": 240,
+        "wires": [
+            [
+                "460ae19414cb6c2e",
+                "4f31fd54088e5dab"
+            ]
+        ]
+    },
+    {
+        "id": "82148812a1010349",
+        "type": "link in",
+        "z": "98369200.cfe7c",
+        "name": "P Outlet Meas Sink",
+        "links": [
+            "3a912f03d0333c28"
+        ],
+        "x": 625,
+        "y": 60,
+        "wires": [
+            [
+                "c0ee364e.dfdaf8",
+                "82887465.682f98"
+            ]
+        ]
+    },
+    {
+        "id": "3f100cb2f7d69db4",
+        "type": "link in",
+        "z": "98369200.cfe7c",
+        "name": "P Inlet Meas Sink",
+        "links": [
+            "f9af0ddc7af0b7e9"
+        ],
+        "x": 625,
+        "y": 140,
+        "wires": [
+            [
+                "41afb889.68c308",
+                "53b57ace.555ac4"
+            ]
+        ]
+    },
+    {
+        "id": "4414038bd6213009",
+        "type": "ui_chart",
+        "z": "98369200.cfe7c",
+        "d": true,
+        "name": "",
+        "group": "55a42588.a25b3c",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "label": "P Rpout [mbar]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "2000",
+        "removeOlder": "2",
+        "removeOlderPoints": "100",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 800,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "301d7e4994dfede1",
+        "type": "ui_text",
+        "z": "98369200.cfe7c",
+        "d": true,
+        "group": "55a42588.a25b3c",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "P RpOut[mbar]",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 800,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "b6b59d64d74df572",
+        "type": "link in",
+        "z": "98369200.cfe7c",
+        "d": true,
+        "name": "P RpOut Sink",
+        "links": [
+            "d5741e27bf58bf20"
+        ],
+        "x": 625,
+        "y": 360,
+        "wires": [
+            [
+                "301d7e4994dfede1",
+                "4414038bd6213009"
+            ]
+        ]
+    },
+    {
+        "id": "56cbbca470545337",
+        "type": "ui_chart",
+        "z": "98369200.cfe7c",
+        "d": true,
+        "name": "",
+        "group": "55a42588.a25b3c",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "label": "P RpIn [mbar]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "500",
+        "removeOlder": "2",
+        "removeOlderPoints": "100",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 800,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "442f880d122b0107",
+        "type": "ui_text",
+        "z": "98369200.cfe7c",
+        "d": true,
+        "group": "55a42588.a25b3c",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "P RpIn [mbar]",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 800,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "e3d20e56d0a17868",
+        "type": "link in",
+        "z": "98369200.cfe7c",
+        "d": true,
+        "name": "P RpIn Sink",
+        "links": [
+            "e57d03ddb451b5db"
+        ],
+        "x": 625,
+        "y": 500,
+        "wires": [
+            [
+                "442f880d122b0107",
+                "56cbbca470545337"
+            ]
+        ]
     },
     {
         "id": "243ac6b27d85a316",
