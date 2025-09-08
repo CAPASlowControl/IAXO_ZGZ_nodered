@@ -50,8 +50,8 @@
             "5029cc76ed9a468c",
             "c51fd9c5594ef7d1"
         ],
-        "x": 434,
-        "y": 339,
+        "x": 1574,
+        "y": 219,
         "w": 392,
         "h": 142
     },
@@ -68,10 +68,11 @@
             "28f5e20b718b3bef",
             "3fa07e5e80c002d8",
             "757dd83f2bcf6b41",
-            "b877e31271769b77"
+            "b877e31271769b77",
+            "047c1108ab6b434d"
         ],
-        "x": 894,
-        "y": 319,
+        "x": 1574,
+        "y": 19,
         "w": 492,
         "h": 162
     },
@@ -118,7 +119,7 @@
         ],
         "x": 394,
         "y": 959,
-        "w": 572,
+        "w": 592,
         "h": 162
     },
     {
@@ -245,13 +246,10 @@
         },
         "nodes": [
             "f040549c00656a52",
-            "f9cf102b894e02b0",
             "4262ccb3248ff85e",
             "8871fa9c8095eca7",
-            "dac4638cc6a72296",
             "8788069950a7a868",
             "32b7df1c99b83eb8",
-            "deacce1f433620bf",
             "98733f7b127f15f7",
             "0da13265905f3914",
             "01c4686bd8428180",
@@ -260,19 +258,15 @@
             "99d8139511ad8a20",
             "902b76aaf7bd1447",
             "ca4698c427487f54",
-            "4aacd767c3c11a3b",
             "10958aeca9301b8c",
             "415d5c2a2b867eb7",
-            "d566876d5f031269",
             "b54f6c01e5cb602c",
             "f74c858ff5c49af8",
             "09821211c2ba3a05",
             "6c91db92da3bf9e7",
-            "ab7e69d59e7d709f",
             "2eef3cb55b3b2203",
             "f823e2e64201931d",
             "9b5555e869d36bda",
-            "df7731d2abcaf740",
             "e644323680c6bb35",
             "54931cb14f400be4",
             "022251598872c5cf",
@@ -293,21 +287,27 @@
             "89a1d8ad6927743f",
             "04885c34cf7e47cc",
             "fb3a96d0dd53f6f8",
-            "5bf8648e4afe1786",
             "61ec6f2c51250969",
             "59688c670bf23b0d",
             "2f7d935b1d403189",
             "d4db4711f6f1f480",
             "d471a838c4aad869",
-            "8d1bdc5afa4af823",
             "e8c07254d79f9c9f",
             "9f885471fa80cee6",
-            "c4b1330e013c8099"
+            "c4b1330e013c8099",
+            "c2496dd2226108b7",
+            "2ec468825578f4b1",
+            "d82eb7b7a736e2bb",
+            "65fc4c8d8d1627bf",
+            "fb6f5d40c98129ab",
+            "5383ec9abf43df82",
+            "128512d8ad132821",
+            "6ebddb3264f943e6"
         ],
-        "x": 1574,
-        "y": 1539,
-        "w": 972,
-        "h": 2329.5
+        "x": 1594,
+        "y": 1519,
+        "w": 922,
+        "h": 1242
     },
     {
         "id": "00075d8ac7640e69",
@@ -324,63 +324,64 @@
             "644034197a08359a",
             "ec346ff1be22e386",
             "5bde7800521b25de",
-            "63c52425ab7efe05",
             "4da23813f53440f9",
             "284e36efcf3021af",
             "91af913a02113603",
             "3d9396bf2e5cf1be",
             "732629fa85ce9c69",
-            "793dbbbe2d40dbdc",
             "b8a475c126225999",
             "15f0103f2442a085",
             "3ffada1a08a3cc3b",
             "c6cba9fd2b3c8e3f",
             "b2fade360966df83",
             "ece4955faba72d4d",
-            "b220e44a039427be",
             "3d6670af1b4243a6",
             "d18bfe2fe309aaab",
             "6577a253394550c5",
             "702faadf34907f79",
             "8382fa45d506c300",
-            "9377a818cb038f4e",
             "17b539a06f1f8755",
             "2a38883ad7462983",
             "39dabc217aeea0d2",
             "a4f0efde1f6ee98a",
             "b694db4174d37cf2",
             "ace2094d7d4d4281",
-            "35d75f201ad68de2",
             "0551e0ee6032a67a",
             "ebb5e72ab086b48f",
             "e79a72acadfe04d6",
             "74d88c2061b70f5f",
             "561b6c60db6ca5fe",
-            "937871a668a740c9",
             "82ee4ee11a3205c1",
             "efb54e3396a3cb8d",
             "61099156a344f071",
             "e754d19b01af14aa",
             "a5aa72166b6f5954",
-            "1ca3af8f287dc631",
             "b77c1731865c8ee4",
             "61707c31931b6267",
             "f03a9babd56a71cc",
-            "ec099cc2b63c0613",
             "dcb6abca2b989403",
             "6a2f34e73248d564",
             "d30ac69ee1e58aa3",
             "71fdd696cea530a1",
             "4625070ee4667a89",
             "3536d8d53ce04a0a",
-            "275e572ea3e66de7",
             "fbf54ef3fcc098d8",
-            "165f87d3a6a2cf76"
+            "165f87d3a6a2cf76",
+            "45c40915dd603fb7",
+            "4480e339c3c15616",
+            "78fc529a1af070c6",
+            "cb371b9c41325cd3",
+            "177d552290fb8932",
+            "cc5e69d2310d0b12",
+            "d77d854b0a98ec25",
+            "ba480b535b90c261",
+            "216dccde25870040",
+            "23e92a19d2d0cfd8"
         ],
-        "x": 474,
-        "y": 1531.5,
-        "w": 982,
-        "h": 2237
+        "x": 394,
+        "y": 1519,
+        "w": 1052,
+        "h": 1302
     },
     {
         "id": "b4b83c066f8cd2bc",
@@ -450,10 +451,10 @@
             "59f4a46365409ff0",
             "a2018311f858fd6d"
         ],
-        "x": 2434,
+        "x": 2654,
         "y": 499,
-        "w": 1672,
-        "h": 702
+        "w": 1752,
+        "h": 682
     },
     {
         "id": "9a7f2fbe981a63d5",
@@ -523,10 +524,10 @@
             "8cd0d63acdb924b6",
             "eceb895c7a637358"
         ],
-        "x": 2814,
-        "y": 1279,
-        "w": 1632,
-        "h": 862
+        "x": 2674,
+        "y": 1339,
+        "w": 1792,
+        "h": 782
     },
     {
         "id": "4cb19de6c6ded29d",
@@ -594,9 +595,9 @@
             "efaf6f073fceb0df"
         ],
         "x": 434,
-        "y": 499,
-        "w": 1892,
-        "h": 402
+        "y": 279,
+        "w": 1012,
+        "h": 462
     },
     {
         "id": "eae106b6ad65235b",
@@ -837,7 +838,7 @@
         "bin": "false",
         "out": "char",
         "addchar": "\\r",
-        "responsetimeout": "1000"
+        "responsetimeout": "2000"
     },
     {
         "id": "30e307e3.2819e8",
@@ -997,7 +998,7 @@
         "bin": "false",
         "out": "char",
         "addchar": "\\r\\n",
-        "responsetimeout": "300"
+        "responsetimeout": "2000"
     },
     {
         "id": "d5b292af11f072b5",
@@ -1141,44 +1142,12 @@
         "g": "522bcd4720c7a9ad",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 2070,
-        "y": 2140,
+        "x": 2050,
+        "y": 1900,
         "wires": [
             [
-                "f9cf102b894e02b0"
+                "d82eb7b7a736e2bb"
             ]
-        ]
-    },
-    {
-        "id": "f9cf102b894e02b0",
-        "type": "function",
-        "z": "1c646c2a350b2d7c",
-        "g": "522bcd4720c7a9ad",
-        "name": "",
-        "func": "var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\n// Inicializar valch como array vacío\nvar valch = [\"\", \"\", \"\", \"\"];\n\nif (rxmodadd == 0) {\n    var rxfuncstr = rxstr[1].split(\":\");\n    if (rxfuncstr[1] == \"ERR\") {\n        commandOK = 1;\n        if (rxfuncstr[0] == \"CMD\") {\n            comOK = 0;\n        } else if (rxfuncstr[0] == \"CH\") {\n            chOK = 0;\n        } else if (rxfuncstr[0] == \"PAR\") {\n            parOK = 0;\n        } else if (rxfuncstr[0] == \"VAL\") {\n            valOK = 0;\n        } else if (rxfuncstr[0] == \"LOC\") {\n            remoteOK = 0;\n        }\n    } else if (rxfuncstr[1] == \"OK\") {\n        commandOK = 1;\n        if (rxstr.length > 2 && rxstr[2] != \"\") {\n            var valstr = rxstr[2].split(\":\");\n            if (valstr.length > 1) {\n                valch = valstr[1].split(\";\");\n            }\n        }\n    }\n}\n\n// Construir mensajes (si valch no tiene todos los índices, se pone undefined)\nvar msg1  = {payload: commandOK};\nvar msg2  = {payload: rxmodadd};\nvar msg3  = {payload: comOK};\nvar msg4  = {payload: chOK};\nvar msg5  = {payload: parOK};\nvar msg6  = {payload: valOK};\nvar msg7  = {payload: remoteOK};\nvar msg8  = {payload: valch[0] || null};\nvar msg9  = {payload: valch[1] || null};\nvar msg10 = {payload: valch[2] || null};\nvar msg11 = {payload: valch[3] || null};\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\n\n/*var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\nif(rxmodadd == 0){\n    var rxfuncstr = rxstr[1].split(\":\");\n    if(rxfuncstr[1] == \"ERR\"){\n        commandOK = 1;\n        if(rxfuncstr[0] == \"CMD\"){\n            comOK = 0;\n        }else if(rxfuncstr[0] == \"CH\"){\n            chOK = 0;\n        }else if(rxfuncstr[0] == \"PAR\"){\n            parOK = 0;\n        }else if(rxfuncstr[0] == \"VAL\"){\n            valOK = 0;\n        }else if(rxfuncstr[0] == \"LOC\"){\n            remoteOK = 0;\n        }\n    }else if(rxfuncstr[1] == \"OK\"){\n        commandOK = 1;\n        if(rxstr[2] != \"\"){\n            var valstr = rxstr[2].split(\":\");\n            var valch = valstr[1].split(\";\");\n        }\n    }\n\n}\n\nvar msg1 = {payload : commandOK};\nvar msg2 = {payload : rxmodadd};\nvar msg3 = {payload : comOK};\nvar msg4 = {payload : chOK};\nvar msg5 = {payload : parOK};\nvar msg6 = {payload : valOK};\nvar msg7 = {payload : remoteOK};\nvar msg8 = {payload : valch[0]};\nvar msg9 = {payload : valch[1]};\nvar msg10 = {payload : valch[2]};\nvar msg11 = {payload : valch[3]};\n\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n*/",
-        "outputs": 11,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2240,
-        "y": 2140,
-        "wires": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [
-                "8871fa9c8095eca7",
-                "9f885471fa80cee6"
-            ],
-            [],
-            [],
-            []
         ]
     },
     {
@@ -1188,11 +1157,11 @@
         "g": "522bcd4720c7a9ad",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 2050,
-        "y": 2400,
+        "x": 2039.300048828125,
+        "y": 2032.83349609375,
         "wires": [
             [
-                "dac4638cc6a72296"
+                "128512d8ad132821"
             ]
         ]
     },
@@ -1210,41 +1179,9 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 2430,
-        "y": 2140,
+        "x": 2410,
+        "y": 1900,
         "wires": []
-    },
-    {
-        "id": "dac4638cc6a72296",
-        "type": "function",
-        "z": "1c646c2a350b2d7c",
-        "g": "522bcd4720c7a9ad",
-        "name": "",
-        "func": "var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\n// Inicializar valch como array vacío\nvar valch = [\"\", \"\", \"\", \"\"];\n\nif (rxmodadd == 0) {\n    var rxfuncstr = rxstr[1].split(\":\");\n    if (rxfuncstr[1] == \"ERR\") {\n        commandOK = 1;\n        if (rxfuncstr[0] == \"CMD\") {\n            comOK = 0;\n        } else if (rxfuncstr[0] == \"CH\") {\n            chOK = 0;\n        } else if (rxfuncstr[0] == \"PAR\") {\n            parOK = 0;\n        } else if (rxfuncstr[0] == \"VAL\") {\n            valOK = 0;\n        } else if (rxfuncstr[0] == \"LOC\") {\n            remoteOK = 0;\n        }\n    } else if (rxfuncstr[1] == \"OK\") {\n        commandOK = 1;\n        if (rxstr.length > 2 && rxstr[2] != \"\") {\n            var valstr = rxstr[2].split(\":\");\n            if (valstr.length > 1) {\n                valch = valstr[1].split(\";\");\n            }\n        }\n    }\n}\n\n// Construir mensajes (si valch no tiene todos los índices, se pone undefined)\nvar msg1  = {payload: commandOK};\nvar msg2  = {payload: rxmodadd};\nvar msg3  = {payload: comOK};\nvar msg4  = {payload: chOK};\nvar msg5  = {payload: parOK};\nvar msg6  = {payload: valOK};\nvar msg7  = {payload: remoteOK};\nvar msg8  = {payload: valch[0] || null};\nvar msg9  = {payload: valch[1] || null};\nvar msg10 = {payload: valch[2] || null};\nvar msg11 = {payload: valch[3] || null};\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\n\n/*var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\nif(rxmodadd == 0){\n    var rxfuncstr = rxstr[1].split(\":\");\n    if(rxfuncstr[1] == \"ERR\"){\n        commandOK = 1;\n        if(rxfuncstr[0] == \"CMD\"){\n            comOK = 0;\n        }else if(rxfuncstr[0] == \"CH\"){\n            chOK = 0;\n        }else if(rxfuncstr[0] == \"PAR\"){\n            parOK = 0;\n        }else if(rxfuncstr[0] == \"VAL\"){\n            valOK = 0;\n        }else if(rxfuncstr[0] == \"LOC\"){\n            remoteOK = 0;\n        }\n    }else if(rxfuncstr[1] == \"OK\"){\n        commandOK = 1;\n        if(rxstr[2] != \"\"){\n            var valstr = rxstr[2].split(\":\");\n            var valch = valstr[1].split(\";\");\n        }\n    }\n\n}\n\nvar msg1 = {payload : commandOK};\nvar msg2 = {payload : rxmodadd};\nvar msg3 = {payload : comOK};\nvar msg4 = {payload : chOK};\nvar msg5 = {payload : parOK};\nvar msg6 = {payload : valOK};\nvar msg7 = {payload : remoteOK};\nvar msg8 = {payload : valch[0]};\nvar msg9 = {payload : valch[1]};\nvar msg10 = {payload : valch[2]};\nvar msg11 = {payload : valch[3]};\n\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n*/",
-        "outputs": 11,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2220,
-        "y": 2400,
-        "wires": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [
-                "8788069950a7a868",
-                "022251598872c5cf"
-            ],
-            [],
-            [],
-            []
-        ]
     },
     {
         "id": "8788069950a7a868",
@@ -1260,8 +1197,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 2410,
-        "y": 2380,
+        "x": 2399.300048828125,
+        "y": 2012.83349609375,
         "wires": []
     },
     {
@@ -1271,44 +1208,12 @@
         "g": "522bcd4720c7a9ad",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 2070,
-        "y": 1920,
+        "x": 2030,
+        "y": 1760,
         "wires": [
             [
-                "deacce1f433620bf"
+                "2ec468825578f4b1"
             ]
-        ]
-    },
-    {
-        "id": "deacce1f433620bf",
-        "type": "function",
-        "z": "1c646c2a350b2d7c",
-        "g": "522bcd4720c7a9ad",
-        "name": "",
-        "func": "var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\n// Inicializar valch como array vacío\nvar valch = [\"\", \"\", \"\", \"\"];\n\nif (rxmodadd == 0) {\n    var rxfuncstr = rxstr[1].split(\":\");\n    if (rxfuncstr[1] == \"ERR\") {\n        commandOK = 1;\n        if (rxfuncstr[0] == \"CMD\") {\n            comOK = 0;\n        } else if (rxfuncstr[0] == \"CH\") {\n            chOK = 0;\n        } else if (rxfuncstr[0] == \"PAR\") {\n            parOK = 0;\n        } else if (rxfuncstr[0] == \"VAL\") {\n            valOK = 0;\n        } else if (rxfuncstr[0] == \"LOC\") {\n            remoteOK = 0;\n        }\n    } else if (rxfuncstr[1] == \"OK\") {\n        commandOK = 1;\n        if (rxstr.length > 2 && rxstr[2] != \"\") {\n            var valstr = rxstr[2].split(\":\");\n            if (valstr.length > 1) {\n                valch = valstr[1].split(\";\");\n            }\n        }\n    }\n}\n\n// Construir mensajes (si valch no tiene todos los índices, se pone undefined)\nvar msg1  = {payload: commandOK};\nvar msg2  = {payload: rxmodadd};\nvar msg3  = {payload: comOK};\nvar msg4  = {payload: chOK};\nvar msg5  = {payload: parOK};\nvar msg6  = {payload: valOK};\nvar msg7  = {payload: remoteOK};\nvar msg8  = {payload: valch[0] || null};\nvar msg9  = {payload: valch[1] || null};\nvar msg10 = {payload: valch[2] || null};\nvar msg11 = {payload: valch[3] || null};\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\n\n/*var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\nif(rxmodadd == 0){\n    var rxfuncstr = rxstr[1].split(\":\");\n    if(rxfuncstr[1] == \"ERR\"){\n        commandOK = 1;\n        if(rxfuncstr[0] == \"CMD\"){\n            comOK = 0;\n        }else if(rxfuncstr[0] == \"CH\"){\n            chOK = 0;\n        }else if(rxfuncstr[0] == \"PAR\"){\n            parOK = 0;\n        }else if(rxfuncstr[0] == \"VAL\"){\n            valOK = 0;\n        }else if(rxfuncstr[0] == \"LOC\"){\n            remoteOK = 0;\n        }\n    }else if(rxfuncstr[1] == \"OK\"){\n        commandOK = 1;\n        if(rxstr[2] != \"\"){\n            var valstr = rxstr[2].split(\":\");\n            var valch = valstr[1].split(\";\");\n        }\n    }\n\n}\n\nvar msg1 = {payload : commandOK};\nvar msg2 = {payload : rxmodadd};\nvar msg3 = {payload : comOK};\nvar msg4 = {payload : chOK};\nvar msg5 = {payload : parOK};\nvar msg6 = {payload : valOK};\nvar msg7 = {payload : remoteOK};\nvar msg8 = {payload : valch[0]};\nvar msg9 = {payload : valch[1]};\nvar msg10 = {payload : valch[2]};\nvar msg11 = {payload : valch[3]};\n\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n*/",
-        "outputs": 11,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2240,
-        "y": 1920,
-        "wires": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [
-                "98733f7b127f15f7",
-                "e8c07254d79f9c9f"
-            ],
-            [],
-            [],
-            []
         ]
     },
     {
@@ -1325,8 +1230,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 2430,
-        "y": 1920,
+        "x": 2390,
+        "y": 1760,
         "wires": []
     },
     {
@@ -1336,12 +1241,12 @@
         "g": "522bcd4720c7a9ad",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 2090,
-        "y": 1720,
+        "x": 2050,
+        "y": 1620,
         "wires": [
             [
                 "d471a838c4aad869",
-                "8d1bdc5afa4af823"
+                "c2496dd2226108b7"
             ]
         ]
     },
@@ -1359,8 +1264,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 2440,
-        "y": 1720,
+        "x": 2400,
+        "y": 1620,
         "wires": []
     },
     {
@@ -1395,7 +1300,7 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "50ecec1cc9de458e",
-        "name": "",
+        "name": "PAR:VSET,VAL",
         "func": "var output = msg.payload;\n\nif (output > 2000) {\n    output = 2000\n} else if (output < 0) {\n    output = 0\n}\n\nvar mens = \"$BD:00,CMD:SET,CH:0,PAR:VSET,VAL:\"+output;\n\nmsg = {payload : mens};\n\nreturn [msg];\n",
         "outputs": 1,
         "timeout": "",
@@ -1403,7 +1308,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 660,
+        "x": 680,
         "y": 1200,
         "wires": [
             [
@@ -1433,7 +1338,7 @@
         "topic": "",
         "payload": "::",
         "payloadType": "str",
-        "x": 2530,
+        "x": 2750,
         "y": 560,
         "wires": [
             [
@@ -1473,14 +1378,15 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "50ecec1cc9de458e",
-        "name": "",
+        "name": "PAR:ISET,VAL",
         "func": "var output = msg.payload;\n\nif (output > 2000) {\n    output = 2000\n} else if (output < 0) {\n    output = 0\n}\n\nvar mens = \"$BD:00,CMD:SET,CH:0,PAR:ISET,VAL:\"+output;\n\nmsg = {payload : mens};\n\nreturn [msg];\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 660,
+        "x": 680,
         "y": 1260,
         "wires": [
             [
@@ -1520,14 +1426,15 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "8f97bc9ab144be1b",
-        "name": "",
+        "name": "PAR:VSET,VAL",
         "func": "var output = msg.payload;\n\nif (output > 2000) {\n    output = 2000\n} else if (output < 0) {\n    output = 0\n}\n\nvar mens = \"$BD:00,CMD:SET,CH:1,PAR:VSET,VAL:\"+output;\n\nmsg = {payload : mens};\n\nreturn [msg];\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 660,
+        "x": 680,
         "y": 1360,
         "wires": [
             [
@@ -1567,14 +1474,15 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "8f97bc9ab144be1b",
-        "name": "",
+        "name": "PAR:ISET,VAL",
         "func": "var output = msg.payload;\n\nif (output > 2000) {\n    output = 2000\n} else if (output < 0) {\n    output = 0\n}\n\nvar mens = \"$BD:00,CMD:SET,CH:1,PAR:ISET,VAL:\"+output;\n\nmsg = {payload : mens};\n\nreturn [msg];\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 660,
+        "x": 680,
         "y": 1420,
         "wires": [
             [
@@ -1604,8 +1512,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 560,
-        "y": 380,
+        "x": 1700,
+        "y": 260,
         "wires": [
             [
                 "5029cc76ed9a468c",
@@ -1645,7 +1553,7 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "50ecec1cc9de458e",
-        "name": "",
+        "name": "PAR:RUP,VAL",
         "func": "var output = msg.payload;\n\nif (output > 2000) {\n    output = 2000\n} else if (output < 0) {\n    output = 0\n}\n\nvar mens = \"$BD:00,CMD:SET,CH:0,PAR:RUP,VAL:\"+parseInt(output);\n\nmsg = {payload : mens};\n\nreturn [msg];\n",
         "outputs": 1,
         "timeout": "",
@@ -1653,7 +1561,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1240,
+        "x": 1260,
         "y": 1200,
         "wires": [
             [
@@ -1693,14 +1601,15 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "50ecec1cc9de458e",
-        "name": "",
+        "name": "PAR:TRIP,VAL",
         "func": "var output = msg.payload;\n\nif (output > 2000) {\n    output = 2000\n} else if (output < 0) {\n    output = 0\n}\n\nvar mens = \"$BD:00,CMD:SET,CH:0,PAR:TRIP,VAL:\"+output;\n\nmsg = {payload : mens};\n\nreturn [msg];\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1240,
+        "x": 1260,
         "y": 1260,
         "wires": [
             [
@@ -1767,14 +1676,15 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "8f97bc9ab144be1b",
-        "name": "",
+        "name": "PAR:TRIP,VAL",
         "func": "var output = msg.payload;\n\nif (output > 2000) {\n    output = 2000\n} else if (output < 0) {\n    output = 0\n}\n\nvar mens = \"$BD:00,CMD:SET,CH:1,PAR:TRIP,VAL:\"+output;\n\nmsg = {payload : mens};\n\nreturn [msg];\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1240,
+        "x": 1260,
         "y": 1420,
         "wires": [
             [
@@ -1787,15 +1697,16 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "522bcd4720c7a9ad",
-        "name": "",
+        "name": "PAR:VMON",
         "func": "msg = {payload : \"$BD:00,CMD:MON,CH:1,PAR:VMON\"};\n\n\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1880,
-        "y": 2140,
+        "x": 1870,
+        "y": 1900,
         "wires": [
             [
                 "f040549c00656a52"
@@ -1807,15 +1718,16 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "522bcd4720c7a9ad",
-        "name": "",
+        "name": "PAR:ISET",
         "func": "msg = {payload : \"$BD:00,CMD:MON,CH:1,PAR:ISET\"};\n\n\n\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1900,
-        "y": 1720,
+        "x": 1860,
+        "y": 1620,
         "wires": [
             [
                 "0da13265905f3914"
@@ -1827,15 +1739,16 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "522bcd4720c7a9ad",
-        "name": "",
+        "name": "PAR:VSET",
         "func": "msg = {payload : \"$BD:00,CMD:MON,CH:1,PAR:VSET\"};\n\n\n\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1880,
-        "y": 1920,
+        "x": 1850,
+        "y": 1760,
         "wires": [
             [
                 "32b7df1c99b83eb8"
@@ -1847,15 +1760,16 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "522bcd4720c7a9ad",
-        "name": "",
+        "name": "PAR:IMON",
         "func": "msg = {payload : \"$BD:00,CMD:MON,CH:1,PAR:IMON\"};\n\n\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1860,
-        "y": 2400,
+        "x": 1859.300048828125,
+        "y": 2032.83349609375,
         "wires": [
             [
                 "4262ccb3248ff85e"
@@ -1869,43 +1783,12 @@
         "g": "522bcd4720c7a9ad",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 1970,
-        "y": 3240,
+        "x": 1990,
+        "y": 2440,
         "wires": [
             [
-                "4aacd767c3c11a3b"
+                "5383ec9abf43df82"
             ]
-        ]
-    },
-    {
-        "id": "4aacd767c3c11a3b",
-        "type": "function",
-        "z": "1c646c2a350b2d7c",
-        "g": "522bcd4720c7a9ad",
-        "name": "",
-        "func": "var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\n// Inicializar valch como array vacío\nvar valch = [\"\", \"\", \"\", \"\"];\n\nif (rxmodadd == 0) {\n    var rxfuncstr = rxstr[1].split(\":\");\n    if (rxfuncstr[1] == \"ERR\") {\n        commandOK = 1;\n        if (rxfuncstr[0] == \"CMD\") {\n            comOK = 0;\n        } else if (rxfuncstr[0] == \"CH\") {\n            chOK = 0;\n        } else if (rxfuncstr[0] == \"PAR\") {\n            parOK = 0;\n        } else if (rxfuncstr[0] == \"VAL\") {\n            valOK = 0;\n        } else if (rxfuncstr[0] == \"LOC\") {\n            remoteOK = 0;\n        }\n    } else if (rxfuncstr[1] == \"OK\") {\n        commandOK = 1;\n        if (rxstr.length > 2 && rxstr[2] != \"\") {\n            var valstr = rxstr[2].split(\":\");\n            if (valstr.length > 1) {\n                valch = valstr[1].split(\";\");\n            }\n        }\n    }\n}\n\n// Construir mensajes (si valch no tiene todos los índices, se pone undefined)\nvar msg1  = {payload: commandOK};\nvar msg2  = {payload: rxmodadd};\nvar msg3  = {payload: comOK};\nvar msg4  = {payload: chOK};\nvar msg5  = {payload: parOK};\nvar msg6  = {payload: valOK};\nvar msg7  = {payload: remoteOK};\nvar msg8  = {payload: valch[0] || null};\nvar msg9  = {payload: valch[1] || null};\nvar msg10 = {payload: valch[2] || null};\nvar msg11 = {payload: valch[3] || null};\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\n\n/*var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\nif(rxmodadd == 0){\n    var rxfuncstr = rxstr[1].split(\":\");\n    if(rxfuncstr[1] == \"ERR\"){\n        commandOK = 1;\n        if(rxfuncstr[0] == \"CMD\"){\n            comOK = 0;\n        }else if(rxfuncstr[0] == \"CH\"){\n            chOK = 0;\n        }else if(rxfuncstr[0] == \"PAR\"){\n            parOK = 0;\n        }else if(rxfuncstr[0] == \"VAL\"){\n            valOK = 0;\n        }else if(rxfuncstr[0] == \"LOC\"){\n            remoteOK = 0;\n        }\n    }else if(rxfuncstr[1] == \"OK\"){\n        commandOK = 1;\n        if(rxstr[2] != \"\"){\n            var valstr = rxstr[2].split(\":\");\n            var valch = valstr[1].split(\";\");\n        }\n    }\n\n}\n\nvar msg1 = {payload : commandOK};\nvar msg2 = {payload : rxmodadd};\nvar msg3 = {payload : comOK};\nvar msg4 = {payload : chOK};\nvar msg5 = {payload : parOK};\nvar msg6 = {payload : valOK};\nvar msg7 = {payload : remoteOK};\nvar msg8 = {payload : valch[0]};\nvar msg9 = {payload : valch[1]};\nvar msg10 = {payload : valch[2]};\nvar msg11 = {payload : valch[3]};\n\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n*/",
-        "outputs": 11,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2140,
-        "y": 3240,
-        "wires": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [
-                "10958aeca9301b8c"
-            ],
-            [],
-            [],
-            []
         ]
     },
     {
@@ -1922,8 +1805,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 2350,
-        "y": 3240,
+        "x": 2370,
+        "y": 2440,
         "wires": []
     },
     {
@@ -1934,42 +1817,11 @@
         "name": "",
         "serial": "a4fc396f.153838",
         "x": 1990,
-        "y": 3760,
+        "y": 2720,
         "wires": [
             [
-                "d566876d5f031269"
+                "55762f27aac2803d"
             ]
-        ]
-    },
-    {
-        "id": "d566876d5f031269",
-        "type": "function",
-        "z": "1c646c2a350b2d7c",
-        "g": "522bcd4720c7a9ad",
-        "name": "",
-        "func": "var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\n// Inicializar valch como array vacío\nvar valch = [\"\", \"\", \"\", \"\"];\n\nif (rxmodadd == 0) {\n    var rxfuncstr = rxstr[1].split(\":\");\n    if (rxfuncstr[1] == \"ERR\") {\n        commandOK = 1;\n        if (rxfuncstr[0] == \"CMD\") {\n            comOK = 0;\n        } else if (rxfuncstr[0] == \"CH\") {\n            chOK = 0;\n        } else if (rxfuncstr[0] == \"PAR\") {\n            parOK = 0;\n        } else if (rxfuncstr[0] == \"VAL\") {\n            valOK = 0;\n        } else if (rxfuncstr[0] == \"LOC\") {\n            remoteOK = 0;\n        }\n    } else if (rxfuncstr[1] == \"OK\") {\n        commandOK = 1;\n        if (rxstr.length > 2 && rxstr[2] != \"\") {\n            var valstr = rxstr[2].split(\":\");\n            if (valstr.length > 1) {\n                valch = valstr[1].split(\";\");\n            }\n        }\n    }\n}\n\n// Construir mensajes (si valch no tiene todos los índices, se pone undefined)\nvar msg1  = {payload: commandOK};\nvar msg2  = {payload: rxmodadd};\nvar msg3  = {payload: comOK};\nvar msg4  = {payload: chOK};\nvar msg5  = {payload: parOK};\nvar msg6  = {payload: valOK};\nvar msg7  = {payload: remoteOK};\nvar msg8  = {payload: valch[0] || null};\nvar msg9  = {payload: valch[1] || null};\nvar msg10 = {payload: valch[2] || null};\nvar msg11 = {payload: valch[3] || null};\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\n\n/*var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\nif(rxmodadd == 0){\n    var rxfuncstr = rxstr[1].split(\":\");\n    if(rxfuncstr[1] == \"ERR\"){\n        commandOK = 1;\n        if(rxfuncstr[0] == \"CMD\"){\n            comOK = 0;\n        }else if(rxfuncstr[0] == \"CH\"){\n            chOK = 0;\n        }else if(rxfuncstr[0] == \"PAR\"){\n            parOK = 0;\n        }else if(rxfuncstr[0] == \"VAL\"){\n            valOK = 0;\n        }else if(rxfuncstr[0] == \"LOC\"){\n            remoteOK = 0;\n        }\n    }else if(rxfuncstr[1] == \"OK\"){\n        commandOK = 1;\n        if(rxstr[2] != \"\"){\n            var valstr = rxstr[2].split(\":\");\n            var valch = valstr[1].split(\";\");\n        }\n    }\n\n}\n\nvar msg1 = {payload : commandOK};\nvar msg2 = {payload : rxmodadd};\nvar msg3 = {payload : comOK};\nvar msg4 = {payload : chOK};\nvar msg5 = {payload : parOK};\nvar msg6 = {payload : valOK};\nvar msg7 = {payload : remoteOK};\nvar msg8 = {payload : valch[0]};\nvar msg9 = {payload : valch[1]};\nvar msg10 = {payload : valch[2]};\nvar msg11 = {payload : valch[3]};\n\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n*/",
-        "outputs": 11,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2180,
-        "y": 3760,
-        "wires": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [
-                "b54f6c01e5cb602c"
-            ],
-            [],
-            [],
-            []
         ]
     },
     {
@@ -1987,7 +1839,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 2350,
-        "y": 3760,
+        "y": 2720,
         "wires": []
     },
     {
@@ -1995,15 +1847,16 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "522bcd4720c7a9ad",
-        "name": "",
+        "name": "PAR:TRIP",
         "func": "msg = {payload : \"$BD:00,CMD:MON,CH:1,PAR:TRIP\"};\n\n\n\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1800,
-        "y": 3760,
+        "x": 1810,
+        "y": 2720,
         "wires": [
             [
                 "415d5c2a2b867eb7"
@@ -2015,15 +1868,16 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "522bcd4720c7a9ad",
-        "name": "",
+        "name": "PAR:RUP",
         "func": "msg = {payload : \"$BD:00,CMD:MON,CH:1,PAR:RUP\"};\n\n\n\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1780,
-        "y": 3240,
+        "x": 1800,
+        "y": 2440,
         "wires": [
             [
                 "ca4698c427487f54"
@@ -2035,14 +1889,15 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "8f97bc9ab144be1b",
-        "name": "",
+        "name": "PAR:RUP,VAL",
         "func": "var output = msg.payload;\n\nif (output > 2000) {\n    output = 2000\n} else if (output < 0) {\n    output = 0\n}\n\nvar mens = \"$BD:00,CMD:SET,CH:1,PAR:RUP,VAL:\"+parseInt(output);\n\nmsg = {payload : mens};\n\nreturn [msg];\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1240,
+        "x": 1260,
         "y": 1360,
         "wires": [
             [
@@ -2055,7 +1910,7 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "a773dc5db33b95ab",
-        "name": "",
+        "name": "PAR:ON / OFF",
         "func": "var output = msg.payload;\nvar mens;\n\nvar ch0on = flow.get('ch0on');\nif (!ch0on) {\n    ch0on = 0;\n}\n\nif (output == 1) {\n     mens = \"$BD:00,CMD:SET,CH:0,PAR:ON\";\n    ch0on = 1;\n     \n} else {\n     mens = \"$BD:00,CMD:SET,CH:0,PAR:OFF\";\n    ch0on = 0;\n     \n}\n\nflow.set('ch0on',ch0on);\n\nmsg = {payload : mens};\n\nreturn [msg];\n\n",
         "outputs": 1,
         "timeout": "",
@@ -2063,7 +1918,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 700,
+        "x": 720,
         "y": 1080,
         "wires": [
             [
@@ -2076,14 +1931,15 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "609a56562590a72a",
-        "name": "",
+        "name": "PAR:ON / OFF",
         "func": "var output = msg.payload;\nvar mens;\n\nvar ch1on = flow.get('ch1on');\nif (!ch1on) {\n    ch1on = 0;\n}\n\n\nif (output == 1) {\n    mens = \"$BD:00,CMD:SET,CH:1,PAR:ON\";\n    ch1on = 1;\n\n} else {\n    mens = \"$BD:00,CMD:SET,CH:1,PAR:OFF\";\n    ch1on = 0;\n\n}\n\nflow.set('ch1on',ch1on);\n\nmsg = {payload : mens};\n\nreturn [msg];\n\n\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1320,
+        "x": 1340,
         "y": 1080,
         "wires": [
             [
@@ -2098,8 +1954,8 @@
         "g": "8db8bbc58d95e585",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 3410,
-        "y": 740,
+        "x": 3710,
+        "y": 720,
         "wires": [
             [
                 "f8366ca0bff2de3f"
@@ -2119,8 +1975,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3580,
-        "y": 740,
+        "x": 3880,
+        "y": 720,
         "wires": [
             [],
             [],
@@ -2149,8 +2005,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3240,
-        "y": 740,
+        "x": 3540,
+        "y": 720,
         "wires": [
             [
                 "9c0e97689d4f8882"
@@ -2185,8 +2041,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Channel Enabled 00",
-        "x": 3980,
-        "y": 580,
+        "x": 4280,
+        "y": 560,
         "wires": []
     },
     {
@@ -2201,8 +2057,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3740,
-        "y": 740,
+        "x": 4040,
+        "y": 720,
         "wires": [
             [
                 "e97c9cd9dff16866",
@@ -2278,8 +2134,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Ramp Up",
-        "x": 3940,
-        "y": 680,
+        "x": 4240,
+        "y": 660,
         "wires": []
     },
     {
@@ -2310,8 +2166,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Ramp Down",
-        "x": 3950,
-        "y": 720,
+        "x": 4250,
+        "y": 700,
         "wires": []
     },
     {
@@ -2342,8 +2198,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "OverCurrent",
-        "x": 3950,
-        "y": 760,
+        "x": 4250,
+        "y": 740,
         "wires": []
     },
     {
@@ -2374,8 +2230,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "OverVoltage",
-        "x": 3950,
-        "y": 800,
+        "x": 4250,
+        "y": 780,
         "wires": []
     },
     {
@@ -2406,8 +2262,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "UnderVoltage",
-        "x": 3960,
-        "y": 840,
+        "x": 4260,
+        "y": 820,
         "wires": []
     },
     {
@@ -2438,8 +2294,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "VMax Limitting",
-        "x": 3960,
-        "y": 880,
+        "x": 4260,
+        "y": 860,
         "wires": []
     },
     {
@@ -2470,8 +2326,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Current Trip",
-        "x": 3950,
-        "y": 920,
+        "x": 4250,
+        "y": 900,
         "wires": []
     },
     {
@@ -2502,8 +2358,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "OverPower",
-        "x": 3950,
-        "y": 960,
+        "x": 4250,
+        "y": 940,
         "wires": []
     },
     {
@@ -2534,8 +2390,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Temperature Fault",
-        "x": 3970,
-        "y": 1000,
+        "x": 4270,
+        "y": 980,
         "wires": []
     },
     {
@@ -2566,8 +2422,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Disabled Channel",
-        "x": 3970,
-        "y": 1040,
+        "x": 4270,
+        "y": 1020,
         "wires": []
     },
     {
@@ -2598,8 +2454,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Front KILL",
-        "x": 3950,
-        "y": 1080,
+        "x": 4250,
+        "y": 1060,
         "wires": []
     },
     {
@@ -2630,8 +2486,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Front ILock",
-        "x": 3950,
-        "y": 1120,
+        "x": 4250,
+        "y": 1100,
         "wires": []
     },
     {
@@ -2663,8 +2519,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Channel Enabled 13",
-        "x": 3980,
-        "y": 1160,
+        "x": 4280,
+        "y": 1140,
         "wires": []
     },
     {
@@ -2674,7 +2530,7 @@
         "g": "a773dc5db33b95ab",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 870,
+        "x": 890,
         "y": 1080,
         "wires": [
             []
@@ -2700,7 +2556,7 @@
         "g": "8f97bc9ab144be1b",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 830,
+        "x": 850,
         "y": 1420,
         "wires": [
             []
@@ -2713,7 +2569,7 @@
         "g": "8f97bc9ab144be1b",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 830,
+        "x": 850,
         "y": 1360,
         "wires": [
             []
@@ -2726,7 +2582,7 @@
         "g": "50ecec1cc9de458e",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 830,
+        "x": 870,
         "y": 1260,
         "wires": [
             []
@@ -2739,7 +2595,7 @@
         "g": "50ecec1cc9de458e",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 830,
+        "x": 870,
         "y": 1200,
         "wires": [
             []
@@ -2804,8 +2660,8 @@
         "g": "8db8bbc58d95e585",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 2730,
-        "y": 620,
+        "x": 3030,
+        "y": 600,
         "wires": [
             [
                 "852e4d242796ae1f",
@@ -2825,8 +2681,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2580,
-        "y": 620,
+        "x": 2880,
+        "y": 600,
         "wires": [
             [
                 "a12cf936364ae237"
@@ -2845,8 +2701,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2880,
-        "y": 620,
+        "x": 3180,
+        "y": 600,
         "wires": [
             [],
             [],
@@ -2875,8 +2731,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 3090,
-        "y": 560,
+        "x": 3390,
+        "y": 540,
         "wires": []
     },
     {
@@ -2907,8 +2763,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Channel 0 Alarm",
-        "x": 3290,
-        "y": 620,
+        "x": 3590,
+        "y": 600,
         "wires": []
     },
     {
@@ -2923,8 +2779,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3080,
-        "y": 660,
+        "x": 3380,
+        "y": 640,
         "wires": [
             [
                 "fb29f4e70c9e19cf",
@@ -2948,44 +2804,13 @@
         "g": "522bcd4720c7a9ad",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 2010,
-        "y": 2680,
+        "x": 2030,
+        "y": 2180,
         "wires": [
             [
-                "ab7e69d59e7d709f",
-                "c4b1330e013c8099"
+                "c4b1330e013c8099",
+                "65fc4c8d8d1627bf"
             ]
-        ]
-    },
-    {
-        "id": "ab7e69d59e7d709f",
-        "type": "function",
-        "z": "1c646c2a350b2d7c",
-        "g": "522bcd4720c7a9ad",
-        "name": "",
-        "func": "var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\nif(rxmodadd == 0){\n    var rxfuncstr = rxstr[1].split(\":\");\n    if(rxfuncstr[1] == \"ERR\"){\n        commandOK = 1;\n        if(rxfuncstr[0] == \"CMD\"){\n            comOK = 0;\n        }else if(rxfuncstr[0] == \"CH\"){\n            chOK = 0;\n        }else if(rxfuncstr[0] == \"PAR\"){\n            parOK = 0;\n        }else if(rxfuncstr[0] == \"VAL\"){\n            valOK = 0;\n        }else if(rxfuncstr[0] == \"LOC\"){\n            remoteOK = 0;\n        }\n    }else if(rxfuncstr[1] == \"OK\"){\n        commandOK = 1;\n        if(rxstr[2] != \"\"){\n            var valstr = rxstr[2].split(\":\");\n            var valch = valstr[1].split(\";\");\n        }\n    }\n\n}\n\nvar polstr = [\"Unknown\", \"Unknown\", \"Unknown\", \"Unknown\"];\nfor (var i = 0; i < 4; i++) {\n   if ((valch[i] == \"+\") | (valch[i] == \"+\\r\")){\n       polstr[i] = \"Positive\";\n   }else if ((valch[i] == \"-\") | (valch[i] == \"-\\r\")){\n       polstr[i] = \"Negative\";\n   }else{\n       polstr[i] = \"Unknown\";\n   }\n\n}\n\nvar msg1 = {payload : commandOK};\nvar msg2 = {payload : rxmodadd};\nvar msg3 = {payload : comOK};\nvar msg4 = {payload : chOK};\nvar msg5 = {payload : parOK};\nvar msg6 = {payload : valOK};\nvar msg7 = {payload : remoteOK};\nvar msg8 = {payload : polstr[0]};\nvar msg9 = {payload : polstr[1]};\nvar msg10 = {payload : polstr[2]};\nvar msg11 = {payload : polstr[3]};\n\n\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];",
-        "outputs": 11,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2200,
-        "y": 2680,
-        "wires": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [
-                "2eef3cb55b3b2203"
-            ],
-            [],
-            [],
-            []
         ]
     },
     {
@@ -3002,8 +2827,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 2370,
-        "y": 2680,
+        "x": 2390,
+        "y": 2180,
         "wires": []
     },
     {
@@ -3011,15 +2836,16 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "522bcd4720c7a9ad",
-        "name": "",
+        "name": "PAR:POL",
         "func": "msg = {payload : \"$BD:00,CMD:MON,CH:1,PAR:POL\"};\n\n\n\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1820,
-        "y": 2680,
+        "x": 1840,
+        "y": 2180,
         "wires": [
             [
                 "6c91db92da3bf9e7"
@@ -3047,8 +2873,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 990,
-        "y": 360,
+        "x": 1670,
+        "y": 60,
         "wires": [
             [
                 "28f5e20b718b3bef",
@@ -3069,8 +2895,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1140,
-        "y": 360,
+        "x": 1820,
+        "y": 60,
         "wires": [
             [
                 "3fa07e5e80c002d8"
@@ -3084,8 +2910,8 @@
         "g": "97c1c6fcb1c0c1c4",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 1290,
-        "y": 360,
+        "x": 1970,
+        "y": 60,
         "wires": [
             []
         ]
@@ -3122,14 +2948,15 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "50ecec1cc9de458e",
-        "name": "",
+        "name": "PAR:MAXV,VAL",
         "func": "var output = msg.payload;\n\nif (output > 2000) {\n    output = 2000\n} else if (output < 0) {\n    output = 0\n}\n\nvar mens = \"$BD:00,CMD:SET,CH:0,PAR:MAXV,VAL:\"+parseInt(output);\n\nmsg = {payload : mens};\n\nreturn [msg];\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1820,
+        "x": 1840,
         "y": 1200,
         "wires": [
             [
@@ -3182,14 +3009,15 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "8f97bc9ab144be1b",
-        "name": "",
+        "name": "PAR:MAXV,VAL",
         "func": "var output = msg.payload;\n\nif (output > 2000) {\n    output = 2000\n} else if (output < 0) {\n    output = 0\n}\n\nvar mens = \"$BD:00,CMD:SET,CH:1,PAR:MAXV,VAL:\"+parseInt(output);\n\nmsg = {payload : mens};\n\nreturn [msg];\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1820,
+        "x": 1840,
         "y": 1360,
         "wires": [
             [
@@ -3218,42 +3046,11 @@
         "name": "",
         "serial": "a4fc396f.153838",
         "x": 1990,
-        "y": 3520,
+        "y": 2580,
         "wires": [
             [
-                "df7731d2abcaf740"
+                "6ebddb3264f943e6"
             ]
-        ]
-    },
-    {
-        "id": "df7731d2abcaf740",
-        "type": "function",
-        "z": "1c646c2a350b2d7c",
-        "g": "522bcd4720c7a9ad",
-        "name": "",
-        "func": "var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\n// Inicializar valch como array vacío\nvar valch = [\"\", \"\", \"\", \"\"];\n\nif (rxmodadd == 0) {\n    var rxfuncstr = rxstr[1].split(\":\");\n    if (rxfuncstr[1] == \"ERR\") {\n        commandOK = 1;\n        if (rxfuncstr[0] == \"CMD\") {\n            comOK = 0;\n        } else if (rxfuncstr[0] == \"CH\") {\n            chOK = 0;\n        } else if (rxfuncstr[0] == \"PAR\") {\n            parOK = 0;\n        } else if (rxfuncstr[0] == \"VAL\") {\n            valOK = 0;\n        } else if (rxfuncstr[0] == \"LOC\") {\n            remoteOK = 0;\n        }\n    } else if (rxfuncstr[1] == \"OK\") {\n        commandOK = 1;\n        if (rxstr.length > 2 && rxstr[2] != \"\") {\n            var valstr = rxstr[2].split(\":\");\n            if (valstr.length > 1) {\n                valch = valstr[1].split(\";\");\n            }\n        }\n    }\n}\n\n// Construir mensajes (si valch no tiene todos los índices, se pone undefined)\nvar msg1  = {payload: commandOK};\nvar msg2  = {payload: rxmodadd};\nvar msg3  = {payload: comOK};\nvar msg4  = {payload: chOK};\nvar msg5  = {payload: parOK};\nvar msg6  = {payload: valOK};\nvar msg7  = {payload: remoteOK};\nvar msg8  = {payload: valch[0] || null};\nvar msg9  = {payload: valch[1] || null};\nvar msg10 = {payload: valch[2] || null};\nvar msg11 = {payload: valch[3] || null};\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\n\n/*var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\nif(rxmodadd == 0){\n    var rxfuncstr = rxstr[1].split(\":\");\n    if(rxfuncstr[1] == \"ERR\"){\n        commandOK = 1;\n        if(rxfuncstr[0] == \"CMD\"){\n            comOK = 0;\n        }else if(rxfuncstr[0] == \"CH\"){\n            chOK = 0;\n        }else if(rxfuncstr[0] == \"PAR\"){\n            parOK = 0;\n        }else if(rxfuncstr[0] == \"VAL\"){\n            valOK = 0;\n        }else if(rxfuncstr[0] == \"LOC\"){\n            remoteOK = 0;\n        }\n    }else if(rxfuncstr[1] == \"OK\"){\n        commandOK = 1;\n        if(rxstr[2] != \"\"){\n            var valstr = rxstr[2].split(\":\");\n            var valch = valstr[1].split(\";\");\n        }\n    }\n\n}\n\nvar msg1 = {payload : commandOK};\nvar msg2 = {payload : rxmodadd};\nvar msg3 = {payload : comOK};\nvar msg4 = {payload : chOK};\nvar msg5 = {payload : parOK};\nvar msg6 = {payload : valOK};\nvar msg7 = {payload : remoteOK};\nvar msg8 = {payload : valch[0]};\nvar msg9 = {payload : valch[1]};\nvar msg10 = {payload : valch[2]};\nvar msg11 = {payload : valch[3]};\n\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n*/",
-        "outputs": 11,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2160,
-        "y": 3520,
-        "wires": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [
-                "e644323680c6bb35"
-            ],
-            [],
-            [],
-            []
         ]
     },
     {
@@ -3271,7 +3068,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 2390,
-        "y": 3520,
+        "y": 2580,
         "wires": []
     },
     {
@@ -3279,15 +3076,16 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "522bcd4720c7a9ad",
-        "name": "",
+        "name": "PAR:MAXV",
         "func": "msg = {payload : \"$BD:00,CMD:MON,CH:1,PAR:MAXV\"};\n\n\n\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1800,
-        "y": 3520,
+        "x": 1810,
+        "y": 2580,
         "wires": [
             [
                 "9b5555e869d36bda"
@@ -3616,8 +3414,8 @@
             "02cc4ff6d4edabd0",
             "3e8af3dcea1714ca"
         ],
-        "x": 2135,
-        "y": 2500,
+        "x": 2354.300048828125,
+        "y": 2052.83349609375,
         "wires": []
     },
     {
@@ -3847,8 +3645,8 @@
         "topic": "",
         "payload": "::",
         "payloadType": "str",
-        "x": 1730,
-        "y": 2620,
+        "x": 1750,
+        "y": 2120,
         "wires": [
             [
                 "f823e2e64201931d"
@@ -3877,8 +3675,8 @@
         "topic": "",
         "payload": "::",
         "payloadType": "str",
-        "x": 1790,
-        "y": 2080,
+        "x": 1770,
+        "y": 1840,
         "wires": [
             [
                 "f05ebf712224fe55"
@@ -3907,8 +3705,8 @@
         "topic": "",
         "payload": "::",
         "payloadType": "str",
-        "x": 1790,
-        "y": 1860,
+        "x": 1750,
+        "y": 1700,
         "wires": [
             [
                 "99d8139511ad8a20"
@@ -3937,8 +3735,8 @@
         "topic": "",
         "payload": "::",
         "payloadType": "str",
-        "x": 1750,
-        "y": 2340,
+        "x": 1739.300048828125,
+        "y": 1972.83349609375,
         "wires": [
             [
                 "902b76aaf7bd1447"
@@ -3967,8 +3765,8 @@
         "topic": "",
         "payload": "::",
         "payloadType": "str",
-        "x": 1670,
-        "y": 3180,
+        "x": 1690,
+        "y": 2380,
         "wires": [
             [
                 "09821211c2ba3a05"
@@ -3998,7 +3796,7 @@
         "payload": "::",
         "payloadType": "str",
         "x": 1690,
-        "y": 3460,
+        "y": 2520,
         "wires": [
             [
                 "54931cb14f400be4"
@@ -4039,8 +3837,8 @@
             "3536d8d53ce04a0a",
             "8cd0d63acdb924b6"
         ],
-        "x": 775,
-        "y": 380,
+        "x": 1915,
+        "y": 260,
         "wires": []
     },
     {
@@ -4052,8 +3850,8 @@
         "links": [
             "5029cc76ed9a468c"
         ],
-        "x": 2685,
-        "y": 540,
+        "x": 2765,
+        "y": 640,
         "wires": [
             [
                 "4fb32cd0e1ccc1ef"
@@ -4069,8 +3867,8 @@
         "links": [
             "5029cc76ed9a468c"
         ],
-        "x": 1685,
-        "y": 2680,
+        "x": 1705,
+        "y": 2180,
         "wires": [
             [
                 "f823e2e64201931d"
@@ -4086,8 +3884,8 @@
         "links": [
             "5029cc76ed9a468c"
         ],
-        "x": 1745,
-        "y": 2140,
+        "x": 1725,
+        "y": 1900,
         "wires": [
             [
                 "f05ebf712224fe55"
@@ -4103,8 +3901,8 @@
         "links": [
             "5029cc76ed9a468c"
         ],
-        "x": 1745,
-        "y": 1920,
+        "x": 1705,
+        "y": 1760,
         "wires": [
             [
                 "99d8139511ad8a20"
@@ -4121,7 +3919,7 @@
             "5029cc76ed9a468c"
         ],
         "x": 1655,
-        "y": 3520,
+        "y": 2580,
         "wires": [
             [
                 "54931cb14f400be4"
@@ -4137,8 +3935,8 @@
         "links": [
             "5029cc76ed9a468c"
         ],
-        "x": 1635,
-        "y": 3240,
+        "x": 1655,
+        "y": 2440,
         "wires": [
             [
                 "09821211c2ba3a05"
@@ -4154,8 +3952,8 @@
         "links": [
             "5029cc76ed9a468c"
         ],
-        "x": 1725,
-        "y": 2400,
+        "x": 1714.300048828125,
+        "y": 2032.83349609375,
         "wires": [
             [
                 "902b76aaf7bd1447"
@@ -4190,8 +3988,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Historic Channel 0 Alarm",
-        "x": 3310,
-        "y": 660,
+        "x": 3610,
+        "y": 640,
         "wires": []
     },
     {
@@ -4199,6 +3997,7 @@
         "type": "ui_button",
         "z": "1c646c2a350b2d7c",
         "d": true,
+        "g": "97c1c6fcb1c0c1c4",
         "name": "Clear Historic Alarms",
         "group": "30e307e3.2819e8",
         "order": 23,
@@ -4215,8 +4014,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1020,
-        "y": 440,
+        "x": 1700,
+        "y": 140,
         "wires": [
             [
                 "757dd83f2bcf6b41"
@@ -4235,8 +4034,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1220,
-        "y": 440,
+        "x": 1900,
+        "y": 140,
         "wires": [
             []
         ]
@@ -4263,8 +4062,8 @@
         "topic": "",
         "payload": "::",
         "payloadType": "str",
-        "x": 1730,
-        "y": 1660,
+        "x": 1690,
+        "y": 1560,
         "wires": [
             [
                 "474e21196ee82065"
@@ -4280,8 +4079,8 @@
         "links": [
             "5029cc76ed9a468c"
         ],
-        "x": 1775,
-        "y": 1720,
+        "x": 1735,
+        "y": 1620,
         "wires": [
             [
                 "474e21196ee82065"
@@ -4311,7 +4110,7 @@
         "payload": "::",
         "payloadType": "str",
         "x": 1690,
-        "y": 3700,
+        "y": 2660,
         "wires": [
             [
                 "f74c858ff5c49af8"
@@ -4328,7 +4127,7 @@
             "5029cc76ed9a468c"
         ],
         "x": 1655,
-        "y": 3760,
+        "y": 2720,
         "wires": [
             [
                 "f74c858ff5c49af8"
@@ -4773,11 +4572,11 @@
         "g": "00075d8ac7640e69",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 930,
-        "y": 1640,
+        "x": 850,
+        "y": 1620,
         "wires": [
             [
-                "275e572ea3e66de7"
+                "45c40915dd603fb7"
             ]
         ]
     },
@@ -4795,8 +4594,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1280,
-        "y": 1600,
+        "x": 1180,
+        "y": 1620,
         "wires": []
     },
     {
@@ -4804,15 +4603,16 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "00075d8ac7640e69",
-        "name": "",
+        "name": "PAR:ISET",
         "func": "msg = {payload : \"$BD:00,CMD:MON,CH:0,PAR:ISET\"};\n\n\n\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 740,
-        "y": 1640,
+        "x": 660,
+        "y": 1620,
         "wires": [
             [
                 "63a5500690103820"
@@ -4841,8 +4641,8 @@
         "topic": "",
         "payload": "::",
         "payloadType": "str",
-        "x": 570,
-        "y": 1580,
+        "x": 490,
+        "y": 1560,
         "wires": [
             [
                 "5a117dd069a496ff"
@@ -4858,8 +4658,8 @@
         "links": [
             "5029cc76ed9a468c"
         ],
-        "x": 615,
-        "y": 1640,
+        "x": 535,
+        "y": 1620,
         "wires": [
             [
                 "5a117dd069a496ff"
@@ -4873,44 +4673,12 @@
         "g": "00075d8ac7640e69",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 930,
-        "y": 1820,
+        "x": 850,
+        "y": 1740,
         "wires": [
             [
-                "63c52425ab7efe05"
+                "78fc529a1af070c6"
             ]
-        ]
-    },
-    {
-        "id": "63c52425ab7efe05",
-        "type": "function",
-        "z": "1c646c2a350b2d7c",
-        "g": "00075d8ac7640e69",
-        "name": "",
-        "func": "var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\n// Inicializar valch como array vacío\nvar valch = [\"\", \"\", \"\", \"\"];\n\nif (rxmodadd == 0) {\n    var rxfuncstr = rxstr[1].split(\":\");\n    if (rxfuncstr[1] == \"ERR\") {\n        commandOK = 1;\n        if (rxfuncstr[0] == \"CMD\") {\n            comOK = 0;\n        } else if (rxfuncstr[0] == \"CH\") {\n            chOK = 0;\n        } else if (rxfuncstr[0] == \"PAR\") {\n            parOK = 0;\n        } else if (rxfuncstr[0] == \"VAL\") {\n            valOK = 0;\n        } else if (rxfuncstr[0] == \"LOC\") {\n            remoteOK = 0;\n        }\n    } else if (rxfuncstr[1] == \"OK\") {\n        commandOK = 1;\n        if (rxstr.length > 2 && rxstr[2] != \"\") {\n            var valstr = rxstr[2].split(\":\");\n            if (valstr.length > 1) {\n                valch = valstr[1].split(\";\");\n            }\n        }\n    }\n}\n\n// Construir mensajes (si valch no tiene todos los índices, se pone undefined)\nvar msg1  = {payload: commandOK};\nvar msg2  = {payload: rxmodadd};\nvar msg3  = {payload: comOK};\nvar msg4  = {payload: chOK};\nvar msg5  = {payload: parOK};\nvar msg6  = {payload: valOK};\nvar msg7  = {payload: remoteOK};\nvar msg8  = {payload: valch[0] || null};\nvar msg9  = {payload: valch[1] || null};\nvar msg10 = {payload: valch[2] || null};\nvar msg11 = {payload: valch[3] || null};\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\n\n/*var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\nif(rxmodadd == 0){\n    var rxfuncstr = rxstr[1].split(\":\");\n    if(rxfuncstr[1] == \"ERR\"){\n        commandOK = 1;\n        if(rxfuncstr[0] == \"CMD\"){\n            comOK = 0;\n        }else if(rxfuncstr[0] == \"CH\"){\n            chOK = 0;\n        }else if(rxfuncstr[0] == \"PAR\"){\n            parOK = 0;\n        }else if(rxfuncstr[0] == \"VAL\"){\n            valOK = 0;\n        }else if(rxfuncstr[0] == \"LOC\"){\n            remoteOK = 0;\n        }\n    }else if(rxfuncstr[1] == \"OK\"){\n        commandOK = 1;\n        if(rxstr[2] != \"\"){\n            var valstr = rxstr[2].split(\":\");\n            var valch = valstr[1].split(\";\");\n        }\n    }\n\n}\n\nvar msg1 = {payload : commandOK};\nvar msg2 = {payload : rxmodadd};\nvar msg3 = {payload : comOK};\nvar msg4 = {payload : chOK};\nvar msg5 = {payload : parOK};\nvar msg6 = {payload : valOK};\nvar msg7 = {payload : remoteOK};\nvar msg8 = {payload : valch[0]};\nvar msg9 = {payload : valch[1]};\nvar msg10 = {payload : valch[2]};\nvar msg11 = {payload : valch[3]};\n\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n*/",
-        "outputs": 11,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1100,
-        "y": 1820,
-        "wires": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [
-                "4da23813f53440f9",
-                "fbf54ef3fcc098d8"
-            ],
-            [],
-            [],
-            []
         ]
     },
     {
@@ -4927,8 +4695,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1290,
-        "y": 1780,
+        "x": 1210,
+        "y": 1700,
         "wires": []
     },
     {
@@ -4936,15 +4704,16 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "00075d8ac7640e69",
-        "name": "",
+        "name": "PAR:VSET",
         "func": "msg = {payload : \"$BD:00,CMD:MON,CH:0,PAR:VSET\"};\n\n\n\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 740,
-        "y": 1820,
+        "x": 670,
+        "y": 1740,
         "wires": [
             [
                 "5bde7800521b25de"
@@ -4973,8 +4742,8 @@
         "topic": "",
         "payload": "::",
         "payloadType": "str",
-        "x": 650,
-        "y": 1760,
+        "x": 570,
+        "y": 1680,
         "wires": [
             [
                 "284e36efcf3021af"
@@ -4990,8 +4759,8 @@
         "links": [
             "5029cc76ed9a468c"
         ],
-        "x": 605,
-        "y": 1820,
+        "x": 525,
+        "y": 1740,
         "wires": [
             [
                 "284e36efcf3021af"
@@ -5005,44 +4774,12 @@
         "g": "00075d8ac7640e69",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 930,
-        "y": 2060,
+        "x": 850,
+        "y": 1880,
         "wires": [
             [
-                "793dbbbe2d40dbdc"
+                "cb371b9c41325cd3"
             ]
-        ]
-    },
-    {
-        "id": "793dbbbe2d40dbdc",
-        "type": "function",
-        "z": "1c646c2a350b2d7c",
-        "g": "00075d8ac7640e69",
-        "name": "",
-        "func": "var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\n// Inicializar valch como array vacío\nvar valch = [\"\", \"\", \"\", \"\"];\n\nif (rxmodadd == 0) {\n    var rxfuncstr = rxstr[1].split(\":\");\n    if (rxfuncstr[1] == \"ERR\") {\n        commandOK = 1;\n        if (rxfuncstr[0] == \"CMD\") {\n            comOK = 0;\n        } else if (rxfuncstr[0] == \"CH\") {\n            chOK = 0;\n        } else if (rxfuncstr[0] == \"PAR\") {\n            parOK = 0;\n        } else if (rxfuncstr[0] == \"VAL\") {\n            valOK = 0;\n        } else if (rxfuncstr[0] == \"LOC\") {\n            remoteOK = 0;\n        }\n    } else if (rxfuncstr[1] == \"OK\") {\n        commandOK = 1;\n        if (rxstr.length > 2 && rxstr[2] != \"\") {\n            var valstr = rxstr[2].split(\":\");\n            if (valstr.length > 1) {\n                valch = valstr[1].split(\";\");\n            }\n        }\n    }\n}\n\n// Construir mensajes (si valch no tiene todos los índices, se pone undefined)\nvar msg1  = {payload: commandOK};\nvar msg2  = {payload: rxmodadd};\nvar msg3  = {payload: comOK};\nvar msg4  = {payload: chOK};\nvar msg5  = {payload: parOK};\nvar msg6  = {payload: valOK};\nvar msg7  = {payload: remoteOK};\nvar msg8  = {payload: valch[0] || null};\nvar msg9  = {payload: valch[1] || null};\nvar msg10 = {payload: valch[2] || null};\nvar msg11 = {payload: valch[3] || null};\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\n\n/*var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\nif(rxmodadd == 0){\n    var rxfuncstr = rxstr[1].split(\":\");\n    if(rxfuncstr[1] == \"ERR\"){\n        commandOK = 1;\n        if(rxfuncstr[0] == \"CMD\"){\n            comOK = 0;\n        }else if(rxfuncstr[0] == \"CH\"){\n            chOK = 0;\n        }else if(rxfuncstr[0] == \"PAR\"){\n            parOK = 0;\n        }else if(rxfuncstr[0] == \"VAL\"){\n            valOK = 0;\n        }else if(rxfuncstr[0] == \"LOC\"){\n            remoteOK = 0;\n        }\n    }else if(rxfuncstr[1] == \"OK\"){\n        commandOK = 1;\n        if(rxstr[2] != \"\"){\n            var valstr = rxstr[2].split(\":\");\n            var valch = valstr[1].split(\";\");\n        }\n    }\n\n}\n\nvar msg1 = {payload : commandOK};\nvar msg2 = {payload : rxmodadd};\nvar msg3 = {payload : comOK};\nvar msg4 = {payload : chOK};\nvar msg5 = {payload : parOK};\nvar msg6 = {payload : valOK};\nvar msg7 = {payload : remoteOK};\nvar msg8 = {payload : valch[0]};\nvar msg9 = {payload : valch[1]};\nvar msg10 = {payload : valch[2]};\nvar msg11 = {payload : valch[3]};\n\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n*/",
-        "outputs": 11,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1100,
-        "y": 2060,
-        "wires": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [
-                "b8a475c126225999",
-                "3ffada1a08a3cc3b"
-            ],
-            [],
-            [],
-            []
         ]
     },
     {
@@ -5059,8 +4796,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1290,
-        "y": 2020,
+        "x": 1210,
+        "y": 1840,
         "wires": []
     },
     {
@@ -5068,15 +4805,16 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "00075d8ac7640e69",
-        "name": "",
+        "name": "PAR:VMON",
         "func": "msg = {payload : \"$BD:00,CMD:MON,CH:0,PAR:VMON\"};\n\n\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 740,
-        "y": 2060,
+        "x": 670,
+        "y": 1880,
         "wires": [
             [
                 "732629fa85ce9c69"
@@ -5098,8 +4836,8 @@
             "86724b22e364e297",
             "bc549c49303f8a73"
         ],
-        "x": 1235,
-        "y": 2060,
+        "x": 1155,
+        "y": 1880,
         "wires": []
     },
     {
@@ -5124,8 +4862,8 @@
         "topic": "",
         "payload": "::",
         "payloadType": "str",
-        "x": 650,
-        "y": 2000,
+        "x": 570,
+        "y": 1820,
         "wires": [
             [
                 "15f0103f2442a085"
@@ -5141,8 +4879,8 @@
         "links": [
             "5029cc76ed9a468c"
         ],
-        "x": 605,
-        "y": 2060,
+        "x": 525,
+        "y": 1880,
         "wires": [
             [
                 "15f0103f2442a085"
@@ -5156,44 +4894,13 @@
         "g": "00075d8ac7640e69",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 890,
-        "y": 2620,
+        "x": 860,
+        "y": 2200,
         "wires": [
             [
-                "b220e44a039427be",
-                "165f87d3a6a2cf76"
+                "165f87d3a6a2cf76",
+                "cc5e69d2310d0b12"
             ]
-        ]
-    },
-    {
-        "id": "b220e44a039427be",
-        "type": "function",
-        "z": "1c646c2a350b2d7c",
-        "g": "00075d8ac7640e69",
-        "name": "",
-        "func": "var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\nif(rxmodadd == 0){\n    var rxfuncstr = rxstr[1].split(\":\");\n    if(rxfuncstr[1] == \"ERR\"){\n        commandOK = 1;\n        if(rxfuncstr[0] == \"CMD\"){\n            comOK = 0;\n        }else if(rxfuncstr[0] == \"CH\"){\n            chOK = 0;\n        }else if(rxfuncstr[0] == \"PAR\"){\n            parOK = 0;\n        }else if(rxfuncstr[0] == \"VAL\"){\n            valOK = 0;\n        }else if(rxfuncstr[0] == \"LOC\"){\n            remoteOK = 0;\n        }\n    }else if(rxfuncstr[1] == \"OK\"){\n        commandOK = 1;\n        if(rxstr[2] != \"\"){\n            var valstr = rxstr[2].split(\":\");\n            var valch = valstr[1].split(\";\");\n        }\n    }\n\n}\n\nvar polstr = [\"Unknown\", \"Unknown\", \"Unknown\", \"Unknown\"];\nfor (var i = 0; i < 4; i++) {\n   if ((valch[i] == \"+\") | (valch[i] == \"+\\r\")){\n       polstr[i] = \"Positive\";\n   }else if ((valch[i] == \"-\") | (valch[i] == \"-\\r\")){\n       polstr[i] = \"Negative\";\n   }else{\n       polstr[i] = \"Unknown\";\n   }\n\n}\n\nvar msg1 = {payload : commandOK};\nvar msg2 = {payload : rxmodadd};\nvar msg3 = {payload : comOK};\nvar msg4 = {payload : chOK};\nvar msg5 = {payload : parOK};\nvar msg6 = {payload : valOK};\nvar msg7 = {payload : remoteOK};\nvar msg8 = {payload : polstr[0]};\nvar msg9 = {payload : polstr[1]};\nvar msg10 = {payload : polstr[2]};\nvar msg11 = {payload : polstr[3]};\n\n\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];",
-        "outputs": 11,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1060,
-        "y": 2620,
-        "wires": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [
-                "3d6670af1b4243a6"
-            ],
-            [],
-            [],
-            []
         ]
     },
     {
@@ -5210,8 +4917,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1250,
-        "y": 2580,
+        "x": 1220,
+        "y": 2200,
         "wires": []
     },
     {
@@ -5219,15 +4926,16 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "00075d8ac7640e69",
-        "name": "",
+        "name": "PAR:POL",
         "func": "msg = {payload : \"$BD:00,CMD:MON,CH:0,PAR:POL\"};\n\n\n\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 700,
-        "y": 2620,
+        "x": 670,
+        "y": 2200,
         "wires": [
             [
                 "ece4955faba72d4d"
@@ -5256,8 +4964,8 @@
         "topic": "",
         "payload": "::",
         "payloadType": "str",
-        "x": 610,
-        "y": 2560,
+        "x": 580,
+        "y": 2140,
         "wires": [
             [
                 "d18bfe2fe309aaab"
@@ -5273,8 +4981,8 @@
         "links": [
             "5029cc76ed9a468c"
         ],
-        "x": 565,
-        "y": 2620,
+        "x": 535,
+        "y": 2200,
         "wires": [
             [
                 "d18bfe2fe309aaab"
@@ -5288,44 +4996,12 @@
         "g": "00075d8ac7640e69",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 910,
-        "y": 2280,
+        "x": 850,
+        "y": 2020,
         "wires": [
             [
-                "9377a818cb038f4e"
+                "177d552290fb8932"
             ]
-        ]
-    },
-    {
-        "id": "9377a818cb038f4e",
-        "type": "function",
-        "z": "1c646c2a350b2d7c",
-        "g": "00075d8ac7640e69",
-        "name": "",
-        "func": "var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\n// Inicializar valch como array vacío\nvar valch = [\"\", \"\", \"\", \"\"];\n\nif (rxmodadd == 0) {\n    var rxfuncstr = rxstr[1].split(\":\");\n    if (rxfuncstr[1] == \"ERR\") {\n        commandOK = 1;\n        if (rxfuncstr[0] == \"CMD\") {\n            comOK = 0;\n        } else if (rxfuncstr[0] == \"CH\") {\n            chOK = 0;\n        } else if (rxfuncstr[0] == \"PAR\") {\n            parOK = 0;\n        } else if (rxfuncstr[0] == \"VAL\") {\n            valOK = 0;\n        } else if (rxfuncstr[0] == \"LOC\") {\n            remoteOK = 0;\n        }\n    } else if (rxfuncstr[1] == \"OK\") {\n        commandOK = 1;\n        if (rxstr.length > 2 && rxstr[2] != \"\") {\n            var valstr = rxstr[2].split(\":\");\n            if (valstr.length > 1) {\n                valch = valstr[1].split(\";\");\n            }\n        }\n    }\n}\n\n// Construir mensajes (si valch no tiene todos los índices, se pone undefined)\nvar msg1  = {payload: commandOK};\nvar msg2  = {payload: rxmodadd};\nvar msg3  = {payload: comOK};\nvar msg4  = {payload: chOK};\nvar msg5  = {payload: parOK};\nvar msg6  = {payload: valOK};\nvar msg7  = {payload: remoteOK};\nvar msg8  = {payload: valch[0] || null};\nvar msg9  = {payload: valch[1] || null};\nvar msg10 = {payload: valch[2] || null};\nvar msg11 = {payload: valch[3] || null};\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\n\n/*var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\nif(rxmodadd == 0){\n    var rxfuncstr = rxstr[1].split(\":\");\n    if(rxfuncstr[1] == \"ERR\"){\n        commandOK = 1;\n        if(rxfuncstr[0] == \"CMD\"){\n            comOK = 0;\n        }else if(rxfuncstr[0] == \"CH\"){\n            chOK = 0;\n        }else if(rxfuncstr[0] == \"PAR\"){\n            parOK = 0;\n        }else if(rxfuncstr[0] == \"VAL\"){\n            valOK = 0;\n        }else if(rxfuncstr[0] == \"LOC\"){\n            remoteOK = 0;\n        }\n    }else if(rxfuncstr[1] == \"OK\"){\n        commandOK = 1;\n        if(rxstr[2] != \"\"){\n            var valstr = rxstr[2].split(\":\");\n            var valch = valstr[1].split(\";\");\n        }\n    }\n\n}\n\nvar msg1 = {payload : commandOK};\nvar msg2 = {payload : rxmodadd};\nvar msg3 = {payload : comOK};\nvar msg4 = {payload : chOK};\nvar msg5 = {payload : parOK};\nvar msg6 = {payload : valOK};\nvar msg7 = {payload : remoteOK};\nvar msg8 = {payload : valch[0]};\nvar msg9 = {payload : valch[1]};\nvar msg10 = {payload : valch[2]};\nvar msg11 = {payload : valch[3]};\n\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n*/",
-        "outputs": 11,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1080,
-        "y": 2280,
-        "wires": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [
-                "17b539a06f1f8755",
-                "39dabc217aeea0d2"
-            ],
-            [],
-            [],
-            []
         ]
     },
     {
@@ -5342,8 +5018,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1270,
-        "y": 2260,
+        "x": 1210,
+        "y": 2000,
         "wires": []
     },
     {
@@ -5351,15 +5027,16 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "00075d8ac7640e69",
-        "name": "",
+        "name": "PAR:IMON",
         "func": "msg = {payload : \"$BD:00,CMD:MON,CH:0,PAR:IMON\"};\n\n\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 720,
-        "y": 2280,
+        "x": 670,
+        "y": 2020,
         "wires": [
             [
                 "8382fa45d506c300"
@@ -5381,8 +5058,8 @@
             "e06fc25ff759385c",
             "4c297ed7cd491a34"
         ],
-        "x": 1215,
-        "y": 2300,
+        "x": 1155,
+        "y": 2040,
         "wires": []
     },
     {
@@ -5407,8 +5084,8 @@
         "topic": "",
         "payload": "::",
         "payloadType": "str",
-        "x": 610,
-        "y": 2220,
+        "x": 550,
+        "y": 1960,
         "wires": [
             [
                 "2a38883ad7462983"
@@ -5424,8 +5101,8 @@
         "links": [
             "5029cc76ed9a468c"
         ],
-        "x": 585,
-        "y": 2280,
+        "x": 525,
+        "y": 2020,
         "wires": [
             [
                 "2a38883ad7462983"
@@ -5439,43 +5116,12 @@
         "g": "522bcd4720c7a9ad",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 1950,
-        "y": 3000,
+        "x": 1970,
+        "y": 2300,
         "wires": [
             [
-                "5bf8648e4afe1786"
+                "fb6f5d40c98129ab"
             ]
-        ]
-    },
-    {
-        "id": "5bf8648e4afe1786",
-        "type": "function",
-        "z": "1c646c2a350b2d7c",
-        "g": "522bcd4720c7a9ad",
-        "name": "",
-        "func": "var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\n// Inicializar valch como array vacío\nvar valch = [\"\", \"\", \"\", \"\"];\n\nif (rxmodadd == 0) {\n    var rxfuncstr = rxstr[1].split(\":\");\n    if (rxfuncstr[1] == \"ERR\") {\n        commandOK = 1;\n        if (rxfuncstr[0] == \"CMD\") {\n            comOK = 0;\n        } else if (rxfuncstr[0] == \"CH\") {\n            chOK = 0;\n        } else if (rxfuncstr[0] == \"PAR\") {\n            parOK = 0;\n        } else if (rxfuncstr[0] == \"VAL\") {\n            valOK = 0;\n        } else if (rxfuncstr[0] == \"LOC\") {\n            remoteOK = 0;\n        }\n    } else if (rxfuncstr[1] == \"OK\") {\n        commandOK = 1;\n        if (rxstr.length > 2 && rxstr[2] != \"\") {\n            var valstr = rxstr[2].split(\":\");\n            if (valstr.length > 1) {\n                valch = valstr[1].split(\";\");\n            }\n        }\n    }\n}\n\n// Construir mensajes (si valch no tiene todos los índices, se pone undefined)\nvar msg1  = {payload: commandOK};\nvar msg2  = {payload: rxmodadd};\nvar msg3  = {payload: comOK};\nvar msg4  = {payload: chOK};\nvar msg5  = {payload: parOK};\nvar msg6  = {payload: valOK};\nvar msg7  = {payload: remoteOK};\nvar msg8  = {payload: valch[0] || null};\nvar msg9  = {payload: valch[1] || null};\nvar msg10 = {payload: valch[2] || null};\nvar msg11 = {payload: valch[3] || null};\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\n\n/*var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\nif(rxmodadd == 0){\n    var rxfuncstr = rxstr[1].split(\":\");\n    if(rxfuncstr[1] == \"ERR\"){\n        commandOK = 1;\n        if(rxfuncstr[0] == \"CMD\"){\n            comOK = 0;\n        }else if(rxfuncstr[0] == \"CH\"){\n            chOK = 0;\n        }else if(rxfuncstr[0] == \"PAR\"){\n            parOK = 0;\n        }else if(rxfuncstr[0] == \"VAL\"){\n            valOK = 0;\n        }else if(rxfuncstr[0] == \"LOC\"){\n            remoteOK = 0;\n        }\n    }else if(rxfuncstr[1] == \"OK\"){\n        commandOK = 1;\n        if(rxstr[2] != \"\"){\n            var valstr = rxstr[2].split(\":\");\n            var valch = valstr[1].split(\";\");\n        }\n    }\n\n}\n\nvar msg1 = {payload : commandOK};\nvar msg2 = {payload : rxmodadd};\nvar msg3 = {payload : comOK};\nvar msg4 = {payload : chOK};\nvar msg5 = {payload : parOK};\nvar msg6 = {payload : valOK};\nvar msg7 = {payload : remoteOK};\nvar msg8 = {payload : valch[0]};\nvar msg9 = {payload : valch[1]};\nvar msg10 = {payload : valch[2]};\nvar msg11 = {payload : valch[3]};\n\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n*/",
-        "outputs": 11,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2120,
-        "y": 3000,
-        "wires": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [
-                "61ec6f2c51250969"
-            ],
-            [],
-            [],
-            []
         ]
     },
     {
@@ -5492,8 +5138,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 2330,
-        "y": 3000,
+        "x": 2350,
+        "y": 2300,
         "wires": []
     },
     {
@@ -5501,15 +5147,16 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "522bcd4720c7a9ad",
-        "name": "",
+        "name": "PAR:PDWN",
         "func": "msg = {payload : \"$BD:00,CMD:MON,CH:1,PAR:PDWN\"};\n\n\n\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1760,
-        "y": 3000,
+        "x": 1790,
+        "y": 2300,
         "wires": [
             [
                 "fb3a96d0dd53f6f8"
@@ -5538,8 +5185,8 @@
         "topic": "",
         "payload": "::",
         "payloadType": "str",
-        "x": 1670,
-        "y": 2940,
+        "x": 1690,
+        "y": 2240,
         "wires": [
             [
                 "59688c670bf23b0d"
@@ -5555,8 +5202,8 @@
         "links": [
             "5029cc76ed9a468c"
         ],
-        "x": 1635,
-        "y": 3000,
+        "x": 1655,
+        "y": 2300,
         "wires": [
             [
                 "59688c670bf23b0d"
@@ -5570,43 +5217,12 @@
         "g": "00075d8ac7640e69",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 890,
-        "y": 2900,
+        "x": 860,
+        "y": 2360,
         "wires": [
             [
-                "35d75f201ad68de2"
+                "d77d854b0a98ec25"
             ]
-        ]
-    },
-    {
-        "id": "35d75f201ad68de2",
-        "type": "function",
-        "z": "1c646c2a350b2d7c",
-        "g": "00075d8ac7640e69",
-        "name": "",
-        "func": "var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\n// Inicializar valch como array vacío\nvar valch = [\"\", \"\", \"\", \"\"];\n\nif (rxmodadd == 0) {\n    var rxfuncstr = rxstr[1].split(\":\");\n    if (rxfuncstr[1] == \"ERR\") {\n        commandOK = 1;\n        if (rxfuncstr[0] == \"CMD\") {\n            comOK = 0;\n        } else if (rxfuncstr[0] == \"CH\") {\n            chOK = 0;\n        } else if (rxfuncstr[0] == \"PAR\") {\n            parOK = 0;\n        } else if (rxfuncstr[0] == \"VAL\") {\n            valOK = 0;\n        } else if (rxfuncstr[0] == \"LOC\") {\n            remoteOK = 0;\n        }\n    } else if (rxfuncstr[1] == \"OK\") {\n        commandOK = 1;\n        if (rxstr.length > 2 && rxstr[2] != \"\") {\n            var valstr = rxstr[2].split(\":\");\n            if (valstr.length > 1) {\n                valch = valstr[1].split(\";\");\n            }\n        }\n    }\n}\n\n// Construir mensajes (si valch no tiene todos los índices, se pone undefined)\nvar msg1  = {payload: commandOK};\nvar msg2  = {payload: rxmodadd};\nvar msg3  = {payload: comOK};\nvar msg4  = {payload: chOK};\nvar msg5  = {payload: parOK};\nvar msg6  = {payload: valOK};\nvar msg7  = {payload: remoteOK};\nvar msg8  = {payload: valch[0] || null};\nvar msg9  = {payload: valch[1] || null};\nvar msg10 = {payload: valch[2] || null};\nvar msg11 = {payload: valch[3] || null};\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\n\n/*var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\nif(rxmodadd == 0){\n    var rxfuncstr = rxstr[1].split(\":\");\n    if(rxfuncstr[1] == \"ERR\"){\n        commandOK = 1;\n        if(rxfuncstr[0] == \"CMD\"){\n            comOK = 0;\n        }else if(rxfuncstr[0] == \"CH\"){\n            chOK = 0;\n        }else if(rxfuncstr[0] == \"PAR\"){\n            parOK = 0;\n        }else if(rxfuncstr[0] == \"VAL\"){\n            valOK = 0;\n        }else if(rxfuncstr[0] == \"LOC\"){\n            remoteOK = 0;\n        }\n    }else if(rxfuncstr[1] == \"OK\"){\n        commandOK = 1;\n        if(rxstr[2] != \"\"){\n            var valstr = rxstr[2].split(\":\");\n            var valch = valstr[1].split(\";\");\n        }\n    }\n\n}\n\nvar msg1 = {payload : commandOK};\nvar msg2 = {payload : rxmodadd};\nvar msg3 = {payload : comOK};\nvar msg4 = {payload : chOK};\nvar msg5 = {payload : parOK};\nvar msg6 = {payload : valOK};\nvar msg7 = {payload : remoteOK};\nvar msg8 = {payload : valch[0]};\nvar msg9 = {payload : valch[1]};\nvar msg10 = {payload : valch[2]};\nvar msg11 = {payload : valch[3]};\n\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n*/",
-        "outputs": 11,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1060,
-        "y": 2900,
-        "wires": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [
-                "0551e0ee6032a67a"
-            ],
-            [],
-            [],
-            []
         ]
     },
     {
@@ -5623,8 +5239,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1270,
-        "y": 2860,
+        "x": 1240,
+        "y": 2360,
         "wires": []
     },
     {
@@ -5632,15 +5248,16 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "00075d8ac7640e69",
-        "name": "",
+        "name": "PAR:PDWN",
         "func": "msg = {payload : \"$BD:00,CMD:MON,CH:0,PAR:PDWN\"};\n\n\n\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 700,
-        "y": 2900,
+        "x": 680,
+        "y": 2360,
         "wires": [
             [
                 "ace2094d7d4d4281"
@@ -5669,8 +5286,8 @@
         "topic": "",
         "payload": "::",
         "payloadType": "str",
-        "x": 610,
-        "y": 2840,
+        "x": 580,
+        "y": 2300,
         "wires": [
             [
                 "ebb5e72ab086b48f"
@@ -5686,8 +5303,8 @@
         "links": [
             "5029cc76ed9a468c"
         ],
-        "x": 575,
-        "y": 2900,
+        "x": 545,
+        "y": 2360,
         "wires": [
             [
                 "ebb5e72ab086b48f"
@@ -5701,43 +5318,12 @@
         "g": "00075d8ac7640e69",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 910,
-        "y": 3120,
+        "x": 880,
+        "y": 2480,
         "wires": [
             [
-                "937871a668a740c9"
+                "ba480b535b90c261"
             ]
-        ]
-    },
-    {
-        "id": "937871a668a740c9",
-        "type": "function",
-        "z": "1c646c2a350b2d7c",
-        "g": "00075d8ac7640e69",
-        "name": "",
-        "func": "var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\n// Inicializar valch como array vacío\nvar valch = [\"\", \"\", \"\", \"\"];\n\nif (rxmodadd == 0) {\n    var rxfuncstr = rxstr[1].split(\":\");\n    if (rxfuncstr[1] == \"ERR\") {\n        commandOK = 1;\n        if (rxfuncstr[0] == \"CMD\") {\n            comOK = 0;\n        } else if (rxfuncstr[0] == \"CH\") {\n            chOK = 0;\n        } else if (rxfuncstr[0] == \"PAR\") {\n            parOK = 0;\n        } else if (rxfuncstr[0] == \"VAL\") {\n            valOK = 0;\n        } else if (rxfuncstr[0] == \"LOC\") {\n            remoteOK = 0;\n        }\n    } else if (rxfuncstr[1] == \"OK\") {\n        commandOK = 1;\n        if (rxstr.length > 2 && rxstr[2] != \"\") {\n            var valstr = rxstr[2].split(\":\");\n            if (valstr.length > 1) {\n                valch = valstr[1].split(\";\");\n            }\n        }\n    }\n}\n\n// Construir mensajes (si valch no tiene todos los índices, se pone undefined)\nvar msg1  = {payload: commandOK};\nvar msg2  = {payload: rxmodadd};\nvar msg3  = {payload: comOK};\nvar msg4  = {payload: chOK};\nvar msg5  = {payload: parOK};\nvar msg6  = {payload: valOK};\nvar msg7  = {payload: remoteOK};\nvar msg8  = {payload: valch[0] || null};\nvar msg9  = {payload: valch[1] || null};\nvar msg10 = {payload: valch[2] || null};\nvar msg11 = {payload: valch[3] || null};\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\n\n/*var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\nif(rxmodadd == 0){\n    var rxfuncstr = rxstr[1].split(\":\");\n    if(rxfuncstr[1] == \"ERR\"){\n        commandOK = 1;\n        if(rxfuncstr[0] == \"CMD\"){\n            comOK = 0;\n        }else if(rxfuncstr[0] == \"CH\"){\n            chOK = 0;\n        }else if(rxfuncstr[0] == \"PAR\"){\n            parOK = 0;\n        }else if(rxfuncstr[0] == \"VAL\"){\n            valOK = 0;\n        }else if(rxfuncstr[0] == \"LOC\"){\n            remoteOK = 0;\n        }\n    }else if(rxfuncstr[1] == \"OK\"){\n        commandOK = 1;\n        if(rxstr[2] != \"\"){\n            var valstr = rxstr[2].split(\":\");\n            var valch = valstr[1].split(\";\");\n        }\n    }\n\n}\n\nvar msg1 = {payload : commandOK};\nvar msg2 = {payload : rxmodadd};\nvar msg3 = {payload : comOK};\nvar msg4 = {payload : chOK};\nvar msg5 = {payload : parOK};\nvar msg6 = {payload : valOK};\nvar msg7 = {payload : remoteOK};\nvar msg8 = {payload : valch[0]};\nvar msg9 = {payload : valch[1]};\nvar msg10 = {payload : valch[2]};\nvar msg11 = {payload : valch[3]};\n\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n*/",
-        "outputs": 11,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1080,
-        "y": 3120,
-        "wires": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [
-                "82ee4ee11a3205c1"
-            ],
-            [],
-            [],
-            []
         ]
     },
     {
@@ -5754,8 +5340,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1290,
-        "y": 3080,
+        "x": 1240,
+        "y": 2480,
         "wires": []
     },
     {
@@ -5763,15 +5349,16 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "00075d8ac7640e69",
-        "name": "",
+        "name": "PAR:RUP",
         "func": "msg = {payload : \"$BD:00,CMD:MON,CH:0,PAR:RUP\"};\n\n\n\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 720,
-        "y": 3120,
+        "x": 690,
+        "y": 2480,
         "wires": [
             [
                 "561b6c60db6ca5fe"
@@ -5800,8 +5387,8 @@
         "topic": "",
         "payload": "::",
         "payloadType": "str",
-        "x": 610,
-        "y": 3060,
+        "x": 580,
+        "y": 2420,
         "wires": [
             [
                 "efb54e3396a3cb8d"
@@ -5817,8 +5404,8 @@
         "links": [
             "5029cc76ed9a468c"
         ],
-        "x": 575,
-        "y": 3120,
+        "x": 545,
+        "y": 2480,
         "wires": [
             [
                 "efb54e3396a3cb8d"
@@ -5832,43 +5419,12 @@
         "g": "00075d8ac7640e69",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 930,
-        "y": 3660,
+        "x": 900,
+        "y": 2780,
         "wires": [
             [
-                "1ca3af8f287dc631"
+                "23e92a19d2d0cfd8"
             ]
-        ]
-    },
-    {
-        "id": "1ca3af8f287dc631",
-        "type": "function",
-        "z": "1c646c2a350b2d7c",
-        "g": "00075d8ac7640e69",
-        "name": "",
-        "func": "var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\n// Inicializar valch como array vacío\nvar valch = [\"\", \"\", \"\", \"\"];\n\nif (rxmodadd == 0) {\n    var rxfuncstr = rxstr[1].split(\":\");\n    if (rxfuncstr[1] == \"ERR\") {\n        commandOK = 1;\n        if (rxfuncstr[0] == \"CMD\") {\n            comOK = 0;\n        } else if (rxfuncstr[0] == \"CH\") {\n            chOK = 0;\n        } else if (rxfuncstr[0] == \"PAR\") {\n            parOK = 0;\n        } else if (rxfuncstr[0] == \"VAL\") {\n            valOK = 0;\n        } else if (rxfuncstr[0] == \"LOC\") {\n            remoteOK = 0;\n        }\n    } else if (rxfuncstr[1] == \"OK\") {\n        commandOK = 1;\n        if (rxstr.length > 2 && rxstr[2] != \"\") {\n            var valstr = rxstr[2].split(\":\");\n            if (valstr.length > 1) {\n                valch = valstr[1].split(\";\");\n            }\n        }\n    }\n}\n\n// Construir mensajes (si valch no tiene todos los índices, se pone undefined)\nvar msg1  = {payload: commandOK};\nvar msg2  = {payload: rxmodadd};\nvar msg3  = {payload: comOK};\nvar msg4  = {payload: chOK};\nvar msg5  = {payload: parOK};\nvar msg6  = {payload: valOK};\nvar msg7  = {payload: remoteOK};\nvar msg8  = {payload: valch[0] || null};\nvar msg9  = {payload: valch[1] || null};\nvar msg10 = {payload: valch[2] || null};\nvar msg11 = {payload: valch[3] || null};\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\n\n/*var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\nif(rxmodadd == 0){\n    var rxfuncstr = rxstr[1].split(\":\");\n    if(rxfuncstr[1] == \"ERR\"){\n        commandOK = 1;\n        if(rxfuncstr[0] == \"CMD\"){\n            comOK = 0;\n        }else if(rxfuncstr[0] == \"CH\"){\n            chOK = 0;\n        }else if(rxfuncstr[0] == \"PAR\"){\n            parOK = 0;\n        }else if(rxfuncstr[0] == \"VAL\"){\n            valOK = 0;\n        }else if(rxfuncstr[0] == \"LOC\"){\n            remoteOK = 0;\n        }\n    }else if(rxfuncstr[1] == \"OK\"){\n        commandOK = 1;\n        if(rxstr[2] != \"\"){\n            var valstr = rxstr[2].split(\":\");\n            var valch = valstr[1].split(\";\");\n        }\n    }\n\n}\n\nvar msg1 = {payload : commandOK};\nvar msg2 = {payload : rxmodadd};\nvar msg3 = {payload : comOK};\nvar msg4 = {payload : chOK};\nvar msg5 = {payload : parOK};\nvar msg6 = {payload : valOK};\nvar msg7 = {payload : remoteOK};\nvar msg8 = {payload : valch[0]};\nvar msg9 = {payload : valch[1]};\nvar msg10 = {payload : valch[2]};\nvar msg11 = {payload : valch[3]};\n\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n*/",
-        "outputs": 11,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1100,
-        "y": 3660,
-        "wires": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [
-                "b77c1731865c8ee4"
-            ],
-            [],
-            [],
-            []
         ]
     },
     {
@@ -5885,8 +5441,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1290,
-        "y": 3620,
+        "x": 1240,
+        "y": 2780,
         "wires": []
     },
     {
@@ -5894,15 +5450,16 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "00075d8ac7640e69",
-        "name": "",
+        "name": "PAR:TRIP",
         "func": "msg = {payload : \"$BD:00,CMD:MON,CH:0,PAR:TRIP\"};\n\n\n\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 740,
-        "y": 3660,
+        "x": 720,
+        "y": 2780,
         "wires": [
             [
                 "a5aa72166b6f5954"
@@ -5916,43 +5473,12 @@
         "g": "00075d8ac7640e69",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 930,
-        "y": 3420,
+        "x": 900,
+        "y": 2620,
         "wires": [
             [
-                "ec099cc2b63c0613"
+                "216dccde25870040"
             ]
-        ]
-    },
-    {
-        "id": "ec099cc2b63c0613",
-        "type": "function",
-        "z": "1c646c2a350b2d7c",
-        "g": "00075d8ac7640e69",
-        "name": "",
-        "func": "var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\n// Inicializar valch como array vacío\nvar valch = [\"\", \"\", \"\", \"\"];\n\nif (rxmodadd == 0) {\n    var rxfuncstr = rxstr[1].split(\":\");\n    if (rxfuncstr[1] == \"ERR\") {\n        commandOK = 1;\n        if (rxfuncstr[0] == \"CMD\") {\n            comOK = 0;\n        } else if (rxfuncstr[0] == \"CH\") {\n            chOK = 0;\n        } else if (rxfuncstr[0] == \"PAR\") {\n            parOK = 0;\n        } else if (rxfuncstr[0] == \"VAL\") {\n            valOK = 0;\n        } else if (rxfuncstr[0] == \"LOC\") {\n            remoteOK = 0;\n        }\n    } else if (rxfuncstr[1] == \"OK\") {\n        commandOK = 1;\n        if (rxstr.length > 2 && rxstr[2] != \"\") {\n            var valstr = rxstr[2].split(\":\");\n            if (valstr.length > 1) {\n                valch = valstr[1].split(\";\");\n            }\n        }\n    }\n}\n\n// Construir mensajes (si valch no tiene todos los índices, se pone undefined)\nvar msg1  = {payload: commandOK};\nvar msg2  = {payload: rxmodadd};\nvar msg3  = {payload: comOK};\nvar msg4  = {payload: chOK};\nvar msg5  = {payload: parOK};\nvar msg6  = {payload: valOK};\nvar msg7  = {payload: remoteOK};\nvar msg8  = {payload: valch[0] || null};\nvar msg9  = {payload: valch[1] || null};\nvar msg10 = {payload: valch[2] || null};\nvar msg11 = {payload: valch[3] || null};\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\n\n/*var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\nif(rxmodadd == 0){\n    var rxfuncstr = rxstr[1].split(\":\");\n    if(rxfuncstr[1] == \"ERR\"){\n        commandOK = 1;\n        if(rxfuncstr[0] == \"CMD\"){\n            comOK = 0;\n        }else if(rxfuncstr[0] == \"CH\"){\n            chOK = 0;\n        }else if(rxfuncstr[0] == \"PAR\"){\n            parOK = 0;\n        }else if(rxfuncstr[0] == \"VAL\"){\n            valOK = 0;\n        }else if(rxfuncstr[0] == \"LOC\"){\n            remoteOK = 0;\n        }\n    }else if(rxfuncstr[1] == \"OK\"){\n        commandOK = 1;\n        if(rxstr[2] != \"\"){\n            var valstr = rxstr[2].split(\":\");\n            var valch = valstr[1].split(\";\");\n        }\n    }\n\n}\n\nvar msg1 = {payload : commandOK};\nvar msg2 = {payload : rxmodadd};\nvar msg3 = {payload : comOK};\nvar msg4 = {payload : chOK};\nvar msg5 = {payload : parOK};\nvar msg6 = {payload : valOK};\nvar msg7 = {payload : remoteOK};\nvar msg8 = {payload : valch[0]};\nvar msg9 = {payload : valch[1]};\nvar msg10 = {payload : valch[2]};\nvar msg11 = {payload : valch[3]};\n\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n*/",
-        "outputs": 11,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1100,
-        "y": 3420,
-        "wires": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [
-                "dcb6abca2b989403"
-            ],
-            [],
-            [],
-            []
         ]
     },
     {
@@ -5969,8 +5495,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1330,
-        "y": 3380,
+        "x": 1270,
+        "y": 2620,
         "wires": []
     },
     {
@@ -5978,15 +5504,16 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "00075d8ac7640e69",
-        "name": "",
+        "name": "PAR:MAXV",
         "func": "msg = {payload : \"$BD:00,CMD:MON,CH:0,PAR:MAXV\"};\n\n\n\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 760,
-        "y": 3420,
+        "x": 740,
+        "y": 2620,
         "wires": [
             [
                 "f03a9babd56a71cc"
@@ -6015,8 +5542,8 @@
         "topic": "",
         "payload": "::",
         "payloadType": "str",
-        "x": 630,
-        "y": 3360,
+        "x": 600,
+        "y": 2560,
         "wires": [
             [
                 "6a2f34e73248d564"
@@ -6032,8 +5559,8 @@
         "links": [
             "5029cc76ed9a468c"
         ],
-        "x": 595,
-        "y": 3420,
+        "x": 565,
+        "y": 2620,
         "wires": [
             [
                 "6a2f34e73248d564"
@@ -6062,8 +5589,8 @@
         "topic": "",
         "payload": "::",
         "payloadType": "str",
-        "x": 630,
-        "y": 3600,
+        "x": 600,
+        "y": 2720,
         "wires": [
             [
                 "61707c31931b6267"
@@ -6079,43 +5606,12 @@
         "links": [
             "5029cc76ed9a468c"
         ],
-        "x": 595,
-        "y": 3660,
+        "x": 565,
+        "y": 2780,
         "wires": [
             [
                 "61707c31931b6267"
             ]
-        ]
-    },
-    {
-        "id": "275e572ea3e66de7",
-        "type": "function",
-        "z": "1c646c2a350b2d7c",
-        "g": "00075d8ac7640e69",
-        "name": "",
-        "func": "var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\n// Inicializar valch como array vacío\nvar valch = [\"\", \"\", \"\", \"\"];\n\nif (rxmodadd == 0) {\n    var rxfuncstr = rxstr[1].split(\":\");\n    if (rxfuncstr[1] == \"ERR\") {\n        commandOK = 1;\n        if (rxfuncstr[0] == \"CMD\") {\n            comOK = 0;\n        } else if (rxfuncstr[0] == \"CH\") {\n            chOK = 0;\n        } else if (rxfuncstr[0] == \"PAR\") {\n            parOK = 0;\n        } else if (rxfuncstr[0] == \"VAL\") {\n            valOK = 0;\n        } else if (rxfuncstr[0] == \"LOC\") {\n            remoteOK = 0;\n        }\n    } else if (rxfuncstr[1] == \"OK\") {\n        commandOK = 1;\n        if (rxstr.length > 2 && rxstr[2] != \"\") {\n            var valstr = rxstr[2].split(\":\");\n            if (valstr.length > 1) {\n                valch = valstr[1].split(\";\");\n            }\n        }\n    }\n}\n\n// Construir mensajes (si valch no tiene todos los índices, se pone undefined)\nvar msg1  = {payload: commandOK};\nvar msg2  = {payload: rxmodadd};\nvar msg3  = {payload: comOK};\nvar msg4  = {payload: chOK};\nvar msg5  = {payload: parOK};\nvar msg6  = {payload: valOK};\nvar msg7  = {payload: remoteOK};\nvar msg8  = {payload: valch[0] || null};\nvar msg9  = {payload: valch[1] || null};\nvar msg10 = {payload: valch[2] || null};\nvar msg11 = {payload: valch[3] || null};\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\n\n/*var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\nif(rxmodadd == 0){\n    var rxfuncstr = rxstr[1].split(\":\");\n    if(rxfuncstr[1] == \"ERR\"){\n        commandOK = 1;\n        if(rxfuncstr[0] == \"CMD\"){\n            comOK = 0;\n        }else if(rxfuncstr[0] == \"CH\"){\n            chOK = 0;\n        }else if(rxfuncstr[0] == \"PAR\"){\n            parOK = 0;\n        }else if(rxfuncstr[0] == \"VAL\"){\n            valOK = 0;\n        }else if(rxfuncstr[0] == \"LOC\"){\n            remoteOK = 0;\n        }\n    }else if(rxfuncstr[1] == \"OK\"){\n        commandOK = 1;\n        if(rxstr[2] != \"\"){\n            var valstr = rxstr[2].split(\":\");\n            var valch = valstr[1].split(\";\");\n        }\n    }\n\n}\n\nvar msg1 = {payload : commandOK};\nvar msg2 = {payload : rxmodadd};\nvar msg3 = {payload : comOK};\nvar msg4 = {payload : chOK};\nvar msg5 = {payload : parOK};\nvar msg6 = {payload : valOK};\nvar msg7 = {payload : remoteOK};\nvar msg8 = {payload : valch[0]};\nvar msg9 = {payload : valch[1]};\nvar msg10 = {payload : valch[2]};\nvar msg11 = {payload : valch[3]};\n\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n*/",
-        "outputs": 11,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1100,
-        "y": 1640,
-        "wires": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [
-                "a0c8066e52fe57d8"
-            ],
-            [],
-            [],
-            []
         ]
     },
     {
@@ -6125,8 +5621,8 @@
         "g": "4027f16d500e13a4",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 3730,
-        "y": 1600,
+        "x": 3750,
+        "y": 1580,
         "wires": [
             [
                 "95d5d4fb5ad20191"
@@ -6146,8 +5642,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3900,
-        "y": 1600,
+        "x": 3920,
+        "y": 1580,
         "wires": [
             [],
             [],
@@ -6176,8 +5672,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3560,
-        "y": 1600,
+        "x": 3580,
+        "y": 1580,
         "wires": [
             [
                 "782f47a11d64a508"
@@ -6212,8 +5708,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Channel Enabled 00",
-        "x": 4320,
-        "y": 1540,
+        "x": 4340,
+        "y": 1520,
         "wires": []
     },
     {
@@ -6228,8 +5724,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 4060,
-        "y": 1620,
+        "x": 4080,
+        "y": 1600,
         "wires": [
             [
                 "12802840b3180a40",
@@ -6305,8 +5801,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Ramp Up",
-        "x": 4260,
-        "y": 1620,
+        "x": 4280,
+        "y": 1600,
         "wires": []
     },
     {
@@ -6337,8 +5833,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Ramp Down",
-        "x": 4270,
-        "y": 1660,
+        "x": 4290,
+        "y": 1640,
         "wires": []
     },
     {
@@ -6369,8 +5865,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "OverCurrent",
-        "x": 4270,
-        "y": 1700,
+        "x": 4290,
+        "y": 1680,
         "wires": []
     },
     {
@@ -6401,8 +5897,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "OverVoltage",
-        "x": 4270,
-        "y": 1740,
+        "x": 4290,
+        "y": 1720,
         "wires": []
     },
     {
@@ -6433,8 +5929,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "UnderVoltage",
-        "x": 4280,
-        "y": 1780,
+        "x": 4300,
+        "y": 1760,
         "wires": []
     },
     {
@@ -6465,8 +5961,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "VMax Limitting",
-        "x": 4280,
-        "y": 1820,
+        "x": 4300,
+        "y": 1800,
         "wires": []
     },
     {
@@ -6497,8 +5993,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Current Trip",
-        "x": 4270,
-        "y": 1860,
+        "x": 4290,
+        "y": 1840,
         "wires": []
     },
     {
@@ -6529,8 +6025,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "OverPower",
-        "x": 4270,
-        "y": 1900,
+        "x": 4290,
+        "y": 1880,
         "wires": []
     },
     {
@@ -6561,8 +6057,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Temperature Fault",
-        "x": 4290,
-        "y": 1940,
+        "x": 4310,
+        "y": 1920,
         "wires": []
     },
     {
@@ -6593,8 +6089,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Disabled Channel",
-        "x": 4290,
-        "y": 1980,
+        "x": 4310,
+        "y": 1960,
         "wires": []
     },
     {
@@ -6625,8 +6121,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Front KILL",
-        "x": 4270,
-        "y": 2020,
+        "x": 4290,
+        "y": 2000,
         "wires": []
     },
     {
@@ -6657,8 +6153,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Front ILock",
-        "x": 4270,
-        "y": 2060,
+        "x": 4290,
+        "y": 2040,
         "wires": []
     },
     {
@@ -6690,8 +6186,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Channel Enabled 13",
-        "x": 4300,
-        "y": 2100,
+        "x": 4320,
+        "y": 2080,
         "wires": []
     },
     {
@@ -6808,8 +6304,8 @@
             "6e939dba477efdc2",
             "6ebbf67ed326b8ed"
         ],
-        "x": 4245,
-        "y": 1500,
+        "x": 4265,
+        "y": 1480,
         "wires": []
     },
     {
@@ -6963,8 +6459,8 @@
         "topic": "",
         "payload": "::",
         "payloadType": "str",
-        "x": 3070,
-        "y": 1320,
+        "x": 2770,
+        "y": 1400,
         "wires": [
             [
                 "64689f58c777bea7"
@@ -6978,8 +6474,8 @@
         "g": "4027f16d500e13a4",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 3050,
-        "y": 1460,
+        "x": 3070,
+        "y": 1440,
         "wires": [
             [
                 "045c38703fc0d3ca"
@@ -6998,8 +6494,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2900,
-        "y": 1460,
+        "x": 2920,
+        "y": 1440,
         "wires": [
             [
                 "f017061839abe54f"
@@ -7019,8 +6515,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3220,
-        "y": 1460,
+        "x": 3240,
+        "y": 1440,
         "wires": [
             [],
             [],
@@ -7049,8 +6545,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 3390,
-        "y": 1400,
+        "x": 3410,
+        "y": 1380,
         "wires": []
     },
     {
@@ -7066,8 +6562,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3380,
-        "y": 1540,
+        "x": 3400,
+        "y": 1520,
         "wires": [
             [],
             [
@@ -7112,8 +6608,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Channel 1 Alarm",
-        "x": 3570,
-        "y": 1500,
+        "x": 3590,
+        "y": 1480,
         "wires": []
     },
     {
@@ -7125,8 +6621,8 @@
         "links": [
             "5029cc76ed9a468c"
         ],
-        "x": 3005,
-        "y": 1380,
+        "x": 2725,
+        "y": 1460,
         "wires": [
             [
                 "64689f58c777bea7"
@@ -7161,8 +6657,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Historic Channel 1 Alarm",
-        "x": 3590,
-        "y": 1540,
+        "x": 3610,
+        "y": 1520,
         "wires": []
     },
     {
@@ -7179,40 +6675,9 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2430,
-        "y": 1580,
+        "x": 2310,
+        "y": 1560,
         "wires": []
-    },
-    {
-        "id": "8d1bdc5afa4af823",
-        "type": "function",
-        "z": "1c646c2a350b2d7c",
-        "g": "522bcd4720c7a9ad",
-        "name": "",
-        "func": "var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\n// Inicializar valch como array vacío\nvar valch = [\"\", \"\", \"\", \"\"];\n\nif (rxmodadd == 0) {\n    var rxfuncstr = rxstr[1].split(\":\");\n    if (rxfuncstr[1] == \"ERR\") {\n        commandOK = 1;\n        if (rxfuncstr[0] == \"CMD\") {\n            comOK = 0;\n        } else if (rxfuncstr[0] == \"CH\") {\n            chOK = 0;\n        } else if (rxfuncstr[0] == \"PAR\") {\n            parOK = 0;\n        } else if (rxfuncstr[0] == \"VAL\") {\n            valOK = 0;\n        } else if (rxfuncstr[0] == \"LOC\") {\n            remoteOK = 0;\n        }\n    } else if (rxfuncstr[1] == \"OK\") {\n        commandOK = 1;\n        if (rxstr.length > 2 && rxstr[2] != \"\") {\n            var valstr = rxstr[2].split(\":\");\n            if (valstr.length > 1) {\n                valch = valstr[1].split(\";\");\n            }\n        }\n    }\n}\n\n// Construir mensajes (si valch no tiene todos los índices, se pone undefined)\nvar msg1  = {payload: commandOK};\nvar msg2  = {payload: rxmodadd};\nvar msg3  = {payload: comOK};\nvar msg4  = {payload: chOK};\nvar msg5  = {payload: parOK};\nvar msg6  = {payload: valOK};\nvar msg7  = {payload: remoteOK};\nvar msg8  = {payload: valch[0] || null};\nvar msg9  = {payload: valch[1] || null};\nvar msg10 = {payload: valch[2] || null};\nvar msg11 = {payload: valch[3] || null};\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\n\n/*var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\nif(rxmodadd == 0){\n    var rxfuncstr = rxstr[1].split(\":\");\n    if(rxfuncstr[1] == \"ERR\"){\n        commandOK = 1;\n        if(rxfuncstr[0] == \"CMD\"){\n            comOK = 0;\n        }else if(rxfuncstr[0] == \"CH\"){\n            chOK = 0;\n        }else if(rxfuncstr[0] == \"PAR\"){\n            parOK = 0;\n        }else if(rxfuncstr[0] == \"VAL\"){\n            valOK = 0;\n        }else if(rxfuncstr[0] == \"LOC\"){\n            remoteOK = 0;\n        }\n    }else if(rxfuncstr[1] == \"OK\"){\n        commandOK = 1;\n        if(rxstr[2] != \"\"){\n            var valstr = rxstr[2].split(\":\");\n            var valch = valstr[1].split(\";\");\n        }\n    }\n\n}\n\nvar msg1 = {payload : commandOK};\nvar msg2 = {payload : rxmodadd};\nvar msg3 = {payload : comOK};\nvar msg4 = {payload : chOK};\nvar msg5 = {payload : parOK};\nvar msg6 = {payload : valOK};\nvar msg7 = {payload : remoteOK};\nvar msg8 = {payload : valch[0]};\nvar msg9 = {payload : valch[1]};\nvar msg10 = {payload : valch[2]};\nvar msg11 = {payload : valch[3]};\n\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n*/",
-        "outputs": 11,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2280,
-        "y": 1720,
-        "wires": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [
-                "01c4686bd8428180"
-            ],
-            [],
-            [],
-            []
-        ]
     },
     {
         "id": "ef8c95fab432c777",
@@ -7435,8 +6900,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1150,
-        "y": 400,
+        "x": 1830,
+        "y": 100,
         "wires": []
     },
     {
@@ -7454,8 +6919,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 700,
-        "y": 440,
+        "x": 1840,
+        "y": 320,
         "wires": []
     },
     {
@@ -7526,8 +6991,8 @@
             "01c857da7155c900",
             "09b326436fbed426"
         ],
-        "x": 1235,
-        "y": 1820,
+        "x": 1155,
+        "y": 1740,
         "wires": []
     },
     {
@@ -7545,8 +7010,8 @@
             "c497c70fac39e043",
             "09b326436fbed426"
         ],
-        "x": 2385,
-        "y": 1960,
+        "x": 2345,
+        "y": 1800,
         "wires": []
     },
     {
@@ -7564,8 +7029,8 @@
             "ee0bec4c8f4a53bc",
             "6e185682647f64be"
         ],
-        "x": 2375,
-        "y": 2180,
+        "x": 2355,
+        "y": 1940,
         "wires": []
     },
     {
@@ -7581,8 +7046,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 860,
-        "y": 2540,
+        "x": 830,
+        "y": 2120,
         "wires": []
     },
     {
@@ -7598,8 +7063,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2080,
-        "y": 2580,
+        "x": 2150,
+        "y": 2120,
         "wires": []
     },
     {
@@ -7615,8 +7080,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2810,
-        "y": 700,
+        "x": 3110,
+        "y": 680,
         "wires": []
     },
     {
@@ -7632,8 +7097,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1880,
-        "y": 680,
+        "x": 1000,
+        "y": 460,
         "wires": [
             [
                 "ad519f9a9f4b4901"
@@ -7675,8 +7140,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 2140,
-        "y": 580,
+        "x": 1260,
+        "y": 360,
         "wires": []
     },
     {
@@ -7707,8 +7172,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Link Active",
-        "x": 2130,
-        "y": 540,
+        "x": 1250,
+        "y": 320,
         "wires": []
     },
     {
@@ -7718,8 +7183,8 @@
         "g": "11479d46f0320bd9",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 1690,
-        "y": 700,
+        "x": 810,
+        "y": 480,
         "wires": [
             [
                 "cafea2d3b6d598d6"
@@ -7731,15 +7196,16 @@
         "type": "function",
         "z": "1c646c2a350b2d7c",
         "g": "11479d46f0320bd9",
-        "name": "",
+        "name": "PAR:BDCTR",
         "func": "msg = {payload : \"$BD:00,CMD:MON,PAR:BDCTR\"};\n\n\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1500,
-        "y": 700,
+        "x": 630,
+        "y": 480,
         "wires": [
             [
                 "67dbeca647f3085e"
@@ -7760,8 +7226,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 2150,
-        "y": 860,
+        "x": 1270,
+        "y": 640,
         "wires": []
     },
     {
@@ -7792,8 +7258,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Valid Command",
-        "x": 2140,
-        "y": 620,
+        "x": 1260,
+        "y": 400,
         "wires": []
     },
     {
@@ -7824,8 +7290,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Valid Channel",
-        "x": 2140,
-        "y": 660,
+        "x": 1260,
+        "y": 440,
         "wires": []
     },
     {
@@ -7856,8 +7322,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Valid Parameter",
-        "x": 2140,
-        "y": 700,
+        "x": 1260,
+        "y": 480,
         "wires": []
     },
     {
@@ -7888,8 +7354,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Valid Value",
-        "x": 2130,
-        "y": 740,
+        "x": 1250,
+        "y": 520,
         "wires": []
     },
     {
@@ -7920,8 +7386,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "Remote Command Accepted",
-        "x": 2180,
-        "y": 780,
+        "x": 1300,
+        "y": 560,
         "wires": []
     },
     {
@@ -7975,7 +7441,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 980,
+        "x": 940,
         "y": 640,
         "wires": [
             [],
@@ -8006,8 +7472,8 @@
         "format": "{{msg.payload}}",
         "layout": "col-center",
         "className": "",
-        "x": 1180,
-        "y": 660,
+        "x": 1100,
+        "y": 700,
         "wires": []
     },
     {
@@ -8063,8 +7529,8 @@
         "topic": "",
         "payload": "::",
         "payloadType": "str",
-        "x": 1410,
-        "y": 640,
+        "x": 530,
+        "y": 420,
         "wires": [
             [
                 "9c8b12da4cc0a548"
@@ -8098,8 +7564,8 @@
         "links": [
             "5029cc76ed9a468c"
         ],
-        "x": 1385,
-        "y": 700,
+        "x": 505,
+        "y": 480,
         "wires": [
             [
                 "9c8b12da4cc0a548"
@@ -8119,8 +7585,8 @@
             "f9860d35c46126bc",
             "6e939dba477efdc2"
         ],
-        "x": 1115,
-        "y": 700,
+        "x": 1105,
+        "y": 660,
         "wires": []
     },
     {
@@ -8296,9 +7762,422 @@
         "font": "",
         "fontSize": "",
         "color": "#000000",
-        "x": 1180,
-        "y": 620,
+        "x": 1280,
+        "y": 700,
         "wires": []
+    },
+    {
+        "id": "45c40915dd603fb7",
+        "type": "function",
+        "z": "1c646c2a350b2d7c",
+        "g": "00075d8ac7640e69",
+        "name": "ReadVal",
+        "func": "\nlet rxstr = msg.payload.split(\",\");\nlet valstr = rxstr[2].split(\":\");\n\nlet valch = [\"\", \"\", \"\", \"\"];\nvalch = valstr[1].split(\";\");\n\nlet response  = {payload: valch[0] || null};\n\n//return [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\nreturn response;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 1620,
+        "wires": [
+            [
+                "a0c8066e52fe57d8"
+            ]
+        ]
+    },
+    {
+        "id": "4480e339c3c15616",
+        "type": "function",
+        "z": "1c646c2a350b2d7c",
+        "d": true,
+        "g": "00075d8ac7640e69",
+        "name": "",
+        "func": "var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\n// Inicializar valch como array vacío\nvar valch = [\"\", \"\", \"\", \"\"];\n\nif (rxmodadd == 0) {\n    var rxfuncstr = rxstr[1].split(\":\");\n    if (rxfuncstr[1] == \"ERR\") {\n        commandOK = 1;\n        if (rxfuncstr[0] == \"CMD\") {\n            comOK = 0;\n        } else if (rxfuncstr[0] == \"CH\") {\n            chOK = 0;\n        } else if (rxfuncstr[0] == \"PAR\") {\n            parOK = 0;\n        } else if (rxfuncstr[0] == \"VAL\") {\n            valOK = 0;\n        } else if (rxfuncstr[0] == \"LOC\") {\n            remoteOK = 0;\n        }\n    } else if (rxfuncstr[1] == \"OK\") {\n        commandOK = 1;\n        if (rxstr.length > 2 && rxstr[2] != \"\") {\n            var valstr = rxstr[2].split(\":\");\n            if (valstr.length > 1) {\n                valch = valstr[1].split(\";\");\n            }\n        }\n    }\n}\n\n// Construir mensajes (si valch no tiene todos los índices, se pone undefined)\nvar msg1  = {payload: commandOK};\nvar msg2  = {payload: rxmodadd};\nvar msg3  = {payload: comOK};\nvar msg4  = {payload: chOK};\nvar msg5  = {payload: parOK};\nvar msg6  = {payload: valOK};\nvar msg7  = {payload: remoteOK};\nvar msg8  = {payload: valch[0] || null};\nvar msg9  = {payload: valch[1] || null};\nvar msg10 = {payload: valch[2] || null};\nvar msg11 = {payload: valch[3] || null};\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\n\n/*var rxstr = msg.payload.split(\",\");\n\nvar commandOK = 0;\nvar rxmodaddstr = rxstr[0].split(\":\");\nvar rxmodadd = parseInt(rxmodaddstr[1]);\n\nvar comOK = 1;\nvar chOK = 1;\nvar parOK = 1;\nvar valOK = 1;\nvar remoteOK = 1;\n\nif(rxmodadd == 0){\n    var rxfuncstr = rxstr[1].split(\":\");\n    if(rxfuncstr[1] == \"ERR\"){\n        commandOK = 1;\n        if(rxfuncstr[0] == \"CMD\"){\n            comOK = 0;\n        }else if(rxfuncstr[0] == \"CH\"){\n            chOK = 0;\n        }else if(rxfuncstr[0] == \"PAR\"){\n            parOK = 0;\n        }else if(rxfuncstr[0] == \"VAL\"){\n            valOK = 0;\n        }else if(rxfuncstr[0] == \"LOC\"){\n            remoteOK = 0;\n        }\n    }else if(rxfuncstr[1] == \"OK\"){\n        commandOK = 1;\n        if(rxstr[2] != \"\"){\n            var valstr = rxstr[2].split(\":\");\n            var valch = valstr[1].split(\";\");\n        }\n    }\n\n}\n\nvar msg1 = {payload : commandOK};\nvar msg2 = {payload : rxmodadd};\nvar msg3 = {payload : comOK};\nvar msg4 = {payload : chOK};\nvar msg5 = {payload : parOK};\nvar msg6 = {payload : valOK};\nvar msg7 = {payload : remoteOK};\nvar msg8 = {payload : valch[0]};\nvar msg9 = {payload : valch[1]};\nvar msg10 = {payload : valch[2]};\nvar msg11 = {payload : valch[3]};\n\n\nreturn [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n*/",
+        "outputs": 11,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1360,
+        "y": 1660,
+        "wires": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "78fc529a1af070c6",
+        "type": "function",
+        "z": "1c646c2a350b2d7c",
+        "g": "00075d8ac7640e69",
+        "name": "ReadVal",
+        "func": "\nlet rxstr = msg.payload.split(\",\");\nlet valstr = rxstr[2].split(\":\");\n\nlet valch = [\"\", \"\", \"\", \"\"];\nvalch = valstr[1].split(\";\");\n\nlet response  = {payload: valch[0] || null};\n\n//return [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\nreturn response;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 1740,
+        "wires": [
+            [
+                "fbf54ef3fcc098d8",
+                "4da23813f53440f9"
+            ]
+        ]
+    },
+    {
+        "id": "cb371b9c41325cd3",
+        "type": "function",
+        "z": "1c646c2a350b2d7c",
+        "g": "00075d8ac7640e69",
+        "name": "ReadVal",
+        "func": "\nlet rxstr = msg.payload.split(\",\");\nlet valstr = rxstr[2].split(\":\");\n\nlet valch = [\"\", \"\", \"\", \"\"];\nvalch = valstr[1].split(\";\");\n\nlet response  = {payload: valch[0] || null};\n\n//return [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\nreturn response;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 1880,
+        "wires": [
+            [
+                "3ffada1a08a3cc3b",
+                "b8a475c126225999"
+            ]
+        ]
+    },
+    {
+        "id": "177d552290fb8932",
+        "type": "function",
+        "z": "1c646c2a350b2d7c",
+        "g": "00075d8ac7640e69",
+        "name": "ReadVal",
+        "func": "\nlet rxstr = msg.payload.split(\",\");\nlet valstr = rxstr[2].split(\":\");\n\nlet valch = [\"\", \"\", \"\", \"\"];\nvalch = valstr[1].split(\";\");\n\nlet response  = {payload: valch[0] || null};\n\n//return [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\nreturn response;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 2020,
+        "wires": [
+            [
+                "17b539a06f1f8755",
+                "39dabc217aeea0d2"
+            ]
+        ]
+    },
+    {
+        "id": "cc5e69d2310d0b12",
+        "type": "function",
+        "z": "1c646c2a350b2d7c",
+        "g": "00075d8ac7640e69",
+        "name": "ReadVal Pol",
+        "func": "\nlet rxstr = msg.payload.split(\",\");\nlet valstr = rxstr[2].split(\":\");\n\nlet valch = [\"\", \"\", \"\", \"\"];\nvalch = valstr[1].split(\";\");\n\nvar polstr = [\"Unknown\", \"Unknown\", \"Unknown\", \"Unknown\"];\nfor (var i = 0; i < 4; i++) {\n   if ((valch[i] == \"+\") | (valch[i] == \"+\\r\")){\n       polstr[i] = \"Positive\";\n   }else if ((valch[i] == \"-\") | (valch[i] == \"-\\r\")){\n       polstr[i] = \"Negative\";\n   }else{\n       polstr[i] = \"Unknown\";\n   }\n\n}\n\n\nlet response  = {payload: polstr[0] || null};\n\n//return [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\nreturn response;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 2200,
+        "wires": [
+            [
+                "3d6670af1b4243a6"
+            ]
+        ]
+    },
+    {
+        "id": "d77d854b0a98ec25",
+        "type": "function",
+        "z": "1c646c2a350b2d7c",
+        "g": "00075d8ac7640e69",
+        "name": "ReadVal",
+        "func": "\nlet rxstr = msg.payload.split(\",\");\nlet valstr = rxstr[2].split(\":\");\n\nlet valch = [\"\", \"\", \"\", \"\"];\nvalch = valstr[1].split(\";\");\n\nlet response  = {payload: valch[0] || null};\n\n//return [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\nreturn response;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 2360,
+        "wires": [
+            [
+                "0551e0ee6032a67a"
+            ]
+        ]
+    },
+    {
+        "id": "ba480b535b90c261",
+        "type": "function",
+        "z": "1c646c2a350b2d7c",
+        "g": "00075d8ac7640e69",
+        "name": "ReadVal",
+        "func": "\nlet rxstr = msg.payload.split(\",\");\nlet valstr = rxstr[2].split(\":\");\n\nlet valch = [\"\", \"\", \"\", \"\"];\nvalch = valstr[1].split(\";\");\n\nlet response  = {payload: valch[0] || null};\n\n//return [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\nreturn response;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 2480,
+        "wires": [
+            [
+                "82ee4ee11a3205c1"
+            ]
+        ]
+    },
+    {
+        "id": "216dccde25870040",
+        "type": "function",
+        "z": "1c646c2a350b2d7c",
+        "g": "00075d8ac7640e69",
+        "name": "ReadVal",
+        "func": "\nlet rxstr = msg.payload.split(\",\");\nlet valstr = rxstr[2].split(\":\");\n\nlet valch = [\"\", \"\", \"\", \"\"];\nvalch = valstr[1].split(\";\");\n\nlet response  = {payload: valch[0] || null};\n\n//return [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\nreturn response;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 2620,
+        "wires": [
+            [
+                "dcb6abca2b989403"
+            ]
+        ]
+    },
+    {
+        "id": "23e92a19d2d0cfd8",
+        "type": "function",
+        "z": "1c646c2a350b2d7c",
+        "g": "00075d8ac7640e69",
+        "name": "ReadVal",
+        "func": "\nlet rxstr = msg.payload.split(\",\");\nlet valstr = rxstr[2].split(\":\");\n\nlet valch = [\"\", \"\", \"\", \"\"];\nvalch = valstr[1].split(\";\");\n\nlet response  = {payload: valch[0] || null};\n\n//return [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\nreturn response;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 2780,
+        "wires": [
+            [
+                "b77c1731865c8ee4"
+            ]
+        ]
+    },
+    {
+        "id": "c2496dd2226108b7",
+        "type": "function",
+        "z": "1c646c2a350b2d7c",
+        "g": "522bcd4720c7a9ad",
+        "name": "ReadVal",
+        "func": "\nlet rxstr = msg.payload.split(\",\");\nlet valstr = rxstr[2].split(\":\");\n\nlet valch = [\"\", \"\", \"\", \"\"];\nvalch = valstr[1].split(\";\");\n\nlet response  = {payload: valch[0] || null};\n\n//return [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\nreturn response;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2240,
+        "y": 1620,
+        "wires": [
+            [
+                "01c4686bd8428180"
+            ]
+        ]
+    },
+    {
+        "id": "2ec468825578f4b1",
+        "type": "function",
+        "z": "1c646c2a350b2d7c",
+        "g": "522bcd4720c7a9ad",
+        "name": "ReadVal",
+        "func": "\nlet rxstr = msg.payload.split(\",\");\nlet valstr = rxstr[2].split(\":\");\n\nlet valch = [\"\", \"\", \"\", \"\"];\nvalch = valstr[1].split(\";\");\n\nlet response  = {payload: valch[0] || null};\n\n//return [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\nreturn response;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2200,
+        "y": 1760,
+        "wires": [
+            [
+                "98733f7b127f15f7",
+                "e8c07254d79f9c9f"
+            ]
+        ]
+    },
+    {
+        "id": "d82eb7b7a736e2bb",
+        "type": "function",
+        "z": "1c646c2a350b2d7c",
+        "g": "522bcd4720c7a9ad",
+        "name": "ReadVal",
+        "func": "\nlet rxstr = msg.payload.split(\",\");\nlet valstr = rxstr[2].split(\":\");\n\nlet valch = [\"\", \"\", \"\", \"\"];\nvalch = valstr[1].split(\";\");\n\nlet response  = {payload: valch[0] || null};\n\n//return [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\nreturn response;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2220,
+        "y": 1900,
+        "wires": [
+            [
+                "8871fa9c8095eca7",
+                "9f885471fa80cee6"
+            ]
+        ]
+    },
+    {
+        "id": "128512d8ad132821",
+        "type": "function",
+        "z": "1c646c2a350b2d7c",
+        "g": "522bcd4720c7a9ad",
+        "name": "ReadVal",
+        "func": "\nlet rxstr = msg.payload.split(\",\");\nlet valstr = rxstr[2].split(\":\");\n\nlet valch = [\"\", \"\", \"\", \"\"];\nvalch = valstr[1].split(\";\");\n\nlet response  = {payload: valch[0] || null};\n\n//return [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\nreturn response;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2220,
+        "y": 2040,
+        "wires": [
+            [
+                "8788069950a7a868",
+                "022251598872c5cf"
+            ]
+        ]
+    },
+    {
+        "id": "65fc4c8d8d1627bf",
+        "type": "function",
+        "z": "1c646c2a350b2d7c",
+        "g": "522bcd4720c7a9ad",
+        "name": "ReadVal Pol",
+        "func": "\nlet rxstr = msg.payload.split(\",\");\nlet valstr = rxstr[2].split(\":\");\n\nlet valch = [\"\", \"\", \"\", \"\"];\nvalch = valstr[1].split(\";\");\n\nvar polstr = [\"Unknown\", \"Unknown\", \"Unknown\", \"Unknown\"];\nfor (var i = 0; i < 4; i++) {\n   if ((valch[i] == \"+\") | (valch[i] == \"+\\r\")){\n       polstr[i] = \"Positive\";\n   }else if ((valch[i] == \"-\") | (valch[i] == \"-\\r\")){\n       polstr[i] = \"Negative\";\n   }else{\n       polstr[i] = \"Unknown\";\n   }\n\n}\n\n\nlet response  = {payload: polstr[0] || null};\n\n//return [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\nreturn response;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2210,
+        "y": 2180,
+        "wires": [
+            [
+                "2eef3cb55b3b2203"
+            ]
+        ]
+    },
+    {
+        "id": "fb6f5d40c98129ab",
+        "type": "function",
+        "z": "1c646c2a350b2d7c",
+        "g": "522bcd4720c7a9ad",
+        "name": "ReadVal",
+        "func": "\nlet rxstr = msg.payload.split(\",\");\nlet valstr = rxstr[2].split(\":\");\n\nlet valch = [\"\", \"\", \"\", \"\"];\nvalch = valstr[1].split(\";\");\n\nlet response  = {payload: valch[0] || null};\n\n//return [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\nreturn response;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2160,
+        "y": 2300,
+        "wires": [
+            [
+                "61ec6f2c51250969"
+            ]
+        ]
+    },
+    {
+        "id": "5383ec9abf43df82",
+        "type": "function",
+        "z": "1c646c2a350b2d7c",
+        "g": "522bcd4720c7a9ad",
+        "name": "ReadVal",
+        "func": "\nlet rxstr = msg.payload.split(\",\");\nlet valstr = rxstr[2].split(\":\");\n\nlet valch = [\"\", \"\", \"\", \"\"];\nvalch = valstr[1].split(\";\");\n\nlet response  = {payload: valch[0] || null};\n\n//return [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\nreturn response;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2180,
+        "y": 2440,
+        "wires": [
+            [
+                "10958aeca9301b8c"
+            ]
+        ]
+    },
+    {
+        "id": "6ebddb3264f943e6",
+        "type": "function",
+        "z": "1c646c2a350b2d7c",
+        "g": "522bcd4720c7a9ad",
+        "name": "ReadVal",
+        "func": "\nlet rxstr = msg.payload.split(\",\");\nlet valstr = rxstr[2].split(\":\");\n\nlet valch = [\"\", \"\", \"\", \"\"];\nvalch = valstr[1].split(\";\");\n\nlet response  = {payload: valch[0] || null};\n\n//return [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\nreturn response;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2180,
+        "y": 2580,
+        "wires": [
+            [
+                "e644323680c6bb35"
+            ]
+        ]
+    },
+    {
+        "id": "55762f27aac2803d",
+        "type": "function",
+        "z": "1c646c2a350b2d7c",
+        "name": "ReadVal",
+        "func": "\nlet rxstr = msg.payload.split(\",\");\nlet valstr = rxstr[2].split(\":\");\n\nlet valch = [\"\", \"\", \"\", \"\"];\nvalch = valstr[1].split(\";\");\n\nlet response  = {payload: valch[0] || null};\n\n//return [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\nreturn response;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2167.39990234375,
+        "y": 2720.833251953125,
+        "wires": [
+            [
+                "b54f6c01e5cb602c"
+            ]
+        ]
     },
     {
         "id": "a4f29221cd2057b7",
@@ -8568,7 +8447,7 @@
         "showGlow": true,
         "name": "OCP",
         "x": 910,
-        "y": 204,
+        "y": 200,
         "wires": []
     },
     {
