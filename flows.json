@@ -17,21 +17,21 @@
     {
         "id": "243cac42.fdcd3c",
         "type": "tab",
-        "label": "uController Operation",
+        "label": "PLC Operation",
         "disabled": false,
         "info": ""
     },
     {
         "id": "30f3df01.06ea",
         "type": "tab",
-        "label": "uController Status",
+        "label": "PLC Status",
         "disabled": false,
         "info": ""
     },
     {
         "id": "2929f7b53fc923ef",
         "type": "tab",
-        "label": "Outlet Pressure Sensor Thyracont",
+        "label": "Thyracont Pressure Sensor ",
         "disabled": false,
         "info": "",
         "env": []
@@ -3682,16 +3682,16 @@
         "nodes": [
             "33885c4236198a1d",
             "36fd090493e29f93",
-            "f4de80df27511f5d",
             "64ec612ddd21e4cd",
             "3a912f03d0333c28",
             "a1eef42bb8f72f9f",
-            "be92780f5508341c"
+            "be92780f5508341c",
+            "45d1f9a221e60ef2"
         ],
         "x": 54,
         "y": 59,
-        "w": 1052,
-        "h": 222
+        "w": 972,
+        "h": 162
     },
     {
         "id": "3a77962e97d02525",
@@ -3774,8 +3774,8 @@
             "1bc7f785464975af",
             "95eb3960c2e5ba89"
         ],
-        "x": 74,
-        "y": 339,
+        "x": 24,
+        "y": 659,
         "w": 782,
         "h": 162,
         "info": "This group catches the errors in all the nodes of the flow. \nSecuruty function only makes the msg earier and Trim topic is to eliminate /dev/. \nCopy the group to add security in others flows. \nNOTE: Remember to change link out end.\n\n\nHere we only select subflows becouse they trigger the errors in these devices. "
@@ -4274,6 +4274,30 @@
         "h": 302
     },
     {
+        "id": "26404baffafe6277",
+        "type": "group",
+        "z": "2929f7b53fc923ef",
+        "name": "Connection",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "c2bc5791e43d4bed",
+            "49af197954d36ea6",
+            "4cfc3f86e80461ce",
+            "205b18769047bb27",
+            "7a1bb1706b9ababa",
+            "62a06ba0cf8f26bb",
+            "d32431d039a70f9b",
+            "cf9c253b19f957e2",
+            "bcc0e35a7836839d"
+        ],
+        "x": 54,
+        "y": 279,
+        "w": 652,
+        "h": 302
+    },
+    {
         "id": "67018f7a.7112a8",
         "type": "ui_base",
         "theme": {
@@ -4431,7 +4455,7 @@
     {
         "id": "f8c45b3.7cdfba8",
         "type": "ui_group",
-        "name": "MicroController Info",
+        "name": "PLC Info",
         "tab": "20aab804.e497a8",
         "order": 1,
         "disp": true,
@@ -4442,7 +4466,7 @@
     {
         "id": "1fe3844d.654b4c",
         "type": "ui_group",
-        "name": "AIO & DIO Status",
+        "name": "PLC AIO & DIO Status",
         "tab": "20aab804.e497a8",
         "order": 3,
         "disp": true,
@@ -4453,7 +4477,7 @@
     {
         "id": "aa85421b.5c75f",
         "type": "ui_group",
-        "name": "AIO & DIO Control",
+        "name": "PLC AIO & DIO Control",
         "tab": "20aab804.e497a8",
         "order": 4,
         "disp": true,
@@ -4464,7 +4488,7 @@
     {
         "id": "dbbc7cee.a85f48",
         "type": "ui_group",
-        "name": "MQTT Sampling Rate",
+        "name": "PLC Sampling Rate (MQTT)",
         "tab": "20aab804.e497a8",
         "order": 2,
         "disp": true,
@@ -4503,7 +4527,7 @@
     {
         "id": "f986ec16.f21558",
         "type": "ui_group",
-        "name": "Pressures Monitor",
+        "name": "Pressures Monitor (PLC)",
         "tab": "ace5b427.951948",
         "order": 3,
         "disp": true,
@@ -4516,7 +4540,7 @@
         "type": "ui_group",
         "name": "Binary Word",
         "tab": "ace5b427.951948",
-        "order": 8,
+        "order": 9,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -4527,7 +4551,7 @@
         "type": "ui_group",
         "name": "Flow Monitor",
         "tab": "ace5b427.951948",
-        "order": 7,
+        "order": 6,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -4538,7 +4562,7 @@
         "type": "ui_group",
         "name": "Pressure Controller",
         "tab": "ace5b427.951948",
-        "order": 4,
+        "order": 5,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -4804,7 +4828,7 @@
         "type": "ui_group",
         "name": "In Flow Controller",
         "tab": "ace5b427.951948",
-        "order": 5,
+        "order": 7,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -5344,21 +5368,11 @@
         "type": "ui_group",
         "name": "Out Flow Controller",
         "tab": "ace5b427.951948",
-        "order": 6,
+        "order": 8,
         "disp": true,
         "width": "6",
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "9d19b5388cfca320",
-        "type": "ui_spacer",
-        "z": "2929f7b53fc923ef",
-        "name": "spacer",
-        "group": "f986ec16.f21558",
-        "order": 9,
-        "width": 1,
-        "height": 1
     },
     {
         "id": "7b8247a38674f7e4",
@@ -5408,8 +5422,29 @@
         "name": "spacer",
         "group": "897b1572.08b288",
         "order": 3,
+        "width": "1",
+        "height": "1"
+    },
+    {
+        "id": "d0c60a66e3c919b1",
+        "type": "ui_group",
+        "name": "Pressure Monitor (Thyracont)",
+        "tab": "ace5b427.951948",
+        "order": 4,
+        "disp": true,
         "width": "6",
-        "height": "3"
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7dac6e328b425b01",
+        "type": "ui_spacer",
+        "z": "2929f7b53fc923ef",
+        "name": "spacer",
+        "group": "d0c60a66e3c919b1",
+        "order": 2,
+        "width": 1,
+        "height": 1
     },
     {
         "id": "249465b6f9b25a99",
@@ -12262,7 +12297,7 @@
         "d": true,
         "g": "f8f1a23133f6b206",
         "group": "f986ec16.f21558",
-        "order": 7,
+        "order": 5,
         "width": 0,
         "height": 0,
         "name": "",
@@ -12323,7 +12358,7 @@
         "z": "243cac42.fdcd3c",
         "g": "f8f1a23133f6b206",
         "group": "f986ec16.f21558",
-        "order": 8,
+        "order": 6,
         "width": 0,
         "height": 0,
         "name": "",
@@ -14735,39 +14770,15 @@
         "type": "serial request",
         "z": "2929f7b53fc923ef",
         "g": "63bdbad96c6c866f",
-        "name": "TH-U0 Query",
+        "name": "",
         "serial": "c20705c78add4417",
-        "x": 440,
+        "x": 350,
         "y": 120,
         "wires": [
             [
-                "f4de80df27511f5d",
-                "64ec612ddd21e4cd",
-                "a1eef42bb8f72f9f"
+                "45d1f9a221e60ef2"
             ]
         ]
-    },
-    {
-        "id": "f4de80df27511f5d",
-        "type": "ui_text",
-        "z": "2929f7b53fc923ef",
-        "g": "63bdbad96c6c866f",
-        "group": "f986ec16.f21558",
-        "order": 11,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "TH-U0 Listener",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": "",
-        "color": "#000000",
-        "x": 670,
-        "y": 240,
-        "wires": []
     },
     {
         "id": "64ec612ddd21e4cd",
@@ -14826,12 +14837,12 @@
         "type": "ui_text",
         "z": "2929f7b53fc923ef",
         "g": "63bdbad96c6c866f",
-        "group": "f986ec16.f21558",
-        "order": 10,
+        "group": "d0c60a66e3c919b1",
+        "order": 1,
         "width": 0,
         "height": 0,
         "name": "",
-        "label": "P Outlet (Thyracont) [mbar]",
+        "label": "P Outlet [mbar]",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
@@ -14839,7 +14850,7 @@
         "font": "",
         "fontSize": "",
         "color": "#000000",
-        "x": 960,
+        "x": 920,
         "y": 100,
         "wires": []
     },
@@ -14853,8 +14864,8 @@
         "links": [
             "7751c4b42cb0de1f"
         ],
-        "x": 745,
-        "y": 380,
+        "x": 695,
+        "y": 700,
         "wires": []
     },
     {
@@ -14869,8 +14880,8 @@
             "36a92a6847806d24"
         ],
         "uncaught": false,
-        "x": 170,
-        "y": 380,
+        "x": 120,
+        "y": 700,
         "wires": [
             [
                 "ba7be76b7f218b84"
@@ -14890,8 +14901,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 380,
-        "y": 380,
+        "x": 330,
+        "y": 700,
         "wires": [
             [
                 "95eb3960c2e5ba89"
@@ -14912,8 +14923,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 740,
-        "y": 460,
+        "x": 690,
+        "y": 780,
         "wires": []
     },
     {
@@ -14937,12 +14948,250 @@
         "propout": "topic",
         "object": "msg",
         "objectout": "msg",
-        "x": 590,
-        "y": 380,
+        "x": 540,
+        "y": 700,
         "wires": [
             [
                 "1bc7f785464975af",
                 "05feb3979973f7ff"
+            ]
+        ]
+    },
+    {
+        "id": "c2bc5791e43d4bed",
+        "type": "serial in",
+        "z": "2929f7b53fc923ef",
+        "g": "26404baffafe6277",
+        "name": "",
+        "serial": "c20705c78add4417",
+        "x": 150,
+        "y": 320,
+        "wires": [
+            [
+                "49af197954d36ea6"
+            ]
+        ]
+    },
+    {
+        "id": "49af197954d36ea6",
+        "type": "ui_text",
+        "z": "2929f7b53fc923ef",
+        "g": "26404baffafe6277",
+        "group": "d0c60a66e3c919b1",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "THYU0 Listener",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 330,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "4cfc3f86e80461ce",
+        "type": "status",
+        "z": "2929f7b53fc923ef",
+        "g": "26404baffafe6277",
+        "name": "Connection status",
+        "scope": [
+            "c2bc5791e43d4bed"
+        ],
+        "x": 190,
+        "y": 400,
+        "wires": [
+            [
+                "205b18769047bb27",
+                "7a1bb1706b9ababa"
+            ]
+        ]
+    },
+    {
+        "id": "205b18769047bb27",
+        "type": "function",
+        "z": "2929f7b53fc923ef",
+        "g": "26404baffafe6277",
+        "name": "SerialPort Status",
+        "func": "\nmsg.payload = msg.status.fill;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 400,
+        "wires": [
+            [
+                "62a06ba0cf8f26bb"
+            ]
+        ]
+    },
+    {
+        "id": "7a1bb1706b9ababa",
+        "type": "ui_text",
+        "z": "2929f7b53fc923ef",
+        "g": "26404baffafe6277",
+        "group": "d0c60a66e3c919b1",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Status Text",
+        "format": "{{msg.status.text}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 430,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "62a06ba0cf8f26bb",
+        "type": "ui_led",
+        "z": "2929f7b53fc923ef",
+        "g": "26404baffafe6277",
+        "order": 5,
+        "group": "d0c60a66e3c919b1",
+        "width": 0,
+        "height": 0,
+        "label": "Status",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "red",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "green",
+                "valueType": "str"
+            },
+            {
+                "color": "#f8e45c",
+                "value": "yellow",
+                "valueType": "str"
+            },
+            {
+                "color": "#77767b",
+                "value": "grey",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 630,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "d32431d039a70f9b",
+        "type": "serial control",
+        "z": "2929f7b53fc923ef",
+        "g": "26404baffafe6277",
+        "name": "",
+        "serial": "c20705c78add4417",
+        "x": 370,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cf9c253b19f957e2",
+        "type": "ui_button",
+        "z": "2929f7b53fc923ef",
+        "g": "26404baffafe6277",
+        "name": "",
+        "group": "d0c60a66e3c919b1",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Connect",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"enabled\": true}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 170,
+        "y": 500,
+        "wires": [
+            [
+                "d32431d039a70f9b"
+            ]
+        ]
+    },
+    {
+        "id": "bcc0e35a7836839d",
+        "type": "ui_button",
+        "z": "2929f7b53fc923ef",
+        "g": "26404baffafe6277",
+        "name": "",
+        "group": "d0c60a66e3c919b1",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "DisConnect",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"enabled\": false}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 190,
+        "y": 540,
+        "wires": [
+            [
+                "d32431d039a70f9b"
+            ]
+        ]
+    },
+    {
+        "id": "45d1f9a221e60ef2",
+        "type": "switch",
+        "z": "2929f7b53fc923ef",
+        "g": "63bdbad96c6c866f",
+        "name": "",
+        "property": "status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "OK",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 120,
+        "wires": [
+            [
+                "64ec612ddd21e4cd",
+                "a1eef42bb8f72f9f"
             ]
         ]
     },
