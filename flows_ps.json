@@ -864,7 +864,7 @@
         "bin": "false",
         "out": "char",
         "addchar": "\\r",
-        "responsetimeout": "500"
+        "responsetimeout": "200"
     },
     {
         "id": "30e307e3.2819e8",
@@ -1024,7 +1024,7 @@
         "bin": "false",
         "out": "char",
         "addchar": "\\r\\n",
-        "responsetimeout": "500"
+        "responsetimeout": "200"
     },
     {
         "id": "d5b292af11f072b5",
@@ -9475,7 +9475,7 @@
         "z": "045d5867a5e1ad28",
         "g": "7901641cdfa402f3",
         "name": "debug 370",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,

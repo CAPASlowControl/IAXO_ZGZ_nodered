@@ -1360,7 +1360,7 @@
         ],
         "x": 88,
         "y": 33,
-        "w": 984,
+        "w": 1044,
         "h": 1014
     },
     {
@@ -1373,7 +1373,6 @@
         },
         "nodes": [
             "6266f0d26c7dd256",
-            "c859464543617c31",
             "d62ddef8f53b7698",
             "e1d8e9d737ebe409",
             "9569c1b45bc7d771",
@@ -1381,7 +1380,6 @@
             "b7e20da1d1419ff1",
             "b779cf92a103782e",
             "8e8e3a9cd1d7e4e4",
-            "e9d46a21019ed5ac",
             "4c675d6f9b2e16e3",
             "919da3ed8ce25cdc",
             "9b19cd514095b798",
@@ -1398,11 +1396,16 @@
             "38c0eac486924c24",
             "98b6c5add3b70555",
             "248cede428df3328",
-            "335a539e697acc89"
+            "335a539e697acc89",
+            "e9d46a21019ed5ac",
+            "f4b12f8c2dc84dad",
+            "e7c348ea1ce5405c",
+            "c859464543617c31",
+            "6190708488e9f8dd"
         ],
         "x": 14,
         "y": 1079,
-        "w": 1062,
+        "w": 1122,
         "h": 602,
         "info": "BG0I >> register 0 of BGA, for controlling good communitacion\nXALL >> Measure Ratio 1, Ratio 2, Temp, Press, Norm Speed of Sound, Block Temp\nRATO? 1% >> Measure Ratio Gas 1 in %\nRATO? 2% >> Measure Ratio Gas 2 in %\nUNCT?% "
     },
@@ -1419,7 +1422,7 @@
             "921335a5a84f12eb",
             "e228fc818a13a83f"
         ],
-        "x": 1122,
+        "x": 1262,
         "y": 27,
         "w": 1656,
         "h": 1906
@@ -2884,7 +2887,7 @@
             "b86e0b330ffbda47",
             "4b7c7253093a074f"
         ],
-        "x": 1148,
+        "x": 1288,
         "y": 53,
         "w": 1254,
         "h": 594
@@ -2912,7 +2915,7 @@
             "cab81f61cc45c256",
             "e2a40e4267294a76"
         ],
-        "x": 1188,
+        "x": 1328,
         "y": 653,
         "w": 1234,
         "h": 614
@@ -2940,7 +2943,7 @@
             "79699e531e50fef0",
             "67be9094c6dabcf5"
         ],
-        "x": 1188,
+        "x": 1328,
         "y": 1293,
         "w": 1564,
         "h": 614
@@ -2966,11 +2969,12 @@
             "ae2aa00422cc1a16",
             "491389c8f29ebf41",
             "2829668e422f23c5",
-            "1a3655900da6ebc6"
+            "1a3655900da6ebc6",
+            "dc92ad660596fb55"
         ],
         "x": 134,
         "y": 739,
-        "w": 732,
+        "w": 972,
         "h": 282
     },
     {
@@ -2994,11 +2998,12 @@
             "2f14752a7fc2edcd",
             "8ed1f4abd184eafe",
             "b20a25c4ad9d9301",
-            "55821f724e19779e"
+            "55821f724e19779e",
+            "5a7e7b7d6a238692"
         ],
         "x": 114,
         "y": 479,
-        "w": 732,
+        "w": 912,
         "h": 242
     },
     {
@@ -3051,11 +3056,12 @@
             "377b750137293db8",
             "8e06793e69cec20c",
             "eee360290c046a3d",
-            "511bce2f37f4c6a9"
+            "511bce2f37f4c6a9",
+            "e055c58aeac75251"
         ],
         "x": 114,
         "y": 379,
-        "w": 832,
+        "w": 912,
         "h": 82
     },
     {
@@ -3079,11 +3085,12 @@
             "b06b94aed0a22d95",
             "e9b4561c79bd059c",
             "c32f7086d74af988",
-            "351ad96f659db8b6"
+            "351ad96f659db8b6",
+            "cd35e59139236b6f"
         ],
-        "x": 144,
+        "x": 114,
         "y": 159,
-        "w": 862,
+        "w": 972,
         "h": 202,
         "info": "PSRU 3,0 >> Select the User Pressure Mode (3) & Absolute Units (0)\nPUSR 1.12bar >> Select the User Pressure in bar\nPUSR? bar >> Query the User pressure in bar"
     },
@@ -3307,7 +3314,7 @@
             "ba6b247d1a4fde36",
             "887024a79833a324"
         ],
-        "x": 1174,
+        "x": 1314,
         "y": 379,
         "w": 1202,
         "h": 242
@@ -3337,7 +3344,7 @@
             "1e9ebc945b3e6dad",
             "38aacd09e2582a71"
         ],
-        "x": 1174,
+        "x": 1314,
         "y": 79,
         "w": 1072,
         "h": 142
@@ -3374,7 +3381,7 @@
             "f8a753a5cb2378bf",
             "d3bdb64732d5588f"
         ],
-        "x": 1214,
+        "x": 1354,
         "y": 999,
         "w": 1182,
         "h": 242
@@ -3404,7 +3411,7 @@
             "e35a8e220cca811e",
             "cb0d69f6e16f2920"
         ],
-        "x": 1234,
+        "x": 1374,
         "y": 679,
         "w": 1072,
         "h": 142
@@ -3445,7 +3452,7 @@
             "04566b411967803f",
             "e925121153aa7594"
         ],
-        "x": 1214,
+        "x": 1354,
         "y": 1619,
         "w": 1512,
         "h": 262
@@ -3475,7 +3482,7 @@
             "0b583209995aa714",
             "b0583adf4301b387"
         ],
-        "x": 1214,
+        "x": 1354,
         "y": 1319,
         "w": 1092,
         "h": 142
@@ -14746,7 +14753,7 @@
         "y": 680,
         "wires": [
             [
-                "cc44dd27c339434c"
+                "5a7e7b7d6a238692"
             ]
         ]
     },
@@ -14791,7 +14798,7 @@
         "y": 940,
         "wires": [
             [
-                "ae2aa00422cc1a16",
+                "dc92ad660596fb55",
                 "2829668e422f23c5"
             ]
         ]
@@ -14848,7 +14855,7 @@
         "topic": "",
         "payload": "PRSU 3,0",
         "payloadType": "str",
-        "x": 260,
+        "x": 240,
         "y": 200,
         "wires": [
             [
@@ -14863,7 +14870,7 @@
         "g": "80166f8ddce35046",
         "name": "",
         "serial": "44b1f7493e9f2ebe",
-        "x": 480,
+        "x": 460,
         "y": 200,
         "wires": []
     },
@@ -14889,7 +14896,7 @@
         "topic": "",
         "payload": "PUSR? bar",
         "payloadType": "str",
-        "x": 260,
+        "x": 230,
         "y": 320,
         "wires": [
             [
@@ -14904,7 +14911,7 @@
         "g": "80166f8ddce35046",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 860,
+        "x": 840,
         "y": 260,
         "wires": []
     },
@@ -14949,7 +14956,7 @@
         "y": 420,
         "wires": [
             [
-                "511bce2f37f4c6a9"
+                "e055c58aeac75251"
             ]
         ]
     },
@@ -14984,21 +14991,6 @@
         ]
     },
     {
-        "id": "c859464543617c31",
-        "type": "serial request",
-        "z": "7184b44879b683fb",
-        "g": "cc5ee890949d6fc9",
-        "name": "",
-        "serial": "44b1f7493e9f2ebe",
-        "x": 320,
-        "y": 1380,
-        "wires": [
-            [
-                "e9d46a21019ed5ac"
-            ]
-        ]
-    },
-    {
         "id": "d62ddef8f53b7698",
         "type": "inject",
         "z": "7184b44879b683fb",
@@ -15020,7 +15012,7 @@
         "topic": "",
         "payload": "XALL?",
         "payloadType": "str",
-        "x": 160,
+        "x": 140,
         "y": 1380,
         "wires": [
             [
@@ -15039,7 +15031,7 @@
         "y": 1640,
         "wires": [
             [
-                "e41dafd8911c9c04"
+                "f4b12f8c2dc84dad"
             ]
         ]
     },
@@ -15096,7 +15088,7 @@
         "topic": "",
         "payload": "LIME? 1,2",
         "payloadType": "str",
-        "x": 1290,
+        "x": 1430,
         "y": 180,
         "wires": [
             [
@@ -15127,7 +15119,7 @@
         "topic": "",
         "payload": "LIMM 1,2,98%",
         "payloadType": "str",
-        "x": 1930,
+        "x": 2070,
         "y": 320,
         "wires": [
             [
@@ -15143,7 +15135,7 @@
         "g": "e228fc818a13a83f",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 2110,
+        "x": 2250,
         "y": 320,
         "wires": []
     },
@@ -15170,7 +15162,7 @@
         "topic": "",
         "payload": "LIMM? 1,1",
         "payloadType": "str",
-        "x": 1300,
+        "x": 1440,
         "y": 260,
         "wires": [
             [
@@ -15186,7 +15178,7 @@
         "g": "e228fc818a13a83f",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 1510,
+        "x": 1650,
         "y": 260,
         "wires": [
             [
@@ -15208,7 +15200,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1710,
+        "x": 1850,
         "y": 260,
         "wires": []
     },
@@ -15235,7 +15227,7 @@
         "topic": "",
         "payload": "LIMM? 1,2",
         "payloadType": "str",
-        "x": 1300,
+        "x": 1440,
         "y": 320,
         "wires": [
             [
@@ -15251,7 +15243,7 @@
         "g": "e228fc818a13a83f",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 1510,
+        "x": 1650,
         "y": 320,
         "wires": [
             [
@@ -15273,7 +15265,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1710,
+        "x": 1850,
         "y": 320,
         "wires": []
     },
@@ -15300,7 +15292,7 @@
         "topic": "",
         "payload": "LIMM 1,1,100%",
         "payloadType": "str",
-        "x": 1940,
+        "x": 2080,
         "y": 260,
         "wires": [
             [
@@ -15316,7 +15308,7 @@
         "g": "e228fc818a13a83f",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 2110,
+        "x": 2250,
         "y": 260,
         "wires": []
     },
@@ -15343,7 +15335,7 @@
         "topic": "",
         "payload": "LIMT? 1,1",
         "payloadType": "str",
-        "x": 1290,
+        "x": 1430,
         "y": 420,
         "wires": [
             [
@@ -15359,7 +15351,7 @@
         "g": "b86e0b330ffbda47",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 1430,
+        "x": 1570,
         "y": 420,
         "wires": [
             [
@@ -15390,7 +15382,7 @@
         "topic": "",
         "payload": "LIMT? 1,2",
         "payloadType": "str",
-        "x": 1290,
+        "x": 1430,
         "y": 480,
         "wires": [
             [
@@ -15406,7 +15398,7 @@
         "g": "b86e0b330ffbda47",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 1430,
+        "x": 1570,
         "y": 480,
         "wires": [
             [
@@ -15437,7 +15429,7 @@
         "topic": "",
         "payload": "LIMS? 1",
         "payloadType": "str",
-        "x": 1440,
+        "x": 1580,
         "y": 540,
         "wires": [
             [
@@ -15453,7 +15445,7 @@
         "g": "b86e0b330ffbda47",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 1590,
+        "x": 1730,
         "y": 540,
         "wires": [
             [
@@ -15470,7 +15462,7 @@
         "g": "b86e0b330ffbda47",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 2290,
+        "x": 2430,
         "y": 480,
         "wires": []
     },
@@ -15482,7 +15474,7 @@
         "g": "b86e0b330ffbda47",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 2290,
+        "x": 2430,
         "y": 420,
         "wires": []
     },
@@ -15494,7 +15486,7 @@
         "g": "4b7c7253093a074f",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 1430,
+        "x": 1570,
         "y": 180,
         "wires": [
             [
@@ -15525,7 +15517,7 @@
         "topic": "",
         "payload": "LIME? 1,1",
         "payloadType": "str",
-        "x": 1290,
+        "x": 1430,
         "y": 120,
         "wires": [
             [
@@ -15541,7 +15533,7 @@
         "g": "4b7c7253093a074f",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 1430,
+        "x": 1570,
         "y": 120,
         "wires": [
             [
@@ -15557,7 +15549,7 @@
         "g": "4b7c7253093a074f",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 2170,
+        "x": 2310,
         "y": 120,
         "wires": []
     },
@@ -15569,7 +15561,7 @@
         "g": "4b7c7253093a074f",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 2170,
+        "x": 2310,
         "y": 180,
         "wires": []
     },
@@ -15596,7 +15588,7 @@
         "topic": "",
         "payload": "LIMM 1,2,98%",
         "payloadType": "str",
-        "x": 1950,
+        "x": 2090,
         "y": 940,
         "wires": [
             [
@@ -15612,7 +15604,7 @@
         "g": "921335a5a84f12eb",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 2130,
+        "x": 2270,
         "y": 940,
         "wires": []
     },
@@ -15639,7 +15631,7 @@
         "topic": "",
         "payload": "LIMM? 1,1",
         "payloadType": "str",
-        "x": 1320,
+        "x": 1460,
         "y": 880,
         "wires": [
             [
@@ -15655,7 +15647,7 @@
         "g": "921335a5a84f12eb",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 1530,
+        "x": 1670,
         "y": 880,
         "wires": [
             [
@@ -15677,7 +15669,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1730,
+        "x": 1870,
         "y": 880,
         "wires": []
     },
@@ -15704,7 +15696,7 @@
         "topic": "",
         "payload": "LIMM? 1,2",
         "payloadType": "str",
-        "x": 1320,
+        "x": 1460,
         "y": 940,
         "wires": [
             [
@@ -15720,7 +15712,7 @@
         "g": "921335a5a84f12eb",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 1530,
+        "x": 1670,
         "y": 940,
         "wires": [
             [
@@ -15742,7 +15734,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1730,
+        "x": 1870,
         "y": 940,
         "wires": []
     },
@@ -15769,7 +15761,7 @@
         "topic": "",
         "payload": "LIMM 1,1,100%",
         "payloadType": "str",
-        "x": 1960,
+        "x": 2100,
         "y": 880,
         "wires": [
             [
@@ -15785,7 +15777,7 @@
         "g": "921335a5a84f12eb",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 2130,
+        "x": 2270,
         "y": 880,
         "wires": []
     },
@@ -15812,7 +15804,7 @@
         "topic": "",
         "payload": "LIMT? 6,1",
         "payloadType": "str",
-        "x": 1330,
+        "x": 1470,
         "y": 1040,
         "wires": [
             [
@@ -15828,7 +15820,7 @@
         "g": "cab81f61cc45c256",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 1470,
+        "x": 1610,
         "y": 1040,
         "wires": [
             [
@@ -15859,7 +15851,7 @@
         "topic": "",
         "payload": "LIMT? 6,2",
         "payloadType": "str",
-        "x": 1330,
+        "x": 1470,
         "y": 1100,
         "wires": [
             [
@@ -15875,7 +15867,7 @@
         "g": "cab81f61cc45c256",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 1470,
+        "x": 1610,
         "y": 1100,
         "wires": [
             [
@@ -15906,7 +15898,7 @@
         "topic": "",
         "payload": "LIMS? 6",
         "payloadType": "str",
-        "x": 1320,
+        "x": 1460,
         "y": 1180,
         "wires": [
             [
@@ -15922,7 +15914,7 @@
         "g": "cab81f61cc45c256",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 1490,
+        "x": 1630,
         "y": 1180,
         "wires": [
             [
@@ -15938,7 +15930,7 @@
         "g": "cab81f61cc45c256",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 2290,
+        "x": 2430,
         "y": 1100,
         "wires": []
     },
@@ -15950,7 +15942,7 @@
         "g": "cab81f61cc45c256",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 2290,
+        "x": 2430,
         "y": 1040,
         "wires": []
     },
@@ -15977,7 +15969,7 @@
         "topic": "",
         "payload": "LIME? 6,2",
         "payloadType": "str",
-        "x": 1350,
+        "x": 1490,
         "y": 780,
         "wires": [
             [
@@ -15993,7 +15985,7 @@
         "g": "e2a40e4267294a76",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 1490,
+        "x": 1630,
         "y": 780,
         "wires": [
             [
@@ -16024,7 +16016,7 @@
         "topic": "",
         "payload": "LIME? 6,1",
         "payloadType": "str",
-        "x": 1350,
+        "x": 1490,
         "y": 720,
         "wires": [
             [
@@ -16040,7 +16032,7 @@
         "g": "e2a40e4267294a76",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 1490,
+        "x": 1630,
         "y": 720,
         "wires": [
             [
@@ -16056,7 +16048,7 @@
         "g": "e2a40e4267294a76",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 2230,
+        "x": 2370,
         "y": 720,
         "wires": []
     },
@@ -16068,7 +16060,7 @@
         "g": "e2a40e4267294a76",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 2230,
+        "x": 2370,
         "y": 780,
         "wires": []
     },
@@ -16095,7 +16087,7 @@
         "topic": "",
         "payload": "LIMM 1,2,98%",
         "payloadType": "str",
-        "x": 1930,
+        "x": 2070,
         "y": 1560,
         "wires": [
             [
@@ -16111,7 +16103,7 @@
         "g": "56dfe620b4d590c4",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 2110,
+        "x": 2250,
         "y": 1560,
         "wires": []
     },
@@ -16138,7 +16130,7 @@
         "topic": "",
         "payload": "LIMM? 1,1",
         "payloadType": "str",
-        "x": 1300,
+        "x": 1440,
         "y": 1500,
         "wires": [
             [
@@ -16154,7 +16146,7 @@
         "g": "56dfe620b4d590c4",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 1510,
+        "x": 1650,
         "y": 1500,
         "wires": [
             [
@@ -16176,7 +16168,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1710,
+        "x": 1850,
         "y": 1500,
         "wires": []
     },
@@ -16203,7 +16195,7 @@
         "topic": "",
         "payload": "LIMM? 1,2",
         "payloadType": "str",
-        "x": 1300,
+        "x": 1440,
         "y": 1560,
         "wires": [
             [
@@ -16219,7 +16211,7 @@
         "g": "56dfe620b4d590c4",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 1510,
+        "x": 1650,
         "y": 1560,
         "wires": [
             [
@@ -16241,7 +16233,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1710,
+        "x": 1850,
         "y": 1560,
         "wires": []
     },
@@ -16268,7 +16260,7 @@
         "topic": "",
         "payload": "LIMM 1,1,100%",
         "payloadType": "str",
-        "x": 1940,
+        "x": 2080,
         "y": 1500,
         "wires": [
             [
@@ -16284,7 +16276,7 @@
         "g": "56dfe620b4d590c4",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 2110,
+        "x": 2250,
         "y": 1500,
         "wires": []
     },
@@ -16311,7 +16303,7 @@
         "topic": "",
         "payload": "LIMT? 4,1",
         "payloadType": "str",
-        "x": 1330,
+        "x": 1470,
         "y": 1660,
         "wires": [
             [
@@ -16327,7 +16319,7 @@
         "g": "79699e531e50fef0",
         "name": "BGA",
         "serial": "38060272f31b61fd",
-        "x": 1490,
+        "x": 1630,
         "y": 1660,
         "wires": [
             [
@@ -16358,7 +16350,7 @@
         "topic": "",
         "payload": "LIMT? 4,2",
         "payloadType": "str",
-        "x": 1330,
+        "x": 1470,
         "y": 1720,
         "wires": [
             [
@@ -16374,7 +16366,7 @@
         "g": "79699e531e50fef0",
         "name": "BGA",
         "serial": "38060272f31b61fd",
-        "x": 1490,
+        "x": 1630,
         "y": 1720,
         "wires": [
             [
@@ -16405,7 +16397,7 @@
         "topic": "",
         "payload": "LIMS? 4",
         "payloadType": "str",
-        "x": 1600,
+        "x": 1740,
         "y": 1780,
         "wires": [
             [
@@ -16421,7 +16413,7 @@
         "g": "79699e531e50fef0",
         "name": "BGA",
         "serial": "38060272f31b61fd",
-        "x": 1730,
+        "x": 1870,
         "y": 1780,
         "wires": [
             [
@@ -16437,7 +16429,7 @@
         "g": "79699e531e50fef0",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 2650,
+        "x": 2790,
         "y": 1720,
         "wires": []
     },
@@ -16449,7 +16441,7 @@
         "g": "79699e531e50fef0",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 2650,
+        "x": 2790,
         "y": 1660,
         "wires": []
     },
@@ -16476,7 +16468,7 @@
         "topic": "",
         "payload": "LIME? 4,2",
         "payloadType": "str",
-        "x": 1330,
+        "x": 1470,
         "y": 1420,
         "wires": [
             [
@@ -16492,7 +16484,7 @@
         "g": "67be9094c6dabcf5",
         "name": "BGA",
         "serial": "38060272f31b61fd",
-        "x": 1490,
+        "x": 1630,
         "y": 1420,
         "wires": [
             [
@@ -16523,7 +16515,7 @@
         "topic": "",
         "payload": "LIME? 4,1",
         "payloadType": "str",
-        "x": 1330,
+        "x": 1470,
         "y": 1360,
         "wires": [
             [
@@ -16539,7 +16531,7 @@
         "g": "67be9094c6dabcf5",
         "name": "BGA",
         "serial": "38060272f31b61fd",
-        "x": 1490,
+        "x": 1630,
         "y": 1360,
         "wires": [
             [
@@ -16555,7 +16547,7 @@
         "g": "67be9094c6dabcf5",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 2230,
+        "x": 2370,
         "y": 1360,
         "wires": []
     },
@@ -16567,7 +16559,7 @@
         "g": "67be9094c6dabcf5",
         "name": "BGA",
         "serial": "44b1f7493e9f2ebe",
-        "x": 2230,
+        "x": 2370,
         "y": 1420,
         "wires": []
     },
@@ -16580,7 +16572,7 @@
         "links": [
             "7c89d9fcf5706089"
         ],
-        "x": 185,
+        "x": 165,
         "y": 260,
         "wires": [
             [
@@ -16601,7 +16593,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 660,
+        "x": 640,
         "y": 260,
         "wires": [
             [
@@ -16627,7 +16619,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 900,
+        "x": 980,
         "y": 320,
         "wires": []
     },
@@ -16649,7 +16641,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 830,
+        "x": 910,
         "y": 420,
         "wires": []
     },
@@ -16968,7 +16960,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 750,
+        "x": 930,
         "y": 680,
         "wires": []
     },
@@ -16985,7 +16977,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 540,
+        "x": 700,
         "y": 680,
         "wires": [
             [
@@ -17007,7 +16999,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 540,
+        "x": 820,
         "y": 940,
         "wires": [
             [
@@ -17034,7 +17026,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 770,
+        "x": 1010,
         "y": 940,
         "wires": []
     },
@@ -17083,7 +17075,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 520,
+        "x": 580,
         "y": 1160,
         "wires": [
             [
@@ -17110,8 +17102,8 @@
         "className": "",
         "topic": "",
         "name": "",
-        "x": 960,
-        "y": 1180,
+        "x": 970,
+        "y": 1160,
         "wires": []
     },
     {
@@ -17133,47 +17125,6 @@
             [
                 "b779cf92a103782e",
                 "c7be7450f90f3c85"
-            ]
-        ]
-    },
-    {
-        "id": "e9d46a21019ed5ac",
-        "type": "function",
-        "z": "7184b44879b683fb",
-        "g": "cc5ee890949d6fc9",
-        "name": "function 8",
-        "func": "let data = msg.payload.split(',');  // Separa la cadena de texto en un array de valores\n\n// Crear los diferentes mensajes con sus respectivos payloads truncados a 2 decimales y topics\nlet msg1 = { payload: parseFloat(data[0]).toFixed(4), topic: \"Gas 1 Ratio (%)\" };\nlet msg2 = { payload: parseFloat(data[1]).toFixed(4), topic: \"Gas 2 Ratio (%)\" };\nlet msg3 = { payload: parseFloat(data[2]).toFixed(2), topic: \"Cell Temperature (ºC)\" };\nlet pressureInMbar = parseFloat(data[3]) * 68.9476;\nlet msg4 = { payload: pressureInMbar.toFixed(2), topic: \"Pressure (mbar)\" };\nlet msg5 = { payload: parseFloat(data[4]).toFixed(2), topic: \"Normalized Speed of Sound (m/s)\" };\nlet msg6 = { payload: parseFloat(data[5]).toFixed(2), topic: \"Device Temperature (ºC)\" };\n\n// Devuelve todos los mensajes como un array\nreturn [msg1, msg2, msg3, msg4, msg5, msg6];\n",
-        "outputs": 6,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 520,
-        "y": 1380,
-        "wires": [
-            [
-                "4c675d6f9b2e16e3",
-                "919da3ed8ce25cdc",
-                "c60e9f56bfae40c0",
-                "248cede428df3328"
-            ],
-            [
-                "9b19cd514095b798",
-                "be5dc491af60facd",
-                "98b6c5add3b70555"
-            ],
-            [
-                "df8a936abce29978"
-            ],
-            [
-                "22db6a10c25c99ba"
-            ],
-            [
-                "9f60f576df3c29ab"
-            ],
-            [
-                "ae484618c4decbf5"
             ]
         ]
     },
@@ -17202,8 +17153,8 @@
         "seg2": "98",
         "diff": false,
         "className": "",
-        "x": 750,
-        "y": 1220,
+        "x": 870,
+        "y": 1240,
         "wires": []
     },
     {
@@ -17224,7 +17175,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 740,
+        "x": 860,
         "y": 1300,
         "wires": []
     },
@@ -17246,7 +17197,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 740,
+        "x": 860,
         "y": 1380,
         "wires": []
     },
@@ -17268,7 +17219,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 740,
+        "x": 860,
         "y": 1460,
         "wires": []
     },
@@ -17290,7 +17241,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 740,
+        "x": 860,
         "y": 1500,
         "wires": []
     },
@@ -17312,7 +17263,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 760,
+        "x": 880,
         "y": 1540,
         "wires": []
     },
@@ -17334,7 +17285,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 750,
+        "x": 870,
         "y": 1580,
         "wires": []
     },
@@ -17380,7 +17331,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 660,
+        "x": 750,
         "y": 1640,
         "wires": [
             [
@@ -17417,7 +17368,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 1890,
+        "x": 2030,
         "y": 120,
         "wires": [
             [
@@ -17454,7 +17405,7 @@
         "shape": "circle",
         "showGlow": true,
         "name": "",
-        "x": 1690,
+        "x": 1830,
         "y": 120,
         "wires": []
     },
@@ -17487,7 +17438,7 @@
         "shape": "circle",
         "showGlow": true,
         "name": "",
-        "x": 1690,
+        "x": 1830,
         "y": 180,
         "wires": []
     },
@@ -17519,7 +17470,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 1890,
+        "x": 2030,
         "y": 180,
         "wires": [
             [
@@ -17546,7 +17497,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1740,
+        "x": 1880,
         "y": 420,
         "wires": []
     },
@@ -17569,7 +17520,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1740,
+        "x": 1880,
         "y": 480,
         "wires": []
     },
@@ -17593,7 +17544,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 1960,
+        "x": 2100,
         "y": 420,
         "wires": [
             [
@@ -17621,7 +17572,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 1960,
+        "x": 2100,
         "y": 480,
         "wires": [
             [
@@ -17643,7 +17594,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1790,
+        "x": 1930,
         "y": 540,
         "wires": [
             [
@@ -17683,7 +17634,7 @@
         "shape": "square",
         "showGlow": true,
         "name": "",
-        "x": 2010,
+        "x": 2150,
         "y": 520,
         "wires": []
     },
@@ -17704,7 +17655,7 @@
         "className": "",
         "topic": "",
         "name": "",
-        "x": 2260,
+        "x": 2400,
         "y": 560,
         "wires": []
     },
@@ -17722,7 +17673,7 @@
         "septopics": true,
         "property": "payload",
         "topi": "topic",
-        "x": 2050,
+        "x": 2190,
         "y": 560,
         "wires": [
             [
@@ -17745,7 +17696,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1680,
+        "x": 1820,
         "y": 1180,
         "wires": [
             [
@@ -17785,7 +17736,7 @@
         "shape": "square",
         "showGlow": true,
         "name": "",
-        "x": 2030,
+        "x": 2170,
         "y": 1160,
         "wires": []
     },
@@ -17803,7 +17754,7 @@
         "septopics": true,
         "property": "payload",
         "topi": "topic",
-        "x": 2070,
+        "x": 2210,
         "y": 1200,
         "wires": [
             [
@@ -17829,7 +17780,7 @@
         "className": "",
         "topic": "",
         "name": "",
-        "x": 2280,
+        "x": 2420,
         "y": 1200,
         "wires": []
     },
@@ -17847,7 +17798,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1980,
+        "x": 2120,
         "y": 1780,
         "wires": [
             [
@@ -17887,7 +17838,7 @@
         "shape": "square",
         "showGlow": true,
         "name": "",
-        "x": 2230,
+        "x": 2370,
         "y": 1760,
         "wires": []
     },
@@ -17905,7 +17856,7 @@
         "septopics": true,
         "property": "payload",
         "topi": "topic",
-        "x": 2270,
+        "x": 2410,
         "y": 1800,
         "wires": [
             [
@@ -17931,7 +17882,7 @@
         "className": "",
         "topic": "",
         "name": "",
-        "x": 2480,
+        "x": 2620,
         "y": 1800,
         "wires": []
     },
@@ -17949,7 +17900,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1660,
+        "x": 1800,
         "y": 580,
         "wires": []
     },
@@ -17982,7 +17933,7 @@
         "shape": "circle",
         "showGlow": true,
         "name": "",
-        "x": 1750,
+        "x": 1890,
         "y": 720,
         "wires": []
     },
@@ -18015,7 +17966,7 @@
         "shape": "circle",
         "showGlow": true,
         "name": "",
-        "x": 1750,
+        "x": 1890,
         "y": 780,
         "wires": []
     },
@@ -18047,7 +17998,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 1910,
+        "x": 2050,
         "y": 720,
         "wires": [
             [
@@ -18083,7 +18034,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 1910,
+        "x": 2050,
         "y": 780,
         "wires": [
             [
@@ -18110,7 +18061,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1780,
+        "x": 1920,
         "y": 1100,
         "wires": []
     },
@@ -18133,7 +18084,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1780,
+        "x": 1920,
         "y": 1040,
         "wires": []
     },
@@ -18157,7 +18108,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 1980,
+        "x": 2120,
         "y": 1040,
         "wires": [
             [
@@ -18185,7 +18136,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 1980,
+        "x": 2120,
         "y": 1100,
         "wires": [
             [
@@ -18222,7 +18173,7 @@
         "shape": "circle",
         "showGlow": true,
         "name": "",
-        "x": 1770,
+        "x": 1910,
         "y": 1360,
         "wires": []
     },
@@ -18255,7 +18206,7 @@
         "shape": "circle",
         "showGlow": true,
         "name": "",
-        "x": 1770,
+        "x": 1910,
         "y": 1420,
         "wires": []
     },
@@ -18287,7 +18238,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 1930,
+        "x": 2070,
         "y": 1360,
         "wires": [
             [
@@ -18323,7 +18274,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 1930,
+        "x": 2070,
         "y": 1420,
         "wires": [
             [
@@ -18350,7 +18301,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1970,
+        "x": 2110,
         "y": 1660,
         "wires": []
     },
@@ -18373,7 +18324,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1970,
+        "x": 2110,
         "y": 1720,
         "wires": []
     },
@@ -18397,7 +18348,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 2200,
+        "x": 2340,
         "y": 1660,
         "wires": [
             [
@@ -18425,7 +18376,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 2200,
+        "x": 2340,
         "y": 1720,
         "wires": [
             [
@@ -18454,7 +18405,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 300,
+        "x": 280,
         "y": 260,
         "wires": [
             [
@@ -18483,7 +18434,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 560,
+        "x": 650,
         "y": 320,
         "wires": [
             [
@@ -18512,7 +18463,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 590,
+        "x": 730,
         "y": 420,
         "wires": [
             [
@@ -18541,7 +18492,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 430,
+        "x": 590,
         "y": 1640,
         "wires": [
             [
@@ -18570,7 +18521,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 1550,
+        "x": 1690,
         "y": 120,
         "wires": [
             [
@@ -18599,7 +18550,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 1550,
+        "x": 1690,
         "y": 180,
         "wires": [
             [
@@ -18629,7 +18580,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 2050,
+        "x": 2190,
         "y": 120,
         "wires": [
             [
@@ -18659,7 +18610,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 2050,
+        "x": 2190,
         "y": 180,
         "wires": [
             [
@@ -18693,7 +18644,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 1550,
+        "x": 1690,
         "y": 420,
         "wires": [
             [
@@ -18727,7 +18678,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 1550,
+        "x": 1690,
         "y": 480,
         "wires": [
             [
@@ -18766,7 +18717,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 2130,
+        "x": 2270,
         "y": 420,
         "wires": [
             [
@@ -18805,7 +18756,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 2130,
+        "x": 2270,
         "y": 480,
         "wires": [
             [
@@ -18834,7 +18785,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 1610,
+        "x": 1750,
         "y": 720,
         "wires": [
             [
@@ -18863,7 +18814,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 1610,
+        "x": 1750,
         "y": 780,
         "wires": [
             [
@@ -18893,7 +18844,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 2090,
+        "x": 2230,
         "y": 720,
         "wires": [
             [
@@ -18923,7 +18874,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 2090,
+        "x": 2230,
         "y": 780,
         "wires": [
             [
@@ -18957,7 +18908,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 1590,
+        "x": 1730,
         "y": 1040,
         "wires": [
             [
@@ -18991,7 +18942,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 1590,
+        "x": 1730,
         "y": 1100,
         "wires": [
             [
@@ -19021,7 +18972,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 2150,
+        "x": 2290,
         "y": 1040,
         "wires": [
             [
@@ -19051,7 +19002,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 2150,
+        "x": 2290,
         "y": 1100,
         "wires": [
             [
@@ -19080,7 +19031,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 1630,
+        "x": 1770,
         "y": 1360,
         "wires": [
             [
@@ -19109,7 +19060,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 1630,
+        "x": 1770,
         "y": 1420,
         "wires": [
             [
@@ -19139,7 +19090,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 2110,
+        "x": 2250,
         "y": 1420,
         "wires": [
             [
@@ -19169,7 +19120,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 2110,
+        "x": 2250,
         "y": 1360,
         "wires": [
             [
@@ -19203,7 +19154,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 1630,
+        "x": 1770,
         "y": 1660,
         "wires": [
             [
@@ -19237,7 +19188,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 1630,
+        "x": 1770,
         "y": 1720,
         "wires": [
             [
@@ -19276,7 +19227,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 2510,
+        "x": 2650,
         "y": 1660,
         "wires": [
             [
@@ -19315,7 +19266,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 2510,
+        "x": 2650,
         "y": 1720,
         "wires": [
             [
@@ -19337,7 +19288,7 @@
         "truncate": true,
         "decimals": 0,
         "decimals2": "2",
-        "x": 740,
+        "x": 810,
         "y": 320,
         "wires": [
             [
@@ -19359,7 +19310,7 @@
         "truncate": false,
         "decimals": 0,
         "decimals2": 0,
-        "x": 460,
+        "x": 440,
         "y": 260,
         "wires": [
             [
@@ -19382,7 +19333,7 @@
         "truncate": false,
         "decimals": 0,
         "decimals2": 0,
-        "x": 1760,
+        "x": 1900,
         "y": 1660,
         "wires": [
             [
@@ -19405,7 +19356,7 @@
         "truncate": false,
         "decimals": 0,
         "decimals2": 0,
-        "x": 1760,
+        "x": 1900,
         "y": 1720,
         "wires": [
             [
@@ -19428,7 +19379,7 @@
         "truncate": false,
         "decimals": 0,
         "decimals2": 0,
-        "x": 2370,
+        "x": 2510,
         "y": 1660,
         "wires": [
             [
@@ -19451,7 +19402,7 @@
         "truncate": false,
         "decimals": 0,
         "decimals2": 0,
-        "x": 2370,
+        "x": 2510,
         "y": 1720,
         "wires": [
             [
@@ -19470,8 +19421,8 @@
             "44293598916d4fc1",
             "1e86c21124214be7"
         ],
-        "x": 905,
-        "y": 1220,
+        "x": 915,
+        "y": 1200,
         "wires": []
     },
     {
@@ -19486,7 +19437,7 @@
             "5728ead30d8447cc",
             "2e2bacc1650bdfbd"
         ],
-        "x": 2395,
+        "x": 2535,
         "y": 1840,
         "wires": []
     },
@@ -19502,7 +19453,7 @@
             "4d092cf05d395935",
             "88f8bd2a9f1e52a9"
         ],
-        "x": 2215,
+        "x": 2355,
         "y": 1160,
         "wires": []
     },
@@ -19518,7 +19469,7 @@
             "47a746a20e8129ad",
             "52721950729b11ca"
         ],
-        "x": 2195,
+        "x": 2335,
         "y": 520,
         "wires": []
     },
@@ -19552,7 +19503,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 530,
+        "x": 790,
         "y": 980,
         "wires": []
     },
@@ -19566,7 +19517,7 @@
         "links": [
             "e82cf4753d694a17"
         ],
-        "x": 695,
+        "x": 815,
         "y": 1420,
         "wires": []
     },
@@ -19580,7 +19531,7 @@
         "links": [
             "099fa0f159eafbdf"
         ],
-        "x": 695,
+        "x": 815,
         "y": 1340,
         "wires": []
     },
@@ -19608,7 +19559,7 @@
         "links": [
             "9ab36c4fe983fb67"
         ],
-        "x": 695,
+        "x": 965,
         "y": 900,
         "wires": []
     },
@@ -19622,7 +19573,7 @@
         "links": [
             "911cd174d47da6f4"
         ],
-        "x": 695,
+        "x": 875,
         "y": 640,
         "wires": []
     },
@@ -19639,7 +19590,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 800,
+        "x": 920,
         "y": 1420,
         "wires": []
     },
@@ -19656,7 +19607,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 900,
+        "x": 1020,
         "y": 1340,
         "wires": []
     },
@@ -19878,11 +19829,11 @@
         "g": "cc5ee890949d6fc9",
         "name": "",
         "serial": "44b1f7493e9f2ebe",
-        "x": 360,
+        "x": 300,
         "y": 1160,
         "wires": [
             [
-                "b7e20da1d1419ff1"
+                "e7c348ea1ce5405c"
             ]
         ]
     },
@@ -19893,11 +19844,11 @@
         "g": "80166f8ddce35046",
         "name": "",
         "serial": "44b1f7493e9f2ebe",
-        "x": 420,
+        "x": 380,
         "y": 320,
         "wires": [
             [
-                "c32f7086d74af988"
+                "cd35e59139236b6f"
             ]
         ]
     },
@@ -19913,6 +19864,244 @@
         "wires": [
             [
                 "6712e165a74867c7"
+            ]
+        ]
+    },
+    {
+        "id": "cd35e59139236b6f",
+        "type": "switch",
+        "z": "7184b44879b683fb",
+        "g": "80166f8ddce35046",
+        "name": "",
+        "property": "status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "OK",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 510,
+        "y": 320,
+        "wires": [
+            [
+                "c32f7086d74af988"
+            ]
+        ]
+    },
+    {
+        "id": "e055c58aeac75251",
+        "type": "switch",
+        "z": "7184b44879b683fb",
+        "g": "c96a2cde9245f87b",
+        "name": "",
+        "property": "status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "OK",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 570,
+        "y": 420,
+        "wires": [
+            [
+                "511bce2f37f4c6a9"
+            ]
+        ]
+    },
+    {
+        "id": "5a7e7b7d6a238692",
+        "type": "switch",
+        "z": "7184b44879b683fb",
+        "g": "7799292376dc5c39",
+        "name": "",
+        "property": "status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "OK",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 680,
+        "wires": [
+            [
+                "cc44dd27c339434c"
+            ]
+        ]
+    },
+    {
+        "id": "dc92ad660596fb55",
+        "type": "switch",
+        "z": "7184b44879b683fb",
+        "g": "714c33716ed7518a",
+        "name": "",
+        "property": "status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "OK",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 570,
+        "y": 940,
+        "wires": [
+            [
+                "ae2aa00422cc1a16"
+            ]
+        ]
+    },
+    {
+        "id": "e9d46a21019ed5ac",
+        "type": "function",
+        "z": "7184b44879b683fb",
+        "g": "cc5ee890949d6fc9",
+        "name": "function 8",
+        "func": "let data = msg.payload.split(',');  // Separa la cadena de texto en un array de valores\n\n// Crear los diferentes mensajes con sus respectivos payloads truncados a 2 decimales y topics\nlet msg1 = { payload: parseFloat(data[0]).toFixed(4), topic: \"Gas 1 Ratio (%)\" };\nlet msg2 = { payload: parseFloat(data[1]).toFixed(4), topic: \"Gas 2 Ratio (%)\" };\nlet msg3 = { payload: parseFloat(data[2]).toFixed(2), topic: \"Cell Temperature (ºC)\" };\nlet pressureInMbar = parseFloat(data[3]) * 68.9476;\nlet msg4 = { payload: pressureInMbar.toFixed(2), topic: \"Pressure (mbar)\" };\nlet msg5 = { payload: parseFloat(data[4]).toFixed(2), topic: \"Normalized Speed of Sound (m/s)\" };\nlet msg6 = { payload: parseFloat(data[5]).toFixed(2), topic: \"Device Temperature (ºC)\" };\n\n// Devuelve todos los mensajes como un array\nreturn [msg1, msg2, msg3, msg4, msg5, msg6];\n",
+        "outputs": 6,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 1380,
+        "wires": [
+            [
+                "4c675d6f9b2e16e3",
+                "919da3ed8ce25cdc",
+                "c60e9f56bfae40c0",
+                "248cede428df3328"
+            ],
+            [
+                "9b19cd514095b798",
+                "be5dc491af60facd",
+                "98b6c5add3b70555"
+            ],
+            [
+                "df8a936abce29978"
+            ],
+            [
+                "22db6a10c25c99ba"
+            ],
+            [
+                "9f60f576df3c29ab"
+            ],
+            [
+                "ae484618c4decbf5"
+            ]
+        ]
+    },
+    {
+        "id": "f4b12f8c2dc84dad",
+        "type": "switch",
+        "z": "7184b44879b683fb",
+        "g": "cc5ee890949d6fc9",
+        "name": "",
+        "property": "status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "OK",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 430,
+        "y": 1640,
+        "wires": [
+            [
+                "e41dafd8911c9c04"
+            ]
+        ]
+    },
+    {
+        "id": "e7c348ea1ce5405c",
+        "type": "switch",
+        "z": "7184b44879b683fb",
+        "g": "cc5ee890949d6fc9",
+        "name": "",
+        "property": "status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "OK",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 450,
+        "y": 1160,
+        "wires": [
+            [
+                "b7e20da1d1419ff1"
+            ]
+        ]
+    },
+    {
+        "id": "c859464543617c31",
+        "type": "serial request",
+        "z": "7184b44879b683fb",
+        "g": "cc5ee890949d6fc9",
+        "name": "",
+        "serial": "44b1f7493e9f2ebe",
+        "x": 320,
+        "y": 1380,
+        "wires": [
+            [
+                "6190708488e9f8dd"
+            ]
+        ]
+    },
+    {
+        "id": "6190708488e9f8dd",
+        "type": "switch",
+        "z": "7184b44879b683fb",
+        "g": "cc5ee890949d6fc9",
+        "name": "",
+        "property": "status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "OK",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 470,
+        "y": 1380,
+        "wires": [
+            [
+                "e9d46a21019ed5ac"
             ]
         ]
     },
