@@ -100,7 +100,7 @@
         "id": "ac988ebf643b965c",
         "type": "tab",
         "label": "DATABASE",
-        "disabled": true,
+        "disabled": false,
         "info": "",
         "env": []
     },
@@ -2692,6 +2692,507 @@
         "h": 222
     },
     {
+        "id": "518e033f0d6d70c1",
+        "type": "group",
+        "z": "30f3df01.06ea",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "c3828db285a6d131",
+            "ed29ef18514ddc9c"
+        ],
+        "x": 924,
+        "y": 2419,
+        "w": 422,
+        "h": 102
+    },
+    {
+        "id": "06cb16349bc65e62",
+        "type": "group",
+        "z": "30f3df01.06ea",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "dad6490bf4be6314",
+            "9da4fd0783fa2d9a",
+            "f72356ee356d877d",
+            "b41c9e69821dcde9",
+            "4f7bed1a76a99f8c",
+            "991fcb24e721e1eb",
+            "47cefbf9d3a44095",
+            "e1055b4ee8e31db0"
+        ],
+        "x": 94,
+        "y": 2479,
+        "w": 712,
+        "h": 402
+    },
+    {
+        "id": "ca70e0692f85bb59",
+        "type": "group",
+        "z": "30f3df01.06ea",
+        "name": "MQTT Listener",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "84ee3a75394d68b4",
+            "58aa40cbdbb4125e",
+            "422a9f606b9c8dac"
+        ],
+        "x": 1334,
+        "y": 19,
+        "w": 442,
+        "h": 142
+    },
+    {
+        "id": "833f310e046c40f5",
+        "type": "group",
+        "z": "30f3df01.06ea",
+        "name": "Controller Info",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "625ca6f.72dc258",
+            "98ceb46c.2469c",
+            "dc4e526b.b6e908",
+            "17d7def2.a27f31",
+            "e95ae148.761da8",
+            "c2f146c5.ed2a78",
+            "fae7d0c7.b7a6c8",
+            "f08b7bcb.043c6",
+            "5f9e3db1.0fa064",
+            "22abece4.eeefbc",
+            "20926100.bb2f98",
+            "9ad01553.fb4b2",
+            "58065150.8a6da",
+            "1e770364.d52f5d",
+            "317f756e.bc5fea",
+            "189a4c84.a2728b",
+            "a5d763e507c5a078",
+            "57f647269932efb9",
+            "d542c01613420d49",
+            "83b99f58f87cd91c",
+            "7fe29bca73051446",
+            "4deea66804eb9db9",
+            "0dcaeb8c713e112c",
+            "ac5b3be6c5f3f4f6",
+            "40d3306b22f36120",
+            "374c8455.9b8cbc",
+            "88b13aae.4abd2",
+            "1fa27e01.b6edf2"
+        ],
+        "x": 54,
+        "y": 19,
+        "w": 1202,
+        "h": 742
+    },
+    {
+        "id": "4760f1450ad583b4",
+        "type": "group",
+        "z": "30f3df01.06ea",
+        "name": "Sampling Rate",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "caf0714c.6cf78",
+            "cb33d6b7.aebf7",
+            "b37d1abf.22d8f8",
+            "83bfcaeb.e279a",
+            "67da4615.03e49",
+            "333c5043.f90f68",
+            "d011f41.5cff108",
+            "64440c67.c67ab4"
+        ],
+        "x": 74,
+        "y": 1999,
+        "w": 1272,
+        "h": 262
+    },
+    {
+        "id": "082b7235779d6720",
+        "type": "group",
+        "z": "30f3df01.06ea",
+        "name": "AIO & DIO Read",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "acb59dc.2676ee",
+            "4f2e58d8.87ad8",
+            "855d54a9.8f7378",
+            "a3d7f320.bd491",
+            "ae270393.1b095",
+            "ea9aab36.4c43",
+            "a8b4f77.0c4b108",
+            "9668e10d.f35d78",
+            "b9dc7b41.7558c8",
+            "39ade8e6.2a5b78",
+            "6fcd45c1.cf94bc",
+            "b7933f2c.5a279",
+            "ec47823e.d5b358",
+            "548342ec.84e2b4"
+        ],
+        "x": 74,
+        "y": 779,
+        "w": 1012,
+        "h": 402
+    },
+    {
+        "id": "bb88525de6a299e8",
+        "type": "group",
+        "z": "30f3df01.06ea",
+        "name": "AIO & DIO Control",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1e1531a6.91977e",
+            "5fffcaa3.00f38c",
+            "e59f7569.d18428",
+            "b108c.316a3775",
+            "b55bf8e8.2d60b8",
+            "cb222ad4.cb6a48",
+            "7a56d235.e4fdac",
+            "f41da742.2725c",
+            "8b170ec6.f86028",
+            "1da41199.a8866e",
+            "3db2f183.68edb6",
+            "85f76ee6.f84a88",
+            "6b0abb8f.68cc8c",
+            "cc29f60.0960a08",
+            "ef053eeb.8e9628",
+            "da9f10cd.adef98",
+            "1efe938a.c009f4",
+            "87520724.391438",
+            "1abda5c7.acf26a",
+            "27b4e189.448fee",
+            "d29b6af8.281db",
+            "4194d916.930608",
+            "6e8cb37a.3b74ec",
+            "2e2c61d3.2d7536",
+            "fe4f710a.828cc8",
+            "e41406fd.d374b",
+            "6f8a5ad0.f29eb4",
+            "b5378e1.347757",
+            "95acda9c.6be1a8",
+            "cec9e367.1dcd8",
+            "9fe17491.e32518",
+            "5d96c753.ddd018",
+            "a6db4f52.28f198",
+            "c82c4bcf.10229"
+        ],
+        "x": 64,
+        "y": 1219,
+        "w": 1602,
+        "h": 742
+    },
+    {
+        "id": "f8f1a23133f6b206",
+        "type": "group",
+        "z": "243cac42.fdcd3c",
+        "name": "Pressure Measurements",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "af0a0ab4.ce281",
+            "d3c7bf7b.094508",
+            "dea87b5a.d08a9",
+            "4aac8a98.cd6ddc",
+            "73b5704f.56872",
+            "9546d266.6c48a",
+            "b6b6f7d.688fb88",
+            "6f32a25f.f32e34",
+            "9c61dd46.7bb4b8",
+            "5b62f27d.fb046c",
+            "71a68ae9.40d274",
+            "6cfb2109.a17618",
+            "7d99b149.68376",
+            "6cfc3a91.25b114",
+            "3a2ffe4.80b4a82",
+            "f2c80f50.7cc8d",
+            "49490e92.60bfe8",
+            "64a17b35.d5d4fc",
+            "514adcf0.5a7b44",
+            "b5a3566.22552a8",
+            "a4ba2fa34e743d23",
+            "6d5d958dc430b6df",
+            "1fdec703419f8b8c",
+            "1b6e833372729630",
+            "357c68b5d1bccb29",
+            "f9af0ddc7af0b7e9",
+            "ba5d6637.bdf148",
+            "334ecdb4.62f12a",
+            "431bf26b.9f95ec",
+            "cd835689.247ef8",
+            "44e52f75.eb6fa"
+        ],
+        "x": 74,
+        "y": 19,
+        "w": 1072,
+        "h": 702
+    },
+    {
+        "id": "5259452bc4a51d7b",
+        "type": "group",
+        "z": "243cac42.fdcd3c",
+        "name": "ElectroValves Operation",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d9c4f810.96fa38",
+            "d31355b2.6b7ef",
+            "f74b6fedeed9d7a6",
+            "0cdfc39ded51582f",
+            "64bdb0f0984a9e99",
+            "1da133144cb9ab8a",
+            "dd3861e09e013307",
+            "423c8255f686304e",
+            "7629c9df42299b52",
+            "bb38b8c6467ffec9",
+            "6fe25145265dfc24"
+        ],
+        "x": 94,
+        "y": 759,
+        "w": 752,
+        "h": 362
+    },
+    {
+        "id": "86dc799a4340918e",
+        "type": "group",
+        "z": "de6047b6e269aa2d",
+        "name": "Environmental Monitoring",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9e20ac30aee2e7cf",
+            "ed77d4256df2d24f",
+            "323bca7b58983a3e",
+            "cad8adf2a74cca0e",
+            "1fc812370ea29976",
+            "032be02c2781222c",
+            "11c8f682f31c6499",
+            "5d19a47a553240d3",
+            "414307de8f738fe2",
+            "3f5ac05726849b62",
+            "7f8871f127b9fd9e",
+            "d784bd2793537b7e"
+        ],
+        "x": 174,
+        "y": 59,
+        "w": 672,
+        "h": 482
+    },
+    {
+        "id": "63bdbad96c6c866f",
+        "type": "group",
+        "z": "2929f7b53fc923ef",
+        "name": "Outlet Pressure Sensor Thyracont",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "33885c4236198a1d",
+            "36fd090493e29f93",
+            "64ec612ddd21e4cd",
+            "3a912f03d0333c28",
+            "a1eef42bb8f72f9f",
+            "be92780f5508341c",
+            "45d1f9a221e60ef2"
+        ],
+        "x": 54,
+        "y": 59,
+        "w": 972,
+        "h": 162
+    },
+    {
+        "id": "28fcea42a9100cae",
+        "type": "group",
+        "z": "2929f7b53fc923ef",
+        "name": "Catch Erros: Transmitters",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "05feb3979973f7ff",
+            "f38f1f08bcc24bdb",
+            "ba7be76b7f218b84",
+            "1bc7f785464975af",
+            "95eb3960c2e5ba89"
+        ],
+        "x": 24,
+        "y": 659,
+        "w": 782,
+        "h": 162,
+        "info": "This group catches the errors in all the nodes of the flow. \nSecuruty function only makes the msg earier and Trim topic is to eliminate /dev/. \nCopy the group to add security in others flows. \nNOTE: Remember to change link out end.\n\n\nHere we only select subflows becouse they trigger the errors in these devices. "
+    },
+    {
+        "id": "581f3e732eab82ac",
+        "type": "group",
+        "z": "44b2d39a758b1b4b",
+        "name": "Pressure Controller",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9eface1706386705",
+            "290e074640fdfb17",
+            "e1dd870df50f05a7",
+            "5f7211b645fa37fa"
+        ],
+        "x": 48,
+        "y": 53,
+        "w": 1224,
+        "h": 1354
+    },
+    {
+        "id": "5ee8327d0a6bfba1",
+        "type": "group",
+        "z": "44b2d39a758b1b4b",
+        "name": "In Flow Controller",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "bdc84199775ddd65",
+            "086f2900f4b49b1b",
+            "aaf32055c816159c",
+            "836e37c90e753dfa"
+        ],
+        "x": 1308,
+        "y": 53,
+        "w": 1224,
+        "h": 1494
+    },
+    {
+        "id": "91dcd7fe7bccf487",
+        "type": "group",
+        "z": "44b2d39a758b1b4b",
+        "name": "Flow Sensor",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "3a77962e97d02525",
+            "860661d54807a9bc",
+            "480831d95427e802"
+        ],
+        "x": 3878,
+        "y": 53,
+        "w": 1224,
+        "h": 1054
+    },
+    {
+        "id": "c6db76d90f894678",
+        "type": "group",
+        "z": "7184b44879b683fb",
+        "name": "Connection",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b5ded52e516759d1",
+            "fb99cca655c0728b",
+            "911b1c2947a89847",
+            "db9f3650da93a518",
+            "d153b317c58b1248",
+            "42e96d7eda5476a1",
+            "d5a87f70210a013f",
+            "67ea67d370992495",
+            "472d8c49c60295be"
+        ],
+        "x": 54,
+        "y": 1719,
+        "w": 672,
+        "h": 302
+    },
+    {
+        "id": "12032be895fa76ab",
+        "type": "group",
+        "z": "44b2d39a758b1b4b",
+        "name": "Catch Erros",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "715fad08a1a4506b",
+            "a730d26cc81610ac",
+            "ae8ea32e421fa0ba",
+            "70357663e62eb493",
+            "ea58e129b16e6e92"
+        ],
+        "x": 3944,
+        "y": 1359,
+        "w": 782,
+        "h": 162,
+        "info": "This group catches the errors in all the nodes of the flow. \nSecuruty function only makes the msg earier and Trim topic is to eliminate /dev/. \nCopy the group to add security in others flows. \nNOTE: Remember to change link out end.\n\n\nHere we only select subflows becouse they trigger the errors in these devices. "
+    },
+    {
+        "id": "b743918e1c8c2488",
+        "type": "group",
+        "z": "44b2d39a758b1b4b",
+        "name": "Out Flow Controller",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4b0a6b86bc2c5ad7",
+            "a68ec89d25e062f4",
+            "56b05b496dc78a04",
+            "1c129dfeb05bcbe2",
+            "81cf755189fae457",
+            "ce609db0e079068e",
+            "16aa078f89cc21ce"
+        ],
+        "x": 2558,
+        "y": 53,
+        "w": 1294,
+        "h": 2154
+    },
+    {
+        "id": "26404baffafe6277",
+        "type": "group",
+        "z": "2929f7b53fc923ef",
+        "name": "Connection",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "c2bc5791e43d4bed",
+            "49af197954d36ea6",
+            "4cfc3f86e80461ce",
+            "205b18769047bb27",
+            "7a1bb1706b9ababa",
+            "62a06ba0cf8f26bb",
+            "d32431d039a70f9b",
+            "cf9c253b19f957e2",
+            "bcc0e35a7836839d"
+        ],
+        "x": 54,
+        "y": 279,
+        "w": 652,
+        "h": 302
+    },
+    {
         "id": "eca5bb2e0e780868",
         "type": "group",
         "z": "ac988ebf643b965c",
@@ -2746,9 +3247,9 @@
             "4f7d3234015e1d43",
             "57f0971a909279ed"
         ],
-        "x": 314,
+        "x": 304,
         "y": 1099,
-        "w": 392,
+        "w": 402,
         "h": 242
     },
     {
@@ -3097,424 +3598,6 @@
         "h": 282
     },
     {
-        "id": "b86e0b330ffbda47",
-        "type": "group",
-        "z": "7184b44879b683fb",
-        "g": "e228fc818a13a83f",
-        "name": "Limit configuration & Query",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "5ad05e5434a36e2d",
-            "6e78813d0e935866",
-            "bdad8b307fde264c",
-            "b1814b9ca7f59934",
-            "08fa590f7f6bcfb6",
-            "f3fc861f7c902957",
-            "01dd02a1e8566c33",
-            "afc29e2a35470552",
-            "2e08fb1989aa5eed",
-            "364735f04edf4765",
-            "8b5eb8ba66d8f085",
-            "03d607b02dccd84f",
-            "d4bc23b0d19203b6",
-            "5f9544a0e5342937",
-            "27bb7f9c94078bf5",
-            "316a4ad44fda0660",
-            "3c395ee147ffe1f7",
-            "4f02227a29d7e24a",
-            "7d083d593d300212",
-            "ec79178c7e1dd0fb",
-            "ba6b247d1a4fde36",
-            "887024a79833a324"
-        ],
-        "x": 1314,
-        "y": 379,
-        "w": 1202,
-        "h": 242
-    },
-    {
-        "id": "4b7c7253093a074f",
-        "type": "group",
-        "z": "7184b44879b683fb",
-        "g": "e228fc818a13a83f",
-        "name": "En/Dis Limits",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "56e3623f0e2f1864",
-            "7ebd26b9732bc2f4",
-            "f7ccc21f617da64e",
-            "2978e99821c3f7a4",
-            "4a5446fcbe06e148",
-            "7c30dd7520fc8e36",
-            "4299fabca352c58e",
-            "56468e1734bd3d50",
-            "931bf66fdf5ebc4f",
-            "3854c0eb5711d980",
-            "e501791be98bca33",
-            "3f39c7239b5b7355",
-            "1e9ebc945b3e6dad",
-            "38aacd09e2582a71"
-        ],
-        "x": 1314,
-        "y": 79,
-        "w": 1072,
-        "h": 142
-    },
-    {
-        "id": "cab81f61cc45c256",
-        "type": "group",
-        "z": "7184b44879b683fb",
-        "g": "921335a5a84f12eb",
-        "name": "Limit configuration & Query",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "e80ae15a0542fbc8",
-            "4e07affecff1a22d",
-            "348e0d0ce7c0486f",
-            "e59c3c00c7aae566",
-            "477331ed23a2938f",
-            "d86c3eee58a863a7",
-            "645151634ef55a86",
-            "94c3852279db1c7c",
-            "2aa453c025fdfe38",
-            "e378ed778eb71c41",
-            "415c2e84f9ba4aa1",
-            "dae4eeaef7bc7ca0",
-            "602c8039bbec3241",
-            "890d875007ced2e3",
-            "40fb4731f9a58fc8",
-            "90872a5b214e6913",
-            "03fb576c3f9634b5",
-            "a86b243262642d54",
-            "799e8019c475c43b",
-            "f8a753a5cb2378bf",
-            "d3bdb64732d5588f"
-        ],
-        "x": 1354,
-        "y": 999,
-        "w": 1182,
-        "h": 242
-    },
-    {
-        "id": "e2a40e4267294a76",
-        "type": "group",
-        "z": "7184b44879b683fb",
-        "g": "921335a5a84f12eb",
-        "name": "En/Dis Limits",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "efa209028400fb01",
-            "760e4037ee9d494d",
-            "f2f9109347e67516",
-            "2eca8b4ef39c38c0",
-            "cfc923b8ac0c733c",
-            "82e28fa6dcbbcfbf",
-            "123624ec19be400f",
-            "9a3036a59b4bdb85",
-            "9509a237d821f4b7",
-            "9b794b59c413a9de",
-            "6167da81b207f6f4",
-            "54cfd3cc6d728aa9",
-            "e35a8e220cca811e",
-            "cb0d69f6e16f2920"
-        ],
-        "x": 1374,
-        "y": 679,
-        "w": 1072,
-        "h": 142
-    },
-    {
-        "id": "79699e531e50fef0",
-        "type": "group",
-        "z": "7184b44879b683fb",
-        "g": "56dfe620b4d590c4",
-        "name": "Limit configuration & Query",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "03891781850b4d05",
-            "9f52a8fc313cfa5a",
-            "03401232a73afac5",
-            "8e893754ffe9eeba",
-            "810d5b6a31ae4b5b",
-            "78390e08738dbfe9",
-            "7c357068847c4d71",
-            "7db7ba71ea2bf78e",
-            "e5bd6b54c417cc24",
-            "4a73f5e4abbfb203",
-            "692b86a14f3ed282",
-            "ce3315fec46501cf",
-            "a2ac639338e54a8b",
-            "de8aa80a4a7ebb97",
-            "7834e930f5da8ae4",
-            "352a5917e1b34798",
-            "6bbc6bc3314cce12",
-            "44e62a822b61475d",
-            "6f25b5bcb8301aa2",
-            "62cec008d10c32fd",
-            "c39453382a6399da",
-            "a5fc1fba80b72781",
-            "24f2fa1c68cc454e",
-            "04566b411967803f",
-            "e925121153aa7594"
-        ],
-        "x": 1354,
-        "y": 1619,
-        "w": 1512,
-        "h": 262
-    },
-    {
-        "id": "67be9094c6dabcf5",
-        "type": "group",
-        "z": "7184b44879b683fb",
-        "g": "56dfe620b4d590c4",
-        "name": "En/Dis Limits",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "6190a7c1259123f4",
-            "a33f440baa056db8",
-            "7a8615da51a3fb0e",
-            "9dc78f6a185ec070",
-            "bc8c956581f3fc1a",
-            "324a8b35d71e4852",
-            "53b9a472925b873f",
-            "1ba31b12b8d92cb9",
-            "3143e3694bd9ccb0",
-            "4503bebdb026de01",
-            "6e9150bf60e0d44f",
-            "9005602f4a7a2744",
-            "0b583209995aa714",
-            "b0583adf4301b387"
-        ],
-        "x": 1354,
-        "y": 1319,
-        "w": 1092,
-        "h": 142
-    },
-    {
-        "id": "518e033f0d6d70c1",
-        "type": "group",
-        "z": "30f3df01.06ea",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "c3828db285a6d131",
-            "ed29ef18514ddc9c"
-        ],
-        "x": 924,
-        "y": 2419,
-        "w": 422,
-        "h": 102
-    },
-    {
-        "id": "06cb16349bc65e62",
-        "type": "group",
-        "z": "30f3df01.06ea",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "dad6490bf4be6314",
-            "9da4fd0783fa2d9a",
-            "f72356ee356d877d",
-            "b41c9e69821dcde9",
-            "4f7bed1a76a99f8c",
-            "991fcb24e721e1eb",
-            "47cefbf9d3a44095",
-            "e1055b4ee8e31db0"
-        ],
-        "x": 94,
-        "y": 2479,
-        "w": 712,
-        "h": 402
-    },
-    {
-        "id": "ca70e0692f85bb59",
-        "type": "group",
-        "z": "30f3df01.06ea",
-        "name": "MQTT Listener",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "84ee3a75394d68b4",
-            "58aa40cbdbb4125e",
-            "422a9f606b9c8dac"
-        ],
-        "x": 1334,
-        "y": 19,
-        "w": 442,
-        "h": 142
-    },
-    {
-        "id": "833f310e046c40f5",
-        "type": "group",
-        "z": "30f3df01.06ea",
-        "name": "Controller Info",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "625ca6f.72dc258",
-            "98ceb46c.2469c",
-            "dc4e526b.b6e908",
-            "17d7def2.a27f31",
-            "e95ae148.761da8",
-            "c2f146c5.ed2a78",
-            "fae7d0c7.b7a6c8",
-            "f08b7bcb.043c6",
-            "5f9e3db1.0fa064",
-            "22abece4.eeefbc",
-            "20926100.bb2f98",
-            "9ad01553.fb4b2",
-            "58065150.8a6da",
-            "1e770364.d52f5d",
-            "317f756e.bc5fea",
-            "189a4c84.a2728b",
-            "a5d763e507c5a078",
-            "57f647269932efb9",
-            "d542c01613420d49",
-            "83b99f58f87cd91c",
-            "7fe29bca73051446",
-            "4deea66804eb9db9",
-            "0dcaeb8c713e112c",
-            "ac5b3be6c5f3f4f6",
-            "40d3306b22f36120",
-            "374c8455.9b8cbc",
-            "88b13aae.4abd2",
-            "1fa27e01.b6edf2"
-        ],
-        "x": 54,
-        "y": 19,
-        "w": 1202,
-        "h": 742
-    },
-    {
-        "id": "4760f1450ad583b4",
-        "type": "group",
-        "z": "30f3df01.06ea",
-        "name": "Sampling Rate",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "caf0714c.6cf78",
-            "cb33d6b7.aebf7",
-            "b37d1abf.22d8f8",
-            "83bfcaeb.e279a",
-            "67da4615.03e49",
-            "333c5043.f90f68",
-            "d011f41.5cff108",
-            "64440c67.c67ab4"
-        ],
-        "x": 74,
-        "y": 1999,
-        "w": 1272,
-        "h": 262
-    },
-    {
-        "id": "082b7235779d6720",
-        "type": "group",
-        "z": "30f3df01.06ea",
-        "name": "AIO & DIO Read",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "acb59dc.2676ee",
-            "4f2e58d8.87ad8",
-            "855d54a9.8f7378",
-            "a3d7f320.bd491",
-            "ae270393.1b095",
-            "ea9aab36.4c43",
-            "a8b4f77.0c4b108",
-            "9668e10d.f35d78",
-            "b9dc7b41.7558c8",
-            "39ade8e6.2a5b78",
-            "6fcd45c1.cf94bc",
-            "b7933f2c.5a279",
-            "ec47823e.d5b358",
-            "548342ec.84e2b4"
-        ],
-        "x": 74,
-        "y": 779,
-        "w": 1012,
-        "h": 402
-    },
-    {
-        "id": "bb88525de6a299e8",
-        "type": "group",
-        "z": "30f3df01.06ea",
-        "name": "AIO & DIO Control",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "1e1531a6.91977e",
-            "5fffcaa3.00f38c",
-            "e59f7569.d18428",
-            "b108c.316a3775",
-            "b55bf8e8.2d60b8",
-            "cb222ad4.cb6a48",
-            "7a56d235.e4fdac",
-            "f41da742.2725c",
-            "8b170ec6.f86028",
-            "1da41199.a8866e",
-            "3db2f183.68edb6",
-            "85f76ee6.f84a88",
-            "6b0abb8f.68cc8c",
-            "cc29f60.0960a08",
-            "ef053eeb.8e9628",
-            "da9f10cd.adef98",
-            "1efe938a.c009f4",
-            "87520724.391438",
-            "1abda5c7.acf26a",
-            "27b4e189.448fee",
-            "d29b6af8.281db",
-            "4194d916.930608",
-            "6e8cb37a.3b74ec",
-            "2e2c61d3.2d7536",
-            "fe4f710a.828cc8",
-            "e41406fd.d374b",
-            "6f8a5ad0.f29eb4",
-            "b5378e1.347757",
-            "95acda9c.6be1a8",
-            "cec9e367.1dcd8",
-            "9fe17491.e32518",
-            "5d96c753.ddd018",
-            "a6db4f52.28f198",
-            "c82c4bcf.10229"
-        ],
-        "x": 64,
-        "y": 1219,
-        "w": 1602,
-        "h": 742
-    },
-    {
         "id": "9eface1706386705",
         "type": "group",
         "z": "44b2d39a758b1b4b",
@@ -3571,127 +3654,6 @@
         "y": 299,
         "w": 1132,
         "h": 322
-    },
-    {
-        "id": "f8f1a23133f6b206",
-        "type": "group",
-        "z": "243cac42.fdcd3c",
-        "name": "Pressure Measurements",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "af0a0ab4.ce281",
-            "d3c7bf7b.094508",
-            "dea87b5a.d08a9",
-            "4aac8a98.cd6ddc",
-            "73b5704f.56872",
-            "9546d266.6c48a",
-            "b6b6f7d.688fb88",
-            "6f32a25f.f32e34",
-            "9c61dd46.7bb4b8",
-            "5b62f27d.fb046c",
-            "71a68ae9.40d274",
-            "6cfb2109.a17618",
-            "7d99b149.68376",
-            "6cfc3a91.25b114",
-            "3a2ffe4.80b4a82",
-            "f2c80f50.7cc8d",
-            "49490e92.60bfe8",
-            "64a17b35.d5d4fc",
-            "514adcf0.5a7b44",
-            "b5a3566.22552a8",
-            "a4ba2fa34e743d23",
-            "6d5d958dc430b6df",
-            "1fdec703419f8b8c",
-            "1b6e833372729630",
-            "357c68b5d1bccb29",
-            "f9af0ddc7af0b7e9",
-            "ba5d6637.bdf148",
-            "334ecdb4.62f12a",
-            "431bf26b.9f95ec",
-            "cd835689.247ef8",
-            "44e52f75.eb6fa"
-        ],
-        "x": 74,
-        "y": 19,
-        "w": 1072,
-        "h": 702
-    },
-    {
-        "id": "5259452bc4a51d7b",
-        "type": "group",
-        "z": "243cac42.fdcd3c",
-        "name": "ElectroValves Operation",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "d9c4f810.96fa38",
-            "d31355b2.6b7ef",
-            "f74b6fedeed9d7a6",
-            "0cdfc39ded51582f",
-            "64bdb0f0984a9e99",
-            "1da133144cb9ab8a",
-            "dd3861e09e013307",
-            "423c8255f686304e",
-            "7629c9df42299b52",
-            "bb38b8c6467ffec9",
-            "6fe25145265dfc24"
-        ],
-        "x": 94,
-        "y": 759,
-        "w": 752,
-        "h": 362
-    },
-    {
-        "id": "86dc799a4340918e",
-        "type": "group",
-        "z": "de6047b6e269aa2d",
-        "name": "Environmental Monitoring",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "9e20ac30aee2e7cf",
-            "ed77d4256df2d24f",
-            "323bca7b58983a3e",
-            "cad8adf2a74cca0e",
-            "1fc812370ea29976",
-            "032be02c2781222c",
-            "11c8f682f31c6499",
-            "5d19a47a553240d3",
-            "414307de8f738fe2",
-            "3f5ac05726849b62",
-            "7f8871f127b9fd9e",
-            "d784bd2793537b7e"
-        ],
-        "x": 174,
-        "y": 59,
-        "w": 672,
-        "h": 482
-    },
-    {
-        "id": "63bdbad96c6c866f",
-        "type": "group",
-        "z": "2929f7b53fc923ef",
-        "name": "Outlet Pressure Sensor Thyracont",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "33885c4236198a1d",
-            "36fd090493e29f93",
-            "64ec612ddd21e4cd",
-            "3a912f03d0333c28",
-            "a1eef42bb8f72f9f",
-            "be92780f5508341c",
-            "45d1f9a221e60ef2"
-        ],
-        "x": 54,
-        "y": 59,
-        "w": 972,
-        "h": 162
     },
     {
         "id": "3a77962e97d02525",
@@ -3758,107 +3720,6 @@
         "y": 79,
         "w": 1172,
         "h": 142
-    },
-    {
-        "id": "28fcea42a9100cae",
-        "type": "group",
-        "z": "2929f7b53fc923ef",
-        "name": "Catch Erros: Transmitters",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "05feb3979973f7ff",
-            "f38f1f08bcc24bdb",
-            "ba7be76b7f218b84",
-            "1bc7f785464975af",
-            "95eb3960c2e5ba89"
-        ],
-        "x": 24,
-        "y": 659,
-        "w": 782,
-        "h": 162,
-        "info": "This group catches the errors in all the nodes of the flow. \nSecuruty function only makes the msg earier and Trim topic is to eliminate /dev/. \nCopy the group to add security in others flows. \nNOTE: Remember to change link out end.\n\n\nHere we only select subflows becouse they trigger the errors in these devices. "
-    },
-    {
-        "id": "581f3e732eab82ac",
-        "type": "group",
-        "z": "44b2d39a758b1b4b",
-        "name": "Pressure Controller",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "9eface1706386705",
-            "290e074640fdfb17",
-            "e1dd870df50f05a7",
-            "5f7211b645fa37fa"
-        ],
-        "x": 48,
-        "y": 53,
-        "w": 1224,
-        "h": 1354
-    },
-    {
-        "id": "5ee8327d0a6bfba1",
-        "type": "group",
-        "z": "44b2d39a758b1b4b",
-        "name": "In Flow Controller",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "bdc84199775ddd65",
-            "086f2900f4b49b1b",
-            "aaf32055c816159c",
-            "836e37c90e753dfa"
-        ],
-        "x": 1308,
-        "y": 53,
-        "w": 1224,
-        "h": 1494
-    },
-    {
-        "id": "91dcd7fe7bccf487",
-        "type": "group",
-        "z": "44b2d39a758b1b4b",
-        "name": "Flow Sensor",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "3a77962e97d02525",
-            "860661d54807a9bc",
-            "480831d95427e802"
-        ],
-        "x": 3878,
-        "y": 53,
-        "w": 1224,
-        "h": 1054
-    },
-    {
-        "id": "c6db76d90f894678",
-        "type": "group",
-        "z": "7184b44879b683fb",
-        "name": "Connection",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "b5ded52e516759d1",
-            "fb99cca655c0728b",
-            "911b1c2947a89847",
-            "db9f3650da93a518",
-            "d153b317c58b1248",
-            "42e96d7eda5476a1",
-            "d5a87f70210a013f",
-            "67ea67d370992495",
-            "472d8c49c60295be"
-        ],
-        "x": 54,
-        "y": 1719,
-        "w": 672,
-        "h": 302
     },
     {
         "id": "e1dd870df50f05a7",
@@ -3992,49 +3853,6 @@
         "y": 499,
         "w": 672,
         "h": 302
-    },
-    {
-        "id": "12032be895fa76ab",
-        "type": "group",
-        "z": "44b2d39a758b1b4b",
-        "name": "Catch Erros",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "715fad08a1a4506b",
-            "a730d26cc81610ac",
-            "ae8ea32e421fa0ba",
-            "70357663e62eb493",
-            "ea58e129b16e6e92"
-        ],
-        "x": 3944,
-        "y": 1359,
-        "w": 782,
-        "h": 162,
-        "info": "This group catches the errors in all the nodes of the flow. \nSecuruty function only makes the msg earier and Trim topic is to eliminate /dev/. \nCopy the group to add security in others flows. \nNOTE: Remember to change link out end.\n\n\nHere we only select subflows becouse they trigger the errors in these devices. "
-    },
-    {
-        "id": "b743918e1c8c2488",
-        "type": "group",
-        "z": "44b2d39a758b1b4b",
-        "name": "Out Flow Controller",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "4b0a6b86bc2c5ad7",
-            "a68ec89d25e062f4",
-            "56b05b496dc78a04",
-            "1c129dfeb05bcbe2",
-            "81cf755189fae457",
-            "ce609db0e079068e",
-            "16aa078f89cc21ce"
-        ],
-        "x": 2558,
-        "y": 53,
-        "w": 1294,
-        "h": 2154
     },
     {
         "id": "4b0a6b86bc2c5ad7",
@@ -4274,28 +4092,210 @@
         "h": 302
     },
     {
-        "id": "26404baffafe6277",
+        "id": "b86e0b330ffbda47",
         "type": "group",
-        "z": "2929f7b53fc923ef",
-        "name": "Connection",
+        "z": "7184b44879b683fb",
+        "g": "e228fc818a13a83f",
+        "name": "Limit configuration & Query",
         "style": {
             "label": true
         },
         "nodes": [
-            "c2bc5791e43d4bed",
-            "49af197954d36ea6",
-            "4cfc3f86e80461ce",
-            "205b18769047bb27",
-            "7a1bb1706b9ababa",
-            "62a06ba0cf8f26bb",
-            "d32431d039a70f9b",
-            "cf9c253b19f957e2",
-            "bcc0e35a7836839d"
+            "5ad05e5434a36e2d",
+            "6e78813d0e935866",
+            "bdad8b307fde264c",
+            "b1814b9ca7f59934",
+            "08fa590f7f6bcfb6",
+            "f3fc861f7c902957",
+            "01dd02a1e8566c33",
+            "afc29e2a35470552",
+            "2e08fb1989aa5eed",
+            "364735f04edf4765",
+            "8b5eb8ba66d8f085",
+            "03d607b02dccd84f",
+            "d4bc23b0d19203b6",
+            "5f9544a0e5342937",
+            "27bb7f9c94078bf5",
+            "316a4ad44fda0660",
+            "3c395ee147ffe1f7",
+            "4f02227a29d7e24a",
+            "7d083d593d300212",
+            "ec79178c7e1dd0fb",
+            "ba6b247d1a4fde36",
+            "887024a79833a324"
         ],
-        "x": 54,
-        "y": 279,
-        "w": 652,
-        "h": 302
+        "x": 1314,
+        "y": 379,
+        "w": 1202,
+        "h": 242
+    },
+    {
+        "id": "4b7c7253093a074f",
+        "type": "group",
+        "z": "7184b44879b683fb",
+        "g": "e228fc818a13a83f",
+        "name": "En/Dis Limits",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "56e3623f0e2f1864",
+            "7ebd26b9732bc2f4",
+            "f7ccc21f617da64e",
+            "2978e99821c3f7a4",
+            "4a5446fcbe06e148",
+            "7c30dd7520fc8e36",
+            "4299fabca352c58e",
+            "56468e1734bd3d50",
+            "931bf66fdf5ebc4f",
+            "3854c0eb5711d980",
+            "e501791be98bca33",
+            "3f39c7239b5b7355",
+            "1e9ebc945b3e6dad",
+            "38aacd09e2582a71"
+        ],
+        "x": 1314,
+        "y": 79,
+        "w": 1072,
+        "h": 142
+    },
+    {
+        "id": "cab81f61cc45c256",
+        "type": "group",
+        "z": "7184b44879b683fb",
+        "g": "921335a5a84f12eb",
+        "name": "Limit configuration & Query",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e80ae15a0542fbc8",
+            "4e07affecff1a22d",
+            "348e0d0ce7c0486f",
+            "e59c3c00c7aae566",
+            "477331ed23a2938f",
+            "d86c3eee58a863a7",
+            "645151634ef55a86",
+            "94c3852279db1c7c",
+            "2aa453c025fdfe38",
+            "e378ed778eb71c41",
+            "415c2e84f9ba4aa1",
+            "dae4eeaef7bc7ca0",
+            "602c8039bbec3241",
+            "890d875007ced2e3",
+            "40fb4731f9a58fc8",
+            "90872a5b214e6913",
+            "03fb576c3f9634b5",
+            "a86b243262642d54",
+            "799e8019c475c43b",
+            "f8a753a5cb2378bf",
+            "d3bdb64732d5588f"
+        ],
+        "x": 1354,
+        "y": 999,
+        "w": 1182,
+        "h": 242
+    },
+    {
+        "id": "e2a40e4267294a76",
+        "type": "group",
+        "z": "7184b44879b683fb",
+        "g": "921335a5a84f12eb",
+        "name": "En/Dis Limits",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "efa209028400fb01",
+            "760e4037ee9d494d",
+            "f2f9109347e67516",
+            "2eca8b4ef39c38c0",
+            "cfc923b8ac0c733c",
+            "82e28fa6dcbbcfbf",
+            "123624ec19be400f",
+            "9a3036a59b4bdb85",
+            "9509a237d821f4b7",
+            "9b794b59c413a9de",
+            "6167da81b207f6f4",
+            "54cfd3cc6d728aa9",
+            "e35a8e220cca811e",
+            "cb0d69f6e16f2920"
+        ],
+        "x": 1374,
+        "y": 679,
+        "w": 1072,
+        "h": 142
+    },
+    {
+        "id": "79699e531e50fef0",
+        "type": "group",
+        "z": "7184b44879b683fb",
+        "g": "56dfe620b4d590c4",
+        "name": "Limit configuration & Query",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "03891781850b4d05",
+            "9f52a8fc313cfa5a",
+            "03401232a73afac5",
+            "8e893754ffe9eeba",
+            "810d5b6a31ae4b5b",
+            "78390e08738dbfe9",
+            "7c357068847c4d71",
+            "7db7ba71ea2bf78e",
+            "e5bd6b54c417cc24",
+            "4a73f5e4abbfb203",
+            "692b86a14f3ed282",
+            "ce3315fec46501cf",
+            "a2ac639338e54a8b",
+            "de8aa80a4a7ebb97",
+            "7834e930f5da8ae4",
+            "352a5917e1b34798",
+            "6bbc6bc3314cce12",
+            "44e62a822b61475d",
+            "6f25b5bcb8301aa2",
+            "62cec008d10c32fd",
+            "c39453382a6399da",
+            "a5fc1fba80b72781",
+            "24f2fa1c68cc454e",
+            "04566b411967803f",
+            "e925121153aa7594"
+        ],
+        "x": 1354,
+        "y": 1619,
+        "w": 1512,
+        "h": 262
+    },
+    {
+        "id": "67be9094c6dabcf5",
+        "type": "group",
+        "z": "7184b44879b683fb",
+        "g": "56dfe620b4d590c4",
+        "name": "En/Dis Limits",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "6190a7c1259123f4",
+            "a33f440baa056db8",
+            "7a8615da51a3fb0e",
+            "9dc78f6a185ec070",
+            "bc8c956581f3fc1a",
+            "324a8b35d71e4852",
+            "53b9a472925b873f",
+            "1ba31b12b8d92cb9",
+            "3143e3694bd9ccb0",
+            "4503bebdb026de01",
+            "6e9150bf60e0d44f",
+            "9005602f4a7a2744",
+            "0b583209995aa714",
+            "b0583adf4301b387"
+        ],
+        "x": 1354,
+        "y": 1319,
+        "w": 1092,
+        "h": 142
     },
     {
         "id": "67018f7a.7112a8",
