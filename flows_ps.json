@@ -566,7 +566,8 @@
             "724a458b622dfa7a",
             "cab4e02192d5d467",
             "044126b626f1e11f",
-            "22cbd4aab136e0b6"
+            "22cbd4aab136e0b6",
+            "1517598b125e0ab3"
         ],
         "x": 434,
         "y": 279,
@@ -6282,11 +6283,11 @@
         "g": "11479d46f0320bd9",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 790,
+        "x": 750,
         "y": 660,
         "wires": [
             [
-                "be8c52a530685b2b"
+                "1517598b125e0ab3"
             ]
         ]
     },
@@ -6323,7 +6324,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 940,
+        "x": 1040,
         "y": 640,
         "wires": [
             [],
@@ -6353,7 +6354,7 @@
         "format": "{{msg.payload}}",
         "layout": "col-center",
         "className": "",
-        "x": 1100,
+        "x": 1200,
         "y": 700,
         "wires": []
     },
@@ -6463,7 +6464,7 @@
             "f9860d35c46126bc",
             "6e939dba477efdc2"
         ],
-        "x": 1105,
+        "x": 1135,
         "y": 660,
         "wires": []
     },
@@ -8648,6 +8649,32 @@
         "wires": [
             [
                 "95d5d4fb5ad20191"
+            ]
+        ]
+    },
+    {
+        "id": "1517598b125e0ab3",
+        "type": "switch",
+        "z": "1c646c2a350b2d7c",
+        "g": "11479d46f0320bd9",
+        "name": "",
+        "property": "status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "OK",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 910,
+        "y": 660,
+        "wires": [
+            [
+                "be8c52a530685b2b"
             ]
         ]
     },
