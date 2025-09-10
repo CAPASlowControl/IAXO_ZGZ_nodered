@@ -93,14 +93,14 @@
         "id": "96df9d1b.b1b87",
         "type": "tab",
         "label": "OPC UA",
-        "disabled": false,
+        "disabled": true,
         "info": "Flex-Server node stablish the OPC UA server. \nTo modify the Address Space go to Address and change which nedeed. \n\nThe refreshing of the data is made with flow variables. \nEach variable gets flow variable and thhe flex server upload the new value to the server. \n"
     },
     {
         "id": "ac988ebf643b965c",
         "type": "tab",
         "label": "DATABASE",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -2746,9 +2746,9 @@
             "4f7d3234015e1d43",
             "57f0971a909279ed"
         ],
-        "x": 304,
+        "x": 314,
         "y": 1099,
-        "w": 402,
+        "w": 392,
         "h": 242
     },
     {
