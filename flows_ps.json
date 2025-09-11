@@ -305,7 +305,7 @@
         ],
         "x": 414,
         "y": 999,
-        "w": 1052,
+        "w": 1072,
         "h": 982
     },
     {
@@ -417,15 +417,13 @@
             "1dbc15b48593a617",
             "d50f768317ddc837",
             "011c2952ea3cb067",
-            "ef8c95fab432c777",
-            "0bbf252392720227",
             "4f9cc580d1f0586b",
             "260cdde94195d53f",
-            "ab303ffa9683887e"
+            "cca4e7b037fe904d"
         ],
-        "x": 414,
-        "y": 3679,
-        "w": 1232,
+        "x": 2394,
+        "y": 479,
+        "w": 1202,
         "h": 282
     },
     {
@@ -451,12 +449,13 @@
             "9f7bdb53d3e34762",
             "9dc6293c6b256c2c",
             "4e8ffae17a5557b1",
-            "deeb14e66bd47f64"
+            "deeb14e66bd47f64",
+            "7fdaad9a3eb85995"
         ],
-        "x": 1674,
-        "y": 3659,
-        "w": 1162,
-        "h": 362
+        "x": 3754,
+        "y": 499,
+        "w": 1152,
+        "h": 342
     },
     {
         "id": "4027f16d500e13a4",
@@ -1055,7 +1054,27 @@
         "z": "1c646c2a350b2d7c",
         "name": "spacer",
         "group": "c439a095b5188232",
-        "order": 29,
+        "order": 30,
+        "width": "0",
+        "height": "0"
+    },
+    {
+        "id": "84f5c31db5c79f15",
+        "type": "ui_spacer",
+        "z": "1c646c2a350b2d7c",
+        "name": "spacer",
+        "group": "c439a095b5188232",
+        "order": 20,
+        "width": "0",
+        "height": "0"
+    },
+    {
+        "id": "b4ce7a4fc1d8b798",
+        "type": "ui_spacer",
+        "z": "1c646c2a350b2d7c",
+        "name": "spacer",
+        "group": "a611b3b4.f109b",
+        "order": 20,
         "width": "0",
         "height": "0"
     },
@@ -2823,7 +2842,6 @@
         "id": "3e8c7b6e70d18426",
         "type": "ui_text_input",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "f78e860321dc0a82",
         "name": "Ch0 Trip Recover ",
         "label": "Trip Recover It's",
@@ -2851,11 +2869,11 @@
         "id": "5d44498a7f0ea00a",
         "type": "function",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "f78e860321dc0a82",
         "name": "",
         "func": "var output = msg.payload;\n\nvar ch0ret = global.get('ch0ret');\nif (!ch0ret) {\n    ch0ret = 0;\n}\n\nch0ret = output;\n\n\n\nglobal.set('ch0ret',ch0ret);\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -2872,13 +2890,12 @@
         "id": "eb39d4671c156dde",
         "type": "ui_text_input",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "f78e860321dc0a82",
         "name": "Ch1 Trip Recover ",
         "label": "Trip Recover It's",
         "tooltip": "",
         "group": "c439a095b5188232",
-        "order": 23,
+        "order": 24,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -2900,11 +2917,11 @@
         "id": "e2da9fbc9dc434b8",
         "type": "function",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "f78e860321dc0a82",
         "name": "",
         "func": "var output = msg.payload;\n\nvar ch1ret = global.get('ch1ret');\nif (!ch1ret) {\n    ch1ret = 0;\n}\n\nch1ret = output;\n\n\n\nglobal.set('ch1ret',ch1ret);\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -2921,7 +2938,6 @@
         "id": "44d234504554b755",
         "type": "ui_text",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "f78e860321dc0a82",
         "group": "a611b3b4.f109b",
         "order": 25,
@@ -2932,15 +2948,18 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
         "x": 3210,
-        "y": 320,
+        "y": 340,
         "wires": []
     },
     {
         "id": "9391d0719721719e",
         "type": "function",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "f78e860321dc0a82",
         "name": "",
         "func": "var output = msg.payload;\n\nvar ch0ret = global.get('ch0ret');\nif (!ch0ret) {\n    ch0ret = 0;\n}\n\nvar ch1ret = global.get('ch1ret');\nif (!ch1ret) {\n    ch1ret = 0;\n}\n\n\n\n\n\n\nvar msg1 = {payload : ch0ret};\nvar msg2 = {payload : ch1ret};\n\n\nreturn [msg1, msg2];",
@@ -2967,10 +2986,9 @@
         "id": "cb3480683edea9ef",
         "type": "ui_text",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "f78e860321dc0a82",
         "group": "c439a095b5188232",
-        "order": 24,
+        "order": 25,
         "width": 0,
         "height": 0,
         "name": "Ch1 Trip Recover It's Act",
@@ -2979,14 +2997,13 @@
         "layout": "row-spread",
         "className": "",
         "x": 3210,
-        "y": 360,
+        "y": 400,
         "wires": []
     },
     {
         "id": "e04b9fa21cef7060",
         "type": "ui_text",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "b4b83c066f8cd2bc",
         "group": "a611b3b4.f109b",
         "order": 26,
@@ -2997,15 +3014,14 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1310,
-        "y": 3780,
+        "x": 3290,
+        "y": 560,
         "wires": []
     },
     {
         "id": "723fbe18e91e071e",
         "type": "ui_button",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "b4b83c066f8cd2bc",
         "name": "Reset Trip Counter",
         "group": "a611b3b4.f109b",
@@ -3023,12 +3039,11 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 910,
-        "y": 3820,
+        "x": 2890,
+        "y": 600,
         "wires": [
             [
-                "a8f6e382125e79c7",
-                "ab303ffa9683887e"
+                "a8f6e382125e79c7"
             ]
         ]
     },
@@ -3036,15 +3051,14 @@
         "id": "e2eb1c8bc72095c5",
         "type": "serial request",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "b4b83c066f8cd2bc",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 1330,
-        "y": 3860,
+        "x": 3310,
+        "y": 640,
         "wires": [
             [
-                "1dbc15b48593a617"
+                "cca4e7b037fe904d"
             ]
         ]
     },
@@ -3052,7 +3066,6 @@
         "id": "a8f6e382125e79c7",
         "type": "function",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "b4b83c066f8cd2bc",
         "name": "",
         "func": "var tripstate = msg.payload;\nvar msg1;\nvar msg2;\nvar msg3;\nvar msg4;\nvar slack_alarm = 'Numbers of trip recovery reached in Channel 0, shutting down HV power supply';\n\nvar cnt0 = flow.get('cnt0');\nif (!cnt0) {\n    cnt0 = 0;\n    flow.set('cnt0',cnt0);\n}\n\nvar cnt0h = flow.get('cnt0h');\nif (!cnt0h) {\n    cnt0h = 0;\n    flow.set('cnt0h',cnt0h);\n}\n\n\nvar ch0ret = global.get('ch0ret');\nif (!ch0ret) {\n    ch0ret = 0;\n}\n\nvar ch0recon = flow.get('ch0recon');\nif (!ch0recon) {\n    ch0recon = 0;\n}\n\n\n\nif (tripstate == \"rest\"){\n    cnt0 = 0;    \n    flow.set('cnt0',cnt0);\n}\n\nif (tripstate == \"resth\"){\n    cnt0h = 0;    \n    flow.set('cnt0h',cnt0h);\n}\n\n\n\nif(ch0recon == 1){\n    if(cnt0 < ch0ret){\n        if(tripstate == true){\n            cnt0h = cnt0h + 1;\n            flow.set('cnt0h',cnt0h);\n            cnt0 = cnt0 + 1;\n            flow.set('cnt0',cnt0);\n            msg3 = {payload : \"$BD:00,CMD:SET,PAR:BDCLR\"};\n            //relanza = 1;\n        }\n    }else if(cnt0 == ch0ret){\n        if(tripstate == true){\n            cnt0h = cnt0h + 1;\n            flow.set('cnt0h',cnt0h);\n            cnt0 = cnt0 + 1;\n            flow.set('cnt0',cnt0);\n            //relanza = 1;\n            msg4 = {payload : slack_alarm};\n\n\n        }        \n    }else{        \n        flow.set('ch0recon',0);        \n    }\n}\n\n\nmsg1 = {payload : cnt0};\nmsg2 = {payload : cnt0h};\n//msg4 = {payload : relanza};\n\nreturn [msg1, msg2, msg3, msg4];",
@@ -3062,17 +3075,15 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1100,
-        "y": 3820,
+        "x": 3080,
+        "y": 600,
         "wires": [
             [
                 "e04b9fa21cef7060",
-                "011c2952ea3cb067",
-                "ef8c95fab432c777"
+                "011c2952ea3cb067"
             ],
             [
-                "248687128ed986e4",
-                "0bbf252392720227"
+                "248687128ed986e4"
             ],
             [
                 "e2eb1c8bc72095c5",
@@ -3087,7 +3098,6 @@
         "id": "e293a52a9b6af3d3",
         "type": "function",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "f78e860321dc0a82",
         "name": "",
         "func": "var output = msg.payload;\n\nvar ch0recon = flow.get('ch0recon');\nif (!ch0recon) {\n    ch0recon = 0;\n}\n\nch0recon = output;\n\n\n\nflow.set('ch0recon',ch0recon);\n",
@@ -3109,7 +3119,6 @@
         "id": "9e3a17f4413d9f02",
         "type": "function",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "f78e860321dc0a82",
         "name": "",
         "func": "var output = msg.payload;\n\nvar ch1recon = flow.get('ch1recon');\nif (!ch1recon) {\n    ch1recon = 0;\n}\n\nch1recon = output;\n\n\n\nflow.set('ch1recon',ch1recon);\n",
@@ -3164,7 +3173,6 @@
         "id": "248687128ed986e4",
         "type": "ui_text",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "b4b83c066f8cd2bc",
         "group": "a611b3b4.f109b",
         "order": 27,
@@ -3175,15 +3183,14 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1340,
-        "y": 3820,
+        "x": 3320,
+        "y": 600,
         "wires": []
     },
     {
         "id": "a65be51968b46afb",
         "type": "ui_button",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "b4b83c066f8cd2bc",
         "name": "Reset Historic Trip Counter",
         "group": "a611b3b4.f109b",
@@ -3201,8 +3208,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 880,
-        "y": 3880,
+        "x": 2860,
+        "y": 660,
         "wires": [
             [
                 "a8f6e382125e79c7"
@@ -3213,7 +3220,6 @@
         "id": "8de91c5b813c63fb",
         "type": "ui_led",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "f78e860321dc0a82",
         "order": 23,
         "group": "a611b3b4.f109b",
@@ -3246,11 +3252,11 @@
         "id": "a87fbd935461eaca",
         "type": "function",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "f78e860321dc0a82",
         "name": "",
         "func": "\nvar ch0recon = flow.get('ch0recon');\nif (!ch0recon) {\n    ch0recon = 0;\n}\n\nmsg = {payload : ch0recon};\n\nreturn [msg];\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -3267,9 +3273,8 @@
         "id": "7de9f6bd2c3c5c2f",
         "type": "ui_led",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "f78e860321dc0a82",
-        "order": 22,
+        "order": 23,
         "group": "c439a095b5188232",
         "width": 0,
         "height": 0,
@@ -3300,7 +3305,6 @@
         "id": "7ae7f4c8d7a424bf",
         "type": "function",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "f78e860321dc0a82",
         "name": "",
         "func": "\nvar ch1recon = flow.get('ch1recon');\nif (!ch1recon) {\n    ch1recon = 0;\n}\n\nmsg = {payload : ch1recon};\n\nreturn [msg];\n",
@@ -3322,7 +3326,6 @@
         "id": "ab394cde4e02c1e1",
         "type": "inject",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "f78e860321dc0a82",
         "name": "",
         "props": [
@@ -3632,15 +3635,14 @@
         "id": "1dbc15b48593a617",
         "type": "link out",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "b4b83c066f8cd2bc",
         "name": "Ch0SrcRst",
         "mode": "link",
         "links": [
             "6273bf7eddfdf1a9"
         ],
-        "x": 1535,
-        "y": 3860,
+        "x": 3555,
+        "y": 640,
         "wires": []
     },
     {
@@ -3763,7 +3765,6 @@
         "id": "5f4ecc2ec62580db",
         "type": "ui_button",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "f78e860321dc0a82",
         "name": "Enable Trip Auto Recover 0",
         "group": "a611b3b4.f109b",
@@ -3793,7 +3794,6 @@
         "id": "b76c1f97b7c7ca3f",
         "type": "ui_button",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "f78e860321dc0a82",
         "name": "Disable Trip Auto Recover 0",
         "group": "a611b3b4.f109b",
@@ -3823,11 +3823,10 @@
         "id": "612493465a23b847",
         "type": "ui_button",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "f78e860321dc0a82",
         "name": "Enable Trip Auto Recover 1",
         "group": "c439a095b5188232",
-        "order": 20,
+        "order": 21,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -3853,11 +3852,10 @@
         "id": "e41bfe33a5ddd665",
         "type": "ui_button",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "f78e860321dc0a82",
         "name": "Disable Trip Auto Recover 1",
         "group": "c439a095b5188232",
-        "order": 21,
+        "order": 22,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -3883,7 +3881,6 @@
         "id": "658d5a1f0d1fe0af",
         "type": "inject",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "b4b83c066f8cd2bc",
         "name": "",
         "props": [
@@ -3902,8 +3899,8 @@
         "topic": "",
         "payload": "::",
         "payloadType": "str",
-        "x": 510,
-        "y": 3820,
+        "x": 2490,
+        "y": 600,
         "wires": [
             [
                 "d50f768317ddc837"
@@ -3914,7 +3911,6 @@
         "id": "d50f768317ddc837",
         "type": "function",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "b4b83c066f8cd2bc",
         "name": "",
         "func": "var msg1;\n\n\nvar ch0on = flow.get('ch0on');\nif (!ch0on) {\n    ch0on = 0;\n}\n\nvar ch0recon = flow.get('ch0recon');\nif (!ch0recon) {\n    ch0recon = 0;\n}\n\n\nif((ch0recon == 1) & (ch0on == 1)){\n    msg1 = {payload : 1};\n}\n    \nreturn [msg1];",
@@ -3923,8 +3919,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
-        "y": 3820,
+        "x": 2660,
+        "y": 600,
         "wires": [
             [
                 "723fbe18e91e071e"
@@ -4052,13 +4048,12 @@
         "id": "011c2952ea3cb067",
         "type": "link out",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "b4b83c066f8cd2bc",
         "name": "Ch0TripC",
         "mode": "link",
         "links": [],
-        "x": 1255,
-        "y": 3740,
+        "x": 3235,
+        "y": 520,
         "wires": []
     },
     {
@@ -4834,7 +4829,7 @@
         "type": "ui_led",
         "z": "1c646c2a350b2d7c",
         "g": "4027f16d500e13a4",
-        "order": 30,
+        "order": 31,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -4866,7 +4861,7 @@
         "type": "ui_led",
         "z": "1c646c2a350b2d7c",
         "g": "4027f16d500e13a4",
-        "order": 31,
+        "order": 32,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -4898,7 +4893,7 @@
         "type": "ui_led",
         "z": "1c646c2a350b2d7c",
         "g": "4027f16d500e13a4",
-        "order": 32,
+        "order": 33,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -4930,7 +4925,7 @@
         "type": "ui_led",
         "z": "1c646c2a350b2d7c",
         "g": "4027f16d500e13a4",
-        "order": 33,
+        "order": 34,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -4962,7 +4957,7 @@
         "type": "ui_led",
         "z": "1c646c2a350b2d7c",
         "g": "4027f16d500e13a4",
-        "order": 34,
+        "order": 35,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -4994,7 +4989,7 @@
         "type": "ui_led",
         "z": "1c646c2a350b2d7c",
         "g": "4027f16d500e13a4",
-        "order": 35,
+        "order": 36,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -5026,7 +5021,7 @@
         "type": "ui_led",
         "z": "1c646c2a350b2d7c",
         "g": "4027f16d500e13a4",
-        "order": 36,
+        "order": 37,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -5058,7 +5053,7 @@
         "type": "ui_led",
         "z": "1c646c2a350b2d7c",
         "g": "4027f16d500e13a4",
-        "order": 37,
+        "order": 38,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -5090,7 +5085,7 @@
         "type": "ui_led",
         "z": "1c646c2a350b2d7c",
         "g": "4027f16d500e13a4",
-        "order": 38,
+        "order": 39,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -5122,7 +5117,7 @@
         "type": "ui_led",
         "z": "1c646c2a350b2d7c",
         "g": "4027f16d500e13a4",
-        "order": 39,
+        "order": 40,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -5155,7 +5150,7 @@
         "z": "1c646c2a350b2d7c",
         "d": true,
         "g": "4027f16d500e13a4",
-        "order": 40,
+        "order": 41,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -5186,7 +5181,6 @@
         "id": "d276498aae06fcb7",
         "type": "function",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "9a7f2fbe981a63d5",
         "name": "",
         "func": "var tripstate = msg.payload;\nvar msg1;\nvar msg2;\nvar msg3;\nvar msg4;\n\nvar relanza = 0;\nvar slack_alarm = 'Numbers of trip recovery reached in Channel 1, shutting down HV power supply'\n\nvar cnt1 = flow.get('cnt1');\nif (!cnt1) {\n    cnt1 = 0;\n    flow.set('cnt1',cnt1);\n}\n\nvar cnt1h = flow.get('cnt1h');\nif (!cnt1h) {\n    cnt1h = 0;\n    flow.set('cnt1h',cnt1h);\n}\n\n\nvar ch1ret = global.get('ch1ret');\nif (!ch1ret) {\n    ch1ret = 0;\n}\n\nvar ch1recon = flow.get('ch1recon');\nif (!ch1recon) {\n    ch1recon = 0;\n}\n\n\n\nif (tripstate == \"rest\"){\n    cnt1 = 0;    \n    flow.set('cnt1',cnt1);\n}\n\nif (tripstate == \"resth\"){\n    cnt1h = 0;    \n    flow.set('cnt1h',cnt1h);\n}\n\n\n\nif(ch1recon == 1){\n    if(cnt1 < ch1ret){\n        if(tripstate == true){\n            cnt1h = cnt1h + 1;\n            flow.set('cnt1h',cnt1h);\n            cnt1 = cnt1 + 1;\n            flow.set('cnt1',cnt1);\n            msg3 = {payload : \"$BD:00,CMD:SET,PAR:BDCLR\"};\n            //relanza = 1;\n        }\n    }else if(cnt1 == ch1ret){\n        if(tripstate == true){\n            cnt1h = cnt1h + 1;\n            flow.set('cnt1h',cnt1h);\n            cnt1 = cnt1 + 1;\n            flow.set('cnt1',cnt1);\n            //relanza = 1;\n            msg4 = {payload : slack_alarm};\n            \n        }          \n    }else{\n        flow.set('ch1recon',0);        \n    }\n}\n\n\nmsg1 = {payload : cnt1};\nmsg2 = {payload : cnt1h};\n//msg4 = {payload : relanza};\n\nreturn [msg1, msg2, msg3, msg4];",
@@ -5196,8 +5190,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2360,
-        "y": 3840,
+        "x": 4400,
+        "y": 680,
         "wires": [
             [
                 "8b442d01111911b4",
@@ -5221,10 +5215,9 @@
         "id": "8b442d01111911b4",
         "type": "ui_text",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "9a7f2fbe981a63d5",
         "group": "c439a095b5188232",
-        "order": 25,
+        "order": 26,
         "width": 0,
         "height": 0,
         "name": "Trip Counter",
@@ -5232,19 +5225,18 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 2570,
-        "y": 3800,
+        "x": 4610,
+        "y": 640,
         "wires": []
     },
     {
         "id": "2475c425204f6fde",
         "type": "ui_button",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "9a7f2fbe981a63d5",
         "name": "Reset Trip Counter",
         "group": "c439a095b5188232",
-        "order": 27,
+        "order": 28,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -5258,8 +5250,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2150,
-        "y": 3840,
+        "x": 4190,
+        "y": 680,
         "wires": [
             [
                 "d276498aae06fcb7",
@@ -5271,15 +5263,14 @@
         "id": "068afa500f6d0f0f",
         "type": "serial request",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "9a7f2fbe981a63d5",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 2590,
-        "y": 3880,
+        "x": 4630,
+        "y": 720,
         "wires": [
             [
-                "7592ab3b8344bb50"
+                "7fdaad9a3eb85995"
             ]
         ]
     },
@@ -5304,10 +5295,9 @@
         "id": "0f2262e129109dde",
         "type": "ui_text",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "9a7f2fbe981a63d5",
         "group": "c439a095b5188232",
-        "order": 26,
+        "order": 27,
         "width": 0,
         "height": 0,
         "name": "Historic Trip Counter",
@@ -5315,19 +5305,18 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 2600,
-        "y": 3840,
+        "x": 4640,
+        "y": 680,
         "wires": []
     },
     {
         "id": "a3ca7a51f9c5098d",
         "type": "ui_button",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "9a7f2fbe981a63d5",
         "name": "Reset Historic Trip Counter",
         "group": "c439a095b5188232",
-        "order": 28,
+        "order": 29,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -5341,8 +5330,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2140,
-        "y": 3900,
+        "x": 4180,
+        "y": 740,
         "wires": [
             [
                 "d276498aae06fcb7"
@@ -5353,22 +5342,20 @@
         "id": "7592ab3b8344bb50",
         "type": "link out",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "9a7f2fbe981a63d5",
         "name": "Ch1SrcRst",
         "mode": "link",
         "links": [
             "71a0fce5e5adf030"
         ],
-        "x": 2795,
-        "y": 3880,
+        "x": 4865,
+        "y": 720,
         "wires": []
     },
     {
         "id": "d7f2c84be1a77cff",
         "type": "inject",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "9a7f2fbe981a63d5",
         "name": "",
         "props": [
@@ -5387,8 +5374,8 @@
         "topic": "",
         "payload": "::",
         "payloadType": "str",
-        "x": 1770,
-        "y": 3840,
+        "x": 3850,
+        "y": 680,
         "wires": [
             [
                 "61abc4503fa58732"
@@ -5399,7 +5386,6 @@
         "id": "61abc4503fa58732",
         "type": "function",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "9a7f2fbe981a63d5",
         "name": "",
         "func": "var msg1;\n\n\nvar ch1on = flow.get('ch1on');\nif (!ch1on) {\n    ch1on = 0;\n}\n\nvar ch1recon = flow.get('ch1recon');\nif (!ch1recon) {\n    ch1recon = 0;\n}\n\n\nif((ch1recon == 1) & (ch1on == 1)){\n    msg1 = {payload : 1};\n}\n    \nreturn [msg1];",
@@ -5408,8 +5394,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1940,
-        "y": 3840,
+        "x": 4000,
+        "y": 680,
         "wires": [
             [
                 "2475c425204f6fde"
@@ -5420,13 +5406,12 @@
         "id": "89139c3b0e7f8f32",
         "type": "link out",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "9a7f2fbe981a63d5",
         "name": "Ch1TripC",
         "mode": "link",
         "links": [],
-        "x": 2515,
-        "y": 3760,
+        "x": 4555,
+        "y": 600,
         "wires": []
     },
     {
@@ -5655,56 +5640,17 @@
         "wires": []
     },
     {
-        "id": "ef8c95fab432c777",
-        "type": "debug",
-        "z": "1c646c2a350b2d7c",
-        "d": true,
-        "g": "b4b83c066f8cd2bc",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1450,
-        "y": 3740,
-        "wires": []
-    },
-    {
-        "id": "0bbf252392720227",
-        "type": "debug",
-        "z": "1c646c2a350b2d7c",
-        "d": true,
-        "g": "b4b83c066f8cd2bc",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1550,
-        "y": 3800,
-        "wires": []
-    },
-    {
         "id": "a23f60a373bd16f1",
         "type": "link out",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "9a7f2fbe981a63d5",
         "name": "ch1 out",
         "mode": "link",
         "links": [
             "634e2f73ab049c45"
         ],
-        "x": 2405,
-        "y": 3940,
+        "x": 4615,
+        "y": 800,
         "wires": []
     },
     {
@@ -5739,15 +5685,14 @@
         "id": "4f9cc580d1f0586b",
         "type": "link out",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "b4b83c066f8cd2bc",
         "name": "ch0 out",
         "mode": "link",
         "links": [
             "634e2f73ab049c45"
         ],
-        "x": 1155,
-        "y": 3900,
+        "x": 3215,
+        "y": 720,
         "wires": []
     },
     {
@@ -5807,7 +5752,6 @@
         "id": "9f7bdb53d3e34762",
         "type": "debug",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "9a7f2fbe981a63d5",
         "name": "Reset trip counter",
         "active": false,
@@ -5818,15 +5762,14 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2140,
-        "y": 3740,
+        "x": 4210,
+        "y": 620,
         "wires": []
     },
     {
         "id": "9dc6293c6b256c2c",
         "type": "debug",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "9a7f2fbe981a63d5",
         "name": "Trip counter",
         "active": false,
@@ -5837,15 +5780,14 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2650,
-        "y": 3700,
+        "x": 4690,
+        "y": 540,
         "wires": []
     },
     {
         "id": "4e8ffae17a5557b1",
         "type": "debug",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "9a7f2fbe981a63d5",
         "name": "Historic trip counter",
         "active": false,
@@ -5856,8 +5798,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2690,
-        "y": 3740,
+        "x": 4730,
+        "y": 580,
         "wires": []
     },
     {
@@ -5901,7 +5843,6 @@
         "id": "deeb14e66bd47f64",
         "type": "link out",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "9a7f2fbe981a63d5",
         "name": "DB_CH1_tripslog",
         "mode": "link",
@@ -5911,15 +5852,14 @@
             "a49a8996f9c84483",
             "dc39dc86d8e158dd"
         ],
-        "x": 2565,
-        "y": 3980,
+        "x": 4615,
+        "y": 760,
         "wires": []
     },
     {
         "id": "260cdde94195d53f",
         "type": "link out",
         "z": "1c646c2a350b2d7c",
-        "d": true,
         "g": "b4b83c066f8cd2bc",
         "name": "DB_CH0_tripslog",
         "mode": "link",
@@ -5929,26 +5869,8 @@
             "d7b9dfdab4346d65",
             "a37a7bcfa7bf3ae3"
         ],
-        "x": 1285,
-        "y": 3920,
-        "wires": []
-    },
-    {
-        "id": "ab303ffa9683887e",
-        "type": "debug",
-        "z": "1c646c2a350b2d7c",
-        "d": true,
-        "g": "b4b83c066f8cd2bc",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 850,
-        "y": 3720,
+        "x": 3285,
+        "y": 680,
         "wires": []
     },
     {
@@ -7114,7 +7036,7 @@
         "font": "",
         "fontSize": "",
         "color": "#000000",
-        "x": 1340,
+        "x": 1360,
         "y": 1300,
         "wires": []
     },
@@ -7266,7 +7188,7 @@
         "font": "",
         "fontSize": "",
         "color": "#000000",
-        "x": 1370,
+        "x": 1380,
         "y": 1100,
         "wires": []
     },
@@ -7589,7 +7511,7 @@
         "font": "",
         "fontSize": "",
         "color": "#000000",
-        "x": 1360,
+        "x": 1370,
         "y": 1700,
         "wires": []
     },
@@ -7893,7 +7815,7 @@
         "font": "",
         "fontSize": "",
         "color": "#000000",
-        "x": 2520,
+        "x": 2540,
         "y": 1340,
         "wires": []
     },
@@ -8045,7 +7967,7 @@
         "font": "",
         "fontSize": "",
         "color": "#000000",
-        "x": 2530,
+        "x": 2540,
         "y": 1100,
         "wires": []
     },
@@ -8401,7 +8323,7 @@
         "font": "",
         "fontSize": "",
         "color": "#000000",
-        "x": 2550,
+        "x": 2560,
         "y": 1700,
         "wires": []
     },
@@ -8715,6 +8637,58 @@
         "wires": [
             [
                 "be8c52a530685b2b"
+            ]
+        ]
+    },
+    {
+        "id": "cca4e7b037fe904d",
+        "type": "switch",
+        "z": "1c646c2a350b2d7c",
+        "g": "b4b83c066f8cd2bc",
+        "name": "",
+        "property": "status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "OK",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 3450,
+        "y": 640,
+        "wires": [
+            [
+                "1dbc15b48593a617"
+            ]
+        ]
+    },
+    {
+        "id": "7fdaad9a3eb85995",
+        "type": "switch",
+        "z": "1c646c2a350b2d7c",
+        "g": "9a7f2fbe981a63d5",
+        "name": "",
+        "property": "status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "OK",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 4770,
+        "y": 720,
+        "wires": [
+            [
+                "7592ab3b8344bb50"
             ]
         ]
     },
