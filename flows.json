@@ -2008,12 +2008,15 @@
             "ca0ca62d602e9b17",
             "26bf8097257d54e9",
             "c3a3f1d2b90fd3ba",
-            "391b996bdb7d6683"
+            "391b996bdb7d6683",
+            "8e59e835d9d3dbe8",
+            "649c87cb073a5657",
+            "2a1819a0d3dfa1f9"
         ],
         "x": 1604,
         "y": 779,
-        "w": 1132,
-        "h": 628,
+        "w": 1162,
+        "h": 709.5,
         "info": "This group is for making the nodered reestart automatically. \nBe aware using it. For more information about how to use it read NodeRed Docs in NAS. "
     },
     {
@@ -3196,6 +3199,31 @@
         "h": 302
     },
     {
+        "id": "6a15cc21e1220a2e",
+        "type": "group",
+        "z": "ac988ebf643b965c",
+        "name": "DB insert Fctrl_out",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1fe152b069dae096",
+            "fd6f63bc0d7ae6bc",
+            "c1c3e97af0e3b095",
+            "bb148e32e74452b5",
+            "920c95ef171f900b",
+            "48254e60f5830ef2",
+            "7053b221b10878e8",
+            "7e9d66b645edcd6d",
+            "16801995764a2244",
+            "024480e23f08a507"
+        ],
+        "x": 954,
+        "y": 479,
+        "w": 1012,
+        "h": 202
+    },
+    {
         "id": "eca5bb2e0e780868",
         "type": "group",
         "z": "ac988ebf643b965c",
@@ -4306,31 +4334,6 @@
         "h": 142
     },
     {
-        "id": "6a15cc21e1220a2e",
-        "type": "group",
-        "z": "ac988ebf643b965c",
-        "name": "DB insert Fctrl_out",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "1fe152b069dae096",
-            "fd6f63bc0d7ae6bc",
-            "c1c3e97af0e3b095",
-            "bb148e32e74452b5",
-            "920c95ef171f900b",
-            "48254e60f5830ef2",
-            "7053b221b10878e8",
-            "7e9d66b645edcd6d",
-            "16801995764a2244",
-            "024480e23f08a507"
-        ],
-        "x": 954,
-        "y": 479,
-        "w": 1012,
-        "h": 202
-    },
-    {
         "id": "67018f7a.7112a8",
         "type": "ui_base",
         "theme": {
@@ -5395,6 +5398,16 @@
         "width": "6",
         "collapse": false,
         "className": ""
+    },
+    {
+        "id": "a9ddbb118a71f941",
+        "type": "ui_spacer",
+        "z": "e6abd59fcfef321c",
+        "name": "spacer",
+        "group": "ca35f057d975c469",
+        "order": 4,
+        "width": "0",
+        "height": "0"
     },
     {
         "id": "249465b6f9b25a99",
@@ -31665,7 +31678,7 @@
         "g": "c30986ce38207369",
         "name": "",
         "group": "ca35f057d975c469",
-        "order": 4,
+        "order": 6,
         "width": "6",
         "height": "3",
         "passthru": false,
@@ -33297,6 +33310,81 @@
         "wires": [
             [
                 "d6e7d1c94125f824"
+            ]
+        ]
+    },
+    {
+        "id": "8e59e835d9d3dbe8",
+        "type": "exec",
+        "z": "e6abd59fcfef321c",
+        "g": "c30986ce38207369",
+        "command": "P=$(systemctl show --property MainPID --value nodered); top -b -n1 -em -p$P | grep $P | xargs | cut -d \" \" -f6",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 2190,
+        "y": 1440,
+        "wires": [
+            [
+                "649c87cb073a5657"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "649c87cb073a5657",
+        "type": "ui_text",
+        "z": "e6abd59fcfef321c",
+        "g": "c30986ce38207369",
+        "group": "ca35f057d975c469",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Memory",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2680,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "2a1819a0d3dfa1f9",
+        "type": "inject",
+        "z": "e6abd59fcfef321c",
+        "g": "c30986ce38207369",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1730,
+        "y": 1440,
+        "wires": [
+            [
+                "8e59e835d9d3dbe8"
             ]
         ]
     },
