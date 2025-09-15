@@ -800,6 +800,39 @@
         "color": "#DDAA99"
     },
     {
+        "id": "4c23381ce7e5c87e",
+        "type": "subflow",
+        "name": "THY:SerialInCheck",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "f44e2bd3d50e474e"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 600,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "3ca247190af1be26",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
         "id": "9a5715b539c43b53",
         "type": "group",
         "z": "ac988ebf643b965c",
@@ -2190,7 +2223,8 @@
             "be92780f5508341c",
             "45d1f9a221e60ef2",
             "a39a35f24b9131bd",
-            "d3c61978314ee889"
+            "d3c61978314ee889",
+            "361ad5bdd9772de9"
         ],
         "x": 54,
         "y": 19,
@@ -2339,12 +2373,15 @@
             "62a06ba0cf8f26bb",
             "d32431d039a70f9b",
             "cf9c253b19f957e2",
-            "bcc0e35a7836839d"
+            "bcc0e35a7836839d",
+            "231009a2bfeece0b",
+            "b2eef4dc4310dfc0",
+            "5ad70c0a4c753cfb"
         ],
         "x": 54,
         "y": 279,
-        "w": 652,
-        "h": 302
+        "w": 672,
+        "h": 342
     },
     {
         "id": "6a15cc21e1220a2e",
@@ -6473,6 +6510,64 @@
         "wires": []
     },
     {
+        "id": "f44e2bd3d50e474e",
+        "type": "switch",
+        "z": "4c23381ce7e5c87e",
+        "name": "global.THY_st==1",
+        "property": "THY_st",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 230,
+        "y": 160,
+        "wires": [
+            [
+                "3ca247190af1be26"
+            ]
+        ]
+    },
+    {
+        "id": "3ca247190af1be26",
+        "type": "delay",
+        "z": "4c23381ce7e5c87e",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 450,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7ca5e4860cd86123",
+        "type": "comment",
+        "z": "4c23381ce7e5c87e",
+        "name": "SerialIn Check",
+        "info": "Before passing a message to the SerialPort checks if the port is connected.\n\nThe delay is necessary to avoid problem during reconnection.",
+        "x": 220,
+        "y": 80,
+        "wires": []
+    },
+    {
         "id": "8fb762f9.df3d38",
         "type": "ui_template",
         "z": "34878ef1.e3d952",
@@ -7665,9 +7760,9 @@
         "z": "44b2d39a758b1b4b",
         "d": true,
         "g": "e1dd870df50f05a7",
-        "name": "BK-ELP0 Query",
+        "name": "",
         "serial": "65eee66c.c52a98",
-        "x": 480,
+        "x": 470,
         "y": 1040,
         "wires": [
             []
@@ -7794,9 +7889,9 @@
         "z": "44b2d39a758b1b4b",
         "d": true,
         "g": "e1dd870df50f05a7",
-        "name": "BK-ELP0 Query",
+        "name": "",
         "serial": "65eee66c.c52a98",
-        "x": 490,
+        "x": 480,
         "y": 1280,
         "wires": [
             [
@@ -7810,9 +7905,9 @@
         "z": "44b2d39a758b1b4b",
         "d": true,
         "g": "e1dd870df50f05a7",
-        "name": "BK-ELP0 Query",
+        "name": "",
         "serial": "65eee66c.c52a98",
-        "x": 490,
+        "x": 480,
         "y": 1340,
         "wires": [
             [
@@ -7826,9 +7921,9 @@
         "z": "44b2d39a758b1b4b",
         "d": true,
         "g": "e1dd870df50f05a7",
-        "name": "BK-ELP0 Query",
+        "name": "",
         "serial": "65eee66c.c52a98",
-        "x": 640,
+        "x": 630,
         "y": 1180,
         "wires": [
             [
@@ -8025,9 +8120,9 @@
         "z": "44b2d39a758b1b4b",
         "d": true,
         "g": "aaf32055c816159c",
-        "name": "BK-ELF0 Query",
+        "name": "",
         "serial": "e253aa57314a642a",
-        "x": 1700,
+        "x": 1690,
         "y": 1140,
         "wires": [
             []
@@ -8194,9 +8289,9 @@
         "z": "44b2d39a758b1b4b",
         "d": true,
         "g": "aaf32055c816159c",
-        "name": "BK-ELF0 Query",
+        "name": "",
         "serial": "e253aa57314a642a",
-        "x": 1720,
+        "x": 1710,
         "y": 1400,
         "wires": [
             [
@@ -8210,9 +8305,9 @@
         "z": "44b2d39a758b1b4b",
         "d": true,
         "g": "aaf32055c816159c",
-        "name": "BK-ELF0 Query",
+        "name": "",
         "serial": "e253aa57314a642a",
-        "x": 1720,
+        "x": 1710,
         "y": 1460,
         "wires": [
             [
@@ -8226,9 +8321,9 @@
         "z": "44b2d39a758b1b4b",
         "d": true,
         "g": "aaf32055c816159c",
-        "name": "BK-ELF0 Query",
+        "name": "",
         "serial": "e253aa57314a642a",
-        "x": 1900,
+        "x": 1890,
         "y": 1280,
         "wires": [
             [
@@ -13993,7 +14088,7 @@
         "y": 120,
         "wires": [
             [
-                "36fd090493e29f93"
+                "361ad5bdd9772de9"
             ]
         ]
     },
@@ -14004,7 +14099,7 @@
         "g": "63bdbad96c6c866f",
         "name": "",
         "serial": "c20705c78add4417",
-        "x": 350,
+        "x": 430,
         "y": 120,
         "wires": [
             [
@@ -14239,7 +14334,8 @@
         "y": 400,
         "wires": [
             [
-                "205b18769047bb27"
+                "205b18769047bb27",
+                "5ad70c0a4c753cfb"
             ]
         ]
     },
@@ -14313,8 +14409,8 @@
         "g": "26404baffafe6277",
         "name": "",
         "serial": "c20705c78add4417",
-        "x": 370,
-        "y": 520,
+        "x": 390,
+        "y": 560,
         "wires": [
             []
         ]
@@ -14340,8 +14436,8 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 170,
-        "y": 500,
+        "x": 190,
+        "y": 540,
         "wires": [
             [
                 "d32431d039a70f9b"
@@ -14369,8 +14465,8 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 190,
-        "y": 540,
+        "x": 210,
+        "y": 580,
         "wires": [
             [
                 "d32431d039a70f9b"
@@ -14382,7 +14478,7 @@
         "type": "switch",
         "z": "2929f7b53fc923ef",
         "g": "63bdbad96c6c866f",
-        "name": "",
+        "name": "msg.status==OK",
         "property": "status",
         "propertyType": "msg",
         "rules": [
@@ -14395,14 +14491,15 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 490,
+        "x": 525,
         "y": 120,
         "wires": [
             [
                 "64ec612ddd21e4cd",
                 "a1eef42bb8f72f9f"
             ]
-        ]
+        ],
+        "l": false
     },
     {
         "id": "a39a35f24b9131bd",
@@ -14447,6 +14544,107 @@
         "x": 600,
         "y": 60,
         "wires": []
+    },
+    {
+        "id": "231009a2bfeece0b",
+        "type": "change",
+        "z": "2929f7b53fc923ef",
+        "g": "26404baffafe6277",
+        "name": "global.THY_st 1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "THY_st",
+                "pt": "global",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b2eef4dc4310dfc0",
+        "type": "change",
+        "z": "2929f7b53fc923ef",
+        "g": "26404baffafe6277",
+        "name": "global.THY_st 0",
+        "rules": [
+            {
+                "t": "set",
+                "p": "THY_st",
+                "pt": "global",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5ad70c0a4c753cfb",
+        "type": "switch",
+        "z": "2929f7b53fc923ef",
+        "g": "26404baffafe6277",
+        "name": "status.fill",
+        "property": "status.fill",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "green",
+                "vt": "str"
+            },
+            {
+                "t": "neq",
+                "v": "green",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 460,
+        "y": 480,
+        "wires": [
+            [
+                "231009a2bfeece0b"
+            ],
+            [
+                "b2eef4dc4310dfc0"
+            ]
+        ]
+    },
+    {
+        "id": "361ad5bdd9772de9",
+        "type": "subflow:4c23381ce7e5c87e",
+        "z": "2929f7b53fc923ef",
+        "g": "63bdbad96c6c866f",
+        "name": "",
+        "x": 325,
+        "y": 120,
+        "wires": [
+            [
+                "36fd090493e29f93"
+            ]
+        ],
+        "l": false
     },
     {
         "id": "024399cf34f61632",
