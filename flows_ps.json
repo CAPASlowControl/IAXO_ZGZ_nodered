@@ -6013,6 +6013,7 @@
         "id": "6095c869467f0336",
         "type": "link in",
         "z": "1c646c2a350b2d7c",
+        "d": true,
         "g": "4cb19de6c6ded29d",
         "name": "Electrovalves Security",
         "links": [
@@ -6025,22 +6026,10 @@
                 "7fa47f76d86e8939",
                 "bc1c8d7ec46dd718",
                 "c4fbc5fdbe3ce5a2",
-                "cf5caac2b8a3737a",
                 "8e0aff50d810ac0f",
                 "1630d1f3d216a33b",
-                "d427e6ea7ce32fe6",
-                "ccaf9fbc72d74362",
-                "8aa505e6b0e67b47",
-                "2a225156dfa1d87a",
-                "3559ac15a3bf5545",
                 "047c1108ab6b434d",
-                "a65be51968b46afb",
-                "e41bfe33a5ddd665",
-                "b76c1f97b7c7ca3f",
-                "5f4ecc2ec62580db",
-                "612493465a23b847",
-                "a07e0aae75f84dd8",
-                "9d25a174167a27a9"
+                "a07e0aae75f84dd8"
             ]
         ]
     },
