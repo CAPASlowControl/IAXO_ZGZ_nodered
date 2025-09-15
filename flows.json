@@ -1121,14 +1121,16 @@
             "87944d3f6babc85f",
             "b00efcedbc0a4b49",
             "bdcd76b1512c81e6",
-            "5f7608abef2eb829",
             "019d3855c7ae28a4",
-            "cc74e7a6843e4041"
+            "cc74e7a6843e4041",
+            "5f7608abef2eb829",
+            "a8b46d250dbdcb77",
+            "80e70c99c9b1fce6"
         ],
-        "x": 64,
-        "y": 279,
+        "x": 54,
+        "y": 259,
         "w": 1372,
-        "h": 282
+        "h": 322
     },
     {
         "id": "2e3c320209da11d9",
@@ -1315,12 +1317,11 @@
         "id": "76c4585b9eeb7963",
         "type": "group",
         "z": "e6abd59fcfef321c",
-        "name": "ELECTROVALVES",
+        "name": "SHUTDOWN CAEN (if EV Closed)",
         "style": {
             "label": true
         },
         "nodes": [
-            "9fd6b6c8a861dded",
             "1fd2585a12fae590",
             "322432cccfc7e68f",
             "5a23170f6bb6ae26",
@@ -1328,11 +1329,13 @@
             "6bbb3888df1424f9",
             "4752522bea1e8996",
             "6353d1beb31dc2ac",
-            "7f8448992e9b1679"
+            "7f8448992e9b1679",
+            "03934a65680ce07a",
+            "0518cfe62db0b19e"
         ],
-        "x": 84,
-        "y": 19,
-        "w": 1012,
+        "x": 64,
+        "y": -1,
+        "w": 1142,
         "h": 242
     },
     {
@@ -1805,8 +1808,8 @@
             "d0a86226f9f7ab15",
             "34fc76c74c1070fc"
         ],
-        "x": 1724,
-        "y": 699,
+        "x": 1734,
+        "y": 659,
         "w": 1102,
         "h": 342,
         "info": "The idea is to recieve an alert if the USB port lost connection, with the trigger wait we can filter if is a puntual error or the port connection has been fully lost; \nIn the switch node you must select the name choosen in the serial rules of the PC: /etc/udev/rules.d/99-sub-serial.rules"
@@ -1978,8 +1981,8 @@
             "d59b9ae1436f0938",
             "b1c966d1b0f2c2b2"
         ],
-        "x": 1734,
-        "y": 399,
+        "x": 1724,
+        "y": 419,
         "w": 1132,
         "h": 202,
         "info": "The idea is to recieve an alert if the USB port lost connection, with the trigger wait we can filter if is a puntual error or the port connection has been fully lost; \nIn the switch node you must select the name choosen in the serial rules of the PC: /etc/udev/rules.d/99-sub-serial.rules"
@@ -2024,18 +2027,19 @@
             "a1a15cc65b6db945",
             "c69f7c03438e955a",
             "2343828fdf8f4fe9",
-            "ef3de6b981427d4f"
+            "ef3de6b981427d4f",
+            "579711c008095f87"
         ],
         "x": 64,
         "y": 1179,
         "w": 642,
-        "h": 222
+        "h": 262
     },
     {
         "id": "620445eb39a7c803",
         "type": "group",
         "z": "e6abd59fcfef321c",
-        "name": "Poutlet (Thyracont) disconnection security",
+        "name": "Pressure ",
         "style": {
             "label": true
         },
@@ -2056,11 +2060,12 @@
             "d2c3b8f3187054bb",
             "c0e53128359a2b58",
             "232320c1c060b186",
-            "e9feabe4bfe76902"
+            "e9feabe4bfe76902",
+            "28c4e63d9dd5b778"
         ],
         "x": 74,
-        "y": 879,
-        "w": 1112,
+        "y": 919,
+        "w": 1172,
         "h": 242
     },
     {
@@ -2098,12 +2103,13 @@
             "09ea125ce0a0cf64",
             "9a59ded7f6e6c845",
             "bc7c49e3b9054f94",
-            "71e77d75e4f0adad"
+            "71e77d75e4f0adad",
+            "3fa5db2cac72f8a1"
         ],
         "x": 54,
-        "y": 579,
+        "y": 599,
         "w": 1422,
-        "h": 262
+        "h": 302
     },
     {
         "id": "8ab96f8c5ac5a6eb",
@@ -4242,7 +4248,7 @@
             "0152a7e66c19d6bc"
         ],
         "x": 74,
-        "y": 1419,
+        "y": 1459,
         "w": 632,
         "h": 82
     },
@@ -29789,28 +29795,6 @@
         ]
     },
     {
-        "id": "9fd6b6c8a861dded",
-        "type": "function",
-        "z": "e6abd59fcfef321c",
-        "d": true,
-        "g": "76c4585b9eeb7963",
-        "name": "Electrovalves Security",
-        "func": "var control = msg.payload.B0;\nvar booleano = (control === 1);\nreturn booleano;\n/*msg.enabled = booleano; \nmsg.payload = null;\nif (booleano == 1){\n    return msg;\n}*/",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 640,
-        "y": 60,
-        "wires": [
-            [
-                "322432cccfc7e68f"
-            ]
-        ]
-    },
-    {
         "id": "1fd2585a12fae590",
         "type": "function",
         "z": "e6abd59fcfef321c",
@@ -29823,8 +29807,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 650,
-        "y": 160,
+        "x": 630,
+        "y": 140,
         "wires": [
             [
                 "5a23170f6bb6ae26"
@@ -29841,8 +29825,8 @@
         "links": [
             "6095c869467f0336"
         ],
-        "x": 1055,
-        "y": 100,
+        "x": 1025,
+        "y": 80,
         "wires": []
     },
     {
@@ -29851,7 +29835,7 @@
         "z": "e6abd59fcfef321c",
         "g": "76c4585b9eeb7963",
         "name": "",
-        "x": 910,
+        "x": 870,
         "y": 160,
         "wires": []
     },
@@ -29872,16 +29856,15 @@
             "2343828fdf8f4fe9",
             "ac3304c5d638e602",
             "e025cfac9c7a8862",
-            "bdcd76b1512c81e6",
             "5f7608abef2eb829",
             "aee0884f702fdb5d",
-            "0d4a627e546a4726"
+            "0d4a627e546a4726",
+            "bdcd76b1512c81e6"
         ],
-        "x": 125,
-        "y": 140,
+        "x": 105,
+        "y": 120,
         "wires": [
             [
-                "9fd6b6c8a861dded",
                 "6353d1beb31dc2ac"
             ]
         ]
@@ -29906,8 +29889,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 620,
-        "y": 100,
+        "x": 600,
+        "y": 80,
         "wires": [
             [
                 "4752522bea1e8996"
@@ -29927,11 +29910,12 @@
         "septopics": true,
         "property": "enabled",
         "topi": "topic",
-        "x": 860,
-        "y": 100,
+        "x": 800,
+        "y": 80,
         "wires": [
             [
-                "322432cccfc7e68f"
+                "322432cccfc7e68f",
+                "0518cfe62db0b19e"
             ]
         ]
     },
@@ -29944,8 +29928,8 @@
         "links": [
             "3a912f03d0333c28"
         ],
-        "x": 105,
-        "y": 400,
+        "x": 95,
+        "y": 380,
         "wires": [
             [
                 "577a892ca67462ce",
@@ -29973,8 +29957,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 480,
-        "y": 440,
+        "x": 450,
+        "y": 420,
         "wires": [
             [
                 "af0b63fd12d2077f"
@@ -30001,8 +29985,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 480,
-        "y": 480,
+        "x": 450,
+        "y": 460,
         "wires": [
             [
                 "af0b63fd12d2077f",
@@ -30032,8 +30016,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 650,
-        "y": 460,
+        "x": 600,
+        "y": 440,
         "wires": [
             [
                 "517355d6fce400fb"
@@ -30045,7 +30029,7 @@
         "type": "function",
         "z": "e6abd59fcfef321c",
         "g": "3371663af1f1de31",
-        "name": "Unkown pressure Control",
+        "name": "Measure > SetPoint",
         "func": "let measurepoint = msg.payload.MeasureValue;\nlet setpoint = msg.payload.SetPointValue;\nlet slack =  \"Measure point is higher than Set point. Closing EV\"\nlet SMP_status = flow.get(\"SetMeasStatus\");\n\nlet cutoff = {\n    B0: 0,\n}\n\nif(!SMP_status){\n    if(measurepoint > (setpoint+40)){\n        flow.set(\"SetMeasStatus\",true);\n        msg1  = {payload :  slack};\n        msg2 = {payload : cutoff};\n        return [msg1, msg2];\n    }\n} else{\n     if(measurepoint < (setpoint+40)){\n        flow.set(\"SetMeasStatus\",false);\n        msg1  = {payload :  \"Measure Point & Set Point return to normal values.\"};\n    return msg1;\n    }\n}\n\n \n",
         "outputs": 2,
         "timeout": "",
@@ -30053,8 +30037,8 @@
         "initialize": "// El código añadido aquí se ejecutará una vez\n// cuando el nodo es iniciado.\n\n/**let slack =  \"Inizializating\"\n\nlet cutoff = {\n    B0: 0,\n}\nmsg1  = {payload :  slack};\nmsg2 = {payload : cutoff};\nreturn [msg1, msg2];\n**/",
         "finalize": "",
         "libs": [],
-        "x": 850,
-        "y": 460,
+        "x": 760,
+        "y": 440,
         "wires": [
             [
                 "f0b41290870e3071"
@@ -30071,8 +30055,8 @@
         "z": "e6abd59fcfef321c",
         "g": "3371663af1f1de31",
         "name": "",
-        "x": 1320,
-        "y": 420,
+        "x": 1310,
+        "y": 400,
         "wires": []
     },
     {
@@ -30084,8 +30068,8 @@
         "links": [
             "cd96bed145c6a88f"
         ],
-        "x": 105,
-        "y": 480,
+        "x": 95,
+        "y": 460,
         "wires": [
             [
                 "019d3855c7ae28a4"
@@ -30106,8 +30090,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1025,
-        "y": 520,
+        "x": 915,
+        "y": 540,
         "wires": [],
         "l": false
     },
@@ -30153,8 +30137,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 660,
-        "y": 380,
+        "x": 710,
+        "y": 360,
         "wires": [
             [
                 "8fcc41617a7ef994",
@@ -30179,8 +30163,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 935,
-        "y": 320,
+        "x": 925,
+        "y": 300,
         "wires": [],
         "l": false
     },
@@ -30319,8 +30303,8 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 320,
-        "y": 480,
+        "x": 270,
+        "y": 460,
         "wires": [
             [
                 "2a9b31b2b142a8a4"
@@ -30340,8 +30324,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1290,
-        "y": 340,
+        "x": 1280,
+        "y": 320,
         "wires": []
     },
     {
@@ -30357,7 +30341,7 @@
         "septopics": true,
         "property": "payload",
         "topi": "topic",
-        "x": 1100,
+        "x": 1010,
         "y": 440,
         "wires": [
             [
@@ -30377,8 +30361,8 @@
             "84266ace58e71dcc",
             "7047fe49aa9ab855"
         ],
-        "x": 1765,
-        "y": 840,
+        "x": 1775,
+        "y": 800,
         "wires": [
             [
                 "4f6857f853b7c165"
@@ -30396,8 +30380,8 @@
         "username": "IAXO D0 BOT",
         "emojiIcon": "",
         "channel": "",
-        "x": 2700,
-        "y": 840,
+        "x": 2710,
+        "y": 800,
         "wires": []
     },
     {
@@ -30418,8 +30402,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1890,
-        "y": 840,
+        "x": 1900,
+        "y": 800,
         "wires": [
             [
                 "9e75477aca5b6168",
@@ -30440,8 +30424,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2120,
-        "y": 900,
+        "x": 2130,
+        "y": 860,
         "wires": [
             [
                 "34fc76c74c1070fc",
@@ -30467,8 +30451,8 @@
         "bytopic": "topic",
         "topic": "topic",
         "outputs": 2,
-        "x": 2360,
-        "y": 900,
+        "x": 2370,
+        "y": 860,
         "wires": [
             [
                 "6d16a1c1441e15df",
@@ -30492,8 +30476,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1960,
-        "y": 980,
+        "x": 1970,
+        "y": 940,
         "wires": []
     },
     {
@@ -30509,8 +30493,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1980,
-        "y": 740,
+        "x": 1990,
+        "y": 700,
         "wires": []
     },
     {
@@ -30815,8 +30799,8 @@
         "links": [
             "05feb3979973f7ff"
         ],
-        "x": 1775,
-        "y": 500,
+        "x": 1765,
+        "y": 520,
         "wires": [
             [
                 "da3a36208d4eabcc"
@@ -30834,8 +30818,8 @@
         "username": "IAXO D0 BOT",
         "emojiIcon": "",
         "channel": "",
-        "x": 2740,
-        "y": 560,
+        "x": 2730,
+        "y": 580,
         "wires": []
     },
     {
@@ -30856,8 +30840,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1890,
-        "y": 500,
+        "x": 1880,
+        "y": 520,
         "wires": [
             [
                 "d5dbc51a89a860b2"
@@ -30877,8 +30861,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2130,
-        "y": 489.16666666666663,
+        "x": 2120,
+        "y": 509.16666666666663,
         "wires": [
             [
                 "c3d039bb3115809a",
@@ -30904,8 +30888,8 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 2,
-        "x": 2370,
-        "y": 489.16666666666663,
+        "x": 2360,
+        "y": 509.16666666666663,
         "wires": [
             [
                 "7552efb55ce434d9",
@@ -31055,8 +31039,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2660,
-        "y": 920,
+        "x": 2670,
+        "y": 880,
         "wires": []
     },
     {
@@ -31073,8 +31057,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2660,
-        "y": 1000,
+        "x": 2670,
+        "y": 960,
         "wires": []
     },
     {
@@ -31091,8 +31075,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2220,
-        "y": 980,
+        "x": 2230,
+        "y": 940,
         "wires": []
     },
     {
@@ -31101,8 +31085,8 @@
         "z": "e6abd59fcfef321c",
         "g": "3371663af1f1de31",
         "name": "",
-        "x": 1050,
-        "y": 360,
+        "x": 1060,
+        "y": 320,
         "wires": []
     },
     {
@@ -31228,8 +31212,8 @@
             "3fd98e13ec0e96e1",
             "bb38b8c6467ffec9"
         ],
-        "x": 425,
-        "y": 1360,
+        "x": 445,
+        "y": 1400,
         "wires": [],
         "info": "All this nodes makes two things: \n    1- Send the close cmd to the EV\n    2- Disable all CAEN buttons"
     },
@@ -31247,7 +31231,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1050,
-        "y": 920,
+        "y": 960,
         "wires": []
     },
     {
@@ -31264,7 +31248,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1050,
-        "y": 1080,
+        "y": 1120,
         "wires": []
     },
     {
@@ -31272,7 +31256,7 @@
         "type": "change",
         "z": "e6abd59fcfef321c",
         "g": "620445eb39a7c803",
-        "name": "MeasureValue",
+        "name": "PLC PIn MeasureValue",
         "rules": [
             {
                 "t": "set",
@@ -31287,8 +31271,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 440,
-        "y": 960,
+        "x": 410,
+        "y": 1000,
         "wires": [
             [
                 "9f69184cd504ca7a"
@@ -31300,7 +31284,7 @@
         "type": "change",
         "z": "e6abd59fcfef321c",
         "g": "620445eb39a7c803",
-        "name": "SetPointValue",
+        "name": "PCtrl SetPointValue",
         "rules": [
             {
                 "t": "set",
@@ -31315,8 +31299,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 440,
-        "y": 1000,
+        "x": 450,
+        "y": 1040,
         "wires": [
             [
                 "9f69184cd504ca7a"
@@ -31345,8 +31329,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 610,
-        "y": 980,
+        "x": 650,
+        "y": 1000,
         "wires": [
             [
                 "4ee6fa6909898506",
@@ -31367,8 +31351,8 @@
         "initialize": "// El código añadido aquí se ejecutará una vez\n// cuando el nodo es iniciado.\n\n/**let slack =  \"Inizializating\"\n\nlet cutoff = {\n    B0: 0,\n}\nmsg1  = {payload :  slack};\nmsg2 = {payload : cutoff};\nreturn [msg1, msg2];\n**/",
         "finalize": "",
         "libs": [],
-        "x": 790,
-        "y": 980,
+        "x": 830,
+        "y": 1020,
         "wires": [
             [
                 "0835ab6c68a26fc7",
@@ -31385,7 +31369,7 @@
         "type": "change",
         "z": "e6abd59fcfef321c",
         "g": "620445eb39a7c803",
-        "name": "ConexionStatus",
+        "name": "Thyracont ConexionStatus",
         "rules": [
             {
                 "t": "set",
@@ -31400,8 +31384,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 440,
-        "y": 920,
+        "x": 480,
+        "y": 960,
         "wires": [
             [
                 "9f69184cd504ca7a"
@@ -31422,7 +31406,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 690,
+        "x": 620,
         "y": 520,
         "wires": []
     },
@@ -31436,8 +31420,8 @@
         "links": [
             "cd01ae2940eb2b46"
         ],
-        "x": 2285,
-        "y": 440,
+        "x": 2275,
+        "y": 460,
         "wires": []
     },
     {
@@ -31454,7 +31438,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 770,
-        "y": 1060,
+        "y": 1100,
         "wires": []
     },
     {
@@ -31467,7 +31451,7 @@
             "8f8883506988ead9"
         ],
         "x": 115,
-        "y": 920,
+        "y": 960,
         "wires": [
             [
                 "c0e53128359a2b58"
@@ -31484,7 +31468,7 @@
             "f9af0ddc7af0b7e9"
         ],
         "x": 115,
-        "y": 960,
+        "y": 1000,
         "wires": [
             [
                 "232320c1c060b186"
@@ -31501,7 +31485,7 @@
             "cd96bed145c6a88f"
         ],
         "x": 115,
-        "y": 1000,
+        "y": 1040,
         "wires": [
             [
                 "e9feabe4bfe76902"
@@ -31516,24 +31500,11 @@
         "name": "SECURITY_OverPress_OUT",
         "mode": "link",
         "links": [
-            "bb38b8c6467ffec9"
+            "bb38b8c6467ffec9",
+            "3fd98e13ec0e96e1"
         ],
-        "x": 925,
-        "y": 420,
-        "wires": []
-    },
-    {
-        "id": "5f7608abef2eb829",
-        "type": "link out",
-        "z": "e6abd59fcfef321c",
-        "g": "3371663af1f1de31",
-        "name": "SECURITY_UnkPress_OUT",
-        "mode": "link",
-        "links": [
-            "bb38b8c6467ffec9"
-        ],
-        "x": 1025,
-        "y": 480,
+        "x": 915,
+        "y": 400,
         "wires": []
     },
     {
@@ -31548,7 +31519,7 @@
             "3fd98e13ec0e96e1"
         ],
         "x": 995,
-        "y": 1040,
+        "y": 1080,
         "wires": []
     },
     {
@@ -31558,7 +31529,7 @@
         "g": "620445eb39a7c803",
         "name": "",
         "x": 1070,
-        "y": 960,
+        "y": 1000,
         "wires": []
     },
     {
@@ -31583,7 +31554,7 @@
         "object": "msg",
         "objectout": "msg",
         "x": 280,
-        "y": 1000,
+        "y": 1040,
         "wires": [
             [
                 "e3e551662cb02357"
@@ -31794,8 +31765,8 @@
         "z": "e6abd59fcfef321c",
         "g": "76c4585b9eeb7963",
         "name": "",
-        "x": 280,
-        "y": 140,
+        "x": 260,
+        "y": 120,
         "wires": [
             [
                 "6bbb3888df1424f9",
@@ -31810,8 +31781,8 @@
         "z": "e6abd59fcfef321c",
         "g": "3371663af1f1de31",
         "name": "",
-        "x": 175,
-        "y": 480,
+        "x": 165,
+        "y": 460,
         "wires": [
             [
                 "d8171e58fad45ca7"
@@ -31826,7 +31797,7 @@
         "g": "620445eb39a7c803",
         "name": "",
         "x": 175,
-        "y": 920,
+        "y": 960,
         "wires": [
             [
                 "f654af9c022fa262"
@@ -31841,7 +31812,7 @@
         "g": "620445eb39a7c803",
         "name": "",
         "x": 175,
-        "y": 960,
+        "y": 1000,
         "wires": [
             [
                 "783616feaf337d83"
@@ -31856,7 +31827,7 @@
         "g": "620445eb39a7c803",
         "name": "",
         "x": 175,
-        "y": 1000,
+        "y": 1040,
         "wires": [
             [
                 "d2c3b8f3187054bb"
@@ -31912,7 +31883,7 @@
         "payload": "true",
         "payloadType": "bool",
         "x": 190,
-        "y": 1460,
+        "y": 1500,
         "wires": [
             [
                 "9134a180821f8287"
@@ -31933,7 +31904,7 @@
         "finalize": "",
         "libs": [],
         "x": 410,
-        "y": 1460,
+        "y": 1500,
         "wires": [
             [
                 "0152a7e66c19d6bc"
@@ -31954,7 +31925,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 590,
-        "y": 1460,
+        "y": 1500,
         "wires": []
     },
     {
@@ -31963,15 +31934,15 @@
         "z": "e6abd59fcfef321c",
         "g": "76c4585b9eeb7963",
         "name": "debug 404",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 630,
-        "y": 220,
+        "x": 610,
+        "y": 200,
         "wires": []
     },
     {
@@ -31981,8 +31952,8 @@
         "g": "55a2600ea9f1ad33",
         "name": "NOTE",
         "info": "Due to the importance of this device in the system, we send the errors to a function node which controls the EV and send a slack security message. ",
-        "x": 2390,
-        "y": 440,
+        "x": 2380,
+        "y": 460,
         "wires": []
     },
     {
@@ -31992,8 +31963,8 @@
         "g": "3371663af1f1de31",
         "name": "",
         "info": "En este caso no usamos el operation filter porque dentro del nodo function se elige una presion máxima en funcion del modo en el que estemos.",
-        "x": 200,
-        "y": 360,
+        "x": 190,
+        "y": 340,
         "wires": []
     },
     {
@@ -32007,7 +31978,7 @@
             "b9cb3b097fad8f3e"
         ],
         "x": 95,
-        "y": 760,
+        "y": 800,
         "wires": [
             [
                 "5e6c35157f92db68"
@@ -32019,7 +31990,7 @@
         "type": "change",
         "z": "e6abd59fcfef321c",
         "g": "765db78399ea7c11",
-        "name": "MeasureValue",
+        "name": "Fout MeasureValue",
         "rules": [
             {
                 "t": "set",
@@ -32034,8 +32005,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 720,
+        "x": 530,
+        "y": 760,
         "wires": [
             [
                 "4ca65ca9d7c45615",
@@ -32048,7 +32019,7 @@
         "type": "change",
         "z": "e6abd59fcfef321c",
         "g": "765db78399ea7c11",
-        "name": "SetPointValue",
+        "name": "Fin SetPointValue",
         "rules": [
             {
                 "t": "set",
@@ -32063,8 +32034,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 760,
+        "x": 530,
+        "y": 800,
         "wires": [
             [
                 "4ca65ca9d7c45615",
@@ -32095,7 +32066,7 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 710,
-        "y": 700,
+        "y": 740,
         "wires": [
             [
                 "0f48c8c64cf0ec4a",
@@ -32117,7 +32088,7 @@
         "finalize": "",
         "libs": [],
         "x": 890,
-        "y": 700,
+        "y": 740,
         "wires": [
             [
                 "c0d6ac37eec31aee"
@@ -32135,7 +32106,7 @@
         "g": "765db78399ea7c11",
         "name": "",
         "x": 185,
-        "y": 760,
+        "y": 800,
         "wires": [
             [
                 "073a1939cf1526f7"
@@ -32150,7 +32121,7 @@
         "g": "765db78399ea7c11",
         "name": "",
         "x": 185,
-        "y": 720,
+        "y": 760,
         "wires": [
             [
                 "bc7c49e3b9054f94"
@@ -32170,7 +32141,7 @@
             "86a70e99114ebd25"
         ],
         "x": 95,
-        "y": 720,
+        "y": 760,
         "wires": [
             [
                 "04eb246a4eb5049a"
@@ -32182,7 +32153,7 @@
         "type": "change",
         "z": "e6abd59fcfef321c",
         "g": "765db78399ea7c11",
-        "name": "Poutlet",
+        "name": "Thyracont (Poutlet)",
         "rules": [
             {
                 "t": "set",
@@ -32197,8 +32168,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 500,
-        "y": 640,
+        "x": 530,
+        "y": 680,
         "wires": [
             [
                 "4ca65ca9d7c45615",
@@ -32211,7 +32182,7 @@
         "type": "change",
         "z": "e6abd59fcfef321c",
         "g": "765db78399ea7c11",
-        "name": "Pt42",
+        "name": "PCtrl_Meas (Pt42)",
         "rules": [
             {
                 "t": "set",
@@ -32226,8 +32197,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 490,
-        "y": 680,
+        "x": 530,
+        "y": 720,
         "wires": [
             [
                 "4ca65ca9d7c45615",
@@ -32245,7 +32216,7 @@
             "3a912f03d0333c28"
         ],
         "x": 95,
-        "y": 640,
+        "y": 680,
         "wires": [
             [
                 "a517287cc097ff7d"
@@ -32262,7 +32233,7 @@
             "7c89d9fcf5706089"
         ],
         "x": 95,
-        "y": 680,
+        "y": 720,
         "wires": [
             [
                 "ced5d317deef3773"
@@ -32276,7 +32247,7 @@
         "g": "765db78399ea7c11",
         "name": "",
         "x": 185,
-        "y": 680,
+        "y": 720,
         "wires": [
             [
                 "71e77d75e4f0adad"
@@ -32291,7 +32262,7 @@
         "g": "765db78399ea7c11",
         "name": "",
         "x": 185,
-        "y": 640,
+        "y": 680,
         "wires": [
             [
                 "96b968d48f12cbbd"
@@ -32313,7 +32284,7 @@
         "property": "payload",
         "topi": "topic",
         "x": 1140,
-        "y": 680,
+        "y": 720,
         "wires": [
             [
                 "ad35c595e82e22c2",
@@ -32329,7 +32300,7 @@
         "g": "765db78399ea7c11",
         "name": "",
         "x": 1360,
-        "y": 660,
+        "y": 700,
         "wires": []
     },
     {
@@ -32346,7 +32317,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1330,
-        "y": 620,
+        "y": 660,
         "wires": []
     },
     {
@@ -32361,7 +32332,7 @@
             "3fd98e13ec0e96e1"
         ],
         "x": 1065,
-        "y": 740,
+        "y": 820,
         "wires": []
     },
     {
@@ -32379,7 +32350,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1065,
-        "y": 780,
+        "y": 860,
         "wires": [],
         "l": false
     },
@@ -32397,8 +32368,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 635,
-        "y": 620,
+        "x": 685,
+        "y": 640,
         "wires": [],
         "l": false
     },
@@ -32416,8 +32387,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 635,
-        "y": 660,
+        "x": 675,
+        "y": 700,
         "wires": [],
         "l": false
     },
@@ -32436,7 +32407,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 685,
-        "y": 740,
+        "y": 780,
         "wires": [],
         "l": false
     },
@@ -32455,7 +32426,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 665,
-        "y": 800,
+        "y": 840,
         "wires": [],
         "l": false
     },
@@ -32474,7 +32445,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 765,
-        "y": 640,
+        "y": 680,
         "wires": [],
         "l": false
     },
@@ -32500,7 +32471,7 @@
         "object": "msg",
         "objectout": "msg",
         "x": 300,
-        "y": 760,
+        "y": 800,
         "wires": [
             []
         ]
@@ -32527,7 +32498,7 @@
         "object": "msg",
         "objectout": "msg",
         "x": 300,
-        "y": 720,
+        "y": 760,
         "wires": [
             [
                 "3803a08da2f07451"
@@ -32556,7 +32527,7 @@
         "object": "msg",
         "objectout": "msg",
         "x": 300,
-        "y": 680,
+        "y": 720,
         "wires": [
             [
                 "ebc4e41dd17f4bdf"
@@ -32681,8 +32652,106 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2720,
-        "y": 500,
+        "x": 2710,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "03934a65680ce07a",
+        "type": "comment",
+        "z": "e6abd59fcfef321c",
+        "g": "76c4585b9eeb7963",
+        "name": "ShutDown Caen PS",
+        "info": "",
+        "x": 1090,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "5f7608abef2eb829",
+        "type": "link out",
+        "z": "e6abd59fcfef321c",
+        "g": "3371663af1f1de31",
+        "name": "SECURITY_UnkPress_OUT",
+        "mode": "link",
+        "links": [
+            "3fd98e13ec0e96e1",
+            "bb38b8c6467ffec9"
+        ],
+        "x": 1015,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "3fa5db2cac72f8a1",
+        "type": "comment",
+        "z": "e6abd59fcfef321c",
+        "g": "765db78399ea7c11",
+        "name": "Close EV & Shutdown CAEN",
+        "info": "",
+        "x": 1180,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "28c4e63d9dd5b778",
+        "type": "comment",
+        "z": "e6abd59fcfef321c",
+        "g": "620445eb39a7c803",
+        "name": "Close EV & Shutdown CAEN",
+        "info": "",
+        "x": 1100,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "579711c008095f87",
+        "type": "comment",
+        "z": "e6abd59fcfef321c",
+        "g": "7ee0705e60a282d7",
+        "name": "Close EV & Shutdown CAEN",
+        "info": "",
+        "x": 520,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "a8b46d250dbdcb77",
+        "type": "comment",
+        "z": "e6abd59fcfef321c",
+        "g": "3371663af1f1de31",
+        "name": "Close EV & Shutdown CAEN",
+        "info": "",
+        "x": 1100,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "80e70c99c9b1fce6",
+        "type": "comment",
+        "z": "e6abd59fcfef321c",
+        "g": "3371663af1f1de31",
+        "name": "Close EV & Shutdown CAEN",
+        "info": "",
+        "x": 1000,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "0518cfe62db0b19e",
+        "type": "debug",
+        "z": "e6abd59fcfef321c",
+        "g": "76c4585b9eeb7963",
+        "name": "debug 422",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 120,
         "wires": []
     },
     {
