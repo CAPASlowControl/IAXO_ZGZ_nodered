@@ -60,6 +60,14 @@
         "info": ""
     },
     {
+        "id": "110494c2c16f19b1",
+        "type": "tab",
+        "label": "RIGOL",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "e6abd59fcfef321c",
         "type": "tab",
         "label": "IAXO Security",
@@ -77,7 +85,7 @@
     {
         "id": "1c646c2a350b2d7c",
         "type": "tab",
-        "label": "2CH: Power Sub-System",
+        "label": "2CH: CAEN_Old",
         "disabled": true,
         "info": ""
     },
@@ -85,14 +93,6 @@
         "id": "a38a0850f33814d0",
         "type": "tab",
         "label": "Supply Charts v2",
-        "disabled": true,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "045d5867a5e1ad28",
-        "type": "tab",
-        "label": "RIGOL",
         "disabled": true,
         "info": "",
         "env": []
@@ -568,189 +568,6 @@
         "icon": "node-red-contrib-iiot-opcua/icon.png"
     },
     {
-        "id": "ac47bd5742c35c78",
-        "type": "subflow",
-        "name": "RIGOL: settings",
-        "info": "",
-        "category": "",
-        "in": [],
-        "out": [
-            {
-                "x": 1480,
-                "y": 320,
-                "wires": [
-                    {
-                        "id": "a4fdd448d7e09764",
-                        "port": 0
-                    }
-                ]
-            },
-            {
-                "x": 1480,
-                "y": 380,
-                "wires": [
-                    {
-                        "id": "a4fdd448d7e09764",
-                        "port": 1
-                    }
-                ]
-            },
-            {
-                "x": 1480,
-                "y": 440,
-                "wires": [
-                    {
-                        "id": "a4fdd448d7e09764",
-                        "port": 2
-                    }
-                ]
-            },
-            {
-                "x": 1480,
-                "y": 500,
-                "wires": [
-                    {
-                        "id": "a4fdd448d7e09764",
-                        "port": 3
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
-        "id": "8d2889cddf4f0c77",
-        "type": "subflow",
-        "name": "RIGOL: switch status",
-        "info": "",
-        "category": "",
-        "in": [],
-        "out": [
-            {
-                "x": 1480,
-                "y": 140,
-                "wires": [
-                    {
-                        "id": "8baf9d32905f8885",
-                        "port": 0
-                    }
-                ]
-            },
-            {
-                "x": 1485,
-                "y": 260,
-                "wires": [
-                    {
-                        "id": "927a611e4d87005c",
-                        "port": 0
-                    }
-                ]
-            },
-            {
-                "x": 1500,
-                "y": 400,
-                "wires": [
-                    {
-                        "id": "8396aa9f93417e5f",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
-        "id": "4e115b18621d03bf",
-        "type": "subflow",
-        "name": "RIGOL: make scpi command",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 300,
-                "y": 400,
-                "wires": [
-                    {
-                        "id": "9e1372952816407e"
-                    }
-                ]
-            }
-        ],
-        "out": [],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
-        "id": "03ae40c2e9a3f26b",
-        "type": "subflow",
-        "name": "RIGOL: I-V coninuous measure",
-        "info": "",
-        "category": "",
-        "in": [],
-        "out": [
-            {
-                "x": 1720,
-                "y": 200,
-                "wires": [
-                    {
-                        "id": "813bda7092f9b85c",
-                        "port": 0
-                    }
-                ]
-            },
-            {
-                "x": 1740,
-                "y": 380,
-                "wires": [
-                    {
-                        "id": "813bda7092f9b85c",
-                        "port": 1
-                    }
-                ]
-            },
-            {
-                "x": 1740,
-                "y": 540,
-                "wires": [
-                    {
-                        "id": "813bda7092f9b85c",
-                        "port": 2
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
-        "id": "a04e409f16590580",
-        "type": "subflow",
-        "name": "RIGOL: make on/off scpi commands",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 300,
-                "y": 240,
-                "wires": [
-                    {
-                        "id": "333a32bc1a89ae8d"
-                    }
-                ]
-            }
-        ],
-        "out": [],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
         "id": "8472def4ec329aae",
         "type": "subflow",
         "name": "Make F201CB works",
@@ -861,6 +678,72 @@
         "meta": {},
         "color": "#FFEB3B",
         "icon": "font-awesome/fa-wrench"
+    },
+    {
+        "id": "bd3595290af11cd7",
+        "type": "subflow",
+        "name": "RIGOL:SerialInCheck",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "61553fa2f93f2247"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 560,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "7485c46b6509a751",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "7196d4f93e21eea9",
+        "type": "subflow",
+        "name": "SerialOutCheck",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "9d6abe9189e02def"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 400,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "9d6abe9189e02def",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
     },
     {
         "id": "9a5715b539c43b53",
@@ -1793,109 +1676,11 @@
             "d0a86226f9f7ab15",
             "34fc76c74c1070fc"
         ],
-        "x": 1734,
+        "x": 1604,
         "y": 659,
         "w": 1102,
         "h": 342,
         "info": "The idea is to recieve an alert if the USB port lost connection, with the trigger wait we can filter if is a puntual error or the port connection has been fully lost; \nIn the switch node you must select the name choosen in the serial rules of the PC: /etc/udev/rules.d/99-sub-serial.rules"
-    },
-    {
-        "id": "eae106b6ad65235b",
-        "type": "group",
-        "z": "045d5867a5e1ad28",
-        "name": "CONTROL",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "db3a8256a531523f",
-            "350803a06dff8e01"
-        ],
-        "x": 88,
-        "y": 793,
-        "w": 704,
-        "h": 534
-    },
-    {
-        "id": "c03c99275d7d60d6",
-        "type": "group",
-        "z": "045d5867a5e1ad28",
-        "name": "CONTROL STATUS",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "55de8280f558eab4",
-            "43f8cf41fffcdfea"
-        ],
-        "x": 58,
-        "y": 13,
-        "w": 894,
-        "h": 749
-    },
-    {
-        "id": "1e290dd08e91e782",
-        "type": "group",
-        "z": "045d5867a5e1ad28",
-        "name": "CONNECTION",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "c3790477ba831b90",
-            "30fc14dcf637d8e8",
-            "3f8ceeca4d894ec5",
-            "354820f7027fefdf",
-            "973a3afe0eb27668",
-            "68d814bb23c264b8"
-        ],
-        "x": 1054,
-        "y": 479,
-        "w": 912,
-        "h": 162
-    },
-    {
-        "id": "c19db6aca5654904",
-        "type": "group",
-        "z": "045d5867a5e1ad28",
-        "name": "DAQ COMMISSIONING",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "66190a471f7bda38",
-            "222d1d0709b974e7",
-            "c312125fc82108c6",
-            "cbaa2acb1d80231c",
-            "16c77a456216e850",
-            "64a4c48e39480412",
-            "4fb7142d8fc9337f"
-        ],
-        "x": 1054,
-        "y": 35.66668701171875,
-        "w": 832,
-        "h": 365.33331298828125
-    },
-    {
-        "id": "7901641cdfa402f3",
-        "type": "group",
-        "z": "045d5867a5e1ad28",
-        "name": "Catch Erros",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "7047fe49aa9ab855",
-            "26614cf86210658b",
-            "7ccd7b88d095803b",
-            "830fae031f8f0118",
-            "5596f8e165bffa5f"
-        ],
-        "x": 1214,
-        "y": 759,
-        "w": 832,
-        "h": 162,
-        "info": "This group catches the errors in all the nodes of the flow. \nSecuruty function only makes the msg earier and Trim topic is to eliminate /dev/. \nCopy the group to add security in others flows. \nNOTE: Remember to change link out end."
     },
     {
         "id": "2dd13e5f10779e03",
@@ -1942,7 +1727,7 @@
             "59c7b0aa4cea625c",
             "f32fe459ae7b1919"
         ],
-        "x": 1714,
+        "x": 1584,
         "y": 39,
         "w": 1232,
         "h": 362,
@@ -1966,7 +1751,7 @@
             "d59b9ae1436f0938",
             "b1c966d1b0f2c2b2"
         ],
-        "x": 1724,
+        "x": 1594,
         "y": 419,
         "w": 1132,
         "h": 202,
@@ -1991,8 +1776,8 @@
             "649c87cb073a5657",
             "2a1819a0d3dfa1f9"
         ],
-        "x": 1734,
-        "y": 1099,
+        "x": 1634,
+        "y": 1079,
         "w": 1162,
         "h": 709.5,
         "info": "This group is for making the nodered reestart automatically. \nBe aware using it. For more information about how to use it read NodeRed Docs in NAS. "
@@ -3155,9 +2940,9 @@
             "4f7d3234015e1d43",
             "57f0971a909279ed"
         ],
-        "x": 1324,
+        "x": 1334,
         "y": 2079,
-        "w": 402,
+        "w": 392,
         "h": 242
     },
     {
@@ -3391,95 +3176,6 @@
         "info": "PSRU 3,0 >> Select the User Pressure Mode (3) & Absolute Units (0)\nPUSR 1.12bar >> Select the User Pressure in bar\nPUSR? bar >> Query the User pressure in bar"
     },
     {
-        "id": "db3a8256a531523f",
-        "type": "group",
-        "z": "045d5867a5e1ad28",
-        "g": "eae106b6ad65235b",
-        "name": "Monitoring outputs",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "2e3e1ff1e4fb1eaf",
-            "f3e8c3bf94ce15d4",
-            "26ce90377b805729",
-            "94b747c4a3f57186",
-            "3efbc84926f54db4"
-        ],
-        "x": 174,
-        "y": 1079,
-        "w": 592,
-        "h": 222
-    },
-    {
-        "id": "350803a06dff8e01",
-        "type": "group",
-        "z": "045d5867a5e1ad28",
-        "g": "eae106b6ad65235b",
-        "name": "SET OVP-OCP-V-I",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "dad4e09614cff5fb",
-            "2813124d21c621d8",
-            "e424ac8cd18fa1cf",
-            "2f4a94c9de9cc97e",
-            "832d4c97ff310f37"
-        ],
-        "x": 114,
-        "y": 819,
-        "w": 652,
-        "h": 242
-    },
-    {
-        "id": "55de8280f558eab4",
-        "type": "group",
-        "z": "045d5867a5e1ad28",
-        "g": "c03c99275d7d60d6",
-        "name": "LEDS STATUS ",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "9f2840a49540f60e",
-            "030011560678ecc5",
-            "83b4eb6dfa056d6a",
-            "d28e906f59c90a73",
-            "d35257ee2fe176ce",
-            "2ad6bbfce17c98b8",
-            "8a284d353d5ff68f"
-        ],
-        "x": 114,
-        "y": 39,
-        "w": 512,
-        "h": 362,
-        "info": "Continuosly control the leds status"
-    },
-    {
-        "id": "43f8cf41fffcdfea",
-        "type": "group",
-        "z": "045d5867a5e1ad28",
-        "g": "c03c99275d7d60d6",
-        "name": "ON/OFF SWITCHES",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "128c776766d940c6",
-            "a4f29221cd2057b7",
-            "364762a030f54469",
-            "7139b63db47ef681",
-            "52b381b9e118a124",
-            "250150a55c7bb09c",
-            "0983496559502a20"
-        ],
-        "x": 84,
-        "y": 434,
-        "w": 842,
-        "h": 302
-    },
-    {
         "id": "391b996bdb7d6683",
         "type": "group",
         "z": "e6abd59fcfef321c",
@@ -3500,8 +3196,8 @@
             "b0e14941f4a63a9b",
             "a356a8b1c6e00e63"
         ],
-        "x": 1764,
-        "y": 1419,
+        "x": 1664,
+        "y": 1399,
         "w": 802,
         "h": 282
     },
@@ -4209,6 +3905,203 @@
         "y": 1319,
         "w": 1092,
         "h": 142
+    },
+    {
+        "id": "8cf474edcfece05e",
+        "type": "group",
+        "z": "110494c2c16f19b1",
+        "name": "CONNECTION",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b8c5ff719f6f9df6",
+            "34219e6ac2c9f81e",
+            "f1c8e9099d13eb48",
+            "edcfb702b2c29ab7",
+            "2d3481df9557f17e",
+            "d6aade31257f5f3b",
+            "337230bae71bbb6e",
+            "936bc3f185e8694d",
+            "e732c6bdc37d195f",
+            "f4a0324b47fcb6a5",
+            "a0e9b2d2fc31636a",
+            "4fda723cfede9fbd",
+            "54ddfd58e1481e8f",
+            "61906e413543f105",
+            "fb22b696c78c3f37"
+        ],
+        "x": 1334,
+        "y": 19,
+        "w": 712,
+        "h": 442
+    },
+    {
+        "id": "3a5fc43c729b08bc",
+        "type": "group",
+        "z": "110494c2c16f19b1",
+        "name": "Catch Erros",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1148e58d58efa315",
+            "98a32d14f5003103",
+            "9b55ef7deaa8a6d1",
+            "f68248edaab887ce",
+            "4c35a358c4a09dd6"
+        ],
+        "x": 1354,
+        "y": 499,
+        "w": 732,
+        "h": 162,
+        "info": "This group catches the errors in all the nodes of the flow. \nSecuruty function only makes the msg earier and Trim topic is to eliminate /dev/. \nCopy the group to add security in others flows. \nNOTE: Remember to change link out end."
+    },
+    {
+        "id": "a25c389c6da8a6d6",
+        "type": "group",
+        "z": "110494c2c16f19b1",
+        "name": "READ VALUES",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "50db91262d98e386",
+            "5d1614f34f6c15a3",
+            "4fa2c361e3857d4c",
+            "6580e83d0f3e4a66",
+            "a0b2b0a6d689b887",
+            "20c0a50db6cbd246",
+            "c8ab14be99f8a0de",
+            "b543d99d7a886163",
+            "68b57bd9268d30eb",
+            "8afcebe0f0ec3ddd",
+            "257432218f684347",
+            "7e4aeb4bbe579455",
+            "f027a8e5d516863f",
+            "93236d6d7cb7441b",
+            "b2c8313d919b59fd"
+        ],
+        "x": 50.666748046875,
+        "y": 1559,
+        "w": 1295.333251953125,
+        "h": 302
+    },
+    {
+        "id": "038a3fa5280a718d",
+        "type": "group",
+        "z": "110494c2c16f19b1",
+        "name": "SET/READBACK OVP-OCP-V-I",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "934524b6453166fb",
+            "ad069c66bb2f9299",
+            "633e49de02285169",
+            "5b654ff43130d4c9",
+            "641fa898dd866c37",
+            "82d2e2bf96cea64e",
+            "2b79f6094d313575",
+            "9701a4a5ebf2a853",
+            "f6d9b18bdad060c4",
+            "f04689e09d827bb1",
+            "59bc2873fa89b5c2",
+            "85febb4f35f7a8ef",
+            "efd307a1ec04f5d5",
+            "6c5022b2d644aca8",
+            "0da137fb31205be1",
+            "8d7b2cb8ca8ad87c",
+            "407e6e67b16dcd9b",
+            "faacf49abbb42cf2",
+            "506469e6ccae7bd1",
+            "dcc931b65e09fefd",
+            "23ce75151e68f1c9",
+            "1bf3896cc0934ef5",
+            "4ca516a911774357",
+            "78fc366e7142657d",
+            "8506a6fb35edd440",
+            "8f9b1aad6d233692",
+            "0e548d7724e37dec",
+            "bdc6ef3e3dc6eacf",
+            "fcb7920ec1f0afcd",
+            "51334577f41d820e",
+            "4ba460da7c89e05e",
+            "41d19a7cfd81a9fb",
+            "9656a6b7073d330b",
+            "df33f439dff60b61",
+            "faa5f10de86651c0",
+            "cd45e8836be601fb",
+            "d08ccbd7b06939c0",
+            "b383e0d31f242d5d",
+            "8182463c75759ab7",
+            "e7c02ca5810f515a",
+            "6235c77b6f84570b",
+            "1c490f10b8c91a36",
+            "3b701474a45f6711",
+            "ddc6511bba3ab26a"
+        ],
+        "x": 54,
+        "y": 819,
+        "w": 1332,
+        "h": 702
+    },
+    {
+        "id": "8b0b5e8a7e6aad3c",
+        "type": "group",
+        "z": "110494c2c16f19b1",
+        "name": "PS CONTROL",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "aca63abd6d11b1e3",
+            "15a05e5ed5d0b8e5",
+            "992246e2e0fad854",
+            "f26f2899e6444a56",
+            "728f79abf0fa8dea",
+            "816b2b33847cbcb0",
+            "f3453861c70b1da5",
+            "49545b0ef7649840",
+            "ccf810691cd1b4b7",
+            "322a65314665d04e",
+            "c1f989fc3d40a904",
+            "25c098cd42927611",
+            "6c4ed859155f5452",
+            "67787dae9754e6e3",
+            "fec1e643ad17a16e",
+            "a5de7eb407a29b79",
+            "5ad72594e53bd429",
+            "4ec81f0bfac41674",
+            "20dd2b9023035196",
+            "9536e2c266ecffd4",
+            "2ef28af24751755d",
+            "ed0046df5778c611",
+            "c8055203584be3ea",
+            "29d3e247c681126e",
+            "1bc4b62fca54a91b",
+            "b8e360a71a4df5e9",
+            "8c6c10f9268e12e1",
+            "921ee0bb1a9b4402",
+            "bc4ff5059ab2b839",
+            "f53d32e35b616b90",
+            "b6b6825e1f7bdedf",
+            "eb5b406cfa84ad31",
+            "d8f905d0ba03062c",
+            "632ab685984da15c",
+            "5a8b8bea3ea571f8",
+            "7ef1c73e3b3d0f1c",
+            "3bceb0db4d4da3e9",
+            "538e8914238c9185",
+            "13f334c5d8f45f6a",
+            "76ed76bf93619bcc",
+            "2d0770e6394e2069",
+            "9819af1e4924ad24"
+        ],
+        "x": 54,
+        "y": 19,
+        "w": 1252,
+        "h": 762
     },
     {
         "id": "67018f7a.7112a8",
@@ -5110,27 +5003,6 @@
         "hidden": false
     },
     {
-        "id": "72544c4aeb4b73c4",
-        "type": "serial-port",
-        "z": "8d2889cddf4f0c77",
-        "name": "",
-        "serialport": "/dev/MULTICOMP",
-        "serialbaud": "9600",
-        "databits": "8",
-        "parity": "none",
-        "stopbits": "1",
-        "waitfor": "",
-        "dtr": "none",
-        "rts": "none",
-        "cts": "none",
-        "dsr": "none",
-        "newline": "\\n",
-        "bin": "false",
-        "out": "char",
-        "addchar": "",
-        "responsetimeout": "10000"
-    },
-    {
         "id": "894cb778acd52a39",
         "type": "ui_group",
         "name": "Out Flow Controller",
@@ -5607,7 +5479,7 @@
         "type": "function",
         "z": "da3fb3be89e2e1a0",
         "name": "Create JSON Object",
-        "func": "let Voltage = msg.payload.Voltage;\nlet Current = msg.payload.Current;\nlet Power = msg.payload.Power;\nlet IDN = msg.payload.IDN;\nlet TableName = msg.payload.TableName;\n\nlet query = `\n    INSERT INTO ${TableName} (module_model, voltage, current, power)\n    VALUES ('${IDN}', ${Voltage}, ${Current}, ${Power});\n`;\n\nmsg.topic = query;\nreturn {payload: query};\n",
+        "func": "let Voltage = msg.payload.Voltage;\nlet Current = msg.payload.Current;\n//let Power = msg.payload.Power;\n//let IDN = msg.payload.IDN;\nlet TableName = msg.payload.TableName;\n\nlet query = `\n    INSERT INTO ${TableName} (voltage, current)\n    VALUES (${Voltage}, ${Current} );\n`;\n\nmsg.topic = query;\nreturn {payload: query};\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -5744,660 +5616,6 @@
         "objectout": "msg",
         "x": 1130,
         "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "13667c89655b4714",
-        "type": "serial request",
-        "z": "ac47bd5742c35c78",
-        "name": "RIGOL",
-        "serial": "ea290f1e4e92d3ec",
-        "x": 620,
-        "y": 320,
-        "wires": [
-            [
-                "7047916060e0a5af"
-            ]
-        ]
-    },
-    {
-        "id": "5f0ab210b79067df",
-        "type": "serial request",
-        "z": "ac47bd5742c35c78",
-        "name": "RIGOL",
-        "serial": "ea290f1e4e92d3ec",
-        "x": 620,
-        "y": 440,
-        "wires": [
-            [
-                "6a40256db3c7e9d4"
-            ]
-        ]
-    },
-    {
-        "id": "7047916060e0a5af",
-        "type": "function",
-        "z": "ac47bd5742c35c78",
-        "name": "ADD TOPIC & MAKE FLOW",
-        "func": "var flag = msg.payload;\nmsg.topic = flow.get('volt:prot')\nflow.set(msg.topic,flag)\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 840,
-        "y": 320,
-        "wires": [
-            [
-                "a4fdd448d7e09764"
-            ]
-        ]
-    },
-    {
-        "id": "0e6c2d594c6a7c30",
-        "type": "function",
-        "z": "ac47bd5742c35c78",
-        "name": "MEASURE VOLT PROT",
-        "func": "msg.topic = 'volt:prot'; \nmsg.payload = 'VOLT:PROT?'\nflow.set('volt:prot', msg.topic); //Create the topic visible in the flow\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 370,
-        "y": 320,
-        "wires": [
-            [
-                "13667c89655b4714"
-            ]
-        ]
-    },
-    {
-        "id": "6a40256db3c7e9d4",
-        "type": "function",
-        "z": "ac47bd5742c35c78",
-        "name": "ADD TOPIC & MAKE FLOW",
-        "func": "var flag = msg.payload;\nmsg.topic = flow.get('curr:prot')\nflow.set(msg.topic,flag)\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 840,
-        "y": 440,
-        "wires": [
-            [
-                "a4fdd448d7e09764"
-            ]
-        ]
-    },
-    {
-        "id": "a4fdd448d7e09764",
-        "type": "function",
-        "z": "ac47bd5742c35c78",
-        "name": "CALCULATE POWER",
-        "func": "\n// Retrieve the states\nvar curr = parseFloat(flow.get('curr'));\nvar volt = parseFloat(flow.get('volt'));\nvar voltprot = parseFloat(flow.get('volt:prot'));\nvar currprot = parseFloat(flow.get('curr:prot'));\n\n \n\nvar msg1 = { payload: volt };\nvar msg2 = { payload: curr };\nvar msg3 = { payload: voltprot };\nvar msg4 = {payload: currprot};\n\nreturn [msg1,msg2,msg3,msg4];",
-        "outputs": 4,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1220,
-        "y": 400,
-        "wires": [
-            [],
-            [],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "6bdc7c9a299f3b0f",
-        "type": "inject",
-        "z": "ac47bd5742c35c78",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "2",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "0.5",
-        "topic": "",
-        "payload": "1",
-        "payloadType": "str",
-        "x": 110,
-        "y": 400,
-        "wires": [
-            [
-                "0e6c2d594c6a7c30",
-                "dc587ae7be0dc0a9",
-                "27483b3c384b6ef5",
-                "c1724bfc31d82838"
-            ]
-        ]
-    },
-    {
-        "id": "dc587ae7be0dc0a9",
-        "type": "function",
-        "z": "ac47bd5742c35c78",
-        "name": "MEASURE VOLT ",
-        "func": "msg.topic = 'volt'; \nmsg.payload = 'VOLT?'\nflow.set('volt', msg.topic); //Create the topic visible in the flow\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 350,
-        "y": 380,
-        "wires": [
-            [
-                "df9eb5ec2b89bbea"
-            ]
-        ]
-    },
-    {
-        "id": "27483b3c384b6ef5",
-        "type": "function",
-        "z": "ac47bd5742c35c78",
-        "name": "MEASURE CURR PROT",
-        "func": "msg.topic = 'curr:prot'; \nmsg.payload = 'CURR:PROT?'\nflow.set('curr:prot', msg.topic); //Create the topic visible in the flow\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 370,
-        "y": 440,
-        "wires": [
-            [
-                "5f0ab210b79067df"
-            ]
-        ]
-    },
-    {
-        "id": "c1724bfc31d82838",
-        "type": "function",
-        "z": "ac47bd5742c35c78",
-        "name": "MEASURE CURR",
-        "func": "msg.topic = 'curr'; \nmsg.payload = 'CURR?'\nflow.set('curr', msg.topic); //Create the topic visible in the flow\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 350,
-        "y": 500,
-        "wires": [
-            [
-                "4fb64563b06a9d78"
-            ]
-        ]
-    },
-    {
-        "id": "df9eb5ec2b89bbea",
-        "type": "serial request",
-        "z": "ac47bd5742c35c78",
-        "name": "RIGOL",
-        "serial": "ea290f1e4e92d3ec",
-        "x": 620,
-        "y": 380,
-        "wires": [
-            [
-                "1d4eefea8b2e51f7"
-            ]
-        ]
-    },
-    {
-        "id": "4fb64563b06a9d78",
-        "type": "serial request",
-        "z": "ac47bd5742c35c78",
-        "name": "RIGOL",
-        "serial": "ea290f1e4e92d3ec",
-        "x": 620,
-        "y": 500,
-        "wires": [
-            [
-                "0d847bc060466cf9"
-            ]
-        ]
-    },
-    {
-        "id": "1d4eefea8b2e51f7",
-        "type": "function",
-        "z": "ac47bd5742c35c78",
-        "name": "ADD TOPIC & MAKE FLOW",
-        "func": "var flag = msg.payload;\nmsg.topic = flow.get('volt')\nflow.set(msg.topic,flag)\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 840,
-        "y": 380,
-        "wires": [
-            [
-                "a4fdd448d7e09764"
-            ]
-        ]
-    },
-    {
-        "id": "0d847bc060466cf9",
-        "type": "function",
-        "z": "ac47bd5742c35c78",
-        "name": "ADD TOPIC & MAKE FLOW",
-        "func": "var flag = msg.payload;\nmsg.topic = flow.get('curr')\nflow.set(msg.topic,flag)\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 840,
-        "y": 500,
-        "wires": [
-            [
-                "a4fdd448d7e09764"
-            ]
-        ]
-    },
-    {
-        "id": "4b660b4df8990109",
-        "type": "inject",
-        "z": "8d2889cddf4f0c77",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "2",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "0.5",
-        "topic": "",
-        "payload": "1",
-        "payloadType": "str",
-        "x": 270,
-        "y": 280,
-        "wires": [
-            [
-                "ad2cce3eb77c38ad"
-            ]
-        ]
-    },
-    {
-        "id": "ad2cce3eb77c38ad",
-        "type": "function",
-        "z": "8d2889cddf4f0c77",
-        "name": "CURRENT PROTECTION STATUS REQUEST",
-        "func": "var flag = msg.payload; //takes the flag to initiate the measure\n\n//Takes the SCPI queries from global variables\nvar q_OVP = global.get(\"Query_OverVoltageProtection\")\nvar q_Outp = global.get(\"Query_Output\")\nvar q_OCP = global.get(\"Query_OverCurrentProtection\")\n\n//Constructs the payload\nvar msg1 = {payload : q_OVP};\nvar msg2 = {payload : q_OCP};\nvar msg3 = {payload : q_Outp};\n\nreturn [msg1,msg2,msg3];\n",
-        "outputs": 3,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 560,
-        "y": 280,
-        "wires": [
-            [
-                "21dcfb1a63844c92"
-            ],
-            [
-                "e48500e22a9cd507"
-            ],
-            [
-                "7cd34eea355838b3"
-            ]
-        ],
-        "info": "This function takes the SCPI commands from global variables and separate it by topics"
-    },
-    {
-        "id": "21dcfb1a63844c92",
-        "type": "serial request",
-        "z": "8d2889cddf4f0c77",
-        "name": "RIGOL",
-        "serial": "ea290f1e4e92d3ec",
-        "x": 920,
-        "y": 140,
-        "wires": [
-            [
-                "8baf9d32905f8885"
-            ]
-        ]
-    },
-    {
-        "id": "927a611e4d87005c",
-        "type": "function",
-        "z": "8d2889cddf4f0c77",
-        "name": "ON/OFF TO BOOLEAN",
-        "func": "\nvar input = (msg.payload || \"\").toString();  // asegura que siempre sea string\n\n// Quitar saltos de línea y retornos de carro\nvar cleanInput = input.replace(/[\\r\\n]/g, \"\").trim();\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Si llega algo inesperado\n    boolValue = null;\n}\n\nvar msg1 = { payload: boolValue };\n\nreturn [msg1];\n\n/*var input = msg.payload;  // Assume msg.payload contains the string \"ON\" or \"OFF\"\n\n// Remove carriage return characters\nvar cleanInput = input.replace(/\\n/, '')\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Optionally handle unexpected values\n    boolValue = null;  // or throw an error, or set a default value\n}\n\nvar msg1 = {payload: boolValue};            \n       \n\nreturn [msg1];\n*/",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1170,
-        "y": 260,
-        "wires": [
-            []
-        ],
-        "info": "This function makes the ON/OFF output to a boolean value."
-    },
-    {
-        "id": "8baf9d32905f8885",
-        "type": "function",
-        "z": "8d2889cddf4f0c77",
-        "name": "ON/OFF TO BOOLEAN",
-        "func": "var input = (msg.payload || \"\").toString();  // asegura que siempre sea string\n\n// Quitar saltos de línea y retornos de carro\nvar cleanInput = input.replace(/[\\r\\n]/g, \"\").trim();\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Si llega algo inesperado\n    boolValue = null;\n}\n\nvar msg1 = { payload: boolValue };\n\nreturn [msg1];\n\n/*var input = msg.payload;  // Assume msg.payload contains the string \"ON\" or \"OFF\"\n\n// Remove carriage return characters\nvar cleanInput = input.replace(/\\n/, '')\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Optionally handle unexpected values\n    boolValue = null;  // or throw an error, or set a default value\n}\n\nvar msg1 = {payload: boolValue};            \n       \n\nreturn [msg1];\n*/",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1150,
-        "y": 140,
-        "wires": [
-            []
-        ],
-        "info": "This function makes the ON/OFF output to a boolean value."
-    },
-    {
-        "id": "8396aa9f93417e5f",
-        "type": "function",
-        "z": "8d2889cddf4f0c77",
-        "name": "ON/OFF TO BOOLEAN",
-        "func": "\nvar input = (msg.payload || \"\").toString();  // asegura que siempre sea string\n\n// Quitar saltos de línea y retornos de carro\nvar cleanInput = input.replace(/[\\r\\n]/g, \"\").trim();\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Si llega algo inesperado\n    boolValue = null;\n}\n\nvar msg1 = { payload: boolValue };\n\nreturn [msg1];\n\n/*var input = msg.payload;  // Assume msg.payload contains the string \"ON\" or \"OFF\"\n\n// Remove carriage return characters\nvar cleanInput = input.replace(/\\n/, '')\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Optionally handle unexpected values\n    boolValue = null;  // or throw an error, or set a default value\n}\n\nvar msg1 = {payload: boolValue};            \n       \n\nreturn [msg1];\n*/",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1170,
-        "y": 400,
-        "wires": [
-            []
-        ],
-        "info": "This function makes the ON/OFF output to a boolean value."
-    },
-    {
-        "id": "e48500e22a9cd507",
-        "type": "serial request",
-        "z": "8d2889cddf4f0c77",
-        "name": "RIGOL",
-        "serial": "ea290f1e4e92d3ec",
-        "x": 920,
-        "y": 260,
-        "wires": [
-            [
-                "927a611e4d87005c"
-            ]
-        ]
-    },
-    {
-        "id": "7cd34eea355838b3",
-        "type": "serial request",
-        "z": "8d2889cddf4f0c77",
-        "name": "RIGOL",
-        "serial": "ea290f1e4e92d3ec",
-        "x": 920,
-        "y": 400,
-        "wires": [
-            [
-                "8396aa9f93417e5f"
-            ]
-        ]
-    },
-    {
-        "id": "9e1372952816407e",
-        "type": "function",
-        "z": "4e115b18621d03bf",
-        "name": "ADD NUMBER TO SCPI COMMAND",
-        "func": "var input = msg.payload\nvar clearinput = input.trim() // Trim any leading/trailing whitespace from the input string\n\n//Initiate variables \nvar command\n\n//Get flow variable\nvar set_OVP = global.get(\"Set_OverVoltageProtection\");\nvar set_OCP = global.get(\"Set_OverCurrentProtection\");\nvar set_V = global.get(\"Set_Voltage\");\nvar set_C = global.get(\"Set_Current\"); \n\n// Use a switch statement to check the topic and create specific command\nswitch (msg.topic) {\n    case 'curr':\n        command = set_C + clearinput;\n        break;\n    case 'volt':\n        command = set_V + clearinput;\n        break;\n    case 'curr:prot':\n        command = set_OCP + clearinput;\n        break;\n    case 'volt:prot':\n        command = set_OVP + clearinput;\n        break;\n\n}\n\n//Create the output message\nvar msg1 = {payload : command};\n\nreturn [msg1];\n\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 570,
-        "y": 400,
-        "wires": [
-            [
-                "1043adf1e7574ea7"
-            ]
-        ],
-        "info": "This function add the <var> to the SCPI command\n"
-    },
-    {
-        "id": "1043adf1e7574ea7",
-        "type": "serial request",
-        "z": "4e115b18621d03bf",
-        "name": "RIGOL",
-        "serial": "ea290f1e4e92d3ec",
-        "x": 840,
-        "y": 400,
-        "wires": [
-            [
-                "8e7e1332c9fbaec7"
-            ]
-        ]
-    },
-    {
-        "id": "8e7e1332c9fbaec7",
-        "type": "debug",
-        "z": "4e115b18621d03bf",
-        "name": "debug 18",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1060,
-        "y": 400,
-        "wires": []
-    },
-    {
-        "id": "0f1555bd5a4f1c20",
-        "type": "serial request",
-        "z": "03ae40c2e9a3f26b",
-        "name": "RIGOL",
-        "serial": "ea290f1e4e92d3ec",
-        "x": 760,
-        "y": 320,
-        "wires": [
-            [
-                "c37f4ba2da0de741"
-            ]
-        ]
-    },
-    {
-        "id": "ad1445594e97cd0f",
-        "type": "serial request",
-        "z": "03ae40c2e9a3f26b",
-        "name": "RIGOL",
-        "serial": "ea290f1e4e92d3ec",
-        "x": 740,
-        "y": 440,
-        "wires": [
-            [
-                "9814ed8c108d48df"
-            ]
-        ]
-    },
-    {
-        "id": "c37f4ba2da0de741",
-        "type": "function",
-        "z": "03ae40c2e9a3f26b",
-        "name": "ADD TOPIC & MAKE FLOW",
-        "func": "var flag = msg.payload;\nmsg.topic = flow.get('Measure_voltage')\nflow.set(msg.topic,flag)\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1020,
-        "y": 320,
-        "wires": [
-            [
-                "813bda7092f9b85c"
-            ]
-        ]
-    },
-    {
-        "id": "05968c2fa4a9e853",
-        "type": "function",
-        "z": "03ae40c2e9a3f26b",
-        "name": "MEASURE VOLT ",
-        "func": "msg.topic = 'Measure_voltage'; \nmsg.payload = ':MEAS:VOLT?'\nflow.set('Measure_voltage', msg.topic); //Create the topic visible in the flow\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 570,
-        "y": 320,
-        "wires": [
-            [
-                "0f1555bd5a4f1c20"
-            ]
-        ]
-    },
-    {
-        "id": "56b0d268e799b5ad",
-        "type": "function",
-        "z": "03ae40c2e9a3f26b",
-        "name": "MEASURE CURR",
-        "func": "msg.topic = 'Measure_current'; \nmsg.payload = ':MEAS:CURR?'\nflow.set('Measure_current', msg.topic); //Create the topic visible in the flow\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 550,
-        "y": 440,
-        "wires": [
-            [
-                "ad1445594e97cd0f"
-            ]
-        ]
-    },
-    {
-        "id": "9814ed8c108d48df",
-        "type": "function",
-        "z": "03ae40c2e9a3f26b",
-        "name": "ADD TOPIC & MAKE FLOW",
-        "func": "var flag = msg.payload;\nmsg.topic = flow.get('Measure_current')\nflow.set(msg.topic,flag)\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1020,
-        "y": 440,
-        "wires": [
-            [
-                "813bda7092f9b85c"
-            ]
-        ]
-    },
-    {
-        "id": "813bda7092f9b85c",
-        "type": "function",
-        "z": "03ae40c2e9a3f26b",
-        "name": "CALCULATE POWER",
-        "func": "\n// Retrieve the states\nvar curr = parseFloat(flow.get('Measure_current'));\nvar volt = parseFloat(flow.get('Measure_voltage'));\n\n\nvar power = volt*curr; \n\nvar msg1 = { payload: volt };\nvar msg2 = { payload: curr };\nvar msg3 = { payload: power };\nreturn [msg1,msg2,msg3];",
-        "outputs": 3,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1360,
-        "y": 380,
-        "wires": [
-            [],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "279f031e42748574",
-        "type": "inject",
-        "z": "03ae40c2e9a3f26b",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "2",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "0.5",
-        "topic": "",
-        "payload": "1",
-        "payloadType": "str",
-        "x": 310,
-        "y": 360,
-        "wires": [
-            [
-                "05968c2fa4a9e853",
-                "56b0d268e799b5ad"
-            ]
-        ]
-    },
-    {
-        "id": "333a32bc1a89ae8d",
-        "type": "function",
-        "z": "a04e409f16590580",
-        "name": "MAKE SCPI COMMAND",
-        "func": "// Get the boolean value from the input message payload\nvar inputBool = msg.payload;\n\n// Initialize the response string\nvar status_OCP = global.get(\"Status_OverCurrentProtection\");\nvar status_OVP = global.get(\"Status_OverVoltageProtection\");\nvar output = global.get(\"Output\");\n// Set the topic as flow variable to have control afterwards\n//flow.set('sharedTopic', msg.topic);\n\nvar response;\n// Use a switch statement to check the boolean value and topic\nswitch (msg.topic) {\n    case 'curr:prot':\n        if (inputBool === true) {\n            response = status_OCP + \"ON\";\n        } else if (inputBool === false) {\n            response = status_OCP + \"OFF\";\n        } else {\n            response = status_OCP + \"ON\";\n        }\n        break;\n    case 'volt:prot':\n        if (inputBool === true) {\n            response = status_OVP + \"ON\";\n        } else if (inputBool === false) {\n            response = status_OVP + \"OFF\";\n        } else {\n            response = status_OVP + \"ON\";\n        }\n        break;\n    case 'outp':\n        if (inputBool === true) {\n            response = output + \"ON\";\n        } else if (inputBool === false){\n            response = output + \"OFF\";\n        }else{\n            response = output + \"OFF\"\n        }\n}\n\n// Set the response as the payload of the output message\nmsg.payload = response;\n\n// Return the modified message\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 510,
-        "y": 240,
-        "wires": [
-            [
-                "9071b013aaaa7a2c"
-            ]
-        ],
-        "info": "This function add the <ON> or <OFF> to the SCPI command\n"
-    },
-    {
-        "id": "9071b013aaaa7a2c",
-        "type": "serial request",
-        "z": "a04e409f16590580",
-        "name": "RIGOL",
-        "serial": "ea290f1e4e92d3ec",
-        "x": 800,
-        "y": 240,
         "wires": [
             []
         ]
@@ -7001,6 +6219,97 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "61553fa2f93f2247",
+        "type": "switch",
+        "z": "bd3595290af11cd7",
+        "name": "global.RIGOL_st==1",
+        "property": "RIGOL_st",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 220,
+        "y": 140,
+        "wires": [
+            [
+                "7485c46b6509a751"
+            ]
+        ]
+    },
+    {
+        "id": "7485c46b6509a751",
+        "type": "delay",
+        "z": "bd3595290af11cd7",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 430,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3d579ccf3fe1761f",
+        "type": "comment",
+        "z": "bd3595290af11cd7",
+        "name": "SerialIn Check",
+        "info": "Before passing a message to the SerialPort checks if the port is connected.\n\nThe delay is necessary to avoid problem during reconnection.",
+        "x": 120,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "9d6abe9189e02def",
+        "type": "switch",
+        "z": "7196d4f93e21eea9",
+        "name": "msg.status==OK",
+        "property": "status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "OK",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 230,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "290f80f1212cf3bf",
+        "type": "comment",
+        "z": "7196d4f93e21eea9",
+        "name": "SerialOut Check",
+        "info": "Checks the status of the serial output to avoid passing the message if there is an error. e.g avoids propagating the message in case of timeout.",
+        "x": 120,
+        "y": 40,
+        "wires": []
     },
     {
         "id": "8fb762f9.df3d38",
@@ -21834,6 +21143,2491 @@
         ]
     },
     {
+        "id": "b8c5ff719f6f9df6",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "8cf474edcfece05e",
+        "name": "SERIAL PORT STATUS",
+        "func": "/*if (msg.status.fill != \"green\"){\n    msg.payload = false\n} else {\n    msg.payload = true;\n}*/\n\nmsg.payload = msg.status.fill;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1730,
+        "y": 120,
+        "wires": [
+            [
+                "34219e6ac2c9f81e"
+            ]
+        ]
+    },
+    {
+        "id": "34219e6ac2c9f81e",
+        "type": "ui_led",
+        "z": "110494c2c16f19b1",
+        "g": "8cf474edcfece05e",
+        "order": 3,
+        "group": "18d6158902c9746d",
+        "width": 0,
+        "height": 0,
+        "label": "Status",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#77767b",
+                "value": "grey",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "green",
+                "valueType": "str"
+            },
+            {
+                "color": "#ff0000",
+                "value": "red",
+                "valueType": "str"
+            },
+            {
+                "color": "#f8e45c",
+                "value": "yellow",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": false,
+        "name": "Status",
+        "x": 1970,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "f1c8e9099d13eb48",
+        "type": "debug",
+        "z": "110494c2c16f19b1",
+        "g": "8cf474edcfece05e",
+        "name": "debug 25",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1680,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "edcfb702b2c29ab7",
+        "type": "serial in",
+        "z": "110494c2c16f19b1",
+        "g": "8cf474edcfece05e",
+        "name": "RIGOL Listener",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 1440,
+        "y": 260,
+        "wires": [
+            [
+                "f1c8e9099d13eb48",
+                "d6aade31257f5f3b"
+            ]
+        ]
+    },
+    {
+        "id": "2d3481df9557f17e",
+        "type": "status",
+        "z": "110494c2c16f19b1",
+        "g": "8cf474edcfece05e",
+        "name": "RIGOL STATUS",
+        "scope": [
+            "edcfb702b2c29ab7"
+        ],
+        "x": 1440,
+        "y": 120,
+        "wires": [
+            [
+                "b8c5ff719f6f9df6",
+                "f4a0324b47fcb6a5",
+                "4fda723cfede9fbd",
+                "54ddfd58e1481e8f"
+            ]
+        ]
+    },
+    {
+        "id": "1148e58d58efa315",
+        "type": "link out",
+        "z": "110494c2c16f19b1",
+        "g": "3a5fc43c729b08bc",
+        "name": "SECURITY_MULTStatus_OUT",
+        "mode": "link",
+        "links": [
+            "e5eec86ba63485ba"
+        ],
+        "x": 2015,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "98a32d14f5003103",
+        "type": "catch",
+        "z": "110494c2c16f19b1",
+        "g": "3a5fc43c729b08bc",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 1440,
+        "y": 540,
+        "wires": [
+            [
+                "9b55ef7deaa8a6d1"
+            ]
+        ]
+    },
+    {
+        "id": "9b55ef7deaa8a6d1",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "3a5fc43c729b08bc",
+        "name": "Security ",
+        "func": "msg.payload = msg.error.message; \nmsg.topic = msg.port;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1700,
+        "y": 540,
+        "wires": [
+            [
+                "4c35a358c4a09dd6"
+            ]
+        ]
+    },
+    {
+        "id": "f68248edaab887ce",
+        "type": "debug",
+        "z": "110494c2c16f19b1",
+        "g": "3a5fc43c729b08bc",
+        "name": "debug 370",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1970,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "4c35a358c4a09dd6",
+        "type": "string",
+        "z": "110494c2c16f19b1",
+        "g": "3a5fc43c729b08bc",
+        "name": "Trim topic",
+        "methods": [
+            {
+                "name": "delLeftMost",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "/dev/"
+                    }
+                ]
+            }
+        ],
+        "prop": "topic",
+        "propout": "topic",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1860,
+        "y": 540,
+        "wires": [
+            [
+                "f68248edaab887ce",
+                "1148e58d58efa315"
+            ]
+        ]
+    },
+    {
+        "id": "d6aade31257f5f3b",
+        "type": "ui_text",
+        "z": "110494c2c16f19b1",
+        "g": "8cf474edcfece05e",
+        "group": "18d6158902c9746d",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Listener",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1680,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "337230bae71bbb6e",
+        "type": "ui_button",
+        "z": "110494c2c16f19b1",
+        "g": "8cf474edcfece05e",
+        "name": "",
+        "group": "18d6158902c9746d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Connect",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"enabled\": true}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1480,
+        "y": 360,
+        "wires": [
+            [
+                "e732c6bdc37d195f"
+            ]
+        ]
+    },
+    {
+        "id": "936bc3f185e8694d",
+        "type": "ui_button",
+        "z": "110494c2c16f19b1",
+        "g": "8cf474edcfece05e",
+        "name": "",
+        "group": "18d6158902c9746d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "DisConnect",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"enabled\": false}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1470,
+        "y": 420,
+        "wires": [
+            [
+                "e732c6bdc37d195f"
+            ]
+        ]
+    },
+    {
+        "id": "e732c6bdc37d195f",
+        "type": "serial control",
+        "z": "110494c2c16f19b1",
+        "g": "8cf474edcfece05e",
+        "name": "RIGOL Control Node",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 1700,
+        "y": 400,
+        "wires": [
+            [
+                "a0e9b2d2fc31636a"
+            ]
+        ]
+    },
+    {
+        "id": "f4a0324b47fcb6a5",
+        "type": "ui_text",
+        "z": "110494c2c16f19b1",
+        "g": "8cf474edcfece05e",
+        "group": "18d6158902c9746d",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Status Text",
+        "format": "{{msg.status.text}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1710,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a0e9b2d2fc31636a",
+        "type": "debug",
+        "z": "110494c2c16f19b1",
+        "g": "8cf474edcfece05e",
+        "name": "debug 403",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1910,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "4fda723cfede9fbd",
+        "type": "debug",
+        "z": "110494c2c16f19b1",
+        "g": "8cf474edcfece05e",
+        "name": "debug 404",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1710,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "50db91262d98e386",
+        "type": "ui_text",
+        "z": "110494c2c16f19b1",
+        "g": "a25c389c6da8a6d6",
+        "group": "bb82654218343a36",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "DAQ CURRENT",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1176.666748046875,
+        "y": 1743.3333129882812,
+        "wires": []
+    },
+    {
+        "id": "5d1614f34f6c15a3",
+        "type": "ui_chart",
+        "z": "110494c2c16f19b1",
+        "g": "a25c389c6da8a6d6",
+        "name": "",
+        "group": "bb82654218343a36",
+        "order": 9,
+        "width": "0",
+        "height": "0",
+        "label": "CURRENT EVOLUTION",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "6",
+        "removeOlder": "10",
+        "removeOlderPoints": "100",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1206.666748046875,
+        "y": 1783.3333129882812,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4fa2c361e3857d4c",
+        "type": "ui_text",
+        "z": "110494c2c16f19b1",
+        "g": "a25c389c6da8a6d6",
+        "group": "bb82654218343a36",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "DAQ VOLTAGE",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1180,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "6580e83d0f3e4a66",
+        "type": "ui_chart",
+        "z": "110494c2c16f19b1",
+        "g": "a25c389c6da8a6d6",
+        "name": "",
+        "group": "bb82654218343a36",
+        "order": 9,
+        "width": "0",
+        "height": "0",
+        "label": "VOLTAGE EVOLUTION",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "6",
+        "removeOlder": "10",
+        "removeOlderPoints": "100",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1210,
+        "y": 1640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a0b2b0a6d689b887",
+        "type": "serial request",
+        "z": "110494c2c16f19b1",
+        "g": "a25c389c6da8a6d6",
+        "name": "",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 670,
+        "y": 1640,
+        "wires": [
+            [
+                "7e4aeb4bbe579455"
+            ]
+        ]
+    },
+    {
+        "id": "20c0a50db6cbd246",
+        "type": "serial request",
+        "z": "110494c2c16f19b1",
+        "g": "a25c389c6da8a6d6",
+        "name": "",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 650,
+        "y": 1760,
+        "wires": [
+            [
+                "f027a8e5d516863f"
+            ]
+        ]
+    },
+    {
+        "id": "c8ab14be99f8a0de",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "a25c389c6da8a6d6",
+        "name": ":MEAS:VOLT?",
+        "func": "msg.payload = ':MEAS:VOLT?'\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 323.333251953125,
+        "y": 1636.6666870117188,
+        "wires": [
+            [
+                "8afcebe0f0ec3ddd"
+            ]
+        ]
+    },
+    {
+        "id": "b543d99d7a886163",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "a25c389c6da8a6d6",
+        "name": ":MEAS:CURR?",
+        "func": "msg.payload = ':MEAS:CURR?'\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 283.333251953125,
+        "y": 1756.6666870117188,
+        "wires": [
+            [
+                "257432218f684347"
+            ]
+        ]
+    },
+    {
+        "id": "68b57bd9268d30eb",
+        "type": "inject",
+        "z": "110494c2c16f19b1",
+        "g": "a25c389c6da8a6d6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "x": 146.666748046875,
+        "y": 1683.3333129882812,
+        "wires": [
+            [
+                "c8ab14be99f8a0de",
+                "b543d99d7a886163"
+            ]
+        ]
+    },
+    {
+        "id": "934524b6453166fb",
+        "type": "ui_text_input",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "",
+        "label": "SET OverVoltageProtection",
+        "tooltip": "",
+        "group": "bacbac46b5c1eddf",
+        "order": 4,
+        "width": "4",
+        "height": "1",
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 200,
+        "y": 860,
+        "wires": [
+            [
+                "2b79f6094d313575"
+            ]
+        ]
+    },
+    {
+        "id": "ad069c66bb2f9299",
+        "type": "ui_text_input",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "",
+        "label": "SET OverCurrentProtection",
+        "tooltip": "",
+        "group": "bacbac46b5c1eddf",
+        "order": 5,
+        "width": "4",
+        "height": "1",
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 200,
+        "y": 1020,
+        "wires": [
+            [
+                "9701a4a5ebf2a853"
+            ]
+        ]
+    },
+    {
+        "id": "633e49de02285169",
+        "type": "ui_text_input",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "",
+        "label": "SET Voltage",
+        "tooltip": "",
+        "group": "bacbac46b5c1eddf",
+        "order": 6,
+        "width": "4",
+        "height": "1",
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 170,
+        "y": 1180,
+        "wires": [
+            [
+                "641fa898dd866c37"
+            ]
+        ]
+    },
+    {
+        "id": "5b654ff43130d4c9",
+        "type": "ui_text_input",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "",
+        "label": "SET Current",
+        "tooltip": "",
+        "group": "bacbac46b5c1eddf",
+        "order": 7,
+        "width": "4",
+        "height": "1",
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 190,
+        "y": 1380,
+        "wires": [
+            [
+                "82d2e2bf96cea64e"
+            ]
+        ]
+    },
+    {
+        "id": "641fa898dd866c37",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "VOLT",
+        "func": "let input = msg.payload\nlet clearinput = input.trim() // Trim any leading/trailing whitespace from the input string\n\n//Initiate variables \nlet command\n\ncmd = 'VOLT ';\n\n\n\ncommand = cmd + clearinput;\n\n//Create the output message\nmsg.payload = command;\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1173.3333333333335,
+        "wires": [
+            [
+                "4ba460da7c89e05e",
+                "faa5f10de86651c0"
+            ]
+        ],
+        "info": "This function add the <var> to the SCPI command\n"
+    },
+    {
+        "id": "82d2e2bf96cea64e",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "CURR",
+        "func": "let input = msg.payload\nlet clearinput = input.trim() // Trim any leading/trailing whitespace from the input string\n\n//Initiate variables \nlet command\n\ncmd = 'CURR ';\n\n\n\ncommand = cmd + clearinput;\n\n//Create the output message\nmsg.payload = command;\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 1380,
+        "wires": [
+            [
+                "41d19a7cfd81a9fb",
+                "cd45e8836be601fb"
+            ]
+        ],
+        "info": "This function add the <var> to the SCPI command\n"
+    },
+    {
+        "id": "2b79f6094d313575",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "VOLT:PROT ",
+        "func": "let input = msg.payload\nlet clearinput = input.trim() // Trim any leading/trailing whitespace from the input string\n\n//Initiate variables \nlet command\n\n//cmd = 'VOLT:PROT:STAT '\ncmd = 'VOLT:PROT '\n\n\ncommand = cmd + clearinput;\n\n//Create the output message\nmsg.payload = command;\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 860,
+        "wires": [
+            [
+                "fcb7920ec1f0afcd",
+                "9656a6b7073d330b"
+            ]
+        ],
+        "info": "This function add the <var> to the SCPI command\n"
+    },
+    {
+        "id": "9701a4a5ebf2a853",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "CURR:PROT ",
+        "func": "let input = msg.payload\nlet clearinput = input.trim() // Trim any leading/trailing whitespace from the input string\n\n//Initiate variables \nlet command\n\n//cmd = 'CURR:PROT:STAT ';\ncmd = 'CURR:PROT ';\n\ncommand = cmd + clearinput;\n\n//Create the output message\nmsg.payload = command;\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 1020,
+        "wires": [
+            [
+                "51334577f41d820e",
+                "df33f439dff60b61"
+            ]
+        ],
+        "info": "This function add the <var> to the SCPI command\n"
+    },
+    {
+        "id": "f6d9b18bdad060c4",
+        "type": "serial out",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 790,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "f04689e09d827bb1",
+        "type": "serial out",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 790,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "59bc2873fa89b5c2",
+        "type": "serial out",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 830,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "85febb4f35f7a8ef",
+        "type": "serial out",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 750,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "efd307a1ec04f5d5",
+        "type": "inject",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "x": 330,
+        "y": 960,
+        "wires": [
+            [
+                "8d7b2cb8ca8ad87c"
+            ]
+        ]
+    },
+    {
+        "id": "6c5022b2d644aca8",
+        "type": "ui_text",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "group": "bacbac46b5c1eddf",
+        "order": 4,
+        "width": "2",
+        "height": "1",
+        "name": "OverVoltageProtection",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1200,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "0da137fb31205be1",
+        "type": "serial request",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 850,
+        "y": 920,
+        "wires": [
+            [
+                "d08ccbd7b06939c0"
+            ]
+        ]
+    },
+    {
+        "id": "8d7b2cb8ca8ad87c",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "VOLT:PROT?",
+        "func": "msg.payload = 'VOLT:PROT?'\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 920,
+        "wires": [
+            [
+                "1c490f10b8c91a36"
+            ]
+        ]
+    },
+    {
+        "id": "407e6e67b16dcd9b",
+        "type": "serial request",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 890,
+        "y": 1080,
+        "wires": [
+            [
+                "b383e0d31f242d5d"
+            ]
+        ]
+    },
+    {
+        "id": "faacf49abbb42cf2",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "CURR:PROT?",
+        "func": "msg.payload = 'CURR:PROT?'\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 1080,
+        "wires": [
+            [
+                "3b701474a45f6711"
+            ]
+        ]
+    },
+    {
+        "id": "506469e6ccae7bd1",
+        "type": "inject",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "x": 390,
+        "y": 1100,
+        "wires": [
+            [
+                "faacf49abbb42cf2"
+            ]
+        ]
+    },
+    {
+        "id": "dcc931b65e09fefd",
+        "type": "ui_text",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "group": "bacbac46b5c1eddf",
+        "order": 5,
+        "width": "2",
+        "height": "1",
+        "name": "OverCurrentProtection",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1260,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "23ce75151e68f1c9",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "VOLT?",
+        "func": "msg.payload = 'VOLT?'\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 1240,
+        "wires": [
+            [
+                "6235c77b6f84570b"
+            ]
+        ]
+    },
+    {
+        "id": "1bf3896cc0934ef5",
+        "type": "inject",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "x": 390,
+        "y": 1280,
+        "wires": [
+            [
+                "23ce75151e68f1c9"
+            ]
+        ]
+    },
+    {
+        "id": "4ca516a911774357",
+        "type": "serial request",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 850,
+        "y": 1240,
+        "wires": [
+            [
+                "8182463c75759ab7"
+            ]
+        ]
+    },
+    {
+        "id": "78fc366e7142657d",
+        "type": "ui_text",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "group": "bacbac46b5c1eddf",
+        "order": 6,
+        "width": "2",
+        "height": "1",
+        "name": "Voltage Output",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1220,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "8506a6fb35edd440",
+        "type": "serial request",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 850,
+        "y": 1460,
+        "wires": [
+            [
+                "e7c02ca5810f515a"
+            ]
+        ]
+    },
+    {
+        "id": "8f9b1aad6d233692",
+        "type": "ui_text",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "group": "bacbac46b5c1eddf",
+        "order": 7,
+        "width": "2",
+        "height": "1",
+        "name": "Current Output",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1220,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "0e548d7724e37dec",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "CURR?",
+        "func": "msg.payload = 'CURR?'\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 1460,
+        "wires": [
+            [
+                "ddc6511bba3ab26a"
+            ]
+        ]
+    },
+    {
+        "id": "bdc6ef3e3dc6eacf",
+        "type": "inject",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "x": 330,
+        "y": 1480,
+        "wires": [
+            [
+                "0e548d7724e37dec"
+            ]
+        ]
+    },
+    {
+        "id": "fcb7920ec1f0afcd",
+        "type": "delay",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 310,
+        "y": 920,
+        "wires": [
+            [
+                "8d7b2cb8ca8ad87c"
+            ]
+        ]
+    },
+    {
+        "id": "51334577f41d820e",
+        "type": "delay",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 370,
+        "y": 1060,
+        "wires": [
+            [
+                "faacf49abbb42cf2"
+            ]
+        ]
+    },
+    {
+        "id": "4ba460da7c89e05e",
+        "type": "delay",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 370,
+        "y": 1240,
+        "wires": [
+            [
+                "23ce75151e68f1c9"
+            ]
+        ]
+    },
+    {
+        "id": "41d19a7cfd81a9fb",
+        "type": "delay",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 310,
+        "y": 1440,
+        "wires": [
+            [
+                "0e548d7724e37dec"
+            ]
+        ]
+    },
+    {
+        "id": "aca63abd6d11b1e3",
+        "type": "ui_led",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "order": 4,
+        "group": "d5b292af11f072b5",
+        "width": 0,
+        "height": 0,
+        "label": "OCP",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "OCP",
+        "x": 1210,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "15a05e5ed5d0b8e5",
+        "type": "ui_led",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "order": 2,
+        "group": "d5b292af11f072b5",
+        "width": 0,
+        "height": 0,
+        "label": "OVP",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "OVP",
+        "x": 1230,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "992246e2e0fad854",
+        "type": "ui_led",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "order": 6,
+        "group": "d5b292af11f072b5",
+        "width": 0,
+        "height": 0,
+        "label": "OUTPUT",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "OUTPUT",
+        "x": 980,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "f26f2899e6444a56",
+        "type": "link out",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "ed0046df5778c611"
+        ],
+        "x": 1225,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "728f79abf0fa8dea",
+        "type": "link out",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "1bc4b62fca54a91b"
+        ],
+        "x": 1175,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "816b2b33847cbcb0",
+        "type": "link out",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "link out 3",
+        "mode": "link",
+        "links": [
+            "eb5b406cfa84ad31"
+        ],
+        "x": 1185,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "f3453861c70b1da5",
+        "type": "inject",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "49545b0ef7649840"
+            ]
+        ]
+    },
+    {
+        "id": "49545b0ef7649840",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "VOLT:PROT:STAT?",
+        "func": "//Constructs the payload\nmsg = {payload : 'VOLT:PROT:STAT?'};\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 200,
+        "wires": [
+            [
+                "5a8b8bea3ea571f8"
+            ]
+        ],
+        "info": "This function takes the SCPI commands from global variables and separate it by topics"
+    },
+    {
+        "id": "ccf810691cd1b4b7",
+        "type": "serial request",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 710,
+        "y": 200,
+        "wires": [
+            [
+                "632ab685984da15c"
+            ]
+        ]
+    },
+    {
+        "id": "322a65314665d04e",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "ON/OFF 2 BOOL",
+        "func": "\nvar input = (msg.payload || \"\").toString();  // asegura que siempre sea string\n\n// Quitar saltos de línea y retornos de carro\nvar cleanInput = input.replace(/[\\r\\n]/g, \"\").trim();\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Si llega algo inesperado\n    boolValue = null;\n}\n\nvar msg1 = { payload: boolValue };\n\nreturn [msg1];\n\n/*var input = msg.payload;  // Assume msg.payload contains the string \"ON\" or \"OFF\"\n\n// Remove carriage return characters\nvar cleanInput = input.replace(/\\n/, '')\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Optionally handle unexpected values\n    boolValue = null;  // or throw an error, or set a default value\n}\n\nvar msg1 = {payload: boolValue};            \n       \n\nreturn [msg1];\n*/",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 500,
+        "wires": [
+            [
+                "aca63abd6d11b1e3",
+                "728f79abf0fa8dea"
+            ]
+        ],
+        "info": "This function makes the ON/OFF output to a boolean value."
+    },
+    {
+        "id": "c1f989fc3d40a904",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "ON/OFF 2 BOOL",
+        "func": "var input = (msg.payload || \"\").toString();  // asegura que siempre sea string\n\n// Quitar saltos de línea y retornos de carro\nvar cleanInput = input.replace(/[\\r\\n]/g, \"\").trim();\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Si llega algo inesperado\n    boolValue = null;\n}\n\nvar msg1 = { payload: boolValue };\n\nreturn [msg1];\n\n/*var input = msg.payload;  // Assume msg.payload contains the string \"ON\" or \"OFF\"\n\n// Remove carriage return characters\nvar cleanInput = input.replace(/\\n/, '')\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Optionally handle unexpected values\n    boolValue = null;  // or throw an error, or set a default value\n}\n\nvar msg1 = {payload: boolValue};            \n       \n\nreturn [msg1];\n*/",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 200,
+        "wires": [
+            [
+                "f26f2899e6444a56",
+                "15a05e5ed5d0b8e5"
+            ]
+        ],
+        "info": "This function makes the ON/OFF output to a boolean value."
+    },
+    {
+        "id": "25c098cd42927611",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "ON/OFF 2 BOOL",
+        "func": "\nvar input = (msg.payload || \"\").toString();  // asegura que siempre sea string\n\n// Quitar saltos de línea y retornos de carro\nvar cleanInput = input.replace(/[\\r\\n]/g, \"\").trim();\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Si llega algo inesperado\n    boolValue = null;\n}\n\nvar msg1 = { payload: boolValue };\n\nreturn [msg1];\n\n/*var input = msg.payload;  // Assume msg.payload contains the string \"ON\" or \"OFF\"\n\n// Remove carriage return characters\nvar cleanInput = input.replace(/\\n/, '')\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Optionally handle unexpected values\n    boolValue = null;  // or throw an error, or set a default value\n}\n\nvar msg1 = {payload: boolValue};            \n       \n\nreturn [msg1];\n*/",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 720,
+        "wires": [
+            [
+                "816b2b33847cbcb0"
+            ]
+        ],
+        "info": "This function makes the ON/OFF output to a boolean value."
+    },
+    {
+        "id": "6c4ed859155f5452",
+        "type": "serial request",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 690,
+        "y": 500,
+        "wires": [
+            [
+                "538e8914238c9185"
+            ]
+        ]
+    },
+    {
+        "id": "67787dae9754e6e3",
+        "type": "serial request",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 610,
+        "y": 720,
+        "wires": [
+            [
+                "2d0770e6394e2069"
+            ]
+        ]
+    },
+    {
+        "id": "fec1e643ad17a16e",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "CURR:PROT:STAT?",
+        "func": "//Constructs the payload\nmsg = {payload : 'CURR:PROT:STAT?'};\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 500,
+        "wires": [
+            [
+                "13f334c5d8f45f6a"
+            ]
+        ],
+        "info": "This function takes the SCPI commands from global variables and separate it by topics"
+    },
+    {
+        "id": "a5de7eb407a29b79",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "OUTP?",
+        "func": "//Constructs the payload\nmsg = {payload : 'OUTP?'};\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 720,
+        "wires": [
+            [
+                "9819af1e4924ad24"
+            ]
+        ],
+        "info": "This function takes the SCPI commands from global variables and separate it by topics"
+    },
+    {
+        "id": "5ad72594e53bd429",
+        "type": "inject",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "x": 150,
+        "y": 500,
+        "wires": [
+            [
+                "fec1e643ad17a16e"
+            ]
+        ]
+    },
+    {
+        "id": "4ec81f0bfac41674",
+        "type": "inject",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "x": 150,
+        "y": 740,
+        "wires": [
+            [
+                "a5de7eb407a29b79"
+            ]
+        ]
+    },
+    {
+        "id": "20dd2b9023035196",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "VOLT:PROT:STAT",
+        "func": "// Get the boolean value from the input message payload\nlet inputBool = msg.payload;\n\n\nlet response;\nlet cmd='VOLT:PROT:STAT ';\n\n\nif (inputBool === true) {\n    response =  cmd+ \"ON\";\n}else if (inputBool === false){\n    response = cmd + \"OFF\";\n}else{\n    response = cmd + \"OFF\"\n}    \n\n\n\n// Set the response as the payload of the output message\nmsg.payload = response;\n\n// Return the modified message\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 60,
+        "wires": [
+            [
+                "c8055203584be3ea",
+                "7ef1c73e3b3d0f1c"
+            ]
+        ],
+        "info": "This function add the <ON> or <OFF> to the SCPI command\n"
+    },
+    {
+        "id": "9536e2c266ecffd4",
+        "type": "ui_switch",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "EN/DIS VOLTAGE PROTECTION",
+        "label": "EN/DIS VOLTAGE PROTECTION",
+        "tooltip": "",
+        "group": "d5b292af11f072b5",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 320,
+        "y": 60,
+        "wires": [
+            [
+                "20dd2b9023035196"
+            ]
+        ]
+    },
+    {
+        "id": "2ef28af24751755d",
+        "type": "serial out",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 1030,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "ed0046df5778c611",
+        "type": "link in",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "link in 1",
+        "links": [
+            "f26f2899e6444a56"
+        ],
+        "x": 115,
+        "y": 60,
+        "wires": [
+            [
+                "9536e2c266ecffd4"
+            ]
+        ]
+    },
+    {
+        "id": "c8055203584be3ea",
+        "type": "delay",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 150,
+        "y": 160,
+        "wires": [
+            [
+                "49545b0ef7649840"
+            ]
+        ]
+    },
+    {
+        "id": "29d3e247c681126e",
+        "type": "ui_switch",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "EN/DIS CURRENT PROTECTION",
+        "label": "EN/DIS CURRENT PROTECTION",
+        "tooltip": "",
+        "group": "d5b292af11f072b5",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 320,
+        "y": 360,
+        "wires": [
+            [
+                "b8e360a71a4df5e9"
+            ]
+        ]
+    },
+    {
+        "id": "1bc4b62fca54a91b",
+        "type": "link in",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "link in 2",
+        "links": [
+            "728f79abf0fa8dea"
+        ],
+        "x": 125,
+        "y": 360,
+        "wires": [
+            [
+                "29d3e247c681126e"
+            ]
+        ]
+    },
+    {
+        "id": "b8e360a71a4df5e9",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "CURR:PROT:STAT ",
+        "func": "// Get the boolean value from the input message payload\nlet inputBool = msg.payload;\n\n\nlet response;\nlet cmd='CURR:PROT:STAT ';\n\n\nif (inputBool === true) {\n    response =  cmd+ \"ON\";\n}else if (inputBool === false){\n    response = cmd + \"OFF\";\n}else{\n    response = cmd + \"OFF\"\n}    \n\n\n\n// Set the response as the payload of the output message\nmsg.payload = response;\n\n// Return the modified message\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 360,
+        "wires": [
+            [
+                "921ee0bb1a9b4402",
+                "3bceb0db4d4da3e9"
+            ]
+        ],
+        "info": "This function add the <ON> or <OFF> to the SCPI command\n"
+    },
+    {
+        "id": "8c6c10f9268e12e1",
+        "type": "serial out",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 1010,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "921ee0bb1a9b4402",
+        "type": "delay",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 150,
+        "y": 440,
+        "wires": [
+            [
+                "fec1e643ad17a16e"
+            ]
+        ]
+    },
+    {
+        "id": "bc4ff5059ab2b839",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "OUTP",
+        "func": "// Get the boolean value from the input message payload\nlet inputBool = msg.payload;\n\n\nlet response;\nlet cmd='OUTP ';\n\n\nif (inputBool === true) {\n    response =  cmd+ \"ON\";\n}else if (inputBool === false){\n    response = cmd + \"OFF\";\n}else{\n    response = cmd + \"OFF\"\n}    \n\n\n\n// Set the response as the payload of the output message\nmsg.payload = response;\n\n// Return the modified message\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 620,
+        "wires": [
+            [
+                "d8f905d0ba03062c",
+                "76ed76bf93619bcc"
+            ]
+        ],
+        "info": "This function add the <ON> or <OFF> to the SCPI command\n"
+    },
+    {
+        "id": "f53d32e35b616b90",
+        "type": "ui_switch",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "EN/DIS OUTPUT",
+        "label": "EN/DIS OUTPUT",
+        "tooltip": "",
+        "group": "d5b292af11f072b5",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 330,
+        "y": 620,
+        "wires": [
+            [
+                "bc4ff5059ab2b839"
+            ]
+        ]
+    },
+    {
+        "id": "b6b6825e1f7bdedf",
+        "type": "serial out",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 910,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "eb5b406cfa84ad31",
+        "type": "link in",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "link in 3",
+        "links": [
+            "816b2b33847cbcb0"
+        ],
+        "x": 125,
+        "y": 620,
+        "wires": [
+            [
+                "f53d32e35b616b90"
+            ]
+        ]
+    },
+    {
+        "id": "d8f905d0ba03062c",
+        "type": "delay",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 150,
+        "y": 680,
+        "wires": [
+            [
+                "a5de7eb407a29b79"
+            ]
+        ]
+    },
+    {
+        "id": "632ab685984da15c",
+        "type": "subflow:7196d4f93e21eea9",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "OutCheck",
+        "x": 860,
+        "y": 200,
+        "wires": [
+            [
+                "c1f989fc3d40a904"
+            ]
+        ]
+    },
+    {
+        "id": "54ddfd58e1481e8f",
+        "type": "switch",
+        "z": "110494c2c16f19b1",
+        "g": "8cf474edcfece05e",
+        "name": "status.fill",
+        "property": "status.fill",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "green",
+                "vt": "str"
+            },
+            {
+                "t": "neq",
+                "v": "green",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1680,
+        "y": 200,
+        "wires": [
+            [
+                "61906e413543f105"
+            ],
+            [
+                "fb22b696c78c3f37"
+            ]
+        ]
+    },
+    {
+        "id": "61906e413543f105",
+        "type": "change",
+        "z": "110494c2c16f19b1",
+        "g": "8cf474edcfece05e",
+        "name": "global.RIGOL_st 1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "RIGOL_st",
+                "pt": "global",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1870,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fb22b696c78c3f37",
+        "type": "change",
+        "z": "110494c2c16f19b1",
+        "g": "8cf474edcfece05e",
+        "name": "global.RIGOL_st 0",
+        "rules": [
+            {
+                "t": "set",
+                "p": "RIGOL_st",
+                "pt": "global",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1870,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5a8b8bea3ea571f8",
+        "type": "subflow:bd3595290af11cd7",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "RIGOL:InChck",
+        "x": 540,
+        "y": 200,
+        "wires": [
+            [
+                "ccf810691cd1b4b7"
+            ]
+        ]
+    },
+    {
+        "id": "7ef1c73e3b3d0f1c",
+        "type": "subflow:bd3595290af11cd7",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "RIGOL:InChck",
+        "x": 860,
+        "y": 60,
+        "wires": [
+            [
+                "2ef28af24751755d"
+            ]
+        ]
+    },
+    {
+        "id": "3bceb0db4d4da3e9",
+        "type": "subflow:bd3595290af11cd7",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "RIGOL:InChck",
+        "x": 840,
+        "y": 360,
+        "wires": [
+            [
+                "8c6c10f9268e12e1"
+            ]
+        ]
+    },
+    {
+        "id": "538e8914238c9185",
+        "type": "subflow:7196d4f93e21eea9",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "OutCheck",
+        "x": 840,
+        "y": 500,
+        "wires": [
+            [
+                "322a65314665d04e"
+            ]
+        ]
+    },
+    {
+        "id": "13f334c5d8f45f6a",
+        "type": "subflow:bd3595290af11cd7",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "RIGOL:InChck",
+        "x": 520,
+        "y": 500,
+        "wires": [
+            [
+                "6c4ed859155f5452"
+            ]
+        ]
+    },
+    {
+        "id": "76ed76bf93619bcc",
+        "type": "subflow:bd3595290af11cd7",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "RIGOL:InChck",
+        "x": 740,
+        "y": 620,
+        "wires": [
+            [
+                "b6b6825e1f7bdedf"
+            ]
+        ]
+    },
+    {
+        "id": "2d0770e6394e2069",
+        "type": "subflow:7196d4f93e21eea9",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "OutCheck",
+        "x": 760,
+        "y": 720,
+        "wires": [
+            [
+                "25c098cd42927611"
+            ]
+        ]
+    },
+    {
+        "id": "9819af1e4924ad24",
+        "type": "subflow:bd3595290af11cd7",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "RIGOL:InChck",
+        "x": 440,
+        "y": 720,
+        "wires": [
+            [
+                "67787dae9754e6e3"
+            ]
+        ]
+    },
+    {
+        "id": "9656a6b7073d330b",
+        "type": "subflow:bd3595290af11cd7",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "RIGOL:InChck",
+        "x": 620,
+        "y": 860,
+        "wires": [
+            [
+                "f04689e09d827bb1"
+            ]
+        ]
+    },
+    {
+        "id": "df33f439dff60b61",
+        "type": "subflow:bd3595290af11cd7",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "RIGOL:InChck",
+        "x": 660,
+        "y": 1020,
+        "wires": [
+            [
+                "59bc2873fa89b5c2"
+            ]
+        ]
+    },
+    {
+        "id": "faa5f10de86651c0",
+        "type": "subflow:bd3595290af11cd7",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "RIGOL:InChck",
+        "x": 620,
+        "y": 1180,
+        "wires": [
+            [
+                "f6d9b18bdad060c4"
+            ]
+        ]
+    },
+    {
+        "id": "cd45e8836be601fb",
+        "type": "subflow:bd3595290af11cd7",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "RIGOL:InChck",
+        "x": 580,
+        "y": 1380,
+        "wires": [
+            [
+                "85febb4f35f7a8ef"
+            ]
+        ]
+    },
+    {
+        "id": "d08ccbd7b06939c0",
+        "type": "subflow:7196d4f93e21eea9",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "OutCheck",
+        "x": 1000,
+        "y": 920,
+        "wires": [
+            [
+                "6c5022b2d644aca8"
+            ]
+        ]
+    },
+    {
+        "id": "b383e0d31f242d5d",
+        "type": "subflow:7196d4f93e21eea9",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "OutCheck",
+        "x": 1040,
+        "y": 1080,
+        "wires": [
+            [
+                "dcc931b65e09fefd"
+            ]
+        ]
+    },
+    {
+        "id": "8182463c75759ab7",
+        "type": "subflow:7196d4f93e21eea9",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "OutCheck",
+        "x": 1000,
+        "y": 1240,
+        "wires": [
+            [
+                "78fc366e7142657d"
+            ]
+        ]
+    },
+    {
+        "id": "e7c02ca5810f515a",
+        "type": "subflow:7196d4f93e21eea9",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "OutCheck",
+        "x": 1000,
+        "y": 1460,
+        "wires": [
+            [
+                "8f9b1aad6d233692"
+            ]
+        ]
+    },
+    {
+        "id": "6235c77b6f84570b",
+        "type": "subflow:bd3595290af11cd7",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "RIGOL:InChck",
+        "x": 680,
+        "y": 1240,
+        "wires": [
+            [
+                "4ca516a911774357"
+            ]
+        ]
+    },
+    {
+        "id": "1c490f10b8c91a36",
+        "type": "subflow:bd3595290af11cd7",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "RIGOL:InChck",
+        "x": 680,
+        "y": 920,
+        "wires": [
+            [
+                "0da137fb31205be1"
+            ]
+        ]
+    },
+    {
+        "id": "3b701474a45f6711",
+        "type": "subflow:bd3595290af11cd7",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "RIGOL:InChck",
+        "x": 720,
+        "y": 1080,
+        "wires": [
+            [
+                "407e6e67b16dcd9b"
+            ]
+        ]
+    },
+    {
+        "id": "ddc6511bba3ab26a",
+        "type": "subflow:bd3595290af11cd7",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "RIGOL:InChck",
+        "x": 680,
+        "y": 1460,
+        "wires": [
+            [
+                "8506a6fb35edd440"
+            ]
+        ]
+    },
+    {
+        "id": "8afcebe0f0ec3ddd",
+        "type": "subflow:bd3595290af11cd7",
+        "z": "110494c2c16f19b1",
+        "g": "a25c389c6da8a6d6",
+        "name": "RIGOL:InChck",
+        "x": 500,
+        "y": 1640,
+        "wires": [
+            [
+                "a0b2b0a6d689b887"
+            ]
+        ]
+    },
+    {
+        "id": "257432218f684347",
+        "type": "subflow:bd3595290af11cd7",
+        "z": "110494c2c16f19b1",
+        "g": "a25c389c6da8a6d6",
+        "name": "RIGOL:InChck",
+        "x": 480,
+        "y": 1760,
+        "wires": [
+            [
+                "20c0a50db6cbd246"
+            ]
+        ]
+    },
+    {
+        "id": "7e4aeb4bbe579455",
+        "type": "subflow:7196d4f93e21eea9",
+        "z": "110494c2c16f19b1",
+        "g": "a25c389c6da8a6d6",
+        "name": "OutCheck",
+        "x": 820,
+        "y": 1640,
+        "wires": [
+            [
+                "4fa2c361e3857d4c",
+                "6580e83d0f3e4a66",
+                "93236d6d7cb7441b"
+            ]
+        ]
+    },
+    {
+        "id": "f027a8e5d516863f",
+        "type": "subflow:7196d4f93e21eea9",
+        "z": "110494c2c16f19b1",
+        "g": "a25c389c6da8a6d6",
+        "name": "OutCheck",
+        "x": 820,
+        "y": 1760,
+        "wires": [
+            [
+                "50db91262d98e386",
+                "5d1614f34f6c15a3",
+                "b2c8313d919b59fd"
+            ]
+        ]
+    },
+    {
+        "id": "93236d6d7cb7441b",
+        "type": "link out",
+        "z": "110494c2c16f19b1",
+        "g": "a25c389c6da8a6d6",
+        "name": "RIGOL_MeasVolt",
+        "mode": "link",
+        "links": [
+            "f70f336ad6e05bae"
+        ],
+        "x": 1005,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "b2c8313d919b59fd",
+        "type": "link out",
+        "z": "110494c2c16f19b1",
+        "g": "a25c389c6da8a6d6",
+        "name": "RIGOL_MeasCurr",
+        "mode": "link",
+        "links": [
+            "9b5b2194e2b9c19a"
+        ],
+        "x": 1005,
+        "y": 1820,
+        "wires": []
+    },
+    {
         "id": "1fd2585a12fae590",
         "type": "function",
         "z": "e6abd59fcfef321c",
@@ -22397,10 +24191,9 @@
         "g": "562d42446f5c13fe",
         "name": "SECURITY_LV_IN",
         "links": [
-            "84266ace58e71dcc",
-            "7047fe49aa9ab855"
+            "1148e58d58efa315"
         ],
-        "x": 1775,
+        "x": 1645,
         "y": 800,
         "wires": [
             [
@@ -22419,7 +24212,7 @@
         "username": "IAXO D0 BOT",
         "emojiIcon": "",
         "channel": "",
-        "x": 2710,
+        "x": 2580,
         "y": 800,
         "wires": []
     },
@@ -22441,7 +24234,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1900,
+        "x": 1770,
         "y": 800,
         "wires": [
             [
@@ -22463,7 +24256,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2130,
+        "x": 2000,
         "y": 860,
         "wires": [
             [
@@ -22490,7 +24283,7 @@
         "bytopic": "topic",
         "topic": "topic",
         "outputs": 2,
-        "x": 2370,
+        "x": 2240,
         "y": 860,
         "wires": [
             [
@@ -22515,7 +24308,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1970,
+        "x": 1840,
         "y": 940,
         "wires": []
     },
@@ -22532,7 +24325,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1990,
+        "x": 1860,
         "y": 700,
         "wires": []
     },
@@ -22546,7 +24339,7 @@
             "715fad08a1a4506b",
             "f7ae3dec57c5ad9c"
         ],
-        "x": 1755,
+        "x": 1625,
         "y": 220,
         "wires": [
             [
@@ -22572,7 +24365,7 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 2,
-        "x": 2360,
+        "x": 2230,
         "y": 80,
         "wires": [
             [
@@ -22598,7 +24391,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2120,
+        "x": 1990,
         "y": 80,
         "wires": [
             [
@@ -22617,7 +24410,7 @@
         "username": "IAXO D0 BOT",
         "emojiIcon": "",
         "channel": "",
-        "x": 2820,
+        "x": 2690,
         "y": 220,
         "wires": [],
         "info": "This is the URL of a private chat. Only for technician\n"
@@ -22655,7 +24448,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 4,
-        "x": 1890,
+        "x": 1760,
         "y": 220,
         "wires": [
             [
@@ -22685,7 +24478,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2100,
+        "x": 1970,
         "y": 320,
         "wires": [
             [
@@ -22712,7 +24505,7 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 2,
-        "x": 2360,
+        "x": 2230,
         "y": 360,
         "wires": [
             [
@@ -22738,7 +24531,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2130,
+        "x": 2000,
         "y": 255.83333333333331,
         "wires": [
             [
@@ -22764,7 +24557,7 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 2,
-        "x": 2370,
+        "x": 2240,
         "y": 255.83333333333331,
         "wires": [
             [
@@ -22790,7 +24583,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2120,
+        "x": 1990,
         "y": 180,
         "wires": [
             [
@@ -22816,7 +24609,7 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 2,
-        "x": 2360,
+        "x": 2230,
         "y": 180,
         "wires": [
             [
@@ -22838,7 +24631,7 @@
         "links": [
             "05feb3979973f7ff"
         ],
-        "x": 1765,
+        "x": 1635,
         "y": 520,
         "wires": [
             [
@@ -22857,7 +24650,7 @@
         "username": "IAXO D0 BOT",
         "emojiIcon": "",
         "channel": "",
-        "x": 2730,
+        "x": 2600,
         "y": 580,
         "wires": []
     },
@@ -22879,7 +24672,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1880,
+        "x": 1750,
         "y": 520,
         "wires": [
             [
@@ -22900,7 +24693,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2120,
+        "x": 1990,
         "y": 509.16666666666663,
         "wires": [
             [
@@ -22927,7 +24720,7 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 2,
-        "x": 2360,
+        "x": 2230,
         "y": 509.16666666666663,
         "wires": [
             [
@@ -22953,8 +24746,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "Restart NodeRed",
-        "x": 2090,
-        "y": 1260,
+        "x": 1990,
+        "y": 1240,
         "wires": [
             [
                 "bb89f7012cd76546"
@@ -22980,8 +24773,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2750,
-        "y": 1140,
+        "x": 2650,
+        "y": 1120,
         "wires": []
     },
     {
@@ -22997,8 +24790,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2730,
-        "y": 1240,
+        "x": 2630,
+        "y": 1220,
         "wires": []
     },
     {
@@ -23014,8 +24807,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2750,
-        "y": 1360,
+        "x": 2650,
+        "y": 1340,
         "wires": []
     },
     {
@@ -23039,8 +24832,8 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1850,
-        "y": 1260,
+        "x": 1750,
+        "y": 1240,
         "wires": [
             [
                 "5287f8a262e1929b"
@@ -23060,7 +24853,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2760,
+        "x": 2630,
         "y": 140,
         "wires": []
     },
@@ -23078,7 +24871,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2670,
+        "x": 2540,
         "y": 880,
         "wires": []
     },
@@ -23096,7 +24889,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2670,
+        "x": 2540,
         "y": 960,
         "wires": []
     },
@@ -23114,7 +24907,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2230,
+        "x": 2100,
         "y": 940,
         "wires": []
     },
@@ -23212,7 +25005,7 @@
         "g": "41fbc4a5bc05d566",
         "name": "NOTE",
         "info": "Due to the importance of this device in the system, we send the errors to a function node which controls the EV and send a slack security message. ",
-        "x": 2390,
+        "x": 2260,
         "y": 320,
         "wires": []
     },
@@ -23226,7 +25019,7 @@
         "links": [
             "a1a15cc65b6db945"
         ],
-        "x": 2285,
+        "x": 2155,
         "y": 320,
         "wires": []
     },
@@ -23459,7 +25252,7 @@
         "links": [
             "cd01ae2940eb2b46"
         ],
-        "x": 2275,
+        "x": 2145,
         "y": 460,
         "wires": []
     },
@@ -23621,8 +25414,8 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1880,
-        "y": 1460,
+        "x": 1780,
+        "y": 1440,
         "wires": [
             [
                 "543391f0a31feed6"
@@ -23657,8 +25450,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "",
-        "x": 2410,
-        "y": 1620,
+        "x": 2310,
+        "y": 1600,
         "wires": []
     },
     {
@@ -23674,8 +25467,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2090,
-        "y": 1620,
+        "x": 1990,
+        "y": 1600,
         "wires": [
             [
                 "62b9db947a562e86",
@@ -23704,8 +25497,8 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1890,
-        "y": 1500,
+        "x": 1790,
+        "y": 1480,
         "wires": [
             [
                 "543391f0a31feed6"
@@ -23725,8 +25518,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2170,
-        "y": 1460,
+        "x": 2070,
+        "y": 1440,
         "wires": [
             [
                 "19fa08406f0b6faf",
@@ -23747,8 +25540,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2430,
-        "y": 1500,
+        "x": 2330,
+        "y": 1480,
         "wires": []
     },
     {
@@ -23764,8 +25557,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2430,
-        "y": 1660,
+        "x": 2330,
+        "y": 1640,
         "wires": []
     },
     {
@@ -23790,8 +25583,8 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 1870,
-        "y": 1620,
+        "x": 1770,
+        "y": 1600,
         "wires": [
             [
                 "163794f4902ad2e5"
@@ -23895,8 +25688,8 @@
         "z": "e6abd59fcfef321c",
         "g": "391b996bdb7d6683",
         "name": "",
-        "x": 2450,
-        "y": 1460,
+        "x": 2350,
+        "y": 1440,
         "wires": []
     },
     {
@@ -23991,7 +25784,7 @@
         "g": "55a2600ea9f1ad33",
         "name": "NOTE",
         "info": "Due to the importance of this device in the system, we send the errors to a function node which controls the EV and send a slack security message. ",
-        "x": 2380,
+        "x": 2250,
         "y": 460,
         "wires": []
     },
@@ -24595,8 +26388,8 @@
         "topic": "",
         "payload": "1",
         "payloadType": "str",
-        "x": 1860,
-        "y": 1560,
+        "x": 1760,
+        "y": 1540,
         "wires": [
             [
                 "d6e7d1c94125f824"
@@ -24616,8 +26409,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 2320,
-        "y": 1760,
+        "x": 2220,
+        "y": 1740,
         "wires": [
             [
                 "649c87cb073a5657"
@@ -24644,8 +26437,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 2810,
-        "y": 1740,
+        "x": 2710,
+        "y": 1720,
         "wires": []
     },
     {
@@ -24670,8 +26463,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1860,
-        "y": 1760,
+        "x": 1760,
+        "y": 1740,
         "wires": [
             [
                 "8e59e835d9d3dbe8"
@@ -24691,7 +26484,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2710,
+        "x": 2580,
         "y": 520,
         "wires": []
     },
@@ -26137,7 +27930,7 @@
         "useparts": true,
         "accumulate": false,
         "timeout": "",
-        "count": "5",
+        "count": "3",
         "reduceRight": false,
         "reduceExp": "",
         "reduceInit": "",
@@ -26235,7 +28028,7 @@
         "g": "1551714e3dacd918",
         "name": "DB_LVPS_V",
         "links": [
-            "7b835af332bc3287"
+            "93236d6d7cb7441b"
         ],
         "x": 75,
         "y": 60,
@@ -26252,7 +28045,7 @@
         "g": "1551714e3dacd918",
         "name": "DB_LVPS_I",
         "links": [
-            "781e3b4d5e23f9ac"
+            "b2c8313d919b59fd"
         ],
         "x": 75,
         "y": 120,
@@ -26276,6 +28069,7 @@
         "id": "0d906aae151bf345",
         "type": "change",
         "z": "ac988ebf643b965c",
+        "d": true,
         "g": "1551714e3dacd918",
         "name": "Set Power",
         "rules": [
@@ -26299,6 +28093,7 @@
         "id": "1ff2ae80aa05f65e",
         "type": "subflow:25852162ecd9b7ac",
         "z": "ac988ebf643b965c",
+        "d": true,
         "g": "1551714e3dacd918",
         "name": "",
         "x": 180,
@@ -26313,6 +28108,7 @@
         "id": "25ec25a0bea14e52",
         "type": "change",
         "z": "ac988ebf643b965c",
+        "d": true,
         "g": "1551714e3dacd918",
         "name": "Set IDN",
         "rules": [
@@ -26336,6 +28132,7 @@
         "id": "7a376579a6995342",
         "type": "link in",
         "z": "ac988ebf643b965c",
+        "d": true,
         "g": "1551714e3dacd918",
         "name": "DB_LVPS_IDN",
         "links": [
@@ -26353,6 +28150,7 @@
         "id": "4ecc94f2d776875c",
         "type": "link in",
         "z": "ac988ebf643b965c",
+        "d": true,
         "g": "1551714e3dacd918",
         "name": "DB_LVPS_P",
         "links": [
@@ -35376,1006 +37174,6 @@
             [
                 "5e3bacca183bead2",
                 "3f761be0a00ad647"
-            ]
-        ]
-    },
-    {
-        "id": "128c776766d940c6",
-        "type": "subflow:a04e409f16590580",
-        "z": "045d5867a5e1ad28",
-        "g": "43f8cf41fffcdfea",
-        "name": "",
-        "x": 750,
-        "y": 580,
-        "wires": []
-    },
-    {
-        "id": "a4f29221cd2057b7",
-        "type": "ui_switch",
-        "z": "045d5867a5e1ad28",
-        "g": "43f8cf41fffcdfea",
-        "name": "EN/DIS VOLTAGE PROTECTION",
-        "label": "EN/DIS VOLTAGE PROTECTION",
-        "tooltip": "",
-        "group": "d5b292af11f072b5",
-        "order": 10,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "volt:prot",
-        "topicType": "str",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "animate": true,
-        "className": "",
-        "x": 370,
-        "y": 475,
-        "wires": [
-            [
-                "128c776766d940c6"
-            ]
-        ]
-    },
-    {
-        "id": "364762a030f54469",
-        "type": "ui_switch",
-        "z": "045d5867a5e1ad28",
-        "g": "43f8cf41fffcdfea",
-        "name": "EN/DIS CURRENT PROTECTION",
-        "label": "EN/DIS CURRENT PROTECTION",
-        "tooltip": "",
-        "group": "d5b292af11f072b5",
-        "order": 10,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "curr:prot",
-        "topicType": "str",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 370,
-        "y": 580,
-        "wires": [
-            [
-                "128c776766d940c6"
-            ]
-        ]
-    },
-    {
-        "id": "66190a471f7bda38",
-        "type": "subflow:03ae40c2e9a3f26b",
-        "z": "045d5867a5e1ad28",
-        "g": "c19db6aca5654904",
-        "name": "",
-        "x": 1210,
-        "y": 240,
-        "wires": [
-            [
-                "222d1d0709b974e7",
-                "c312125fc82108c6"
-            ],
-            [
-                "cbaa2acb1d80231c",
-                "16c77a456216e850"
-            ],
-            [
-                "4fb7142d8fc9337f",
-                "64a4c48e39480412"
-            ]
-        ]
-    },
-    {
-        "id": "222d1d0709b974e7",
-        "type": "ui_text",
-        "z": "045d5867a5e1ad28",
-        "g": "c19db6aca5654904",
-        "group": "bb82654218343a36",
-        "order": 8,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "DAQ VOLTAGE",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 1663.333251953125,
-        "y": 76.66668701171875,
-        "wires": []
-    },
-    {
-        "id": "c312125fc82108c6",
-        "type": "ui_chart",
-        "z": "045d5867a5e1ad28",
-        "g": "c19db6aca5654904",
-        "name": "",
-        "group": "bb82654218343a36",
-        "order": 9,
-        "width": 0,
-        "height": 0,
-        "label": "VOLTAGE EVOLUTION",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "0",
-        "ymax": "6",
-        "removeOlder": "10",
-        "removeOlderPoints": "100",
-        "removeOlderUnit": "60",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 1693.333251953125,
-        "y": 116.66668701171875,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "cbaa2acb1d80231c",
-        "type": "ui_text",
-        "z": "045d5867a5e1ad28",
-        "g": "c19db6aca5654904",
-        "group": "bb82654218343a36",
-        "order": 8,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "DAQ CURRENT",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 1720,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "16c77a456216e850",
-        "type": "ui_chart",
-        "z": "045d5867a5e1ad28",
-        "g": "c19db6aca5654904",
-        "name": "",
-        "group": "bb82654218343a36",
-        "order": 9,
-        "width": 0,
-        "height": 0,
-        "label": "CURRENT EVOLUTION",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "0",
-        "ymax": "6",
-        "removeOlder": "10",
-        "removeOlderPoints": "100",
-        "removeOlderUnit": "60",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 1750,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "64a4c48e39480412",
-        "type": "ui_chart",
-        "z": "045d5867a5e1ad28",
-        "g": "c19db6aca5654904",
-        "name": "",
-        "group": "bb82654218343a36",
-        "order": 9,
-        "width": 0,
-        "height": 0,
-        "label": "POWER EVOLUTION",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "0",
-        "ymax": "10",
-        "removeOlder": "10",
-        "removeOlderPoints": "100",
-        "removeOlderUnit": "60",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 1740,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4fb7142d8fc9337f",
-        "type": "ui_text",
-        "z": "045d5867a5e1ad28",
-        "g": "c19db6aca5654904",
-        "group": "bb82654218343a36",
-        "order": 8,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "DAQ POWER",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 1720,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "7139b63db47ef681",
-        "type": "ui_switch",
-        "z": "045d5867a5e1ad28",
-        "g": "43f8cf41fffcdfea",
-        "name": "EN/DIS OUTPUT",
-        "label": "EN/DIS OUTPUT",
-        "tooltip": "",
-        "group": "d5b292af11f072b5",
-        "order": 10,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "outp",
-        "topicType": "str",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 320,
-        "y": 695,
-        "wires": [
-            [
-                "128c776766d940c6"
-            ]
-        ]
-    },
-    {
-        "id": "dad4e09614cff5fb",
-        "type": "subflow:4e115b18621d03bf",
-        "z": "045d5867a5e1ad28",
-        "g": "350803a06dff8e01",
-        "name": "",
-        "x": 620,
-        "y": 940,
-        "wires": []
-    },
-    {
-        "id": "9f2840a49540f60e",
-        "type": "subflow:8d2889cddf4f0c77",
-        "z": "045d5867a5e1ad28",
-        "g": "55de8280f558eab4",
-        "name": "",
-        "x": 240,
-        "y": 220,
-        "wires": [
-            [
-                "83b4eb6dfa056d6a",
-                "d35257ee2fe176ce"
-            ],
-            [
-                "030011560678ecc5",
-                "2ad6bbfce17c98b8"
-            ],
-            [
-                "d28e906f59c90a73",
-                "8a284d353d5ff68f"
-            ]
-        ]
-    },
-    {
-        "id": "030011560678ecc5",
-        "type": "ui_led",
-        "z": "045d5867a5e1ad28",
-        "g": "55de8280f558eab4",
-        "order": 2,
-        "group": "d5b292af11f072b5",
-        "width": 0,
-        "height": 0,
-        "label": "OCP",
-        "labelPlacement": "left",
-        "labelAlignment": "left",
-        "colorForValue": [
-            {
-                "color": "#ff0000",
-                "value": "false",
-                "valueType": "bool"
-            },
-            {
-                "color": "#008000",
-                "value": "true",
-                "valueType": "bool"
-            }
-        ],
-        "allowColorForValueInMessage": false,
-        "shape": "circle",
-        "showGlow": true,
-        "name": "OCP",
-        "x": 530,
-        "y": 204,
-        "wires": []
-    },
-    {
-        "id": "83b4eb6dfa056d6a",
-        "type": "ui_led",
-        "z": "045d5867a5e1ad28",
-        "g": "55de8280f558eab4",
-        "order": 2,
-        "group": "d5b292af11f072b5",
-        "width": 0,
-        "height": 0,
-        "label": "OVP",
-        "labelPlacement": "left",
-        "labelAlignment": "left",
-        "colorForValue": [
-            {
-                "color": "#ff0000",
-                "value": "false",
-                "valueType": "bool"
-            },
-            {
-                "color": "#008000",
-                "value": "true",
-                "valueType": "bool"
-            }
-        ],
-        "allowColorForValueInMessage": false,
-        "shape": "circle",
-        "showGlow": true,
-        "name": "OVP",
-        "x": 530,
-        "y": 120,
-        "wires": []
-    },
-    {
-        "id": "d28e906f59c90a73",
-        "type": "ui_led",
-        "z": "045d5867a5e1ad28",
-        "g": "55de8280f558eab4",
-        "order": 15,
-        "group": "d5b292af11f072b5",
-        "width": 0,
-        "height": 0,
-        "label": "OUTPUT",
-        "labelPlacement": "left",
-        "labelAlignment": "left",
-        "colorForValue": [
-            {
-                "color": "#ff0000",
-                "value": "false",
-                "valueType": "bool"
-            },
-            {
-                "color": "#008000",
-                "value": "true",
-                "valueType": "bool"
-            }
-        ],
-        "allowColorForValueInMessage": false,
-        "shape": "circle",
-        "showGlow": true,
-        "name": "OUTPUT",
-        "x": 540,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "2e3e1ff1e4fb1eaf",
-        "type": "subflow:ac47bd5742c35c78",
-        "z": "045d5867a5e1ad28",
-        "g": "db3a8256a531523f",
-        "name": "",
-        "x": 280,
-        "y": 1200,
-        "wires": [
-            [
-                "94b747c4a3f57186"
-            ],
-            [
-                "3efbc84926f54db4"
-            ],
-            [
-                "f3e8c3bf94ce15d4"
-            ],
-            [
-                "26ce90377b805729"
-            ]
-        ]
-    },
-    {
-        "id": "f3e8c3bf94ce15d4",
-        "type": "ui_text",
-        "z": "045d5867a5e1ad28",
-        "g": "db3a8256a531523f",
-        "group": "bacbac46b5c1eddf",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "OverVoltageProtection",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 620,
-        "y": 1200,
-        "wires": []
-    },
-    {
-        "id": "26ce90377b805729",
-        "type": "ui_text",
-        "z": "045d5867a5e1ad28",
-        "g": "db3a8256a531523f",
-        "group": "bacbac46b5c1eddf",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "OverCurrentProtection",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 620,
-        "y": 1260,
-        "wires": []
-    },
-    {
-        "id": "94b747c4a3f57186",
-        "type": "ui_text",
-        "z": "045d5867a5e1ad28",
-        "g": "db3a8256a531523f",
-        "group": "bacbac46b5c1eddf",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Voltage Output",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 640,
-        "y": 1120,
-        "wires": []
-    },
-    {
-        "id": "3efbc84926f54db4",
-        "type": "ui_text",
-        "z": "045d5867a5e1ad28",
-        "g": "db3a8256a531523f",
-        "group": "bacbac46b5c1eddf",
-        "order": 7,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Current Output",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 660,
-        "y": 1160,
-        "wires": []
-    },
-    {
-        "id": "2813124d21c621d8",
-        "type": "ui_text_input",
-        "z": "045d5867a5e1ad28",
-        "g": "350803a06dff8e01",
-        "name": "",
-        "label": "SET OverVoltageProtection",
-        "tooltip": "",
-        "group": "bacbac46b5c1eddf",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "mode": "text",
-        "delay": "0",
-        "topic": "volt:prot",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 260,
-        "y": 860,
-        "wires": [
-            [
-                "dad4e09614cff5fb"
-            ]
-        ]
-    },
-    {
-        "id": "e424ac8cd18fa1cf",
-        "type": "ui_text_input",
-        "z": "045d5867a5e1ad28",
-        "g": "350803a06dff8e01",
-        "name": "",
-        "label": "SET OverCurrentProtection",
-        "tooltip": "",
-        "group": "bacbac46b5c1eddf",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "mode": "text",
-        "delay": "0",
-        "topic": "curr:prot",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 260,
-        "y": 913.3333333333333,
-        "wires": [
-            [
-                "dad4e09614cff5fb"
-            ]
-        ]
-    },
-    {
-        "id": "2f4a94c9de9cc97e",
-        "type": "ui_text_input",
-        "z": "045d5867a5e1ad28",
-        "g": "350803a06dff8e01",
-        "name": "",
-        "label": "SET Voltage",
-        "tooltip": "",
-        "group": "bacbac46b5c1eddf",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "mode": "text",
-        "delay": "0",
-        "topic": "volt",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 310,
-        "y": 966.6666666666666,
-        "wires": [
-            [
-                "dad4e09614cff5fb"
-            ]
-        ]
-    },
-    {
-        "id": "832d4c97ff310f37",
-        "type": "ui_text_input",
-        "z": "045d5867a5e1ad28",
-        "g": "350803a06dff8e01",
-        "name": "",
-        "label": "SET Current",
-        "tooltip": "",
-        "group": "bacbac46b5c1eddf",
-        "order": 7,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "mode": "text",
-        "delay": "0",
-        "topic": "curr",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 310,
-        "y": 1020,
-        "wires": [
-            [
-                "dad4e09614cff5fb"
-            ]
-        ]
-    },
-    {
-        "id": "d35257ee2fe176ce",
-        "type": "link out",
-        "z": "045d5867a5e1ad28",
-        "g": "55de8280f558eab4",
-        "name": "link out 1",
-        "mode": "link",
-        "links": [
-            "52b381b9e118a124"
-        ],
-        "x": 495,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "52b381b9e118a124",
-        "type": "link in",
-        "z": "045d5867a5e1ad28",
-        "g": "43f8cf41fffcdfea",
-        "name": "link in 1",
-        "links": [
-            "d35257ee2fe176ce"
-        ],
-        "x": 125,
-        "y": 475,
-        "wires": [
-            [
-                "a4f29221cd2057b7"
-            ]
-        ]
-    },
-    {
-        "id": "0983496559502a20",
-        "type": "link in",
-        "z": "045d5867a5e1ad28",
-        "g": "43f8cf41fffcdfea",
-        "name": "link in 2",
-        "links": [
-            "2ad6bbfce17c98b8"
-        ],
-        "x": 125,
-        "y": 580,
-        "wires": [
-            [
-                "364762a030f54469"
-            ]
-        ]
-    },
-    {
-        "id": "250150a55c7bb09c",
-        "type": "link in",
-        "z": "045d5867a5e1ad28",
-        "g": "43f8cf41fffcdfea",
-        "name": "link in 3",
-        "links": [
-            "8a284d353d5ff68f"
-        ],
-        "x": 125,
-        "y": 695,
-        "wires": [
-            [
-                "7139b63db47ef681"
-            ]
-        ]
-    },
-    {
-        "id": "2ad6bbfce17c98b8",
-        "type": "link out",
-        "z": "045d5867a5e1ad28",
-        "g": "55de8280f558eab4",
-        "name": "link out 2",
-        "mode": "link",
-        "links": [
-            "0983496559502a20"
-        ],
-        "x": 495,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "8a284d353d5ff68f",
-        "type": "link out",
-        "z": "045d5867a5e1ad28",
-        "g": "55de8280f558eab4",
-        "name": "link out 3",
-        "mode": "link",
-        "links": [
-            "250150a55c7bb09c"
-        ],
-        "x": 495,
-        "y": 360,
-        "wires": []
-    },
-    {
-        "id": "c3790477ba831b90",
-        "type": "function",
-        "z": "045d5867a5e1ad28",
-        "g": "1e290dd08e91e782",
-        "name": "SERIAL PORT STATUS",
-        "func": "if (msg.status.fill != \"green\"){\n    msg.payload = false\n} else {\n    msg.payload = true;\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1450,
-        "y": 520,
-        "wires": [
-            [
-                "30fc14dcf637d8e8",
-                "68d814bb23c264b8"
-            ]
-        ]
-    },
-    {
-        "id": "30fc14dcf637d8e8",
-        "type": "ui_led",
-        "z": "045d5867a5e1ad28",
-        "g": "1e290dd08e91e782",
-        "order": 8,
-        "group": "18d6158902c9746d",
-        "width": 0,
-        "height": 0,
-        "label": "Serial Port Detected",
-        "labelPlacement": "left",
-        "labelAlignment": "left",
-        "colorForValue": [
-            {
-                "color": "#ff0000",
-                "value": "false",
-                "valueType": "bool"
-            },
-            {
-                "color": "#008000",
-                "value": "true",
-                "valueType": "bool"
-            }
-        ],
-        "allowColorForValueInMessage": false,
-        "shape": "square",
-        "showGlow": true,
-        "name": "Serial Port Detected",
-        "x": 1840,
-        "y": 520,
-        "wires": []
-    },
-    {
-        "id": "3f8ceeca4d894ec5",
-        "type": "debug",
-        "z": "045d5867a5e1ad28",
-        "g": "1e290dd08e91e782",
-        "name": "debug 25",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1400,
-        "y": 600,
-        "wires": []
-    },
-    {
-        "id": "354820f7027fefdf",
-        "type": "serial in",
-        "z": "045d5867a5e1ad28",
-        "g": "1e290dd08e91e782",
-        "name": "RIGOL STATUS",
-        "serial": "ea290f1e4e92d3ec",
-        "x": 1160,
-        "y": 600,
-        "wires": [
-            [
-                "3f8ceeca4d894ec5"
-            ]
-        ]
-    },
-    {
-        "id": "973a3afe0eb27668",
-        "type": "status",
-        "z": "045d5867a5e1ad28",
-        "g": "1e290dd08e91e782",
-        "name": "RIGOL STATUS",
-        "scope": [
-            "354820f7027fefdf"
-        ],
-        "x": 1160,
-        "y": 520,
-        "wires": [
-            [
-                "c3790477ba831b90"
-            ]
-        ]
-    },
-    {
-        "id": "68d814bb23c264b8",
-        "type": "debug",
-        "z": "045d5867a5e1ad28",
-        "g": "1e290dd08e91e782",
-        "name": "debug 26",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1630,
-        "y": 580,
-        "wires": []
-    },
-    {
-        "id": "7047fe49aa9ab855",
-        "type": "link out",
-        "z": "045d5867a5e1ad28",
-        "g": "7901641cdfa402f3",
-        "name": "SECURITY_MULTStatus_OUT",
-        "mode": "link",
-        "links": [
-            "e5eec86ba63485ba"
-        ],
-        "x": 1875,
-        "y": 800,
-        "wires": []
-    },
-    {
-        "id": "26614cf86210658b",
-        "type": "catch",
-        "z": "045d5867a5e1ad28",
-        "g": "7901641cdfa402f3",
-        "name": "",
-        "scope": null,
-        "uncaught": false,
-        "x": 1300,
-        "y": 800,
-        "wires": [
-            [
-                "7ccd7b88d095803b"
-            ]
-        ]
-    },
-    {
-        "id": "7ccd7b88d095803b",
-        "type": "function",
-        "z": "045d5867a5e1ad28",
-        "g": "7901641cdfa402f3",
-        "name": "Security ",
-        "func": "msg.payload = msg.error.message; \nmsg.topic = msg.port;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1560,
-        "y": 800,
-        "wires": [
-            [
-                "5596f8e165bffa5f"
-            ]
-        ]
-    },
-    {
-        "id": "830fae031f8f0118",
-        "type": "debug",
-        "z": "045d5867a5e1ad28",
-        "g": "7901641cdfa402f3",
-        "name": "debug 370",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1930,
-        "y": 880,
-        "wires": []
-    },
-    {
-        "id": "5596f8e165bffa5f",
-        "type": "string",
-        "z": "045d5867a5e1ad28",
-        "g": "7901641cdfa402f3",
-        "name": "Trim topic",
-        "methods": [
-            {
-                "name": "delLeftMost",
-                "params": [
-                    {
-                        "type": "str",
-                        "value": "/dev/"
-                    }
-                ]
-            }
-        ],
-        "prop": "topic",
-        "propout": "topic",
-        "object": "msg",
-        "objectout": "msg",
-        "x": 1720,
-        "y": 800,
-        "wires": [
-            [
-                "830fae031f8f0118",
-                "7047fe49aa9ab855"
             ]
         ]
     },
