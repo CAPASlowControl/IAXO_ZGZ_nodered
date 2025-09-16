@@ -2529,7 +2529,6 @@
             "bdc6ef3e3dc6eacf",
             "fcb7920ec1f0afcd",
             "51334577f41d820e",
-            "4ba460da7c89e05e",
             "41d19a7cfd81a9fb",
             "9656a6b7073d330b",
             "df33f439dff60b61",
@@ -2542,7 +2541,8 @@
             "6235c77b6f84570b",
             "1c490f10b8c91a36",
             "3b701474a45f6711",
-            "ddc6511bba3ab26a"
+            "ddc6511bba3ab26a",
+            "4ba460da7c89e05e"
         ],
         "x": 54,
         "y": 819,
@@ -3291,9 +3291,9 @@
             "4f7d3234015e1d43",
             "57f0971a909279ed"
         ],
-        "x": 1334,
+        "x": 1324,
         "y": 2079,
-        "w": 392,
+        "w": 402,
         "h": 242
     },
     {
@@ -22137,8 +22137,8 @@
         "y": 1173.3333333333335,
         "wires": [
             [
-                "4ba460da7c89e05e",
-                "faa5f10de86651c0"
+                "faa5f10de86651c0",
+                "4ba460da7c89e05e"
             ]
         ],
         "info": "This function add the <var> to the SCPI command\n"
@@ -22641,32 +22641,6 @@
         "wires": [
             [
                 "faacf49abbb42cf2"
-            ]
-        ]
-    },
-    {
-        "id": "4ba460da7c89e05e",
-        "type": "delay",
-        "z": "110494c2c16f19b1",
-        "g": "038a3fa5280a718d",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "0.2",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 370,
-        "y": 1240,
-        "wires": [
-            [
-                "23ce75151e68f1c9"
             ]
         ]
     },
@@ -23915,6 +23889,32 @@
         "x": 1870,
         "y": 260,
         "wires": []
+    },
+    {
+        "id": "4ba460da7c89e05e",
+        "type": "delay",
+        "z": "110494c2c16f19b1",
+        "g": "038a3fa5280a718d",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 370,
+        "y": 1240,
+        "wires": [
+            [
+                "23ce75151e68f1c9"
+            ]
+        ]
     },
     {
         "id": "7d470661ab31e5c7",
@@ -29524,7 +29524,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "1",
         "crontab": "",
         "once": true,
         "onceDelay": "0.19",
@@ -29650,7 +29650,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "1",
         "crontab": "",
         "once": true,
         "onceDelay": "0.21",
@@ -30173,7 +30173,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "1",
         "crontab": "",
         "once": true,
         "onceDelay": "0.20",
@@ -30299,7 +30299,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "1",
         "crontab": "",
         "once": true,
         "onceDelay": "0.22",
