@@ -23,6 +23,7 @@ for line in Idr:
         y_str = y_str.replace("m","").replace("g","E3")
         yy = np.append( yy,  float( y_str ) )      
 #for
+Idr.close()
     
 n = yy.shape[0]
 

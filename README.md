@@ -112,8 +112,16 @@ The serialport configuration is included in `/etc/udev/rules.d/99-sub-serial.rul
 
 For information on the serial ports  `devadm info --name=/dev/<device>`
 
+## Credentials
+Credentials are set in `settings.js`.
+
+Credentials are encryptes usin `node-red admin hash-pw`.
+
 # TODO LIST
 
 - Review Security Flow
 - Add inlet check to SerialPorts
 	+ Bronkhost
+- Solve OPC UA connection
+- Migrate Slack messages to Mattermost
+

@@ -113,39 +113,6 @@
         "env": []
     },
     {
-        "id": "7c5bfbda03d459cf",
-        "type": "subflow",
-        "name": "SF BK-ELPRESS M2P Func",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 460,
-                "y": 140,
-                "wires": [
-                    {
-                        "id": "249465b6f9b25a99"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 860,
-                "y": 140,
-                "wires": [
-                    {
-                        "id": "249465b6f9b25a99",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
         "id": "b8e417f1f78d1cac",
         "type": "subflow",
         "name": "SF BK ControlMode Func",
@@ -169,171 +136,6 @@
                 "wires": [
                     {
                         "id": "fb4c6cb4a13159d9",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
-        "id": "ceabba86172c98e2",
-        "type": "subflow",
-        "name": "SF BK-ELFLOW M2F Func",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 480,
-                "y": 200,
-                "wires": [
-                    {
-                        "id": "d02658c22c43805b"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 880,
-                "y": 200,
-                "wires": [
-                    {
-                        "id": "d02658c22c43805b",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
-        "id": "493b5ab9aeefe4b3",
-        "type": "subflow",
-        "name": "SF BK-Monitor M2Val Func",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 40,
-                "y": 80,
-                "wires": [
-                    {
-                        "id": "e1f9b6d99b26aa03"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 360,
-                "y": 80,
-                "wires": [
-                    {
-                        "id": "e1f9b6d99b26aa03",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
-        "id": "f5a9b17c99076e23",
-        "type": "subflow",
-        "name": "SF BK-ELPRESS P2M Func",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 60,
-                "y": 80,
-                "wires": [
-                    {
-                        "id": "af5dd82177d43171"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 440,
-                "y": 80,
-                "wires": [
-                    {
-                        "id": "af5dd82177d43171",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
-        "id": "ae3a9f90e259af8f",
-        "type": "subflow",
-        "name": "SF BK-ELFLOW F2M Func",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 80,
-                "y": 120,
-                "wires": [
-                    {
-                        "id": "4cccee6a1f2476c8"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 620,
-                "y": 120,
-                "wires": [
-                    {
-                        "id": "4cccee6a1f2476c8",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
-        "id": "2af719fb2fc809d7",
-        "type": "subflow",
-        "name": "SF TH-USB M2Val Func",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 20,
-                "y": 80,
-                "wires": [
-                    {
-                        "id": "9fa320096d54ffa3"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 380,
-                "y": 80,
-                "wires": [
-                    {
-                        "id": "9fa320096d54ffa3",
                         "port": 0
                     }
                 ]
@@ -563,72 +365,6 @@
         "category": "",
         "in": [],
         "out": [],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
-        "id": "a73ba4fabd3c49ad",
-        "type": "subflow",
-        "name": "SF BK-ELFLOW M2F Func (2)",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 320,
-                "y": 200,
-                "wires": [
-                    {
-                        "id": "dff9d0e493a5d706"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 740,
-                "y": 200,
-                "wires": [
-                    {
-                        "id": "dff9d0e493a5d706",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
-        "id": "ba9b9d252c2508b4",
-        "type": "subflow",
-        "name": "SF BK-ELFLOW F2M Func (2)",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 420,
-                "y": 140,
-                "wires": [
-                    {
-                        "id": "3e23db3dd8627c2d"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 840,
-                "y": 140,
-                "wires": [
-                    {
-                        "id": "3e23db3dd8627c2d",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
         "env": [],
         "meta": {},
         "color": "#DDAA99"
@@ -1785,8 +1521,8 @@
             "5c308f756e7ad9f5",
             "5edf8ce8dd2d4b0d"
         ],
-        "x": 3924,
-        "y": 1159,
+        "x": 3934,
+        "y": 1019,
         "w": 722,
         "h": 162,
         "info": "This group catches the errors in all the nodes of the flow. \nSecuruty function only makes the msg earier and Trim topic is to eliminate /dev/. \nCopy the group to add security in others flows. \nNOTE: Remember to change link out end.\n\n\nHere we only select subflows becouse they trigger the errors in these devices. "
@@ -2201,13 +1937,13 @@
         "nodes": [
             "33885c4236198a1d",
             "36fd090493e29f93",
-            "64ec612ddd21e4cd",
             "3a912f03d0333c28",
             "be92780f5508341c",
             "45d1f9a221e60ef2",
             "a39a35f24b9131bd",
             "d3c61978314ee889",
-            "361ad5bdd9772de9"
+            "361ad5bdd9772de9",
+            "20f6c26459e4dafd"
         ],
         "x": 54,
         "y": 19,
@@ -2252,7 +1988,7 @@
         "x": 48,
         "y": 13,
         "w": 1224,
-        "h": 1394
+        "h": 1294
     },
     {
         "id": "5ee8327d0a6bfba1",
@@ -2271,7 +2007,7 @@
         "x": 1308,
         "y": -7,
         "w": 1224,
-        "h": 1534
+        "h": 1354
     },
     {
         "id": "91dcd7fe7bccf487",
@@ -2289,7 +2025,7 @@
         "x": 3918,
         "y": 13,
         "w": 1224,
-        "h": 1094
+        "h": 934
     },
     {
         "id": "c6db76d90f894678",
@@ -3576,11 +3312,11 @@
             "eb9c2e9350ac91ba",
             "0a9dc41da1c3a687",
             "445136e8d94474a0",
-            "555a37e4ab64acfb",
             "d41e60cd5acde7b6",
-            "fbac5fad9db42ae0",
             "cd96bed145c6a88f",
-            "484cf42951993105"
+            "484cf42951993105",
+            "171b1f16f06594d7",
+            "68455fbabe5dfccf"
         ],
         "x": 74,
         "y": 239,
@@ -3603,12 +3339,12 @@
             "681c248eb6ed3a5a",
             "6ea1b58e4bc05672",
             "1ad7d27fb74143a1",
-            "ad94d5719023060a",
             "9125c7758054ab8b",
-            "63a34e572e49f940",
             "3e86acf3b73d06f9",
             "632eb8e47833193b",
-            "afbb61fe619b43e5"
+            "afbb61fe619b43e5",
+            "4ef34ce9f40e2778",
+            "fe21e8660e913a72"
         ],
         "x": 1334,
         "y": 279,
@@ -3627,12 +3363,12 @@
         "nodes": [
             "ce89657ff7adf5cd",
             "d25cc37e410e543e",
-            "65932f18c023b9f4",
             "b36482f7efb643b7",
             "cda9199e34142c7e",
             "a3571dba5b4e5234",
             "a9fefbbe40bbca3c",
-            "5d6aa42f0f6c300a"
+            "5d6aa42f0f6c300a",
+            "d899e7a365d2f347"
         ],
         "x": 3944,
         "y": 39,
@@ -3652,11 +3388,11 @@
             "333d5acece026a20",
             "255990f6c243b551",
             "a751117c2cdb2b36",
-            "aeb9bbbc3d35801b",
             "d026e757a211b62f",
             "5c07611dd674405a",
             "5d894c8854ba6289",
-            "836df16536d83455"
+            "836df16536d83455",
+            "d283497711e69cd2"
         ],
         "x": 1334,
         "y": 19,
@@ -3675,12 +3411,12 @@
         "nodes": [
             "810293b63be01b61",
             "7c89d9fcf5706089",
-            "438c245f6ea34abd",
             "1635465c3a54e685",
             "71f86433c88c4d3f",
             "1390d36d13d6b1f6",
             "5127a606cf33cd3c",
-            "06977ad8c1dd2986"
+            "06977ad8c1dd2986",
+            "6c1bd50fe8aa865e"
         ],
         "x": 74,
         "y": 39,
@@ -3698,8 +3434,6 @@
         },
         "nodes": [
             "c71a9b3cb5f8d911",
-            "fa3eacb4b63eb040",
-            "50dff5c9da44a0c6",
             "6f0ebcb2479ea9b4",
             "532213c65d82b75b",
             "b1235494071aae63",
@@ -3708,20 +3442,14 @@
             "589887760ba5a81c",
             "85de4302d525fd1e",
             "9e297204668e3baa",
-            "a5d81856659846f4",
-            "aee7ae9910461cea",
             "78ad1ccc6e648047",
-            "24af6c497c88beef",
-            "dcf36608be7989ab",
             "dc642599bc12b15b",
-            "010f3be837dc0e44",
-            "7e0abb5eb5311069",
             "95dc02d5871b8b55"
         ],
         "x": 114,
         "y": 859,
         "w": 1132,
-        "h": 522
+        "h": 422
     },
     {
         "id": "aaf32055c816159c",
@@ -3734,29 +3462,21 @@
         },
         "nodes": [
             "7aa8c031ca6ff4f1",
-            "2a8c7beb88344436",
-            "0c36bfaf90819197",
             "2bedbc9b1d4ab782",
             "73809f6cf1588c5b",
             "4bad019709e0b3e1",
             "dc1d39a5dae25ea2",
-            "3b9833732c9daced",
-            "5c52873fc1ac54c6",
             "c6ddf302a6b0e2c9",
             "69490672d4ab3c13",
             "02d96e8c6144aa91",
-            "c3aaeb116b73ead9",
-            "c0b0e3f9d658e6e8",
             "20436c278304d190",
-            "dac073d68dae4163",
-            "1ad05b44888d4f8f",
             "e8ab187c23c2805c",
             "fcd377a22a713b5b"
         ],
-        "x": 1334,
+        "x": 1354,
         "y": 979,
-        "w": 1172,
-        "h": 522
+        "w": 1152,
+        "h": 342
     },
     {
         "id": "860661d54807a9bc",
@@ -3768,19 +3488,9 @@
             "label": true
         },
         "nodes": [
-            "689cb78a2389b87a",
-            "addc580a7bf3c692",
-            "06ee82ee59371719",
-            "68d5e71a05aeead7",
-            "1d07414e7c26133f",
-            "f5a67933ef99a748",
             "d280ae099b2e28e7",
             "06f672fb2b4d3bf8",
             "e2c10b0aedae3e27",
-            "a5c812cdb664bd5f",
-            "8d8404e20741763a",
-            "d315867ddd0719a1",
-            "502b5bd32be6db20",
             "aa3af8b9a6dd1788",
             "879f3486953b5a0d",
             "b5d975ced8b55d29",
@@ -3790,10 +3500,10 @@
             "6d9ece09ba8ad5e5",
             "95376c9d75167b6c"
         ],
-        "x": 3974,
+        "x": 3994,
         "y": 559,
-        "w": 1092,
-        "h": 522
+        "w": 1072,
+        "h": 362
     },
     {
         "id": "5f7211b645fa37fa",
@@ -3896,11 +3606,11 @@
         },
         "nodes": [
             "1308739f36400c7d",
-            "29ba4c8212d52b3b",
             "fd743603efce9c02",
             "bd2c9babf702d888",
             "b9763dca4d7210cf",
-            "aa3f81f4a548cc1b"
+            "aa3f81f4a548cc1b",
+            "b67fe28121f37cde"
         ],
         "x": 2614,
         "y": 1259,
@@ -3944,13 +3654,13 @@
         },
         "nodes": [
             "758a4b942beba627",
-            "1887cc2e8da47247",
             "846d0c70cc4b9a07",
             "1ce178dae85e25c3",
             "e7e2ce115a2cc018",
             "2e7a3d8a127051b9",
             "3545840a7a37bf4f",
-            "32d5a2a4948e2073"
+            "32d5a2a4948e2073",
+            "34fe5ce3fa3a10c5"
         ],
         "x": 2604,
         "y": 39,
@@ -3970,14 +3680,14 @@
             "39dba2acc02cabd3",
             "311cc17b7dc9a3fb",
             "3e841694803e95a1",
-            "1fd2a5f49d69d150",
             "2b8fce83018c83ce",
             "4e893f1f3e09f170",
             "57f6c09140c44704",
-            "a94f4ad9760cef8c",
             "0d7f6eb321cc3b01",
             "5f6706caa507622b",
-            "cc8c672459eb3a0f"
+            "cc8c672459eb3a0f",
+            "87f9bf3e22cdc49b",
+            "093c39ae6b491b79"
         ],
         "x": 2594,
         "y": 299,
@@ -5253,24 +4963,6 @@
         "className": ""
     },
     {
-        "id": "249465b6f9b25a99",
-        "type": "function",
-        "z": "7c5bfbda03d459cf",
-        "name": "BK-ELPRESS Meas 2 Press",
-        "func": "const filtertext = msg.payload.trim();\nvar instr = filtertext;\nvar ininfo = instr.substr(11,4);\nvar dec = parseInt(ininfo, 16);\nvar floatv = (dec*1500/32000).toFixed(2);\n\nvar msg1 = {payload : instr};\nvar msg2 = {payload : ininfo};\nvar msg3 = {payload : dec};\nvar msg4 = {payload : floatv};\n\n\nreturn  msg4;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 660,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "fb4c6cb4a13159d9",
         "type": "function",
         "z": "b8e417f1f78d1cac",
@@ -5283,94 +4975,6 @@
         "finalize": "",
         "libs": [],
         "x": 210,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d02658c22c43805b",
-        "type": "function",
-        "z": "ceabba86172c98e2",
-        "name": "BK-ELFLOW Meas 2 Flow",
-        "func": "const filtertext = msg.payload.trim();\nvar instr = filtertext;\nvar ininfo = instr.substr(11,4);\nvar dec = parseInt(ininfo, 16);\nvar floatv = (dec*12/32000).toFixed(2);\n\nvar msg1 = {payload : instr};\nvar msg2 = {payload : ininfo};\nvar msg3 = {payload : dec};\nvar msg4 = {payload : floatv};\n\n\nreturn  msg4;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 680,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e1f9b6d99b26aa03",
-        "type": "function",
-        "z": "493b5ab9aeefe4b3",
-        "name": "BK-EL M Meas 2 Flow",
-        "func": "//var output = msg.payload.split(\"\\t\");\nvar instr = msg.payload;\nvar ininfo = instr.substr(12,4);\nvar dec = parseInt(ininfo, 16);\nvar floatv = (dec*60/32000).toFixed(2);\n\nvar msg1 = {payload : instr};\nvar msg2 = {payload : ininfo};\nvar msg3 = {payload : dec};\nvar msg4 = {payload : floatv};\n\n\nreturn  msg4;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 220,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "af5dd82177d43171",
-        "type": "function",
-        "z": "f5a9b17c99076e23",
-        "name": "BK-ELPRESS Press 2 Meas ",
-        "func": "var output = msg.payload;\nvar hexword;\nvar hexString;\n\noutput = parseInt(output);\nif (output == 0){\n    hexString =0\n}else {\nhexword = Math.round(output*32000/1500);\nhexString = hexword.toString(16);\n}\nconst str1 = ':0603010121';\nconst str2 = str1.concat(hexString);\n\nvar msg = {payload : str2};\n\nreturn [msg];\n\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 260,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4cccee6a1f2476c8",
-        "type": "function",
-        "z": "ae3a9f90e259af8f",
-        "name": "BK-ELFLOW Flow 2 Meas ",
-        "func": "var output = msg.payload;\nvar hexword;\nvar hexString;\n\n//output = parseInt(output);\noutput = parseFloat(output);\nhexword = Math.round(output*32000/12);\nhexString = hexword.toString(16);\n\nconst str1 = ':0603010121';\nconst str2 = str1.concat(hexString);\n\nvar msg = {payload : str2};\n\nreturn [msg];\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 420,
-        "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "9fa320096d54ffa3",
-        "type": "function",
-        "z": "2af719fb2fc809d7",
-        "name": "TH-USB Meas 2 Pres",
-        "func": "//var output = msg.payload.split(\"\\t\");\nvar instr = msg.payload;\n\nconst fmt /*: BigIntToLocaleStringOptions */ = {\n  notation: 'scientific',\n  maximumFractionDigits: 3 // The default is 3, but 20 is the maximum supported by JS according to MDN.\n};\n\nvar ininfo0 = instr.substr(7);\nvar inilen = ininfo0.length;\nvar ininfo = ininfo0.substr(1, inilen-3);\nvar num = Number(ininfo);\nvar msgo;\n\nif (num < 1){\n    num = num.toLocaleString( 'en-US', fmt ) ; \n}\n\nmsgo = {payload : num};\n\nreturn msgo;   ",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 200,
         "y": 80,
         "wires": [
             []
@@ -6233,42 +5837,6 @@
         "wires": []
     },
     {
-        "id": "dff9d0e493a5d706",
-        "type": "function",
-        "z": "a73ba4fabd3c49ad",
-        "name": "BK-ELFLOW Meas 2 Flow",
-        "func": "const filtertext = msg.payload.trim();\nvar instr = filtertext;\nvar ininfo = instr.substr(11,4);\nvar dec = parseInt(ininfo, 16);\nvar floatv = (dec*10/32000).toFixed(2);\n\nvar msg1 = {payload : instr};\nvar msg2 = {payload : ininfo};\nvar msg3 = {payload : dec};\nvar msg4 = {payload : floatv};\n\n\nreturn  msg4;\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 520,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3e23db3dd8627c2d",
-        "type": "function",
-        "z": "ba9b9d252c2508b4",
-        "name": "BK-ELFLOW Flow 2 Meas ",
-        "func": "var output = msg.payload;\nvar hexword;\nvar hexString;\n\n//output = parseInt(output);\nhexword = Math.round(output*32000/10);\nhexString = hexword.toString(16);\n\nconst str1 = ':0603010121';\nconst str2 = str1.concat(hexString);\n\nvar msg = {payload : str2};\n\nreturn [msg];\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 640,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "8d3e6af301fa1490",
         "type": "function",
         "z": "b2028c4cbef7824d",
@@ -6698,51 +6266,6 @@
         "wires": []
     },
     {
-        "id": "438c245f6ea34abd",
-        "type": "subflow:7c5bfbda03d459cf",
-        "z": "44b2d39a758b1b4b",
-        "g": "290e074640fdfb17",
-        "name": "",
-        "x": 840,
-        "y": 140,
-        "wires": [
-            [
-                "7c89d9fcf5706089",
-                "1635465c3a54e685"
-            ]
-        ]
-    },
-    {
-        "id": "aeb9bbbc3d35801b",
-        "type": "subflow:ceabba86172c98e2",
-        "z": "44b2d39a758b1b4b",
-        "g": "086f2900f4b49b1b",
-        "name": "",
-        "x": 2100,
-        "y": 120,
-        "wires": [
-            [
-                "a751117c2cdb2b36",
-                "d026e757a211b62f"
-            ]
-        ]
-    },
-    {
-        "id": "65932f18c023b9f4",
-        "type": "subflow:493b5ab9aeefe4b3",
-        "z": "44b2d39a758b1b4b",
-        "g": "3a77962e97d02525",
-        "name": "",
-        "x": 4700,
-        "y": 160,
-        "wires": [
-            [
-                "d25cc37e410e543e",
-                "b36482f7efb643b7"
-            ]
-        ]
-    },
-    {
         "id": "f7ae3dec57c5ad9c",
         "type": "link out",
         "z": "44b2d39a758b1b4b",
@@ -6752,8 +6275,8 @@
         "links": [
             "7f96f1a1caaab95d"
         ],
-        "x": 4595,
-        "y": 1200,
+        "x": 4605,
+        "y": 1060,
         "wires": []
     },
     {
@@ -6780,8 +6303,8 @@
             "1fd2a5f49d69d150"
         ],
         "uncaught": false,
-        "x": 4020,
-        "y": 1200,
+        "x": 4030,
+        "y": 1060,
         "wires": [
             [
                 "fb5854d1f0afd64d"
@@ -6801,8 +6324,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 4230,
-        "y": 1200,
+        "x": 4240,
+        "y": 1060,
         "wires": [
             [
                 "5edf8ce8dd2d4b0d"
@@ -6823,8 +6346,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 4510,
-        "y": 1280,
+        "x": 4520,
+        "y": 1140,
         "wires": []
     },
     {
@@ -6848,8 +6371,8 @@
         "propout": "topic",
         "object": "msg",
         "objectout": "msg",
-        "x": 4440,
-        "y": 1200,
+        "x": 4450,
+        "y": 1060,
         "wires": [
             [
                 "5c308f756e7ad9f5",
@@ -6952,8 +6475,8 @@
         "y": 280,
         "wires": [
             [
-                "fbac5fad9db42ae0",
-                "d62597cf0a20f75e"
+                "d62597cf0a20f75e",
+                "68455fbabe5dfccf"
             ]
         ]
     },
@@ -7007,21 +6530,6 @@
         ]
     },
     {
-        "id": "555a37e4ab64acfb",
-        "type": "subflow:7c5bfbda03d459cf",
-        "z": "44b2d39a758b1b4b",
-        "g": "9eface1706386705",
-        "name": "",
-        "x": 820,
-        "y": 420,
-        "wires": [
-            [
-                "d26152d0d39ac8d8",
-                "cd96bed145c6a88f"
-            ]
-        ]
-    },
-    {
         "id": "d41e60cd5acde7b6",
         "type": "inject",
         "z": "44b2d39a758b1b4b",
@@ -7048,20 +6556,6 @@
         "wires": [
             [
                 "0a9dc41da1c3a687"
-            ]
-        ]
-    },
-    {
-        "id": "fbac5fad9db42ae0",
-        "type": "subflow:f5a9b17c99076e23",
-        "z": "44b2d39a758b1b4b",
-        "g": "9eface1706386705",
-        "name": "",
-        "x": 850,
-        "y": 280,
-        "wires": [
-            [
-                "eb9c2e9350ac91ba"
             ]
         ]
     },
@@ -7154,7 +6648,7 @@
         "wires": [
             [
                 "a10aceee58c74e8d",
-                "63a34e572e49f940"
+                "fe21e8660e913a72"
             ]
         ]
     },
@@ -7209,21 +6703,6 @@
         ]
     },
     {
-        "id": "ad94d5719023060a",
-        "type": "subflow:ceabba86172c98e2",
-        "z": "44b2d39a758b1b4b",
-        "g": "bdc84199775ddd65",
-        "name": "",
-        "x": 2080,
-        "y": 500,
-        "wires": [
-            [
-                "6ea1b58e4bc05672",
-                "3e86acf3b73d06f9"
-            ]
-        ]
-    },
-    {
         "id": "9125c7758054ab8b",
         "type": "function",
         "z": "44b2d39a758b1b4b",
@@ -7240,20 +6719,6 @@
         "wires": [
             [
                 "1ad7d27fb74143a1"
-            ]
-        ]
-    },
-    {
-        "id": "63a34e572e49f940",
-        "type": "subflow:ae3a9f90e259af8f",
-        "z": "44b2d39a758b1b4b",
-        "g": "bdc84199775ddd65",
-        "name": "",
-        "x": 2100,
-        "y": 320,
-        "wires": [
-            [
-                "681c248eb6ed3a5a"
             ]
         ]
     },
@@ -7459,66 +6924,6 @@
         ]
     },
     {
-        "id": "fa3eacb4b63eb040",
-        "type": "ui_button",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "e1dd870df50f05a7",
-        "name": "Read SetPoint Value",
-        "group": "",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Read SetPoint Value",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": ":06030401210121",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 250,
-        "y": 1280,
-        "wires": [
-            [
-                "010f3be837dc0e44"
-            ]
-        ]
-    },
-    {
-        "id": "50dff5c9da44a0c6",
-        "type": "ui_button",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "e1dd870df50f05a7",
-        "name": "",
-        "group": "",
-        "order": 8,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Read Measurement Value",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": ":06030401210120",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 270,
-        "y": 1340,
-        "wires": [
-            [
-                "7e0abb5eb5311069"
-            ]
-        ]
-    },
-    {
         "id": "6f0ebcb2479ea9b4",
         "type": "ui_button",
         "z": "44b2d39a758b1b4b",
@@ -7717,44 +7122,6 @@
         ]
     },
     {
-        "id": "a5d81856659846f4",
-        "type": "ui_text",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "e1dd870df50f05a7",
-        "group": "",
-        "order": 7,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "SetPoint Value [mbar]",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 1060,
-        "y": 1280,
-        "wires": []
-    },
-    {
-        "id": "aee7ae9910461cea",
-        "type": "ui_text",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "e1dd870df50f05a7",
-        "group": "",
-        "order": 9,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Measured Value [mbar]",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 1110,
-        "y": 1340,
-        "wires": []
-    },
-    {
         "id": "78ad1ccc6e648047",
         "type": "inject",
         "z": "44b2d39a758b1b4b",
@@ -7786,36 +7153,6 @@
         ]
     },
     {
-        "id": "24af6c497c88beef",
-        "type": "subflow:7c5bfbda03d459cf",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "e1dd870df50f05a7",
-        "name": "",
-        "x": 800,
-        "y": 1340,
-        "wires": [
-            [
-                "aee7ae9910461cea"
-            ]
-        ]
-    },
-    {
-        "id": "dcf36608be7989ab",
-        "type": "subflow:7c5bfbda03d459cf",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "e1dd870df50f05a7",
-        "name": "",
-        "x": 780,
-        "y": 1280,
-        "wires": [
-            [
-                "a5d81856659846f4"
-            ]
-        ]
-    },
-    {
         "id": "dc642599bc12b15b",
         "type": "subflow:b8e417f1f78d1cac",
         "z": "44b2d39a758b1b4b",
@@ -7828,38 +7165,6 @@
             [
                 "589887760ba5a81c",
                 "85de4302d525fd1e"
-            ]
-        ]
-    },
-    {
-        "id": "010f3be837dc0e44",
-        "type": "serial request",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "e1dd870df50f05a7",
-        "name": "",
-        "serial": "65eee66c.c52a98",
-        "x": 480,
-        "y": 1280,
-        "wires": [
-            [
-                "dcf36608be7989ab"
-            ]
-        ]
-    },
-    {
-        "id": "7e0abb5eb5311069",
-        "type": "serial request",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "e1dd870df50f05a7",
-        "name": "",
-        "serial": "65eee66c.c52a98",
-        "x": 480,
-        "y": 1340,
-        "wires": [
-            [
-                "24af6c497c88beef"
             ]
         ]
     },
@@ -7906,66 +7211,6 @@
         "wires": [
             [
                 "dc1d39a5dae25ea2"
-            ]
-        ]
-    },
-    {
-        "id": "2a8c7beb88344436",
-        "type": "ui_button",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "aaf32055c816159c",
-        "name": "Read SetPoint Value",
-        "group": "",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Read SetPoint Value",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": ":06030401210121",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 1460,
-        "y": 1400,
-        "wires": [
-            [
-                "dac073d68dae4163"
-            ]
-        ]
-    },
-    {
-        "id": "0c36bfaf90819197",
-        "type": "ui_button",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "aaf32055c816159c",
-        "name": "",
-        "group": "",
-        "order": 7,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Read Measurement Value",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": ":06030401210120",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 1480,
-        "y": 1460,
-        "wires": [
-            [
-                "1ad05b44888d4f8f"
             ]
         ]
     },
@@ -8077,44 +7322,6 @@
         ]
     },
     {
-        "id": "3b9833732c9daced",
-        "type": "ui_text",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "aaf32055c816159c",
-        "group": "",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "SetPoint Value [l/h]",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 2260,
-        "y": 1400,
-        "wires": []
-    },
-    {
-        "id": "5c52873fc1ac54c6",
-        "type": "ui_text",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "aaf32055c816159c",
-        "group": "",
-        "order": 8,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Measured Value [l/h]",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 2270,
-        "y": 1460,
-        "wires": []
-    },
-    {
         "id": "c6ddf302a6b0e2c9",
         "type": "ui_button",
         "z": "44b2d39a758b1b4b",
@@ -8187,36 +7394,6 @@
         ]
     },
     {
-        "id": "c3aaeb116b73ead9",
-        "type": "subflow:ceabba86172c98e2",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "aaf32055c816159c",
-        "name": "",
-        "x": 2020,
-        "y": 1400,
-        "wires": [
-            [
-                "3b9833732c9daced"
-            ]
-        ]
-    },
-    {
-        "id": "c0b0e3f9d658e6e8",
-        "type": "subflow:ceabba86172c98e2",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "aaf32055c816159c",
-        "name": "",
-        "x": 2020,
-        "y": 1460,
-        "wires": [
-            [
-                "5c52873fc1ac54c6"
-            ]
-        ]
-    },
-    {
         "id": "20436c278304d190",
         "type": "subflow:b8e417f1f78d1cac",
         "z": "44b2d39a758b1b4b",
@@ -8228,38 +7405,6 @@
         "wires": [
             [
                 "4bad019709e0b3e1"
-            ]
-        ]
-    },
-    {
-        "id": "dac073d68dae4163",
-        "type": "serial request",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "aaf32055c816159c",
-        "name": "",
-        "serial": "e253aa57314a642a",
-        "x": 1710,
-        "y": 1400,
-        "wires": [
-            [
-                "c3aaeb116b73ead9"
-            ]
-        ]
-    },
-    {
-        "id": "1ad05b44888d4f8f",
-        "type": "serial request",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "aaf32055c816159c",
-        "name": "",
-        "serial": "e253aa57314a642a",
-        "x": 1710,
-        "y": 1460,
-        "wires": [
-            [
-                "c0b0e3f9d658e6e8"
             ]
         ]
     },
@@ -8307,136 +7452,6 @@
         "wires": [
             [
                 "2bedbc9b1d4ab782"
-            ]
-        ]
-    },
-    {
-        "id": "689cb78a2389b87a",
-        "type": "ui_button",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "860661d54807a9bc",
-        "name": "Read SetPoint Value",
-        "group": "",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "label": "Read SetPoint Value",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": ":06030401210121",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 4240,
-        "y": 980,
-        "wires": [
-            [
-                "1d07414e7c26133f"
-            ]
-        ]
-    },
-    {
-        "id": "addc580a7bf3c692",
-        "type": "ui_button",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "860661d54807a9bc",
-        "name": "",
-        "group": "",
-        "order": 8,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Read Measurement Value",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": ":06030401210120",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 4110,
-        "y": 1040,
-        "wires": [
-            [
-                "f5a67933ef99a748"
-            ]
-        ]
-    },
-    {
-        "id": "06ee82ee59371719",
-        "type": "ui_text",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "860661d54807a9bc",
-        "group": "",
-        "order": 7,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "SetPoint Value [l/h]",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 4910,
-        "y": 980,
-        "wires": []
-    },
-    {
-        "id": "68d5e71a05aeead7",
-        "type": "ui_text",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "860661d54807a9bc",
-        "group": "",
-        "order": 9,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Measured Value [l/h]",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 4900,
-        "y": 1040,
-        "wires": []
-    },
-    {
-        "id": "1d07414e7c26133f",
-        "type": "serial request",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "860661d54807a9bc",
-        "name": "BK-M0 Query",
-        "serial": "048e1893d369739e",
-        "x": 4440,
-        "y": 980,
-        "wires": [
-            [
-                "a5c812cdb664bd5f"
-            ]
-        ]
-    },
-    {
-        "id": "f5a67933ef99a748",
-        "type": "serial request",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "860661d54807a9bc",
-        "name": "BK-M0 Query",
-        "serial": "048e1893d369739e",
-        "x": 4360,
-        "y": 1040,
-        "wires": [
-            [
-                "8d8404e20741763a"
             ]
         ]
     },
@@ -8511,81 +7526,6 @@
                 "06f672fb2b4d3bf8"
             ]
         ]
-    },
-    {
-        "id": "a5c812cdb664bd5f",
-        "type": "subflow:493b5ab9aeefe4b3",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "860661d54807a9bc",
-        "name": "",
-        "x": 4660,
-        "y": 980,
-        "wires": [
-            [
-                "06ee82ee59371719",
-                "502b5bd32be6db20"
-            ]
-        ]
-    },
-    {
-        "id": "8d8404e20741763a",
-        "type": "subflow:493b5ab9aeefe4b3",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "860661d54807a9bc",
-        "name": "",
-        "x": 4640,
-        "y": 1040,
-        "wires": [
-            [
-                "68d5e71a05aeead7"
-            ]
-        ]
-    },
-    {
-        "id": "d315867ddd0719a1",
-        "type": "inject",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "860661d54807a9bc",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "1",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "1",
-        "payloadType": "str",
-        "x": 4070,
-        "y": 980,
-        "wires": [
-            [
-                "689cb78a2389b87a"
-            ]
-        ]
-    },
-    {
-        "id": "502b5bd32be6db20",
-        "type": "link out",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "860661d54807a9bc",
-        "name": "GASGloblal_M0_SP",
-        "mode": "link",
-        "links": [],
-        "x": 4845,
-        "y": 940,
-        "wires": []
     },
     {
         "id": "aa3af8b9a6dd1788",
@@ -8997,7 +7937,7 @@
         "y": 420,
         "wires": [
             [
-                "555a37e4ab64acfb"
+                "171b1f16f06594d7"
             ]
         ]
     },
@@ -9023,7 +7963,7 @@
         "y": 140,
         "wires": [
             [
-                "438c245f6ea34abd"
+                "6c1bd50fe8aa865e"
             ]
         ]
     },
@@ -9633,21 +8573,6 @@
         ]
     },
     {
-        "id": "29ba4c8212d52b3b",
-        "type": "subflow:a73ba4fabd3c49ad",
-        "z": "44b2d39a758b1b4b",
-        "d": true,
-        "g": "56b05b496dc78a04",
-        "name": "",
-        "x": 3170,
-        "y": 1300,
-        "wires": [
-            [
-                "fd743603efce9c02"
-            ]
-        ]
-    },
-    {
         "id": "fd743603efce9c02",
         "type": "ui_text",
         "z": "44b2d39a758b1b4b",
@@ -9727,7 +8652,7 @@
         "y": 1300,
         "wires": [
             [
-                "29ba4c8212d52b3b"
+                "b67fe28121f37cde"
             ]
         ]
     },
@@ -9996,21 +8921,6 @@
         "wires": []
     },
     {
-        "id": "1887cc2e8da47247",
-        "type": "subflow:a73ba4fabd3c49ad",
-        "z": "44b2d39a758b1b4b",
-        "g": "81cf755189fae457",
-        "name": "",
-        "x": 3390,
-        "y": 180,
-        "wires": [
-            [
-                "758a4b942beba627",
-                "1ce178dae85e25c3"
-            ]
-        ]
-    },
-    {
         "id": "846d0c70cc4b9a07",
         "type": "serial request",
         "z": "44b2d39a758b1b4b",
@@ -10093,7 +9003,7 @@
         "y": 180,
         "wires": [
             [
-                "1887cc2e8da47247"
+                "34fe5ce3fa3a10c5"
             ]
         ]
     },
@@ -10171,21 +9081,7 @@
         "wires": [
             [
                 "39dba2acc02cabd3",
-                "1fd2a5f49d69d150"
-            ]
-        ]
-    },
-    {
-        "id": "1fd2a5f49d69d150",
-        "type": "subflow:ba9b9d252c2508b4",
-        "z": "44b2d39a758b1b4b",
-        "g": "ce609db0e079068e",
-        "name": "",
-        "x": 3310,
-        "y": 340,
-        "wires": [
-            [
-                "2b8fce83018c83ce"
+                "093c39ae6b491b79"
             ]
         ]
     },
@@ -10196,7 +9092,7 @@
         "g": "ce609db0e079068e",
         "name": "",
         "serial": "488efe6f06074f88",
-        "x": 3530,
+        "x": 3590,
         "y": 340,
         "wires": [
             []
@@ -10602,7 +9498,7 @@
         "y": 120,
         "wires": [
             [
-                "aeb9bbbc3d35801b"
+                "d283497711e69cd2"
             ]
         ]
     },
@@ -10628,7 +9524,7 @@
         "y": 500,
         "wires": [
             [
-                "ad94d5719023060a"
+                "4ef34ce9f40e2778"
             ]
         ]
     },
@@ -10843,7 +9739,7 @@
         "y": 160,
         "wires": [
             [
-                "65932f18c023b9f4"
+                "d899e7a365d2f347"
             ]
         ]
     },
@@ -11045,7 +9941,7 @@
         "y": 460,
         "wires": [
             [
-                "a94f4ad9760cef8c"
+                "87f9bf3e22cdc49b"
             ]
         ]
     },
@@ -11061,21 +9957,6 @@
         "wires": [
             [
                 "4e893f1f3e09f170"
-            ]
-        ]
-    },
-    {
-        "id": "a94f4ad9760cef8c",
-        "type": "subflow:a73ba4fabd3c49ad",
-        "z": "44b2d39a758b1b4b",
-        "g": "ce609db0e079068e",
-        "name": "",
-        "x": 3370,
-        "y": 460,
-        "wires": [
-            [
-                "5f6706caa507622b",
-                "cc8c672459eb3a0f"
             ]
         ]
     },
@@ -11141,7 +10022,7 @@
         "links": [
             "024480e23f08a507"
         ],
-        "x": 3605,
+        "x": 3595,
         "y": 520,
         "wires": []
     },
@@ -11318,6 +10199,243 @@
         "wires": [
             [
                 "aad97fede2934f47"
+            ]
+        ]
+    },
+    {
+        "id": "6c1bd50fe8aa865e",
+        "type": "function",
+        "z": "44b2d39a758b1b4b",
+        "g": "290e074640fdfb17",
+        "name": "BK-ELPRESS Meas 2 Press",
+        "func": "const filtertext = msg.payload.trim();\nvar instr = filtertext;\nvar ininfo = instr.substr(11,4);\nvar dec = parseInt(ininfo, 16);\nvar floatv = (dec*1500/32000).toFixed(2);\n\nvar msg1 = {payload : instr};\nvar msg2 = {payload : ininfo};\nvar msg3 = {payload : dec};\nvar msg4 = {payload : floatv};\n\n\nreturn  msg4;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 140,
+        "wires": [
+            [
+                "1635465c3a54e685",
+                "7c89d9fcf5706089"
+            ]
+        ]
+    },
+    {
+        "id": "171b1f16f06594d7",
+        "type": "function",
+        "z": "44b2d39a758b1b4b",
+        "g": "9eface1706386705",
+        "name": "BK-ELPRESS Meas 2 Press",
+        "func": "const filtertext = msg.payload.trim();\nvar instr = filtertext;\nvar ininfo = instr.substr(11,4);\nvar dec = parseInt(ininfo, 16);\nvar floatv = (dec*1500/32000).toFixed(2);\n\nvar msg1 = {payload : instr};\nvar msg2 = {payload : ininfo};\nvar msg3 = {payload : dec};\nvar msg4 = {payload : floatv};\n\n\nreturn  msg4;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 420,
+        "wires": [
+            [
+                "cd96bed145c6a88f",
+                "d26152d0d39ac8d8"
+            ]
+        ]
+    },
+    {
+        "id": "68455fbabe5dfccf",
+        "type": "function",
+        "z": "44b2d39a758b1b4b",
+        "g": "9eface1706386705",
+        "name": "BK-ELPRESS Press 2 Meas ",
+        "func": "var output = msg.payload;\nvar hexword;\nvar hexString;\n\noutput = parseInt(output);\nif (output == 0){\n    hexString =0\n}else {\nhexword = Math.round(output*32000/1500);\nhexString = hexword.toString(16);\n}\nconst str1 = ':0603010121';\nconst str2 = str1.concat(hexString);\n\nvar msg = {payload : str2};\n\nreturn [msg];\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 280,
+        "wires": [
+            [
+                "eb9c2e9350ac91ba"
+            ]
+        ]
+    },
+    {
+        "id": "d283497711e69cd2",
+        "type": "function",
+        "z": "44b2d39a758b1b4b",
+        "g": "086f2900f4b49b1b",
+        "name": "BK-ELFLOW Meas 2 Flow",
+        "func": "const filtertext = msg.payload.trim();\nvar instr = filtertext;\nvar ininfo = instr.substr(11,4);\nvar dec = parseInt(ininfo, 16);\nvar floatv = (dec*12/32000).toFixed(2);\n\nvar msg1 = {payload : instr};\nvar msg2 = {payload : ininfo};\nvar msg3 = {payload : dec};\nvar msg4 = {payload : floatv};\n\n\nreturn  msg4;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2100,
+        "y": 120,
+        "wires": [
+            [
+                "d026e757a211b62f",
+                "a751117c2cdb2b36"
+            ]
+        ]
+    },
+    {
+        "id": "4ef34ce9f40e2778",
+        "type": "function",
+        "z": "44b2d39a758b1b4b",
+        "g": "bdc84199775ddd65",
+        "name": "BK-ELFLOW Meas 2 Flow",
+        "func": "const filtertext = msg.payload.trim();\nvar instr = filtertext;\nvar ininfo = instr.substr(11,4);\nvar dec = parseInt(ininfo, 16);\nvar floatv = (dec*12/32000).toFixed(2);\n\nvar msg1 = {payload : instr};\nvar msg2 = {payload : ininfo};\nvar msg3 = {payload : dec};\nvar msg4 = {payload : floatv};\n\n\nreturn  msg4;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2080,
+        "y": 500,
+        "wires": [
+            [
+                "6ea1b58e4bc05672",
+                "3e86acf3b73d06f9"
+            ]
+        ]
+    },
+    {
+        "id": "fe21e8660e913a72",
+        "type": "function",
+        "z": "44b2d39a758b1b4b",
+        "g": "bdc84199775ddd65",
+        "name": "BK-ELFLOW Flow 2 Meas ",
+        "func": "var output = msg.payload;\nvar hexword;\nvar hexString;\n\n//output = parseInt(output);\noutput = parseFloat(output);\nhexword = Math.round(output*32000/12);\nhexString = hexword.toString(16);\n\nconst str1 = ':0603010121';\nconst str2 = str1.concat(hexString);\n\nvar msg = {payload : str2};\n\nreturn [msg];\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2100,
+        "y": 320,
+        "wires": [
+            [
+                "681c248eb6ed3a5a"
+            ]
+        ]
+    },
+    {
+        "id": "34fe5ce3fa3a10c5",
+        "type": "function",
+        "z": "44b2d39a758b1b4b",
+        "g": "81cf755189fae457",
+        "name": "BK-ELFLOW-BRKM1 Meas 2 Flow",
+        "func": "const filtertext = msg.payload.trim();\nvar instr = filtertext;\nvar ininfo = instr.substr(11,4);\nvar dec = parseInt(ininfo, 16);\nvar floatv = (dec*10/32000).toFixed(2);\n\nvar msg1 = {payload : instr};\nvar msg2 = {payload : ininfo};\nvar msg3 = {payload : dec};\nvar msg4 = {payload : floatv};\n\n\nreturn  msg4;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3400,
+        "y": 180,
+        "wires": [
+            [
+                "1ce178dae85e25c3",
+                "758a4b942beba627"
+            ]
+        ]
+    },
+    {
+        "id": "87f9bf3e22cdc49b",
+        "type": "function",
+        "z": "44b2d39a758b1b4b",
+        "g": "ce609db0e079068e",
+        "name": "BK-ELFLOW-BRKM1 Meas 2 Flow",
+        "func": "const filtertext = msg.payload.trim();\nvar instr = filtertext;\nvar ininfo = instr.substr(11,4);\nvar dec = parseInt(ininfo, 16);\nvar floatv = (dec*10/32000).toFixed(2);\n\nvar msg1 = {payload : instr};\nvar msg2 = {payload : ininfo};\nvar msg3 = {payload : dec};\nvar msg4 = {payload : floatv};\n\n\nreturn  msg4;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3380,
+        "y": 460,
+        "wires": [
+            [
+                "5f6706caa507622b",
+                "cc8c672459eb3a0f"
+            ]
+        ]
+    },
+    {
+        "id": "093c39ae6b491b79",
+        "type": "function",
+        "z": "44b2d39a758b1b4b",
+        "g": "ce609db0e079068e",
+        "name": "BK-ELFLOW-BRKM1 Flow 2 Meas ",
+        "func": "var output = msg.payload;\nvar hexword;\nvar hexString;\n\n//output = parseInt(output);\nhexword = Math.round(output*32000/10);\nhexString = hexword.toString(16);\n\nconst str1 = ':0603010121';\nconst str2 = str1.concat(hexString);\n\nvar msg = {payload : str2};\n\nreturn [msg];\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3340,
+        "y": 340,
+        "wires": [
+            [
+                "2b8fce83018c83ce"
+            ]
+        ]
+    },
+    {
+        "id": "d899e7a365d2f347",
+        "type": "function",
+        "z": "44b2d39a758b1b4b",
+        "g": "3a77962e97d02525",
+        "name": "BK-EL M Meas 2 Flow",
+        "func": "//var output = msg.payload.split(\"\\t\");\nvar instr = msg.payload;\nvar ininfo = instr.substr(12,4);\nvar dec = parseInt(ininfo, 16);\nvar floatv = (dec*60/32000).toFixed(2);\n\nvar msg1 = {payload : instr};\nvar msg2 = {payload : ininfo};\nvar msg3 = {payload : dec};\nvar msg4 = {payload : floatv};\n\n\nreturn  msg4;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 4660,
+        "y": 160,
+        "wires": [
+            [
+                "d25cc37e410e543e",
+                "b36482f7efb643b7"
+            ]
+        ]
+    },
+    {
+        "id": "b67fe28121f37cde",
+        "type": "function",
+        "z": "44b2d39a758b1b4b",
+        "g": "56b05b496dc78a04",
+        "name": "BK-ELFLOW-BRKM1 Meas 2 Flow",
+        "func": "const filtertext = msg.payload.trim();\nvar instr = filtertext;\nvar ininfo = instr.substr(11,4);\nvar dec = parseInt(ininfo, 16);\nvar floatv = (dec*10/32000).toFixed(2);\n\nvar msg1 = {payload : instr};\nvar msg2 = {payload : ininfo};\nvar msg3 = {payload : dec};\nvar msg4 = {payload : floatv};\n\n\nreturn  msg4;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3160,
+        "y": 1300,
+        "wires": [
+            [
+                "fd743603efce9c02"
             ]
         ]
     },
@@ -13938,21 +13056,6 @@
         ]
     },
     {
-        "id": "64ec612ddd21e4cd",
-        "type": "subflow:2af719fb2fc809d7",
-        "z": "2929f7b53fc923ef",
-        "g": "63bdbad96c6c866f",
-        "name": "",
-        "x": 690,
-        "y": 120,
-        "wires": [
-            [
-                "3a912f03d0333c28",
-                "be92780f5508341c"
-            ]
-        ]
-    },
-    {
         "id": "3a912f03d0333c28",
         "type": "link out",
         "z": "2929f7b53fc923ef",
@@ -14307,7 +13410,7 @@
         "y": 120,
         "wires": [
             [
-                "64ec612ddd21e4cd"
+                "20f6c26459e4dafd"
             ]
         ],
         "l": false
@@ -14475,6 +13578,27 @@
         "x": 630,
         "y": 560,
         "wires": []
+    },
+    {
+        "id": "20f6c26459e4dafd",
+        "type": "function",
+        "z": "2929f7b53fc923ef",
+        "g": "63bdbad96c6c866f",
+        "name": "TH-USB Meas 2 Pres",
+        "func": "//var output = msg.payload.split(\"\\t\");\nvar instr = msg.payload;\n\nconst fmt /*: BigIntToLocaleStringOptions */ = {\n  notation: 'scientific',\n  maximumFractionDigits: 3 // The default is 3, but 20 is the maximum supported by JS according to MDN.\n};\n\nvar ininfo0 = instr.substr(7);\nvar inilen = ininfo0.length;\nvar ininfo = ininfo0.substr(1, inilen-3);\nvar num = Number(ininfo);\nvar msgo;\n\nif (num < 1){\n    num = num.toLocaleString( 'en-US', fmt ) ; \n}\n\nmsgo = {payload : num};\n\nreturn msgo;   ",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 120,
+        "wires": [
+            [
+                "be92780f5508341c",
+                "3a912f03d0333c28"
+            ]
+        ]
     },
     {
         "id": "024399cf34f61632",
