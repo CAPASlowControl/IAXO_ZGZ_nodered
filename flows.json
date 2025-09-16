@@ -1312,7 +1312,7 @@
         "x": 88,
         "y": 33,
         "w": 1044,
-        "h": 1014
+        "h": 974
     },
     {
         "id": "cc5ee890949d6fc9",
@@ -1345,8 +1345,6 @@
             "be5dc491af60facd",
             "c60e9f56bfae40c0",
             "38c0eac486924c24",
-            "98b6c5add3b70555",
-            "248cede428df3328",
             "335a539e697acc89",
             "e9d46a21019ed5ac",
             "f4b12f8c2dc84dad",
@@ -1359,7 +1357,7 @@
         ],
         "x": 14,
         "y": 1079,
-        "w": 1122,
+        "w": 1062,
         "h": 622,
         "info": "BG0I >> register 0 of BGA, for controlling good communitacion\nXALL >> Measure Ratio 1, Ratio 2, Temp, Press, Norm Speed of Sound, Block Temp\nRATO? 1% >> Measure Ratio Gas 1 in %\nRATO? 2% >> Measure Ratio Gas 2 in %\nUNCT?% "
     },
@@ -1789,7 +1787,7 @@
         ],
         "x": 3924,
         "y": 1159,
-        "w": 782,
+        "w": 722,
         "h": 162,
         "info": "This group catches the errors in all the nodes of the flow. \nSecuruty function only makes the msg earier and Trim topic is to eliminate /dev/. \nCopy the group to add security in others flows. \nNOTE: Remember to change link out end.\n\n\nHere we only select subflows becouse they trigger the errors in these devices. "
     },
@@ -2044,7 +2042,6 @@
             "caf0714c.6cf78",
             "cb33d6b7.aebf7",
             "b37d1abf.22d8f8",
-            "83bfcaeb.e279a",
             "67da4615.03e49",
             "333c5043.f90f68",
             "d011f41.5cff108",
@@ -2052,7 +2049,7 @@
         ],
         "x": 74,
         "y": 1999,
-        "w": 1272,
+        "w": 1252,
         "h": 262
     },
     {
@@ -2098,9 +2095,7 @@
             "e59f7569.d18428",
             "b108c.316a3775",
             "b55bf8e8.2d60b8",
-            "cb222ad4.cb6a48",
             "7a56d235.e4fdac",
-            "f41da742.2725c",
             "8b170ec6.f86028",
             "1da41199.a8866e",
             "3db2f183.68edb6",
@@ -2108,30 +2103,24 @@
             "6b0abb8f.68cc8c",
             "cc29f60.0960a08",
             "ef053eeb.8e9628",
-            "da9f10cd.adef98",
             "1efe938a.c009f4",
             "87520724.391438",
             "1abda5c7.acf26a",
             "27b4e189.448fee",
             "d29b6af8.281db",
-            "4194d916.930608",
             "6e8cb37a.3b74ec",
             "2e2c61d3.2d7536",
-            "fe4f710a.828cc8",
             "e41406fd.d374b",
             "6f8a5ad0.f29eb4",
-            "b5378e1.347757",
-            "95acda9c.6be1a8",
-            "cec9e367.1dcd8",
             "9fe17491.e32518",
             "5d96c753.ddd018",
             "a6db4f52.28f198",
             "c82c4bcf.10229"
         ],
         "x": 64,
-        "y": 1219,
+        "y": 1259,
         "w": 1602,
-        "h": 742
+        "h": 662
     },
     {
         "id": "f8f1a23133f6b206",
@@ -2165,10 +2154,7 @@
             "a4ba2fa34e743d23",
             "6d5d958dc430b6df",
             "1fdec703419f8b8c",
-            "1b6e833372729630",
-            "357c68b5d1bccb29",
             "f9af0ddc7af0b7e9",
-            "ba5d6637.bdf148",
             "334ecdb4.62f12a",
             "431bf26b.9f95ec",
             "cd835689.247ef8",
@@ -2197,14 +2183,12 @@
             "1da133144cb9ab8a",
             "dd3861e09e013307",
             "423c8255f686304e",
-            "7629c9df42299b52",
-            "bb38b8c6467ffec9",
-            "6fe25145265dfc24"
+            "bb38b8c6467ffec9"
         ],
         "x": 94,
-        "y": 759,
+        "y": 799,
         "w": 752,
-        "h": 362
+        "h": 322
     },
     {
         "id": "63bdbad96c6c866f",
@@ -2219,7 +2203,6 @@
             "36fd090493e29f93",
             "64ec612ddd21e4cd",
             "3a912f03d0333c28",
-            "a1eef42bb8f72f9f",
             "be92780f5508341c",
             "45d1f9a221e60ef2",
             "a39a35f24b9131bd",
@@ -2229,7 +2212,7 @@
         "x": 54,
         "y": 19,
         "w": 1012,
-        "h": 202
+        "h": 182
     },
     {
         "id": "28fcea42a9100cae",
@@ -2328,7 +2311,8 @@
             "472d8c49c60295be",
             "93874c7c25901970",
             "283f5b9777c2ec08",
-            "3726beab4ad74278"
+            "3726beab4ad74278",
+            "7dbfda4e7ac5359f"
         ],
         "x": 54,
         "y": 1719,
@@ -2376,11 +2360,12 @@
             "bcc0e35a7836839d",
             "231009a2bfeece0b",
             "b2eef4dc4310dfc0",
-            "5ad70c0a4c753cfb"
+            "5ad70c0a4c753cfb",
+            "f0936ecf0bda6c11"
         ],
         "x": 54,
         "y": 279,
-        "w": 672,
+        "w": 692,
         "h": 342
     },
     {
@@ -2427,1037 +2412,6 @@
         "h": 82
     },
     {
-        "id": "eca5bb2e0e780868",
-        "type": "group",
-        "z": "ac988ebf643b965c",
-        "g": "a4c6381da6e0a25c",
-        "name": "Trips insert",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "0d6298c0274aaf27",
-            "d7b9dfdab4346d65",
-            "a49a8996f9c84483",
-            "36d3b29d534ee056"
-        ],
-        "x": 584,
-        "y": 719,
-        "w": 322,
-        "h": 142
-    },
-    {
-        "id": "dc2c0b3efd5a6d7a",
-        "type": "group",
-        "z": "96df9d1b.b1b87",
-        "g": "94cdfbd341957212",
-        "name": "Trips insert",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "a37a7bcfa7bf3ae3",
-            "dc39dc86d8e158dd",
-            "50d5e7229a686900",
-            "83ae8a5bc6d0bc8a"
-        ],
-        "x": 374,
-        "y": 419,
-        "w": 282,
-        "h": 142
-    },
-    {
-        "id": "ee925d052c96bf7c",
-        "type": "group",
-        "z": "ac988ebf643b965c",
-        "g": "62882ad4f7217080",
-        "name": "Table union",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "0eee0cfbc82cdbf2",
-            "e9632ada992faf43",
-            "4f7d3234015e1d43",
-            "57f0971a909279ed"
-        ],
-        "x": 1334,
-        "y": 2079,
-        "w": 392,
-        "h": 242
-    },
-    {
-        "id": "e228fc818a13a83f",
-        "type": "group",
-        "z": "7184b44879b683fb",
-        "g": "6deaaca13e43ee11",
-        "name": "% Limit Conf",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "608a30d8e1e3dc4a",
-            "b0d9548a5c32d5ea",
-            "15b2b73ebf78d0f8",
-            "d37b891265604667",
-            "e66eebfcf3c01cc4",
-            "d649fa17f9ac1851",
-            "2d18d68883b55937",
-            "1805db97c6e06d7a",
-            "fc8aca30ec79adb8",
-            "b9b801a7751deb26",
-            "b86e0b330ffbda47",
-            "4b7c7253093a074f"
-        ],
-        "x": 1288,
-        "y": 53,
-        "w": 1244,
-        "h": 594
-    },
-    {
-        "id": "921335a5a84f12eb",
-        "type": "group",
-        "z": "7184b44879b683fb",
-        "g": "6deaaca13e43ee11",
-        "name": "Temperature Limit Conf",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "573bd8e0889f4cd2",
-            "c41759feeb5f8bd5",
-            "e8e5efb00986e568",
-            "253f61975e0289e1",
-            "f50d795a92af105a",
-            "d3b6f1fb16ad0cf6",
-            "1e89a17632320739",
-            "923f973e8bc64d64",
-            "0e23849c0e7dc7eb",
-            "5c0682b024cff3b5",
-            "cab81f61cc45c256",
-            "e2a40e4267294a76"
-        ],
-        "x": 1328,
-        "y": 653,
-        "w": 1224,
-        "h": 614
-    },
-    {
-        "id": "56dfe620b4d590c4",
-        "type": "group",
-        "z": "7184b44879b683fb",
-        "g": "6deaaca13e43ee11",
-        "name": "Pressure Limit Conf",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "b857320698a7805f",
-            "d6513edb939b7dac",
-            "7042a8dc434576a7",
-            "eb8a7d1db3e0978f",
-            "f894431fd6b6cef0",
-            "f4a81e96d845684f",
-            "37f49dfd58547722",
-            "eed04636a4ee0947",
-            "25c7a9408b79ce9d",
-            "43cfd8e76bcc79b6",
-            "79699e531e50fef0",
-            "67be9094c6dabcf5"
-        ],
-        "x": 1328,
-        "y": 1293,
-        "w": 1564,
-        "h": 614
-    },
-    {
-        "id": "714c33716ed7518a",
-        "type": "group",
-        "z": "7184b44879b683fb",
-        "g": "1e19279394efd31a",
-        "name": "Secondary Gas",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "17cde4f19f6343d6",
-            "45ec150f5b05c372",
-            "8aaa1a57eef35150",
-            "2ddd722a03122251",
-            "f953bf5c959caf8f",
-            "ab7a255f3d7d592b",
-            "b9ec89fa9da61e04",
-            "b3b0b7a69e86002f",
-            "ae2aa00422cc1a16",
-            "491389c8f29ebf41",
-            "2829668e422f23c5",
-            "1a3655900da6ebc6",
-            "dc92ad660596fb55",
-            "b1f412551c327a56",
-            "8dad9c727e0c23c7"
-        ],
-        "x": 134,
-        "y": 739,
-        "w": 972,
-        "h": 282
-    },
-    {
-        "id": "7799292376dc5c39",
-        "type": "group",
-        "z": "7184b44879b683fb",
-        "g": "1e19279394efd31a",
-        "name": "Primary Gas",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "450e942023508150",
-            "1092dfc6ba40d336",
-            "34aaed3899ef50ea",
-            "cc44dd27c339434c",
-            "c786a6dec7eead5d",
-            "9c1cccbe81568649",
-            "bce916c6e9e6325d",
-            "aa8db2d654a346a3",
-            "2f14752a7fc2edcd",
-            "8ed1f4abd184eafe",
-            "b20a25c4ad9d9301",
-            "55821f724e19779e",
-            "5a7e7b7d6a238692",
-            "7568530ae0a29b94",
-            "f61fbfe24261ac4c"
-        ],
-        "x": 114,
-        "y": 479,
-        "w": 912,
-        "h": 242
-    },
-    {
-        "id": "2c40e9d0b9b43aa8",
-        "type": "group",
-        "z": "7184b44879b683fb",
-        "g": "1e19279394efd31a",
-        "name": "Monitoring Communication",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "b12f4d821baaa7e2",
-            "6712e165a74867c7",
-            "9e9f99ef0c2e410b",
-            "ee806845a54491c3"
-        ],
-        "x": 114,
-        "y": 59,
-        "w": 572,
-        "h": 82
-    },
-    {
-        "id": "8759c79b15a4c884",
-        "type": "group",
-        "z": "7184b44879b683fb",
-        "g": "1e19279394efd31a",
-        "name": "Operation Mode",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "024399cf34f61632",
-            "51ba4684b84e84f1",
-            "6344a446ced05bda"
-        ],
-        "x": 694,
-        "y": 59,
-        "w": 392,
-        "h": 82
-    },
-    {
-        "id": "c96a2cde9245f87b",
-        "type": "group",
-        "z": "7184b44879b683fb",
-        "g": "1e19279394efd31a",
-        "name": "Temperature monitoring",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "377b750137293db8",
-            "8e06793e69cec20c",
-            "eee360290c046a3d",
-            "511bce2f37f4c6a9",
-            "e055c58aeac75251",
-            "18c31e06f834116d"
-        ],
-        "x": 114,
-        "y": 379,
-        "w": 912,
-        "h": 82
-    },
-    {
-        "id": "80166f8ddce35046",
-        "type": "group",
-        "z": "7184b44879b683fb",
-        "g": "1e19279394efd31a",
-        "name": "Pressure setup",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "79e092ac612b158e",
-            "69b35cb522888a50",
-            "8def87c258036a7c",
-            "9ce56d52a92d785e",
-            "a90b06242b5979af",
-            "4a6b1c8afa742165",
-            "72354dbaea200540",
-            "a89cb876d2b33bc8",
-            "b06b94aed0a22d95",
-            "e9b4561c79bd059c",
-            "c32f7086d74af988",
-            "351ad96f659db8b6",
-            "cd35e59139236b6f",
-            "fc577af8ca6887b9",
-            "46efdd7b36810b3d",
-            "14d73de4e6f9b365"
-        ],
-        "x": 114,
-        "y": 159,
-        "w": 972,
-        "h": 202,
-        "info": "PSRU 3,0 >> Select the User Pressure Mode (3) & Absolute Units (0)\nPUSR 1.12bar >> Select the User Pressure in bar\nPUSR? bar >> Query the User pressure in bar"
-    },
-    {
-        "id": "391b996bdb7d6683",
-        "type": "group",
-        "z": "e6abd59fcfef321c",
-        "g": "c30986ce38207369",
-        "name": "Filling/Normal Operation Mode",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "d7f7989255f2afdd",
-            "62b9db947a562e86",
-            "163794f4902ad2e5",
-            "d6e7d1c94125f824",
-            "543391f0a31feed6",
-            "19fa08406f0b6faf",
-            "d7212b13501c887d",
-            "773f89532f843c32",
-            "b0e14941f4a63a9b",
-            "a356a8b1c6e00e63"
-        ],
-        "x": 1664,
-        "y": 1399,
-        "w": 802,
-        "h": 282
-    },
-    {
-        "id": "9eface1706386705",
-        "type": "group",
-        "z": "44b2d39a758b1b4b",
-        "g": "581f3e732eab82ac",
-        "name": "Pressure Controller SetPoint",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "d26152d0d39ac8d8",
-            "d62597cf0a20f75e",
-            "d76d36be7cfa2136",
-            "d60f365399242f0c",
-            "eb9c2e9350ac91ba",
-            "0a9dc41da1c3a687",
-            "445136e8d94474a0",
-            "555a37e4ab64acfb",
-            "d41e60cd5acde7b6",
-            "fbac5fad9db42ae0",
-            "cd96bed145c6a88f",
-            "484cf42951993105"
-        ],
-        "x": 74,
-        "y": 239,
-        "w": 1152,
-        "h": 222
-    },
-    {
-        "id": "bdc84199775ddd65",
-        "type": "group",
-        "z": "44b2d39a758b1b4b",
-        "g": "5ee8327d0a6bfba1",
-        "name": "Input Flow Controller SetPoint",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "a10aceee58c74e8d",
-            "fdbbd73621676d83",
-            "cc06584e5418ec5f",
-            "681c248eb6ed3a5a",
-            "6ea1b58e4bc05672",
-            "1ad7d27fb74143a1",
-            "ad94d5719023060a",
-            "9125c7758054ab8b",
-            "63a34e572e49f940",
-            "3e86acf3b73d06f9",
-            "5460d58c1446ca38",
-            "e2aca5d01837eee9",
-            "632eb8e47833193b",
-            "afbb61fe619b43e5"
-        ],
-        "x": 1334,
-        "y": 279,
-        "w": 1132,
-        "h": 322
-    },
-    {
-        "id": "3a77962e97d02525",
-        "type": "group",
-        "z": "44b2d39a758b1b4b",
-        "g": "91dcd7fe7bccf487",
-        "name": "Flow Monitor Measurement",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "ce89657ff7adf5cd",
-            "d25cc37e410e543e",
-            "65932f18c023b9f4",
-            "b36482f7efb643b7",
-            "cda9199e34142c7e",
-            "a3571dba5b4e5234",
-            "a9fefbbe40bbca3c",
-            "5d6aa42f0f6c300a"
-        ],
-        "x": 3944,
-        "y": 39,
-        "w": 1172,
-        "h": 162
-    },
-    {
-        "id": "086f2900f4b49b1b",
-        "type": "group",
-        "z": "44b2d39a758b1b4b",
-        "g": "5ee8327d0a6bfba1",
-        "name": "In Flow Controller Measurement",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "333d5acece026a20",
-            "255990f6c243b551",
-            "a751117c2cdb2b36",
-            "aeb9bbbc3d35801b",
-            "d026e757a211b62f",
-            "5c07611dd674405a",
-            "5d894c8854ba6289",
-            "836df16536d83455"
-        ],
-        "x": 1334,
-        "y": 19,
-        "w": 1172,
-        "h": 202
-    },
-    {
-        "id": "290e074640fdfb17",
-        "type": "group",
-        "z": "44b2d39a758b1b4b",
-        "g": "581f3e732eab82ac",
-        "name": "Pressure Controller Measurement",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "810293b63be01b61",
-            "7c89d9fcf5706089",
-            "438c245f6ea34abd",
-            "1635465c3a54e685",
-            "71f86433c88c4d3f",
-            "1390d36d13d6b1f6",
-            "5127a606cf33cd3c",
-            "06977ad8c1dd2986"
-        ],
-        "x": 74,
-        "y": 39,
-        "w": 1172,
-        "h": 182
-    },
-    {
-        "id": "e1dd870df50f05a7",
-        "type": "group",
-        "z": "44b2d39a758b1b4b",
-        "g": "581f3e732eab82ac",
-        "name": "Pressure Controller",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "c71a9b3cb5f8d911",
-            "fa3eacb4b63eb040",
-            "50dff5c9da44a0c6",
-            "6f0ebcb2479ea9b4",
-            "532213c65d82b75b",
-            "b1235494071aae63",
-            "9ee67062b4a84269",
-            "5edfee39eecf31da",
-            "589887760ba5a81c",
-            "85de4302d525fd1e",
-            "9e297204668e3baa",
-            "a5d81856659846f4",
-            "aee7ae9910461cea",
-            "78ad1ccc6e648047",
-            "24af6c497c88beef",
-            "dcf36608be7989ab",
-            "dc642599bc12b15b",
-            "010f3be837dc0e44",
-            "7e0abb5eb5311069",
-            "95dc02d5871b8b55"
-        ],
-        "x": 114,
-        "y": 859,
-        "w": 1132,
-        "h": 522
-    },
-    {
-        "id": "aaf32055c816159c",
-        "type": "group",
-        "z": "44b2d39a758b1b4b",
-        "g": "5ee8327d0a6bfba1",
-        "name": "In Flow Controller",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "7aa8c031ca6ff4f1",
-            "2a8c7beb88344436",
-            "0c36bfaf90819197",
-            "2bedbc9b1d4ab782",
-            "73809f6cf1588c5b",
-            "4bad019709e0b3e1",
-            "dc1d39a5dae25ea2",
-            "3b9833732c9daced",
-            "5c52873fc1ac54c6",
-            "c6ddf302a6b0e2c9",
-            "69490672d4ab3c13",
-            "02d96e8c6144aa91",
-            "c3aaeb116b73ead9",
-            "c0b0e3f9d658e6e8",
-            "20436c278304d190",
-            "dac073d68dae4163",
-            "1ad05b44888d4f8f",
-            "e8ab187c23c2805c",
-            "fcd377a22a713b5b"
-        ],
-        "x": 1334,
-        "y": 979,
-        "w": 1172,
-        "h": 522
-    },
-    {
-        "id": "860661d54807a9bc",
-        "type": "group",
-        "z": "44b2d39a758b1b4b",
-        "g": "91dcd7fe7bccf487",
-        "name": "Flow Sensor",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "689cb78a2389b87a",
-            "addc580a7bf3c692",
-            "06ee82ee59371719",
-            "68d5e71a05aeead7",
-            "1d07414e7c26133f",
-            "f5a67933ef99a748",
-            "d280ae099b2e28e7",
-            "06f672fb2b4d3bf8",
-            "e2c10b0aedae3e27",
-            "a5c812cdb664bd5f",
-            "8d8404e20741763a",
-            "d315867ddd0719a1",
-            "502b5bd32be6db20",
-            "aa3af8b9a6dd1788",
-            "879f3486953b5a0d",
-            "b5d975ced8b55d29",
-            "64fffa1a1187b83f",
-            "3821742063be71c3",
-            "bf46d8b98bddd79f",
-            "6d9ece09ba8ad5e5",
-            "95376c9d75167b6c"
-        ],
-        "x": 3974,
-        "y": 559,
-        "w": 1092,
-        "h": 522
-    },
-    {
-        "id": "5f7211b645fa37fa",
-        "type": "group",
-        "z": "44b2d39a758b1b4b",
-        "g": "581f3e732eab82ac",
-        "name": "Connection",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "2eab51e8c03509ba",
-            "31b5cc40ea712177",
-            "44dc732c50ba505d",
-            "dc7be06518d7e04c",
-            "89ec91a720d83628",
-            "be5fef40a04046f8",
-            "1c5545378f2ba00a",
-            "d0c84291a4b6f4bc"
-        ],
-        "x": 94,
-        "y": 499,
-        "w": 672,
-        "h": 302
-    },
-    {
-        "id": "4b0a6b86bc2c5ad7",
-        "type": "group",
-        "z": "44b2d39a758b1b4b",
-        "g": "b743918e1c8c2488",
-        "name": "",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "4e4dc73f5345df8d",
-            "91da1aeaa51042e2",
-            "2c55b701affbbc32"
-        ],
-        "x": 2634,
-        "y": 1459,
-        "w": 712,
-        "h": 82
-    },
-    {
-        "id": "a68ec89d25e062f4",
-        "type": "group",
-        "z": "44b2d39a758b1b4b",
-        "g": "b743918e1c8c2488",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "b7fa718771f68fb3",
-            "9b9afc3d7197c6a0",
-            "08ebbd91655e7a20",
-            "6d085c902fcef551",
-            "8937b014dbbd19c2",
-            "863b73ab012b82e1",
-            "1560b6f22b11cd16",
-            "23ec39b0eef0c9e7",
-            "f886233cd0071092",
-            "8109ac16a5d0586b",
-            "f6ce32030d604ea7",
-            "1f63bd9960173feb",
-            "fa6a183a71a6b857",
-            "06fe2b6a4af3561f",
-            "f2039759b7187951",
-            "e6aae26c25e2c766",
-            "b2366ab66039ef49",
-            "6108e5f37696d9a1",
-            "1b5c1c49d96f9639",
-            "218acf9a7adf9548",
-            "59d643a4f211bc81",
-            "567fee456478c56b",
-            "47f8e6a6439b594a",
-            "b62a3aa2ca2ac677"
-        ],
-        "x": 2634,
-        "y": 1579,
-        "w": 772,
-        "h": 602
-    },
-    {
-        "id": "56b05b496dc78a04",
-        "type": "group",
-        "z": "44b2d39a758b1b4b",
-        "g": "b743918e1c8c2488",
-        "name": "F1 Control Status",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "1308739f36400c7d",
-            "29ba4c8212d52b3b",
-            "fd743603efce9c02",
-            "bd2c9babf702d888",
-            "b9763dca4d7210cf",
-            "aa3f81f4a548cc1b"
-        ],
-        "x": 2614,
-        "y": 1259,
-        "w": 932,
-        "h": 182
-    },
-    {
-        "id": "1c129dfeb05bcbe2",
-        "type": "group",
-        "z": "44b2d39a758b1b4b",
-        "g": "b743918e1c8c2488",
-        "name": "F1 Control mode",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "ca0437abe80c8d27",
-            "dccb3013e9c10cca",
-            "6f4c315585e74c5f",
-            "61fb97e0d45b33a9",
-            "2d01b595803d0f23",
-            "902964c7c08c9ad0",
-            "1cc78cf5d72212c6",
-            "2c4c4f92a3a27807",
-            "67d583b6809f7210",
-            "d0ff6171b4b58231"
-        ],
-        "x": 2614,
-        "y": 874,
-        "w": 932,
-        "h": 367
-    },
-    {
-        "id": "81cf755189fae457",
-        "type": "group",
-        "z": "44b2d39a758b1b4b",
-        "g": "b743918e1c8c2488",
-        "name": "F1 Read Values",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "758a4b942beba627",
-            "1887cc2e8da47247",
-            "846d0c70cc4b9a07",
-            "1ce178dae85e25c3",
-            "e7e2ce115a2cc018",
-            "20087d6695517ec6",
-            "2e7a3d8a127051b9",
-            "3545840a7a37bf4f",
-            "32d5a2a4948e2073"
-        ],
-        "x": 2604,
-        "y": 39,
-        "w": 1262,
-        "h": 242
-    },
-    {
-        "id": "ce609db0e079068e",
-        "type": "group",
-        "z": "44b2d39a758b1b4b",
-        "g": "b743918e1c8c2488",
-        "name": "F1 SetPoint",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "39dba2acc02cabd3",
-            "311cc17b7dc9a3fb",
-            "3e841694803e95a1",
-            "1fd2a5f49d69d150",
-            "2b8fce83018c83ce",
-            "4e893f1f3e09f170",
-            "57f6c09140c44704",
-            "a94f4ad9760cef8c",
-            "0d7f6eb321cc3b01",
-            "316b152720ca20fd",
-            "5f6706caa507622b",
-            "cc8c672459eb3a0f"
-        ],
-        "x": 2594,
-        "y": 299,
-        "w": 1212,
-        "h": 262
-    },
-    {
-        "id": "16aa078f89cc21ce",
-        "type": "group",
-        "z": "44b2d39a758b1b4b",
-        "g": "b743918e1c8c2488",
-        "name": "Connection",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "de714abbabd0a61d",
-            "b3a028116991883f",
-            "874e0e33c908a6a1",
-            "daf55f6e2598028b",
-            "ab872453b5f06188",
-            "6e0dd9e7e444d247",
-            "10efec99464970d1",
-            "6297f10a9a362c45"
-        ],
-        "x": 2614,
-        "y": 579,
-        "w": 672,
-        "h": 242
-    },
-    {
-        "id": "836e37c90e753dfa",
-        "type": "group",
-        "z": "44b2d39a758b1b4b",
-        "g": "5ee8327d0a6bfba1",
-        "name": "Connection",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "b64b73a9a5612320",
-            "a025428cc635e39e",
-            "ca9a86cafb8347d0",
-            "9cead63f9df1b55f",
-            "af71604ad30d7142",
-            "baf222ad092f9c99",
-            "85a66aec2db84447",
-            "03b052e01e4ff57f"
-        ],
-        "x": 1354,
-        "y": 619,
-        "w": 672,
-        "h": 302
-    },
-    {
-        "id": "480831d95427e802",
-        "type": "group",
-        "z": "44b2d39a758b1b4b",
-        "g": "91dcd7fe7bccf487",
-        "name": "Connection",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "c03c332e3f6291b5",
-            "4fcc9febd4a861e2",
-            "ef73ef3fdaca3874",
-            "97f84c74600e05f1",
-            "4042bf8fafc2b81e",
-            "5f8429a722df8e12",
-            "5a225538b799652d",
-            "4bdac17ae47459c3"
-        ],
-        "x": 3954,
-        "y": 219,
-        "w": 672,
-        "h": 302
-    },
-    {
-        "id": "b86e0b330ffbda47",
-        "type": "group",
-        "z": "7184b44879b683fb",
-        "g": "e228fc818a13a83f",
-        "name": "Limit configuration & Query",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "5ad05e5434a36e2d",
-            "6e78813d0e935866",
-            "bdad8b307fde264c",
-            "b1814b9ca7f59934",
-            "08fa590f7f6bcfb6",
-            "f3fc861f7c902957",
-            "01dd02a1e8566c33",
-            "afc29e2a35470552",
-            "2e08fb1989aa5eed",
-            "364735f04edf4765",
-            "8b5eb8ba66d8f085",
-            "03d607b02dccd84f",
-            "d4bc23b0d19203b6",
-            "5f9544a0e5342937",
-            "27bb7f9c94078bf5",
-            "316a4ad44fda0660",
-            "3c395ee147ffe1f7",
-            "4f02227a29d7e24a",
-            "7d083d593d300212",
-            "ec79178c7e1dd0fb",
-            "ba6b247d1a4fde36",
-            "887024a79833a324"
-        ],
-        "x": 1314,
-        "y": 379,
-        "w": 1192,
-        "h": 242
-    },
-    {
-        "id": "4b7c7253093a074f",
-        "type": "group",
-        "z": "7184b44879b683fb",
-        "g": "e228fc818a13a83f",
-        "name": "En/Dis Limits",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "56e3623f0e2f1864",
-            "7ebd26b9732bc2f4",
-            "f7ccc21f617da64e",
-            "2978e99821c3f7a4",
-            "4a5446fcbe06e148",
-            "7c30dd7520fc8e36",
-            "4299fabca352c58e",
-            "56468e1734bd3d50",
-            "931bf66fdf5ebc4f",
-            "3854c0eb5711d980",
-            "e501791be98bca33",
-            "3f39c7239b5b7355",
-            "1e9ebc945b3e6dad",
-            "38aacd09e2582a71"
-        ],
-        "x": 1314,
-        "y": 79,
-        "w": 1072,
-        "h": 142
-    },
-    {
-        "id": "cab81f61cc45c256",
-        "type": "group",
-        "z": "7184b44879b683fb",
-        "g": "921335a5a84f12eb",
-        "name": "Limit configuration & Query",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "e80ae15a0542fbc8",
-            "4e07affecff1a22d",
-            "348e0d0ce7c0486f",
-            "e59c3c00c7aae566",
-            "477331ed23a2938f",
-            "d86c3eee58a863a7",
-            "645151634ef55a86",
-            "94c3852279db1c7c",
-            "2aa453c025fdfe38",
-            "e378ed778eb71c41",
-            "415c2e84f9ba4aa1",
-            "dae4eeaef7bc7ca0",
-            "602c8039bbec3241",
-            "890d875007ced2e3",
-            "40fb4731f9a58fc8",
-            "90872a5b214e6913",
-            "03fb576c3f9634b5",
-            "a86b243262642d54",
-            "799e8019c475c43b",
-            "f8a753a5cb2378bf",
-            "d3bdb64732d5588f"
-        ],
-        "x": 1354,
-        "y": 999,
-        "w": 1172,
-        "h": 242
-    },
-    {
-        "id": "e2a40e4267294a76",
-        "type": "group",
-        "z": "7184b44879b683fb",
-        "g": "921335a5a84f12eb",
-        "name": "En/Dis Limits",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "efa209028400fb01",
-            "760e4037ee9d494d",
-            "f2f9109347e67516",
-            "2eca8b4ef39c38c0",
-            "cfc923b8ac0c733c",
-            "82e28fa6dcbbcfbf",
-            "123624ec19be400f",
-            "9a3036a59b4bdb85",
-            "9509a237d821f4b7",
-            "9b794b59c413a9de",
-            "6167da81b207f6f4",
-            "54cfd3cc6d728aa9",
-            "e35a8e220cca811e",
-            "cb0d69f6e16f2920"
-        ],
-        "x": 1374,
-        "y": 679,
-        "w": 1072,
-        "h": 142
-    },
-    {
-        "id": "79699e531e50fef0",
-        "type": "group",
-        "z": "7184b44879b683fb",
-        "g": "56dfe620b4d590c4",
-        "name": "Limit configuration & Query",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "03891781850b4d05",
-            "9f52a8fc313cfa5a",
-            "03401232a73afac5",
-            "8e893754ffe9eeba",
-            "810d5b6a31ae4b5b",
-            "78390e08738dbfe9",
-            "7c357068847c4d71",
-            "7db7ba71ea2bf78e",
-            "e5bd6b54c417cc24",
-            "4a73f5e4abbfb203",
-            "692b86a14f3ed282",
-            "ce3315fec46501cf",
-            "a2ac639338e54a8b",
-            "de8aa80a4a7ebb97",
-            "7834e930f5da8ae4",
-            "352a5917e1b34798",
-            "6bbc6bc3314cce12",
-            "44e62a822b61475d",
-            "6f25b5bcb8301aa2",
-            "62cec008d10c32fd",
-            "c39453382a6399da",
-            "a5fc1fba80b72781",
-            "24f2fa1c68cc454e",
-            "04566b411967803f",
-            "e925121153aa7594"
-        ],
-        "x": 1354,
-        "y": 1619,
-        "w": 1512,
-        "h": 262
-    },
-    {
-        "id": "67be9094c6dabcf5",
-        "type": "group",
-        "z": "7184b44879b683fb",
-        "g": "56dfe620b4d590c4",
-        "name": "En/Dis Limits",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "6190a7c1259123f4",
-            "a33f440baa056db8",
-            "7a8615da51a3fb0e",
-            "9dc78f6a185ec070",
-            "bc8c956581f3fc1a",
-            "324a8b35d71e4852",
-            "53b9a472925b873f",
-            "1ba31b12b8d92cb9",
-            "3143e3694bd9ccb0",
-            "4503bebdb026de01",
-            "6e9150bf60e0d44f",
-            "9005602f4a7a2744",
-            "0b583209995aa714",
-            "b0583adf4301b387"
-        ],
-        "x": 1354,
-        "y": 1319,
-        "w": 1092,
-        "h": 142
-    },
-    {
         "id": "8cf474edcfece05e",
         "type": "group",
         "z": "110494c2c16f19b1",
@@ -3468,7 +2422,6 @@
         "nodes": [
             "b8c5ff719f6f9df6",
             "34219e6ac2c9f81e",
-            "f1c8e9099d13eb48",
             "edcfb702b2c29ab7",
             "2d3481df9557f17e",
             "d6aade31257f5f3b",
@@ -3476,16 +2429,15 @@
             "936bc3f185e8694d",
             "e732c6bdc37d195f",
             "f4a0324b47fcb6a5",
-            "a0e9b2d2fc31636a",
-            "4fda723cfede9fbd",
             "54ddfd58e1481e8f",
             "61906e413543f105",
-            "fb22b696c78c3f37"
+            "fb22b696c78c3f37",
+            "ffae477fb9de6b1a"
         ],
         "x": 1334,
-        "y": 19,
+        "y": 79,
         "w": 712,
-        "h": 442
+        "h": 382
     },
     {
         "id": "3a5fc43c729b08bc",
@@ -3504,7 +2456,7 @@
         ],
         "x": 1354,
         "y": 499,
-        "w": 732,
+        "w": 752,
         "h": 162,
         "info": "This group catches the errors in all the nodes of the flow. \nSecuruty function only makes the msg earier and Trim topic is to eliminate /dev/. \nCopy the group to add security in others flows. \nNOTE: Remember to change link out end."
     },
@@ -3710,12 +2662,12 @@
             "b9febd0c0e687858",
             "340d7531502a9417",
             "ed04198285339bf5",
-            "70169298872fad8f",
             "bac7e572ee9ba001",
             "48d828bae6239fc5",
             "d2d97c0bd6bcf106",
             "ecebd9b7a6f8ecbc",
-            "95e59dc45b6997f5"
+            "95e59dc45b6997f5",
+            "8bb2ad73a3fe061b"
         ],
         "x": 434,
         "y": -1,
@@ -4283,6 +3235,1038 @@
         "y": 2719,
         "w": 1412,
         "h": 882
+    },
+    {
+        "id": "eca5bb2e0e780868",
+        "type": "group",
+        "z": "ac988ebf643b965c",
+        "g": "a4c6381da6e0a25c",
+        "name": "Trips insert",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "0d6298c0274aaf27",
+            "d7b9dfdab4346d65",
+            "a49a8996f9c84483",
+            "36d3b29d534ee056"
+        ],
+        "x": 584,
+        "y": 719,
+        "w": 322,
+        "h": 142
+    },
+    {
+        "id": "dc2c0b3efd5a6d7a",
+        "type": "group",
+        "z": "96df9d1b.b1b87",
+        "g": "94cdfbd341957212",
+        "name": "Trips insert",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a37a7bcfa7bf3ae3",
+            "dc39dc86d8e158dd",
+            "50d5e7229a686900",
+            "83ae8a5bc6d0bc8a"
+        ],
+        "x": 374,
+        "y": 419,
+        "w": 282,
+        "h": 142
+    },
+    {
+        "id": "ee925d052c96bf7c",
+        "type": "group",
+        "z": "ac988ebf643b965c",
+        "g": "62882ad4f7217080",
+        "name": "Table union",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "0eee0cfbc82cdbf2",
+            "e9632ada992faf43",
+            "4f7d3234015e1d43",
+            "57f0971a909279ed"
+        ],
+        "x": 1334,
+        "y": 2079,
+        "w": 392,
+        "h": 242
+    },
+    {
+        "id": "e228fc818a13a83f",
+        "type": "group",
+        "z": "7184b44879b683fb",
+        "g": "6deaaca13e43ee11",
+        "name": "% Limit Conf",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "608a30d8e1e3dc4a",
+            "b0d9548a5c32d5ea",
+            "15b2b73ebf78d0f8",
+            "d37b891265604667",
+            "e66eebfcf3c01cc4",
+            "d649fa17f9ac1851",
+            "2d18d68883b55937",
+            "1805db97c6e06d7a",
+            "fc8aca30ec79adb8",
+            "b9b801a7751deb26",
+            "b86e0b330ffbda47",
+            "4b7c7253093a074f"
+        ],
+        "x": 1288,
+        "y": 53,
+        "w": 1244,
+        "h": 594
+    },
+    {
+        "id": "921335a5a84f12eb",
+        "type": "group",
+        "z": "7184b44879b683fb",
+        "g": "6deaaca13e43ee11",
+        "name": "Temperature Limit Conf",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "573bd8e0889f4cd2",
+            "c41759feeb5f8bd5",
+            "e8e5efb00986e568",
+            "253f61975e0289e1",
+            "f50d795a92af105a",
+            "d3b6f1fb16ad0cf6",
+            "1e89a17632320739",
+            "923f973e8bc64d64",
+            "0e23849c0e7dc7eb",
+            "5c0682b024cff3b5",
+            "cab81f61cc45c256",
+            "e2a40e4267294a76"
+        ],
+        "x": 1328,
+        "y": 653,
+        "w": 1224,
+        "h": 614
+    },
+    {
+        "id": "56dfe620b4d590c4",
+        "type": "group",
+        "z": "7184b44879b683fb",
+        "g": "6deaaca13e43ee11",
+        "name": "Pressure Limit Conf",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b857320698a7805f",
+            "d6513edb939b7dac",
+            "7042a8dc434576a7",
+            "eb8a7d1db3e0978f",
+            "f894431fd6b6cef0",
+            "f4a81e96d845684f",
+            "37f49dfd58547722",
+            "eed04636a4ee0947",
+            "25c7a9408b79ce9d",
+            "43cfd8e76bcc79b6",
+            "79699e531e50fef0",
+            "67be9094c6dabcf5"
+        ],
+        "x": 1328,
+        "y": 1293,
+        "w": 1564,
+        "h": 614
+    },
+    {
+        "id": "714c33716ed7518a",
+        "type": "group",
+        "z": "7184b44879b683fb",
+        "g": "1e19279394efd31a",
+        "name": "Secondary Gas",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "17cde4f19f6343d6",
+            "45ec150f5b05c372",
+            "8aaa1a57eef35150",
+            "2ddd722a03122251",
+            "f953bf5c959caf8f",
+            "ab7a255f3d7d592b",
+            "b9ec89fa9da61e04",
+            "b3b0b7a69e86002f",
+            "ae2aa00422cc1a16",
+            "491389c8f29ebf41",
+            "1a3655900da6ebc6",
+            "dc92ad660596fb55",
+            "b1f412551c327a56",
+            "8dad9c727e0c23c7"
+        ],
+        "x": 134,
+        "y": 739,
+        "w": 972,
+        "h": 242
+    },
+    {
+        "id": "7799292376dc5c39",
+        "type": "group",
+        "z": "7184b44879b683fb",
+        "g": "1e19279394efd31a",
+        "name": "Primary Gas",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "450e942023508150",
+            "1092dfc6ba40d336",
+            "34aaed3899ef50ea",
+            "cc44dd27c339434c",
+            "c786a6dec7eead5d",
+            "9c1cccbe81568649",
+            "bce916c6e9e6325d",
+            "aa8db2d654a346a3",
+            "2f14752a7fc2edcd",
+            "8ed1f4abd184eafe",
+            "55821f724e19779e",
+            "5a7e7b7d6a238692",
+            "7568530ae0a29b94",
+            "f61fbfe24261ac4c"
+        ],
+        "x": 114,
+        "y": 479,
+        "w": 912,
+        "h": 242
+    },
+    {
+        "id": "2c40e9d0b9b43aa8",
+        "type": "group",
+        "z": "7184b44879b683fb",
+        "g": "1e19279394efd31a",
+        "name": "Monitoring Communication",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b12f4d821baaa7e2",
+            "9e9f99ef0c2e410b",
+            "ee806845a54491c3"
+        ],
+        "x": 114,
+        "y": 59,
+        "w": 392,
+        "h": 82
+    },
+    {
+        "id": "8759c79b15a4c884",
+        "type": "group",
+        "z": "7184b44879b683fb",
+        "g": "1e19279394efd31a",
+        "name": "Operation Mode",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "024399cf34f61632",
+            "51ba4684b84e84f1",
+            "6344a446ced05bda"
+        ],
+        "x": 694,
+        "y": 59,
+        "w": 392,
+        "h": 82
+    },
+    {
+        "id": "c96a2cde9245f87b",
+        "type": "group",
+        "z": "7184b44879b683fb",
+        "g": "1e19279394efd31a",
+        "name": "Temperature monitoring",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "377b750137293db8",
+            "8e06793e69cec20c",
+            "eee360290c046a3d",
+            "511bce2f37f4c6a9",
+            "e055c58aeac75251",
+            "18c31e06f834116d"
+        ],
+        "x": 114,
+        "y": 379,
+        "w": 912,
+        "h": 82
+    },
+    {
+        "id": "80166f8ddce35046",
+        "type": "group",
+        "z": "7184b44879b683fb",
+        "g": "1e19279394efd31a",
+        "name": "Pressure setup",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "79e092ac612b158e",
+            "69b35cb522888a50",
+            "8def87c258036a7c",
+            "9ce56d52a92d785e",
+            "a90b06242b5979af",
+            "4a6b1c8afa742165",
+            "72354dbaea200540",
+            "a89cb876d2b33bc8",
+            "b06b94aed0a22d95",
+            "e9b4561c79bd059c",
+            "c32f7086d74af988",
+            "351ad96f659db8b6",
+            "cd35e59139236b6f",
+            "fc577af8ca6887b9",
+            "46efdd7b36810b3d",
+            "14d73de4e6f9b365"
+        ],
+        "x": 114,
+        "y": 159,
+        "w": 972,
+        "h": 202,
+        "info": "PSRU 3,0 >> Select the User Pressure Mode (3) & Absolute Units (0)\nPUSR 1.12bar >> Select the User Pressure in bar\nPUSR? bar >> Query the User pressure in bar"
+    },
+    {
+        "id": "391b996bdb7d6683",
+        "type": "group",
+        "z": "e6abd59fcfef321c",
+        "g": "c30986ce38207369",
+        "name": "Filling/Normal Operation Mode",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d7f7989255f2afdd",
+            "62b9db947a562e86",
+            "163794f4902ad2e5",
+            "d6e7d1c94125f824",
+            "543391f0a31feed6",
+            "19fa08406f0b6faf",
+            "d7212b13501c887d",
+            "773f89532f843c32",
+            "b0e14941f4a63a9b",
+            "a356a8b1c6e00e63"
+        ],
+        "x": 1664,
+        "y": 1399,
+        "w": 802,
+        "h": 282
+    },
+    {
+        "id": "9eface1706386705",
+        "type": "group",
+        "z": "44b2d39a758b1b4b",
+        "g": "581f3e732eab82ac",
+        "name": "Pressure Controller SetPoint",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d26152d0d39ac8d8",
+            "d62597cf0a20f75e",
+            "d76d36be7cfa2136",
+            "d60f365399242f0c",
+            "eb9c2e9350ac91ba",
+            "0a9dc41da1c3a687",
+            "445136e8d94474a0",
+            "555a37e4ab64acfb",
+            "d41e60cd5acde7b6",
+            "fbac5fad9db42ae0",
+            "cd96bed145c6a88f",
+            "484cf42951993105"
+        ],
+        "x": 74,
+        "y": 239,
+        "w": 1152,
+        "h": 222
+    },
+    {
+        "id": "bdc84199775ddd65",
+        "type": "group",
+        "z": "44b2d39a758b1b4b",
+        "g": "5ee8327d0a6bfba1",
+        "name": "Input Flow Controller SetPoint",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a10aceee58c74e8d",
+            "fdbbd73621676d83",
+            "cc06584e5418ec5f",
+            "681c248eb6ed3a5a",
+            "6ea1b58e4bc05672",
+            "1ad7d27fb74143a1",
+            "ad94d5719023060a",
+            "9125c7758054ab8b",
+            "63a34e572e49f940",
+            "3e86acf3b73d06f9",
+            "632eb8e47833193b",
+            "afbb61fe619b43e5"
+        ],
+        "x": 1334,
+        "y": 279,
+        "w": 1132,
+        "h": 262
+    },
+    {
+        "id": "3a77962e97d02525",
+        "type": "group",
+        "z": "44b2d39a758b1b4b",
+        "g": "91dcd7fe7bccf487",
+        "name": "Flow Monitor Measurement",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ce89657ff7adf5cd",
+            "d25cc37e410e543e",
+            "65932f18c023b9f4",
+            "b36482f7efb643b7",
+            "cda9199e34142c7e",
+            "a3571dba5b4e5234",
+            "a9fefbbe40bbca3c",
+            "5d6aa42f0f6c300a"
+        ],
+        "x": 3944,
+        "y": 39,
+        "w": 1172,
+        "h": 162
+    },
+    {
+        "id": "086f2900f4b49b1b",
+        "type": "group",
+        "z": "44b2d39a758b1b4b",
+        "g": "5ee8327d0a6bfba1",
+        "name": "In Flow Controller Measurement",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "333d5acece026a20",
+            "255990f6c243b551",
+            "a751117c2cdb2b36",
+            "aeb9bbbc3d35801b",
+            "d026e757a211b62f",
+            "5c07611dd674405a",
+            "5d894c8854ba6289",
+            "836df16536d83455"
+        ],
+        "x": 1334,
+        "y": 19,
+        "w": 1172,
+        "h": 202
+    },
+    {
+        "id": "290e074640fdfb17",
+        "type": "group",
+        "z": "44b2d39a758b1b4b",
+        "g": "581f3e732eab82ac",
+        "name": "Pressure Controller Measurement",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "810293b63be01b61",
+            "7c89d9fcf5706089",
+            "438c245f6ea34abd",
+            "1635465c3a54e685",
+            "71f86433c88c4d3f",
+            "1390d36d13d6b1f6",
+            "5127a606cf33cd3c",
+            "06977ad8c1dd2986"
+        ],
+        "x": 74,
+        "y": 39,
+        "w": 1172,
+        "h": 182
+    },
+    {
+        "id": "e1dd870df50f05a7",
+        "type": "group",
+        "z": "44b2d39a758b1b4b",
+        "g": "581f3e732eab82ac",
+        "name": "Pressure Controller",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "c71a9b3cb5f8d911",
+            "fa3eacb4b63eb040",
+            "50dff5c9da44a0c6",
+            "6f0ebcb2479ea9b4",
+            "532213c65d82b75b",
+            "b1235494071aae63",
+            "9ee67062b4a84269",
+            "5edfee39eecf31da",
+            "589887760ba5a81c",
+            "85de4302d525fd1e",
+            "9e297204668e3baa",
+            "a5d81856659846f4",
+            "aee7ae9910461cea",
+            "78ad1ccc6e648047",
+            "24af6c497c88beef",
+            "dcf36608be7989ab",
+            "dc642599bc12b15b",
+            "010f3be837dc0e44",
+            "7e0abb5eb5311069",
+            "95dc02d5871b8b55"
+        ],
+        "x": 114,
+        "y": 859,
+        "w": 1132,
+        "h": 522
+    },
+    {
+        "id": "aaf32055c816159c",
+        "type": "group",
+        "z": "44b2d39a758b1b4b",
+        "g": "5ee8327d0a6bfba1",
+        "name": "In Flow Controller",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "7aa8c031ca6ff4f1",
+            "2a8c7beb88344436",
+            "0c36bfaf90819197",
+            "2bedbc9b1d4ab782",
+            "73809f6cf1588c5b",
+            "4bad019709e0b3e1",
+            "dc1d39a5dae25ea2",
+            "3b9833732c9daced",
+            "5c52873fc1ac54c6",
+            "c6ddf302a6b0e2c9",
+            "69490672d4ab3c13",
+            "02d96e8c6144aa91",
+            "c3aaeb116b73ead9",
+            "c0b0e3f9d658e6e8",
+            "20436c278304d190",
+            "dac073d68dae4163",
+            "1ad05b44888d4f8f",
+            "e8ab187c23c2805c",
+            "fcd377a22a713b5b"
+        ],
+        "x": 1334,
+        "y": 979,
+        "w": 1172,
+        "h": 522
+    },
+    {
+        "id": "860661d54807a9bc",
+        "type": "group",
+        "z": "44b2d39a758b1b4b",
+        "g": "91dcd7fe7bccf487",
+        "name": "Flow Sensor",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "689cb78a2389b87a",
+            "addc580a7bf3c692",
+            "06ee82ee59371719",
+            "68d5e71a05aeead7",
+            "1d07414e7c26133f",
+            "f5a67933ef99a748",
+            "d280ae099b2e28e7",
+            "06f672fb2b4d3bf8",
+            "e2c10b0aedae3e27",
+            "a5c812cdb664bd5f",
+            "8d8404e20741763a",
+            "d315867ddd0719a1",
+            "502b5bd32be6db20",
+            "aa3af8b9a6dd1788",
+            "879f3486953b5a0d",
+            "b5d975ced8b55d29",
+            "64fffa1a1187b83f",
+            "3821742063be71c3",
+            "bf46d8b98bddd79f",
+            "6d9ece09ba8ad5e5",
+            "95376c9d75167b6c"
+        ],
+        "x": 3974,
+        "y": 559,
+        "w": 1092,
+        "h": 522
+    },
+    {
+        "id": "5f7211b645fa37fa",
+        "type": "group",
+        "z": "44b2d39a758b1b4b",
+        "g": "581f3e732eab82ac",
+        "name": "Connection",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "2eab51e8c03509ba",
+            "31b5cc40ea712177",
+            "44dc732c50ba505d",
+            "dc7be06518d7e04c",
+            "89ec91a720d83628",
+            "be5fef40a04046f8",
+            "1c5545378f2ba00a",
+            "d0c84291a4b6f4bc",
+            "5ff3a95f6504df79",
+            "240b7e876e7e378d"
+        ],
+        "x": 94,
+        "y": 499,
+        "w": 832,
+        "h": 302
+    },
+    {
+        "id": "4b0a6b86bc2c5ad7",
+        "type": "group",
+        "z": "44b2d39a758b1b4b",
+        "g": "b743918e1c8c2488",
+        "name": "",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4e4dc73f5345df8d",
+            "91da1aeaa51042e2",
+            "2c55b701affbbc32"
+        ],
+        "x": 2634,
+        "y": 1459,
+        "w": 712,
+        "h": 82
+    },
+    {
+        "id": "a68ec89d25e062f4",
+        "type": "group",
+        "z": "44b2d39a758b1b4b",
+        "g": "b743918e1c8c2488",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b7fa718771f68fb3",
+            "9b9afc3d7197c6a0",
+            "08ebbd91655e7a20",
+            "6d085c902fcef551",
+            "8937b014dbbd19c2",
+            "863b73ab012b82e1",
+            "1560b6f22b11cd16",
+            "23ec39b0eef0c9e7",
+            "f886233cd0071092",
+            "8109ac16a5d0586b",
+            "f6ce32030d604ea7",
+            "1f63bd9960173feb",
+            "fa6a183a71a6b857",
+            "06fe2b6a4af3561f",
+            "f2039759b7187951",
+            "e6aae26c25e2c766",
+            "b2366ab66039ef49",
+            "6108e5f37696d9a1",
+            "1b5c1c49d96f9639",
+            "218acf9a7adf9548",
+            "59d643a4f211bc81",
+            "567fee456478c56b",
+            "47f8e6a6439b594a",
+            "b62a3aa2ca2ac677"
+        ],
+        "x": 2634,
+        "y": 1579,
+        "w": 772,
+        "h": 602
+    },
+    {
+        "id": "56b05b496dc78a04",
+        "type": "group",
+        "z": "44b2d39a758b1b4b",
+        "g": "b743918e1c8c2488",
+        "name": "F1 Control Status",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1308739f36400c7d",
+            "29ba4c8212d52b3b",
+            "fd743603efce9c02",
+            "bd2c9babf702d888",
+            "b9763dca4d7210cf",
+            "aa3f81f4a548cc1b"
+        ],
+        "x": 2614,
+        "y": 1259,
+        "w": 932,
+        "h": 182
+    },
+    {
+        "id": "1c129dfeb05bcbe2",
+        "type": "group",
+        "z": "44b2d39a758b1b4b",
+        "g": "b743918e1c8c2488",
+        "name": "F1 Control mode",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ca0437abe80c8d27",
+            "dccb3013e9c10cca",
+            "6f4c315585e74c5f",
+            "61fb97e0d45b33a9",
+            "2d01b595803d0f23",
+            "902964c7c08c9ad0",
+            "1cc78cf5d72212c6",
+            "2c4c4f92a3a27807",
+            "67d583b6809f7210",
+            "d0ff6171b4b58231"
+        ],
+        "x": 2614,
+        "y": 874,
+        "w": 932,
+        "h": 367
+    },
+    {
+        "id": "81cf755189fae457",
+        "type": "group",
+        "z": "44b2d39a758b1b4b",
+        "g": "b743918e1c8c2488",
+        "name": "F1 Read Values",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "758a4b942beba627",
+            "1887cc2e8da47247",
+            "846d0c70cc4b9a07",
+            "1ce178dae85e25c3",
+            "e7e2ce115a2cc018",
+            "2e7a3d8a127051b9",
+            "3545840a7a37bf4f",
+            "32d5a2a4948e2073"
+        ],
+        "x": 2604,
+        "y": 39,
+        "w": 1262,
+        "h": 202
+    },
+    {
+        "id": "ce609db0e079068e",
+        "type": "group",
+        "z": "44b2d39a758b1b4b",
+        "g": "b743918e1c8c2488",
+        "name": "F1 SetPoint",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "39dba2acc02cabd3",
+            "311cc17b7dc9a3fb",
+            "3e841694803e95a1",
+            "1fd2a5f49d69d150",
+            "2b8fce83018c83ce",
+            "4e893f1f3e09f170",
+            "57f6c09140c44704",
+            "a94f4ad9760cef8c",
+            "0d7f6eb321cc3b01",
+            "5f6706caa507622b",
+            "cc8c672459eb3a0f"
+        ],
+        "x": 2594,
+        "y": 299,
+        "w": 1212,
+        "h": 262
+    },
+    {
+        "id": "16aa078f89cc21ce",
+        "type": "group",
+        "z": "44b2d39a758b1b4b",
+        "g": "b743918e1c8c2488",
+        "name": "Connection",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "de714abbabd0a61d",
+            "b3a028116991883f",
+            "874e0e33c908a6a1",
+            "daf55f6e2598028b",
+            "ab872453b5f06188",
+            "6e0dd9e7e444d247",
+            "10efec99464970d1",
+            "6297f10a9a362c45",
+            "116eaa19bdb221a3",
+            "db652d86d501575f"
+        ],
+        "x": 2614,
+        "y": 579,
+        "w": 832,
+        "h": 242
+    },
+    {
+        "id": "836e37c90e753dfa",
+        "type": "group",
+        "z": "44b2d39a758b1b4b",
+        "g": "5ee8327d0a6bfba1",
+        "name": "Connection",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b64b73a9a5612320",
+            "a025428cc635e39e",
+            "ca9a86cafb8347d0",
+            "9cead63f9df1b55f",
+            "af71604ad30d7142",
+            "baf222ad092f9c99",
+            "85a66aec2db84447",
+            "03b052e01e4ff57f",
+            "65d8d76dc759635f",
+            "612ca8007cf89bc3"
+        ],
+        "x": 1354,
+        "y": 619,
+        "w": 852,
+        "h": 302
+    },
+    {
+        "id": "480831d95427e802",
+        "type": "group",
+        "z": "44b2d39a758b1b4b",
+        "g": "91dcd7fe7bccf487",
+        "name": "Connection",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "c03c332e3f6291b5",
+            "4fcc9febd4a861e2",
+            "ef73ef3fdaca3874",
+            "97f84c74600e05f1",
+            "4042bf8fafc2b81e",
+            "5f8429a722df8e12",
+            "5a225538b799652d",
+            "4bdac17ae47459c3",
+            "aad97fede2934f47",
+            "3635dfad51e81fe0"
+        ],
+        "x": 3954,
+        "y": 219,
+        "w": 872,
+        "h": 302
+    },
+    {
+        "id": "b86e0b330ffbda47",
+        "type": "group",
+        "z": "7184b44879b683fb",
+        "g": "e228fc818a13a83f",
+        "name": "Limit configuration & Query",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "5ad05e5434a36e2d",
+            "6e78813d0e935866",
+            "bdad8b307fde264c",
+            "b1814b9ca7f59934",
+            "08fa590f7f6bcfb6",
+            "f3fc861f7c902957",
+            "01dd02a1e8566c33",
+            "afc29e2a35470552",
+            "2e08fb1989aa5eed",
+            "364735f04edf4765",
+            "8b5eb8ba66d8f085",
+            "03d607b02dccd84f",
+            "d4bc23b0d19203b6",
+            "5f9544a0e5342937",
+            "27bb7f9c94078bf5",
+            "316a4ad44fda0660",
+            "3c395ee147ffe1f7",
+            "4f02227a29d7e24a",
+            "7d083d593d300212",
+            "ec79178c7e1dd0fb",
+            "ba6b247d1a4fde36",
+            "887024a79833a324"
+        ],
+        "x": 1314,
+        "y": 379,
+        "w": 1192,
+        "h": 242
+    },
+    {
+        "id": "4b7c7253093a074f",
+        "type": "group",
+        "z": "7184b44879b683fb",
+        "g": "e228fc818a13a83f",
+        "name": "En/Dis Limits",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "56e3623f0e2f1864",
+            "7ebd26b9732bc2f4",
+            "f7ccc21f617da64e",
+            "2978e99821c3f7a4",
+            "4a5446fcbe06e148",
+            "7c30dd7520fc8e36",
+            "4299fabca352c58e",
+            "56468e1734bd3d50",
+            "931bf66fdf5ebc4f",
+            "3854c0eb5711d980",
+            "e501791be98bca33",
+            "3f39c7239b5b7355",
+            "1e9ebc945b3e6dad",
+            "38aacd09e2582a71"
+        ],
+        "x": 1314,
+        "y": 79,
+        "w": 1072,
+        "h": 142
+    },
+    {
+        "id": "cab81f61cc45c256",
+        "type": "group",
+        "z": "7184b44879b683fb",
+        "g": "921335a5a84f12eb",
+        "name": "Limit configuration & Query",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e80ae15a0542fbc8",
+            "4e07affecff1a22d",
+            "348e0d0ce7c0486f",
+            "e59c3c00c7aae566",
+            "477331ed23a2938f",
+            "d86c3eee58a863a7",
+            "645151634ef55a86",
+            "94c3852279db1c7c",
+            "2aa453c025fdfe38",
+            "e378ed778eb71c41",
+            "415c2e84f9ba4aa1",
+            "dae4eeaef7bc7ca0",
+            "602c8039bbec3241",
+            "890d875007ced2e3",
+            "40fb4731f9a58fc8",
+            "90872a5b214e6913",
+            "03fb576c3f9634b5",
+            "a86b243262642d54",
+            "799e8019c475c43b",
+            "f8a753a5cb2378bf",
+            "d3bdb64732d5588f"
+        ],
+        "x": 1354,
+        "y": 999,
+        "w": 1172,
+        "h": 242
+    },
+    {
+        "id": "e2a40e4267294a76",
+        "type": "group",
+        "z": "7184b44879b683fb",
+        "g": "921335a5a84f12eb",
+        "name": "En/Dis Limits",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "efa209028400fb01",
+            "760e4037ee9d494d",
+            "f2f9109347e67516",
+            "2eca8b4ef39c38c0",
+            "cfc923b8ac0c733c",
+            "82e28fa6dcbbcfbf",
+            "123624ec19be400f",
+            "9a3036a59b4bdb85",
+            "9509a237d821f4b7",
+            "9b794b59c413a9de",
+            "6167da81b207f6f4",
+            "54cfd3cc6d728aa9",
+            "e35a8e220cca811e",
+            "cb0d69f6e16f2920"
+        ],
+        "x": 1374,
+        "y": 679,
+        "w": 1072,
+        "h": 142
+    },
+    {
+        "id": "79699e531e50fef0",
+        "type": "group",
+        "z": "7184b44879b683fb",
+        "g": "56dfe620b4d590c4",
+        "name": "Limit configuration & Query",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "03891781850b4d05",
+            "9f52a8fc313cfa5a",
+            "03401232a73afac5",
+            "8e893754ffe9eeba",
+            "810d5b6a31ae4b5b",
+            "78390e08738dbfe9",
+            "7c357068847c4d71",
+            "7db7ba71ea2bf78e",
+            "e5bd6b54c417cc24",
+            "4a73f5e4abbfb203",
+            "692b86a14f3ed282",
+            "ce3315fec46501cf",
+            "a2ac639338e54a8b",
+            "de8aa80a4a7ebb97",
+            "7834e930f5da8ae4",
+            "352a5917e1b34798",
+            "6bbc6bc3314cce12",
+            "44e62a822b61475d",
+            "6f25b5bcb8301aa2",
+            "62cec008d10c32fd",
+            "c39453382a6399da",
+            "a5fc1fba80b72781",
+            "24f2fa1c68cc454e",
+            "04566b411967803f",
+            "e925121153aa7594"
+        ],
+        "x": 1354,
+        "y": 1619,
+        "w": 1512,
+        "h": 262
+    },
+    {
+        "id": "67be9094c6dabcf5",
+        "type": "group",
+        "z": "7184b44879b683fb",
+        "g": "56dfe620b4d590c4",
+        "name": "En/Dis Limits",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "6190a7c1259123f4",
+            "a33f440baa056db8",
+            "7a8615da51a3fb0e",
+            "9dc78f6a185ec070",
+            "bc8c956581f3fc1a",
+            "324a8b35d71e4852",
+            "53b9a472925b873f",
+            "1ba31b12b8d92cb9",
+            "3143e3694bd9ccb0",
+            "4503bebdb026de01",
+            "6e9150bf60e0d44f",
+            "9005602f4a7a2744",
+            "0b583209995aa714",
+            "b0583adf4301b387"
+        ],
+        "x": 1354,
+        "y": 1319,
+        "w": 1092,
+        "h": 142
     },
     {
         "id": "67018f7a.7112a8",
@@ -6830,8 +6814,8 @@
         "type": "debug",
         "z": "44b2d39a758b1b4b",
         "g": "2dd13e5f10779e03",
-        "name": "debug 373",
-        "active": false,
+        "name": "BronkhorstCatdh",
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -6839,7 +6823,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 4590,
+        "x": 4510,
         "y": 1280,
         "wires": []
     },
@@ -7235,8 +7219,7 @@
         "wires": [
             [
                 "6ea1b58e4bc05672",
-                "3e86acf3b73d06f9",
-                "5460d58c1446ca38"
+                "3e86acf3b73d06f9"
             ]
         ]
     },
@@ -7270,8 +7253,7 @@
         "y": 320,
         "wires": [
             [
-                "681c248eb6ed3a5a",
-                "e2aca5d01837eee9"
+                "681c248eb6ed3a5a"
             ]
         ]
     },
@@ -7288,40 +7270,6 @@
         ],
         "x": 2275,
         "y": 440,
-        "wires": []
-    },
-    {
-        "id": "5460d58c1446ca38",
-        "type": "debug",
-        "z": "44b2d39a758b1b4b",
-        "g": "bdc84199775ddd65",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2350,
-        "y": 560,
-        "wires": []
-    },
-    {
-        "id": "e2aca5d01837eee9",
-        "type": "debug",
-        "z": "44b2d39a758b1b4b",
-        "g": "bdc84199775ddd65",
-        "name": "debug 418",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2350,
-        "y": 380,
         "wires": []
     },
     {
@@ -8909,7 +8857,8 @@
         "y": 620,
         "wires": [
             [
-                "89ec91a720d83628"
+                "89ec91a720d83628",
+                "240b7e876e7e378d"
             ]
         ]
     },
@@ -10057,8 +10006,7 @@
         "wires": [
             [
                 "758a4b942beba627",
-                "1ce178dae85e25c3",
-                "20087d6695517ec6"
+                "1ce178dae85e25c3"
             ]
         ]
     },
@@ -10122,23 +10070,6 @@
                 "846d0c70cc4b9a07"
             ]
         ]
-    },
-    {
-        "id": "20087d6695517ec6",
-        "type": "debug",
-        "z": "44b2d39a758b1b4b",
-        "g": "81cf755189fae457",
-        "name": "debug 334",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 3570,
-        "y": 240,
-        "wires": []
     },
     {
         "id": "2e7a3d8a127051b9",
@@ -10342,7 +10273,8 @@
         "y": 700,
         "wires": [
             [
-                "ab872453b5f06188"
+                "ab872453b5f06188",
+                "db652d86d501575f"
             ]
         ]
     },
@@ -10530,7 +10462,8 @@
         "y": 740,
         "wires": [
             [
-                "af71604ad30d7142"
+                "af71604ad30d7142",
+                "612ca8007cf89bc3"
             ]
         ]
     },
@@ -10770,7 +10703,8 @@
         "y": 340,
         "wires": [
             [
-                "4042bf8fafc2b81e"
+                "4042bf8fafc2b81e",
+                "3635dfad51e81fe0"
             ]
         ]
     },
@@ -11140,7 +11074,6 @@
         "y": 460,
         "wires": [
             [
-                "316b152720ca20fd",
                 "5f6706caa507622b",
                 "cc8c672459eb3a0f"
             ]
@@ -11175,23 +11108,6 @@
                 "57f6c09140c44704"
             ]
         ]
-    },
-    {
-        "id": "316b152720ca20fd",
-        "type": "debug",
-        "z": "44b2d39a758b1b4b",
-        "g": "ce609db0e079068e",
-        "name": "debug 333",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 3650,
-        "y": 400,
-        "wires": []
     },
     {
         "id": "5f6706caa507622b",
@@ -11230,6 +11146,182 @@
         "wires": []
     },
     {
+        "id": "5ff3a95f6504df79",
+        "type": "debug",
+        "z": "44b2d39a758b1b4b",
+        "g": "5f7211b645fa37fa",
+        "name": "BRKPR_Con",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "\"BRKPR Not Connected\"",
+        "targetType": "jsonata",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "240b7e876e7e378d",
+        "type": "switch",
+        "z": "44b2d39a758b1b4b",
+        "g": "5f7211b645fa37fa",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "green",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 650,
+        "y": 680,
+        "wires": [
+            [
+                "5ff3a95f6504df79"
+            ]
+        ]
+    },
+    {
+        "id": "65d8d76dc759635f",
+        "type": "debug",
+        "z": "44b2d39a758b1b4b",
+        "g": "836e37c90e753dfa",
+        "name": "BRKFL_Con",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "\"BRKFL Not Connected\"",
+        "targetType": "jsonata",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2090,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "612ca8007cf89bc3",
+        "type": "switch",
+        "z": "44b2d39a758b1b4b",
+        "g": "836e37c90e753dfa",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "green",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1930,
+        "y": 800,
+        "wires": [
+            [
+                "65d8d76dc759635f"
+            ]
+        ]
+    },
+    {
+        "id": "116eaa19bdb221a3",
+        "type": "debug",
+        "z": "44b2d39a758b1b4b",
+        "g": "16aa078f89cc21ce",
+        "name": "BRKM1_Con",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "\"BRKM1 Not Connected\"",
+        "targetType": "jsonata",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3330,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "db652d86d501575f",
+        "type": "switch",
+        "z": "44b2d39a758b1b4b",
+        "g": "16aa078f89cc21ce",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "green",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 3170,
+        "y": 760,
+        "wires": [
+            [
+                "116eaa19bdb221a3"
+            ]
+        ]
+    },
+    {
+        "id": "aad97fede2934f47",
+        "type": "debug",
+        "z": "44b2d39a758b1b4b",
+        "g": "480831d95427e802",
+        "name": "BRKM0_Con",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "\"BRKM0 Not Connected\"",
+        "targetType": "jsonata",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 4710,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "3635dfad51e81fe0",
+        "type": "switch",
+        "z": "44b2d39a758b1b4b",
+        "g": "480831d95427e802",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "green",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 4550,
+        "y": 400,
+        "wires": [
+            [
+                "aad97fede2934f47"
+            ]
+        ]
+    },
+    {
         "id": "af0a0ab4.ce281",
         "type": "mqtt in",
         "z": "243cac42.fdcd3c",
@@ -11262,8 +11354,7 @@
                 "64a17b35.d5d4fc",
                 "514adcf0.5a7b44",
                 "b5a3566.22552a8",
-                "6cfb2109.a17618",
-                "1b6e833372729630"
+                "6cfb2109.a17618"
             ]
         ]
     },
@@ -11529,8 +11620,7 @@
         "wires": [
             [
                 "7d99b149.68376",
-                "a4ba2fa34e743d23",
-                "357c68b5d1bccb29"
+                "a4ba2fa34e743d23"
             ]
         ]
     },
@@ -11665,8 +11755,7 @@
         "y": 840,
         "wires": [
             [
-                "d9c4f810.96fa38",
-                "6fe25145265dfc24"
+                "d9c4f810.96fa38"
             ]
         ]
     },
@@ -11712,29 +11801,10 @@
         "wires": [
             [
                 "334ecdb4.62f12a",
-                "ba5d6637.bdf148",
                 "cd835689.247ef8",
                 "44e52f75.eb6fa"
             ]
         ]
-    },
-    {
-        "id": "ba5d6637.bdf148",
-        "type": "debug",
-        "z": "243cac42.fdcd3c",
-        "g": "f8f1a23133f6b206",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 250,
-        "y": 660,
-        "wires": []
     },
     {
         "id": "cd835689.247ef8",
@@ -11820,8 +11890,7 @@
         "wires": [
             [
                 "64bdb0f0984a9e99",
-                "423c8255f686304e",
-                "7629c9df42299b52"
+                "423c8255f686304e"
             ]
         ]
     },
@@ -11957,23 +12026,6 @@
         "wires": []
     },
     {
-        "id": "7629c9df42299b52",
-        "type": "debug",
-        "z": "243cac42.fdcd3c",
-        "g": "5259452bc4a51d7b",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 400,
-        "y": 1000,
-        "wires": []
-    },
-    {
         "id": "6d5d958dc430b6df",
         "type": "link out",
         "z": "243cac42.fdcd3c",
@@ -12026,57 +12078,6 @@
                 "dd3861e09e013307"
             ]
         ]
-    },
-    {
-        "id": "1b6e833372729630",
-        "type": "debug",
-        "z": "243cac42.fdcd3c",
-        "g": "f8f1a23133f6b206",
-        "name": "debug 327",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 380,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "357c68b5d1bccb29",
-        "type": "debug",
-        "z": "243cac42.fdcd3c",
-        "g": "f8f1a23133f6b206",
-        "name": "debug 335",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 750,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "6fe25145265dfc24",
-        "type": "debug",
-        "z": "243cac42.fdcd3c",
-        "g": "5259452bc4a51d7b",
-        "name": "debug 405",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 730,
-        "y": 800,
-        "wires": []
     },
     {
         "id": "f9af0ddc7af0b7e9",
@@ -12610,28 +12611,9 @@
         "wires": [
             [
                 "1e1531a6.91977e",
-                "cb222ad4.cb6a48",
                 "7a56d235.e4fdac"
             ]
         ]
-    },
-    {
-        "id": "cb222ad4.cb6a48",
-        "type": "debug",
-        "z": "30f3df01.06ea",
-        "g": "bb88525de6a299e8",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 270,
-        "y": 1380,
-        "wires": []
     },
     {
         "id": "7a56d235.e4fdac",
@@ -12651,24 +12633,6 @@
         "wires": []
     },
     {
-        "id": "f41da742.2725c",
-        "type": "debug",
-        "z": "30f3df01.06ea",
-        "g": "bb88525de6a299e8",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 510,
-        "y": 1520,
-        "wires": []
-    },
-    {
         "id": "8b170ec6.f86028",
         "type": "mqtt out",
         "z": "30f3df01.06ea",
@@ -12684,7 +12648,7 @@
         "expiry": "",
         "broker": "a6317c0c.32b1c",
         "x": 530,
-        "y": 1580,
+        "y": 1500,
         "wires": []
     },
     {
@@ -12784,8 +12748,7 @@
         "y": 1520,
         "wires": [
             [
-                "8b170ec6.f86028",
-                "f41da742.2725c"
+                "8b170ec6.f86028"
             ]
         ]
     },
@@ -12833,28 +12796,9 @@
         "y": 1840,
         "wires": [
             [
-                "85f76ee6.f84a88",
-                "da9f10cd.adef98"
+                "85f76ee6.f84a88"
             ]
         ]
-    },
-    {
-        "id": "da9f10cd.adef98",
-        "type": "debug",
-        "z": "30f3df01.06ea",
-        "g": "bb88525de6a299e8",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 850,
-        "y": 1920,
-        "wires": []
     },
     {
         "id": "1efe938a.c009f4",
@@ -13057,8 +13001,7 @@
                 "1abda5c7.acf26a",
                 "5fffcaa3.00f38c",
                 "b108c.316a3775",
-                "e59f7569.d18428",
-                "95acda9c.6be1a8"
+                "e59f7569.d18428"
             ]
         ]
     },
@@ -13129,28 +13072,9 @@
         "y": 1520,
         "wires": [
             [
-                "27b4e189.448fee",
-                "4194d916.930608"
+                "27b4e189.448fee"
             ]
         ]
-    },
-    {
-        "id": "4194d916.930608",
-        "type": "debug",
-        "z": "30f3df01.06ea",
-        "g": "bb88525de6a299e8",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1050,
-        "y": 1500,
-        "wires": []
     },
     {
         "id": "6e8cb37a.3b74ec",
@@ -13202,28 +13126,9 @@
         "y": 1620,
         "wires": [
             [
-                "6e8cb37a.3b74ec",
-                "fe4f710a.828cc8"
+                "6e8cb37a.3b74ec"
             ]
         ]
-    },
-    {
-        "id": "fe4f710a.828cc8",
-        "type": "debug",
-        "z": "30f3df01.06ea",
-        "g": "bb88525de6a299e8",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1030,
-        "y": 1620,
-        "wires": []
     },
     {
         "id": "e41406fd.d374b",
@@ -13275,28 +13180,9 @@
         "y": 1720,
         "wires": [
             [
-                "e41406fd.d374b",
-                "b5378e1.347757"
+                "e41406fd.d374b"
             ]
         ]
-    },
-    {
-        "id": "b5378e1.347757",
-        "type": "debug",
-        "z": "30f3df01.06ea",
-        "g": "bb88525de6a299e8",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1030,
-        "y": 1720,
-        "wires": []
     },
     {
         "id": "caf0714c.6cf78",
@@ -13333,8 +13219,7 @@
         "y": 2040,
         "wires": [
             [
-                "caf0714c.6cf78",
-                "83bfcaeb.e279a"
+                "caf0714c.6cf78"
             ]
         ]
     },
@@ -13362,24 +13247,6 @@
                 "67da4615.03e49"
             ]
         ]
-    },
-    {
-        "id": "83bfcaeb.e279a",
-        "type": "debug",
-        "z": "30f3df01.06ea",
-        "g": "4760f1450ad583b4",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1230,
-        "y": 2100,
-        "wires": []
     },
     {
         "id": "67da4615.03e49",
@@ -13466,24 +13333,6 @@
         "layout": "row-spread",
         "x": 370,
         "y": 2220,
-        "wires": []
-    },
-    {
-        "id": "95acda9c.6be1a8",
-        "type": "debug",
-        "z": "30f3df01.06ea",
-        "g": "bb88525de6a299e8",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 970,
-        "y": 1260,
         "wires": []
     },
     {
@@ -13580,24 +13429,6 @@
         ]
     },
     {
-        "id": "cec9e367.1dcd8",
-        "type": "debug",
-        "z": "30f3df01.06ea",
-        "g": "bb88525de6a299e8",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1550,
-        "y": 1720,
-        "wires": []
-    },
-    {
         "id": "9fe17491.e32518",
         "type": "ui_switch",
         "z": "30f3df01.06ea",
@@ -13628,8 +13459,7 @@
         "y": 1720,
         "wires": [
             [
-                "5d96c753.ddd018",
-                "cec9e367.1dcd8"
+                "5d96c753.ddd018"
             ]
         ]
     },
@@ -14142,24 +13972,6 @@
         "wires": []
     },
     {
-        "id": "a1eef42bb8f72f9f",
-        "type": "debug",
-        "z": "2929f7b53fc923ef",
-        "g": "63bdbad96c6c866f",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 660,
-        "y": 180,
-        "wires": []
-    },
-    {
         "id": "be92780f5508341c",
         "type": "ui_text",
         "z": "2929f7b53fc923ef",
@@ -14241,8 +14053,8 @@
         "type": "debug",
         "z": "2929f7b53fc923ef",
         "g": "28fcea42a9100cae",
-        "name": "debug 377",
-        "active": false,
+        "name": "THY_Catch",
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -14495,8 +14307,7 @@
         "y": 120,
         "wires": [
             [
-                "64ec612ddd21e4cd",
-                "a1eef42bb8f72f9f"
+                "64ec612ddd21e4cd"
             ]
         ],
         "l": false
@@ -14627,7 +14438,8 @@
                 "231009a2bfeece0b"
             ],
             [
-                "b2eef4dc4310dfc0"
+                "b2eef4dc4310dfc0",
+                "f0936ecf0bda6c11"
             ]
         ]
     },
@@ -14645,6 +14457,24 @@
             ]
         ],
         "l": false
+    },
+    {
+        "id": "f0936ecf0bda6c11",
+        "type": "debug",
+        "z": "2929f7b53fc923ef",
+        "g": "26404baffafe6277",
+        "name": "THYU0_Con",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "\"THYU0 Not Connected\"",
+        "targetType": "jsonata",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 560,
+        "wires": []
     },
     {
         "id": "024399cf34f61632",
@@ -14718,23 +14548,6 @@
         ]
     },
     {
-        "id": "6712e165a74867c7",
-        "type": "debug",
-        "z": "7184b44879b683fb",
-        "g": "2c40e9d0b9b43aa8",
-        "name": "debug 240",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 570,
-        "y": 100,
-        "wires": []
-    },
-    {
         "id": "450e942023508150",
         "type": "serial request",
         "z": "7184b44879b683fb",
@@ -14790,8 +14603,7 @@
         "y": 940,
         "wires": [
             [
-                "dc92ad660596fb55",
-                "2829668e422f23c5"
+                "dc92ad660596fb55"
             ]
         ]
     },
@@ -16683,7 +16495,6 @@
         "y": 580,
         "wires": [
             [
-                "b20a25c4ad9d9301",
                 "f61fbfe24261ac4c"
             ]
         ]
@@ -19466,40 +19277,6 @@
         "wires": []
     },
     {
-        "id": "b20a25c4ad9d9301",
-        "type": "debug",
-        "z": "7184b44879b683fb",
-        "g": "7799292376dc5c39",
-        "name": "debug 312",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 580,
-        "y": 520,
-        "wires": []
-    },
-    {
-        "id": "2829668e422f23c5",
-        "type": "debug",
-        "z": "7184b44879b683fb",
-        "g": "714c33716ed7518a",
-        "name": "debug 318",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 790,
-        "y": 980,
-        "wires": []
-    },
-    {
         "id": "be5dc491af60facd",
         "type": "link out",
         "z": "7184b44879b683fb",
@@ -19567,40 +19344,6 @@
         ],
         "x": 875,
         "y": 640,
-        "wires": []
-    },
-    {
-        "id": "98b6c5add3b70555",
-        "type": "debug",
-        "z": "7184b44879b683fb",
-        "g": "cc5ee890949d6fc9",
-        "name": "debug 322",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 920,
-        "y": 1420,
-        "wires": []
-    },
-    {
-        "id": "248cede428df3328",
-        "type": "debug",
-        "z": "7184b44879b683fb",
-        "g": "cc5ee890949d6fc9",
-        "name": "debug 323",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1020,
-        "y": 1340,
         "wires": []
     },
     {
@@ -19855,9 +19598,7 @@
         "x": 420,
         "y": 100,
         "wires": [
-            [
-                "6712e165a74867c7"
-            ]
+            []
         ]
     },
     {
@@ -19987,13 +19728,11 @@
             [
                 "4c675d6f9b2e16e3",
                 "919da3ed8ce25cdc",
-                "c60e9f56bfae40c0",
-                "248cede428df3328"
+                "c60e9f56bfae40c0"
             ],
             [
                 "9b19cd514095b798",
-                "be5dc491af60facd",
-                "98b6c5add3b70555"
+                "be5dc491af60facd"
             ],
             [
                 "df8a936abce29978"
@@ -20187,7 +19926,8 @@
                 "93874c7c25901970"
             ],
             [
-                "283f5b9777c2ec08"
+                "283f5b9777c2ec08",
+                "7dbfda4e7ac5359f"
             ]
         ]
     },
@@ -20387,16 +20127,33 @@
         "l": false
     },
     {
+        "id": "7dbfda4e7ac5359f",
+        "type": "debug",
+        "z": "7184b44879b683fb",
+        "g": "c6db76d90f894678",
+        "name": "BGA_Con",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "\"BGA Not Connected\"",
+        "targetType": "jsonata",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 2020,
+        "wires": []
+    },
+    {
         "id": "11e35da2d06d0211",
         "type": "serial in",
         "z": "597a964f0bbfa0ad",
         "name": "",
         "serial": "5483c9b1449f3939",
-        "x": 140,
+        "x": 160,
         "y": 700,
         "wires": [
             [
-                "d7a66c835ffea381",
                 "2eb80525fe5b6a17"
             ]
         ]
@@ -20607,8 +20364,7 @@
         "y": 680,
         "wires": [
             [
-                "83346c0395b23936",
-                "c9400e6580eef599"
+                "83346c0395b23936"
             ]
         ]
     },
@@ -20624,8 +20380,7 @@
         "y": 500,
         "wires": [
             [
-                "fdc032e75fbe6175",
-                "78b383858b592af3"
+                "fdc032e75fbe6175"
             ]
         ]
     },
@@ -20906,23 +20661,6 @@
         "wires": []
     },
     {
-        "id": "d7a66c835ffea381",
-        "type": "debug",
-        "z": "597a964f0bbfa0ad",
-        "name": "debug 326",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 450,
-        "y": 820,
-        "wires": []
-    },
-    {
         "id": "ea284e77cee165e8",
         "type": "link out",
         "z": "597a964f0bbfa0ad",
@@ -20975,26 +20713,9 @@
         "y": 751.6666870117188,
         "wires": [
             [
-                "22294f30bb2cd02e",
                 "c699dc8ebebfd3a0"
             ]
         ]
-    },
-    {
-        "id": "22294f30bb2cd02e",
-        "type": "debug",
-        "z": "597a964f0bbfa0ad",
-        "name": "debug 403",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 790,
-        "y": 840,
-        "wires": []
     },
     {
         "id": "f10d7b75d37fc481",
@@ -21085,22 +20806,6 @@
         "wires": []
     },
     {
-        "id": "c9400e6580eef599",
-        "type": "debug",
-        "z": "597a964f0bbfa0ad",
-        "name": "debug 409",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 740,
-        "y": 720,
-        "wires": []
-    },
-    {
         "id": "e495ccc9d3c3bbf1",
         "type": "ui_text",
         "z": "597a964f0bbfa0ad",
@@ -21119,22 +20824,6 @@
         "color": "#000000",
         "x": 1210,
         "y": 960,
-        "wires": []
-    },
-    {
-        "id": "78b383858b592af3",
-        "type": "debug",
-        "z": "597a964f0bbfa0ad",
-        "name": "debug 410",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 700,
-        "y": 380,
         "wires": []
     },
     {
@@ -21843,24 +21532,6 @@
         "wires": []
     },
     {
-        "id": "f1c8e9099d13eb48",
-        "type": "debug",
-        "z": "110494c2c16f19b1",
-        "g": "8cf474edcfece05e",
-        "name": "debug 25",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1680,
-        "y": 260,
-        "wires": []
-    },
-    {
         "id": "edcfb702b2c29ab7",
         "type": "serial in",
         "z": "110494c2c16f19b1",
@@ -21871,7 +21542,6 @@
         "y": 260,
         "wires": [
             [
-                "f1c8e9099d13eb48",
                 "d6aade31257f5f3b"
             ]
         ]
@@ -21891,7 +21561,6 @@
             [
                 "b8c5ff719f6f9df6",
                 "f4a0324b47fcb6a5",
-                "4fda723cfede9fbd",
                 "54ddfd58e1481e8f"
             ]
         ]
@@ -21952,7 +21621,7 @@
         "type": "debug",
         "z": "110494c2c16f19b1",
         "g": "3a5fc43c729b08bc",
-        "name": "debug 370",
+        "name": "CATCH_RIGOL",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -21961,7 +21630,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1970,
+        "x": 1980,
         "y": 620,
         "wires": []
     },
@@ -22014,7 +21683,7 @@
         "fontSize": "",
         "color": "#000000",
         "x": 1680,
-        "y": 300,
+        "y": 260,
         "wires": []
     },
     {
@@ -22085,9 +21754,7 @@
         "x": 1700,
         "y": 400,
         "wires": [
-            [
-                "a0e9b2d2fc31636a"
-            ]
+            []
         ]
     },
     {
@@ -22110,42 +21777,6 @@
         "color": "#000000",
         "x": 1710,
         "y": 160,
-        "wires": []
-    },
-    {
-        "id": "a0e9b2d2fc31636a",
-        "type": "debug",
-        "z": "110494c2c16f19b1",
-        "g": "8cf474edcfece05e",
-        "name": "debug 403",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1910,
-        "y": 400,
-        "wires": []
-    },
-    {
-        "id": "4fda723cfede9fbd",
-        "type": "debug",
-        "z": "110494c2c16f19b1",
-        "g": "8cf474edcfece05e",
-        "name": "debug 404",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1710,
-        "y": 60,
         "wires": []
     },
     {
@@ -23840,7 +23471,8 @@
                 "61906e413543f105"
             ],
             [
-                "fb22b696c78c3f37"
+                "fb22b696c78c3f37",
+                "ffae477fb9de6b1a"
             ]
         ]
     },
@@ -24264,6 +23896,24 @@
         ],
         "x": 1005,
         "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "ffae477fb9de6b1a",
+        "type": "debug",
+        "z": "110494c2c16f19b1",
+        "g": "8cf474edcfece05e",
+        "name": "RIGOL_Con",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "\"RIGOL Not Connected\"",
+        "targetType": "jsonata",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1870,
+        "y": 260,
         "wires": []
     },
     {
@@ -29562,28 +29212,8 @@
         "x": 780,
         "y": 200,
         "wires": [
-            [
-                "70169298872fad8f"
-            ]
+            []
         ]
-    },
-    {
-        "id": "70169298872fad8f",
-        "type": "debug",
-        "z": "dbbc30b9f0aa1118",
-        "g": "2522addeb1fd9032",
-        "name": "debug 405",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 990,
-        "y": 200,
-        "wires": []
     },
     {
         "id": "bac7e572ee9ba001",
@@ -31652,7 +31282,8 @@
                 "ecebd9b7a6f8ecbc"
             ],
             [
-                "95e59dc45b6997f5"
+                "95e59dc45b6997f5",
+                "8bb2ad73a3fe061b"
             ]
         ]
     },
@@ -32253,6 +31884,24 @@
                 "588b0418c6c94998"
             ]
         ]
+    },
+    {
+        "id": "8bb2ad73a3fe061b",
+        "type": "debug",
+        "z": "dbbc30b9f0aa1118",
+        "g": "2522addeb1fd9032",
+        "name": "CAEN_Con",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "\"CAEN Not Connected\"",
+        "targetType": "jsonata",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1370,
+        "y": 220,
+        "wires": []
     },
     {
         "id": "1fd2585a12fae590",
