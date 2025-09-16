@@ -206,29 +206,6 @@
         "icon": "node-red-contrib-postgresql/postgresql.png"
     },
     {
-        "id": "cdce2e191f64d74a",
-        "type": "subflow",
-        "name": "DB save RT&H",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 320,
-                "y": 300,
-                "wires": [
-                    {
-                        "id": "f3dedf4b350e643d"
-                    }
-                ]
-            }
-        ],
-        "out": [],
-        "env": [],
-        "meta": {},
-        "color": "#336791",
-        "icon": "node-red-contrib-postgresql/postgresql.png"
-    },
-    {
         "id": "d8fe4eb1a450f83e",
         "type": "subflow",
         "name": "DB save Meas&Control Dev",
@@ -267,52 +244,6 @@
                 "wires": [
                     {
                         "id": "6f44adedc3b6010e"
-                    }
-                ]
-            }
-        ],
-        "out": [],
-        "env": [],
-        "meta": {},
-        "color": "#336791",
-        "icon": "node-red-contrib-postgresql/postgresql.png"
-    },
-    {
-        "id": "da3fb3be89e2e1a0",
-        "type": "subflow",
-        "name": "DB save LV_PS",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 180,
-                "y": 240,
-                "wires": [
-                    {
-                        "id": "bee757c36ad06c7e"
-                    }
-                ]
-            }
-        ],
-        "out": [],
-        "env": [],
-        "meta": {},
-        "color": "#336791",
-        "icon": "node-red-contrib-postgresql/postgresql.png"
-    },
-    {
-        "id": "bec1affcea7871ce",
-        "type": "subflow",
-        "name": "DB save HV_PS",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 320,
-                "y": 340,
-                "wires": [
-                    {
-                        "id": "5468213997ab9485"
                     }
                 ]
             }
@@ -596,8 +527,8 @@
             "b0322ebb68974a20",
             "cec82aea2c292fb6"
         ],
-        "x": 34,
-        "y": 2039,
+        "x": 54,
+        "y": 1879,
         "w": 912,
         "h": 922
     },
@@ -703,15 +634,16 @@
         "nodes": [
             "00616a729b1f0cfc",
             "66a898c5e60a6a70",
-            "5df9258c8c6c1417",
             "ee925d052c96bf7c",
             "fb897dcc98e61c66",
             "a4f28ffee5b3d079",
-            "a5fb5c948889de7c"
+            "a5fb5c948889de7c",
+            "2babc2fb65145c62",
+            "7798479edff32034"
         ],
-        "x": 1034,
-        "y": 2053,
-        "w": 932,
+        "x": 1014,
+        "y": 1233,
+        "w": 1072,
         "h": 294
     },
     {
@@ -732,16 +664,17 @@
             "a49ee05a6e039dc4",
             "f70f336ad6e05bae",
             "9b5b2194e2b9c19a",
-            "3fc9e18719064828",
             "0d906aae151bf345",
             "1ff2ae80aa05f65e",
             "25ec25a0bea14e52",
             "7a376579a6995342",
-            "4ecc94f2d776875c"
+            "4ecc94f2d776875c",
+            "f122ba4bb258a97f",
+            "0b40e7cecca6c219"
         ],
         "x": 34,
         "y": 19,
-        "w": 892,
+        "w": 912,
         "h": 322
     },
     {
@@ -776,15 +709,15 @@
             "17edf870ba636364",
             "90823d05f529540f",
             "ec8ad250a6ce8355",
-            "5bff3529631a4437",
             "d90d274231ec9d30",
             "db42f61381c0613e",
-            "a5b326ca256b4985",
-            "eca5bb2e0e780868"
+            "eca5bb2e0e780868",
+            "3889a9ee15b88ddf",
+            "e757ba37af1efd4a"
         ],
         "x": 44,
         "y": 399,
-        "w": 888,
+        "w": 902,
         "h": 488
     },
     {
@@ -1429,7 +1362,7 @@
         ],
         "x": 14,
         "y": 1139,
-        "w": 932,
+        "w": 892,
         "h": 402
     },
     {
@@ -1452,7 +1385,7 @@
         ],
         "x": 24,
         "y": 979,
-        "w": 902,
+        "w": 882,
         "h": 142
     },
     {
@@ -1471,14 +1404,12 @@
             "34bd7545dffbba6b",
             "7a3b2945507f4984",
             "861a9622ae408637",
-            "5ad9969139c58fc1",
-            "0b51ba14b5430134",
-            "e7f34cb25f014d59"
+            "5ad9969139c58fc1"
         ],
         "x": 4,
         "y": 1559,
         "w": 942,
-        "h": 162
+        "h": 142
     },
     {
         "id": "562d42446f5c13fe",
@@ -2064,18 +1995,18 @@
             "label": true
         },
         "nodes": [
-            "4b0a6b86bc2c5ad7",
             "a68ec89d25e062f4",
             "56b05b496dc78a04",
             "1c129dfeb05bcbe2",
             "81cf755189fae457",
             "ce609db0e079068e",
-            "16aa078f89cc21ce"
+            "16aa078f89cc21ce",
+            "4b0a6b86bc2c5ad7"
         ],
         "x": 2568,
         "y": 13,
         "w": 1324,
-        "h": 2194
+        "h": 2234
     },
     {
         "id": "26404baffafe6277",
@@ -3027,8 +2958,8 @@
             "4f7d3234015e1d43",
             "57f0971a909279ed"
         ],
-        "x": 1324,
-        "y": 2079,
+        "x": 1304,
+        "y": 1259,
         "w": 402,
         "h": 242
     },
@@ -3555,14 +3486,9 @@
         "type": "group",
         "z": "44b2d39a758b1b4b",
         "g": "b743918e1c8c2488",
+        "name": "Initialization",
         "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
+            "label": true
         },
         "nodes": [
             "b7fa718771f68fb3",
@@ -3588,12 +3514,14 @@
             "59d643a4f211bc81",
             "567fee456478c56b",
             "47f8e6a6439b594a",
-            "b62a3aa2ca2ac677"
+            "b62a3aa2ca2ac677",
+            "21fd4547001f0430",
+            "511482c2976668cf"
         ],
         "x": 2634,
         "y": 1579,
         "w": 772,
-        "h": 602
+        "h": 642
     },
     {
         "id": "56b05b496dc78a04",
@@ -5040,41 +4968,6 @@
         ]
     },
     {
-        "id": "f3dedf4b350e643d",
-        "type": "function",
-        "z": "cdce2e191f64d74a",
-        "name": "Create JSON Object",
-        "func": "let Temperature = msg.payload.Temperature;\nlet Humidity = msg.payload.Humidity;\nlet TableName = msg.payload.TableName;\n\nlet query = `\n    INSERT INTO ${TableName} (temperature, humidity)\n    VALUES (${Temperature}, ${Humidity});\n`;\n\nmsg.topic = query;\nreturn {payload: query};\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 640,
-        "y": 300,
-        "wires": [
-            [
-                "2cb5e3c59f1e954a"
-            ]
-        ]
-    },
-    {
-        "id": "2cb5e3c59f1e954a",
-        "type": "postgresql",
-        "z": "cdce2e191f64d74a",
-        "name": "",
-        "query": "{{{msg.payload}}}",
-        "postgreSQLConfig": "4b3ae4eeb8191fd4",
-        "split": false,
-        "rowsPerMsg": "",
-        "outputs": 1,
-        "x": 1010,
-        "y": 300,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "e7ae9df65b56e9c4",
         "type": "function",
         "z": "d8fe4eb1a450f83e",
@@ -5140,77 +5033,6 @@
         "outputs": 1,
         "x": 930,
         "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "bee757c36ad06c7e",
-        "type": "function",
-        "z": "da3fb3be89e2e1a0",
-        "name": "Create JSON Object",
-        "func": "let Voltage = msg.payload.Voltage;\nlet Current = msg.payload.Current;\n//let Power = msg.payload.Power;\n//let IDN = msg.payload.IDN;\nlet TableName = msg.payload.TableName;\n\nlet query = `\n    INSERT INTO ${TableName} (voltage, current)\n    VALUES (${Voltage}, ${Current} );\n`;\n\nmsg.topic = query;\nreturn {payload: query};\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 440,
-        "y": 240,
-        "wires": [
-            [
-                "61787d42b5b3fe64"
-            ]
-        ]
-    },
-    {
-        "id": "61787d42b5b3fe64",
-        "type": "postgresql",
-        "z": "da3fb3be89e2e1a0",
-        "name": "",
-        "query": "{{{msg.payload}}}",
-        "postgreSQLConfig": "4b3ae4eeb8191fd4",
-        "split": false,
-        "rowsPerMsg": "",
-        "outputs": 1,
-        "x": 790,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5468213997ab9485",
-        "type": "function",
-        "z": "bec1affcea7871ce",
-        "name": "Create JSON Object",
-        "func": "let Ch1_Vmon = msg.payload.Ch1_Vmon;\nlet Ch1_Vset = msg.payload.Ch1_Vset;\nlet Ch1_Imon = msg.payload.Ch1_Imon;\nlet IDN = msg.payload.IDN;\nlet Ch0_Vmon = msg.payload.Ch0_Vmon;\nlet Ch0_Vset = msg.payload.Ch0_Vset;\nlet Ch0_Imon = msg.payload.Ch0_Imon;\nlet TableName = msg.payload.TableName;\n\nlet query = `\n    INSERT INTO ${TableName} (module_model, ch1_vmon, ch1_imon, ch1_vset, ch0_vmon, ch0_imon, ch0_vset)\n    VALUES ('${IDN}', ${Ch1_Vmon}, ${Ch1_Imon}, ${Ch1_Vset}, ${Ch0_Vmon}, ${Ch0_Imon},  ${Ch0_Vset});\n`;\n\nmsg.topic = query;\nreturn {payload: query};\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 600,
-        "y": 340,
-        "wires": [
-            [
-                "1ad7477897e13b60"
-            ]
-        ]
-    },
-    {
-        "id": "1ad7477897e13b60",
-        "type": "postgresql",
-        "z": "bec1affcea7871ce",
-        "name": "",
-        "query": "{{{msg.payload}}}",
-        "postgreSQLConfig": "4b3ae4eeb8191fd4",
-        "split": false,
-        "rowsPerMsg": "",
-        "outputs": 1,
-        "x": 950,
-        "y": 340,
         "wires": [
             []
         ]
@@ -8054,7 +7876,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 2850,
-        "y": 1760,
+        "y": 1800,
         "wires": [
             [
                 "9b9afc3d7197c6a0",
@@ -8082,7 +7904,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 2850,
-        "y": 1820,
+        "y": 1860,
         "wires": [
             [
                 "08ebbd91655e7a20",
@@ -8110,7 +7932,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 2850,
-        "y": 1880,
+        "y": 1920,
         "wires": [
             [
                 "6d085c902fcef551",
@@ -8138,7 +7960,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 2850,
-        "y": 1940,
+        "y": 1980,
         "wires": [
             [
                 "8937b014dbbd19c2",
@@ -8166,7 +7988,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 2850,
-        "y": 2000,
+        "y": 2040,
         "wires": [
             [
                 "863b73ab012b82e1",
@@ -8194,7 +8016,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 2850,
-        "y": 2060,
+        "y": 2100,
         "wires": [
             [
                 "1560b6f22b11cd16",
@@ -8222,7 +8044,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 2850,
-        "y": 2140,
+        "y": 2180,
         "wires": [
             [
                 "47f8e6a6439b594a"
@@ -8253,7 +8075,7 @@
         "payload": ":0780047163716300",
         "payloadType": "str",
         "x": 2780,
-        "y": 1620,
+        "y": 1660,
         "wires": [
             [
                 "b7fa718771f68fb3",
@@ -8277,7 +8099,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 3290,
-        "y": 1640,
+        "y": 1680,
         "wires": []
     },
     {
@@ -8289,7 +8111,7 @@
         "name": "F201CB config",
         "serial": "488efe6f06074f88",
         "x": 3100,
-        "y": 1640,
+        "y": 1680,
         "wires": [
             [
                 "f886233cd0071092"
@@ -8305,7 +8127,7 @@
         "name": "F201CB config",
         "serial": "488efe6f06074f88",
         "x": 3060,
-        "y": 1740,
+        "y": 1780,
         "wires": [
             [
                 "1f63bd9960173feb"
@@ -8328,7 +8150,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 3270,
-        "y": 1760,
+        "y": 1800,
         "wires": []
     },
     {
@@ -8340,7 +8162,7 @@
         "name": "F201CB config",
         "serial": "488efe6f06074f88",
         "x": 3080,
-        "y": 1840,
+        "y": 1880,
         "wires": [
             [
                 "06fe2b6a4af3561f"
@@ -8363,7 +8185,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 3270,
-        "y": 1820,
+        "y": 1860,
         "wires": []
     },
     {
@@ -8375,7 +8197,7 @@
         "name": "F201CB config",
         "serial": "488efe6f06074f88",
         "x": 3080,
-        "y": 1900,
+        "y": 1940,
         "wires": [
             [
                 "e6aae26c25e2c766"
@@ -8398,7 +8220,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 3270,
-        "y": 1900,
+        "y": 1940,
         "wires": []
     },
     {
@@ -8410,7 +8232,7 @@
         "name": "F201CB config",
         "serial": "488efe6f06074f88",
         "x": 3060,
-        "y": 1960,
+        "y": 2000,
         "wires": [
             [
                 "6108e5f37696d9a1"
@@ -8433,7 +8255,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 3250,
-        "y": 1960,
+        "y": 2000,
         "wires": []
     },
     {
@@ -8445,7 +8267,7 @@
         "name": "F201CB config",
         "serial": "488efe6f06074f88",
         "x": 3080,
-        "y": 2000,
+        "y": 2040,
         "wires": [
             [
                 "218acf9a7adf9548"
@@ -8468,7 +8290,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 3270,
-        "y": 2000,
+        "y": 2040,
         "wires": []
     },
     {
@@ -8480,7 +8302,7 @@
         "name": "F201CB config",
         "serial": "488efe6f06074f88",
         "x": 3080,
-        "y": 2060,
+        "y": 2100,
         "wires": [
             [
                 "567fee456478c56b"
@@ -8503,7 +8325,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 3270,
-        "y": 2060,
+        "y": 2100,
         "wires": []
     },
     {
@@ -8515,7 +8337,7 @@
         "name": "F201CB config",
         "serial": "488efe6f06074f88",
         "x": 3060,
-        "y": 2140,
+        "y": 2180,
         "wires": [
             [
                 "b62a3aa2ca2ac677"
@@ -8538,7 +8360,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 3250,
-        "y": 2140,
+        "y": 2180,
         "wires": []
     },
     {
@@ -10438,6 +10260,28 @@
                 "fd743603efce9c02"
             ]
         ]
+    },
+    {
+        "id": "21fd4547001f0430",
+        "type": "subflow:8472def4ec329aae",
+        "z": "44b2d39a758b1b4b",
+        "d": true,
+        "g": "a68ec89d25e062f4",
+        "name": "",
+        "x": 2750,
+        "y": 1740,
+        "wires": []
+    },
+    {
+        "id": "511482c2976668cf",
+        "type": "comment",
+        "z": "44b2d39a758b1b4b",
+        "g": "a68ec89d25e062f4",
+        "name": "Initialization or power-up may require a command sequence.",
+        "info": "",
+        "x": 2880,
+        "y": 1620,
+        "wires": []
     },
     {
         "id": "af0a0ab4.ce281",
@@ -33999,8 +33843,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 840,
-        "y": 2300,
+        "x": 860,
+        "y": 2140,
         "wires": []
     },
     {
@@ -34014,8 +33858,8 @@
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 480,
-        "y": 2260,
+        "x": 500,
+        "y": 2100,
         "wires": [
             [
                 "bafb614786782f29"
@@ -34033,8 +33877,8 @@
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 470,
-        "y": 2320,
+        "x": 490,
+        "y": 2160,
         "wires": [
             [
                 "bafb614786782f29"
@@ -34052,8 +33896,8 @@
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 490,
-        "y": 2380,
+        "x": 510,
+        "y": 2220,
         "wires": [
             [
                 "bafb614786782f29"
@@ -34071,8 +33915,8 @@
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 480,
-        "y": 2440,
+        "x": 500,
+        "y": 2280,
         "wires": [
             [
                 "bafb614786782f29"
@@ -34090,8 +33934,8 @@
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 480,
-        "y": 2500,
+        "x": 500,
+        "y": 2340,
         "wires": [
             [
                 "bafb614786782f29"
@@ -34120,8 +33964,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 2300,
+        "x": 150,
+        "y": 2140,
         "wires": [
             []
         ],
@@ -34138,8 +33982,8 @@
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 480,
-        "y": 2560,
+        "x": 500,
+        "y": 2400,
         "wires": [
             [
                 "bafb614786782f29"
@@ -34157,8 +34001,8 @@
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 510,
-        "y": 2620,
+        "x": 530,
+        "y": 2460,
         "wires": [
             [
                 "bafb614786782f29"
@@ -34176,8 +34020,8 @@
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 510,
-        "y": 2680,
+        "x": 530,
+        "y": 2520,
         "wires": [
             [
                 "bafb614786782f29"
@@ -34195,8 +34039,8 @@
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 470,
-        "y": 2740,
+        "x": 490,
+        "y": 2580,
         "wires": [
             [
                 "bafb614786782f29"
@@ -34214,8 +34058,8 @@
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 470,
-        "y": 2200,
+        "x": 490,
+        "y": 2040,
         "wires": [
             []
         ]
@@ -34231,8 +34075,8 @@
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 470,
-        "y": 2140,
+        "x": 490,
+        "y": 1980,
         "wires": [
             []
         ]
@@ -35066,8 +34910,8 @@
         "d": true,
         "g": "62882ad4f7217080",
         "name": "",
-        "x": 1200,
-        "y": 2120,
+        "x": 1180,
+        "y": 1300,
         "wires": [
             [
                 "4f7d3234015e1d43"
@@ -35081,24 +34925,13 @@
         "d": true,
         "g": "62882ad4f7217080",
         "name": "",
-        "x": 1220,
-        "y": 2220,
+        "x": 1200,
+        "y": 1400,
         "wires": [
             [
                 "e9632ada992faf43"
             ]
         ]
-    },
-    {
-        "id": "5df9258c8c6c1417",
-        "type": "subflow:cdce2e191f64d74a",
-        "z": "ac988ebf643b965c",
-        "d": true,
-        "g": "62882ad4f7217080",
-        "name": "",
-        "x": 1860,
-        "y": 2200,
-        "wires": []
     },
     {
         "id": "0eee0cfbc82cdbf2",
@@ -35116,8 +34949,8 @@
                 "tot": "str"
             }
         ],
-        "x": 1440,
-        "y": 2280,
+        "x": 1420,
+        "y": 1460,
         "wires": [
             [
                 "57f0971a909279ed"
@@ -35140,8 +34973,8 @@
                 "tot": "str"
             }
         ],
-        "x": 1430,
-        "y": 2220,
+        "x": 1410,
+        "y": 1400,
         "wires": [
             [
                 "57f0971a909279ed"
@@ -35164,8 +34997,8 @@
                 "tot": "str"
             }
         ],
-        "x": 1440,
-        "y": 2120,
+        "x": 1420,
+        "y": 1300,
         "wires": [
             [
                 "57f0971a909279ed"
@@ -35195,11 +35028,11 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 1650,
-        "y": 2210,
+        "x": 1630,
+        "y": 1390,
         "wires": [
             [
-                "5df9258c8c6c1417"
+                "2babc2fb65145c62"
             ]
         ]
     },
@@ -35222,8 +35055,8 @@
         "topic": "",
         "payload": "roomconditions",
         "payloadType": "str",
-        "x": 1170,
-        "y": 2300,
+        "x": 1150,
+        "y": 1480,
         "wires": [
             [
                 "0eee0cfbc82cdbf2"
@@ -35241,8 +35074,8 @@
             "9eea6ba8d0525abd",
             "7f8871f127b9fd9e"
         ],
-        "x": 1085,
-        "y": 2120,
+        "x": 1065,
+        "y": 1300,
         "wires": [
             [
                 "00616a729b1f0cfc"
@@ -35260,8 +35093,8 @@
             "f79a6dc7852472c7",
             "1fc812370ea29976"
         ],
-        "x": 1085,
-        "y": 2220,
+        "x": 1065,
+        "y": 1400,
         "wires": [
             [
                 "66a898c5e60a6a70"
@@ -35336,11 +35169,11 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 650,
+        "x": 570,
         "y": 120,
         "wires": [
             [
-                "3fc9e18719064828"
+                "f122ba4bb258a97f"
             ]
         ]
     },
@@ -35454,16 +35287,6 @@
                 "a49ee05a6e039dc4"
             ]
         ]
-    },
-    {
-        "id": "3fc9e18719064828",
-        "type": "subflow:da3fb3be89e2e1a0",
-        "z": "ac988ebf643b965c",
-        "g": "1551714e3dacd918",
-        "name": "",
-        "x": 820,
-        "y": 120,
-        "wires": []
     },
     {
         "id": "0d906aae151bf345",
@@ -35632,12 +35455,11 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 650,
+        "x": 590,
         "y": 500,
         "wires": [
             [
-                "5bff3529631a4437",
-                "a5b326ca256b4985"
+                "3889a9ee15b88ddf"
             ]
         ]
     },
@@ -36009,16 +35831,6 @@
         ]
     },
     {
-        "id": "5bff3529631a4437",
-        "type": "subflow:bec1affcea7871ce",
-        "z": "ac988ebf643b965c",
-        "g": "a4c6381da6e0a25c",
-        "name": "",
-        "x": 820,
-        "y": 500,
-        "wires": []
-    },
-    {
         "id": "0d6298c0274aaf27",
         "type": "postgresql",
         "z": "ac988ebf643b965c",
@@ -36146,28 +35958,11 @@
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 470,
-        "y": 2080,
+        "x": 490,
+        "y": 1920,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "a5b326ca256b4985",
-        "type": "debug",
-        "z": "ac988ebf643b965c",
-        "g": "a4c6381da6e0a25c",
-        "name": "debug 289",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 720,
-        "y": 620,
-        "wires": []
     },
     {
         "id": "5edb138768f23c01",
@@ -36180,8 +35975,8 @@
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 470,
-        "y": 2800,
+        "x": 490,
+        "y": 2640,
         "wires": [
             []
         ]
@@ -36305,7 +36100,7 @@
         "type": "function",
         "z": "ac988ebf643b965c",
         "g": "580b81533f909648",
-        "name": "Create JSON",
+        "name": "BGA JSON",
         "func": "let gas1 = msg.payload.PrimaryGas;\nlet gas2 = msg.payload.SecondaryGas;\nlet Gas1Ratio = msg.payload.Gas1Ratio;\nlet Gas2Ratio = msg.payload.Gas2Ratio;\nlet Uncertainity = msg.payload.Uncertainity;\nlet TableName = msg.payload.TableName;\n\nlet query = `\n    INSERT INTO ${TableName} (primarygas, secondarygas, gas1ratio, gas2ratio, uncertainity)\n    VALUES ('${gas1}', '${gas2}', ${Gas1Ratio}, ${Gas2Ratio}, ${Uncertainity});\n`;\n\nmsg.topic = query;\nreturn {payload: query};\n",
         "outputs": 1,
         "timeout": "",
@@ -36326,13 +36121,13 @@
         "type": "postgresql",
         "z": "ac988ebf643b965c",
         "g": "580b81533f909648",
-        "name": "",
+        "name": "psql",
         "query": "{{{msg.payload}}}",
         "postgreSQLConfig": "4b3ae4eeb8191fd4",
         "split": false,
         "rowsPerMsg": "",
         "outputs": 1,
-        "x": 850,
+        "x": 830,
         "y": 1340,
         "wires": [
             []
@@ -36557,8 +36352,8 @@
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 510,
-        "y": 2860,
+        "x": 530,
+        "y": 2700,
         "wires": [
             [
                 "bafb614786782f29"
@@ -36702,7 +36497,7 @@
         "type": "function",
         "z": "ac988ebf643b965c",
         "g": "37ec674883578701",
-        "name": "Create JSON",
+        "name": "Moisture JSON",
         "func": "let moisture = msg.payload.Moisture;\nlet TableName = msg.payload.TableName;\n\nlet query = `\n    INSERT INTO ${TableName} (moisture)\n    VALUES ('${moisture}');\n`;\n\nmsg.topic = query;\nreturn {payload: query};\n",
         "outputs": 1,
         "timeout": "",
@@ -36710,7 +36505,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 670,
+        "x": 680,
         "y": 1080,
         "wires": [
             [
@@ -36723,7 +36518,7 @@
         "type": "postgresql",
         "z": "ac988ebf643b965c",
         "g": "37ec674883578701",
-        "name": "",
+        "name": "psql",
         "query": "{{{msg.payload}}}",
         "postgreSQLConfig": "4b3ae4eeb8191fd4",
         "split": false,
@@ -36746,8 +36541,8 @@
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 510,
-        "y": 2920,
+        "x": 530,
+        "y": 2760,
         "wires": [
             []
         ]
@@ -36771,8 +36566,7 @@
         "y": 1600,
         "wires": [
             [
-                "7b11b8ca19e48bf1",
-                "0b51ba14b5430134"
+                "7b11b8ca19e48bf1"
             ]
         ]
     },
@@ -36873,7 +36667,7 @@
         "type": "function",
         "z": "ac988ebf643b965c",
         "g": "b7c4e8837b8eba93",
-        "name": "Create JSON",
+        "name": "Oxygen JSON",
         "func": "let oxygen = msg.payload.O2_ppm;\nlet TableName = msg.payload.TableName;\n\nlet query = `\n    INSERT INTO ${TableName} (o2_ppm)\n    VALUES ('${oxygen}');\n`;\n\nmsg.topic = query;\nreturn {payload: query};\n",
         "outputs": 1,
         "timeout": "",
@@ -36881,12 +36675,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 690,
+        "x": 700,
         "y": 1660,
         "wires": [
             [
-                "861a9622ae408637",
-                "e7f34cb25f014d59"
+                "861a9622ae408637"
             ]
         ]
     },
@@ -36895,14 +36688,14 @@
         "type": "postgresql",
         "z": "ac988ebf643b965c",
         "g": "b7c4e8837b8eba93",
-        "name": "",
+        "name": "psql",
         "query": "{{{msg.payload}}}",
         "postgreSQLConfig": "4b3ae4eeb8191fd4",
         "split": false,
         "rowsPerMsg": "",
         "outputs": 1,
-        "x": 850,
-        "y": 1680,
+        "x": 870,
+        "y": 1660,
         "wires": [
             []
         ]
@@ -36923,40 +36716,6 @@
                 "34bd7545dffbba6b"
             ]
         ]
-    },
-    {
-        "id": "0b51ba14b5430134",
-        "type": "debug",
-        "z": "ac988ebf643b965c",
-        "g": "b7c4e8837b8eba93",
-        "name": "debug 328",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 590,
-        "y": 1600,
-        "wires": []
-    },
-    {
-        "id": "e7f34cb25f014d59",
-        "type": "debug",
-        "z": "ac988ebf643b965c",
-        "g": "b7c4e8837b8eba93",
-        "name": "debug 329",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 810,
-        "y": 1600,
-        "wires": []
     },
     {
         "id": "1fe152b069dae096",
@@ -37168,8 +36927,124 @@
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
+        "x": 730,
+        "y": 1980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f122ba4bb258a97f",
+        "type": "function",
+        "z": "ac988ebf643b965c",
+        "g": "1551714e3dacd918",
+        "name": "LVPS JSON",
+        "func": "let Voltage = msg.payload.Voltage;\nlet Current = msg.payload.Current;\n//let Power = msg.payload.Power;\n//let IDN = msg.payload.IDN;\nlet TableName = msg.payload.TableName;\n\nlet query = `\n    INSERT INTO ${TableName} (voltage, current)\n    VALUES (${Voltage}, ${Current} );\n`;\n\nmsg.topic = query;\nreturn {payload: query};\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
         "x": 710,
-        "y": 2140,
+        "y": 120,
+        "wires": [
+            [
+                "0b40e7cecca6c219"
+            ]
+        ]
+    },
+    {
+        "id": "0b40e7cecca6c219",
+        "type": "postgresql",
+        "z": "ac988ebf643b965c",
+        "g": "1551714e3dacd918",
+        "name": "psql",
+        "query": "{{{msg.payload}}}",
+        "postgreSQLConfig": "4b3ae4eeb8191fd4",
+        "split": false,
+        "rowsPerMsg": "",
+        "outputs": 1,
+        "x": 870,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3889a9ee15b88ddf",
+        "type": "function",
+        "z": "ac988ebf643b965c",
+        "g": "a4c6381da6e0a25c",
+        "name": "HVPS JSON",
+        "func": "let Ch1_Vmon = msg.payload.Ch1_Vmon;\nlet Ch1_Vset = msg.payload.Ch1_Vset;\nlet Ch1_Imon = msg.payload.Ch1_Imon;\nlet IDN = msg.payload.IDN;\nlet Ch0_Vmon = msg.payload.Ch0_Vmon;\nlet Ch0_Vset = msg.payload.Ch0_Vset;\nlet Ch0_Imon = msg.payload.Ch0_Imon;\nlet TableName = msg.payload.TableName;\n\nlet query = `\n    INSERT INTO ${TableName} (module_model, ch1_vmon, ch1_imon, ch1_vset, ch0_vmon, ch0_imon, ch0_vset)\n    VALUES ('${IDN}', ${Ch1_Vmon}, ${Ch1_Imon}, ${Ch1_Vset}, ${Ch0_Vmon}, ${Ch0_Imon},  ${Ch0_Vset});\n`;\n\nmsg.topic = query;\nreturn {payload: query};\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 500,
+        "wires": [
+            [
+                "e757ba37af1efd4a"
+            ]
+        ]
+    },
+    {
+        "id": "e757ba37af1efd4a",
+        "type": "postgresql",
+        "z": "ac988ebf643b965c",
+        "g": "a4c6381da6e0a25c",
+        "name": "psql",
+        "query": "{{{msg.payload}}}",
+        "postgreSQLConfig": "4b3ae4eeb8191fd4",
+        "split": false,
+        "rowsPerMsg": "",
+        "outputs": 1,
+        "x": 870,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2babc2fb65145c62",
+        "type": "function",
+        "z": "ac988ebf643b965c",
+        "d": true,
+        "g": "62882ad4f7217080",
+        "name": "R T&H JSON",
+        "func": "let Temperature = msg.payload.Temperature;\nlet Humidity = msg.payload.Humidity;\nlet TableName = msg.payload.TableName;\n\nlet query = `\n    INSERT INTO ${TableName} (temperature, humidity)\n    VALUES (${Temperature}, ${Humidity});\n`;\n\nmsg.topic = query;\nreturn {payload: query};\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1830,
+        "y": 1400,
+        "wires": [
+            [
+                "7798479edff32034"
+            ]
+        ]
+    },
+    {
+        "id": "7798479edff32034",
+        "type": "postgresql",
+        "z": "ac988ebf643b965c",
+        "d": true,
+        "g": "62882ad4f7217080",
+        "name": "psql",
+        "query": "{{{msg.payload}}}",
+        "postgreSQLConfig": "4b3ae4eeb8191fd4",
+        "split": false,
+        "rowsPerMsg": "",
+        "outputs": 1,
+        "x": 2010,
+        "y": 1400,
         "wires": [
             []
         ]
