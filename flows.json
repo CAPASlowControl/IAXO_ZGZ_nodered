@@ -19765,12 +19765,13 @@
         "id": "e495ccc9d3c3bbf1",
         "type": "ui_text",
         "z": "597a964f0bbfa0ad",
+        "d": true,
         "group": "92d6792f40c1dc5d",
         "order": 0,
         "width": 0,
         "height": 0,
-        "name": "Pressure Control",
-        "label": "Pressure [mBar]",
+        "name": "",
+        "label": "Pressure Buffer [mBar]",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
@@ -19778,7 +19779,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1210,
+        "x": 1220,
         "y": 960,
         "wires": []
     },
@@ -20112,6 +20113,16 @@
                 "8965a30aa2c476d1"
             ]
         ]
+    },
+    {
+        "id": "e1a23910f473e21b",
+        "type": "comment",
+        "z": "597a964f0bbfa0ad",
+        "name": "Nowadays DIsconnected",
+        "info": "",
+        "x": 1450,
+        "y": 960,
+        "wires": []
     },
     {
         "id": "53b57ace.555ac4",
