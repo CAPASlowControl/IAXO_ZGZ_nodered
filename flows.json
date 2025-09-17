@@ -953,14 +953,13 @@
             "6bbb3888df1424f9",
             "4752522bea1e8996",
             "6353d1beb31dc2ac",
-            "7f8448992e9b1679",
             "03934a65680ce07a",
             "0518cfe62db0b19e"
         ],
         "x": 64,
         "y": 19,
-        "w": 1142,
-        "h": 242
+        "w": 1162,
+        "h": 202
     },
     {
         "id": "1e19279394efd31a",
@@ -3907,6 +3906,50 @@
         "h": 142
     },
     {
+        "id": "9402e87e2d69f43a",
+        "type": "group",
+        "z": "597a964f0bbfa0ad",
+        "name": "Connection",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "47ace8de1291da11",
+            "2ec19f8391983f34",
+            "551d8d2f2740a57c",
+            "859921f11967e96b",
+            "0c7f571381e44f80",
+            "52b0399bf0ebcf74",
+            "cc1ebb7258fe295a",
+            "de1826966ff773c7",
+            "8965a30aa2c476d1",
+            "1928ea744882fa2a",
+            "54549440027f7001"
+        ],
+        "x": 154,
+        "y": 1079,
+        "w": 692,
+        "h": 362
+    },
+    {
+        "id": "1111783c81b587f6",
+        "type": "group",
+        "z": "597a964f0bbfa0ad",
+        "name": "ElectroValves",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b18fa9cef10c7d2b",
+            "5e4af89977ed1024",
+            "0149db5fb5c6614e"
+        ],
+        "x": 134,
+        "y": 899,
+        "w": 412,
+        "h": 142
+    },
+    {
         "id": "67018f7a.7112a8",
         "type": "ui_base",
         "theme": {
@@ -4885,6 +4928,17 @@
         "name": "Connection",
         "tab": "e50d02c.0731",
         "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a1953dce2568c93d",
+        "type": "ui_group",
+        "name": "Connection",
+        "tab": "19d47f486387bb10",
+        "order": 5,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -19127,62 +19181,6 @@
         ]
     },
     {
-        "id": "5e4af89977ed1024",
-        "type": "ui_button",
-        "z": "597a964f0bbfa0ad",
-        "name": "PLC ON",
-        "group": "f807887cca6a4a80",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "ON",
-        "tooltip": "",
-        "color": "black",
-        "bgcolor": "green",
-        "className": "",
-        "icon": "fa-circle ",
-        "payload": "1",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 220,
-        "y": 160,
-        "wires": [
-            [
-                "b18fa9cef10c7d2b"
-            ]
-        ]
-    },
-    {
-        "id": "0149db5fb5c6614e",
-        "type": "ui_button",
-        "z": "597a964f0bbfa0ad",
-        "name": "PLC OFF",
-        "group": "f807887cca6a4a80",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "OFF",
-        "tooltip": "",
-        "color": "black",
-        "bgcolor": "red",
-        "className": "",
-        "icon": "fa-circle ",
-        "payload": "0",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 220,
-        "y": 220,
-        "wires": [
-            [
-                "b18fa9cef10c7d2b"
-            ]
-        ]
-    },
-    {
         "id": "2eb80525fe5b6a17",
         "type": "switch",
         "z": "597a964f0bbfa0ad",
@@ -19560,16 +19558,6 @@
         "wires": []
     },
     {
-        "id": "b18fa9cef10c7d2b",
-        "type": "serial out",
-        "z": "597a964f0bbfa0ad",
-        "name": "",
-        "serial": "5483c9b1449f3939",
-        "x": 440,
-        "y": 200,
-        "wires": []
-    },
-    {
         "id": "10f5eb6f8e4ce746",
         "type": "link out",
         "z": "597a964f0bbfa0ad",
@@ -19793,6 +19781,337 @@
         "x": 1210,
         "y": 960,
         "wires": []
+    },
+    {
+        "id": "47ace8de1291da11",
+        "type": "serial in",
+        "z": "597a964f0bbfa0ad",
+        "g": "9402e87e2d69f43a",
+        "name": "",
+        "serial": "5483c9b1449f3939",
+        "x": 280,
+        "y": 1120,
+        "wires": [
+            [
+                "2ec19f8391983f34"
+            ]
+        ]
+    },
+    {
+        "id": "2ec19f8391983f34",
+        "type": "ui_text",
+        "z": "597a964f0bbfa0ad",
+        "g": "9402e87e2d69f43a",
+        "group": "a1953dce2568c93d",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "PLC Listener",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 470,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "551d8d2f2740a57c",
+        "type": "status",
+        "z": "597a964f0bbfa0ad",
+        "g": "9402e87e2d69f43a",
+        "name": "Connection status",
+        "scope": [
+            "47ace8de1291da11"
+        ],
+        "x": 290,
+        "y": 1200,
+        "wires": [
+            [
+                "859921f11967e96b",
+                "0c7f571381e44f80",
+                "cc1ebb7258fe295a"
+            ]
+        ]
+    },
+    {
+        "id": "859921f11967e96b",
+        "type": "function",
+        "z": "597a964f0bbfa0ad",
+        "g": "9402e87e2d69f43a",
+        "name": "SerialPort Status",
+        "func": "\nmsg.payload = msg.status.fill;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1200,
+        "wires": [
+            [
+                "52b0399bf0ebcf74"
+            ]
+        ]
+    },
+    {
+        "id": "0c7f571381e44f80",
+        "type": "ui_text",
+        "z": "597a964f0bbfa0ad",
+        "g": "9402e87e2d69f43a",
+        "group": "a1953dce2568c93d",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Status Text",
+        "format": "{{msg.status.text}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 550,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "52b0399bf0ebcf74",
+        "type": "ui_led",
+        "z": "597a964f0bbfa0ad",
+        "g": "9402e87e2d69f43a",
+        "order": 3,
+        "group": "a1953dce2568c93d",
+        "width": 0,
+        "height": 0,
+        "label": "Status",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "red",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "green",
+                "valueType": "str"
+            },
+            {
+                "color": "#f8e45c",
+                "value": "yellow",
+                "valueType": "str"
+            },
+            {
+                "color": "#77767b",
+                "value": "grey",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 770,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "cc1ebb7258fe295a",
+        "type": "switch",
+        "z": "597a964f0bbfa0ad",
+        "g": "9402e87e2d69f43a",
+        "name": "status.fill",
+        "property": "status.fill",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "green",
+                "vt": "str"
+            },
+            {
+                "t": "neq",
+                "v": "green",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 520,
+        "y": 1320,
+        "wires": [
+            [],
+            [
+                "de1826966ff773c7"
+            ]
+        ]
+    },
+    {
+        "id": "de1826966ff773c7",
+        "type": "debug",
+        "z": "597a964f0bbfa0ad",
+        "g": "9402e87e2d69f43a",
+        "name": "BGA_Con",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "\"PLC Not Connected\"",
+        "targetType": "jsonata",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "b18fa9cef10c7d2b",
+        "type": "serial out",
+        "z": "597a964f0bbfa0ad",
+        "g": "1111783c81b587f6",
+        "name": "",
+        "serial": "5483c9b1449f3939",
+        "x": 440,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "5e4af89977ed1024",
+        "type": "ui_button",
+        "z": "597a964f0bbfa0ad",
+        "g": "1111783c81b587f6",
+        "name": "PLC ON",
+        "group": "f807887cca6a4a80",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "ON",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "fa-circle ",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 220,
+        "y": 940,
+        "wires": [
+            [
+                "b18fa9cef10c7d2b"
+            ]
+        ]
+    },
+    {
+        "id": "0149db5fb5c6614e",
+        "type": "ui_button",
+        "z": "597a964f0bbfa0ad",
+        "g": "1111783c81b587f6",
+        "name": "PLC OFF",
+        "group": "f807887cca6a4a80",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "OFF",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "fa-circle ",
+        "payload": "0",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 220,
+        "y": 1000,
+        "wires": [
+            [
+                "b18fa9cef10c7d2b"
+            ]
+        ]
+    },
+    {
+        "id": "8965a30aa2c476d1",
+        "type": "serial control",
+        "z": "597a964f0bbfa0ad",
+        "g": "9402e87e2d69f43a",
+        "name": "",
+        "serial": "5483c9b1449f3939",
+        "x": 440,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1928ea744882fa2a",
+        "type": "ui_button",
+        "z": "597a964f0bbfa0ad",
+        "g": "9402e87e2d69f43a",
+        "name": "",
+        "group": "a1953dce2568c93d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Connect",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"enabled\": true}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 240,
+        "y": 1360,
+        "wires": [
+            [
+                "8965a30aa2c476d1"
+            ]
+        ]
+    },
+    {
+        "id": "54549440027f7001",
+        "type": "ui_button",
+        "z": "597a964f0bbfa0ad",
+        "g": "9402e87e2d69f43a",
+        "name": "",
+        "group": "a1953dce2568c93d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "DisConnect",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"enabled\": false}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 250,
+        "y": 1400,
+        "wires": [
+            [
+                "8965a30aa2c476d1"
+            ]
+        ]
     },
     {
         "id": "53b57ace.555ac4",
@@ -32846,8 +33165,7 @@
         "wires": [
             [
                 "6bbb3888df1424f9",
-                "1fd2585a12fae590",
-                "7f8448992e9b1679"
+                "1fd2585a12fae590"
             ]
         ]
     },
@@ -33002,23 +33320,6 @@
         "statusType": "auto",
         "x": 590,
         "y": 1540,
-        "wires": []
-    },
-    {
-        "id": "7f8448992e9b1679",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "76c4585b9eeb7963",
-        "name": "debug 404",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 610,
-        "y": 220,
         "wires": []
     },
     {
@@ -33818,15 +34119,16 @@
         "type": "debug",
         "z": "e6abd59fcfef321c",
         "g": "76c4585b9eeb7963",
-        "name": "debug 422",
+        "name": "CAEN Shutdown",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1070,
+        "x": 1090,
         "y": 140,
         "wires": []
     },
