@@ -90,19 +90,19 @@
         "env": []
     },
     {
+        "id": "96df9d1b.b1b87",
+        "type": "tab",
+        "label": "OPC UA",
+        "disabled": false,
+        "info": "Flex-Server node stablish the OPC UA server. \nTo modify the Address Space go to Address and change which nedeed. \n\nThe refreshing of the data is made with flow variables. \nEach variable gets flow variable and thhe flex server upload the new value to the server. \n"
+    },
+    {
         "id": "a38a0850f33814d0",
         "type": "tab",
         "label": "Supply Charts v2",
         "disabled": true,
         "info": "",
         "env": []
-    },
-    {
-        "id": "96df9d1b.b1b87",
-        "type": "tab",
-        "label": "OPC UA",
-        "disabled": true,
-        "info": "Flex-Server node stablish the OPC UA server. \nTo modify the Address Space go to Address and change which nedeed. \n\nThe refreshing of the data is made with flow variables. \nEach variable gets flow variable and thhe flex server upload the new value to the server. \n"
     },
     {
         "id": "81b118a5c06ef7f4",
@@ -1232,7 +1232,7 @@
         "id": "b7753615abb51a3c",
         "type": "group",
         "z": "96df9d1b.b1b87",
-        "name": "OPC UA insert Fctrl",
+        "name": "OPC UA insert Fctrl_in",
         "style": {
             "label": true
         },
@@ -1243,7 +1243,7 @@
         ],
         "x": 964,
         "y": 139,
-        "w": 452,
+        "w": 472,
         "h": 82
     },
     {
@@ -1260,7 +1260,7 @@
             "788437bd1fdfeeea"
         ],
         "x": 964,
-        "y": 239,
+        "y": 339,
         "w": 482,
         "h": 82
     },
@@ -1278,7 +1278,7 @@
             "3d8cc8da0285d790"
         ],
         "x": 964,
-        "y": 339,
+        "y": 439,
         "w": 432,
         "h": 82
     },
@@ -1296,7 +1296,7 @@
             "e02cd3a2c41ca16b"
         ],
         "x": 964,
-        "y": 439,
+        "y": 539,
         "w": 472,
         "h": 82
     },
@@ -1317,7 +1317,7 @@
             "39413c247485ef37"
         ],
         "x": 964,
-        "y": 539,
+        "y": 639,
         "w": 472,
         "h": 182
     },
@@ -1387,7 +1387,7 @@
         "id": "3e6012c9035b0d41",
         "type": "group",
         "z": "96df9d1b.b1b87",
-        "name": "OPC UA insert PT42",
+        "name": "OPC UA insert Pctrl",
         "style": {
             "label": true
         },
@@ -3038,6 +3038,72 @@
         "h": 882
     },
     {
+        "id": "9402e87e2d69f43a",
+        "type": "group",
+        "z": "597a964f0bbfa0ad",
+        "name": "Connection",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "47ace8de1291da11",
+            "2ec19f8391983f34",
+            "551d8d2f2740a57c",
+            "859921f11967e96b",
+            "0c7f571381e44f80",
+            "52b0399bf0ebcf74",
+            "cc1ebb7258fe295a",
+            "de1826966ff773c7",
+            "8965a30aa2c476d1",
+            "1928ea744882fa2a",
+            "54549440027f7001"
+        ],
+        "x": 154,
+        "y": 1079,
+        "w": 692,
+        "h": 362
+    },
+    {
+        "id": "1111783c81b587f6",
+        "type": "group",
+        "z": "597a964f0bbfa0ad",
+        "name": "ElectroValves",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b18fa9cef10c7d2b",
+            "5e4af89977ed1024",
+            "0149db5fb5c6614e"
+        ],
+        "x": 134,
+        "y": 899,
+        "w": 412,
+        "h": 142
+    },
+    {
+        "id": "b820c71a2399718a",
+        "type": "group",
+        "z": "ac988ebf643b965c",
+        "name": "Memory Log",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "71238935a792880d",
+            "b08b5715de3846a6",
+            "4dbc10b7f8c7ae1f",
+            "354416f8f304c36c",
+            "5944a50e8740a849",
+            "5c5c0d67ba9335b6",
+            "2ea60f64cbe70db4"
+        ],
+        "x": 974,
+        "y": 1219,
+        "w": 962,
+        "h": 142
+    },
+    {
         "id": "eca5bb2e0e780868",
         "type": "group",
         "z": "ac988ebf643b965c",
@@ -3092,9 +3158,9 @@
             "4f7d3234015e1d43",
             "57f0971a909279ed"
         ],
-        "x": 1304,
+        "x": 1314,
         "y": 1419,
-        "w": 402,
+        "w": 392,
         "h": 242
     },
     {
@@ -4060,70 +4126,22 @@
         "h": 142
     },
     {
-        "id": "9402e87e2d69f43a",
+        "id": "c3ae906d3998017d",
         "type": "group",
-        "z": "597a964f0bbfa0ad",
-        "name": "Connection",
+        "z": "96df9d1b.b1b87",
+        "name": "OPC UA insert Fctrl",
         "style": {
             "label": true
         },
         "nodes": [
-            "47ace8de1291da11",
-            "2ec19f8391983f34",
-            "551d8d2f2740a57c",
-            "859921f11967e96b",
-            "0c7f571381e44f80",
-            "52b0399bf0ebcf74",
-            "cc1ebb7258fe295a",
-            "de1826966ff773c7",
-            "8965a30aa2c476d1",
-            "1928ea744882fa2a",
-            "54549440027f7001"
+            "0e52dee7340a7842",
+            "2a22c38f4d969ab4",
+            "27f1c77b141ba53f"
         ],
-        "x": 154,
-        "y": 1079,
-        "w": 692,
-        "h": 362
-    },
-    {
-        "id": "1111783c81b587f6",
-        "type": "group",
-        "z": "597a964f0bbfa0ad",
-        "name": "ElectroValves",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "b18fa9cef10c7d2b",
-            "5e4af89977ed1024",
-            "0149db5fb5c6614e"
-        ],
-        "x": 134,
-        "y": 899,
-        "w": 412,
-        "h": 142
-    },
-    {
-        "id": "b820c71a2399718a",
-        "type": "group",
-        "z": "ac988ebf643b965c",
-        "name": "Memory Log",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "71238935a792880d",
-            "b08b5715de3846a6",
-            "4dbc10b7f8c7ae1f",
-            "354416f8f304c36c",
-            "5944a50e8740a849",
-            "5c5c0d67ba9335b6",
-            "2ea60f64cbe70db4"
-        ],
-        "x": 974,
-        "y": 1219,
-        "w": 962,
-        "h": 142
+        "x": 964,
+        "y": 239,
+        "w": 472,
+        "h": 82
     },
     {
         "id": "67018f7a.7112a8",
@@ -9232,7 +9250,8 @@
         "links": [
             "16801995764a2244",
             "37a5a3ca6f1dc258",
-            "95e212ba778e4d95"
+            "95e212ba778e4d95",
+            "0e52dee7340a7842"
         ],
         "x": 3615,
         "y": 200,
@@ -10027,7 +10046,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 4505,
+        "x": 4525,
         "y": 160,
         "wires": [
             [
@@ -10389,7 +10408,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 4710,
-        "y": 440,
+        "y": 460,
         "wires": []
     },
     {
@@ -10957,7 +10976,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "BKRM1_st",
+                "p": "BKRM0_st",
                 "pt": "global",
                 "to": "0",
                 "tot": "num"
@@ -10969,7 +10988,7 @@
         "to": "",
         "reg": false,
         "x": 4730,
-        "y": 400,
+        "y": 420,
         "wires": [
             []
         ]
@@ -10983,7 +11002,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "BKRM1_st",
+                "p": "BKRM0_st",
                 "pt": "global",
                 "to": "1",
                 "tot": "num"
@@ -11126,7 +11145,7 @@
         "z": "44b2d39a758b1b4b",
         "g": "3a77962e97d02525",
         "name": "",
-        "x": 4315,
+        "x": 4295,
         "y": 160,
         "wires": [
             [
@@ -35139,7 +35158,7 @@
         ],
         "repeat": "",
         "crontab": "",
-        "once": true,
+        "once": false,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
@@ -35147,9 +35166,7 @@
         "x": 150,
         "y": 2140,
         "wires": [
-            [
-                "b3d7b682de3809bb"
-            ]
+            []
         ],
         "info": "Only enable this node when you want to inject a **new table** in the database. Link the node to the new _Create Table <X>_ node.  \n\nFor security, after create the table, delete all links and disable the node. "
     },
@@ -38385,10 +38402,1080 @@
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 240,
-        "y": 2200,
+        "x": 720,
+        "y": 2040,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "af7aa8a.6c2e058",
+        "type": "OPCUA-IIoT-Flex-Server",
+        "z": "96df9d1b.b1b87",
+        "port": "55480",
+        "endpoint": "opc.tcp://127.0.0.1",
+        "acceptExternalCommands": true,
+        "maxAllowedSessionNumber": "",
+        "maxConnectionsPerEndpoint": "",
+        "maxAllowedSubscriptionNumber": "",
+        "alternateHostname": "",
+        "name": "",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "allowAnonymous": true,
+        "individualCerts": false,
+        "isAuditing": false,
+        "serverDiscovery": true,
+        "users": [],
+        "xmlsets": [],
+        "publicCertificateFile": "",
+        "privateCertificateFile": "",
+        "registerServerMethod": "1",
+        "discoveryServerEndpointUrl": "",
+        "capabilitiesForMDNS": "",
+        "maxNodesPerRead": 1000,
+        "maxNodesPerBrowse": 2000,
+        "delayToClose": 1000,
+        "addressSpaceScript": "/* \nThis function is integreated in the \"constructAlarmAddressSpace\" function of the \"address_space.js\" file of the \"node-red-contrib-iiot-opcua\" node.\n    Allows to make a customize OPC UA address space. If you want to add more variables, add it in variables array following the same pattern:\n        {name: 'NameVar', folder: Folderlocation, browseName: 'NameVar', nodeId: 'ns=1;s=VARIdentifier', dataType: DataType.Double/String/Int32/...},\n If yo also want to add a new folder, follow the folders pattern. Be aware with hiercarquy of folders: \n        const NewFolder = namespace.addFolder(SuperiorHierarchyFolder, { browseName: \"FolderName\" });  \n It can also to be added a view to facilitate the visualization of the variables. Follow the views pattern:  \n         { browseName: \"ViewName\", filter: variable => variable.folder === FolderName },\n\nAuthor: Jorge Marqués García\n*/\nfunction constructAlarmAddressSpace(server, addressSpace, eventObjects, done) {\n    const LocalizedText = opcua.LocalizedText;\n    const namespace = addressSpace.getOwnNamespace();\n    const Variant = opcua.Variant;\n    const DataType = opcua.DataType;\n    const flexServerInternals = this;\n\n    coreServer.internalDebugLog('init dynamic address space');\n    node.warn('construct new address space for OPC UA');\n\n    // Define folders\n    const rootFolder = addressSpace.findNode(\"RootFolder\");\n    const mySpace = namespace.addFolder(rootFolder.objects, { browseName: \"IAXO-ZGZ\" });\n    const gasFolder = namespace.addFolder(mySpace, { browseName: \"GAS\" });\n    const GasPressure = namespace.addFolder(gasFolder, { browseName: \"Pressure\" });\n    const GasFlow = namespace.addFolder(gasFolder, { browseName: \"Flow\" });\n    const HVFolder = namespace.addFolder(mySpace, { browseName: \"HV\" });\n    const LVFolder = namespace.addFolder(mySpace, { browseName: \"LV\" });\n    const ROOM = namespace.addFolder(mySpace, { browseName: \"ROOM\" });\n\n    // Define variables\n    const variables = [\n        { name: 'Pctrl', folder: GasPressure, browseName: 'Pctrl', nodeId: 'ns=1;s=Pctrl', dataType: DataType.Double },\n        { name: 'Pinlet', folder: GasPressure, browseName: 'Pinlet', nodeId: 'ns=1;s=Pinlet', dataType: DataType.Double },\n        { name: 'Poutlet', folder: GasPressure, browseName: 'Poutlet', nodeId: 'ns=1;s=Poutlet', dataType: DataType.Double },\n        { name: 'PVacLine', folder: GasPressure, browseName: 'PVacLine', nodeId: 'ns=1;s=PVacLine', dataType: DataType.Double },\n        { name: 'PRpOut', folder: GasPressure, browseName: 'PRpOut', nodeId: 'ns=1;s=PRpOut', dataType: DataType.Double },\n        { name: 'Fctrl_in', folder: GasFlow, browseName: 'Fctrl_in', nodeId: 'ns=1;s=Fctrl_in', dataType: DataType.Double },\n        { name: 'Fctrl_out', folder: GasFlow, browseName: 'Fctrl_out', nodeId: 'ns=1;s=Fctrl_out', dataType: DataType.Double },\n        { name: 'Finlet', folder: GasFlow, browseName: 'Finlet', nodeId: 'ns=1;s=Finlet', dataType: DataType.Double },\n        { name: 'Ch1_Vmon', folder: HVFolder, browseName: 'Ch1_Vmon', nodeId: 'ns=1;s=Ch1_Vmon', dataType: DataType.Double },\n        { name: 'Ch1_Imon', folder: HVFolder, browseName: 'Ch1_Imon', nodeId: 'ns=1;s=Ch1_Imon', dataType: DataType.Double },\n        { name: 'Ch1_Vset', folder: HVFolder, browseName: 'Ch1_Vset', nodeId: 'ns=1;s=Ch1_Vset', dataType: DataType.Double },\n        { name: 'Ch0_Vmon', folder: HVFolder, browseName: 'Ch0_Vmon', nodeId: 'ns=1;s=Ch_0_Vmon', dataType: DataType.Double },\n        { name: 'Ch0_Imon', folder: HVFolder, browseName: 'Ch0_Imon', nodeId: 'ns=1;s=Ch_0_Imon', dataType: DataType.Double },\n        { name: 'Ch0_Vset', folder: HVFolder, browseName: 'Ch0_Vset', nodeId: 'ns=1;s=Ch_0_Vset', dataType: DataType.Double },\n        { name: 'Ch1_trip', folder: HVFolder, browseName: 'Ch1_trip', nodeId: 'ns=1;s=Ch1_trip', dataType: DataType.Double },\n        { name: 'Ch0_trip', folder: HVFolder, browseName: 'Ch0_trip', nodeId: 'ns=1;s=Ch_0_trip', dataType: DataType.Double },\n        { name: 'IDN', folder: HVFolder, browseName: 'IDN', nodeId: 'ns=1;s=IDN', dataType: DataType.String },\n        { name: 'Voltage', folder: LVFolder, browseName: 'Voltage', nodeId: 'ns=1;s=Voltage', dataType: DataType.Double },\n        { name: 'Current', folder: LVFolder, browseName: 'Current', nodeId: 'ns=1;s=Current', dataType: DataType.Double },\n        { name: 'Power', folder: LVFolder, browseName: 'Power', nodeId: 'ns=1;s=Power', dataType: DataType.Double },\n        { name: 'LV_IDN', folder: LVFolder, browseName: 'LV_IDN', nodeId: 'ns=1;s=Identifier', dataType: DataType.String },\n        { name: 'Temperature', folder: ROOM, browseName: 'Temperature', nodeId: 'ns=1;s=Temperature', dataType: DataType.Double },\n        { name: 'Humidity', folder: ROOM, browseName: 'Humidity', nodeId: 'ns=1;s=Humidity', dataType: DataType.Double },\n    ];\n\n    // Initialize sandboxFlowContext variables\n    variables.forEach(variable => this.sandboxFlowContext.set(variable.name, variable.dataType === DataType.String ? \"\" : 0));\n\n    // Helper function to add variables\n    const addVariable = (folder, browseName, nodeId, contextVar, dataType) => {\n        namespace.addVariable({\n            organizedBy: folder,\n            browseName,\n            nodeId,\n            dataType,\n            value: {\n                get: () => new Variant({ dataType, value: flexServerInternals.sandboxFlowContext.get(contextVar) }),\n                set: (variant) => {\n                    flexServerInternals.sandboxFlowContext.set(contextVar, variant.value);\n                    return opcua.StatusCodes.Good;\n                }\n            }\n        });\n    };\n\n    // Add variables\n    variables.forEach(variable => {\n        addVariable(variable.folder, variable.browseName, variable.nodeId, variable.name, variable.dataType);\n    });\n\n    // Add views\n    const views = [\n        { browseName: \"Gas-Pressure-Sensors\", filter: variable => variable.folder === GasPressure },\n        { browseName: \"Gas-Flow-Sensors\", filter: variable => variable.folder === GasFlow },\n        { browseName: \"HV-PSU\", filter: variable => variable.folder === HVFolder },\n        { browseName: \"LV-PSU\", filter: variable => variable.folder === LVFolder },\n        { browseName: \"Room-Sensors\", filter: variable => variable.folder === ROOM }\n    ];\n\n    views.forEach(view => {\n        const viewNode = namespace.addView({ organizedBy: rootFolder.views, browseName: view.browseName });\n        variables.filter(view.filter).forEach(variable => {\n            viewNode.addReference({ referenceType: \"Organizes\", nodeId: variable.nodeId });\n        });\n    });\n\n    coreServer.internalDebugLog(\"create dynamic address space done\");\n    node.warn(\"construction of new address space for OPC UA done\");\n\n    done();\n}\n",
+        "x": 170,
+        "y": 280,
+        "wires": [
+            []
+        ],
+        "info": "Create server node with a custom address space. \n\nNot clear yet the security in the node"
+    },
+    {
+        "id": "e49398434c66ccfc",
+        "type": "link in",
+        "z": "96df9d1b.b1b87",
+        "g": "b7753615abb51a3c",
+        "name": "DB_FCTRL_IN_MV",
+        "links": [
+            "a751117c2cdb2b36"
+        ],
+        "x": 1005,
+        "y": 180,
+        "wires": [
+            [
+                "5ed09d8c01d31d93"
+            ]
+        ]
+    },
+    {
+        "id": "b7bc2fe1e61baf98",
+        "type": "link in",
+        "z": "96df9d1b.b1b87",
+        "g": "f2834e97a5dced37",
+        "name": "DB_FINLET_MV",
+        "links": [
+            "d25cc37e410e543e"
+        ],
+        "x": 1005,
+        "y": 380,
+        "wires": [
+            [
+                "788437bd1fdfeeea"
+            ]
+        ]
+    },
+    {
+        "id": "0113a1c9de3705d7",
+        "type": "link in",
+        "z": "96df9d1b.b1b87",
+        "g": "fd841af5fa633c6c",
+        "name": "DB_PINLET_MV",
+        "links": [
+            "6d5d958dc430b6df"
+        ],
+        "x": 1005,
+        "y": 480,
+        "wires": [
+            [
+                "3d8cc8da0285d790"
+            ]
+        ]
+    },
+    {
+        "id": "691898dad62fea63",
+        "type": "link in",
+        "z": "96df9d1b.b1b87",
+        "g": "ae5c2301068d039c",
+        "name": "DB_POUTLET_MV",
+        "links": [
+            "3a912f03d0333c28"
+        ],
+        "x": 1005,
+        "y": 580,
+        "wires": [
+            [
+                "e02cd3a2c41ca16b"
+            ]
+        ]
+    },
+    {
+        "id": "4e31446dc0871d3a",
+        "type": "link in",
+        "z": "96df9d1b.b1b87",
+        "d": true,
+        "g": "4bd871c995628f05",
+        "name": "DB_Temperature",
+        "links": [
+            "9eea6ba8d0525abd",
+            "7f8871f127b9fd9e"
+        ],
+        "x": 1005,
+        "y": 680,
+        "wires": [
+            [
+                "d142500b1e04160d"
+            ]
+        ]
+    },
+    {
+        "id": "4bd2e0738c8ec87b",
+        "type": "link in",
+        "z": "96df9d1b.b1b87",
+        "d": true,
+        "g": "4bd871c995628f05",
+        "name": "DB_Humidity",
+        "links": [
+            "f79a6dc7852472c7",
+            "1fc812370ea29976"
+        ],
+        "x": 1005,
+        "y": 780,
+        "wires": [
+            [
+                "39413c247485ef37"
+            ]
+        ]
+    },
+    {
+        "id": "725ca3f3aa9145de",
+        "type": "link in",
+        "z": "96df9d1b.b1b87",
+        "g": "b44fd6f215dda502",
+        "name": "DB_LVPS_V",
+        "links": [
+            "93236d6d7cb7441b"
+        ],
+        "x": 455,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5f2ac9a9e6bd4e5e",
+        "type": "link in",
+        "z": "96df9d1b.b1b87",
+        "g": "b44fd6f215dda502",
+        "name": "DB_LVPS_I",
+        "links": [
+            "b2c8313d919b59fd"
+        ],
+        "x": 465,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bc915a54f65d6a32",
+        "type": "link in",
+        "z": "96df9d1b.b1b87",
+        "g": "b44fd6f215dda502",
+        "name": "DB_LVPS_IDN",
+        "links": [
+            "93aab1ac903ec264"
+        ],
+        "x": 465,
+        "y": 840,
+        "wires": [
+            [
+                "5ebb648af5902a29"
+            ]
+        ]
+    },
+    {
+        "id": "cdcb8fe367885e44",
+        "type": "link in",
+        "z": "96df9d1b.b1b87",
+        "g": "b44fd6f215dda502",
+        "name": "DB_LVPS_P",
+        "links": [
+            "e29adc44bd72fc68"
+        ],
+        "x": 465,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ba3ba12fc123f635",
+        "type": "link in",
+        "z": "96df9d1b.b1b87",
+        "g": "94cdfbd341957212",
+        "name": "DB_HVPS_Ch1_Vmon",
+        "links": [
+            "24962a7c96b74ed5"
+        ],
+        "x": 385,
+        "y": 80,
+        "wires": [
+            [
+                "ace3ac60a7523f3e"
+            ]
+        ]
+    },
+    {
+        "id": "8e385aea24d871fd",
+        "type": "link in",
+        "z": "96df9d1b.b1b87",
+        "g": "94cdfbd341957212",
+        "name": "DB_HVPS_Ch1_Imon",
+        "links": [
+            "2713bc971d61eddd"
+        ],
+        "x": 385,
+        "y": 120,
+        "wires": [
+            [
+                "aed29b848cec4586"
+            ]
+        ]
+    },
+    {
+        "id": "d86b7c667c0d3128",
+        "type": "link in",
+        "z": "96df9d1b.b1b87",
+        "g": "94cdfbd341957212",
+        "name": "DB_HVPS_Ch0_Vmon",
+        "links": [
+            "e726d2a9f8e36e10"
+        ],
+        "x": 385,
+        "y": 200,
+        "wires": [
+            [
+                "4eab7b38739f4f2f"
+            ]
+        ]
+    },
+    {
+        "id": "dcd5c96806412c03",
+        "type": "link in",
+        "z": "96df9d1b.b1b87",
+        "g": "94cdfbd341957212",
+        "name": "DB_HVPS_Ch1_Vset",
+        "links": [
+            "d6c2c54a2cd26fed"
+        ],
+        "x": 385,
+        "y": 160,
+        "wires": [
+            [
+                "5916f88e32280360"
+            ]
+        ]
+    },
+    {
+        "id": "1804c43ffafc591a",
+        "type": "link in",
+        "z": "96df9d1b.b1b87",
+        "g": "94cdfbd341957212",
+        "name": "DB_HVPS_Ch0_Imon",
+        "links": [
+            "0e07ab72b9c9feeb"
+        ],
+        "x": 385,
+        "y": 240,
+        "wires": [
+            [
+                "544d4e24b9042c6c"
+            ]
+        ]
+    },
+    {
+        "id": "01c857da7155c900",
+        "type": "link in",
+        "z": "96df9d1b.b1b87",
+        "g": "94cdfbd341957212",
+        "name": "DB_HVPS_Ch0_Vset",
+        "links": [
+            "071c17820e88c0a3"
+        ],
+        "x": 385,
+        "y": 280,
+        "wires": [
+            [
+                "f25fe622419274f4"
+            ]
+        ]
+    },
+    {
+        "id": "f9860d35c46126bc",
+        "type": "link in",
+        "z": "96df9d1b.b1b87",
+        "g": "94cdfbd341957212",
+        "name": "DB_HVPS_IDN",
+        "links": [
+            "2e3b04096c8c94fd"
+        ],
+        "x": 385,
+        "y": 320,
+        "wires": [
+            [
+                "b0f772f70d813c48"
+            ]
+        ]
+    },
+    {
+        "id": "a37a7bcfa7bf3ae3",
+        "type": "link in",
+        "z": "96df9d1b.b1b87",
+        "g": "dc2c0b3efd5a6d7a",
+        "name": "DB_CH0_tripslog",
+        "links": [
+            "260cdde94195d53f"
+        ],
+        "x": 415,
+        "y": 460,
+        "wires": [
+            [
+                "50d5e7229a686900"
+            ]
+        ]
+    },
+    {
+        "id": "dc39dc86d8e158dd",
+        "type": "link in",
+        "z": "96df9d1b.b1b87",
+        "g": "dc2c0b3efd5a6d7a",
+        "name": "DB_CH1_tripslog",
+        "links": [
+            "deeb14e66bd47f64"
+        ],
+        "x": 415,
+        "y": 520,
+        "wires": [
+            [
+                "83ae8a5bc6d0bc8a"
+            ]
+        ]
+    },
+    {
+        "id": "c2a641a018ab3387",
+        "type": "link in",
+        "z": "96df9d1b.b1b87",
+        "g": "3e6012c9035b0d41",
+        "name": "DB_PT42_MV",
+        "links": [
+            "7c89d9fcf5706089"
+        ],
+        "x": 1005,
+        "y": 80,
+        "wires": [
+            [
+                "4b4d0acb69ab46e4"
+            ]
+        ]
+    },
+    {
+        "id": "bfc00599299d4b61",
+        "type": "change",
+        "z": "96df9d1b.b1b87",
+        "g": "3e6012c9035b0d41",
+        "name": "PT42",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Pctrl",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 1350,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bf38468f420318b4",
+        "type": "change",
+        "z": "96df9d1b.b1b87",
+        "g": "b7753615abb51a3c",
+        "name": "Fctrl_in",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Fctrl_in",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 1350,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4b4d0acb69ab46e4",
+        "type": "subflow:00b08983d01eb26c",
+        "z": "96df9d1b.b1b87",
+        "g": "3e6012c9035b0d41",
+        "name": "",
+        "x": 1150,
+        "y": 80,
+        "wires": [
+            [
+                "bfc00599299d4b61"
+            ]
+        ]
+    },
+    {
+        "id": "5ed09d8c01d31d93",
+        "type": "subflow:00b08983d01eb26c",
+        "z": "96df9d1b.b1b87",
+        "g": "b7753615abb51a3c",
+        "name": "",
+        "x": 1140,
+        "y": 180,
+        "wires": [
+            [
+                "bf38468f420318b4"
+            ]
+        ]
+    },
+    {
+        "id": "1450e2456909c9dd",
+        "type": "change",
+        "z": "96df9d1b.b1b87",
+        "g": "f2834e97a5dced37",
+        "name": "Finlet",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Finlet",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 1370,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "788437bd1fdfeeea",
+        "type": "subflow:00b08983d01eb26c",
+        "z": "96df9d1b.b1b87",
+        "g": "f2834e97a5dced37",
+        "name": "",
+        "x": 1170,
+        "y": 380,
+        "wires": [
+            [
+                "1450e2456909c9dd"
+            ]
+        ]
+    },
+    {
+        "id": "2fc3059df55713f1",
+        "type": "change",
+        "z": "96df9d1b.b1b87",
+        "g": "fd841af5fa633c6c",
+        "name": "Pinlet",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Pinlet",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 1320,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3d8cc8da0285d790",
+        "type": "subflow:00b08983d01eb26c",
+        "z": "96df9d1b.b1b87",
+        "g": "fd841af5fa633c6c",
+        "name": "",
+        "x": 1120,
+        "y": 480,
+        "wires": [
+            [
+                "2fc3059df55713f1"
+            ]
+        ]
+    },
+    {
+        "id": "17135a35a48f4e5c",
+        "type": "change",
+        "z": "96df9d1b.b1b87",
+        "g": "ae5c2301068d039c",
+        "name": "Poutlet",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Poutlet",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 1350,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e02cd3a2c41ca16b",
+        "type": "subflow:00b08983d01eb26c",
+        "z": "96df9d1b.b1b87",
+        "g": "ae5c2301068d039c",
+        "name": "",
+        "x": 1140,
+        "y": 580,
+        "wires": [
+            [
+                "17135a35a48f4e5c"
+            ]
+        ]
+    },
+    {
+        "id": "a3292ace2b2cc12c",
+        "type": "change",
+        "z": "96df9d1b.b1b87",
+        "g": "94cdfbd341957212",
+        "name": "Ch1_Vmon",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Ch1_Vmon",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 730,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ace3ac60a7523f3e",
+        "type": "subflow:00b08983d01eb26c",
+        "z": "96df9d1b.b1b87",
+        "g": "94cdfbd341957212",
+        "name": "",
+        "x": 510,
+        "y": 80,
+        "wires": [
+            [
+                "a3292ace2b2cc12c"
+            ]
+        ]
+    },
+    {
+        "id": "6223df7b4629c4c2",
+        "type": "change",
+        "z": "96df9d1b.b1b87",
+        "g": "94cdfbd341957212",
+        "name": "Ch1_Imon",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Ch1_Imon",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 730,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aed29b848cec4586",
+        "type": "subflow:00b08983d01eb26c",
+        "z": "96df9d1b.b1b87",
+        "g": "94cdfbd341957212",
+        "name": "",
+        "x": 510,
+        "y": 120,
+        "wires": [
+            [
+                "6223df7b4629c4c2"
+            ]
+        ]
+    },
+    {
+        "id": "8b6847bbee83e3ef",
+        "type": "change",
+        "z": "96df9d1b.b1b87",
+        "g": "94cdfbd341957212",
+        "name": "Ch1_Vset",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Ch1_Vset",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 720,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5916f88e32280360",
+        "type": "subflow:00b08983d01eb26c",
+        "z": "96df9d1b.b1b87",
+        "g": "94cdfbd341957212",
+        "name": "",
+        "x": 510,
+        "y": 160,
+        "wires": [
+            [
+                "8b6847bbee83e3ef"
+            ]
+        ]
+    },
+    {
+        "id": "556a942d328df8ef",
+        "type": "change",
+        "z": "96df9d1b.b1b87",
+        "g": "94cdfbd341957212",
+        "name": "Ch0_Vmon",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Ch0_Vmon",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 730,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4eab7b38739f4f2f",
+        "type": "subflow:00b08983d01eb26c",
+        "z": "96df9d1b.b1b87",
+        "g": "94cdfbd341957212",
+        "name": "",
+        "x": 510,
+        "y": 200,
+        "wires": [
+            [
+                "556a942d328df8ef"
+            ]
+        ]
+    },
+    {
+        "id": "3ff5fcffeb8c032b",
+        "type": "change",
+        "z": "96df9d1b.b1b87",
+        "g": "94cdfbd341957212",
+        "name": "Ch0_Imon",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Ch0_Imon",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 730,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "544d4e24b9042c6c",
+        "type": "subflow:00b08983d01eb26c",
+        "z": "96df9d1b.b1b87",
+        "g": "94cdfbd341957212",
+        "name": "",
+        "x": 510,
+        "y": 240,
+        "wires": [
+            [
+                "3ff5fcffeb8c032b"
+            ]
+        ]
+    },
+    {
+        "id": "165356ad0e05c096",
+        "type": "change",
+        "z": "96df9d1b.b1b87",
+        "g": "94cdfbd341957212",
+        "name": "Ch0_Vset",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Ch0_Vset",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 720,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f25fe622419274f4",
+        "type": "subflow:00b08983d01eb26c",
+        "z": "96df9d1b.b1b87",
+        "g": "94cdfbd341957212",
+        "name": "",
+        "x": 510,
+        "y": 280,
+        "wires": [
+            [
+                "165356ad0e05c096"
+            ]
+        ]
+    },
+    {
+        "id": "b0f772f70d813c48",
+        "type": "change",
+        "z": "96df9d1b.b1b87",
+        "g": "94cdfbd341957212",
+        "name": "IDN",
+        "rules": [
+            {
+                "t": "set",
+                "p": "IDN",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 710,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "50d5e7229a686900",
+        "type": "change",
+        "z": "96df9d1b.b1b87",
+        "g": "dc2c0b3efd5a6d7a",
+        "name": "Ch0_trip",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Ch0_trip",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 570,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "83ae8a5bc6d0bc8a",
+        "type": "change",
+        "z": "96df9d1b.b1b87",
+        "g": "dc2c0b3efd5a6d7a",
+        "name": "Ch1_trip",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Ch1_trip",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 570,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "af6ca00786fede99",
+        "type": "subflow:00b08983d01eb26c",
+        "z": "96df9d1b.b1b87",
+        "g": "b44fd6f215dda502",
+        "name": "",
+        "x": 570,
+        "y": 660,
+        "wires": [
+            [
+                "0120b3f552d9cc81"
+            ]
+        ]
+    },
+    {
+        "id": "612b726a3c692250",
+        "type": "subflow:00b08983d01eb26c",
+        "z": "96df9d1b.b1b87",
+        "g": "b44fd6f215dda502",
+        "name": "",
+        "x": 570,
+        "y": 720,
+        "wires": [
+            [
+                "867634e062034e1c"
+            ]
+        ]
+    },
+    {
+        "id": "0f9ef95ce83bf364",
+        "type": "subflow:00b08983d01eb26c",
+        "z": "96df9d1b.b1b87",
+        "g": "b44fd6f215dda502",
+        "name": "",
+        "x": 570,
+        "y": 780,
+        "wires": [
+            [
+                "8f1795d0308b80b9"
+            ]
+        ]
+    },
+    {
+        "id": "0120b3f552d9cc81",
+        "type": "change",
+        "z": "96df9d1b.b1b87",
+        "g": "b44fd6f215dda502",
+        "name": "Voltage",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Voltage",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 740,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "867634e062034e1c",
+        "type": "change",
+        "z": "96df9d1b.b1b87",
+        "g": "b44fd6f215dda502",
+        "name": "Current",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Current",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 740,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8f1795d0308b80b9",
+        "type": "change",
+        "z": "96df9d1b.b1b87",
+        "g": "b44fd6f215dda502",
+        "name": "Power",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Power",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 730,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aa81aeaeb8c22566",
+        "type": "change",
+        "z": "96df9d1b.b1b87",
+        "g": "4bd871c995628f05",
+        "name": "Humidity",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Humidity",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 1350,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5853761eab386959",
+        "type": "change",
+        "z": "96df9d1b.b1b87",
+        "g": "4bd871c995628f05",
+        "name": "Temperature",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Temperature",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 1340,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d142500b1e04160d",
+        "type": "subflow:00b08983d01eb26c",
+        "z": "96df9d1b.b1b87",
+        "g": "4bd871c995628f05",
+        "name": "",
+        "x": 1140,
+        "y": 680,
+        "wires": [
+            [
+                "5853761eab386959"
+            ]
+        ]
+    },
+    {
+        "id": "39413c247485ef37",
+        "type": "subflow:00b08983d01eb26c",
+        "z": "96df9d1b.b1b87",
+        "g": "4bd871c995628f05",
+        "name": "",
+        "x": 1140,
+        "y": 780,
+        "wires": [
+            [
+                "aa81aeaeb8c22566"
+            ]
+        ]
+    },
+    {
+        "id": "5ebb648af5902a29",
+        "type": "change",
+        "z": "96df9d1b.b1b87",
+        "g": "b44fd6f215dda502",
+        "name": "LV_IDN",
+        "rules": [
+            {
+                "t": "set",
+                "p": "LV_IDN",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 740,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0e52dee7340a7842",
+        "type": "link in",
+        "z": "96df9d1b.b1b87",
+        "g": "c3ae906d3998017d",
+        "name": "DB_FCTRL_OUT_MV",
+        "links": [
+            "1ce178dae85e25c3"
+        ],
+        "x": 1005,
+        "y": 280,
+        "wires": [
+            [
+                "27f1c77b141ba53f"
+            ]
+        ]
+    },
+    {
+        "id": "2a22c38f4d969ab4",
+        "type": "change",
+        "z": "96df9d1b.b1b87",
+        "g": "c3ae906d3998017d",
+        "name": "Fctrl_out",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Fctrl_out",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 1350,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "27f1c77b141ba53f",
+        "type": "subflow:00b08983d01eb26c",
+        "z": "96df9d1b.b1b87",
+        "g": "c3ae906d3998017d",
+        "name": "",
+        "x": 1140,
+        "y": 280,
+        "wires": [
+            [
+                "2a22c38f4d969ab4"
+            ]
         ]
     },
     {
@@ -38795,1024 +39882,6 @@
                 "5e3bacca183bead2",
                 "3f761be0a00ad647"
             ]
-        ]
-    },
-    {
-        "id": "af7aa8a.6c2e058",
-        "type": "OPCUA-IIoT-Flex-Server",
-        "z": "96df9d1b.b1b87",
-        "port": "55480",
-        "endpoint": "opc.tcp://127.0.0.1",
-        "acceptExternalCommands": true,
-        "maxAllowedSessionNumber": "",
-        "maxConnectionsPerEndpoint": "",
-        "maxAllowedSubscriptionNumber": "",
-        "alternateHostname": "",
-        "name": "",
-        "showStatusActivities": true,
-        "showErrors": true,
-        "allowAnonymous": true,
-        "individualCerts": false,
-        "isAuditing": false,
-        "serverDiscovery": true,
-        "users": [],
-        "xmlsets": [],
-        "publicCertificateFile": "",
-        "privateCertificateFile": "",
-        "registerServerMethod": "1",
-        "discoveryServerEndpointUrl": "",
-        "capabilitiesForMDNS": "",
-        "maxNodesPerRead": 1000,
-        "maxNodesPerBrowse": 2000,
-        "delayToClose": 1000,
-        "addressSpaceScript": "/* \nThis function is integreated in the \"constructAlarmAddressSpace\" function of the \"address_space.js\" file of the \"node-red-contrib-iiot-opcua\" node.\n    Allows to make a customize OPC UA address space. If you want to add more variables, add it in variables array following the same pattern:\n        {name: 'NameVar', folder: Folderlocation, browseName: 'NameVar', nodeId: 'ns=1;s=VARIdentifier', dataType: DataType.Double/String/Int32/...},\n If yo also want to add a new folder, follow the folders pattern. Be aware with hiercarquy of folders: \n        const NewFolder = namespace.addFolder(SuperiorHierarchyFolder, { browseName: \"FolderName\" });  \n It can also to be added a view to facilitate the visualization of the variables. Follow the views pattern:  \n         { browseName: \"ViewName\", filter: variable => variable.folder === FolderName },\n\nAuthor: Jorge Marqués García\n*/\nfunction constructAlarmAddressSpace(server, addressSpace, eventObjects, done) {\n    const LocalizedText = opcua.LocalizedText;\n    const namespace = addressSpace.getOwnNamespace();\n    const Variant = opcua.Variant;\n    const DataType = opcua.DataType;\n    const flexServerInternals = this;\n\n    coreServer.internalDebugLog('init dynamic address space');\n    node.warn('construct new address space for OPC UA');\n\n    // Define folders\n    const rootFolder = addressSpace.findNode(\"RootFolder\");\n    const mySpace = namespace.addFolder(rootFolder.objects, { browseName: \"IAXO-ZGZ\" });\n    const gasFolder = namespace.addFolder(mySpace, { browseName: \"GAS\" });\n    const GasPressure = namespace.addFolder(gasFolder, { browseName: \"Pressure\" });\n    const GasFlow = namespace.addFolder(gasFolder, { browseName: \"Flow\" });\n    const HVFolder = namespace.addFolder(mySpace, { browseName: \"HV\" });\n    const LVFolder = namespace.addFolder(mySpace, { browseName: \"LV\" });\n    const ROOM = namespace.addFolder(mySpace, { browseName: \"ROOM\" });\n\n    // Define variables\n    const variables = [\n        { name: 'PT42', folder: GasPressure, browseName: 'PT42', nodeId: 'ns=1;s=PT42', dataType: DataType.Double },\n        { name: 'Pinlet', folder: GasPressure, browseName: 'Pinlet', nodeId: 'ns=1;s=Pinlet', dataType: DataType.Double },\n        { name: 'Poutlet', folder: GasPressure, browseName: 'Poutlet', nodeId: 'ns=1;s=Poutlet', dataType: DataType.Double },\n        { name: 'PVacLine', folder: GasPressure, browseName: 'PVacLine', nodeId: 'ns=1;s=PVacLine', dataType: DataType.Double },\n        { name: 'PRpOut', folder: GasPressure, browseName: 'PRpOut', nodeId: 'ns=1;s=PRpOut', dataType: DataType.Double },\n        { name: 'Fctrl', folder: GasFlow, browseName: 'Fctrl', nodeId: 'ns=1;s=Fctrl', dataType: DataType.Double },\n        { name: 'Finlet', folder: GasFlow, browseName: 'Finlet', nodeId: 'ns=1;s=Finlet', dataType: DataType.Double },\n        { name: 'Ch1_Vmon', folder: HVFolder, browseName: 'Ch1_Vmon', nodeId: 'ns=1;s=Ch1_Vmon', dataType: DataType.Double },\n        { name: 'Ch1_Imon', folder: HVFolder, browseName: 'Ch1_Imon', nodeId: 'ns=1;s=Ch1_Imon', dataType: DataType.Double },\n        { name: 'Ch1_Vset', folder: HVFolder, browseName: 'Ch1_Vset', nodeId: 'ns=1;s=Ch1_Vset', dataType: DataType.Double },\n        { name: 'Ch_0_Vmon', folder: HVFolder, browseName: 'Ch_0_Vmon', nodeId: 'ns=1;s=Ch_0_Vmon', dataType: DataType.Double },\n        { name: 'Ch_0_Imon', folder: HVFolder, browseName: 'Ch_0_Imon', nodeId: 'ns=1;s=Ch_0_Imon', dataType: DataType.Double },\n        { name: 'Ch_0_Vset', folder: HVFolder, browseName: 'Ch_0_Vset', nodeId: 'ns=1;s=Ch_0_Vset', dataType: DataType.Double },\n        { name: 'Ch1_trip', folder: HVFolder, browseName: 'Ch1_trip', nodeId: 'ns=1;s=Ch1_trip', dataType: DataType.Double },\n        { name: 'Ch_0_trip', folder: HVFolder, browseName: 'Ch_0_trip', nodeId: 'ns=1;s=Ch_0_trip', dataType: DataType.Double },\n        { name: 'IDN', folder: HVFolder, browseName: 'IDN', nodeId: 'ns=1;s=IDN', dataType: DataType.String },\n        { name: 'Voltage', folder: LVFolder, browseName: 'Voltage', nodeId: 'ns=1;s=Voltage', dataType: DataType.Double },\n        { name: 'Current', folder: LVFolder, browseName: 'Current', nodeId: 'ns=1;s=Current', dataType: DataType.Double },\n        { name: 'Power', folder: LVFolder, browseName: 'Power', nodeId: 'ns=1;s=Power', dataType: DataType.Double },\n        { name: 'LV_IDN', folder: LVFolder, browseName: 'LV_IDN', nodeId: 'ns=1;s=Identifier', dataType: DataType.String },\n        { name: 'Temperature', folder: ROOM, browseName: 'Temperature', nodeId: 'ns=1;s=Temperature', dataType: DataType.Double },\n        { name: 'Humidity', folder: ROOM, browseName: 'Humidity', nodeId: 'ns=1;s=Humidity', dataType: DataType.Double },\n    ];\n\n    // Initialize sandboxFlowContext variables\n    variables.forEach(variable => this.sandboxFlowContext.set(variable.name, variable.dataType === DataType.String ? \"\" : 0));\n\n    // Helper function to add variables\n    const addVariable = (folder, browseName, nodeId, contextVar, dataType) => {\n        namespace.addVariable({\n            organizedBy: folder,\n            browseName,\n            nodeId,\n            dataType,\n            value: {\n                get: () => new Variant({ dataType, value: flexServerInternals.sandboxFlowContext.get(contextVar) }),\n                set: (variant) => {\n                    flexServerInternals.sandboxFlowContext.set(contextVar, variant.value);\n                    return opcua.StatusCodes.Good;\n                }\n            }\n        });\n    };\n\n    // Add variables\n    variables.forEach(variable => {\n        addVariable(variable.folder, variable.browseName, variable.nodeId, variable.name, variable.dataType);\n    });\n\n    // Add views\n    const views = [\n        { browseName: \"Gas-Pressure-Sensors\", filter: variable => variable.folder === GasPressure },\n        { browseName: \"Gas-Flow-Sensors\", filter: variable => variable.folder === GasFlow },\n        { browseName: \"HV-PSU\", filter: variable => variable.folder === HVFolder },\n        { browseName: \"LV-PSU\", filter: variable => variable.folder === LVFolder },\n        { browseName: \"Room-Sensors\", filter: variable => variable.folder === ROOM }\n    ];\n\n    views.forEach(view => {\n        const viewNode = namespace.addView({ organizedBy: rootFolder.views, browseName: view.browseName });\n        variables.filter(view.filter).forEach(variable => {\n            viewNode.addReference({ referenceType: \"Organizes\", nodeId: variable.nodeId });\n        });\n    });\n\n    coreServer.internalDebugLog(\"create dynamic address space done\");\n    node.warn(\"construction of new address space for OPC UA done\");\n\n    done();\n}\n",
-        "x": 170,
-        "y": 280,
-        "wires": [
-            []
-        ],
-        "info": "Create server node with a custom address space. \n\nNot clear yet the security in the node"
-    },
-    {
-        "id": "e49398434c66ccfc",
-        "type": "link in",
-        "z": "96df9d1b.b1b87",
-        "g": "b7753615abb51a3c",
-        "name": "DB_FCTRL_MV",
-        "links": [
-            "a751117c2cdb2b36"
-        ],
-        "x": 1005,
-        "y": 180,
-        "wires": [
-            [
-                "5ed09d8c01d31d93"
-            ]
-        ]
-    },
-    {
-        "id": "b7bc2fe1e61baf98",
-        "type": "link in",
-        "z": "96df9d1b.b1b87",
-        "g": "f2834e97a5dced37",
-        "name": "DB_FINLET_MV",
-        "links": [
-            "d25cc37e410e543e"
-        ],
-        "x": 1005,
-        "y": 280,
-        "wires": [
-            [
-                "788437bd1fdfeeea"
-            ]
-        ]
-    },
-    {
-        "id": "0113a1c9de3705d7",
-        "type": "link in",
-        "z": "96df9d1b.b1b87",
-        "g": "fd841af5fa633c6c",
-        "name": "DB_PINLET_MV",
-        "links": [
-            "6d5d958dc430b6df"
-        ],
-        "x": 1005,
-        "y": 380,
-        "wires": [
-            [
-                "3d8cc8da0285d790"
-            ]
-        ]
-    },
-    {
-        "id": "691898dad62fea63",
-        "type": "link in",
-        "z": "96df9d1b.b1b87",
-        "g": "ae5c2301068d039c",
-        "name": "DB_POUTLET_MV",
-        "links": [
-            "3a912f03d0333c28"
-        ],
-        "x": 1005,
-        "y": 480,
-        "wires": [
-            [
-                "e02cd3a2c41ca16b"
-            ]
-        ]
-    },
-    {
-        "id": "4e31446dc0871d3a",
-        "type": "link in",
-        "z": "96df9d1b.b1b87",
-        "d": true,
-        "g": "4bd871c995628f05",
-        "name": "DB_Temperature",
-        "links": [
-            "9eea6ba8d0525abd",
-            "7f8871f127b9fd9e"
-        ],
-        "x": 1005,
-        "y": 580,
-        "wires": [
-            [
-                "d142500b1e04160d"
-            ]
-        ]
-    },
-    {
-        "id": "4bd2e0738c8ec87b",
-        "type": "link in",
-        "z": "96df9d1b.b1b87",
-        "d": true,
-        "g": "4bd871c995628f05",
-        "name": "DB_Humidity",
-        "links": [
-            "f79a6dc7852472c7",
-            "1fc812370ea29976"
-        ],
-        "x": 1005,
-        "y": 680,
-        "wires": [
-            [
-                "39413c247485ef37"
-            ]
-        ]
-    },
-    {
-        "id": "725ca3f3aa9145de",
-        "type": "link in",
-        "z": "96df9d1b.b1b87",
-        "g": "b44fd6f215dda502",
-        "name": "DB_LVPS_V",
-        "links": [
-            "93236d6d7cb7441b"
-        ],
-        "x": 455,
-        "y": 660,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5f2ac9a9e6bd4e5e",
-        "type": "link in",
-        "z": "96df9d1b.b1b87",
-        "g": "b44fd6f215dda502",
-        "name": "DB_LVPS_I",
-        "links": [
-            "b2c8313d919b59fd"
-        ],
-        "x": 465,
-        "y": 720,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "bc915a54f65d6a32",
-        "type": "link in",
-        "z": "96df9d1b.b1b87",
-        "g": "b44fd6f215dda502",
-        "name": "DB_LVPS_IDN",
-        "links": [
-            "93aab1ac903ec264"
-        ],
-        "x": 465,
-        "y": 840,
-        "wires": [
-            [
-                "5ebb648af5902a29"
-            ]
-        ]
-    },
-    {
-        "id": "cdcb8fe367885e44",
-        "type": "link in",
-        "z": "96df9d1b.b1b87",
-        "g": "b44fd6f215dda502",
-        "name": "DB_LVPS_P",
-        "links": [
-            "e29adc44bd72fc68"
-        ],
-        "x": 465,
-        "y": 780,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ba3ba12fc123f635",
-        "type": "link in",
-        "z": "96df9d1b.b1b87",
-        "g": "94cdfbd341957212",
-        "name": "DB_HVPS_Ch1_Vmon",
-        "links": [
-            "24962a7c96b74ed5"
-        ],
-        "x": 385,
-        "y": 80,
-        "wires": [
-            [
-                "ace3ac60a7523f3e"
-            ]
-        ]
-    },
-    {
-        "id": "8e385aea24d871fd",
-        "type": "link in",
-        "z": "96df9d1b.b1b87",
-        "g": "94cdfbd341957212",
-        "name": "DB_HVPS_Ch1_Imon",
-        "links": [
-            "2713bc971d61eddd"
-        ],
-        "x": 385,
-        "y": 120,
-        "wires": [
-            [
-                "aed29b848cec4586"
-            ]
-        ]
-    },
-    {
-        "id": "d86b7c667c0d3128",
-        "type": "link in",
-        "z": "96df9d1b.b1b87",
-        "g": "94cdfbd341957212",
-        "name": "DB_HVPS_Ch0_Vmon",
-        "links": [
-            "e726d2a9f8e36e10"
-        ],
-        "x": 385,
-        "y": 200,
-        "wires": [
-            [
-                "4eab7b38739f4f2f"
-            ]
-        ]
-    },
-    {
-        "id": "dcd5c96806412c03",
-        "type": "link in",
-        "z": "96df9d1b.b1b87",
-        "g": "94cdfbd341957212",
-        "name": "DB_HVPS_Ch1_Vset",
-        "links": [
-            "d6c2c54a2cd26fed"
-        ],
-        "x": 385,
-        "y": 160,
-        "wires": [
-            [
-                "5916f88e32280360"
-            ]
-        ]
-    },
-    {
-        "id": "1804c43ffafc591a",
-        "type": "link in",
-        "z": "96df9d1b.b1b87",
-        "g": "94cdfbd341957212",
-        "name": "DB_HVPS_Ch0_Imon",
-        "links": [
-            "0e07ab72b9c9feeb"
-        ],
-        "x": 385,
-        "y": 240,
-        "wires": [
-            [
-                "544d4e24b9042c6c"
-            ]
-        ]
-    },
-    {
-        "id": "01c857da7155c900",
-        "type": "link in",
-        "z": "96df9d1b.b1b87",
-        "g": "94cdfbd341957212",
-        "name": "DB_HVPS_Ch0_Vset",
-        "links": [
-            "071c17820e88c0a3"
-        ],
-        "x": 385,
-        "y": 280,
-        "wires": [
-            [
-                "f25fe622419274f4"
-            ]
-        ]
-    },
-    {
-        "id": "f9860d35c46126bc",
-        "type": "link in",
-        "z": "96df9d1b.b1b87",
-        "g": "94cdfbd341957212",
-        "name": "DB_HVPS_IDN",
-        "links": [
-            "2e3b04096c8c94fd"
-        ],
-        "x": 385,
-        "y": 320,
-        "wires": [
-            [
-                "b0f772f70d813c48"
-            ]
-        ]
-    },
-    {
-        "id": "a37a7bcfa7bf3ae3",
-        "type": "link in",
-        "z": "96df9d1b.b1b87",
-        "g": "dc2c0b3efd5a6d7a",
-        "name": "DB_CH0_tripslog",
-        "links": [
-            "260cdde94195d53f"
-        ],
-        "x": 415,
-        "y": 460,
-        "wires": [
-            [
-                "50d5e7229a686900"
-            ]
-        ]
-    },
-    {
-        "id": "dc39dc86d8e158dd",
-        "type": "link in",
-        "z": "96df9d1b.b1b87",
-        "g": "dc2c0b3efd5a6d7a",
-        "name": "DB_CH1_tripslog",
-        "links": [
-            "deeb14e66bd47f64"
-        ],
-        "x": 415,
-        "y": 520,
-        "wires": [
-            [
-                "83ae8a5bc6d0bc8a"
-            ]
-        ]
-    },
-    {
-        "id": "c2a641a018ab3387",
-        "type": "link in",
-        "z": "96df9d1b.b1b87",
-        "g": "3e6012c9035b0d41",
-        "name": "DB_PT42_MV",
-        "links": [
-            "7c89d9fcf5706089"
-        ],
-        "x": 1005,
-        "y": 80,
-        "wires": [
-            [
-                "4b4d0acb69ab46e4"
-            ]
-        ]
-    },
-    {
-        "id": "bfc00599299d4b61",
-        "type": "change",
-        "z": "96df9d1b.b1b87",
-        "g": "3e6012c9035b0d41",
-        "name": "PT42",
-        "rules": [
-            {
-                "t": "set",
-                "p": "PT42",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "x": 1350,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "bf38468f420318b4",
-        "type": "change",
-        "z": "96df9d1b.b1b87",
-        "g": "b7753615abb51a3c",
-        "name": "Fctrl",
-        "rules": [
-            {
-                "t": "set",
-                "p": "Fctrl",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "x": 1340,
-        "y": 180,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4b4d0acb69ab46e4",
-        "type": "subflow:00b08983d01eb26c",
-        "z": "96df9d1b.b1b87",
-        "g": "3e6012c9035b0d41",
-        "name": "",
-        "x": 1150,
-        "y": 80,
-        "wires": [
-            [
-                "bfc00599299d4b61"
-            ]
-        ]
-    },
-    {
-        "id": "5ed09d8c01d31d93",
-        "type": "subflow:00b08983d01eb26c",
-        "z": "96df9d1b.b1b87",
-        "g": "b7753615abb51a3c",
-        "name": "",
-        "x": 1140,
-        "y": 180,
-        "wires": [
-            [
-                "bf38468f420318b4"
-            ]
-        ]
-    },
-    {
-        "id": "1450e2456909c9dd",
-        "type": "change",
-        "z": "96df9d1b.b1b87",
-        "g": "f2834e97a5dced37",
-        "name": "Finlet",
-        "rules": [
-            {
-                "t": "set",
-                "p": "Finlet",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "x": 1370,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "788437bd1fdfeeea",
-        "type": "subflow:00b08983d01eb26c",
-        "z": "96df9d1b.b1b87",
-        "g": "f2834e97a5dced37",
-        "name": "",
-        "x": 1170,
-        "y": 280,
-        "wires": [
-            [
-                "1450e2456909c9dd"
-            ]
-        ]
-    },
-    {
-        "id": "2fc3059df55713f1",
-        "type": "change",
-        "z": "96df9d1b.b1b87",
-        "g": "fd841af5fa633c6c",
-        "name": "Pinlet",
-        "rules": [
-            {
-                "t": "set",
-                "p": "Pinlet",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "x": 1320,
-        "y": 380,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3d8cc8da0285d790",
-        "type": "subflow:00b08983d01eb26c",
-        "z": "96df9d1b.b1b87",
-        "g": "fd841af5fa633c6c",
-        "name": "",
-        "x": 1120,
-        "y": 380,
-        "wires": [
-            [
-                "2fc3059df55713f1"
-            ]
-        ]
-    },
-    {
-        "id": "17135a35a48f4e5c",
-        "type": "change",
-        "z": "96df9d1b.b1b87",
-        "g": "ae5c2301068d039c",
-        "name": "Poutlet",
-        "rules": [
-            {
-                "t": "set",
-                "p": "Poutlet",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "x": 1350,
-        "y": 480,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e02cd3a2c41ca16b",
-        "type": "subflow:00b08983d01eb26c",
-        "z": "96df9d1b.b1b87",
-        "g": "ae5c2301068d039c",
-        "name": "",
-        "x": 1140,
-        "y": 480,
-        "wires": [
-            [
-                "17135a35a48f4e5c"
-            ]
-        ]
-    },
-    {
-        "id": "a3292ace2b2cc12c",
-        "type": "change",
-        "z": "96df9d1b.b1b87",
-        "g": "94cdfbd341957212",
-        "name": "Ch1_Vmon",
-        "rules": [
-            {
-                "t": "set",
-                "p": "Ch1_Vmon",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "x": 730,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ace3ac60a7523f3e",
-        "type": "subflow:00b08983d01eb26c",
-        "z": "96df9d1b.b1b87",
-        "g": "94cdfbd341957212",
-        "name": "",
-        "x": 510,
-        "y": 80,
-        "wires": [
-            [
-                "a3292ace2b2cc12c"
-            ]
-        ]
-    },
-    {
-        "id": "6223df7b4629c4c2",
-        "type": "change",
-        "z": "96df9d1b.b1b87",
-        "g": "94cdfbd341957212",
-        "name": "Ch1_Imon",
-        "rules": [
-            {
-                "t": "set",
-                "p": "Ch1_Imon",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "x": 730,
-        "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "aed29b848cec4586",
-        "type": "subflow:00b08983d01eb26c",
-        "z": "96df9d1b.b1b87",
-        "g": "94cdfbd341957212",
-        "name": "",
-        "x": 510,
-        "y": 120,
-        "wires": [
-            [
-                "6223df7b4629c4c2"
-            ]
-        ]
-    },
-    {
-        "id": "8b6847bbee83e3ef",
-        "type": "change",
-        "z": "96df9d1b.b1b87",
-        "g": "94cdfbd341957212",
-        "name": "Ch1_Vset",
-        "rules": [
-            {
-                "t": "set",
-                "p": "Ch1_Vset",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "x": 720,
-        "y": 160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5916f88e32280360",
-        "type": "subflow:00b08983d01eb26c",
-        "z": "96df9d1b.b1b87",
-        "g": "94cdfbd341957212",
-        "name": "",
-        "x": 510,
-        "y": 160,
-        "wires": [
-            [
-                "8b6847bbee83e3ef"
-            ]
-        ]
-    },
-    {
-        "id": "556a942d328df8ef",
-        "type": "change",
-        "z": "96df9d1b.b1b87",
-        "g": "94cdfbd341957212",
-        "name": "Ch0_Vmon",
-        "rules": [
-            {
-                "t": "set",
-                "p": "Ch0_Vmon",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "x": 730,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4eab7b38739f4f2f",
-        "type": "subflow:00b08983d01eb26c",
-        "z": "96df9d1b.b1b87",
-        "g": "94cdfbd341957212",
-        "name": "",
-        "x": 510,
-        "y": 200,
-        "wires": [
-            [
-                "556a942d328df8ef"
-            ]
-        ]
-    },
-    {
-        "id": "3ff5fcffeb8c032b",
-        "type": "change",
-        "z": "96df9d1b.b1b87",
-        "g": "94cdfbd341957212",
-        "name": "Ch0_Imon",
-        "rules": [
-            {
-                "t": "set",
-                "p": "Ch0_Imon",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "x": 730,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "544d4e24b9042c6c",
-        "type": "subflow:00b08983d01eb26c",
-        "z": "96df9d1b.b1b87",
-        "g": "94cdfbd341957212",
-        "name": "",
-        "x": 510,
-        "y": 240,
-        "wires": [
-            [
-                "3ff5fcffeb8c032b"
-            ]
-        ]
-    },
-    {
-        "id": "165356ad0e05c096",
-        "type": "change",
-        "z": "96df9d1b.b1b87",
-        "g": "94cdfbd341957212",
-        "name": "Ch0_Vset",
-        "rules": [
-            {
-                "t": "set",
-                "p": "Ch0_Vset",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "x": 720,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f25fe622419274f4",
-        "type": "subflow:00b08983d01eb26c",
-        "z": "96df9d1b.b1b87",
-        "g": "94cdfbd341957212",
-        "name": "",
-        "x": 510,
-        "y": 280,
-        "wires": [
-            [
-                "165356ad0e05c096"
-            ]
-        ]
-    },
-    {
-        "id": "b0f772f70d813c48",
-        "type": "change",
-        "z": "96df9d1b.b1b87",
-        "g": "94cdfbd341957212",
-        "name": "IDN",
-        "rules": [
-            {
-                "t": "set",
-                "p": "IDN",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "x": 710,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "50d5e7229a686900",
-        "type": "change",
-        "z": "96df9d1b.b1b87",
-        "g": "dc2c0b3efd5a6d7a",
-        "name": "Ch0_trip",
-        "rules": [
-            {
-                "t": "set",
-                "p": "Ch0_trip",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "x": 570,
-        "y": 460,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "83ae8a5bc6d0bc8a",
-        "type": "change",
-        "z": "96df9d1b.b1b87",
-        "g": "dc2c0b3efd5a6d7a",
-        "name": "Ch1_trip",
-        "rules": [
-            {
-                "t": "set",
-                "p": "Ch1_trip",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "x": 570,
-        "y": 520,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "af6ca00786fede99",
-        "type": "subflow:00b08983d01eb26c",
-        "z": "96df9d1b.b1b87",
-        "g": "b44fd6f215dda502",
-        "name": "",
-        "x": 570,
-        "y": 660,
-        "wires": [
-            [
-                "0120b3f552d9cc81"
-            ]
-        ]
-    },
-    {
-        "id": "612b726a3c692250",
-        "type": "subflow:00b08983d01eb26c",
-        "z": "96df9d1b.b1b87",
-        "g": "b44fd6f215dda502",
-        "name": "",
-        "x": 570,
-        "y": 720,
-        "wires": [
-            [
-                "867634e062034e1c"
-            ]
-        ]
-    },
-    {
-        "id": "0f9ef95ce83bf364",
-        "type": "subflow:00b08983d01eb26c",
-        "z": "96df9d1b.b1b87",
-        "g": "b44fd6f215dda502",
-        "name": "",
-        "x": 570,
-        "y": 780,
-        "wires": [
-            [
-                "8f1795d0308b80b9"
-            ]
-        ]
-    },
-    {
-        "id": "0120b3f552d9cc81",
-        "type": "change",
-        "z": "96df9d1b.b1b87",
-        "g": "b44fd6f215dda502",
-        "name": "Voltage",
-        "rules": [
-            {
-                "t": "set",
-                "p": "Voltage",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "x": 740,
-        "y": 660,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "867634e062034e1c",
-        "type": "change",
-        "z": "96df9d1b.b1b87",
-        "g": "b44fd6f215dda502",
-        "name": "Current",
-        "rules": [
-            {
-                "t": "set",
-                "p": "Current",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "x": 740,
-        "y": 720,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8f1795d0308b80b9",
-        "type": "change",
-        "z": "96df9d1b.b1b87",
-        "g": "b44fd6f215dda502",
-        "name": "Power",
-        "rules": [
-            {
-                "t": "set",
-                "p": "Power",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "x": 730,
-        "y": 780,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "aa81aeaeb8c22566",
-        "type": "change",
-        "z": "96df9d1b.b1b87",
-        "g": "4bd871c995628f05",
-        "name": "Humidity",
-        "rules": [
-            {
-                "t": "set",
-                "p": "Humidity",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "x": 1350,
-        "y": 680,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5853761eab386959",
-        "type": "change",
-        "z": "96df9d1b.b1b87",
-        "g": "4bd871c995628f05",
-        "name": "Temperature",
-        "rules": [
-            {
-                "t": "set",
-                "p": "Temperature",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "x": 1340,
-        "y": 580,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d142500b1e04160d",
-        "type": "subflow:00b08983d01eb26c",
-        "z": "96df9d1b.b1b87",
-        "g": "4bd871c995628f05",
-        "name": "",
-        "x": 1140,
-        "y": 580,
-        "wires": [
-            [
-                "5853761eab386959"
-            ]
-        ]
-    },
-    {
-        "id": "39413c247485ef37",
-        "type": "subflow:00b08983d01eb26c",
-        "z": "96df9d1b.b1b87",
-        "g": "4bd871c995628f05",
-        "name": "",
-        "x": 1140,
-        "y": 680,
-        "wires": [
-            [
-                "aa81aeaeb8c22566"
-            ]
-        ]
-    },
-    {
-        "id": "5ebb648af5902a29",
-        "type": "change",
-        "z": "96df9d1b.b1b87",
-        "g": "b44fd6f215dda502",
-        "name": "LV_IDN",
-        "rules": [
-            {
-                "t": "set",
-                "p": "LV_IDN",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "x": 740,
-        "y": 840,
-        "wires": [
-            []
         ]
     },
     {

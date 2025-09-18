@@ -92,6 +92,13 @@ The code is composed of the following flows:
 	 + Database: *iaxod0slowctldb*
 	 + User: *iaxo*
 	 + Password: *bujaruelo*
+	 
+ - OPC UA
+	 + OPCUA server with nodered variables for communication with Desy
+	 + Database: *opc.tcp://127.0.0.1:55480*
+	 + User: *iaxo*
+	 + Password: *bujaruelo*
+	 
 
  
 
@@ -120,8 +127,5 @@ Credentials are encryptes usin `node-red admin hash-pw`.
 # TODO LIST
 
 - Review Security Flow
-- Add inlet check to SerialPorts
-	+ Bronkhost
-- Solve OPC UA connection
 - Migrate Slack messages to Mattermost
 
