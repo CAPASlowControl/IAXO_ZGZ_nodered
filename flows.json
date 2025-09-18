@@ -657,7 +657,8 @@
             "5edb138768f23c01",
             "e840be78efd00924",
             "b0322ebb68974a20",
-            "cec82aea2c292fb6"
+            "cec82aea2c292fb6",
+            "b3d7b682de3809bb"
         ],
         "x": 54,
         "y": 1879,
@@ -774,7 +775,7 @@
             "7798479edff32034"
         ],
         "x": 1014,
-        "y": 1233,
+        "y": 1393,
         "w": 1072,
         "h": 294
     },
@@ -1660,12 +1661,14 @@
             "391b996bdb7d6683",
             "8e59e835d9d3dbe8",
             "649c87cb073a5657",
-            "2a1819a0d3dfa1f9"
+            "2a1819a0d3dfa1f9",
+            "8a1dd170fc15b025",
+            "f6943f8775986596"
         ],
         "x": 1634,
         "y": 1079,
-        "w": 1162,
-        "h": 709.5,
+        "w": 1352,
+        "h": 722,
         "info": "This group is for making the nodered reestart automatically. \nBe aware using it. For more information about how to use it read NodeRed Docs in NAS. "
     },
     {
@@ -3090,7 +3093,7 @@
             "57f0971a909279ed"
         ],
         "x": 1304,
-        "y": 1259,
+        "y": 1419,
         "w": 402,
         "h": 242
     },
@@ -3758,7 +3761,8 @@
             "87f9bf3e22cdc49b",
             "093c39ae6b491b79",
             "9e7148e4a129f9d6",
-            "7c382906f5f4f84c"
+            "7c382906f5f4f84c",
+            "2e0df5d6b6cc1fda"
         ],
         "x": 2594,
         "y": 299,
@@ -4097,6 +4101,28 @@
         "x": 134,
         "y": 899,
         "w": 412,
+        "h": 142
+    },
+    {
+        "id": "b820c71a2399718a",
+        "type": "group",
+        "z": "ac988ebf643b965c",
+        "name": "Memory Log",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "71238935a792880d",
+            "b08b5715de3846a6",
+            "4dbc10b7f8c7ae1f",
+            "354416f8f304c36c",
+            "5944a50e8740a849",
+            "5c5c0d67ba9335b6",
+            "2ea60f64cbe70db4"
+        ],
+        "x": 974,
+        "y": 1219,
+        "w": 962,
         "h": 142
     },
     {
@@ -6895,8 +6921,9 @@
         "z": "44b2d39a758b1b4b",
         "g": "bdc84199775ddd65",
         "name": "Coerce 12",
-        "func": "var output = msg.payload;\n\noutput = parseInt(output);\n\nif (output > 12) {\n    msg.payload = 12\n} else if (output < 1) {\n    msg.payload = 0\n}\nreturn msg;",
+        "func": "var output = msg.payload;\n\noutput = parseFloat(output);\n\nif (output > 12) {\n    output = 12\n} else if (output < 1) {\n    output = 0\n}\n\nmsg.payload=output;\n\n\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -9330,7 +9357,7 @@
         "z": "44b2d39a758b1b4b",
         "g": "ce609db0e079068e",
         "name": "Coerce 10",
-        "func": "var output = msg.payload;\n\noutput = parseFloat(output);\n\nif (output > 10) {\n    msg.payload = 10\n} else if (output < 0) {\n    msg.payload = 0\n}\n\nmsg.payload = output\n\nreturn msg;",
+        "func": "var output = msg.payload;\n\noutput = parseFloat(output);\n\nif (output > 10) {\n    output = 10\n} else if (output < 0) {\n    output = 0\n}\n\nmsg.payload = output\n\nreturn msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -9356,7 +9383,9 @@
         "x": 3690,
         "y": 340,
         "wires": [
-            []
+            [
+                "2e0df5d6b6cc1fda"
+            ]
         ]
     },
     {
@@ -10413,8 +10442,9 @@
         "z": "44b2d39a758b1b4b",
         "g": "9eface1706386705",
         "name": "BK-ELPRESS Press 2 Meas ",
-        "func": "var output = msg.payload;\nvar hexword;\nvar hexString;\n\noutput = parseInt(output);\nif (output == 0){\n    hexString =0\n}else {\nhexword = Math.round(output*32000/1500);\nhexString = hexword.toString(16);\n}\nconst str1 = ':0603010121';\nconst str2 = str1.concat(hexString);\n\nvar msg = {payload : str2};\n\nreturn [msg];\n\n",
+        "func": "var output = parseInt(msg.payload);\nvar hexword;\nvar hexString;\n\nif (output == 0){\n    hexString =0\n}else {\nhexword = Math.round(output*32000/1500);\nhexString = hexword.toString(16);\n}\nconst str1 = ':0603010121';\nconst str2 = str1.concat(hexString);\n\nvar msg = {payload : str2};\n\nreturn [msg];\n\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -10477,7 +10507,7 @@
         "z": "44b2d39a758b1b4b",
         "g": "bdc84199775ddd65",
         "name": "BK-ELFLOW Flow 2 Meas ",
-        "func": "var output = msg.payload;\nvar hexword;\nvar hexString;\n\n//output = parseInt(output);\noutput = parseFloat(output);\nhexword = Math.round(output*32000/12);\nhexString = hexword.toString(16);\n\nconst str1 = ':0603010121';\nconst str2 = str1.concat(hexString);\n\nvar msg = {payload : str2};\n\nreturn [msg];\n",
+        "func": "var output = parseFloat(msg.payload);\nvar hexword;\nvar hexString;\n\n//output = parseInt(output);\n//output = parseFloat(output);\nhexword = Math.round(output*32000/12);\nhexString = hexword.toString(16);\n\nconst str1 = ':0603010121';\nconst str2 = str1.concat(hexString);\n\nvar msg = {payload : str2};\n\nreturn [msg];\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -10542,7 +10572,7 @@
         "z": "44b2d39a758b1b4b",
         "g": "ce609db0e079068e",
         "name": "BK-ELFLOW-BRKM1 Flow 2 Meas ",
-        "func": "var output = msg.payload;\nvar hexword;\nvar hexString;\n\n//output = parseInt(output);\nhexword = Math.round(output*32000/10);\nhexString = hexword.toString(16);\n\nconst str1 = ':0603010121';\nconst str2 = str1.concat(hexString);\n\nvar msg = {payload : str2};\n\nreturn [msg];\n",
+        "func": "var output = parseFloat(msg.payload);\nvar hexword;\nvar hexString;\n\n//output = parseInt(output);\nhexword = Math.round(output*32000/10);\nhexString = hexword.toString(16);\n\nconst str1 = ':0603010121';\nconst str2 = str1.concat(hexString);\n\nvar msg = {payload : str2};\n\nreturn [msg];\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -11115,10 +11145,28 @@
         "y": 340,
         "wires": [
             [
-                "2b8fce83018c83ce"
+                "2b8fce83018c83ce",
+                "2e0df5d6b6cc1fda"
             ]
         ],
         "l": false
+    },
+    {
+        "id": "2e0df5d6b6cc1fda",
+        "type": "debug",
+        "z": "44b2d39a758b1b4b",
+        "g": "ce609db0e079068e",
+        "name": "debug 422",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3690,
+        "y": 400,
+        "wires": []
     },
     {
         "id": "af0a0ab4.ce281",
@@ -34752,7 +34800,7 @@
         "y": 1740,
         "wires": [
             [
-                "649c87cb073a5657"
+                "8a1dd170fc15b025"
             ],
             [],
             []
@@ -34768,7 +34816,7 @@
         "width": 0,
         "height": 0,
         "name": "",
-        "label": "Memory",
+        "label": "Memory [MB]",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
@@ -34776,8 +34824,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 2710,
-        "y": 1720,
+        "x": 2890,
+        "y": 1700,
         "wires": []
     },
     {
@@ -34927,6 +34975,42 @@
         "wires": []
     },
     {
+        "id": "8a1dd170fc15b025",
+        "type": "function",
+        "z": "e6abd59fcfef321c",
+        "g": "c30986ce38207369",
+        "name": "msg2float",
+        "func": "let cleanInput;\ncleanInput  = msg.payload.trim();\ncleanInput = cleanInput.replace(\"m\", \"\").replace(\"g\",\"E3\");\n\nmsg.payload = parseFloat( cleanInput );\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2680,
+        "y": 1720,
+        "wires": [
+            [
+                "f6943f8775986596",
+                "649c87cb073a5657"
+            ]
+        ]
+    },
+    {
+        "id": "f6943f8775986596",
+        "type": "link out",
+        "z": "e6abd59fcfef321c",
+        "g": "c30986ce38207369",
+        "name": "DB_Memory",
+        "mode": "link",
+        "links": [
+            "5c5c0d67ba9335b6"
+        ],
+        "x": 2855,
+        "y": 1760,
+        "wires": []
+    },
+    {
         "id": "bafb614786782f29",
         "type": "debug",
         "z": "ac988ebf643b965c",
@@ -35063,7 +35147,9 @@
         "x": 150,
         "y": 2140,
         "wires": [
-            []
+            [
+                "b3d7b682de3809bb"
+            ]
         ],
         "info": "Only enable this node when you want to inject a **new table** in the database. Link the node to the new _Create Table <X>_ node.  \n\nFor security, after create the table, delete all links and disable the node. "
     },
@@ -36007,7 +36093,7 @@
         "g": "62882ad4f7217080",
         "name": "",
         "x": 1180,
-        "y": 1300,
+        "y": 1460,
         "wires": [
             [
                 "4f7d3234015e1d43"
@@ -36022,7 +36108,7 @@
         "g": "62882ad4f7217080",
         "name": "",
         "x": 1200,
-        "y": 1400,
+        "y": 1560,
         "wires": [
             [
                 "e9632ada992faf43"
@@ -36046,7 +36132,7 @@
             }
         ],
         "x": 1420,
-        "y": 1460,
+        "y": 1620,
         "wires": [
             [
                 "57f0971a909279ed"
@@ -36070,7 +36156,7 @@
             }
         ],
         "x": 1410,
-        "y": 1400,
+        "y": 1560,
         "wires": [
             [
                 "57f0971a909279ed"
@@ -36094,7 +36180,7 @@
             }
         ],
         "x": 1420,
-        "y": 1300,
+        "y": 1460,
         "wires": [
             [
                 "57f0971a909279ed"
@@ -36125,7 +36211,7 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 1630,
-        "y": 1390,
+        "y": 1550,
         "wires": [
             [
                 "2babc2fb65145c62"
@@ -36152,7 +36238,7 @@
         "payload": "roomconditions",
         "payloadType": "str",
         "x": 1150,
-        "y": 1480,
+        "y": 1640,
         "wires": [
             [
                 "0eee0cfbc82cdbf2"
@@ -36171,7 +36257,7 @@
             "7f8871f127b9fd9e"
         ],
         "x": 1065,
-        "y": 1300,
+        "y": 1460,
         "wires": [
             [
                 "00616a729b1f0cfc"
@@ -36190,7 +36276,7 @@
             "1fc812370ea29976"
         ],
         "x": 1065,
-        "y": 1400,
+        "y": 1560,
         "wires": [
             [
                 "66a898c5e60a6a70"
@@ -38120,7 +38206,7 @@
         "finalize": "",
         "libs": [],
         "x": 1830,
-        "y": 1400,
+        "y": 1560,
         "wires": [
             [
                 "7798479edff32034"
@@ -38140,7 +38226,167 @@
         "rowsPerMsg": "",
         "outputs": 1,
         "x": 2010,
-        "y": 1400,
+        "y": 1560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "71238935a792880d",
+        "type": "change",
+        "z": "ac988ebf643b965c",
+        "g": "b820c71a2399718a",
+        "name": "Set MeasureValue",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "MeasureValue",
+                "tot": "str"
+            }
+        ],
+        "x": 1330,
+        "y": 1260,
+        "wires": [
+            [
+                "b08b5715de3846a6"
+            ]
+        ]
+    },
+    {
+        "id": "b08b5715de3846a6",
+        "type": "join",
+        "z": "ac988ebf643b965c",
+        "g": "b820c71a2399718a",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": true,
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1590,
+        "y": 1320,
+        "wires": [
+            [
+                "2ea60f64cbe70db4"
+            ]
+        ]
+    },
+    {
+        "id": "4dbc10b7f8c7ae1f",
+        "type": "inject",
+        "z": "ac988ebf643b965c",
+        "g": "b820c71a2399718a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "memory",
+        "payloadType": "str",
+        "x": 1120,
+        "y": 1320,
+        "wires": [
+            [
+                "354416f8f304c36c"
+            ]
+        ]
+    },
+    {
+        "id": "354416f8f304c36c",
+        "type": "change",
+        "z": "ac988ebf643b965c",
+        "g": "b820c71a2399718a",
+        "name": "Set TableName",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "TableName",
+                "tot": "str"
+            }
+        ],
+        "x": 1340,
+        "y": 1320,
+        "wires": [
+            [
+                "b08b5715de3846a6"
+            ]
+        ]
+    },
+    {
+        "id": "5944a50e8740a849",
+        "type": "subflow:25852162ecd9b7ac",
+        "z": "ac988ebf643b965c",
+        "g": "b820c71a2399718a",
+        "name": "",
+        "x": 1120,
+        "y": 1260,
+        "wires": [
+            [
+                "71238935a792880d"
+            ]
+        ]
+    },
+    {
+        "id": "5c5c0d67ba9335b6",
+        "type": "link in",
+        "z": "ac988ebf643b965c",
+        "g": "b820c71a2399718a",
+        "name": "DB_POUTLET_MV",
+        "links": [
+            "f6943f8775986596"
+        ],
+        "x": 1015,
+        "y": 1260,
+        "wires": [
+            [
+                "5944a50e8740a849"
+            ]
+        ]
+    },
+    {
+        "id": "2ea60f64cbe70db4",
+        "type": "subflow:4632d49027741f83",
+        "z": "ac988ebf643b965c",
+        "g": "b820c71a2399718a",
+        "name": "",
+        "x": 1790,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "b3d7b682de3809bb",
+        "type": "postgresql",
+        "z": "ac988ebf643b965c",
+        "g": "9a5715b539c43b53",
+        "name": "Create Table Memory",
+        "query": "CREATE TABLE memory (\n    ID SERIAL PRIMARY KEY,\n    timestamp TIMESTAMP(3) DEFAULT CURRENT_TIMESTAMP,\n    MeasurePoint FLOAT\n);",
+        "postgreSQLConfig": "4b3ae4eeb8191fd4",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 240,
+        "y": 2200,
         "wires": [
             []
         ]
