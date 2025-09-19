@@ -34867,9 +34867,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1760,
+        "payload": ":",
+        "payloadType": "str",
+        "x": 1740,
         "y": 1740,
         "wires": [
             [
@@ -38584,6 +38584,7 @@
         "id": "bc915a54f65d6a32",
         "type": "link in",
         "z": "96df9d1b.b1b87",
+        "d": true,
         "g": "b44fd6f215dda502",
         "name": "DB_LVPS_IDN",
         "links": [
@@ -38601,11 +38602,10 @@
         "id": "cdcb8fe367885e44",
         "type": "link in",
         "z": "96df9d1b.b1b87",
+        "d": true,
         "g": "b44fd6f215dda502",
         "name": "DB_LVPS_P",
-        "links": [
-            "e29adc44bd72fc68"
-        ],
+        "links": [],
         "x": 465,
         "y": 780,
         "wires": [
@@ -38738,7 +38738,7 @@
         "g": "dc2c0b3efd5a6d7a",
         "name": "DB_CH0_tripslog",
         "links": [
-            "260cdde94195d53f"
+            "bf1ef1ae831a5c15"
         ],
         "x": 415,
         "y": 460,
@@ -38755,7 +38755,7 @@
         "g": "dc2c0b3efd5a6d7a",
         "name": "DB_CH1_tripslog",
         "links": [
-            "deeb14e66bd47f64"
+            "37e9f943c9a70d01"
         ],
         "x": 415,
         "y": 520,

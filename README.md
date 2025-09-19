@@ -47,7 +47,6 @@ The code is composed of the following flows:
 		 * MZD SMART-MT20
 	 + Oxygen Analyzer
 		 * Southland Sensing EMD-485-X-T-TO2-1x-6
-	 + Recirculation Pressure  (<mark>TBC</mark>)
 	 + Recirculation ElectroValves (<mark>TBC</mark>)
      + Using an Idustrial Shield PLC (Arduino based)
 	 + SerialPort `dev/PLC_REC` 
@@ -58,7 +57,9 @@ The code is composed of the following flows:
  	 + CAEN N1471HA
 	 + SerialPort `dev/CAEN0` 
 
- - RIGOL  (<mark>TBC</mark>)
+ - RIGOL
+     + Voltage supply for DAQ (feminos and TCM boards)
+	 + RIGOL DP811A
 	 + SerialPort `dev/RIGOL` 
 
  - BGA 
@@ -95,9 +96,12 @@ The code is composed of the following flows:
 	 
  - OPC UA
 	 + OPCUA server with nodered variables for communication with Desy
-	 + Database: *opc.tcp://127.0.0.1:55480*
-	 + User: *iaxo*
-	 + Password: *bujaruelo*
+		 * The OPCUA server does not run if nodered is run with the user `iaxo`. But run correctly with users `root` or `desy`. 
+		 * Therefore Nodered is run with user `root` in the `systemctl`service.
+	 + Server: *opc.tcp://127.0.0.1:55480*
+	 + There is an user with ports open for connection from Desy:
+		 * user: *desy*
+		 * password: *BbyIAXOCollab2025!*
 	 
 
  
