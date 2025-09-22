@@ -128,6 +128,23 @@ Credentials are set in `settings.js`.
 
 Credentials are encryptes usin `node-red admin hash-pw`.
 
+## Operation Notes
+
+The operational conditions may vary with the experiment.
+
+Notes for operation on 22/09/2025:
+
+* Pressure: ~1.4 bar
+* Flow:
+	- 2 l/h
+	- up to 6 l/h during filling
+* BGA:
+	- 99% Ze - 1% Isobutane (depending on the mixture)
+* Humidity
+	- 7 ppm
+
+
+
 # TODO LIST
 
 - Review Security Flow
