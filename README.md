@@ -71,21 +71,17 @@ The code is composed of the following flows:
  - Security
  	- <mark>TBC</mark>: Security code should be checked carefully.
  	- The Errors Shutdown ElectroValves and CAEN PS.
- 	- Two modes are stablished: *normal* with security and *filling*with relaxed security.
-	- <ins>Normal Mode</ins>:
+ 	- Two modes are stablished: *normal* with security and *filling* with relaxed security.
+	- <ins>Filling Mode</ins>:
+ 		1. Outlet Pressure Sensor (Thyracont) Connection Error 
 		1. OverPressure: Outlet Pressure (Thyracont) > 1450 mBa
 	- <ins>Normal Mode: </ins>
-		1. OverPressure:
-			- Outlet Pressure (Thyracont) > 1450 mBar
-		    - Outlet Measure (Thyracont)> SetPoint (BRKPR)+ 40 mBar
-		1. Gass Loss:
-			- Flow out Meas (BRKM1)> Flow In Set (BRKFL)
-				- Additionally if `(pout (thyracont)-100) < pcrl (BRKPR))` gas preesure error.
-		1. Pressure
-			- Thyracont Connection error (<mark>TBC</mark>)
-			- Pressure error `(Pin (PLC)> (PCtrl_out (BRKPR)+60))`then error.
-		1. Flow
-			- OutFlow Connection error. (<mark>TBC</mark>) 
+		1. Outlet Pressure Sensor (Thyracont) Connection Error 
+		1. Outlet Flow Controller (BRKM1) Connection Error 
+		1. Outlet Pressure (Thyracont) > 1450 mBar
+		1. Outlet Pres. Measure (Thyracont)> SetPoint (BRKPR)+ 40 mBar
+	 	1. Flow out Meas (BRKM1)< Flow In Set (BRKFL)-0.1
+ 	
 
 
  - Database
@@ -156,6 +152,7 @@ Notes for operation on 22/09/2025:
 # TODO LIST
 
 - Review Security Flow
+	+ Check operation with new security flow.
 - Migrate Slack messages to Mattermost
 - Check baud rates:
 	- CAEN: 115200 (maximum)
