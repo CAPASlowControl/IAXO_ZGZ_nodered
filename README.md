@@ -102,7 +102,6 @@ The code is composed of the following flows:
 	 + There is an user with ports open for connection from Desy:
 		 * user: *desy*
 		 * password: *BbyIAXOCollab2025!*
-	 
 
  
 
@@ -142,11 +141,24 @@ Notes for operation on 22/09/2025:
 	- 99% Ze - 1% Isobutane (depending on the mixture)
 * Humidity
 	- 7 ppm
-
-
+* LVPS (RIGOL):
+ 	-  5.2 V / 5.5 A
+* HVPS (CAEN):
+	- 850 V cathode
+	- 350 V mesh
+	- 0.2 uA Current (trip)
+	
+- Shutdown Gas:
+	+ Close EV
+	+ Close manual valves after EV
+	+ Close Inlet and outlet valves
 
 # TODO LIST
 
 - Review Security Flow
 - Migrate Slack messages to Mattermost
+- Check baud rates:
+	- CAEN: 115200 (maximum)
+	- Bronkhorst: 38400 (default)
+	- Others (Rigol, BGA, PLC_REC) at 9600
 
