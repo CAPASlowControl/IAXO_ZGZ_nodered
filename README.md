@@ -73,11 +73,8 @@ The code is composed of the following flows:
  	- The Errors Shutdown ElectroValves and CAEN PS.
  	- Two modes are stablished: *normal* with security and *filling* with relaxed security.
 	- <ins>Filling Mode</ins>:
- 		1. Outlet Pressure Sensor (Thyracont) Connection Error 
 		1. OverPressure: Outlet Pressure (Thyracont) > 1450 mBa
 	- <ins>Normal Mode: </ins>
-		1. Outlet Pressure Sensor (Thyracont) Connection Error 
-		1. Outlet Flow Controller (BRKM1) Connection Error 
 		1. Outlet Pressure (Thyracont) > 1450 mBar
 		1. Outlet Pres. Measure (Thyracont)> SetPoint (BRKPR)+ 40 mBar
 	 	1. Flow out Meas (BRKM1)< Flow In Set (BRKFL)-0.1

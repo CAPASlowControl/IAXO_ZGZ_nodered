@@ -162,7 +162,11 @@
             {
                 "x": 380,
                 "y": 220,
-                "wires": []
+                "wires": [
+                    {
+                        "id": "2a3149b4984556c5"
+                    }
+                ]
             }
         ],
         "out": [],
@@ -4145,30 +4149,6 @@
         "h": 122
     },
     {
-        "id": "ad3224392925e5f8",
-        "type": "group",
-        "z": "e6abd59fcfef321c",
-        "name": "Thyracont (Detector Sensor) LOSS",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "5c0b1fbd21292675",
-            "76b404e337b008d9",
-            "36b780b9919f237e",
-            "af419e1ef2784f5a",
-            "c324da707374e9ea",
-            "1a34fd67d692cf9e",
-            "b907794da66fb89d",
-            "efa8b3bb36065420"
-        ],
-        "x": 1174,
-        "y": 59,
-        "w": 1032,
-        "h": 262,
-        "info": "The idea is to recieve an alert if the USB port lost connection, with the trigger wait we can filter if is a puntual error or the port connection has been fully lost; \nIn the switch node you must select the name choosen in the serial rules of the PC: /etc/udev/rules.d/99-sub-serial.rules"
-    },
-    {
         "id": "60316e2978b3a504",
         "type": "group",
         "z": "e6abd59fcfef321c",
@@ -4181,8 +4161,8 @@
             "1f784f1c37a97693",
             "0adf8f1e4ff57ef4"
         ],
-        "x": 1274,
-        "y": 1279,
+        "x": 1254,
+        "y": 759,
         "w": 352,
         "h": 122
     },
@@ -4205,8 +4185,8 @@
             "bfbb4283419fa63f",
             "7353e36f8496ecb1"
         ],
-        "x": 1194,
-        "y": 559,
+        "x": 1214,
+        "y": 59,
         "w": 1052,
         "h": 202
     },
@@ -4236,33 +4216,9 @@
             "9338c6a303ccfa70",
             "933c0663d4f8dd57"
         ],
-        "x": 1204,
-        "y": 779,
+        "x": 1224,
+        "y": 279,
         "w": 1412,
-        "h": 202
-    },
-    {
-        "id": "c3c9a545b5489088",
-        "type": "group",
-        "z": "e6abd59fcfef321c",
-        "name": "Out FCtrl",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "fe99890cb3962bc5",
-            "42c812403223bc17",
-            "bcf1c944ceb1fc41",
-            "939bb48894384d7c",
-            "5640c7a6a0811cda",
-            "6609469755a75599",
-            "a8e24b7010a082c2",
-            "0fb4c2d8e6517aae",
-            "1f531b14684fc9da"
-        ],
-        "x": 1164,
-        "y": 339,
-        "w": 922,
         "h": 202
     },
     {
@@ -4291,8 +4247,8 @@
             "3811136b6a0c9e95",
             "514e2bdc045a2b35"
         ],
-        "x": 1214,
-        "y": 1019,
+        "x": 1234,
+        "y": 519,
         "w": 1492,
         "h": 202
     },
@@ -10060,7 +10016,7 @@
         "z": "44b2d39a758b1b4b",
         "g": "290e074640fdfb17",
         "name": "BK-ELPRESS Meas 2 Press",
-        "func": "const filtertext = msg.payload.trim();\nvar instr = filtertext;\nvar ininfo = instr.substr(11,4);\nvar dec = parseInt(ininfo, 16);\nvar floatv = (dec*1500/32000).toFixed(2);\n\nvar msg1 = {payload : instr};\nvar msg2 = {payload : ininfo};\nvar msg3 = {payload : dec};\nvar msg4 = {payload : floatv};\n\n\nreturn  msg4;",
+        "func": "let filtertext = msg.payload.trim();\nlet instr = filtertext;\nlet ininfo = instr.substr(11,4);\nlet dec = parseInt(ininfo, 16);\nlet floatv = (dec*1500/32000).toFixed(2);\n\nmsg.payload = floatv;\n\nreturn  msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -10082,7 +10038,7 @@
         "z": "44b2d39a758b1b4b",
         "g": "9eface1706386705",
         "name": "BK-ELPRESS Meas 2 Press",
-        "func": "const filtertext = msg.payload.trim();\nvar instr = filtertext;\nvar ininfo = instr.substr(11,4);\nvar dec = parseInt(ininfo, 16);\nvar floatv = (dec*1500/32000).toFixed(2);\n\nvar msg1 = {payload : instr};\nvar msg2 = {payload : ininfo};\nvar msg3 = {payload : dec};\nvar msg4 = {payload : floatv};\n\n\nreturn  msg4;",
+        "func": "let filtertext = msg.payload.trim();\nlet instr = filtertext;\nlet ininfo = instr.substr(11,4);\nlet dec = parseInt(ininfo, 16);\nlet floatv = (dec*1500/32000).toFixed(2);\n\nmsg.payload = floatv;\n\n\nreturn  msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -10104,7 +10060,7 @@
         "z": "44b2d39a758b1b4b",
         "g": "9eface1706386705",
         "name": "BK-ELPRESS Press 2 Meas ",
-        "func": "var output = parseInt(msg.payload);\nvar hexword;\nvar hexString;\n\nif (output == 0){\n    hexString =0\n}else {\nhexword = Math.round(output*32000/1500);\nhexString = hexword.toString(16);\n}\n// Format string for small values\nif (hexString.length==3){\n    hexString='0'+hexString;\n}else if (hexString.length==2){\n    hexString='00'+hexString;\n}else if (hexString.length==1){\n    hexString='000'+hexString;\n}\n\n\nconst str1 = ':0603010121';\nconst str2 = str1.concat(hexString);\n\nvar msg = {payload : str2};\n\nreturn [msg];\n\n",
+        "func": "var output = parseInt(msg.payload);\nvar hexword;\nvar hexString;\n\nhexword = Math.round(output*32000/1500);\nhexString = hexword.toString(16); //String in Hex\nhexString = hexString.padStart(4,\"0\") // Format string for small values\n\nconst str1 = ':0603010121';\nconst str2 = str1.concat(hexString);\n\nmsg.payload = str2;\n\nreturn [msg];\n\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -10125,7 +10081,7 @@
         "z": "44b2d39a758b1b4b",
         "g": "086f2900f4b49b1b",
         "name": "BK-ELFLOW Meas 2 Flow",
-        "func": "const filtertext = msg.payload.trim();\nvar instr = filtertext;\nvar ininfo = instr.substr(11,4);\nvar dec = parseInt(ininfo, 16);\nvar floatv = (dec*12/32000).toFixed(2);\n\nvar msg1 = {payload : instr};\nvar msg2 = {payload : ininfo};\nvar msg3 = {payload : dec};\nvar msg4 = {payload : floatv};\n\n\nreturn  msg4;",
+        "func": "let filtertext = msg.payload.trim();\nlet instr = filtertext;\nlet ininfo = instr.substr(11,4);\nlet dec = parseInt(ininfo, 16);\nlet floatv = (dec*12/32000).toFixed(2);\n\nmsg.payload = floatv;\n\nreturn  msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -10147,7 +10103,7 @@
         "z": "44b2d39a758b1b4b",
         "g": "bdc84199775ddd65",
         "name": "BK-ELFLOW Meas 2 Flow",
-        "func": "const filtertext = msg.payload.trim();\nvar instr = filtertext;\nvar ininfo = instr.substr(11,4);\nvar dec = parseInt(ininfo, 16);\nvar floatv = (dec*12/32000).toFixed(2);\n\nvar msg1 = {payload : instr};\nvar msg2 = {payload : ininfo};\nvar msg3 = {payload : dec};\nvar msg4 = {payload : floatv};\n\n\nreturn  msg4;",
+        "func": "let filtertext = msg.payload.trim();\nlet instr = filtertext;\nlet ininfo = instr.substr(11,4);\nlet dec = parseInt(ininfo, 16);\nlet floatv = (dec*12/32000).toFixed(2);\n\nmsg.payload = floatv;\n\nreturn  msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -10169,7 +10125,7 @@
         "z": "44b2d39a758b1b4b",
         "g": "bdc84199775ddd65",
         "name": "BK-ELFLOW Flow 2 Meas ",
-        "func": "var output = parseFloat(msg.payload);\nvar hexword;\nvar hexString;\n\n//output = parseInt(output);\n//output = parseFloat(output);\nhexword = Math.round(output*32000/12);\nhexString = hexword.toString(16);\n\n// Format string for small values\nif (hexString.length==3){\n    hexString='0'+hexString;\n}else if (hexString.length==2){\n    hexString='00'+hexString;\n}else if (hexString.length==1){\n    hexString='000'+hexString;\n}\n\nconst str1 = ':0603010121';\nconst str2 = str1.concat(hexString);\n\n\n\nvar msg = {payload : str2};\n\nreturn [msg];\n",
+        "func": "var output = parseFloat(msg.payload);\nvar hexword;\nvar hexString;\n\n//output = parseInt(output);\n//output = parseFloat(output);\nhexword = Math.round(output*32000/12);\nhexString = hexword.toString(16); //String in Hex\nhexString = hexString.padStart(4,\"0\") // Format string for small values\n\n\nconst str1 = ':0603010121';\nconst str2 = str1.concat(hexString);\n\nmsg.payload = str2;\n\nreturn [msg];\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -10190,7 +10146,7 @@
         "z": "44b2d39a758b1b4b",
         "g": "81cf755189fae457",
         "name": "BK-ELFLOW-BRKM1 Meas 2 Flow",
-        "func": "const filtertext = msg.payload.trim();\nvar instr = filtertext;\nvar ininfo = instr.substr(11,4);\nvar dec = parseInt(ininfo, 16);\nvar floatv = (dec*10/32000).toFixed(2);\n\nvar msg1 = {payload : instr};\nvar msg2 = {payload : ininfo};\nvar msg3 = {payload : dec};\nvar msg4 = {payload : floatv};\n\n\nreturn  msg4;\n",
+        "func": "let filtertext = msg.payload.trim();\nlet instr = filtertext;\nlet ininfo = instr.substr(11,4);\nlet dec = parseInt(ininfo, 16);\nlet floatv = (dec*10/32000).toFixed(2);\n\nmsg.payload = floatv;\n\nreturn  msg;\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -10212,7 +10168,7 @@
         "z": "44b2d39a758b1b4b",
         "g": "ce609db0e079068e",
         "name": "BK-ELFLOW-BRKM1 Meas 2 Flow",
-        "func": "const filtertext = msg.payload.trim();\nvar instr = filtertext;\nvar ininfo = instr.substr(11,4);\nvar dec = parseInt(ininfo, 16);\nvar floatv = (dec*10/32000).toFixed(2);\n\nvar msg1 = {payload : instr};\nvar msg2 = {payload : ininfo};\nvar msg3 = {payload : dec};\nvar msg4 = {payload : floatv};\n\n\nreturn  msg4;\n",
+        "func": "let filtertext = msg.payload.trim();\nlet instr = filtertext;\nlet ininfo = instr.substr(11,4);\nlet dec = parseInt(ininfo, 16);\nlet floatv = (dec*10/32000).toFixed(2);\n\nmsg.payload = floatv;\n\nreturn  msg;\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -10234,7 +10190,7 @@
         "z": "44b2d39a758b1b4b",
         "g": "ce609db0e079068e",
         "name": "BK-ELFLOW-BRKM1 Flow 2 Meas ",
-        "func": "var output = parseFloat(msg.payload);\nvar hexword;\nvar hexString;\n\n//output = parseInt(output);\nhexword = Math.round(output*32000/10);\nhexString = hexword.toString(16);\n// Format string for small values\nif (hexString.length==3){\n    hexString='0'+hexString;\n}else if (hexString.length==2){\n    hexString='00'+hexString;\n}else if (hexString.length==1){\n    hexString='000'+hexString;\n}\n\n\nconst str1 = ':0603010121';\nconst str2 = str1.concat(hexString);\n\nvar msg = {payload : str2};\n\nreturn [msg];\n",
+        "func": "var output = parseFloat(msg.payload);\nvar hexword;\nvar hexString;\n\n//output = parseInt(output);\nhexword = Math.round(output*32000/10);\nhexString = hexword.toString(16); //String in Hex\nhexString = hexString.padStart(4,\"0\") // Format string for small values\n\n\n\nconst str1 = ':0603010121';\nconst str2 = str1.concat(hexString);\n\nmsg.payload = str2;\n\nreturn [msg];\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -10255,7 +10211,7 @@
         "z": "44b2d39a758b1b4b",
         "g": "3a77962e97d02525",
         "name": "BK-EL M Meas 2 Flow",
-        "func": "//var output = msg.payload.split(\"\\t\");\nvar instr = msg.payload;\nvar ininfo = instr.substr(12,4);\nvar dec = parseInt(ininfo, 16);\nvar floatv = (dec*60/32000).toFixed(2);\n\nvar msg1 = {payload : instr};\nvar msg2 = {payload : ininfo};\nvar msg3 = {payload : dec};\nvar msg4 = {payload : floatv};\n\n\nreturn  msg4;",
+        "func": "//var output = msg.payload.split(\"\\t\");\nlet instr = msg.payload.trim();\nlet ininfo = instr.substr(12,4);\nlet dec = parseInt(ininfo, 16);\nlet floatv = (dec*60/32000).toFixed(2);\n\nmsg.payload = floatv;\n\nreturn  msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -21444,7 +21400,7 @@
         "type": "debug",
         "z": "597a964f0bbfa0ad",
         "g": "9402e87e2d69f43a",
-        "name": "BGA_Con",
+        "name": "PLC_Con",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -35935,119 +35891,6 @@
         ]
     },
     {
-        "id": "5c0b1fbd21292675",
-        "type": "function",
-        "z": "e6abd59fcfef321c",
-        "g": "ad3224392925e5f8",
-        "name": "Thyracont Message",
-        "func": "msg.payload = \"ERROR: Thyracont Connection Error. Closing EV & CAEN PS\";\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1730,
-        "y": 240,
-        "wires": [
-            [
-                "76b404e337b008d9",
-                "36b780b9919f237e",
-                "af419e1ef2784f5a",
-                "efa8b3bb36065420"
-            ]
-        ]
-    },
-    {
-        "id": "76b404e337b008d9",
-        "type": "link out",
-        "z": "e6abd59fcfef321c",
-        "g": "ad3224392925e5f8",
-        "name": "Thyracont_SecConnError",
-        "mode": "link",
-        "links": [
-            "3fd98e13ec0e96e1",
-            "ee86686f0a36c34e"
-        ],
-        "x": 1945,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "36b780b9919f237e",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "ad3224392925e5f8",
-        "name": "Thryracon_Error",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2025,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "af419e1ef2784f5a",
-        "type": "ui_text",
-        "z": "e6abd59fcfef321c",
-        "g": "ad3224392925e5f8",
-        "group": "fc24faefe9659c1f",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "No Pressure Out Sensor (Thy)",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 2050,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "c324da707374e9ea",
-        "type": "link in",
-        "z": "e6abd59fcfef321c",
-        "g": "ad3224392925e5f8",
-        "name": "Thyracont_Conn_In",
-        "links": [
-            "19a4deb8694a1254"
-        ],
-        "x": 1215,
-        "y": 240,
-        "wires": [
-            [
-                "b907794da66fb89d"
-            ]
-        ]
-    },
-    {
-        "id": "1a34fd67d692cf9e",
-        "type": "link in",
-        "z": "e6abd59fcfef321c",
-        "g": "ad3224392925e5f8",
-        "name": "Reset SecMessages",
-        "links": [
-            "0adf8f1e4ff57ef4"
-        ],
-        "x": 1845,
-        "y": 280,
-        "wires": [
-            [
-                "af419e1ef2784f5a"
-            ]
-        ]
-    },
-    {
         "id": "fe756e7efdd04d18",
         "type": "inject",
         "z": "e6abd59fcfef321c",
@@ -36070,8 +35913,8 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 1390,
-        "y": 1360,
+        "x": 1370,
+        "y": 840,
         "wires": [
             []
         ]
@@ -36097,8 +35940,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1410,
-        "y": 1320,
+        "x": 1390,
+        "y": 800,
         "wires": [
             [
                 "0adf8f1e4ff57ef4"
@@ -36119,35 +35962,9 @@
             "a8e24b7010a082c2",
             "514e2bdc045a2b35"
         ],
-        "x": 1585,
-        "y": 1320,
+        "x": 1565,
+        "y": 800,
         "wires": []
-    },
-    {
-        "id": "b907794da66fb89d",
-        "type": "switch",
-        "z": "e6abd59fcfef321c",
-        "g": "ad3224392925e5f8",
-        "name": "status.fill==red",
-        "property": "status.fill",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "red",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 1520,
-        "y": 240,
-        "wires": [
-            [
-                "5c0b1fbd21292675"
-            ]
-        ]
     },
     {
         "id": "be535f08413db52a",
@@ -36158,8 +35975,8 @@
         "links": [
             "3a912f03d0333c28"
         ],
-        "x": 1235,
-        "y": 680,
+        "x": 1255,
+        "y": 180,
         "wires": [
             [
                 "7353e36f8496ecb1"
@@ -36179,8 +35996,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1560,
-        "y": 680,
+        "x": 1580,
+        "y": 180,
         "wires": [
             [
                 "bfbb4283419fa63f"
@@ -36201,8 +36018,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2120,
-        "y": 680,
+        "x": 2140,
+        "y": 180,
         "wires": []
     },
     {
@@ -36211,8 +36028,8 @@
         "z": "e6abd59fcfef321c",
         "g": "3371663af1f1de31",
         "name": "",
-        "x": 2130,
-        "y": 640,
+        "x": 2150,
+        "y": 140,
         "wires": []
     },
     {
@@ -36226,8 +36043,8 @@
             "3fd98e13ec0e96e1",
             "ee86686f0a36c34e"
         ],
-        "x": 2085,
-        "y": 600,
+        "x": 2105,
+        "y": 100,
         "wires": []
     },
     {
@@ -36239,8 +36056,8 @@
         "links": [
             "3a912f03d0333c28"
         ],
-        "x": 1245,
-        "y": 840,
+        "x": 1265,
+        "y": 340,
         "wires": [
             [
                 "686085d789395654"
@@ -36267,8 +36084,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1690,
-        "y": 840,
+        "x": 1710,
+        "y": 340,
         "wires": [
             [
                 "86d70d40f3b28981"
@@ -36295,8 +36112,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1680,
-        "y": 900,
+        "x": 1700,
+        "y": 400,
         "wires": [
             [
                 "86d70d40f3b28981"
@@ -36325,8 +36142,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 1860,
-        "y": 880,
+        "x": 1880,
+        "y": 380,
         "wires": [
             [
                 "93fc69f897dab21c"
@@ -36346,8 +36163,8 @@
         "initialize": "// El código añadido aquí se ejecutará una vez\n// cuando el nodo es iniciado.\n\n/**let slack =  \"Inizializating\"\n\nlet cutoff = {\n    B0: 0,\n}\nmsg1  = {payload :  slack};\nmsg2 = {payload : cutoff};\nreturn [msg1, msg2];\n**/",
         "finalize": "",
         "libs": [],
-        "x": 2060,
-        "y": 880,
+        "x": 2080,
+        "y": 380,
         "wires": [
             [
                 "f679080be3754adc"
@@ -36363,23 +36180,13 @@
         "links": [
             "cd96bed145c6a88f"
         ],
-        "x": 1245,
-        "y": 900,
+        "x": 1265,
+        "y": 400,
         "wires": [
             [
                 "1943c58d4cbb995f"
             ]
         ]
-    },
-    {
-        "id": "efa8b3bb36065420",
-        "type": "subflow:757e68c1a00513c0",
-        "z": "e6abd59fcfef321c",
-        "g": "ad3224392925e5f8",
-        "name": "",
-        "x": 2050,
-        "y": 160,
-        "wires": []
     },
     {
         "id": "c11897a3ed3f5e4e",
@@ -36399,8 +36206,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 2080,
-        "y": 720,
+        "x": 2100,
+        "y": 220,
         "wires": []
     },
     {
@@ -36412,8 +36219,8 @@
         "links": [
             "0adf8f1e4ff57ef4"
         ],
-        "x": 1955,
-        "y": 720,
+        "x": 1975,
+        "y": 220,
         "wires": [
             [
                 "c11897a3ed3f5e4e"
@@ -36438,8 +36245,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1350,
-        "y": 840,
+        "x": 1370,
+        "y": 340,
         "wires": [
             [
                 "9338c6a303ccfa70"
@@ -36464,8 +36271,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1350,
-        "y": 900,
+        "x": 1370,
+        "y": 400,
         "wires": [
             [
                 "933c0663d4f8dd57"
@@ -36490,8 +36297,8 @@
         "drop": true,
         "allowrate": false,
         "outputs": 1,
-        "x": 1790,
-        "y": 680,
+        "x": 1810,
+        "y": 180,
         "wires": [
             [
                 "bdcd76b1512c81e6",
@@ -36539,8 +36346,8 @@
         "drop": true,
         "allowrate": false,
         "outputs": 1,
-        "x": 2270,
-        "y": 880,
+        "x": 2290,
+        "y": 380,
         "wires": [
             [
                 "e0884e173257ede3",
@@ -36564,8 +36371,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2480,
-        "y": 900,
+        "x": 2500,
+        "y": 400,
         "wires": []
     },
     {
@@ -36574,8 +36381,8 @@
         "z": "e6abd59fcfef321c",
         "g": "a70189ee31b47ab6",
         "name": "",
-        "x": 2500,
-        "y": 860,
+        "x": 2520,
+        "y": 360,
         "wires": []
     },
     {
@@ -36589,8 +36396,8 @@
             "3fd98e13ec0e96e1",
             "ee86686f0a36c34e"
         ],
-        "x": 2435,
-        "y": 820,
+        "x": 2455,
+        "y": 320,
         "wires": []
     },
     {
@@ -36611,8 +36418,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 2460,
-        "y": 940,
+        "x": 2480,
+        "y": 440,
         "wires": []
     },
     {
@@ -36624,8 +36431,8 @@
         "links": [
             "0adf8f1e4ff57ef4"
         ],
-        "x": 2325,
-        "y": 940,
+        "x": 2345,
+        "y": 440,
         "wires": [
             [
                 "504043829f8f83d9"
@@ -36653,8 +36460,8 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 1500,
-        "y": 840,
+        "x": 1520,
+        "y": 340,
         "wires": [
             [
                 "f8e9511d6b3cfaf7"
@@ -36682,8 +36489,8 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 1500,
-        "y": 900,
+        "x": 1520,
+        "y": 400,
         "wires": [
             [
                 "4a61c2d049b4b2ce"
@@ -36711,162 +36518,13 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 1360,
-        "y": 680,
+        "x": 1380,
+        "y": 180,
         "wires": [
             [
                 "36c34ce22f4881a6"
             ]
         ]
-    },
-    {
-        "id": "fe99890cb3962bc5",
-        "type": "function",
-        "z": "e6abd59fcfef321c",
-        "g": "c3c9a545b5489088",
-        "name": "BRKM1 message",
-        "func": "msg.payload = \"ERROR: BRKM1 Connection Error. Closing EV & CAEN\";\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1690,
-        "y": 440,
-        "wires": [
-            [
-                "bcf1c944ceb1fc41",
-                "939bb48894384d7c",
-                "6609469755a75599",
-                "0fb4c2d8e6517aae"
-            ]
-        ]
-    },
-    {
-        "id": "bcf1c944ceb1fc41",
-        "type": "debug",
-        "z": "e6abd59fcfef321c",
-        "g": "c3c9a545b5489088",
-        "name": "BRKM1_Error",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1940,
-        "y": 460,
-        "wires": []
-    },
-    {
-        "id": "42c812403223bc17",
-        "type": "link in",
-        "z": "e6abd59fcfef321c",
-        "g": "c3c9a545b5489088",
-        "name": "BRKM1_Conn_In",
-        "links": [
-            "98621a0e37ae3637"
-        ],
-        "x": 1205,
-        "y": 440,
-        "wires": [
-            [
-                "1f531b14684fc9da"
-            ]
-        ]
-    },
-    {
-        "id": "939bb48894384d7c",
-        "type": "ui_text",
-        "z": "e6abd59fcfef321c",
-        "g": "c3c9a545b5489088",
-        "group": "fc24faefe9659c1f",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "No Out Fctrl (BRKM1)",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 1960,
-        "y": 500,
-        "wires": []
-    },
-    {
-        "id": "5640c7a6a0811cda",
-        "type": "switch",
-        "z": "e6abd59fcfef321c",
-        "g": "c3c9a545b5489088",
-        "name": "status.fill==red",
-        "property": "status.fill",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "red",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 1500,
-        "y": 440,
-        "wires": [
-            [
-                "fe99890cb3962bc5"
-            ]
-        ]
-    },
-    {
-        "id": "6609469755a75599",
-        "type": "subflow:757e68c1a00513c0",
-        "z": "e6abd59fcfef321c",
-        "g": "c3c9a545b5489088",
-        "name": "",
-        "x": 1950,
-        "y": 420,
-        "wires": []
-    },
-    {
-        "id": "a8e24b7010a082c2",
-        "type": "link in",
-        "z": "e6abd59fcfef321c",
-        "g": "c3c9a545b5489088",
-        "name": "Reset SecMessages",
-        "links": [
-            "0adf8f1e4ff57ef4"
-        ],
-        "x": 1815,
-        "y": 500,
-        "wires": [
-            [
-                "939bb48894384d7c"
-            ]
-        ]
-    },
-    {
-        "id": "0fb4c2d8e6517aae",
-        "type": "link out",
-        "z": "e6abd59fcfef321c",
-        "g": "c3c9a545b5489088",
-        "name": "BRKM1_SecConnError",
-        "mode": "link",
-        "links": [
-            "3fd98e13ec0e96e1",
-            "ee86686f0a36c34e"
-        ],
-        "x": 1905,
-        "y": 380,
-        "wires": []
     },
     {
         "id": "303d6f81d83ee7a9",
@@ -36878,8 +36536,8 @@
             "3e86acf3b73d06f9",
             "b9cb3b097fad8f3e"
         ],
-        "x": 1255,
-        "y": 1140,
+        "x": 1275,
+        "y": 640,
         "wires": [
             [
                 "0edbb6608c169e3b"
@@ -36906,8 +36564,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1730,
-        "y": 1100,
+        "x": 1750,
+        "y": 600,
         "wires": [
             [
                 "4ca65ca9d7c45615"
@@ -36934,8 +36592,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1730,
-        "y": 1140,
+        "x": 1750,
+        "y": 640,
         "wires": [
             [
                 "4ca65ca9d7c45615"
@@ -36964,8 +36622,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 1930,
-        "y": 1120,
+        "x": 1950,
+        "y": 620,
         "wires": [
             [
                 "0f48c8c64cf0ec4a"
@@ -36985,8 +36643,8 @@
         "initialize": "// El código añadido aquí se ejecutará una vez\n// cuando el nodo es iniciado.\n\n/**let slack =  \"Inizializating\"\n\nlet cutoff = {\n    B0: 0,\n}\nmsg1  = {payload :  slack};\nmsg2 = {payload : cutoff};\nreturn [msg1, msg2];\n**/",
         "finalize": "",
         "libs": [],
-        "x": 2110,
-        "y": 1120,
+        "x": 2130,
+        "y": 620,
         "wires": [
             [
                 "9823d19c926f89fd"
@@ -37004,8 +36662,8 @@
             "869f64d652d9a098",
             "86a70e99114ebd25"
         ],
-        "x": 1255,
-        "y": 1100,
+        "x": 1275,
+        "y": 600,
         "wires": [
             [
                 "5cfcd4b21793f74f"
@@ -37033,8 +36691,8 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 1560,
-        "y": 1140,
+        "x": 1580,
+        "y": 640,
         "wires": [
             [
                 "073a1939cf1526f7"
@@ -37062,8 +36720,8 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 1560,
-        "y": 1100,
+        "x": 1580,
+        "y": 600,
         "wires": [
             [
                 "3803a08da2f07451"
@@ -37088,8 +36746,8 @@
         "drop": true,
         "allowrate": false,
         "outputs": 1,
-        "x": 2300,
-        "y": 1120,
+        "x": 2320,
+        "y": 620,
         "wires": [
             [
                 "3811136b6a0c9e95",
@@ -37117,8 +36775,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1380,
-        "y": 1100,
+        "x": 1400,
+        "y": 600,
         "wires": [
             [
                 "bc7c49e3b9054f94"
@@ -37143,8 +36801,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1380,
-        "y": 1140,
+        "x": 1400,
+        "y": 640,
         "wires": [
             [
                 "9a59ded7f6e6c845"
@@ -37165,8 +36823,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2580,
-        "y": 1140,
+        "x": 2600,
+        "y": 640,
         "wires": []
     },
     {
@@ -37175,8 +36833,8 @@
         "z": "e6abd59fcfef321c",
         "g": "765db78399ea7c11",
         "name": "",
-        "x": 2590,
-        "y": 1100,
+        "x": 2610,
+        "y": 600,
         "wires": []
     },
     {
@@ -37190,8 +36848,8 @@
             "3fd98e13ec0e96e1",
             "ee86686f0a36c34e"
         ],
-        "x": 2525,
-        "y": 1060,
+        "x": 2545,
+        "y": 560,
         "wires": []
     },
     {
@@ -37212,8 +36870,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 2560,
-        "y": 1180,
+        "x": 2580,
+        "y": 680,
         "wires": []
     },
     {
@@ -37225,37 +36883,11 @@
         "links": [
             "0adf8f1e4ff57ef4"
         ],
-        "x": 2415,
-        "y": 1180,
+        "x": 2435,
+        "y": 680,
         "wires": [
             [
                 "9172e1de4cc4f1e4"
-            ]
-        ]
-    },
-    {
-        "id": "1f531b14684fc9da",
-        "type": "switch",
-        "z": "e6abd59fcfef321c",
-        "g": "c3c9a545b5489088",
-        "name": "OperationMode",
-        "property": "OperationMode",
-        "propertyType": "global",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "num"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 1320,
-        "y": 440,
-        "wires": [
-            [
-                "5640c7a6a0811cda"
             ]
         ]
     },
