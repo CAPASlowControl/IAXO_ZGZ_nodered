@@ -115,6 +115,13 @@ The serialport configuration is included in `/etc/udev/rules.d/99-sub-serial.rul
 
 For information on the serial ports  `devadm info --name=/dev/<device>`
 
+For reloading the rules:
+
+```
+	sudo udevadm control --reload-rules
+  	sudo udevadm trigger
+```
+
 ## Credentials
 Credentials are set in `settings.js`.
 
@@ -140,7 +147,9 @@ Notes for operation on 22/09/2025:
 	- 850 V cathode
 	- 350 V mesh
 	- 0.2 uA Current (trip)
-	
+		+ If IMRange=LOW the maximum current is 2 $\mu$A.
+		+ If IMRange=HIGH the maximum current is 20 $\mu$A
+	 	
 - Shutdown Gas:
 	+ Close EV
 	+ Close manual valves after EV
@@ -151,8 +160,11 @@ Notes for operation on 22/09/2025:
 - Review Security Flow
 	+ Check operation with new security flow.
 - Migrate Slack messages to Mattermost
+- Check Reconnection:
+	+ The serial devices sometimes reconnect and sometimes not.
 - Check baud rates:
 	- CAEN: 115200 (maximum)
 	- Bronkhorst: 38400 (default)
 	- Others (Rigol, BGA, PLC_REC) at 9600
+
 

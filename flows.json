@@ -2080,9 +2080,9 @@
             "1de5df5f18cdf707",
             "9d23a43a21531366",
             "83072aa1653f5381",
+            "e89335a946116b29",
             "fd9d724c91f1cef9",
-            "bd849fc87a2d453a",
-            "e89335a946116b29"
+            "6aab736e4192fa8c"
         ],
         "x": 14,
         "y": 59,
@@ -2170,7 +2170,7 @@
             "6aa73b776dadcc15"
         ],
         "x": 1174,
-        "y": 3999,
+        "y": 4239,
         "w": 952,
         "h": 422
     },
@@ -2366,12 +2366,13 @@
             "bd63248daad72fbc",
             "6d5ae9858abc4d82",
             "bfece3bfdbb9afc3",
-            "2731060c2f215a1f"
+            "2731060c2f215a1f",
+            "ab8240cb3b877c60"
         ],
-        "x": 1614,
+        "x": 1608,
         "y": 2279,
-        "w": 1392,
-        "h": 582
+        "w": 1398,
+        "h": 828
     },
     {
         "id": "b7d565f8c1d444b8",
@@ -2412,15 +2413,15 @@
             "689974d9476688e0",
             "0e404677079b3988",
             "f29ca1ab30626d6a",
-            "98bb80fa5d3eabdc",
             "154f7afd2998d479",
             "086ea84fa8398ab8",
-            "4b930b0cc37b62dd"
+            "4b930b0cc37b62dd",
+            "7e9acba0fde7b116"
         ],
         "x": 74,
         "y": 2259,
         "w": 1472,
-        "h": 622
+        "h": 848
     },
     {
         "id": "8088887ce4770582",
@@ -2445,8 +2446,8 @@
             "36be0bfaf8b92ceb",
             "75858ff4f2a5d8ba"
         ],
-        "x": 134,
-        "y": 3659,
+        "x": 174,
+        "y": 3899,
         "w": 1392,
         "h": 242
     },
@@ -2473,10 +2474,10 @@
             "c4d2ac0150ee4f38",
             "17736d631af503c8"
         ],
-        "x": 1674,
-        "y": 3659,
+        "x": 1714,
+        "y": 3899,
         "w": 1302,
-        "h": 322
+        "h": 282
     },
     {
         "id": "07c53d664d84e7fa",
@@ -2511,7 +2512,7 @@
             "b83ed9f6a0fe3c09"
         ],
         "x": 1694,
-        "y": 2939,
+        "y": 3159,
         "w": 1412,
         "h": 682
     },
@@ -2590,7 +2591,7 @@
             "1a225c5112c3e1c1"
         ],
         "x": 134,
-        "y": 2919,
+        "y": 3199,
         "w": 1452,
         "h": 662
     },
@@ -4253,6 +4254,68 @@
         "h": 202
     },
     {
+        "id": "7e9acba0fde7b116",
+        "type": "group",
+        "z": "dbbc30b9f0aa1118",
+        "g": "b7d565f8c1d444b8",
+        "name": "IMRange (Manual Setting)",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "61fb8d0e6282c505",
+            "223e46516a7d073c",
+            "e63c1e153696b3bd",
+            "143cad27719c1cc7",
+            "65179d8d97bf4208",
+            "5e052986ac377a40",
+            "3cd406eb2e8c499d",
+            "dbd0c211c3af1bc6",
+            "d8ab0dbdfd9e8169",
+            "14760146aa42feb3",
+            "1485e2168b7b2742",
+            "71210c692302cfce",
+            "37691e10028c3806",
+            "2f11cb6af9401e98",
+            "9167e7f912dd4c66"
+        ],
+        "x": 114,
+        "y": 2859,
+        "w": 1092,
+        "h": 222
+    },
+    {
+        "id": "ab8240cb3b877c60",
+        "type": "group",
+        "z": "dbbc30b9f0aa1118",
+        "g": "8d2486c82c9da527",
+        "name": "IMRange (Manual Setting)",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "fda10aa367a8b6d9",
+            "d0006d87282427fc",
+            "2ba1ba29ba36538f",
+            "d1e76c110aa98577",
+            "6b4c318c9f4f258d",
+            "f9baf028fa1694a1",
+            "31d07b2ae4f2363c",
+            "8699951f00ddec36",
+            "3f1b8217c858fd7b",
+            "8cfc7fdbd839161d",
+            "3f39602647bef0fc",
+            "cd69946ea56de8ae",
+            "4f63e7351ef4de87",
+            "7fe2754692027120",
+            "b75ed0748b6d61f3"
+        ],
+        "x": 1634,
+        "y": 2859,
+        "w": 1092,
+        "h": 222
+    },
+    {
         "id": "67018f7a.7112a8",
         "type": "ui_base",
         "theme": {
@@ -5191,7 +5254,7 @@
         "z": "dbbc30b9f0aa1118",
         "name": "spacer",
         "group": "a611b3b4.f109b",
-        "order": 30,
+        "order": 28,
         "width": "6",
         "height": "1"
     },
@@ -5201,7 +5264,7 @@
         "z": "dbbc30b9f0aa1118",
         "name": "spacer",
         "group": "c439a095b5188232",
-        "order": 30,
+        "order": 28,
         "width": "0",
         "height": "0"
     },
@@ -5211,9 +5274,9 @@
         "z": "dbbc30b9f0aa1118",
         "name": "spacer",
         "group": "c439a095b5188232",
-        "order": 20,
-        "width": "0",
-        "height": "0"
+        "order": 18,
+        "width": "6",
+        "height": "1"
     },
     {
         "id": "7edac58bc113e485",
@@ -5221,9 +5284,9 @@
         "z": "dbbc30b9f0aa1118",
         "name": "spacer",
         "group": "a611b3b4.f109b",
-        "order": 20,
-        "width": "0",
-        "height": "0"
+        "order": 18,
+        "width": "6",
+        "height": "1"
     },
     {
         "id": "553e827a7470e4c0",
@@ -25177,7 +25240,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "8d2486c82c9da527",
         "group": "c439a095b5188232",
-        "order": 8,
+        "order": 6,
         "width": 0,
         "height": 0,
         "name": "Ch1 VMON",
@@ -25195,7 +25258,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "8d2486c82c9da527",
         "group": "c439a095b5188232",
-        "order": 9,
+        "order": 7,
         "width": 0,
         "height": 0,
         "name": "Ch1 IMON",
@@ -25216,7 +25279,7 @@
         "label": "VSET [V]",
         "tooltip": "",
         "group": "a611b3b4.f109b",
-        "order": 10,
+        "order": 8,
         "width": "4",
         "height": "1",
         "passthru": false,
@@ -25264,7 +25327,7 @@
         "label": "ISET [uA]",
         "tooltip": "",
         "group": "a611b3b4.f109b",
-        "order": 16,
+        "order": 14,
         "width": "4",
         "height": "1",
         "passthru": false,
@@ -25312,7 +25375,7 @@
         "label": "VSET [V]",
         "tooltip": "",
         "group": "c439a095b5188232",
-        "order": 10,
+        "order": 8,
         "width": "4",
         "height": "1",
         "passthru": false,
@@ -25360,7 +25423,7 @@
         "label": "ISET [uA]",
         "tooltip": "",
         "group": "c439a095b5188232",
-        "order": 16,
+        "order": 14,
         "width": "4",
         "height": "1",
         "passthru": false,
@@ -25439,7 +25502,7 @@
         "label": "V Ramp [V/s]",
         "tooltip": "",
         "group": "a611b3b4.f109b",
-        "order": 12,
+        "order": 10,
         "width": "4",
         "height": "1",
         "passthru": false,
@@ -25487,7 +25550,7 @@
         "label": "Trip Time [s]",
         "tooltip": "",
         "group": "a611b3b4.f109b",
-        "order": 18,
+        "order": 16,
         "width": "4",
         "height": "1",
         "passthru": false,
@@ -25535,7 +25598,7 @@
         "label": "V Ramp [V/s]",
         "tooltip": "",
         "group": "c439a095b5188232",
-        "order": 12,
+        "order": 10,
         "width": "4",
         "height": "1",
         "passthru": false,
@@ -25562,7 +25625,7 @@
         "label": "Trip Time [s]",
         "tooltip": "",
         "group": "c439a095b5188232",
-        "order": 18,
+        "order": 16,
         "width": "4",
         "height": "1",
         "passthru": false,
@@ -25672,7 +25735,7 @@
         "name": "",
         "serial": "a4fc396f.153838",
         "x": 750,
-        "y": 3160,
+        "y": 3440,
         "wires": [
             [
                 "93ed3743a0f11dc9"
@@ -25693,7 +25756,7 @@
         "finalize": "",
         "libs": [],
         "x": 410,
-        "y": 3160,
+        "y": 3440,
         "wires": [
             [
                 "1a225c5112c3e1c1"
@@ -25705,7 +25768,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "c1c3e686be456b09",
-        "order": 5,
+        "order": 3,
         "group": "a611b3b4.f109b",
         "width": 0,
         "height": 0,
@@ -25729,7 +25792,7 @@
         "showGlow": true,
         "name": "Channel Enabled 00",
         "x": 1460,
-        "y": 2960,
+        "y": 3240,
         "wires": []
     },
     {
@@ -25746,7 +25809,7 @@
         "finalize": "",
         "libs": [],
         "x": 1180,
-        "y": 3180,
+        "y": 3460,
         "wires": [
             [
                 "8666560c1e4c82a5",
@@ -25799,7 +25862,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "c1c3e686be456b09",
-        "order": 6,
+        "order": 4,
         "group": "a611b3b4.f109b",
         "width": "3",
         "height": "1",
@@ -25823,7 +25886,7 @@
         "showGlow": true,
         "name": "Ramp Up",
         "x": 1420,
-        "y": 3060,
+        "y": 3340,
         "wires": []
     },
     {
@@ -25831,7 +25894,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "c1c3e686be456b09",
-        "order": 7,
+        "order": 5,
         "group": "a611b3b4.f109b",
         "width": "3",
         "height": "1",
@@ -25855,7 +25918,7 @@
         "showGlow": true,
         "name": "Ramp Down",
         "x": 1430,
-        "y": 3100,
+        "y": 3380,
         "wires": []
     },
     {
@@ -25863,7 +25926,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "c1c3e686be456b09",
-        "order": 31,
+        "order": 32,
         "group": "a611b3b4.f109b",
         "width": "3",
         "height": "1",
@@ -25887,7 +25950,7 @@
         "showGlow": true,
         "name": "OverCurrent",
         "x": 1430,
-        "y": 3140,
+        "y": 3420,
         "wires": []
     },
     {
@@ -25895,7 +25958,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "c1c3e686be456b09",
-        "order": 32,
+        "order": 33,
         "group": "a611b3b4.f109b",
         "width": "3",
         "height": "1",
@@ -25919,7 +25982,7 @@
         "showGlow": true,
         "name": "OverVoltage",
         "x": 1430,
-        "y": 3180,
+        "y": 3460,
         "wires": []
     },
     {
@@ -25927,7 +25990,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "c1c3e686be456b09",
-        "order": 33,
+        "order": 34,
         "group": "a611b3b4.f109b",
         "width": "3",
         "height": "1",
@@ -25951,7 +26014,7 @@
         "showGlow": true,
         "name": "UnderVoltage",
         "x": 1440,
-        "y": 3220,
+        "y": 3500,
         "wires": []
     },
     {
@@ -25959,7 +26022,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "c1c3e686be456b09",
-        "order": 34,
+        "order": 35,
         "group": "a611b3b4.f109b",
         "width": "3",
         "height": "1",
@@ -25983,7 +26046,7 @@
         "showGlow": true,
         "name": "VMax Limitting",
         "x": 1440,
-        "y": 3260,
+        "y": 3540,
         "wires": []
     },
     {
@@ -25991,7 +26054,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "c1c3e686be456b09",
-        "order": 35,
+        "order": 36,
         "group": "a611b3b4.f109b",
         "width": "3",
         "height": "1",
@@ -26015,7 +26078,7 @@
         "showGlow": true,
         "name": "Current Trip",
         "x": 1430,
-        "y": 3300,
+        "y": 3580,
         "wires": []
     },
     {
@@ -26023,7 +26086,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "c1c3e686be456b09",
-        "order": 36,
+        "order": 37,
         "group": "a611b3b4.f109b",
         "width": "3",
         "height": "1",
@@ -26047,7 +26110,7 @@
         "showGlow": true,
         "name": "OverPower",
         "x": 1430,
-        "y": 3340,
+        "y": 3620,
         "wires": []
     },
     {
@@ -26055,7 +26118,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "c1c3e686be456b09",
-        "order": 37,
+        "order": 38,
         "group": "a611b3b4.f109b",
         "width": "3",
         "height": "1",
@@ -26079,7 +26142,7 @@
         "showGlow": true,
         "name": "Temperature Fault",
         "x": 1450,
-        "y": 3380,
+        "y": 3660,
         "wires": []
     },
     {
@@ -26087,7 +26150,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "c1c3e686be456b09",
-        "order": 38,
+        "order": 39,
         "group": "a611b3b4.f109b",
         "width": "3",
         "height": "1",
@@ -26111,7 +26174,7 @@
         "showGlow": true,
         "name": "Disabled Channel",
         "x": 1450,
-        "y": 3420,
+        "y": 3700,
         "wires": []
     },
     {
@@ -26119,7 +26182,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "c1c3e686be456b09",
-        "order": 39,
+        "order": 40,
         "group": "a611b3b4.f109b",
         "width": "3",
         "height": "1",
@@ -26143,7 +26206,7 @@
         "showGlow": true,
         "name": "Front KILL",
         "x": 1430,
-        "y": 3460,
+        "y": 3740,
         "wires": []
     },
     {
@@ -26151,7 +26214,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "c1c3e686be456b09",
-        "order": 40,
+        "order": 41,
         "group": "a611b3b4.f109b",
         "width": "3",
         "height": "1",
@@ -26175,7 +26238,7 @@
         "showGlow": true,
         "name": "Front ILock",
         "x": 1430,
-        "y": 3500,
+        "y": 3780,
         "wires": []
     },
     {
@@ -26184,7 +26247,7 @@
         "z": "dbbc30b9f0aa1118",
         "d": true,
         "g": "c1c3e686be456b09",
-        "order": 41,
+        "order": 42,
         "group": "a611b3b4.f109b",
         "width": "3",
         "height": "1",
@@ -26208,7 +26271,7 @@
         "showGlow": true,
         "name": "Channel Enabled 13",
         "x": 1380,
-        "y": 3540,
+        "y": 3820,
         "wires": []
     },
     {
@@ -26378,7 +26441,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "8d2486c82c9da527",
         "group": "c439a095b5188232",
-        "order": 1,
+        "order": 29,
         "width": 0,
         "height": 0,
         "name": "Ch1 Polarity",
@@ -26484,7 +26547,7 @@
         "label": "Max V [V]",
         "tooltip": "",
         "group": "a611b3b4.f109b",
-        "order": 14,
+        "order": 12,
         "width": "4",
         "height": "1",
         "passthru": false,
@@ -26547,7 +26610,7 @@
         "label": "Max V [V]",
         "tooltip": "",
         "group": "c439a095b5188232",
-        "order": 14,
+        "order": 12,
         "width": "4",
         "height": "1",
         "passthru": false,
@@ -26610,7 +26673,7 @@
         "label": "Trip Recover It's",
         "tooltip": "",
         "group": "a611b3b4.f109b",
-        "order": 24,
+        "order": 22,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -26621,7 +26684,7 @@
         "className": "",
         "topicType": "msg",
         "x": 1330,
-        "y": 4320,
+        "y": 4560,
         "wires": [
             [
                 "afc4ac0f04b8bff5"
@@ -26642,7 +26705,7 @@
         "finalize": "",
         "libs": [],
         "x": 1540,
-        "y": 4320,
+        "y": 4560,
         "wires": [
             [
                 "798fa7735d2c0f53"
@@ -26658,7 +26721,7 @@
         "label": "Trip Recover It's",
         "tooltip": "",
         "group": "c439a095b5188232",
-        "order": 24,
+        "order": 22,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -26669,7 +26732,7 @@
         "className": "",
         "topicType": "msg",
         "x": 1330,
-        "y": 4380,
+        "y": 4620,
         "wires": [
             [
                 "f15dd40a93c69f0e"
@@ -26690,7 +26753,7 @@
         "finalize": "",
         "libs": [],
         "x": 1540,
-        "y": 4380,
+        "y": 4620,
         "wires": [
             [
                 "798fa7735d2c0f53"
@@ -26703,7 +26766,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "fac509440efcf32a",
         "group": "a611b3b4.f109b",
-        "order": 25,
+        "order": 23,
         "width": 0,
         "height": 0,
         "name": "Ch0 Trip Recover It's Act",
@@ -26716,7 +26779,7 @@
         "fontSize": "",
         "color": "#000000",
         "x": 1990,
-        "y": 4320,
+        "y": 4560,
         "wires": []
     },
     {
@@ -26733,7 +26796,7 @@
         "finalize": "",
         "libs": [],
         "x": 1740,
-        "y": 4320,
+        "y": 4560,
         "wires": [
             [
                 "020a39b9ac161330"
@@ -26751,7 +26814,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "fac509440efcf32a",
         "group": "c439a095b5188232",
-        "order": 25,
+        "order": 23,
         "width": 0,
         "height": 0,
         "name": "Ch1 Trip Recover It's Act",
@@ -26760,7 +26823,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 1990,
-        "y": 4380,
+        "y": 4620,
         "wires": []
     },
     {
@@ -26769,7 +26832,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "8088887ce4770582",
         "group": "a611b3b4.f109b",
-        "order": 26,
+        "order": 24,
         "width": 0,
         "height": 0,
         "name": "Trip Counter",
@@ -26777,8 +26840,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1150,
-        "y": 3700,
+        "x": 1190,
+        "y": 3940,
         "wires": []
     },
     {
@@ -26788,7 +26851,7 @@
         "g": "8088887ce4770582",
         "name": "Reset Trip Counter",
         "group": "a611b3b4.f109b",
-        "order": 28,
+        "order": 26,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -26802,8 +26865,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 630,
-        "y": 3740,
+        "x": 670,
+        "y": 3980,
         "wires": [
             [
                 "f140514b118afc72"
@@ -26817,8 +26880,8 @@
         "g": "8088887ce4770582",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 1250,
-        "y": 3780,
+        "x": 1290,
+        "y": 4020,
         "wires": [
             [
                 "36be0bfaf8b92ceb"
@@ -26838,8 +26901,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 820,
-        "y": 3740,
+        "x": 860,
+        "y": 3980,
         "wires": [
             [
                 "8ee4dd596eb0524b"
@@ -26870,7 +26933,7 @@
         "finalize": "",
         "libs": [],
         "x": 1540,
-        "y": 4080,
+        "y": 4320,
         "wires": [
             [
                 "cbb04c2469b77414"
@@ -26890,7 +26953,7 @@
         "finalize": "",
         "libs": [],
         "x": 1540,
-        "y": 4140,
+        "y": 4380,
         "wires": [
             [
                 "b65ecf95084c3c8d"
@@ -26928,7 +26991,7 @@
             "8ba3054a2af8c3a8"
         ],
         "x": 1405,
-        "y": 3000,
+        "y": 3280,
         "wires": []
     },
     {
@@ -26937,7 +27000,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "8088887ce4770582",
         "group": "a611b3b4.f109b",
-        "order": 27,
+        "order": 25,
         "width": 0,
         "height": 0,
         "name": "Historic Trip Counter",
@@ -26945,8 +27008,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1180,
-        "y": 3740,
+        "x": 1220,
+        "y": 3980,
         "wires": []
     },
     {
@@ -26956,7 +27019,7 @@
         "g": "8088887ce4770582",
         "name": "Reset Historic Trip Counter",
         "group": "a611b3b4.f109b",
-        "order": 29,
+        "order": 27,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -26970,8 +27033,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 600,
-        "y": 3800,
+        "x": 640,
+        "y": 4040,
         "wires": [
             [
                 "f140514b118afc72"
@@ -26983,7 +27046,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "fac509440efcf32a",
-        "order": 23,
+        "order": 21,
         "group": "a611b3b4.f109b",
         "width": 0,
         "height": 0,
@@ -27007,7 +27070,7 @@
         "showGlow": true,
         "name": "Active Trip Auto Recover ",
         "x": 1970,
-        "y": 4080,
+        "y": 4320,
         "wires": []
     },
     {
@@ -27024,7 +27087,7 @@
         "finalize": "",
         "libs": [],
         "x": 1760,
-        "y": 4080,
+        "y": 4320,
         "wires": [
             [
                 "dbbad6dc323f1065"
@@ -27036,7 +27099,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "fac509440efcf32a",
-        "order": 23,
+        "order": 21,
         "group": "c439a095b5188232",
         "width": 0,
         "height": 0,
@@ -27060,7 +27123,7 @@
         "showGlow": true,
         "name": "Active Trip Auto Recover ",
         "x": 1970,
-        "y": 4140,
+        "y": 4380,
         "wires": []
     },
     {
@@ -27077,7 +27140,7 @@
         "finalize": "",
         "libs": [],
         "x": 1760,
-        "y": 4140,
+        "y": 4380,
         "wires": [
             [
                 "6bf4e45e6bb449c1"
@@ -27107,7 +27170,7 @@
         "payload": "::",
         "payloadType": "str",
         "x": 1550,
-        "y": 4240,
+        "y": 4480,
         "wires": [
             [
                 "b65ecf95084c3c8d",
@@ -27303,8 +27366,8 @@
             "d495d61feb7f323e",
             "bd5d76bc9eef7598"
         ],
-        "x": 1485,
-        "y": 3780,
+        "x": 1525,
+        "y": 4020,
         "wires": []
     },
     {
@@ -27314,7 +27377,7 @@
         "g": "702687925deb0843",
         "name": "Enable Channel 0",
         "group": "a611b3b4.f109b",
-        "order": 3,
+        "order": 1,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -27343,7 +27406,7 @@
         "g": "702687925deb0843",
         "name": "Disable Channel 0",
         "group": "a611b3b4.f109b",
-        "order": 4,
+        "order": 2,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -27372,7 +27435,7 @@
         "g": "80b635095770a9e3",
         "name": "Enable Channel 1",
         "group": "c439a095b5188232",
-        "order": 3,
+        "order": 1,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -27401,7 +27464,7 @@
         "g": "80b635095770a9e3",
         "name": "Disable Channel 1",
         "group": "c439a095b5188232",
-        "order": 4,
+        "order": 2,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -27430,7 +27493,7 @@
         "g": "fac509440efcf32a",
         "name": "Enable Trip Auto Recover 0",
         "group": "a611b3b4.f109b",
-        "order": 21,
+        "order": 19,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -27445,7 +27508,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 1320,
-        "y": 4040,
+        "y": 4280,
         "wires": [
             [
                 "ec8ee9a2b5fb38f4"
@@ -27459,7 +27522,7 @@
         "g": "fac509440efcf32a",
         "name": "Disable Trip Auto Recover 0",
         "group": "a611b3b4.f109b",
-        "order": 22,
+        "order": 20,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -27474,7 +27537,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 1320,
-        "y": 4080,
+        "y": 4320,
         "wires": [
             [
                 "ec8ee9a2b5fb38f4"
@@ -27488,7 +27551,7 @@
         "g": "fac509440efcf32a",
         "name": "Enable Trip Auto Recover 1",
         "group": "c439a095b5188232",
-        "order": 21,
+        "order": 19,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -27503,7 +27566,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 1320,
-        "y": 4120,
+        "y": 4360,
         "wires": [
             [
                 "6e583028e71a1937"
@@ -27517,7 +27580,7 @@
         "g": "fac509440efcf32a",
         "name": "Disable Trip Auto Recover 1",
         "group": "c439a095b5188232",
-        "order": 22,
+        "order": 20,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -27532,7 +27595,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 1320,
-        "y": 4160,
+        "y": 4400,
         "wires": [
             [
                 "6e583028e71a1937"
@@ -27561,8 +27624,8 @@
         "topic": "",
         "payload": "::",
         "payloadType": "str",
-        "x": 230,
-        "y": 3740,
+        "x": 270,
+        "y": 3980,
         "wires": [
             [
                 "a00e4a607aa45329"
@@ -27581,8 +27644,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
-        "y": 3740,
+        "x": 440,
+        "y": 3980,
         "wires": [
             [
                 "54fa02cbc00364f3"
@@ -27726,7 +27789,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "b7d565f8c1d444b8",
         "group": "a611b3b4.f109b",
-        "order": 8,
+        "order": 6,
         "width": 0,
         "height": 0,
         "name": "Ch0 VMON",
@@ -27829,7 +27892,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "b7d565f8c1d444b8",
         "group": "a611b3b4.f109b",
-        "order": 1,
+        "order": 29,
         "width": 0,
         "height": 0,
         "name": "Ch0 Polarity",
@@ -27913,7 +27976,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "b7d565f8c1d444b8",
         "group": "a611b3b4.f109b",
-        "order": 9,
+        "order": 7,
         "width": 0,
         "height": 0,
         "name": "Ch0 IMON",
@@ -28016,7 +28079,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "8d2486c82c9da527",
         "group": "c439a095b5188232",
-        "order": 2,
+        "order": 30,
         "width": 0,
         "height": 0,
         "name": "Ch1 Power Down",
@@ -28064,7 +28127,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "1",
+        "repeat": "",
         "crontab": "",
         "once": true,
         "onceDelay": "1",
@@ -28100,7 +28163,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "b7d565f8c1d444b8",
         "group": "a611b3b4.f109b",
-        "order": 2,
+        "order": 30,
         "width": 0,
         "height": 0,
         "name": "Ch0 Power Down",
@@ -28148,7 +28211,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "1",
+        "repeat": "",
         "crontab": "",
         "once": true,
         "onceDelay": "1",
@@ -28171,7 +28234,7 @@
         "name": "",
         "serial": "a4fc396f.153838",
         "x": 2270,
-        "y": 3220,
+        "y": 3440,
         "wires": [
             [
                 "bad543f379a436e3"
@@ -28192,7 +28255,7 @@
         "finalize": "",
         "libs": [],
         "x": 2560,
-        "y": 3220,
+        "y": 3440,
         "wires": [
             [],
             [],
@@ -28223,7 +28286,7 @@
         "finalize": "",
         "libs": [],
         "x": 1950,
-        "y": 3220,
+        "y": 3440,
         "wires": [
             [
                 "b83ed9f6a0fe3c09"
@@ -28235,7 +28298,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "07c53d664d84e7fa",
-        "order": 5,
+        "order": 3,
         "group": "c439a095b5188232",
         "width": 0,
         "height": 0,
@@ -28259,7 +28322,7 @@
         "showGlow": true,
         "name": "Channel Enabled 00",
         "x": 2980,
-        "y": 3020,
+        "y": 3240,
         "wires": []
     },
     {
@@ -28276,7 +28339,7 @@
         "finalize": "",
         "libs": [],
         "x": 2720,
-        "y": 3240,
+        "y": 3460,
         "wires": [
             [
                 "c98221ee2ef97f61",
@@ -28329,7 +28392,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "07c53d664d84e7fa",
-        "order": 6,
+        "order": 4,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -28353,7 +28416,7 @@
         "showGlow": true,
         "name": "Ramp Up",
         "x": 2920,
-        "y": 3100,
+        "y": 3320,
         "wires": []
     },
     {
@@ -28361,7 +28424,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "07c53d664d84e7fa",
-        "order": 7,
+        "order": 5,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -28385,7 +28448,7 @@
         "showGlow": true,
         "name": "Ramp Down",
         "x": 2930,
-        "y": 3140,
+        "y": 3360,
         "wires": []
     },
     {
@@ -28393,7 +28456,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "07c53d664d84e7fa",
-        "order": 31,
+        "order": 32,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -28417,7 +28480,7 @@
         "showGlow": true,
         "name": "OverCurrent",
         "x": 2930,
-        "y": 3180,
+        "y": 3400,
         "wires": []
     },
     {
@@ -28425,7 +28488,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "07c53d664d84e7fa",
-        "order": 32,
+        "order": 33,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -28449,7 +28512,7 @@
         "showGlow": true,
         "name": "OverVoltage",
         "x": 2930,
-        "y": 3220,
+        "y": 3440,
         "wires": []
     },
     {
@@ -28457,7 +28520,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "07c53d664d84e7fa",
-        "order": 33,
+        "order": 34,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -28481,7 +28544,7 @@
         "showGlow": true,
         "name": "UnderVoltage",
         "x": 2940,
-        "y": 3260,
+        "y": 3480,
         "wires": []
     },
     {
@@ -28489,7 +28552,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "07c53d664d84e7fa",
-        "order": 34,
+        "order": 35,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -28513,7 +28576,7 @@
         "showGlow": true,
         "name": "VMax Limitting",
         "x": 2940,
-        "y": 3300,
+        "y": 3520,
         "wires": []
     },
     {
@@ -28521,7 +28584,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "07c53d664d84e7fa",
-        "order": 35,
+        "order": 36,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -28545,7 +28608,7 @@
         "showGlow": true,
         "name": "Current Trip",
         "x": 2930,
-        "y": 3340,
+        "y": 3560,
         "wires": []
     },
     {
@@ -28553,7 +28616,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "07c53d664d84e7fa",
-        "order": 36,
+        "order": 37,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -28577,7 +28640,7 @@
         "showGlow": true,
         "name": "OverPower",
         "x": 2930,
-        "y": 3380,
+        "y": 3600,
         "wires": []
     },
     {
@@ -28585,7 +28648,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "07c53d664d84e7fa",
-        "order": 37,
+        "order": 38,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -28609,7 +28672,7 @@
         "showGlow": true,
         "name": "Temperature Fault",
         "x": 2950,
-        "y": 3420,
+        "y": 3640,
         "wires": []
     },
     {
@@ -28617,7 +28680,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "07c53d664d84e7fa",
-        "order": 38,
+        "order": 39,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -28641,7 +28704,7 @@
         "showGlow": true,
         "name": "Disabled Channel",
         "x": 2950,
-        "y": 3460,
+        "y": 3680,
         "wires": []
     },
     {
@@ -28649,7 +28712,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "07c53d664d84e7fa",
-        "order": 39,
+        "order": 40,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -28673,7 +28736,7 @@
         "showGlow": true,
         "name": "Front KILL",
         "x": 2930,
-        "y": 3500,
+        "y": 3720,
         "wires": []
     },
     {
@@ -28681,7 +28744,7 @@
         "type": "ui_led",
         "z": "dbbc30b9f0aa1118",
         "g": "07c53d664d84e7fa",
-        "order": 40,
+        "order": 41,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -28705,7 +28768,7 @@
         "showGlow": true,
         "name": "Front ILock",
         "x": 2930,
-        "y": 3540,
+        "y": 3760,
         "wires": []
     },
     {
@@ -28714,7 +28777,7 @@
         "z": "dbbc30b9f0aa1118",
         "d": true,
         "g": "07c53d664d84e7fa",
-        "order": 41,
+        "order": 42,
         "group": "c439a095b5188232",
         "width": "3",
         "height": "1",
@@ -28738,7 +28801,7 @@
         "showGlow": true,
         "name": "Channel Enabled 13",
         "x": 2960,
-        "y": 3580,
+        "y": 3800,
         "wires": []
     },
     {
@@ -28754,8 +28817,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2280,
-        "y": 3820,
+        "x": 2320,
+        "y": 4060,
         "wires": [
             [
                 "f763934825d4a8c8"
@@ -28778,7 +28841,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "360a8bcfe2f34e91",
         "group": "c439a095b5188232",
-        "order": 26,
+        "order": 24,
         "width": 0,
         "height": 0,
         "name": "Trip Counter",
@@ -28786,8 +28849,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 2570,
-        "y": 3700,
+        "x": 2610,
+        "y": 3940,
         "wires": []
     },
     {
@@ -28797,7 +28860,7 @@
         "g": "360a8bcfe2f34e91",
         "name": "Reset Trip Counter",
         "group": "c439a095b5188232",
-        "order": 28,
+        "order": 26,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -28811,8 +28874,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2070,
-        "y": 3820,
+        "x": 2110,
+        "y": 4060,
         "wires": [
             [
                 "fd0d3286bcab431b"
@@ -28826,8 +28889,8 @@
         "g": "360a8bcfe2f34e91",
         "name": "",
         "serial": "a4fc396f.153838",
-        "x": 2670,
-        "y": 3820,
+        "x": 2710,
+        "y": 4060,
         "wires": [
             [
                 "c4d2ac0150ee4f38"
@@ -28846,7 +28909,7 @@
             "6ebbf67ed326b8ed"
         ],
         "x": 2905,
-        "y": 2980,
+        "y": 3200,
         "wires": []
     },
     {
@@ -28855,7 +28918,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "360a8bcfe2f34e91",
         "group": "c439a095b5188232",
-        "order": 27,
+        "order": 25,
         "width": 0,
         "height": 0,
         "name": "Historic Trip Counter",
@@ -28863,8 +28926,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 2600,
-        "y": 3760,
+        "x": 2640,
+        "y": 4000,
         "wires": []
     },
     {
@@ -28874,7 +28937,7 @@
         "g": "360a8bcfe2f34e91",
         "name": "Reset Historic Trip Counter",
         "group": "c439a095b5188232",
-        "order": 29,
+        "order": 27,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -28888,8 +28951,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2040,
-        "y": 3880,
+        "x": 2080,
+        "y": 4120,
         "wires": [
             [
                 "fd0d3286bcab431b"
@@ -28907,8 +28970,8 @@
             "3c8ee1f2242bb9f7",
             "5f15e9b67a6874e3"
         ],
-        "x": 2935,
-        "y": 3820,
+        "x": 2975,
+        "y": 4060,
         "wires": []
     },
     {
@@ -28933,8 +28996,8 @@
         "topic": "",
         "payload": "::",
         "payloadType": "str",
-        "x": 1770,
-        "y": 3820,
+        "x": 1810,
+        "y": 4060,
         "wires": [
             [
                 "35a0edd20571985a"
@@ -28953,8 +29016,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1900,
-        "y": 3820,
+        "x": 1940,
+        "y": 4060,
         "wires": [
             [
                 "82136a3d2fc35ad4"
@@ -28971,8 +29034,8 @@
         "links": [
             "42a9443f5d24f324"
         ],
-        "x": 2535,
-        "y": 3940,
+        "x": 2575,
+        "y": 4140,
         "wires": []
     },
     {
@@ -28985,8 +29048,8 @@
         "links": [
             "42a9443f5d24f324"
         ],
-        "x": 955,
-        "y": 3860,
+        "x": 995,
+        "y": 4100,
         "wires": []
     },
     {
@@ -29057,8 +29120,8 @@
             "a49a8996f9c84483",
             "dc39dc86d8e158dd"
         ],
-        "x": 2535,
-        "y": 3880,
+        "x": 2565,
+        "y": 4100,
         "wires": []
     },
     {
@@ -29074,8 +29137,8 @@
             "d7b9dfdab4346d65",
             "a37a7bcfa7bf3ae3"
         ],
-        "x": 1125,
-        "y": 3840,
+        "x": 1165,
+        "y": 4080,
         "wires": []
     },
     {
@@ -29419,7 +29482,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "47cd93d9e02b875f",
         "group": "a611b3b4.f109b",
-        "order": 17,
+        "order": 15,
         "width": "2",
         "height": "1",
         "name": "Ch0 ISET Act,",
@@ -29507,7 +29570,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "47cd93d9e02b875f",
         "group": "a611b3b4.f109b",
-        "order": 11,
+        "order": 9,
         "width": "2",
         "height": "1",
         "name": "Active VSET [V]",
@@ -29613,7 +29676,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "47cd93d9e02b875f",
         "group": "a611b3b4.f109b",
-        "order": 13,
+        "order": 11,
         "width": "2",
         "height": "1",
         "name": "Ch0 V Ramp Act",
@@ -29701,7 +29764,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "47cd93d9e02b875f",
         "group": "a611b3b4.f109b",
-        "order": 19,
+        "order": 17,
         "width": "2",
         "height": "1",
         "name": "Ch0 TTime Act.",
@@ -29789,7 +29852,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "47cd93d9e02b875f",
         "group": "a611b3b4.f109b",
-        "order": 15,
+        "order": 13,
         "width": "2",
         "height": "1",
         "name": "Ch0 Active Max V [V]",
@@ -29877,7 +29940,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "c3c23ce144ead368",
         "group": "c439a095b5188232",
-        "order": 17,
+        "order": 15,
         "width": "2",
         "height": "1",
         "name": "Ch1 ISET Act.",
@@ -29965,7 +30028,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "c3c23ce144ead368",
         "group": "c439a095b5188232",
-        "order": 11,
+        "order": 9,
         "width": "2",
         "height": "1",
         "name": "Ch1 VSET Act.",
@@ -30070,7 +30133,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "c3c23ce144ead368",
         "group": "c439a095b5188232",
-        "order": 13,
+        "order": 11,
         "width": "2",
         "height": "1",
         "name": "Ch1 V Ramp Act",
@@ -30143,7 +30206,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "c3c23ce144ead368",
         "group": "c439a095b5188232",
-        "order": 19,
+        "order": 17,
         "width": "2",
         "height": "1",
         "name": "Ch1 TTime Act.",
@@ -30297,7 +30360,7 @@
         "z": "dbbc30b9f0aa1118",
         "g": "c3c23ce144ead368",
         "group": "c439a095b5188232",
-        "order": 15,
+        "order": 13,
         "width": "2",
         "height": "1",
         "name": "Ch1 Active Max V [V]",
@@ -30343,7 +30406,7 @@
                 "9d23a43a21531366"
             ],
             [
-                "bd849fc87a2d453a"
+                "6aab736e4192fa8c"
             ]
         ]
     },
@@ -30851,7 +30914,7 @@
         "repair": false,
         "outputs": 1,
         "x": 865,
-        "y": 3160,
+        "y": 3440,
         "wires": [
             [
                 "c0b3b6924e5e9e96"
@@ -30877,8 +30940,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1355,
-        "y": 3780,
+        "x": 1395,
+        "y": 4020,
         "wires": [
             [
                 "e68c3082859f9ba8"
@@ -30904,8 +30967,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2775,
-        "y": 3820,
+        "x": 2815,
+        "y": 4060,
         "wires": [
             [
                 "20861f1350f799f1"
@@ -30932,7 +30995,7 @@
         "repair": false,
         "outputs": 1,
         "x": 2375,
-        "y": 3220,
+        "y": 3440,
         "wires": [
             [
                 "4a83de9ff64e2049"
@@ -31341,7 +31404,7 @@
         "payload": "::",
         "payloadType": "str",
         "x": 230,
-        "y": 3160,
+        "y": 3440,
         "wires": [
             [
                 "00342538a0391504"
@@ -31371,7 +31434,7 @@
         "payload": "::",
         "payloadType": "str",
         "x": 1790,
-        "y": 3220,
+        "y": 3440,
         "wires": [
             [
                 "7743d2ee454b9dde"
@@ -31684,7 +31747,7 @@
         "finalize": "",
         "libs": [],
         "x": 1000,
-        "y": 3180,
+        "y": 3460,
         "wires": [
             [
                 "32c3948157f41c96"
@@ -32574,7 +32637,7 @@
         "repair": false,
         "outputs": 1,
         "x": 635,
-        "y": 3160,
+        "y": 3440,
         "wires": [
             [
                 "6b987775d797c1c1"
@@ -32600,8 +32663,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1145,
-        "y": 3780,
+        "x": 1185,
+        "y": 4020,
         "wires": [
             [
                 "f1879beff49217f4"
@@ -32627,8 +32690,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2545,
-        "y": 3820,
+        "x": 2585,
+        "y": 4060,
         "wires": [
             [
                 "b8127920d92ce289"
@@ -33087,7 +33150,7 @@
         "repair": false,
         "outputs": 1,
         "x": 2155,
-        "y": 3220,
+        "y": 3440,
         "wires": [
             [
                 "588b0418c6c94998"
@@ -33296,30 +33359,6 @@
             [
                 "154f7afd2998d479"
             ]
-        ]
-    },
-    {
-        "id": "98bb80fa5d3eabdc",
-        "type": "switch",
-        "z": "dbbc30b9f0aa1118",
-        "g": "b7d565f8c1d444b8",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 730,
-        "y": 2700,
-        "wires": [
-            []
         ]
     },
     {
@@ -33717,6 +33756,20 @@
         ]
     },
     {
+        "id": "e89335a946116b29",
+        "type": "link out",
+        "z": "dbbc30b9f0aa1118",
+        "g": "2522addeb1fd9032",
+        "name": "CAEN_Conn_Out",
+        "mode": "link",
+        "links": [
+            "2b39aad63e5a71d8"
+        ],
+        "x": 1395,
+        "y": 260,
+        "wires": []
+    },
+    {
         "id": "fd9d724c91f1cef9",
         "type": "switch",
         "z": "dbbc30b9f0aa1118",
@@ -33734,7 +33787,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1125,
+        "x": 1115,
         "y": 200,
         "wires": [
             [
@@ -33744,7 +33797,7 @@
         "l": false
     },
     {
-        "id": "bd849fc87a2d453a",
+        "id": "6aab736e4192fa8c",
         "type": "switch",
         "z": "dbbc30b9f0aa1118",
         "g": "2522addeb1fd9032",
@@ -33761,7 +33814,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1105,
+        "x": 1115,
         "y": 260,
         "wires": [
             [
@@ -33771,17 +33824,703 @@
         "l": false
     },
     {
-        "id": "e89335a946116b29",
-        "type": "link out",
+        "id": "61fb8d0e6282c505",
+        "type": "function",
         "z": "dbbc30b9f0aa1118",
-        "g": "2522addeb1fd9032",
-        "name": "CAEN_Conn_Out",
-        "mode": "link",
-        "links": [
-            "2b39aad63e5a71d8"
+        "g": "7e9acba0fde7b116",
+        "name": "ReadMsg",
+        "func": "\nlet rxstr = msg.payload.trim().replace(\";\",\"\").split(\",\");\nlet valstr = rxstr[2].split(\":\");\n\nvalch = valstr[1];\nmsg.payload = valch\n//return [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "1",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 2900,
+        "wires": [
+            [
+                "e63c1e153696b3bd",
+                "dbd0c211c3af1bc6"
+            ]
+        ]
+    },
+    {
+        "id": "223e46516a7d073c",
+        "type": "switch",
+        "z": "dbbc30b9f0aa1118",
+        "g": "7e9acba0fde7b116",
+        "name": "msg.status==OK",
+        "property": "status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "OK",
+                "vt": "str"
+            }
         ],
-        "x": 1395,
-        "y": 260,
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 705,
+        "y": 2900,
+        "wires": [
+            [
+                "61fb8d0e6282c505"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "e63c1e153696b3bd",
+        "type": "ui_text",
+        "z": "dbbc30b9f0aa1118",
+        "g": "7e9acba0fde7b116",
+        "group": "a611b3b4.f109b",
+        "order": 31,
+        "width": 0,
+        "height": 0,
+        "name": "Ch0 IMon Range",
+        "label": "IMon Range",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1090,
+        "y": 2900,
+        "wires": []
+    },
+    {
+        "id": "143cad27719c1cc7",
+        "type": "serial request",
+        "z": "dbbc30b9f0aa1118",
+        "g": "7e9acba0fde7b116",
+        "name": "",
+        "serial": "a4fc396f.153838",
+        "x": 590,
+        "y": 2900,
+        "wires": [
+            [
+                "223e46516a7d073c"
+            ]
+        ]
+    },
+    {
+        "id": "65179d8d97bf4208",
+        "type": "switch",
+        "z": "dbbc30b9f0aa1118",
+        "g": "7e9acba0fde7b116",
+        "name": "global.CAEN_st==1",
+        "property": "CAEN_st",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 485,
+        "y": 2900,
+        "wires": [
+            [
+                "143cad27719c1cc7"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "5e052986ac377a40",
+        "type": "function",
+        "z": "dbbc30b9f0aa1118",
+        "g": "7e9acba0fde7b116",
+        "name": "PAR:IMRANGE",
+        "func": "msg = {payload : \"$BD:00,CMD:MON,CH:0,PAR:IMRANGE\"};\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "1",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 2900,
+        "wires": [
+            [
+                "65179d8d97bf4208"
+            ]
+        ]
+    },
+    {
+        "id": "3cd406eb2e8c499d",
+        "type": "inject",
+        "z": "dbbc30b9f0aa1118",
+        "g": "7e9acba0fde7b116",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "::",
+        "payloadType": "str",
+        "x": 210,
+        "y": 2900,
+        "wires": [
+            [
+                "5e052986ac377a40"
+            ]
+        ]
+    },
+    {
+        "id": "dbd0c211c3af1bc6",
+        "type": "debug",
+        "z": "dbbc30b9f0aa1118",
+        "g": "7e9acba0fde7b116",
+        "name": "IMon Range",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 2940,
+        "wires": []
+    },
+    {
+        "id": "d8ab0dbdfd9e8169",
+        "type": "function",
+        "z": "dbbc30b9f0aa1118",
+        "g": "7e9acba0fde7b116",
+        "name": "PAR:IMRANGE,VAL",
+        "func": "let output = msg.payload;\n\n\nlet mens = \"$BD:00,CMD:SET,CH:0,PAR:IMRANGE,VAL:\"+output;\n\nmsg.payload =  mens;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "1",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 3020,
+        "wires": [
+            [
+                "71210c692302cfce"
+            ]
+        ]
+    },
+    {
+        "id": "14760146aa42feb3",
+        "type": "serial request",
+        "z": "dbbc30b9f0aa1118",
+        "g": "7e9acba0fde7b116",
+        "name": "",
+        "serial": "a4fc396f.153838",
+        "x": 870,
+        "y": 3020,
+        "wires": [
+            [
+                "1485e2168b7b2742"
+            ]
+        ]
+    },
+    {
+        "id": "1485e2168b7b2742",
+        "type": "switch",
+        "z": "dbbc30b9f0aa1118",
+        "g": "7e9acba0fde7b116",
+        "name": "msg.status==OK",
+        "property": "status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "OK",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 975,
+        "y": 3020,
+        "wires": [
+            [
+                "9167e7f912dd4c66"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "71210c692302cfce",
+        "type": "switch",
+        "z": "dbbc30b9f0aa1118",
+        "g": "7e9acba0fde7b116",
+        "name": "global.CAEN_st==1",
+        "property": "CAEN_st",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 755,
+        "y": 3020,
+        "wires": [
+            [
+                "14760146aa42feb3"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "37691e10028c3806",
+        "type": "inject",
+        "z": "dbbc30b9f0aa1118",
+        "g": "7e9acba0fde7b116",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "HIGH",
+        "payloadType": "str",
+        "x": 250,
+        "y": 3000,
+        "wires": [
+            [
+                "d8ab0dbdfd9e8169"
+            ]
+        ]
+    },
+    {
+        "id": "2f11cb6af9401e98",
+        "type": "inject",
+        "z": "dbbc30b9f0aa1118",
+        "g": "7e9acba0fde7b116",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "LOW",
+        "payloadType": "str",
+        "x": 250,
+        "y": 3040,
+        "wires": [
+            [
+                "d8ab0dbdfd9e8169"
+            ]
+        ]
+    },
+    {
+        "id": "9167e7f912dd4c66",
+        "type": "debug",
+        "z": "dbbc30b9f0aa1118",
+        "g": "7e9acba0fde7b116",
+        "name": "Cmd OK",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1100,
+        "y": 3020,
+        "wires": []
+    },
+    {
+        "id": "fda10aa367a8b6d9",
+        "type": "function",
+        "z": "dbbc30b9f0aa1118",
+        "g": "ab8240cb3b877c60",
+        "name": "ReadMsg",
+        "func": "\nlet rxstr = msg.payload.trim().replace(\";\",\"\").split(\",\");\nlet valstr = rxstr[2].split(\":\");\n\nvalch = valstr[1];\nmsg.payload = valch\n//return [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "1",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2400,
+        "y": 2900,
+        "wires": [
+            [
+                "2ba1ba29ba36538f",
+                "8699951f00ddec36"
+            ]
+        ]
+    },
+    {
+        "id": "d0006d87282427fc",
+        "type": "switch",
+        "z": "dbbc30b9f0aa1118",
+        "g": "ab8240cb3b877c60",
+        "name": "msg.status==OK",
+        "property": "status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "OK",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2225,
+        "y": 2900,
+        "wires": [
+            [
+                "fda10aa367a8b6d9"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "2ba1ba29ba36538f",
+        "type": "ui_text",
+        "z": "dbbc30b9f0aa1118",
+        "g": "ab8240cb3b877c60",
+        "group": "c439a095b5188232",
+        "order": 31,
+        "width": 0,
+        "height": 0,
+        "name": "Ch1 IMon Range",
+        "label": "IMon Range",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 2610,
+        "y": 2900,
+        "wires": []
+    },
+    {
+        "id": "d1e76c110aa98577",
+        "type": "serial request",
+        "z": "dbbc30b9f0aa1118",
+        "g": "ab8240cb3b877c60",
+        "name": "",
+        "serial": "a4fc396f.153838",
+        "x": 2110,
+        "y": 2900,
+        "wires": [
+            [
+                "d0006d87282427fc"
+            ]
+        ]
+    },
+    {
+        "id": "6b4c318c9f4f258d",
+        "type": "switch",
+        "z": "dbbc30b9f0aa1118",
+        "g": "ab8240cb3b877c60",
+        "name": "global.CAEN_st==1",
+        "property": "CAEN_st",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2005,
+        "y": 2900,
+        "wires": [
+            [
+                "d1e76c110aa98577"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "f9baf028fa1694a1",
+        "type": "function",
+        "z": "dbbc30b9f0aa1118",
+        "g": "ab8240cb3b877c60",
+        "name": "PAR:IMRANGE",
+        "func": "msg = {payload : \"$BD:00,CMD:MON,CH:1,PAR:IMRANGE\"};\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "1",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1880,
+        "y": 2900,
+        "wires": [
+            [
+                "6b4c318c9f4f258d"
+            ]
+        ]
+    },
+    {
+        "id": "31d07b2ae4f2363c",
+        "type": "inject",
+        "z": "dbbc30b9f0aa1118",
+        "g": "ab8240cb3b877c60",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "::",
+        "payloadType": "str",
+        "x": 1730,
+        "y": 2900,
+        "wires": [
+            [
+                "f9baf028fa1694a1"
+            ]
+        ]
+    },
+    {
+        "id": "8699951f00ddec36",
+        "type": "debug",
+        "z": "dbbc30b9f0aa1118",
+        "g": "ab8240cb3b877c60",
+        "name": "IMon Range",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2590,
+        "y": 2940,
+        "wires": []
+    },
+    {
+        "id": "3f1b8217c858fd7b",
+        "type": "function",
+        "z": "dbbc30b9f0aa1118",
+        "g": "ab8240cb3b877c60",
+        "name": "PAR:IMRANGE,VAL",
+        "func": "let output = msg.payload;\n\n\nlet mens = \"$BD:00,CMD:SET,CH:1,PAR:IMRANGE,VAL:\"+output;\n\nmsg.payload =  mens;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "1",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1940,
+        "y": 3020,
+        "wires": [
+            [
+                "cd69946ea56de8ae"
+            ]
+        ]
+    },
+    {
+        "id": "8cfc7fdbd839161d",
+        "type": "serial request",
+        "z": "dbbc30b9f0aa1118",
+        "g": "ab8240cb3b877c60",
+        "name": "",
+        "serial": "a4fc396f.153838",
+        "x": 2390,
+        "y": 3020,
+        "wires": [
+            [
+                "3f39602647bef0fc"
+            ]
+        ]
+    },
+    {
+        "id": "3f39602647bef0fc",
+        "type": "switch",
+        "z": "dbbc30b9f0aa1118",
+        "g": "ab8240cb3b877c60",
+        "name": "msg.status==OK",
+        "property": "status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "OK",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2495,
+        "y": 3020,
+        "wires": [
+            [
+                "b75ed0748b6d61f3"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "cd69946ea56de8ae",
+        "type": "switch",
+        "z": "dbbc30b9f0aa1118",
+        "g": "ab8240cb3b877c60",
+        "name": "global.CAEN_st==1",
+        "property": "CAEN_st",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2275,
+        "y": 3020,
+        "wires": [
+            [
+                "8cfc7fdbd839161d"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "4f63e7351ef4de87",
+        "type": "inject",
+        "z": "dbbc30b9f0aa1118",
+        "g": "ab8240cb3b877c60",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "HIGH",
+        "payloadType": "str",
+        "x": 1770,
+        "y": 3000,
+        "wires": [
+            [
+                "3f1b8217c858fd7b"
+            ]
+        ]
+    },
+    {
+        "id": "7fe2754692027120",
+        "type": "inject",
+        "z": "dbbc30b9f0aa1118",
+        "g": "ab8240cb3b877c60",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "LOW",
+        "payloadType": "str",
+        "x": 1770,
+        "y": 3040,
+        "wires": [
+            [
+                "3f1b8217c858fd7b"
+            ]
+        ]
+    },
+    {
+        "id": "b75ed0748b6d61f3",
+        "type": "debug",
+        "z": "dbbc30b9f0aa1118",
+        "g": "ab8240cb3b877c60",
+        "name": "Cmd OK",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2620,
+        "y": 3020,
         "wires": []
     },
     {
