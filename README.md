@@ -104,11 +104,18 @@ The code is composed of the following flows:
 ## Memory Leaks
 Nodered is prone to memory leaks. 
 
-To avoid memory leaks it is important to avoid errors in the code. In serial ports it is important to:
+To avoid memory leaks it is important to avoid errors in the code.
+
+In **serial ports** it is important to:
 
  - Check the status of the response from the serial port and filter the message only when the `msg.status` is  `OK`.
  - Send messages to the serialport only when the port is connected
 	 + If messages are always sent nodered is not able to reconnect upon a communication error.
+	 
+In **Databases** (or in **join** nodes):
+
+ - It is important that in a join node all input messages are sent. If a device is disconnected but a node keeps input to join (e.g. TableName) there may be a memory leak.
+
 
 ## USB Configuration
 The serialport configuration is included in `/etc/udev/rules.d/99-sub-serial.rules
@@ -147,8 +154,8 @@ Notes for operation on 22/09/2025:
 	- 850 V cathode
 	- 350 V mesh
 	- 0.2 uA Current (trip)
-		+ If IMRange=LOW the maximum current is 2 $\mu$A.
-		+ If IMRange=HIGH the maximum current is 20 $\mu$A
+		+ If IMRange=LOW the maximum current is 2 uA.
+		+ If IMRange=HIGH the maximum current is 20 uA
 	 	
 - Shutdown Gas:
 	+ Close EV

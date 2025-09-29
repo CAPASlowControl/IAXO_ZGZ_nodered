@@ -41,10 +41,20 @@ for i in gas.get_children():
 
 Pinlet = gas.get_child("1:Pinlet")
 
+print("From Parent")
 print(Pinlet.get_value() )
 
 
-print("Other Test")
+print("Using full browse path")
 
 Pinlet = root.get_child([ "0:Objects","1:IAXO-ZGZ","1:GAS","1:Pressure","1:Pinlet" ]).get_value()
 print(Pinlet)
+
+node_id = "ns=1;s=Pinlet"
+node = client.get_node(node_id)
+Pinlet = node.get_value()
+
+print("Using node_id")
+print(Pinlet)
+
+client.disconnect()
