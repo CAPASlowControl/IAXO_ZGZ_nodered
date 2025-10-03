@@ -10,7 +10,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Fecha y hora de inicio
-start_date_str = "2025-09-29 10:00:00"
+start_date_str = "2025-10-01 00:00:00"
 try:
     start_datetime = datetime.strptime(start_date_str, '%Y-%m-%d %H:%M:%S')
 except ValueError:

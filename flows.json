@@ -863,10 +863,10 @@
             "0b3aaa53f8bead0e",
             "fa4e41c3d1b89848"
         ],
-        "x": 204,
-        "y": 1287,
+        "x": 214,
+        "y": 1359,
         "w": 692,
-        "h": 322
+        "h": 310
     },
     {
         "id": "b97b8ef4388f44e1",
@@ -1226,12 +1226,13 @@
             "e0d617f5c52cc047",
             "76554e2f29be53af",
             "f178b441db08f604",
-            "e01e0bebbb2557dc"
+            "e01e0bebbb2557dc",
+            "cddbb915843096e1"
         ],
         "x": 204,
         "y": 903,
         "w": 702,
-        "h": 162,
+        "h": 198,
         "info": "The idea is to recieve an alert if the USB port lost connection, with the trigger wait we can filter if is a puntual error or the port connection has been fully lost; \nIn the switch node you must select the name choosen in the serial rules of the PC: /etc/udev/rules.d/99-sub-serial.rules"
     },
     {
@@ -1806,8 +1807,8 @@
             "6cbc54dc5749201b",
             "ce9cb3a407399e74"
         ],
-        "x": 204,
-        "y": 1639,
+        "x": 214,
+        "y": 1719,
         "w": 352,
         "h": 122
     },
@@ -1891,7 +1892,7 @@
             "bbf80e78b39e7df6"
         ],
         "x": 74,
-        "y": 1599,
+        "y": 1659,
         "w": 1112,
         "h": 318.66668701171875
     },
@@ -1950,7 +1951,7 @@
             "dbc6f7e2d9be4752"
         ],
         "x": 74,
-        "y": 819,
+        "y": 899,
         "w": 1212,
         "h": 722
     },
@@ -1972,7 +1973,6 @@
             "f3453861c70b1da5",
             "49545b0ef7649840",
             "ccf810691cd1b4b7",
-            "322a65314665d04e",
             "c1f989fc3d40a904",
             "25c098cd42927611",
             "6c4ed859155f5452",
@@ -2004,12 +2004,33 @@
             "e6a8eabff65a5c21",
             "029ce7f5b663195a",
             "3279cb370f00d565",
-            "53dfcb1eb7fc3486"
+            "53dfcb1eb7fc3486",
+            "fc94abb59a225022",
+            "0bdbd8575f3c34de",
+            "caddaf562b33abf0",
+            "da36ffa2650f485c",
+            "04dffc966dd2e45b",
+            "be8c7e9a7122ccfb",
+            "1834588f41378bee",
+            "77fcc64f1a4a163b",
+            "19e7a764a82003df",
+            "2e22cc66674d4045",
+            "343f442af3d7f1d0",
+            "b47027949db8f807",
+            "ef3aa5eca853eb99",
+            "2c74532aad80c419",
+            "71a29b3626edea6b",
+            "aeec0863b4c6357f",
+            "a9ad154a9359e702",
+            "77bdd408c14a63c0",
+            "26f7e2fe7b15839c",
+            "2e7ff00b642d768f",
+            "eb264898e942dde4"
         ],
         "x": 70.666748046875,
         "y": 19,
         "w": 1255.333251953125,
-        "h": 782
+        "h": 842
     },
     {
         "id": "561e4b3107c1df40",
@@ -2533,12 +2554,18 @@
             "3140c93825a5ecc1",
             "8471aa451eb43f42",
             "3e91bf94728c9cc4",
-            "ac9c22831cf2e3db"
+            "ac9c22831cf2e3db",
+            "e94a2985c2789785",
+            "41ab1074f2d57556",
+            "45f80345aff7f489",
+            "2a687252343ceb65",
+            "c70938e8838dacf9",
+            "810e2c83d1756071"
         ],
         "x": 114,
         "y": 359,
-        "w": 1412,
-        "h": 502
+        "w": 1532,
+        "h": 522
     },
     {
         "id": "c1c3e686be456b09",
@@ -2991,7 +3018,7 @@
         "type": "group",
         "z": "e6abd59fcfef321c",
         "g": "f02a501a21bc70e1",
-        "name": "CAEN Connection",
+        "name": "CAEN",
         "style": {
             "label": true
         },
@@ -3005,9 +3032,9 @@
             "42a9443f5d24f324"
         ],
         "x": 204,
-        "y": 1095,
+        "y": 1119,
         "w": 642,
-        "h": 162,
+        "h": 222,
         "info": "The idea is to recieve an alert if the USB port lost connection, with the trigger wait we can filter if is a puntual error or the port connection has been fully lost; \nIn the switch node you must select the name choosen in the serial rules of the PC: /etc/udev/rules.d/99-sub-serial.rules"
     },
     {
@@ -4328,7 +4355,7 @@
         "x": 178,
         "y": 33,
         "w": 764,
-        "h": 1754
+        "h": 1834
     },
     {
         "id": "b656366e22d89f57",
@@ -5406,7 +5433,7 @@
     {
         "id": "c9558df313f28381",
         "type": "ui_group",
-        "name": "Connectrion Warnings",
+        "name": "Warnings",
         "tab": "4d43435a39497771",
         "order": 1,
         "disp": true,
@@ -5435,6 +5462,16 @@
         "width": "6",
         "collapse": false,
         "className": ""
+    },
+    {
+        "id": "b621a607185e3683",
+        "type": "ui_spacer",
+        "z": "110494c2c16f19b1",
+        "name": "spacer",
+        "group": "d5b292af11f072b5",
+        "order": 7,
+        "width": "6",
+        "height": "1"
     },
     {
         "id": "fb4c6cb4a13159d9",
@@ -22754,7 +22791,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 1020,
-        "y": 1800,
+        "y": 1860,
         "wires": []
     },
     {
@@ -22797,7 +22834,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 1050,
-        "y": 1840,
+        "y": 1900,
         "wires": [
             []
         ]
@@ -22821,7 +22858,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 1010,
-        "y": 1640,
+        "y": 1700,
         "wires": []
     },
     {
@@ -22864,7 +22901,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 1040,
-        "y": 1680,
+        "y": 1740,
         "wires": [
             []
         ]
@@ -22877,7 +22914,7 @@
         "name": "",
         "serial": "ea290f1e4e92d3ec",
         "x": 690,
-        "y": 1660,
+        "y": 1720,
         "wires": [
             [
                 "f517ef11c47db544"
@@ -22892,7 +22929,7 @@
         "name": "",
         "serial": "ea290f1e4e92d3ec",
         "x": 690,
-        "y": 1800,
+        "y": 1860,
         "wires": [
             [
                 "ddb660ef8ef9db24"
@@ -22913,7 +22950,7 @@
         "finalize": "",
         "libs": [],
         "x": 346.66650390625,
-        "y": 1673.3333740234375,
+        "y": 1733.3333740234375,
         "wires": [
             [
                 "e88b92db0b0b2cf9"
@@ -22934,7 +22971,7 @@
         "finalize": "",
         "libs": [],
         "x": 340,
-        "y": 1780,
+        "y": 1840,
         "wires": [
             [
                 "bbf80e78b39e7df6"
@@ -22960,7 +22997,7 @@
         "payload": "1",
         "payloadType": "str",
         "x": 170,
-        "y": 1720,
+        "y": 1780,
         "wires": [
             [
                 "c8ab14be99f8a0de",
@@ -22988,7 +23025,7 @@
         "className": "",
         "topicType": "str",
         "x": 220,
-        "y": 860,
+        "y": 940,
         "wires": [
             [
                 "2b79f6094d313575"
@@ -23015,7 +23052,7 @@
         "className": "",
         "topicType": "str",
         "x": 220,
-        "y": 1040,
+        "y": 1120,
         "wires": [
             [
                 "9701a4a5ebf2a853"
@@ -23042,7 +23079,7 @@
         "className": "",
         "topicType": "str",
         "x": 170,
-        "y": 1220,
+        "y": 1300,
         "wires": [
             [
                 "641fa898dd866c37"
@@ -23069,7 +23106,7 @@
         "className": "",
         "topicType": "str",
         "x": 170,
-        "y": 1400,
+        "y": 1480,
         "wires": [
             [
                 "82d2e2bf96cea64e"
@@ -23090,7 +23127,7 @@
         "finalize": "",
         "libs": [],
         "x": 490,
-        "y": 1220,
+        "y": 1300,
         "wires": [
             [
                 "4ba460da7c89e05e",
@@ -23113,7 +23150,7 @@
         "finalize": "",
         "libs": [],
         "x": 490,
-        "y": 1400,
+        "y": 1480,
         "wires": [
             [
                 "41d19a7cfd81a9fb",
@@ -23136,7 +23173,7 @@
         "finalize": "",
         "libs": [],
         "x": 510,
-        "y": 860,
+        "y": 940,
         "wires": [
             [
                 "fcb7920ec1f0afcd",
@@ -23159,7 +23196,7 @@
         "finalize": "",
         "libs": [],
         "x": 510,
-        "y": 1040,
+        "y": 1120,
         "wires": [
             [
                 "51334577f41d820e",
@@ -23176,7 +23213,7 @@
         "name": "",
         "serial": "ea290f1e4e92d3ec",
         "x": 810,
-        "y": 1220,
+        "y": 1300,
         "wires": []
     },
     {
@@ -23187,7 +23224,7 @@
         "name": "",
         "serial": "ea290f1e4e92d3ec",
         "x": 810,
-        "y": 860,
+        "y": 940,
         "wires": []
     },
     {
@@ -23198,7 +23235,7 @@
         "name": "",
         "serial": "ea290f1e4e92d3ec",
         "x": 810,
-        "y": 1040,
+        "y": 1120,
         "wires": []
     },
     {
@@ -23209,7 +23246,7 @@
         "name": "",
         "serial": "ea290f1e4e92d3ec",
         "x": 810,
-        "y": 1400,
+        "y": 1480,
         "wires": []
     },
     {
@@ -23231,7 +23268,7 @@
         "payload": "1",
         "payloadType": "str",
         "x": 310,
-        "y": 960,
+        "y": 1040,
         "wires": [
             [
                 "8d7b2cb8ca8ad87c"
@@ -23257,7 +23294,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 1160,
-        "y": 960,
+        "y": 1040,
         "wires": []
     },
     {
@@ -23268,7 +23305,7 @@
         "name": "",
         "serial": "ea290f1e4e92d3ec",
         "x": 810,
-        "y": 960,
+        "y": 1040,
         "wires": [
             [
                 "b6f645a2fc3a4254"
@@ -23289,7 +23326,7 @@
         "finalize": "",
         "libs": [],
         "x": 520,
-        "y": 960,
+        "y": 1040,
         "wires": [
             [
                 "e6d76e3452b2df9e"
@@ -23304,7 +23341,7 @@
         "name": "",
         "serial": "ea290f1e4e92d3ec",
         "x": 810,
-        "y": 1140,
+        "y": 1220,
         "wires": [
             [
                 "9b3b210750fd470a"
@@ -23325,7 +23362,7 @@
         "finalize": "",
         "libs": [],
         "x": 520,
-        "y": 1140,
+        "y": 1220,
         "wires": [
             [
                 "e3543a42f4792d72"
@@ -23351,7 +23388,7 @@
         "payload": "1",
         "payloadType": "str",
         "x": 310,
-        "y": 1140,
+        "y": 1220,
         "wires": [
             [
                 "faacf49abbb42cf2"
@@ -23377,7 +23414,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 1160,
-        "y": 1140,
+        "y": 1220,
         "wires": []
     },
     {
@@ -23394,7 +23431,7 @@
         "finalize": "",
         "libs": [],
         "x": 490,
-        "y": 1320,
+        "y": 1400,
         "wires": [
             [
                 "a606473242cb07a9"
@@ -23420,7 +23457,7 @@
         "payload": "1",
         "payloadType": "str",
         "x": 310,
-        "y": 1320,
+        "y": 1400,
         "wires": [
             [
                 "23ce75151e68f1c9"
@@ -23435,7 +23472,7 @@
         "name": "",
         "serial": "ea290f1e4e92d3ec",
         "x": 810,
-        "y": 1320,
+        "y": 1400,
         "wires": [
             [
                 "9fe4a2d75296ac79"
@@ -23461,7 +23498,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 1140,
-        "y": 1320,
+        "y": 1400,
         "wires": []
     },
     {
@@ -23472,7 +23509,7 @@
         "name": "",
         "serial": "ea290f1e4e92d3ec",
         "x": 810,
-        "y": 1500,
+        "y": 1580,
         "wires": [
             [
                 "5d6488d18ce530a5"
@@ -23498,7 +23535,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 1140,
-        "y": 1500,
+        "y": 1580,
         "wires": []
     },
     {
@@ -23515,7 +23552,7 @@
         "finalize": "",
         "libs": [],
         "x": 500,
-        "y": 1500,
+        "y": 1580,
         "wires": [
             [
                 "dbc6f7e2d9be4752"
@@ -23541,7 +23578,7 @@
         "payload": "1",
         "payloadType": "str",
         "x": 310,
-        "y": 1500,
+        "y": 1580,
         "wires": [
             [
                 "0e548d7724e37dec"
@@ -23567,7 +23604,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 330,
-        "y": 920,
+        "y": 1000,
         "wires": [
             [
                 "8d7b2cb8ca8ad87c"
@@ -23593,7 +23630,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 330,
-        "y": 1100,
+        "y": 1180,
         "wires": [
             [
                 "faacf49abbb42cf2"
@@ -23619,7 +23656,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 330,
-        "y": 1460,
+        "y": 1540,
         "wires": [
             [
                 "0e548d7724e37dec"
@@ -23655,7 +23692,7 @@
         "showGlow": true,
         "name": "OCP",
         "x": 1230,
-        "y": 460,
+        "y": 500,
         "wires": []
     },
     {
@@ -23665,8 +23702,8 @@
         "g": "8b0b5e8a7e6aad3c",
         "order": 2,
         "group": "d5b292af11f072b5",
-        "width": 0,
-        "height": 0,
+        "width": "6",
+        "height": "1",
         "label": "OVP",
         "labelPlacement": "left",
         "labelAlignment": "left",
@@ -23719,7 +23756,7 @@
         "showGlow": true,
         "name": "OUTPUT",
         "x": 1240,
-        "y": 720,
+        "y": 780,
         "wires": []
     },
     {
@@ -23747,7 +23784,7 @@
             "1bc4b62fca54a91b"
         ],
         "x": 1195,
-        "y": 500,
+        "y": 540,
         "wires": []
     },
     {
@@ -23761,7 +23798,7 @@
             "eb5b406cfa84ad31"
         ],
         "x": 1195,
-        "y": 760,
+        "y": 820,
         "wires": []
     },
     {
@@ -23828,29 +23865,6 @@
         ]
     },
     {
-        "id": "322a65314665d04e",
-        "type": "function",
-        "z": "110494c2c16f19b1",
-        "g": "8b0b5e8a7e6aad3c",
-        "name": "ON/OFF 2 BOOL",
-        "func": "\nvar input = (msg.payload || \"\").toString();  // asegura que siempre sea string\n\n// Quitar saltos de línea y retornos de carro\nvar cleanInput = input.replace(/[\\r\\n]/g, \"\").trim();\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Si llega algo inesperado\n    boolValue = null;\n}\n\nvar msg1 = { payload: boolValue };\n\nreturn [msg1];\n\n/*var input = msg.payload;  // Assume msg.payload contains the string \"ON\" or \"OFF\"\n\n// Remove carriage return characters\nvar cleanInput = input.replace(/\\n/, '')\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Optionally handle unexpected values\n    boolValue = null;  // or throw an error, or set a default value\n}\n\nvar msg1 = {payload: boolValue};            \n       \n\nreturn [msg1];\n*/",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1030,
-        "y": 480,
-        "wires": [
-            [
-                "aca63abd6d11b1e3",
-                "728f79abf0fa8dea"
-            ]
-        ],
-        "info": "This function makes the ON/OFF output to a boolean value."
-    },
-    {
         "id": "c1f989fc3d40a904",
         "type": "function",
         "z": "110494c2c16f19b1",
@@ -23887,7 +23901,7 @@
         "finalize": "",
         "libs": [],
         "x": 1030,
-        "y": 740,
+        "y": 800,
         "wires": [
             [
                 "816b2b33847cbcb0",
@@ -23904,7 +23918,7 @@
         "name": "",
         "serial": "ea290f1e4e92d3ec",
         "x": 790,
-        "y": 480,
+        "y": 520,
         "wires": [
             [
                 "9b407f85eddb961e"
@@ -23919,7 +23933,7 @@
         "name": "",
         "serial": "ea290f1e4e92d3ec",
         "x": 790,
-        "y": 740,
+        "y": 800,
         "wires": [
             [
                 "bca109af8020dbcd"
@@ -23940,7 +23954,7 @@
         "finalize": "",
         "libs": [],
         "x": 540,
-        "y": 480,
+        "y": 520,
         "wires": [
             [
                 "029ce7f5b663195a"
@@ -23962,7 +23976,7 @@
         "finalize": "",
         "libs": [],
         "x": 500,
-        "y": 740,
+        "y": 800,
         "wires": [
             [
                 "53dfcb1eb7fc3486"
@@ -23989,7 +24003,7 @@
         "payload": "1",
         "payloadType": "str",
         "x": 210,
-        "y": 480,
+        "y": 520,
         "wires": [
             [
                 "fec1e643ad17a16e"
@@ -24015,7 +24029,7 @@
         "payload": "1",
         "payloadType": "str",
         "x": 210,
-        "y": 740,
+        "y": 800,
         "wires": [
             [
                 "a5de7eb407a29b79"
@@ -24055,8 +24069,8 @@
         "tooltip": "",
         "group": "d5b292af11f072b5",
         "order": 1,
-        "width": 0,
-        "height": 0,
+        "width": "6",
+        "height": "1",
         "passthru": false,
         "decouple": "true",
         "topic": "",
@@ -24096,7 +24110,7 @@
         "type": "link in",
         "z": "110494c2c16f19b1",
         "g": "8b0b5e8a7e6aad3c",
-        "name": "link in 1",
+        "name": "OVP_In",
         "links": [
             "f26f2899e6444a56"
         ],
@@ -24162,7 +24176,7 @@
         "animate": false,
         "className": "",
         "x": 280,
-        "y": 340,
+        "y": 380,
         "wires": [
             [
                 "b8e360a71a4df5e9"
@@ -24174,12 +24188,12 @@
         "type": "link in",
         "z": "110494c2c16f19b1",
         "g": "8b0b5e8a7e6aad3c",
-        "name": "link in 2",
+        "name": "OVC_In",
         "links": [
             "728f79abf0fa8dea"
         ],
         "x": 111.666748046875,
-        "y": 340,
+        "y": 380,
         "wires": [
             [
                 "29d3e247c681126e"
@@ -24200,7 +24214,7 @@
         "finalize": "",
         "libs": [],
         "x": 530,
-        "y": 340,
+        "y": 380,
         "wires": [
             [
                 "921ee0bb1a9b4402",
@@ -24217,7 +24231,7 @@
         "name": "",
         "serial": "ea290f1e4e92d3ec",
         "x": 790,
-        "y": 340,
+        "y": 380,
         "wires": []
     },
     {
@@ -24239,7 +24253,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 190,
-        "y": 440,
+        "y": 480,
         "wires": [
             [
                 "fec1e643ad17a16e"
@@ -24260,7 +24274,7 @@
         "finalize": "",
         "libs": [],
         "x": 490,
-        "y": 620,
+        "y": 680,
         "wires": [
             [
                 "d8f905d0ba03062c",
@@ -24297,7 +24311,7 @@
         "animate": false,
         "className": "",
         "x": 230,
-        "y": 620,
+        "y": 680,
         "wires": [
             [
                 "bc4ff5059ab2b839"
@@ -24312,7 +24326,7 @@
         "name": "",
         "serial": "ea290f1e4e92d3ec",
         "x": 790,
-        "y": 620,
+        "y": 680,
         "wires": []
     },
     {
@@ -24320,12 +24334,12 @@
         "type": "link in",
         "z": "110494c2c16f19b1",
         "g": "8b0b5e8a7e6aad3c",
-        "name": "link in 3",
+        "name": "OnOff_In",
         "links": [
             "816b2b33847cbcb0"
         ],
         "x": 111.666748046875,
-        "y": 620,
+        "y": 680,
         "wires": [
             [
                 "f53d32e35b616b90"
@@ -24351,7 +24365,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 190,
-        "y": 700,
+        "y": 760,
         "wires": [
             [
                 "a5de7eb407a29b79"
@@ -24458,7 +24472,7 @@
             "725ca3f3aa9145de"
         ],
         "x": 945,
-        "y": 1720,
+        "y": 1780,
         "wires": []
     },
     {
@@ -24473,7 +24487,7 @@
             "5f2ac9a9e6bd4e5e"
         ],
         "x": 955,
-        "y": 1876.6666870117188,
+        "y": 1936.6666870117188,
         "wires": []
     },
     {
@@ -24495,7 +24509,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 330,
-        "y": 1280,
+        "y": 1360,
         "wires": [
             [
                 "23ce75151e68f1c9"
@@ -24548,10 +24562,10 @@
         "repair": false,
         "outputs": 1,
         "x": 885,
-        "y": 480,
+        "y": 520,
         "wires": [
             [
-                "322a65314665d04e"
+                "1834588f41378bee"
             ]
         ],
         "l": false
@@ -24575,7 +24589,7 @@
         "repair": false,
         "outputs": 1,
         "x": 885,
-        "y": 740,
+        "y": 800,
         "wires": [
             [
                 "25c098cd42927611"
@@ -24602,7 +24616,7 @@
         "repair": false,
         "outputs": 1,
         "x": 915,
-        "y": 960,
+        "y": 1040,
         "wires": [
             [
                 "6c5022b2d644aca8"
@@ -24629,7 +24643,7 @@
         "repair": false,
         "outputs": 1,
         "x": 915,
-        "y": 1140,
+        "y": 1220,
         "wires": [
             [
                 "dcc931b65e09fefd"
@@ -24656,7 +24670,7 @@
         "repair": false,
         "outputs": 1,
         "x": 915,
-        "y": 1320,
+        "y": 1400,
         "wires": [
             [
                 "78fc366e7142657d"
@@ -24683,7 +24697,7 @@
         "repair": false,
         "outputs": 1,
         "x": 915,
-        "y": 1500,
+        "y": 1580,
         "wires": [
             [
                 "8f9b1aad6d233692"
@@ -24710,7 +24724,7 @@
         "repair": false,
         "outputs": 1,
         "x": 795,
-        "y": 1660,
+        "y": 1720,
         "wires": [
             [
                 "93236d6d7cb7441b",
@@ -24739,7 +24753,7 @@
         "repair": false,
         "outputs": 1,
         "x": 795,
-        "y": 1800,
+        "y": 1860,
         "wires": [
             [
                 "b2c8313d919b59fd",
@@ -24859,7 +24873,7 @@
         "repair": false,
         "outputs": 1,
         "x": 685,
-        "y": 340,
+        "y": 380,
         "wires": [
             [
                 "8c6c10f9268e12e1"
@@ -24886,7 +24900,7 @@
         "repair": false,
         "outputs": 1,
         "x": 685,
-        "y": 480,
+        "y": 520,
         "wires": [
             [
                 "6c4ed859155f5452"
@@ -24913,7 +24927,7 @@
         "repair": false,
         "outputs": 1,
         "x": 685,
-        "y": 620,
+        "y": 680,
         "wires": [
             [
                 "b6b6825e1f7bdedf"
@@ -24940,7 +24954,7 @@
         "repair": false,
         "outputs": 1,
         "x": 685,
-        "y": 740,
+        "y": 800,
         "wires": [
             [
                 "67787dae9754e6e3"
@@ -24967,7 +24981,7 @@
         "repair": false,
         "outputs": 1,
         "x": 705,
-        "y": 860,
+        "y": 940,
         "wires": [
             [
                 "f04689e09d827bb1"
@@ -24994,7 +25008,7 @@
         "repair": false,
         "outputs": 1,
         "x": 705,
-        "y": 960,
+        "y": 1040,
         "wires": [
             [
                 "0da137fb31205be1"
@@ -25021,7 +25035,7 @@
         "repair": false,
         "outputs": 1,
         "x": 705,
-        "y": 1040,
+        "y": 1120,
         "wires": [
             [
                 "59bc2873fa89b5c2"
@@ -25048,7 +25062,7 @@
         "repair": false,
         "outputs": 1,
         "x": 705,
-        "y": 1140,
+        "y": 1220,
         "wires": [
             [
                 "407e6e67b16dcd9b"
@@ -25075,7 +25089,7 @@
         "repair": false,
         "outputs": 1,
         "x": 705,
-        "y": 1220,
+        "y": 1300,
         "wires": [
             [
                 "f6d9b18bdad060c4"
@@ -25102,7 +25116,7 @@
         "repair": false,
         "outputs": 1,
         "x": 705,
-        "y": 1320,
+        "y": 1400,
         "wires": [
             [
                 "4ca516a911774357"
@@ -25129,7 +25143,7 @@
         "repair": false,
         "outputs": 1,
         "x": 705,
-        "y": 1400,
+        "y": 1480,
         "wires": [
             [
                 "85febb4f35f7a8ef"
@@ -25156,7 +25170,7 @@
         "repair": false,
         "outputs": 1,
         "x": 705,
-        "y": 1500,
+        "y": 1580,
         "wires": [
             [
                 "8506a6fb35edd440"
@@ -25183,7 +25197,7 @@
         "repair": false,
         "outputs": 1,
         "x": 585,
-        "y": 1660,
+        "y": 1720,
         "wires": [
             [
                 "a0b2b0a6d689b887"
@@ -25210,7 +25224,7 @@
         "repair": false,
         "outputs": 1,
         "x": 585,
-        "y": 1800,
+        "y": 1860,
         "wires": [
             [
                 "20c0a50db6cbd246"
@@ -25303,6 +25317,485 @@
         "x": 2485,
         "y": 120,
         "wires": []
+    },
+    {
+        "id": "fc94abb59a225022",
+        "type": "inject",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "x": 210,
+        "y": 260,
+        "wires": [
+            [
+                "caddaf562b33abf0"
+            ]
+        ]
+    },
+    {
+        "id": "0bdbd8575f3c34de",
+        "type": "ui_led",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "order": 8,
+        "group": "d5b292af11f072b5",
+        "width": 0,
+        "height": 0,
+        "label": "OVERVOLTAGE ALARM",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Over Voltage Alarm",
+        "x": 1030,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "caddaf562b33abf0",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "VOLT:PROT:TRIP?",
+        "func": "//Constructs the payload\nmsg = {payload : 'VOLT:PROT:TRIP?'};\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 260,
+        "wires": [
+            [
+                "be8c7e9a7122ccfb"
+            ]
+        ],
+        "info": "This function takes the SCPI commands from global variables and separate it by topics"
+    },
+    {
+        "id": "da36ffa2650f485c",
+        "type": "serial request",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 610,
+        "y": 260,
+        "wires": [
+            [
+                "04dffc966dd2e45b"
+            ]
+        ]
+    },
+    {
+        "id": "04dffc966dd2e45b",
+        "type": "switch",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "msg.status==OK",
+        "property": "status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "OK",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 715,
+        "y": 260,
+        "wires": [
+            [
+                "77fcc64f1a4a163b"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "be8c7e9a7122ccfb",
+        "type": "switch",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "global.RIGOL_st==1",
+        "property": "RIGOL_st",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 505,
+        "y": 260,
+        "wires": [
+            [
+                "da36ffa2650f485c"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "77fcc64f1a4a163b",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "YES/NO 2 BOOL",
+        "func": "\nlet input = msg.payload.trim()\n\nlet boolValue;\nif (input === \"YES\") {\n    boolValue = true;\n} else if (input === \"NO\") {\n    boolValue = false;\n} else {\n    // Si llega algo inesperado\n    boolValue = null;\n}\n\nmsg = { payload: boolValue };\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 260,
+        "wires": [
+            [
+                "0bdbd8575f3c34de",
+                "19e7a764a82003df"
+            ]
+        ],
+        "info": "This function makes the ON/OFF output to a boolean value."
+    },
+    {
+        "id": "1834588f41378bee",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "ON/OFF 2 BOOL",
+        "func": "var input = (msg.payload || \"\").toString();  // asegura que siempre sea string\n\n// Quitar saltos de línea y retornos de carro\nvar cleanInput = input.replace(/[\\r\\n]/g, \"\").trim();\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Si llega algo inesperado\n    boolValue = null;\n}\n\nvar msg1 = { payload: boolValue };\n\nreturn [msg1];\n\n/*var input = msg.payload;  // Assume msg.payload contains the string \"ON\" or \"OFF\"\n\n// Remove carriage return characters\nvar cleanInput = input.replace(/\\n/, '')\n\nvar boolValue;\nif (cleanInput === \"ON\") {\n    boolValue = true;\n} else if (cleanInput === \"OFF\") {\n    boolValue = false;\n} else {\n    // Optionally handle unexpected values\n    boolValue = null;  // or throw an error, or set a default value\n}\n\nvar msg1 = {payload: boolValue};            \n       \n\nreturn [msg1];\n*/",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 520,
+        "wires": [
+            [
+                "aca63abd6d11b1e3",
+                "728f79abf0fa8dea"
+            ]
+        ],
+        "info": "This function makes the ON/OFF output to a boolean value."
+    },
+    {
+        "id": "19e7a764a82003df",
+        "type": "rbe",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 970,
+        "y": 320,
+        "wires": [
+            [
+                "2e22cc66674d4045"
+            ]
+        ]
+    },
+    {
+        "id": "2e22cc66674d4045",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "Set Message",
+        "func": "if (msg.payload){//Message onlhy if there is an error\n    msg.payload=\"RIGOL PS OverVoltage Alarm\";\n    return msg;\n}else{\n    return null;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 320,
+        "wires": [
+            [
+                "343f442af3d7f1d0"
+            ]
+        ]
+    },
+    {
+        "id": "343f442af3d7f1d0",
+        "type": "link out",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "RIGOL_OVA_Out",
+        "mode": "link",
+        "links": [
+            "cddbb915843096e1"
+        ],
+        "x": 1225,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "b47027949db8f807",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "YES/NO 2 BOOL",
+        "func": "\nlet input = msg.payload.trim()\n\nlet boolValue;\nif (input === \"YES\") {\n    boolValue = true;\n} else if (input === \"NO\") {\n    boolValue = false;\n} else {\n    // Si llega algo inesperado\n    boolValue = null;\n}\n\nmsg = { payload: boolValue };\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 580,
+        "wires": [
+            [
+                "2c74532aad80c419",
+                "71a29b3626edea6b"
+            ]
+        ],
+        "info": "This function makes the ON/OFF output to a boolean value."
+    },
+    {
+        "id": "ef3aa5eca853eb99",
+        "type": "switch",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "msg.status==OK",
+        "property": "status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "OK",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 715,
+        "y": 580,
+        "wires": [
+            [
+                "b47027949db8f807"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "2c74532aad80c419",
+        "type": "ui_led",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "order": 9,
+        "group": "d5b292af11f072b5",
+        "width": 0,
+        "height": 0,
+        "label": "OVERCURRENT ALARM",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "OverCurrent Alarm",
+        "x": 1030,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "71a29b3626edea6b",
+        "type": "rbe",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 970,
+        "y": 640,
+        "wires": [
+            [
+                "a9ad154a9359e702"
+            ]
+        ]
+    },
+    {
+        "id": "aeec0863b4c6357f",
+        "type": "serial request",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "",
+        "serial": "ea290f1e4e92d3ec",
+        "x": 610,
+        "y": 580,
+        "wires": [
+            [
+                "ef3aa5eca853eb99"
+            ]
+        ]
+    },
+    {
+        "id": "a9ad154a9359e702",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "Set Message",
+        "func": "if (msg.payload){//Message onlhy if there is an error\n    msg.payload=\"RIGOL PS OverCurrent Alarm\";\n    return msg;\n}else{\n    return null;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 640,
+        "wires": [
+            [
+                "26f7e2fe7b15839c"
+            ]
+        ]
+    },
+    {
+        "id": "77bdd408c14a63c0",
+        "type": "switch",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "global.RIGOL_st==1",
+        "property": "RIGOL_st",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 505,
+        "y": 580,
+        "wires": [
+            [
+                "aeec0863b4c6357f"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "26f7e2fe7b15839c",
+        "type": "link out",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "RIGOL_OCA_Out",
+        "mode": "link",
+        "links": [
+            "cddbb915843096e1"
+        ],
+        "x": 1225,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "2e7ff00b642d768f",
+        "type": "function",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "CURR:PROT:TRIP?",
+        "func": "//Constructs the payload\nmsg = {payload : 'CURR:PROT:TRIP?'};\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 580,
+        "wires": [
+            [
+                "77bdd408c14a63c0"
+            ]
+        ],
+        "info": "This function takes the SCPI commands from global variables and separate it by topics"
+    },
+    {
+        "id": "eb264898e942dde4",
+        "type": "inject",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "x": 210,
+        "y": 580,
+        "wires": [
+            [
+                "2e7ff00b642d768f"
+            ]
+        ]
     },
     {
         "id": "7d470661ab31e5c7",
@@ -31605,7 +32098,7 @@
         "showGlow": true,
         "name": "Channel 0 Alarm",
         "x": 1390,
-        "y": 700,
+        "y": 680,
         "wires": []
     },
     {
@@ -31625,10 +32118,12 @@
         "y": 760,
         "wires": [
             [
-                "83b468614f0c3c6e"
+                "83b468614f0c3c6e",
+                "e94a2985c2789785"
             ],
             [
-                "891cecf427b70727"
+                "891cecf427b70727",
+                "2a687252343ceb65"
             ],
             [
                 "3e91bf94728c9cc4"
@@ -31694,7 +32189,7 @@
         "showGlow": true,
         "name": "Channel 1 Alarm",
         "x": 1390,
-        "y": 740,
+        "y": 760,
         "wires": []
     },
     {
@@ -33643,7 +34138,7 @@
         "showGlow": true,
         "name": "Channel 0 Hist. Alarm",
         "x": 1400,
-        "y": 780,
+        "y": 800,
         "wires": []
     },
     {
@@ -33675,7 +34170,7 @@
         "showGlow": true,
         "name": "Channel 1 Hist. Alarm",
         "x": 1400,
-        "y": 820,
+        "y": 840,
         "wires": []
     },
     {
@@ -34576,6 +35071,118 @@
         "wires": []
     },
     {
+        "id": "e94a2985c2789785",
+        "type": "rbe",
+        "z": "dbbc30b9f0aa1118",
+        "g": "734a5d56201614fe",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 1350,
+        "y": 640,
+        "wires": [
+            [
+                "45f80345aff7f489"
+            ]
+        ]
+    },
+    {
+        "id": "41ab1074f2d57556",
+        "type": "link out",
+        "z": "dbbc30b9f0aa1118",
+        "g": "734a5d56201614fe",
+        "name": "link out 14",
+        "mode": "link",
+        "links": [
+            "42a9443f5d24f324"
+        ],
+        "x": 1605,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "45f80345aff7f489",
+        "type": "function",
+        "z": "dbbc30b9f0aa1118",
+        "g": "734a5d56201614fe",
+        "name": "Set Message",
+        "func": "if (msg.payload){//Message onlhy if there is an error\n    msg.payload=\"CAEN PS Ch. 0 Alarm (Trip)\";\n    return msg;\n}else{\n    return null;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 640,
+        "wires": [
+            [
+                "41ab1074f2d57556"
+            ]
+        ]
+    },
+    {
+        "id": "2a687252343ceb65",
+        "type": "rbe",
+        "z": "dbbc30b9f0aa1118",
+        "g": "734a5d56201614fe",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 1350,
+        "y": 720,
+        "wires": [
+            [
+                "c70938e8838dacf9"
+            ]
+        ]
+    },
+    {
+        "id": "c70938e8838dacf9",
+        "type": "function",
+        "z": "dbbc30b9f0aa1118",
+        "g": "734a5d56201614fe",
+        "name": "Set Message",
+        "func": "if (msg.payload){//Message onlhy if there is an error\n    msg.payload=\"CAEN PS Ch. 1 Alarm (Trip)\";\n    return msg;\n}else{\n    return null;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 720,
+        "wires": [
+            [
+                "810e2c83d1756071"
+            ]
+        ]
+    },
+    {
+        "id": "810e2c83d1756071",
+        "type": "link out",
+        "z": "dbbc30b9f0aa1118",
+        "g": "734a5d56201614fe",
+        "name": "link out 15",
+        "mode": "link",
+        "links": [
+            "42a9443f5d24f324"
+        ],
+        "x": 1605,
+        "y": 720,
+        "wires": []
+    },
+    {
         "id": "322432cccfc7e68f",
         "type": "link out",
         "z": "e6abd59fcfef321c",
@@ -34622,11 +35229,13 @@
         "links": [
             "c7be7450f90f3c85"
         ],
-        "x": 315,
-        "y": 1328,
+        "x": 395,
+        "y": 1400,
         "wires": [
             [
-                "30c3da27b1903dfd"
+                "fa4e41c3d1b89848",
+                "3a14903f1d467e68",
+                "f2a2d53ce5ba9e17"
             ]
         ]
     },
@@ -34640,8 +35249,8 @@
         "links": [
             "e925121153aa7594"
         ],
-        "x": 245,
-        "y": 1488,
+        "x": 255,
+        "y": 1548,
         "wires": [
             [
                 "deb8b7288de2adac"
@@ -34658,8 +35267,8 @@
         "links": [
             "d3bdb64732d5588f"
         ],
-        "x": 245,
-        "y": 1528,
+        "x": 255,
+        "y": 1588,
         "wires": [
             [
                 "a7295e915e259258"
@@ -34676,8 +35285,8 @@
         "links": [
             "887024a79833a324"
         ],
-        "x": 245,
-        "y": 1568,
+        "x": 255,
+        "y": 1628,
         "wires": [
             [
                 "37f05775bddd4633"
@@ -34691,8 +35300,8 @@
         "d": true,
         "g": "b4e33e11eed53568",
         "name": "",
-        "x": 430,
-        "y": 1488,
+        "x": 440,
+        "y": 1548,
         "wires": []
     },
     {
@@ -34702,8 +35311,8 @@
         "d": true,
         "g": "b4e33e11eed53568",
         "name": "",
-        "x": 430,
-        "y": 1528,
+        "x": 440,
+        "y": 1588,
         "wires": []
     },
     {
@@ -34713,8 +35322,8 @@
         "d": true,
         "g": "b4e33e11eed53568",
         "name": "",
-        "x": 430,
-        "y": 1568,
+        "x": 440,
+        "y": 1628,
         "wires": []
     },
     {
@@ -34722,7 +35331,7 @@
         "type": "link in",
         "z": "e6abd59fcfef321c",
         "g": "562d42446f5c13fe",
-        "name": "SECURITY_LV_IN",
+        "name": "RIGOL_Catch_IN",
         "links": [
             "1148e58d58efa315"
         ],
@@ -34756,7 +35365,9 @@
         "y": 944,
         "wires": [
             [
-                "9e75477aca5b6168"
+                "e01e0bebbb2557dc",
+                "376e8ba1bbc018b9",
+                "e0d617f5c52cc047"
             ]
         ]
     },
@@ -34773,8 +35384,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 480,
-        "y": 1004,
+        "x": 390,
+        "y": 1040,
         "wires": [
             [
                 "376e8ba1bbc018b9",
@@ -35254,8 +35865,8 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 320,
-        "y": 1720,
+        "x": 330,
+        "y": 1800,
         "wires": [
             []
         ]
@@ -35458,8 +36069,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 340,
-        "y": 1680,
+        "x": 350,
+        "y": 1760,
         "wires": [
             [
                 "ce9cb3a407399e74"
@@ -35871,8 +36482,8 @@
             "8a1744a7cfe2c4d9",
             "7aa440a7df08d717"
         ],
-        "x": 515,
-        "y": 1680,
+        "x": 525,
+        "y": 1760,
         "wires": []
     },
     {
@@ -36016,7 +36627,7 @@
             "04b62f22d41b2b4b"
         ],
         "x": 585,
-        "y": 1024,
+        "y": 1060,
         "wires": [
             [
                 "e0d617f5c52cc047"
@@ -36032,8 +36643,8 @@
         "links": [
             "5175f4f8384784e3"
         ],
-        "x": 335,
-        "y": 1004,
+        "x": 245,
+        "y": 1040,
         "wires": [
             [
                 "9e75477aca5b6168"
@@ -36053,8 +36664,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 1176,
+        "x": 360,
+        "y": 1260,
         "wires": [
             [
                 "d7d9ef4d834b2f94",
@@ -36078,7 +36689,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 670,
-        "y": 1176,
+        "y": 1240,
         "wires": []
     },
     {
@@ -36100,7 +36711,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 650,
-        "y": 1216,
+        "y": 1280,
         "wires": []
     },
     {
@@ -36113,8 +36724,8 @@
             "ce9cb3a407399e74",
             "04b62f22d41b2b4b"
         ],
-        "x": 525,
-        "y": 1216,
+        "x": 535,
+        "y": 1300,
         "wires": [
             [
                 "3f32c6a592167bbb"
@@ -36131,7 +36742,7 @@
             "e89335a946116b29"
         ],
         "x": 245,
-        "y": 1176,
+        "y": 1260,
         "wires": [
             [
                 "a970521c50177e2a"
@@ -36151,8 +36762,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 500,
-        "y": 1388,
+        "x": 390,
+        "y": 1480,
         "wires": [
             [
                 "3a14903f1d467e68",
@@ -36175,8 +36786,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 720,
-        "y": 1388,
+        "x": 730,
+        "y": 1448,
         "wires": []
     },
     {
@@ -36197,8 +36808,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 700,
-        "y": 1428,
+        "x": 720,
+        "y": 1500,
         "wires": []
     },
     {
@@ -36211,8 +36822,8 @@
             "ce9cb3a407399e74",
             "04b62f22d41b2b4b"
         ],
-        "x": 615,
-        "y": 1428,
+        "x": 625,
+        "y": 1540,
         "wires": [
             [
                 "f2a2d53ce5ba9e17"
@@ -36228,8 +36839,8 @@
         "links": [
             "17d31b7961f49fc5"
         ],
-        "x": 285,
-        "y": 1388,
+        "x": 265,
+        "y": 1480,
         "wires": [
             [
                 "30c3da27b1903dfd"
@@ -37689,7 +38300,7 @@
         "g": "81b7ca7d51ac67d4",
         "name": "",
         "x": 710,
-        "y": 1136,
+        "y": 1200,
         "wires": []
     },
     {
@@ -37698,8 +38309,8 @@
         "z": "e6abd59fcfef321c",
         "g": "b4e33e11eed53568",
         "name": "",
-        "x": 760,
-        "y": 1348,
+        "x": 770,
+        "y": 1408,
         "wires": []
     },
     {
@@ -37707,16 +38318,40 @@
         "type": "link in",
         "z": "e6abd59fcfef321c",
         "g": "81b7ca7d51ac67d4",
-        "name": "slack in",
+        "name": "CAEN_Alarm_In",
         "links": [
             "626710aeaa040c60",
-            "c6c807c0bc94a523"
+            "c6c807c0bc94a523",
+            "41ab1074f2d57556",
+            "810e2c83d1756071"
         ],
-        "x": 355,
-        "y": 1136,
+        "x": 245,
+        "y": 1160,
         "wires": [
             [
-                "bde190c78bc2915d"
+                "bde190c78bc2915d",
+                "d7d9ef4d834b2f94",
+                "3f32c6a592167bbb"
+            ]
+        ]
+    },
+    {
+        "id": "cddbb915843096e1",
+        "type": "link in",
+        "z": "e6abd59fcfef321c",
+        "g": "562d42446f5c13fe",
+        "name": "RIGOL_Alarm_IN",
+        "links": [
+            "26f7e2fe7b15839c",
+            "343f442af3d7f1d0"
+        ],
+        "x": 245,
+        "y": 980,
+        "wires": [
+            [
+                "e01e0bebbb2557dc",
+                "376e8ba1bbc018b9",
+                "e0d617f5c52cc047"
             ]
         ]
     },
