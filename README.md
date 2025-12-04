@@ -167,9 +167,7 @@ Credentials are encrypted usin `node-red admin hash-pw`.
 	+ Check operation with new security flow.
 - Check Reconnection:
 	+ The serial devices sometimes reconnect and sometimes not.
-- Check baud rates:
-	- CAEN: 115200 (maximum)
-	- Bronkhorst: 38400 (default)
-	- Others (Rigol, BGA, PLC_REC) at 9600
-
+- CAEN 4CH:
+	+ Database not implemented
+	+ AutoRecovery functionality not checked
 
