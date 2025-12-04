@@ -743,14 +743,13 @@
             "3fd98e13ec0e96e1",
             "0518cfe62db0b19e",
             "2cc9961eaecb4a2f",
-            "c1d7fe95fcdf9895",
             "5959c9ee0c6aa5ce",
             "24496f059c5fcb84",
             "aba711eaf43bd940"
         ],
         "x": 2674,
         "y": 59,
-        "w": 842,
+        "w": 672,
         "h": 222
     },
     {
@@ -1351,7 +1350,7 @@
             "8a1dd170fc15b025",
             "f6943f8775986596"
         ],
-        "x": 3594,
+        "x": 3454,
         "y": 39,
         "w": 1352,
         "h": 722,
@@ -3051,14 +3050,13 @@
             "ee86686f0a36c34e",
             "e58bf183f1186b08",
             "7dfcb538ccecf80c",
-            "811aea9b4c632803",
             "65c9365ef36d600f",
             "d9655130b04393b6",
             "55a797bbb0a73e4f"
         ],
         "x": 2674,
-        "y": 329,
-        "w": 842,
+        "y": 319,
+        "w": 672,
         "h": 222
     },
     {
@@ -3506,7 +3504,7 @@
             "b0e14941f4a63a9b",
             "a356a8b1c6e00e63"
         ],
-        "x": 3624,
+        "x": 3484,
         "y": 359,
         "w": 842,
         "h": 282
@@ -4372,7 +4370,7 @@
         ],
         "x": 2648,
         "y": 33,
-        "w": 894,
+        "w": 724,
         "h": 714
     },
     {
@@ -35193,7 +35191,7 @@
             "8bb3b087131b5ddd",
             "e0e443b30f512e8f"
         ],
-        "x": 3305,
+        "x": 3135,
         "y": 100,
         "wires": []
     },
@@ -35216,7 +35214,7 @@
         "y": 180,
         "wires": [
             [
-                "c1d7fe95fcdf9895"
+                "2cc9961eaecb4a2f"
             ]
         ]
     },
@@ -35539,7 +35537,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "Restart NodeRed",
-        "x": 3950,
+        "x": 3810,
         "y": 200,
         "wires": [
             [
@@ -35566,7 +35564,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 4610,
+        "x": 4470,
         "y": 80,
         "wires": []
     },
@@ -35583,7 +35581,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 4590,
+        "x": 4450,
         "y": 180,
         "wires": []
     },
@@ -35600,7 +35598,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 4610,
+        "x": 4470,
         "y": 300,
         "wires": []
     },
@@ -35625,7 +35623,7 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 3710,
+        "x": 3570,
         "y": 200,
         "wires": [
             [
@@ -35654,7 +35652,7 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 3740,
+        "x": 3600,
         "y": 400,
         "wires": [
             [
@@ -35690,7 +35688,7 @@
         "shape": "circle",
         "showGlow": true,
         "name": "",
-        "x": 4270,
+        "x": 4130,
         "y": 560,
         "wires": []
     },
@@ -35707,7 +35705,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3950,
+        "x": 3810,
         "y": 560,
         "wires": [
             [
@@ -35737,7 +35735,7 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 3750,
+        "x": 3610,
         "y": 440,
         "wires": [
             [
@@ -35758,7 +35756,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 4030,
+        "x": 3890,
         "y": 400,
         "wires": [
             [
@@ -35781,7 +35779,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 4320,
+        "x": 4180,
         "y": 440,
         "wires": []
     },
@@ -35798,7 +35796,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 4290,
+        "x": 4150,
         "y": 600,
         "wires": []
     },
@@ -35824,7 +35822,7 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 3730,
+        "x": 3590,
         "y": 560,
         "wires": [
             [
@@ -35838,7 +35836,7 @@
         "z": "e6abd59fcfef321c",
         "g": "391b996bdb7d6683",
         "name": "",
-        "x": 4330,
+        "x": 4190,
         "y": 400,
         "wires": []
     },
@@ -35893,7 +35891,7 @@
         "topic": "",
         "payload": "1",
         "payloadType": "str",
-        "x": 3720,
+        "x": 3580,
         "y": 500,
         "wires": [
             [
@@ -35914,7 +35912,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 4180,
+        "x": 4040,
         "y": 700,
         "wires": [
             [
@@ -35942,7 +35940,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 4850,
+        "x": 4710,
         "y": 660,
         "wires": []
     },
@@ -35968,7 +35966,7 @@
         "topic": "",
         "payload": ":",
         "payloadType": "str",
-        "x": 3700,
+        "x": 3560,
         "y": 700,
         "wires": [
             [
@@ -36008,7 +36006,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3360,
+        "x": 3190,
         "y": 200,
         "wires": []
     },
@@ -36025,7 +36023,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 4640,
+        "x": 4500,
         "y": 680,
         "wires": [
             [
@@ -36044,7 +36042,7 @@
         "links": [
             "5c5c0d67ba9335b6"
         ],
-        "x": 4815,
+        "x": 4675,
         "y": 720,
         "wires": []
     },
@@ -36129,7 +36127,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3050,
+        "x": 2880,
         "y": 180,
         "wires": [
             [
@@ -36137,32 +36135,6 @@
                 "5959c9ee0c6aa5ce",
                 "322432cccfc7e68f",
                 "aba711eaf43bd940"
-            ]
-        ]
-    },
-    {
-        "id": "c1d7fe95fcdf9895",
-        "type": "switch",
-        "z": "e6abd59fcfef321c",
-        "g": "76c4585b9eeb7963",
-        "name": "OperationMode",
-        "property": "OperationMode",
-        "propertyType": "global",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "num"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 2880,
-        "y": 180,
-        "wires": [
-            [
-                "2cc9961eaecb4a2f"
             ]
         ]
     },
@@ -36986,8 +36958,8 @@
         "links": [
             "bb38b8c6467ffec9"
         ],
-        "x": 3295,
-        "y": 370,
+        "x": 3125,
+        "y": 360,
         "wires": []
     },
     {
@@ -37006,10 +36978,10 @@
             "3811136b6a0c9e95"
         ],
         "x": 2715,
-        "y": 450,
+        "y": 460,
         "wires": [
             [
-                "811aea9b4c632803"
+                "7dfcb538ccecf80c"
             ]
         ]
     },
@@ -37027,8 +36999,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3340,
-        "y": 470,
+        "x": 3170,
+        "y": 460,
         "wires": []
     },
     {
@@ -37044,40 +37016,14 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3130,
-        "y": 470,
+        "x": 2960,
+        "y": 460,
         "wires": [
             [
                 "e58bf183f1186b08",
                 "65c9365ef36d600f",
                 "68f49f54c5740ecc",
                 "55a797bbb0a73e4f"
-            ]
-        ]
-    },
-    {
-        "id": "811aea9b4c632803",
-        "type": "switch",
-        "z": "e6abd59fcfef321c",
-        "g": "76cf537445669f90",
-        "name": "OperationMode",
-        "property": "OperationMode",
-        "propertyType": "global",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "num"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 2880,
-        "y": 450,
-        "wires": [
-            [
-                "7dfcb538ccecf80c"
             ]
         ]
     },
@@ -37099,7 +37045,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 3320,
+        "x": 3150,
         "y": 240,
         "wires": []
     },
@@ -37121,8 +37067,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 3320,
-        "y": 510,
+        "x": 3150,
+        "y": 500,
         "wires": []
     },
     {
@@ -37207,8 +37153,8 @@
         "links": [
             "6e9ccfd7c4efecec"
         ],
-        "x": 3225,
-        "y": 510,
+        "x": 3055,
+        "y": 500,
         "wires": [
             [
                 "65c9365ef36d600f"
@@ -37224,7 +37170,7 @@
         "links": [
             "6e9ccfd7c4efecec"
         ],
-        "x": 3245,
+        "x": 3075,
         "y": 240,
         "wires": [
             [
@@ -37656,7 +37602,7 @@
         "z": "e6abd59fcfef321c",
         "g": "76c4585b9eeb7963",
         "name": "",
-        "x": 3380,
+        "x": 3210,
         "y": 160,
         "wires": []
     },
@@ -37666,8 +37612,8 @@
         "z": "e6abd59fcfef321c",
         "g": "76cf537445669f90",
         "name": "",
-        "x": 3380,
-        "y": 410,
+        "x": 3210,
+        "y": 400,
         "wires": []
     },
     {
