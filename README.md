@@ -53,9 +53,11 @@ The code is composed of the following flows:
 	 + SerialPort `dev/PLC_REC` 
  - **CAEN** 
  	 + High Voltage Power Supply (HVPS) for TPC
- 	 	+ Cathode: *channel0* 
- 	 	+ Mesh:  *channel1*
- 	 + CAEN N1471HA
+ 	 	+ Top: *channel0* 
+ 	 	+ Bottom:  *channel1*
+ 	 	+ Cathode:  *channel2*
+ 	 	+ Mesh:  *channel3*
+ 	 + CAEN N1471H
 	 + SerialPort `dev/CAEN0` 
 
  - **RIGOL**
@@ -147,7 +149,7 @@ In **Databases** (or in **join** nodes):
 ## USB Configuration
 The serialport configuration is included in `/etc/udev/rules.d/99-usb-serial.rules
 
-For information on the serial ports  `devadm info --name=/dev/<device>`
+For information on the serial ports  `udevadm info --name=/dev/<device>`
 
 For reloading the rules:
 
@@ -168,5 +170,5 @@ Credentials are encrypted usin `node-red admin hash-pw`.
 - Check Reconnection:
 	+ The serial devices sometimes reconnect and sometimes not.
 - CAEN 4CH:
-	+ AutoRecovery functionality not checked
+	+ AutoRecovery functionality not fully checked
 
