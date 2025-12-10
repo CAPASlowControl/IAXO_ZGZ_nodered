@@ -168,6 +168,5 @@ Credentials are encrypted usin `node-red admin hash-pw`.
 - Check Reconnection:
 	+ The serial devices sometimes reconnect and sometimes not.
 - CAEN 4CH:
-	+ Database not implemented
 	+ AutoRecovery functionality not checked
 
