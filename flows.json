@@ -1854,7 +1854,9 @@
             "77bdd408c14a63c0",
             "26f7e2fe7b15839c",
             "2e7ff00b642d768f",
-            "eb264898e942dde4"
+            "eb264898e942dde4",
+            "91d8a0d4d4c777b3",
+            "3e66acb63f47b79a"
         ],
         "x": 70.666748046875,
         "y": 19,
@@ -5292,7 +5294,7 @@
         "type": "serial-port",
         "name": "",
         "serialport": "/dev/CAEN0",
-        "serialbaud": "115200",
+        "serialbaud": "9600",
         "databits": "8",
         "parity": "none",
         "stopbits": "1",
@@ -25995,7 +25997,8 @@
         "y": 260,
         "wires": [
             [
-                "04dffc966dd2e45b"
+                "04dffc966dd2e45b",
+                "3e66acb63f47b79a"
             ]
         ]
     },
@@ -26233,7 +26236,7 @@
         "shape": "circle",
         "showGlow": true,
         "name": "OverCurrent Alarm",
-        "x": 1030,
+        "x": 1070,
         "y": 580,
         "wires": []
     },
@@ -26269,7 +26272,8 @@
         "y": 580,
         "wires": [
             [
-                "ef3aa5eca853eb99"
+                "ef3aa5eca853eb99",
+                "91d8a0d4d4c777b3"
             ]
         ]
     },
@@ -26382,6 +26386,40 @@
                 "2e7ff00b642d768f"
             ]
         ]
+    },
+    {
+        "id": "91d8a0d4d4c777b3",
+        "type": "debug",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "debug 422",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "3e66acb63f47b79a",
+        "type": "debug",
+        "z": "110494c2c16f19b1",
+        "g": "8b0b5e8a7e6aad3c",
+        "name": "debug 423",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 320,
+        "wires": []
     },
     {
         "id": "7d470661ab31e5c7",
