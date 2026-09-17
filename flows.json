@@ -5294,7 +5294,7 @@
         "type": "serial-port",
         "name": "",
         "serialport": "/dev/CAEN0",
-        "serialbaud": "9600",
+        "serialbaud": "115200",
         "databits": "8",
         "parity": "none",
         "stopbits": "1",

@@ -1,0 +1,17 @@
+{
+  "name": "node-red-project",
+  "description": "initially created for you by Node-RED 2.2.1",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "node-red-contrib-calc": "~1.0.6",
+    "node-red-contrib-iiot-opcua": "~4.1.2",
+    "node-red-contrib-opcua": "~0.2.342",
+    "node-red-contrib-postgresql": "~0.14.2",
+    "node-red-contrib-slack-files": "~0.1.2",
+    "node-red-contrib-string": "~1.0.0",
+    "node-red-contrib-ui-led": "~0.4.11",
+    "node-red-dashboard": "~3.6.5",
+    "node-red-node-serialport": "~2.0.3"
+  }
+}
